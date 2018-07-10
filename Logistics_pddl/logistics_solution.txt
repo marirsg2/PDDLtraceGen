@@ -1,0 +1,136 @@
+INFO     Running translator.
+INFO     translator input: ['./Logistics_pddl/domain.pddl', './Logistics_pddl/problem_logistics_c4_s3_p1_a2.pddl']
+INFO     translator arguments: []
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     callstring: /usr/bin/python /home/yochan/FastDownward/builds/release32/bin/translate/translate.py ./Logistics_pddl/domain.pddl ./Logistics_pddl/problem_logistics_c4_s3_p1_a2.pddl
+Parsing...
+Parsing: [0.000s CPU, 0.003s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.004s wall-clock]
+Preparing model... [0.000s CPU, 0.001s wall-clock]
+Generated 51 rules.
+Computing model... [0.010s CPU, 0.005s wall-clock]
+232 relevant atoms
+302 auxiliary atoms
+534 final queue length
+611 total queue pushes
+Completing instantiation... [0.000s CPU, 0.003s wall-clock]
+Instantiating: [0.010s CPU, 0.014s wall-clock]
+Computing fact groups...
+Finding invariants...
+6 initial candidates
+Finding invariants: [0.000s CPU, 0.001s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.010s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+0 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.010s CPU, 0.002s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.000s CPU, 0.002s wall-clock]
+0 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+7 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.001s wall-clock]
+Reordering and filtering variables...
+7 of 7 variables necessary.
+0 of 7 mutex groups necessary.
+88 of 88 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.000s wall-clock]
+Translator variables: 7
+Translator derived variables: 0
+Translator facts: 38
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 88
+Translator axioms: 0
+Translator task size: 350
+Translator peak memory: 36072 KB
+Writing output... [0.000s CPU, 0.001s wall-clock]
+Done! [0.020s CPU, 0.024s wall-clock]
+INFO     Running search (release32).
+INFO     search input: output.sas
+INFO     search arguments: ['--heuristic', 'hff=ff()', '--heuristic', 'hcea=cea()', '--search', 'lazy_greedy([hff, hcea], preferred=[hff, hcea])']
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search executable: /home/yochan/FastDownward/builds/release32/bin/downward
+INFO     callstring: /home/yochan/FastDownward/builds/release32/bin/downward --heuristic 'hff=ff()' --heuristic 'hcea=cea()' --search 'lazy_greedy([hff, hcea], preferred=[hff, hcea])' --internal-plan-file sas_plan < output.sas
+reading input... [t=2.481e-05s]
+done reading input! [t=0.000433884s]
+packing state variables...done! [t=0.00044248s]
+Variables: 7
+FactPairs: 38
+Bytes per state: 4
+Building successor generator...done! [t=0.000521328s]
+peak memory difference for root successor generator creation: 0 KB
+time for root successor generation creation: 3.6382e-05s
+done initializing global data [t=0.000550693s]
+Simplifying 88 unary operators... done! [88 unary operators]
+Initializing additive heuristic...
+Initializing FF heuristic...
+Initializing context-enhanced additive heuristic...
+Conducting lazy best first search, (real) bound = 2147483647
+New best heuristic value for cea: 7
+New best heuristic value for ff: 6
+[g=0, 1 evaluated, 0 expanded, t=0.000953512s, 4492 KB]
+Initial heuristic value for cea: 7
+Initial heuristic value for ff: 6
+New best heuristic value for cea: 6
+[g=1, 4 evaluated, 3 expanded, t=0.00105078s, 4492 KB]
+New best heuristic value for cea: 5
+New best heuristic value for ff: 5
+[g=2, 6 evaluated, 5 expanded, t=0.00111727s, 4492 KB]
+New best heuristic value for cea: 4
+New best heuristic value for ff: 4
+[g=3, 8 evaluated, 7 expanded, t=0.00117215s, 4492 KB]
+New best heuristic value for cea: 3
+New best heuristic value for ff: 3
+[g=4, 10 evaluated, 9 expanded, t=0.00122893s, 4492 KB]
+New best heuristic value for cea: 2
+New best heuristic value for ff: 2
+[g=5, 12 evaluated, 11 expanded, t=0.00128308s, 4492 KB]
+New best heuristic value for cea: 1
+New best heuristic value for ff: 1
+[g=6, 13 evaluated, 12 expanded, t=0.00132024s, 4492 KB]
+Solution found!
+Actual search time: 0.000445444s [t=0.00135516s]
+fly-airplane a0 l30 l00 (1)
+load-airplane p0 a0 l00 (1)
+fly-airplane a0 l00 l30 (1)
+unload-airplane p0 a0 l30 (1)
+load-truck p0 t3 l30 (1)
+drive-truck t3 l30 l31 c3 (1)
+unload-truck p0 t3 l31 (1)
+Plan length: 7 step(s).
+Plan cost: 7
+Expanded 13 state(s).
+Reopened 0 state(s).
+Evaluated 14 state(s).
+Evaluations: 28
+Generated 193 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 14
+Int hash set load factor: 14/16 = 0.875
+Int hash set resizes: 4
+Search time: 0.000456069s
+Total time: 0.00135791s
+Solution found.
+Peak memory: 4492 KB

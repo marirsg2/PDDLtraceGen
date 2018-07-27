@@ -9,14 +9,13 @@ import subprocess
 import os
 import pickle
 
-number_traces = 10
-pickle_dest_file = "logistics_dataset.p"
+number_traces = 500
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
 logisitics_gen_exec = "./Logistics_pddl/logistics "
 #code to generate a random problem space
-logistics_config = ["-c 4", "-s 3","-p 1", "-a 2"]
+logistics_config = ["-c 2", "-s 3","-p 1", "-a 1"]
 dest_name_suffix = "_".join(logistics_config).replace("-","").replace(" ","")
 dest_file_name = "./Logistics_pddl/problem_logistics_"+ dest_name_suffix+".pddl"
 #---for FD
@@ -25,10 +24,17 @@ fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --sea
 domain_file_loc = "./Logistics_pddl/domain.pddl"
 problem_file_loc = dest_file_name
 solution_file_loc = "./Logistics_pddl/logistics_solution.txt"
+pickle_dest_file = str(number_traces)+dest_name_suffix+"_logistics_dataset.p"
 
-
-all_solutions = []
-for i in range(number_traces):
+all_solutions = set()
+counter = 0
+while len(all_solutions) < number_traces:
+    counter +=1
+    if counter%100 == 0:
+        print("At iteration",counter)
+        print("Number solutions",len(all_solutions))
+        with open(pickle_dest_file, "wb") as destination:
+            pickle.dump(all_solutions, destination)
     #---create problem files
     command = logisitics_gen_exec + " ".join(logistics_config)
     os.system(command+" > " + dest_file_name)
@@ -51,16 +57,18 @@ for i in range(number_traces):
                 solution_list.append(the_word)
         #---end for
     #---end with
-    print(solution_list)
-    all_solutions.append(solution_list)
+    # print(solution_list)
+    if len(solution_list)> 1: #need atleast two actions to have informational value
+        solution_list = tuple(solution_list)
+        all_solutions.add(solution_list)
 #---end outer for
-with open(pickle_dest_file, "wb") as destination:
-    pickle.dump(all_solutions,destination)
 
 
-with open(pickle_dest_file, "rb") as source_file:
-    a = pickle.load(source_file)
-    print(a)
+
+#testing code
+# with open(pickle_dest_file, "rb") as source_file:
+#     a = pickle.load(source_file)
+#     print(a)
 
 
 

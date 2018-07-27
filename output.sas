@@ -4,7 +4,7 @@ end_version
 begin_metric
 0
 end_metric
-7
+6
 begin_variable
 var0
 -1
@@ -41,24 +41,15 @@ begin_variable
 var4
 -1
 4
-Atom at(a1, l00)
-Atom at(a1, l10)
-Atom at(a1, l20)
-Atom at(a1, l30)
-end_variable
-begin_variable
-var5
--1
-4
 Atom at(a0, l00)
 Atom at(a0, l10)
 Atom at(a0, l20)
 Atom at(a0, l30)
 end_variable
 begin_variable
-var6
+var5
 -1
-18
+17
 Atom at(p0, l00)
 Atom at(p0, l01)
 Atom at(p0, l02)
@@ -72,7 +63,6 @@ Atom at(p0, l30)
 Atom at(p0, l31)
 Atom at(p0, l32)
 Atom in(p0, a0)
-Atom in(p0, a1)
 Atom in(p0, t0)
 Atom in(p0, t1)
 Atom in(p0, t2)
@@ -81,18 +71,17 @@ end_variable
 0
 begin_state
 1
-2
 0
-2
+1
+0
 3
-1
-1
+4
 end_state
 begin_goal
 1
-6 6
+5 1
 end_goal
-88
+68
 begin_operator
 drive-truck t0 l00 l01 c0
 0
@@ -265,165 +254,81 @@ begin_operator
 fly-airplane a0 l00 l10
 0
 1
-0 5 0 1
+0 4 0 1
 1
 end_operator
 begin_operator
 fly-airplane a0 l00 l20
 0
 1
-0 5 0 2
+0 4 0 2
 1
 end_operator
 begin_operator
 fly-airplane a0 l00 l30
 0
 1
-0 5 0 3
+0 4 0 3
 1
 end_operator
 begin_operator
 fly-airplane a0 l10 l00
 0
 1
-0 5 1 0
+0 4 1 0
 1
 end_operator
 begin_operator
 fly-airplane a0 l10 l20
 0
 1
-0 5 1 2
+0 4 1 2
 1
 end_operator
 begin_operator
 fly-airplane a0 l10 l30
 0
 1
-0 5 1 3
+0 4 1 3
 1
 end_operator
 begin_operator
 fly-airplane a0 l20 l00
 0
 1
-0 5 2 0
+0 4 2 0
 1
 end_operator
 begin_operator
 fly-airplane a0 l20 l10
 0
 1
-0 5 2 1
+0 4 2 1
 1
 end_operator
 begin_operator
 fly-airplane a0 l20 l30
 0
 1
-0 5 2 3
+0 4 2 3
 1
 end_operator
 begin_operator
 fly-airplane a0 l30 l00
 0
 1
-0 5 3 0
+0 4 3 0
 1
 end_operator
 begin_operator
 fly-airplane a0 l30 l10
 0
 1
-0 5 3 1
-1
-end_operator
-begin_operator
-fly-airplane a0 l30 l20
-0
-1
-0 5 3 2
-1
-end_operator
-begin_operator
-fly-airplane a1 l00 l10
-0
-1
-0 4 0 1
-1
-end_operator
-begin_operator
-fly-airplane a1 l00 l20
-0
-1
-0 4 0 2
-1
-end_operator
-begin_operator
-fly-airplane a1 l00 l30
-0
-1
-0 4 0 3
-1
-end_operator
-begin_operator
-fly-airplane a1 l10 l00
-0
-1
-0 4 1 0
-1
-end_operator
-begin_operator
-fly-airplane a1 l10 l20
-0
-1
-0 4 1 2
-1
-end_operator
-begin_operator
-fly-airplane a1 l10 l30
-0
-1
-0 4 1 3
-1
-end_operator
-begin_operator
-fly-airplane a1 l20 l00
-0
-1
-0 4 2 0
-1
-end_operator
-begin_operator
-fly-airplane a1 l20 l10
-0
-1
-0 4 2 1
-1
-end_operator
-begin_operator
-fly-airplane a1 l20 l30
-0
-1
-0 4 2 3
-1
-end_operator
-begin_operator
-fly-airplane a1 l30 l00
-0
-1
-0 4 3 0
-1
-end_operator
-begin_operator
-fly-airplane a1 l30 l10
-0
-1
 0 4 3 1
 1
 end_operator
 begin_operator
-fly-airplane a1 l30 l20
+fly-airplane a0 l30 l20
 0
 1
 0 4 3 2
@@ -432,65 +337,33 @@ end_operator
 begin_operator
 load-airplane p0 a0 l00
 1
-5 0
+4 0
 1
-0 6 0 12
+0 5 0 12
 1
 end_operator
 begin_operator
 load-airplane p0 a0 l10
 1
-5 1
+4 1
 1
-0 6 3 12
+0 5 3 12
 1
 end_operator
 begin_operator
 load-airplane p0 a0 l20
 1
-5 2
+4 2
 1
-0 6 6 12
+0 5 6 12
 1
 end_operator
 begin_operator
 load-airplane p0 a0 l30
 1
-5 3
-1
-0 6 9 12
-1
-end_operator
-begin_operator
-load-airplane p0 a1 l00
-1
-4 0
-1
-0 6 0 13
-1
-end_operator
-begin_operator
-load-airplane p0 a1 l10
-1
-4 1
-1
-0 6 3 13
-1
-end_operator
-begin_operator
-load-airplane p0 a1 l20
-1
-4 2
-1
-0 6 6 13
-1
-end_operator
-begin_operator
-load-airplane p0 a1 l30
-1
 4 3
 1
-0 6 9 13
+0 5 9 12
 1
 end_operator
 begin_operator
@@ -498,7 +371,7 @@ load-truck p0 t0 l00
 1
 3 0
 1
-0 6 0 14
+0 5 0 13
 1
 end_operator
 begin_operator
@@ -506,7 +379,7 @@ load-truck p0 t0 l01
 1
 3 1
 1
-0 6 1 14
+0 5 1 13
 1
 end_operator
 begin_operator
@@ -514,7 +387,7 @@ load-truck p0 t0 l02
 1
 3 2
 1
-0 6 2 14
+0 5 2 13
 1
 end_operator
 begin_operator
@@ -522,7 +395,7 @@ load-truck p0 t1 l10
 1
 2 0
 1
-0 6 3 15
+0 5 3 14
 1
 end_operator
 begin_operator
@@ -530,7 +403,7 @@ load-truck p0 t1 l11
 1
 2 1
 1
-0 6 4 15
+0 5 4 14
 1
 end_operator
 begin_operator
@@ -538,7 +411,7 @@ load-truck p0 t1 l12
 1
 2 2
 1
-0 6 5 15
+0 5 5 14
 1
 end_operator
 begin_operator
@@ -546,7 +419,7 @@ load-truck p0 t2 l20
 1
 1 0
 1
-0 6 6 16
+0 5 6 15
 1
 end_operator
 begin_operator
@@ -554,7 +427,7 @@ load-truck p0 t2 l21
 1
 1 1
 1
-0 6 7 16
+0 5 7 15
 1
 end_operator
 begin_operator
@@ -562,7 +435,7 @@ load-truck p0 t2 l22
 1
 1 2
 1
-0 6 8 16
+0 5 8 15
 1
 end_operator
 begin_operator
@@ -570,7 +443,7 @@ load-truck p0 t3 l30
 1
 0 0
 1
-0 6 9 17
+0 5 9 16
 1
 end_operator
 begin_operator
@@ -578,7 +451,7 @@ load-truck p0 t3 l31
 1
 0 1
 1
-0 6 10 17
+0 5 10 16
 1
 end_operator
 begin_operator
@@ -586,71 +459,39 @@ load-truck p0 t3 l32
 1
 0 2
 1
-0 6 11 17
+0 5 11 16
 1
 end_operator
 begin_operator
 unload-airplane p0 a0 l00
 1
-5 0
+4 0
 1
-0 6 12 0
+0 5 12 0
 1
 end_operator
 begin_operator
 unload-airplane p0 a0 l10
 1
-5 1
+4 1
 1
-0 6 12 3
+0 5 12 3
 1
 end_operator
 begin_operator
 unload-airplane p0 a0 l20
 1
-5 2
+4 2
 1
-0 6 12 6
+0 5 12 6
 1
 end_operator
 begin_operator
 unload-airplane p0 a0 l30
 1
-5 3
-1
-0 6 12 9
-1
-end_operator
-begin_operator
-unload-airplane p0 a1 l00
-1
-4 0
-1
-0 6 13 0
-1
-end_operator
-begin_operator
-unload-airplane p0 a1 l10
-1
-4 1
-1
-0 6 13 3
-1
-end_operator
-begin_operator
-unload-airplane p0 a1 l20
-1
-4 2
-1
-0 6 13 6
-1
-end_operator
-begin_operator
-unload-airplane p0 a1 l30
-1
 4 3
 1
-0 6 13 9
+0 5 12 9
 1
 end_operator
 begin_operator
@@ -658,7 +499,7 @@ unload-truck p0 t0 l00
 1
 3 0
 1
-0 6 14 0
+0 5 13 0
 1
 end_operator
 begin_operator
@@ -666,7 +507,7 @@ unload-truck p0 t0 l01
 1
 3 1
 1
-0 6 14 1
+0 5 13 1
 1
 end_operator
 begin_operator
@@ -674,7 +515,7 @@ unload-truck p0 t0 l02
 1
 3 2
 1
-0 6 14 2
+0 5 13 2
 1
 end_operator
 begin_operator
@@ -682,7 +523,7 @@ unload-truck p0 t1 l10
 1
 2 0
 1
-0 6 15 3
+0 5 14 3
 1
 end_operator
 begin_operator
@@ -690,7 +531,7 @@ unload-truck p0 t1 l11
 1
 2 1
 1
-0 6 15 4
+0 5 14 4
 1
 end_operator
 begin_operator
@@ -698,7 +539,7 @@ unload-truck p0 t1 l12
 1
 2 2
 1
-0 6 15 5
+0 5 14 5
 1
 end_operator
 begin_operator
@@ -706,7 +547,7 @@ unload-truck p0 t2 l20
 1
 1 0
 1
-0 6 16 6
+0 5 15 6
 1
 end_operator
 begin_operator
@@ -714,7 +555,7 @@ unload-truck p0 t2 l21
 1
 1 1
 1
-0 6 16 7
+0 5 15 7
 1
 end_operator
 begin_operator
@@ -722,7 +563,7 @@ unload-truck p0 t2 l22
 1
 1 2
 1
-0 6 16 8
+0 5 15 8
 1
 end_operator
 begin_operator
@@ -730,7 +571,7 @@ unload-truck p0 t3 l30
 1
 0 0
 1
-0 6 17 9
+0 5 16 9
 1
 end_operator
 begin_operator
@@ -738,7 +579,7 @@ unload-truck p0 t3 l31
 1
 0 1
 1
-0 6 17 10
+0 5 16 10
 1
 end_operator
 begin_operator
@@ -746,7 +587,7 @@ unload-truck p0 t3 l32
 1
 0 2
 1
-0 6 17 11
+0 5 16 11
 1
 end_operator
 0

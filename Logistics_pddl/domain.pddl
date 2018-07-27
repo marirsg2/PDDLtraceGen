@@ -12,6 +12,8 @@
  
   ; (:types )		; default object
 
+; #<class 'tuple'>: ('drive-truck_t1_l12_l10_c1', 'load-truck_p0_t1_l10', 'drive-truck_t1_l10_l11_c1', 'unload-truck_p0_t1_l11')
+
 (:action LOAD-TRUCK
   :parameters
    (?obj

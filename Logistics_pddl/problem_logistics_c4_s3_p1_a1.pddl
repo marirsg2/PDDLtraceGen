@@ -49,11 +49,11 @@
 (AIRPORT l30)
 (OBJ p0)
 (at t0 l00)
-(at t1 l12)
-(at t2 l22)
+(at t1 l11)
+(at t2 l20)
 (at t3 l31)
-(at p0 l10)
-(at a0 l10)
+(at p0 l11)
+(at a0 l30)
 )
 (:goal
 (and

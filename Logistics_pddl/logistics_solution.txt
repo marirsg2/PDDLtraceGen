@@ -5,25 +5,25 @@ INFO     translator time limit: None
 INFO     translator memory limit: None
 INFO     callstring: /usr/bin/python /home/yochan/FastDownward/builds/release32/bin/translate/translate.py ./Logistics_pddl/domain.pddl ./Logistics_pddl/problem_logistics_c4_s3_p1_a1.pddl
 Parsing...
-Parsing: [0.000s CPU, 0.002s wall-clock]
+Parsing: [0.000s CPU, 0.003s wall-clock]
 Normalizing task... [0.000s CPU, 0.000s wall-clock]
 Instantiating...
 Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
 Normalizing Datalog program...
-Normalizing Datalog program: [0.000s CPU, 0.002s wall-clock]
+Normalizing Datalog program: [0.010s CPU, 0.003s wall-clock]
 Preparing model... [0.000s CPU, 0.001s wall-clock]
 Generated 51 rules.
-Computing model... [0.010s CPU, 0.004s wall-clock]
+Computing model... [0.000s CPU, 0.005s wall-clock]
 200 relevant atoms
 277 auxiliary atoms
 477 final queue length
 534 total queue pushes
 Completing instantiation... [0.000s CPU, 0.003s wall-clock]
-Instantiating: [0.010s CPU, 0.011s wall-clock]
+Instantiating: [0.010s CPU, 0.012s wall-clock]
 Computing fact groups...
 Finding invariants...
 6 initial candidates
-Finding invariants: [0.000s CPU, 0.002s wall-clock]
+Finding invariants: [0.010s CPU, 0.002s wall-clock]
 Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
 Instantiating groups... [0.000s CPU, 0.000s wall-clock]
 Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
@@ -31,7 +31,7 @@ Choosing groups...
 0 uncovered facts
 Choosing groups: [0.000s CPU, 0.000s wall-clock]
 Building translation key... [0.000s CPU, 0.000s wall-clock]
-Computing fact groups: [0.000s CPU, 0.003s wall-clock]
+Computing fact groups: [0.010s CPU, 0.003s wall-clock]
 Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
 Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
 Building mutex information...
@@ -64,8 +64,8 @@ Translator operators: 68
 Translator axioms: 0
 Translator task size: 276
 Translator peak memory: 36112 KB
-Writing output... [0.000s CPU, 0.000s wall-clock]
-Done! [0.010s CPU, 0.020s wall-clock]
+Writing output... [0.000s CPU, 0.001s wall-clock]
+Done! [0.020s CPU, 0.021s wall-clock]
 INFO     Running search (release32).
 INFO     search input: output.sas
 INFO     search arguments: ['--heuristic', 'hff=ff()', '--heuristic', 'hcea=cea()', '--search', 'lazy_greedy([hff, hcea], preferred=[hff, hcea])']
@@ -73,78 +73,72 @@ INFO     search time limit: None
 INFO     search memory limit: None
 INFO     search executable: /home/yochan/FastDownward/builds/release32/bin/downward
 INFO     callstring: /home/yochan/FastDownward/builds/release32/bin/downward --heuristic 'hff=ff()' --heuristic 'hcea=cea()' --search 'lazy_greedy([hff, hcea], preferred=[hff, hcea])' --internal-plan-file sas_plan < output.sas
-reading input... [t=2.4295e-05s]
-done reading input! [t=0.000352309s]
-packing state variables...done! [t=0.000360479s]
+reading input... [t=2.5528e-05s]
+done reading input! [t=0.000359434s]
+packing state variables...done! [t=0.000369934s]
 Variables: 6
 FactPairs: 33
 Bytes per state: 4
-Building successor generator...done! [t=0.000431554s]
+Building successor generator...done! [t=0.000443387s]
 peak memory difference for root successor generator creation: 0 KB
-time for root successor generation creation: 2.6372e-05s
-done initializing global data [t=0.00045964s]
+time for root successor generation creation: 2.696e-05s
+done initializing global data [t=0.000477833s]
 Simplifying 68 unary operators... done! [68 unary operators]
 Initializing additive heuristic...
 Initializing FF heuristic...
 Initializing context-enhanced additive heuristic...
 Conducting lazy best first search, (real) bound = 2147483647
-New best heuristic value for cea: 10
-New best heuristic value for ff: 10
-[g=0, 1 evaluated, 0 expanded, t=0.00084303s, 4496 KB]
-Initial heuristic value for cea: 10
-Initial heuristic value for ff: 10
-New best heuristic value for cea: 9
-New best heuristic value for ff: 9
-[g=1, 5 evaluated, 4 expanded, t=0.00095821s, 4496 KB]
 New best heuristic value for cea: 8
 New best heuristic value for ff: 8
-[g=2, 6 evaluated, 5 expanded, t=0.00100291s, 4496 KB]
-New best heuristic value for cea: 7
+[g=0, 1 evaluated, 0 expanded, t=0.000867463s, 4496 KB]
+Initial heuristic value for cea: 8
+Initial heuristic value for ff: 8
 New best heuristic value for ff: 7
-[g=3, 7 evaluated, 6 expanded, t=0.00104727s, 4496 KB]
+[g=1, 3 evaluated, 2 expanded, t=0.000951284s, 4496 KB]
+New best heuristic value for cea: 7
+[g=2, 4 evaluated, 3 expanded, t=0.000999294s, 4496 KB]
 New best heuristic value for ff: 6
-[g=4, 9 evaluated, 8 expanded, t=0.0010993s, 4496 KB]
+[g=2, 5 evaluated, 4 expanded, t=0.00104345s, 4496 KB]
 New best heuristic value for cea: 6
-[g=4, 11 evaluated, 10 expanded, t=0.00114879s, 4496 KB]
+[g=3, 6 evaluated, 5 expanded, t=0.00108602s, 4496 KB]
 New best heuristic value for cea: 5
 New best heuristic value for ff: 5
-[g=5, 13 evaluated, 12 expanded, t=0.00120312s, 4496 KB]
+[g=4, 8 evaluated, 7 expanded, t=0.00114067s, 4496 KB]
 New best heuristic value for cea: 4
 New best heuristic value for ff: 4
-[g=6, 15 evaluated, 14 expanded, t=0.00125173s, 4496 KB]
+[g=5, 9 evaluated, 8 expanded, t=0.00118612s, 4496 KB]
 New best heuristic value for cea: 3
 New best heuristic value for ff: 3
-[g=7, 17 evaluated, 16 expanded, t=0.00130503s, 4496 KB]
+[g=6, 10 evaluated, 9 expanded, t=0.00122684s, 4496 KB]
 New best heuristic value for cea: 2
 New best heuristic value for ff: 2
-[g=8, 19 evaluated, 18 expanded, t=0.00135547s, 4496 KB]
+[g=7, 12 evaluated, 11 expanded, t=0.00128378s, 4496 KB]
 New best heuristic value for cea: 1
 New best heuristic value for ff: 1
-[g=9, 20 evaluated, 19 expanded, t=0.00139124s, 4496 KB]
+[g=8, 13 evaluated, 12 expanded, t=0.00132572s, 4496 KB]
 Solution found!
-Actual search time: 0.000626943s [t=0.00142481s]
-load-truck p0 t1 l11 (1)
-drive-truck t1 l11 l10 c1 (1)
-unload-truck p0 t1 l10 (1)
-fly-airplane a0 l30 l10 (1)
-load-airplane p0 a0 l10 (1)
-fly-airplane a0 l10 l00 (1)
-unload-airplane p0 a0 l00 (1)
-load-truck p0 t0 l00 (1)
-drive-truck t0 l00 l01 c0 (1)
-unload-truck p0 t0 l01 (1)
-Plan length: 10 step(s).
-Plan cost: 10
-Expanded 20 state(s).
+Actual search time: 0.000537493s [t=0.00136484s]
+drive-truck t0 l01 l00 c0 (1)
+drive-truck t0 l00 l02 c0 (1)
+load-truck p0 t0 l02 (1)
+drive-truck t0 l02 l00 c0 (1)
+unload-truck p0 t0 l00 (1)
+fly-airplane a0 l30 l00 (1)
+load-airplane p0 a0 l00 (1)
+fly-airplane a0 l00 l10 (1)
+unload-airplane p0 a0 l10 (1)
+Plan length: 9 step(s).
+Plan cost: 9
+Expanded 13 state(s).
 Reopened 0 state(s).
-Evaluated 21 state(s).
-Evaluations: 42
-Generated 242 state(s).
+Evaluated 14 state(s).
+Evaluations: 28
+Generated 153 state(s).
 Dead ends: 0 state(s).
-Number of registered states: 21
-Int hash set load factor: 21/32 = 0.65625
-Int hash set resizes: 5
-Search time: 0.000639429s
-Total time: 0.00142767s
+Number of registered states: 14
+Int hash set load factor: 14/16 = 0.875
+Int hash set resizes: 4
+Search time: 0.00055287s
+Total time: 0.00137063s
 Solution found.
 Peak memory: 4496 KB

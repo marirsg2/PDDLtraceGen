@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc2548e8-a632-4c17-9841-f8e07ed02a6d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Full State and action trace gen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logistics_pddl/FAILED propositions actions gen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logistics_pddl/problem_logistics_c2_s3_p1_a1.pddl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scratch_pad.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Generating_traces.py" beforeDir="false" afterPath="$PROJECT_DIR$/Generating_traces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logistics_pddl/domain.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/domain.pddl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Full State and action trace gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Full State and action trace gen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistics_pddl/logistics_solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/logistics_solution.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistics_pddl/problem_logistics_c4_s3_p1_a1.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/problem_logistics_c4_s3_p1_a1.pddl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logistics_pddl/problem_logistics_c4_s3_p1_a1_2.pddl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logistics_pddl/problem_logistics_c4_s3_p1_a2.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/problem_logistics_c4_s3_p1_a2.pddl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.sas" beforeDir="false" afterPath="$PROJECT_DIR$/output.sas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sas_plan" beforeDir="false" afterPath="$PROJECT_DIR$/sas_plan" afterDir="false" />
     </list>
@@ -39,8 +34,8 @@
       <file leaf-file-name="Full State and action trace gen.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Full State and action trace gen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="153" column="30" lean-forward="true" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
+            <state relative-caret-position="318">
+              <caret line="328" column="39" selection-start-line="328" selection-start-column="39" selection-end-line="328" selection-end-column="39" />
               <folding>
                 <element signature="e#370#387#0" expanded="true" />
               </folding>
@@ -51,35 +46,8 @@
       <file leaf-file-name="domain.pddl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logistics_pddl/domain.pddl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="727">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Trace_Vectorizer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Trace_Vectorizer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TRASH_Generating_traces.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TRASH_Generating_traces.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="63" selection-start-line="2" selection-start-column="63" selection-end-line="2" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FAILED propositions actions gen.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logistics_pddl/FAILED propositions actions gen.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+            <state relative-caret-position="631">
+              <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -98,6 +66,7 @@
       <find>all_solutions</find>
       <find>number_traces</find>
       <find>self.operators</find>
+      <find>convert_to_state_action_list</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,6 +82,7 @@
         <option value="$PROJECT_DIR$/Logistics_pddl/domain.pddl" />
         <option value="$PROJECT_DIR$/Logistics_pddl/FULL propositions actions gen.py" />
         <option value="$PROJECT_DIR$/Logistics_pddl/FAILED propositions actions gen.py" />
+        <option value="$PROJECT_DIR$/scratch_pad.py" />
         <option value="$PROJECT_DIR$/Full State and action trace gen.py" />
       </list>
     </option>
@@ -223,14 +193,34 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="scratch_pad" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PR_withDoc2Vec" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_pad.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.Generating_traces" />
       <item itemvalue="Python.FULL propositions actions gen" />
       <item itemvalue="Python.Full State and action trace gen" />
+      <item itemvalue="Python.scratch_pad" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Full State and action trace gen" />
+        <item itemvalue="Python.scratch_pad" />
         <item itemvalue="Python.FULL propositions actions gen" />
         <item itemvalue="Python.Generating_traces" />
       </list>
@@ -253,15 +243,15 @@
     <frame x="65" y="-4" width="3375" height="1444" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24977778" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24977778" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3285928" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3285928" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997006" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997006" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -279,32 +269,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
-          <line>255</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$PROJECT_DIR$/Logistics_pddl/FAILED propositions actions gen.py</url>
           <line>10</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
-          <line>139</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/Full State and action trace gen.py</url>
+          <line>134</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
-          <line>114</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
-          <line>153</line>
-          <option name="timeStamp" value="21" />
+          <url>file://$PROJECT_DIR$/Full State and action trace gen.py</url>
+          <line>328</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="22" />
+      <option name="time" value="34" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -489,20 +469,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logistics_pddl/problem_logistics_c4_s3_p1_a1.pddl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/pddlpy/pddl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
           <caret line="196" column="43" selection-start-line="196" selection-start-column="29" selection-end-line="196" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/279168305/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="5048" column="8" selection-start-line="5048" selection-start-column="8" selection-end-line="5048" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -537,17 +507,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/279168305/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="4917" column="8" selection-start-line="4917" selection-start-column="8" selection-end-line="4917" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch_pad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistics_pddl/problem_logistics_c4_s3_p1_a1.pddl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Logistics_pddl/domain.pddl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="631">
+          <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Full State and action trace gen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="153" column="30" lean-forward="true" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
+        <state relative-caret-position="318">
+          <caret line="328" column="39" selection-start-line="328" selection-start-column="39" selection-end-line="328" selection-end-column="39" />
           <folding>
             <element signature="e#370#387#0" expanded="true" />
           </folding>

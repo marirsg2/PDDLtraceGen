@@ -56,6 +56,45 @@ def insert_list_in_dict(input_list,dest_dict):
         current_dict[curr_prop[0]].append(curr_prop[1])
     except:
         current_dict[curr_prop[0]] = [curr_prop[1]]
+
+
+
+#==============================================================================+++
+def convert_dict_to_list(input_dict,prev_key_seq = ""):
+    """
+    :param state_dict:
+    :return:
+    """
+    ret_list = []
+    for single_key in input_dict.keys():
+        new_key_seq = prev_key_seq + "_" + single_key
+        if prev_key_seq == "":
+            new_key_seq = single_key
+        next_level = input_dict[single_key]
+        if type(next_level) == dict:
+            sub_list = convert_dict_to_list(next_level,new_key_seq)
+            ret_list += sub_list
+        elif type(next_level) == list or type(next_level) == tuple: #it ought to be a list or tuple
+            for single_entry in next_level:
+                ret_list.append(str.lower(new_key_seq + "_" + single_entry))
+        else: # it is a primitive type
+            ret_list.append(str.lower(new_key_seq+"_"+next_level))
+        #end if-else
+    #end for
+    return ret_list
+#==================================================
+def translate_by_dict(input_string,translation_dict):
+    """
+    :param single_precondition:
+    :param translation_dict:
+    :return:
+    """
+    for single_key in translation_dict:
+        if single_key in input_string:
+            input_string = input_string.replace(single_key,translation_dict[single_key])
+        #end if
+    #end for
+    return input_string
 #==================================================
 class Action:
     """
@@ -63,30 +102,69 @@ class Action:
     Has functions that when given a state dict, and parameter instantiation, will give the resultant state dict
     """
     def __init__(self, action_name , parameter_list = [], preconditions_dict = {},pos_effects_dict = {},neg_effects_dict = {}):
-        self.action_name = action_name
+        self.action_name = str.lower(action_name)
         self.parameter_list = parameter_list
-        self.preconditions_dict = preconditions_dict
-        self.pos_effects_dict= pos_effects_dict
-        self.neg_effects_dict= neg_effects_dict
+        self.preconditions_set = set(convert_dict_to_list(preconditions_dict))
+        self.pos_effects_set = set(convert_dict_to_list(pos_effects_dict))
+        self.neg_effects_set = set(convert_dict_to_list(neg_effects_dict))
 
     def get_parameter_list(self):
         return self.parameter_list
 
-    def produce_resultant_state_dict(self,parameter_instantiation,starting_state_dict):
-        pass
+    def produce_resultant_state_dict(self,action_name,starting_state_set):
+        """
+        :param parameter_instantiation:
+        :param starting_state_dict:
+        :return:
+        """
+        ret_state_set = starting_state_set
+        #parse the action name to get the parameter instantiation
+        action_parts = action_name.split("_")
+        action_name = str.lower(action_parts[0])
+        param_instantiation = action_parts[1:]
+        # build a map from parameter name to the instantiation, assume the lists are in the same order
+        translation_dict = dict(zip(self.parameter_list,param_instantiation))
+        #translate and check if the preconditions hold
+        for single_precondition in self.preconditions_set:
+            #sadly the python str translate functionality does not meet our needs
+            precondition_type = single_precondition.split("_")[0]
+            precondition_parameters = "_".join(single_precondition.split("_")[1:])
+            grounded_precondition_params = translate_by_dict(precondition_parameters,translation_dict)
+            grounded_precondition = precondition_type + "_" + grounded_precondition_params
+            if not grounded_precondition in starting_state_set:
+                return starting_state_set
+        #now convert the positive and negative effects into their grounded form
+        for single_neg_effect in self.neg_effects_set:
+            #sadly the python str translate functionality does not meet our needs
+            eff_type = single_neg_effect.split("_")[0]
+            eff_parameters = "_".join(single_neg_effect.split("_")[1:])
+            grounded_eff_params = translate_by_dict(eff_parameters,translation_dict)
+            grounded_eff = eff_type + "_" + grounded_eff_params
+            ret_state_set.remove(grounded_eff)
+        for single_pos_effect in self.pos_effects_set:
+            #sadly the python str translate functionality does not meet our needs
+            eff_type = single_pos_effect.split("_")[0]
+            eff_parameters = "_".join(single_pos_effect.split("_")[1:])
+            grounded_eff_params = translate_by_dict(eff_parameters,translation_dict)
+            grounded_eff = eff_type + "_" + grounded_eff_params
+            ret_state_set.add(grounded_eff)
+
+
+        return ret_state_set
+
 #==================================================
-class Action_parser:
+class Domain_manipulator:
     """
     Reads a domain file and produces action objects for each action in it
     """
 
     class Action_parsing_state(Enum):
-        in_limbo = 0
+        not_started = 0
         in_parameters = 1
         in_preconditions = 2
         in_effects = 3
     def __init__(self,domain_file_loc):
-        self.action_objects_list = self.parse_domain_file(domain_file_loc)
+        self.action_dict = self.parse_domain_file(domain_file_loc)
 
     def parse_domain_file(self,domain_file_loc):
         """
@@ -94,12 +172,12 @@ class Action_parser:
         :param domain_file:
         :return: list of action_objects
         """
-        ret_action_list = []
+        ret_action_dict = {}
         action_start_token  = ":action"
         parameter_start_token  = ":parameter"
         precondition_start_token  = ":precondition"
         effect_start_token  = ":effect"
-        parsing_state = self.Action_parsing_state.in_limbo
+        parsing_state = self.Action_parsing_state.not_started
         #--end class
         action_name = None
         parameter_list = []
@@ -112,12 +190,17 @@ class Action_parser:
                     #create an object with the previous one
                     if action_name != None:
                         #create a new action object
-                        ret_action_list.append(\
-                            Action(action_name , parameter_list, preconditions_dict ,pos_effects_dict,neg_effects_dict))
+                        ret_action_dict[action_name] =\
+                            Action(action_name , parameter_list, preconditions_dict ,pos_effects_dict,neg_effects_dict)
                     #--end if
                     #start of a new action
-                    parsing_state = self.Action_parsing_state.in_parameters
                     action_name = line.split(action_start_token)[-1].strip()
+                    action_name = str.lower(action_name)
+                    parameter_list = []
+                    preconditions_dict = {}
+                    pos_effects_dict = {}
+                    neg_effects_dict = {}
+                    parsing_state = self.Action_parsing_state.in_parameters
                 elif parameter_start_token in line:
                     parsing_state = self.Action_parsing_state.in_parameters
                 elif precondition_start_token in line:
@@ -150,42 +233,28 @@ class Action_parser:
                             insert_list_in_dict(proposition_parts_list,target_dict)
                 #end elif parsing_state == self.Action_parsing_state.in_effects:
             #end for loop
+            if action_name != None:
+                # create a new action object
+                ret_action_dict[action_name] = \
+                    Action(action_name, parameter_list, preconditions_dict, pos_effects_dict, neg_effects_dict)
         #end with open()
-        return ret_action_list
+        return ret_action_dict
     #---end class method
+    # =============================================================================+++
+    # =============================================================================+++
+    def apply_action(self,state_proposition_set, action_string):
+        """
+        :summary: The action name will be parsed, state propositions are strings.
+        :param state_proposition_set:
+        :param action_name:
+        :return:
+        """
+        #simply apply the action with the right name
+        action_name = action_string.split("_")[0]
+        return self.action_dict[action_name].produce_resultant_state_dict(action_string, state_proposition_set)
 #---end class
 
-
-
-
-
-#==============================================================================+++
-def convert_dict_to_list(input_dict,prev_key_seq = ""):
-    """
-    :param state_dict:
-    :return:
-    """
-    ret_list = []
-    for single_key in input_dict.keys():
-        new_key_seq = prev_key_seq + "_" + single_key
-        next_level = input_dict[single_key]
-        if type(next_level) == dict:
-            sub_list = convert_dict_to_list(next_level,new_key_seq)
-            ret_list += sub_list
-        elif type(next_level) == list or type(next_level) == tuple: #it ought to be a list or tuple
-            for single_entry in next_level:
-                ret_list.append(new_key_seq + "_" + single_entry)
-        else: # it is a primitive type
-            ret_list.append(new_key_seq+"_"+next_level)
-        #end if-else
-    #end for
-    return ret_list
-
-
-
-
-
-#==============================================================================+++
+#=============================================================================+++
 def convert_to_state_action_list(solution_list):
     """
     :summary : Get the start state from the problem file. Parse each action, and apply it to the start state.
@@ -201,23 +270,25 @@ def convert_to_state_action_list(solution_list):
     state_dict = {}
     for single_prop in init_state_prop_set:
         curr_prop = single_prop.predicate
+        curr_prop = [str.lower(x) for x in curr_prop]
         insert_list_in_dict(curr_prop,state_dict)
     #---end for loop making the state dict
     #convert the state dict into a list of propositions
     curr_state = convert_dict_to_list(state_dict)
-    s_a_trace.append(curr_state)
-
-    #parse the action, and determine the precondition and effects
+    s_a_trace.append(tuple(curr_state))
     for single_action in solution_list:
-        pass
-
+        curr_state = domain_parser_obj.apply_action(set(curr_state),single_action)
+        curr_state = list(curr_state) #the order of propositions does not matter. They all connect to each other
+        s_a_trace.append(single_action)
+        s_a_trace.append(tuple(curr_state))
+    #---end for loop
 
     return s_a_trace
 
 
 
 # ==============================================================================+++
-action_parser_obj = Action_parser(domain_file_loc)
+domain_parser_obj = Domain_manipulator(domain_file_loc)
 all_solutions = set()
 counter = 0
 while len(all_solutions) < number_traces:
@@ -254,6 +325,7 @@ while len(all_solutions) < number_traces:
         solution_list = tuple(solution_list)
         if solution_list not in all_solutions:
             s_a_trace = convert_to_state_action_list(solution_list)
+            s_a_trace = tuple(s_a_trace)
             all_solutions.add(s_a_trace)
 #---end outer for
 

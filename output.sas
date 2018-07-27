@@ -70,16 +70,16 @@ Atom in(p0, t3)
 end_variable
 0
 begin_state
+2
 1
-0
 1
-0
+1
 3
-4
+2
 end_state
 begin_goal
 1
-5 1
+5 3
 end_goal
 68
 begin_operator

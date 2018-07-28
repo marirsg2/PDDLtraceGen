@@ -10,6 +10,10 @@ Install pddlpy to parse the initial state
 """
 
 
+#FOR 4 CITIES, 3 LOC, 1 AIRPLANE. tHERE ARE 3888 POSSIBLE initial starting cases. with 12 possible goal locations that
+#makes 46k traces. Factor in ordering actions, and you have ~120k traces
+
+
 import subprocess
 import os
 import pickle
@@ -17,7 +21,7 @@ import pddlpy
 import copy
 from enum import Enum
 
-number_traces = 10
+number_traces = 32000
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
@@ -275,12 +279,12 @@ def convert_to_state_action_list(solution_list):
     #---end for loop making the state dict
     #convert the state dict into a list of propositions
     curr_state = convert_dict_to_list(state_dict)
-    s_a_trace.append(tuple(curr_state))
+    prev_state = curr_state
     for single_action in solution_list:
         curr_state = domain_parser_obj.apply_action(set(curr_state),single_action)
-        curr_state = list(curr_state) #the order of propositions does not matter. They all connect to each other
-        s_a_trace.append(single_action)
-        s_a_trace.append(tuple(curr_state))
+        s_a_trace.append(tuple(list(prev_state) + [single_action]))#the order of propositions does not matter. They all connect to each other
+        s_a_trace.append(tuple(list(curr_state) + [single_action]))#the order of propositions does not matter. They all connect to each other
+        prev_state = curr_state
     #---end for loop
 
     return s_a_trace
@@ -290,9 +294,18 @@ def convert_to_state_action_list(solution_list):
 # ==============================================================================+++
 domain_parser_obj = Domain_manipulator(domain_file_loc)
 all_solutions = set()
+
+# with open(pickle_dest_file, "rb") as source_file:
+#     all_solutions = pickle.load(source_file)
+
+
+# action_solutions = set()
 counter = 0
 while len(all_solutions) < number_traces:
     counter +=1
+    if counter%10 == 0:
+        print("At iteration", counter)
+        print("Number solutions", len(all_solutions))
     if counter%100 == 0:
         print("At iteration",counter)
         print("Number solutions",len(all_solutions))
@@ -323,19 +336,21 @@ while len(all_solutions) < number_traces:
     # print(solution_list)
     if len(solution_list)> 1: #need atleast two actions to have informational value
         solution_list = tuple(solution_list)
+        # action_solutions.add(solution_list)
+        # print (len(action_solutions))
         if solution_list not in all_solutions:
             s_a_trace = convert_to_state_action_list(solution_list)
             s_a_trace = tuple(s_a_trace)
             all_solutions.add(s_a_trace)
 #---end outer for
 
+with open(pickle_dest_file, "wb") as destination:
+    pickle.dump(all_solutions, destination)
 
-
-#testing code
-# with open(pickle_dest_file, "rb") as source_file:
-#     a = pickle.load(source_file)
-#     print(a)
-
-
+# testing code
+with open(pickle_dest_file, "rb") as source_file:
+    a = pickle.load(source_file)
+    for single in a:
+        print(single)
 
 

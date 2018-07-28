@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc2548e8-a632-4c17-9841-f8e07ed02a6d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/scratch_pad.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Full State and action trace gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Full State and action trace gen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistics_pddl/logistics_solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/logistics_solution.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistics_pddl/problem_logistics_c4_s3_p1_a1.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/problem_logistics_c4_s3_p1_a1.pddl" afterDir="false" />
@@ -23,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/Generating_traces.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="456">
-              <caret line="54" column="33" lean-forward="true" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+              <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
               <folding>
                 <element signature="e#181#198#0" expanded="true" />
               </folding>
@@ -34,8 +32,8 @@
       <file leaf-file-name="Full State and action trace gen.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Full State and action trace gen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="328" column="39" selection-start-line="328" selection-start-column="39" selection-end-line="328" selection-end-column="39" />
+            <state relative-caret-position="606">
+              <caret line="286" column="31" selection-start-line="286" selection-start-column="31" selection-end-line="286" selection-end-column="31" />
               <folding>
                 <element signature="e#370#387#0" expanded="true" />
               </folding>
@@ -47,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/Logistics_pddl/domain.pddl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="631">
-              <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+              <caret line="84" column="1" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -246,12 +244,12 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24977778" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3285928" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3285928" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997006" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997006" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -275,16 +273,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Full State and action trace gen.py</url>
-          <line>134</line>
+          <line>138</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Full State and action trace gen.py</url>
-          <line>328</line>
-          <option name="timeStamp" value="33" />
+          <line>342</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="34" />
+      <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -479,7 +477,7 @@
     <entry file="file://$PROJECT_DIR$/Generating_traces.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
-          <caret line="54" column="33" lean-forward="true" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
           <folding>
             <element signature="e#181#198#0" expanded="true" />
           </folding>
@@ -534,14 +532,14 @@
     <entry file="file://$PROJECT_DIR$/Logistics_pddl/domain.pddl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="631">
-          <caret line="84" column="1" lean-forward="true" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
+          <caret line="84" column="1" selection-start-line="84" selection-start-column="1" selection-end-line="84" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Full State and action trace gen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="328" column="39" selection-start-line="328" selection-start-column="39" selection-end-line="328" selection-end-column="39" />
+        <state relative-caret-position="606">
+          <caret line="286" column="31" selection-start-line="286" selection-start-column="31" selection-end-line="286" selection-end-column="31" />
           <folding>
             <element signature="e#370#387#0" expanded="true" />
           </folding>

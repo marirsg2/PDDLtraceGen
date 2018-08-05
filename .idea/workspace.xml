@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc2548e8-a632-4c17-9841-f8e07ed02a6d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Full State and action trace gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Full State and action trace gen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistics_pddl/logistics_solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/logistics_solution.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistics_pddl/problem_logistics_c4_s3_p1_a1.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/problem_logistics_c4_s3_p1_a1.pddl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.sas" beforeDir="false" afterPath="$PROJECT_DIR$/output.sas" afterDir="false" />
@@ -154,6 +155,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="Full State and action trace gen" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PR_withDoc2Vec" />
@@ -172,6 +176,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="Generating_traces" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PR_withDoc2Vec" />
@@ -190,6 +197,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="scratch_pad" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PR_withDoc2Vec" />
@@ -208,6 +218,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.Generating_traces" />
@@ -244,7 +257,7 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24977778" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3285928" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3285928" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

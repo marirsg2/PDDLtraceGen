@@ -11,7 +11,7 @@ Install pddlpy to parse the initial state
 
 
 #FOR 4 CITIES, 3 LOC, 1 AIRPLANE. tHERE ARE 3888 POSSIBLE initial starting cases. with 12 possible goal locations that
-#makes 46k traces. Factor in ordering actions, and you have ~120k traces
+#makes 46k traces. Factor in ordering actions, and you have ~120k traces.
 
 
 import subprocess

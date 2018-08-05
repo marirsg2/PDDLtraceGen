@@ -1,12 +1,21 @@
 
 
 """
-Given a  problem and domain file, runs fast downward to find the the solution, and then ...
-To generate traces containing a sequence of ; the propositions of a state first in a list, followed by a grounded action,
-and then the resultant state.
+This code first generates a logistics pddl problem file using a script generator.
+It then runs fast downward to find the the solution, and you have to give the problem and domain file
+The traces are sequences of list. Each tuple has the propositions of a state first , and the last entry is the action.
+For each action there are two entries in the list. A "before/precondition state" with the action, and "After/Effect state" with the same action.
+The action is always the last entry
 
-Make sure to setup the locations, especially of fastdownward correctly
-Install pddlpy to parse the initial state
+INSTRUCTIONS:
+1) Install fastdownward planner
+2) Install pddlpy  (used to parse the initial state from the problem file)
+3) Make sure to enter the location of fastdownward into the variables in the code correctly.
+    "logisitics_gen_exec"
+
+NOTE: In the "Logistics_pddl" folder is an executable script called logistics that generates the problem.pddl files based
+on how many cities, locations and packages you want.
+
 """
 
 
@@ -21,22 +30,22 @@ import pddlpy
 import copy
 from enum import Enum
 
-number_traces = 32000
+number_traces =10
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
 logisitics_gen_exec = "./Logistics_pddl/logistics "
 #code to generate a random problem space
-logistics_config = ["-c 4", "-s 3","-p 1", "-a 1"]
+logistics_config = ["-c 4", "-s 3","-p 1", "-a 1"]# ["-c 4", "-s 3","-p 1", "-a 1"] means 4 cities, 3 locations in each city, 1 package, and 1 airplane
 dest_name_suffix = "_".join(logistics_config).replace("-","").replace(" ","")
-dest_file_name = "./Logistics_pddl/problem_logistics_"+ dest_name_suffix+".pddl"
+dest_problem_file_name = "./Logistics_pddl/problem_logistics_" + dest_name_suffix + ".pddl"#this is where the logistics problem file generator stores the problem.pddl file
 #---for FD
 fast_downward_exec_loc = "~/FastDownward/fast-downward.py"
 fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --search \"lazy_greedy([hff, hcea], preferred=[hff, hcea])\""
 domain_file_loc = "./Logistics_pddl/domain.pddl"
-problem_file_loc = dest_file_name
-solution_file_loc = "./Logistics_pddl/logistics_solution.txt"
-pickle_dest_file = str(number_traces)+dest_name_suffix+"_logistics_dataset.p"
+problem_file_loc = dest_problem_file_name
+solution_file_loc = "./Logistics_pddl/logistics_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
+pickle_dest_file = str(number_traces)+dest_name_suffix+"_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
 
 #==============================================================================+++
 def insert_list_in_dict(input_list,dest_dict):
@@ -313,7 +322,7 @@ while len(all_solutions) < number_traces:
             pickle.dump(all_solutions, destination)
     #---create problem files
     command = logisitics_gen_exec + " ".join(logistics_config)
-    os.system(command+" > " + dest_file_name)
+    os.system(command +" > " + dest_problem_file_name)
     #---NOW we have the problem files ,lets generate the solutions with fast downward
     fd_command = fast_downward_exec_loc + " " + domain_file_loc + " " + problem_file_loc + " " +fd_heuristic_config
     os.system(fd_command+" > " + solution_file_loc)

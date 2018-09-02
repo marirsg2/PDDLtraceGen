@@ -32,13 +32,13 @@ import pddlpy
 import copy
 from enum import Enum
 
-number_traces =10
+number_traces = 96000
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
 logisitics_gen_exec = "./Logistics_pddl/logistics "
 #code to generate a random problem space
-logistics_config = ["-c 4", "-s 3","-p 1", "-a 1"]# ["-c 4", "-s 3","-p 1", "-a 1"] means 4 cities, 3 locations in each city, 1 package, and 1 airplane
+logistics_config = ["-c 10", "-s 4","-p 3", "-a 2"]# ["-c 4", "-s 3","-p 1", "-a 1"] means 4 cities, 3 locations in each city, 1 package, and 1 airplane
 dest_name_suffix = "_".join(logistics_config).replace("-","").replace(" ","")
 dest_problem_file_name = "./Logistics_pddl/problem_logistics_" + dest_name_suffix + ".pddl"#this is where the logistics problem file generator stores the problem.pddl file
 #---for FD
@@ -48,7 +48,6 @@ domain_file_loc = "./Logistics_pddl/domain.pddl"
 problem_file_loc = dest_problem_file_name
 solution_file_loc = "./Logistics_pddl/logistics_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
 pickle_dest_file = str(number_traces)+dest_name_suffix+"_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
-# pickle_dest_file = "32000c4_s3_p1_a1_logistics_dataset.p"
 
 #==============================================================================+++
 def insert_list_in_dict(input_list,dest_dict):
@@ -294,8 +293,8 @@ def convert_to_state_action_list(solution_list):
     prev_state = curr_state
     for single_action in solution_list:
         curr_state = domain_parser_obj.apply_action(set(curr_state),single_action)
-        s_a_trace.append(tuple(list(prev_state) + [single_action]))#the order of propositions does not matter. They all connect to each other
-        s_a_trace.append(tuple(list(curr_state) + [single_action]))#the order of propositions does not matter. They all connect to each other
+        s_a_trace.append(tuple(list(prev_state) + ["ACTION_"+single_action]))#the order of propositions does not matter. They all connect to each other
+        s_a_trace.append(tuple(list(curr_state) + ["ACTION_"+single_action]))#the order of propositions does not matter. They all connect to each other
         prev_state = curr_state
     #---end for loop
 
@@ -318,7 +317,7 @@ while len(all_solutions) < number_traces:
     if counter%10 == 0:
         print("At iteration", counter)
         print("Number solutions", len(all_solutions))
-    if counter%100 == 0:
+    if counter%1000 == 0:
         print("At iteration",counter)
         print("Number solutions",len(all_solutions))
         with open(pickle_dest_file, "wb") as destination:
@@ -347,13 +346,9 @@ while len(all_solutions) < number_traces:
     #---end with
     # print(solution_list)
     if len(solution_list)> 1: #need atleast two actions to have informational value
-        solution_list = tuple(solution_list)
-        # action_solutions.add(solution_list)
-        # print (len(action_solutions))
-        if solution_list not in all_solutions:
-            s_a_trace = convert_to_state_action_list(solution_list)
-            s_a_trace = tuple(s_a_trace)
-            all_solutions.add(s_a_trace)
+        s_a_trace = convert_to_state_action_list(solution_list)
+        s_a_trace = tuple(s_a_trace)
+        all_solutions.add(s_a_trace)
 #---end outer for
 
 with open(pickle_dest_file, "wb") as destination:
@@ -364,6 +359,5 @@ with open(pickle_dest_file, "rb") as source_file:
     a = pickle.load(source_file)
     for single in a:
         print(single)
-        print("===========================================================================")
 
 

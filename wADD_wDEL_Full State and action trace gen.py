@@ -32,7 +32,7 @@ import pddlpy
 import copy
 from enum import Enum
 
-number_traces =10
+number_traces = 2000
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
@@ -47,7 +47,7 @@ fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --sea
 domain_file_loc = "./Logistics_pddl/domain.pddl"
 problem_file_loc = dest_problem_file_name
 solution_file_loc = "./Logistics_pddl/logistics_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
-pickle_dest_file = str(number_traces)+dest_name_suffix+"_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
+pickle_dest_file = "wADD_wDEL_" + str(number_traces)+dest_name_suffix+"_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
 # pickle_dest_file = "32000c4_s3_p1_a1_logistics_dataset.p"
 
 #==============================================================================+++
@@ -290,12 +290,18 @@ def convert_to_state_action_list(solution_list):
         insert_list_in_dict(curr_prop,state_dict)
     #---end for loop making the state dict
     #convert the state dict into a list of propositions
-    curr_state = convert_dict_to_list(state_dict)
+    curr_state = set(convert_dict_to_list(state_dict))
     prev_state = curr_state
     for single_action in solution_list:
         curr_state = domain_parser_obj.apply_action(set(curr_state),single_action)
         s_a_trace.append(tuple(list(prev_state) + [single_action]))#the order of propositions does not matter. They all connect to each other
-        s_a_trace.append(tuple(list(curr_state) + [single_action]))#the order of propositions does not matter. They all connect to each other
+        delete_propositions = []
+        added_propositions = []
+        for single_delete in prev_state.difference(curr_state):
+            delete_propositions.append("DEL_"+single_delete)
+        for single_add in curr_state.difference(prev_state):
+            added_propositions.append("ADD_"+single_add)
+        s_a_trace.append(tuple( list(curr_state) + delete_propositions +added_propositions+ [single_action]))#the order of propositions does not matter. They all connect to each other
         prev_state = curr_state
     #---end for loop
 
@@ -360,10 +366,10 @@ with open(pickle_dest_file, "wb") as destination:
     pickle.dump(all_solutions, destination)
 
 # testing code
-with open(pickle_dest_file, "rb") as source_file:
-    a = pickle.load(source_file)
-    for single in a:
-        print(single)
-        print("===========================================================================")
+#f with open(pickle_dest_file, "rb") as source_file:
+#     a = pickle.load(source_file)
+#     for single in a:
+#         print(single)
+#         print("===========================================================================")
 
 

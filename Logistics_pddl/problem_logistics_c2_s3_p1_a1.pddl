@@ -30,14 +30,14 @@
 (AIRPORT l00)
 (AIRPORT l10)
 (OBJ p0)
-(at t0 l00)
-(at t1 l12)
-(at p0 l00)
+(at t0 l02)
+(at t1 l11)
+(at p0 l11)
 (at a0 l00)
 )
 (:goal
 (and
-(at p0 l10)
+(at p0 l01)
 )
 )
 )

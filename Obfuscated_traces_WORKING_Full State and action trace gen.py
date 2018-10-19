@@ -32,13 +32,13 @@ import pddlpy
 import copy
 from enum import Enum
 
-number_traces = 10
+number_traces = 96000
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
 logisitics_gen_exec = "./Logistics_pddl/logistics "
 #code to generate a random problem space
-logistics_config = ["-c 8", "-s 4","-p 1", "-a 4"]# ["-c 4", "-s 3","-p 1", "-a 1"] means 4 cities, 3 locations in each city, 1 package, and 1 airplane
+logistics_config = ["-c 10", "-s 4","-p 3", "-a 2"]# ["-c 4", "-s 3","-p 1", "-a 1"] means 4 cities, 3 locations in each city, 1 package, and 1 airplane
 dest_name_suffix = "_".join(logistics_config).replace("-","").replace(" ","")
 dest_problem_file_name = "./Logistics_pddl/problem_logistics_" + dest_name_suffix + ".pddl"#this is where the logistics problem file generator stores the problem.pddl file
 #---for FD

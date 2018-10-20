@@ -3,11 +3,19 @@
 
 (define (problem logistics-c8-s4-p1-a4)
 (:domain logistics-strips)
-(:objects a0 a1 a2 a3 
-          c0 c1 c2 c3 c4 c5 c6 c7 
-          t0 t1 t2 t3 t4 t5 t6 t7 
-          l00 l01 l02 l03 l10 l11 l12 l13 l20 l21 l22 l23 l30 l31 l32 l33 l40 l41 l42 l43 l50 l51 l52 l53 l60 l61 l62 l63 l70 l71 l72 l73 
-          p0 
+(:objects a0 a1 a2 a3 - AIRPLANE
+          c0 c1 c2 c3 c4 c5 c6 c7 - CITY
+          t0 t1 t2 t3 t4 t5 t6 t7 - TRUCK
+          l00 l01 l02 l03 l10 l11 l12 l13 l20 l21 l22 l23 l30 l31 l32 l33 l40 l41 l42 l43 l50 l51 l52 l53 l60 l61 l62 l63 l70 l71 l72 l73 - LOCATION
+          p0 - OBJ
+          a0 - AIRPLANE_ACCESS0
+          a1 - AIRPLANE_ACCESS1
+          a2 - AIRPLANE_ACCESS2
+          a3 - AIRPLANE_ACCESS3
+          l00 l10 l20 l30 - AIRPORT_ACCESS0
+                  l43 l33 - AIRPORT_ACCESS1
+              l40 l50 l60 - AIRPORT_ACCESS2
+              l70 l53 l63 - AIRPORT_ACCESS3
 )
 ; The major modification is that the airplanes are both regular airplanes (for loading and unloading) as well as special airplanes for accessing specific
 ; subset of cities. This separates the cities.
@@ -125,15 +133,15 @@
 (at t5 l50)
 (at t6 l60)
 (at t7 l70)
-(at p0 l13)
+(at p0 l02)
 (at a0 l10)
-(at a1 l30)
+(at a1 l33)
 (at a2 l60)
-(at a3 l10)
+(at a3 l63)
 )
 (:goal
 (and
-(at p0 l70)
+(at p0 l73)
 )
 )
 )

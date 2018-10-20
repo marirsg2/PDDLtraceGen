@@ -3,17 +3,33 @@
 
 (define (problem logistics-c8-s4-p1-a4)
 (:domain logistics-strips)
-(:objects a0 a1 a2 a3 
-          c0 c1 c2 c3 c4 c5 c6 c7 
-          t0 t1 t2 t3 t4 t5 t6 t7 
-          l00 l01 l02 l03 l10 l11 l12 l13 l20 l21 l22 l23 l30 l31 l32 l33 l40 l41 l42 l43 l50 l51 l52 l53 l60 l61 l62 l63 l70 l71 l72 l73 
-          p0 
+(:objects
+          c0 c1 c2 c3 c4 c5 c6 c7 - tCITY
+          t0 t1 t2 t3 t4 t5 t6 t7 - tTRUCK
+          l01 l02 l03 l11 l12 l13 l21 l22 l23 l31 l32 l41 l42 l51 l52 l61 l62 l71 l72 l73 - tLOCATION
+          p0 - tOBJ
+          a0 - tAIRPLANE_ACCESS0
+          a1 - tAIRPLANE_ACCESS1
+          a2 - tAIRPLANE_ACCESS2
+          a3 - tAIRPLANE_ACCESS3
+          l00 l10 l20 l30 - tAIRPORT_ACCESS0
+                  l43 l33 - tAIRPORT_ACCESS1
+              l40 l50 l60 - tAIRPORT_ACCESS2
+              l70 l53 l63 - tAIRPORT_ACCESS3
 )
+; The major modification is that the airplanes are both regular airplanes (for loading and unloading) as well as special airplanes for accessing specific
+; subset of cities. This separates the cities.
+; a0 a1 a2 a3 - tAIRPLANE
+
 (:init
 (AIRPLANE a0)
 (AIRPLANE a1)
 (AIRPLANE a2)
 (AIRPLANE a3)
+(AIRPLANE_ACCESS0 a0)
+(AIRPLANE_ACCESS1 a1)
+(AIRPLANE_ACCESS2 a2)
+(AIRPLANE_ACCESS3 a3)
 (CITY c0)
 (CITY c1)
 (CITY c2)
@@ -94,32 +110,39 @@
 (in-city  l72 c7)
 (LOCATION l73)
 (in-city  l73 c7)
-(AIRPORT l00)
-(AIRPORT l10)
-(AIRPORT l20)
-(AIRPORT l30)
-(AIRPORT l40)
-(AIRPORT l50)
-(AIRPORT l60)
-(AIRPORT l70)
+(AIRPORT_ACCESS0 l00)
+(AIRPORT_ACCESS0 l10)
+(AIRPORT_ACCESS0 l20)
+(AIRPORT_ACCESS0 l30)
+
+(AIRPORT_ACCESS1 l33)
+(AIRPORT_ACCESS1 l43)
+
+(AIRPORT_ACCESS2 l40)
+(AIRPORT_ACCESS2 l50)
+(AIRPORT_ACCESS2 l60)
+
+(AIRPORT_ACCESS3 l53)
+(AIRPORT_ACCESS3 l63)
+(AIRPORT_ACCESS3 l70)
 (OBJ p0)
 (at t0 l01)
-(at t1 l13)
+(at t1 l11)
 (at t2 l22)
-(at t3 l33)
+(at t3 l31)
 (at t4 l42)
-(at t5 l53)
-(at t6 l61)
-(at t7 l73)
-(at p0 l41)
-(at a0 l50)
-(at a1 l40)
-(at a2 l50)
-(at a3 l00)
+(at t5 l50)
+(at t6 l60)
+(at t7 l70)
+(at p0 l02)
+(at a0 l10)
+(at a1 l33)
+(at a2 l60)
+(at a3 l63)
 )
 (:goal
 (and
-(at p0 l12)
+(at p0 l73)
 )
 )
 )

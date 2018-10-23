@@ -8,14 +8,14 @@
           t0 t1 t2 t3 t4 t5 t6 t7 - tTRUCK
           l01 l02 l03 l11 l12 l13 l21 l22 l23 l31 l32 l41 l42 l51 l52 l61 l62 l71 l72 l73 - tLOCATION
           p0 - tOBJ
-          a0 - tAIRPLANEACCESS0
-          a1 - tAIRPLANEACCESS1
-          a2 - tAIRPLANEACCESS2
-          a3 - tAIRPLANEACCESS3
-          l00 l10 l20 l30 - tAIRPORTACCESS0
-                  l43 l33 - tAIRPORTACCESS1
-              l40 l50 l60 - tAIRPORTACCESS2
-              l70 l53 l63 - tAIRPORTACCESS3
+          a0 - tAIRPLANE_ACCESS0
+          a1 - tAIRPLANE_ACCESS1
+          a2 - tAIRPLANE_ACCESS2
+          a3 - tAIRPLANE_ACCESS3
+          l00 l10 l20 l30 - tAIRPORT_ACCESS0
+                  l43 l33 - tAIRPORT_ACCESS1
+              l40 l50 l60 - tAIRPORT_ACCESS2
+              l70 l53 l63 - tAIRPORT_ACCESS3
 )
 ; The major modification is that the airplanes are both regular airplanes (for loading and unloading) as well as special airplanes for accessing specific
 ; subset of cities. This separates the cities.
@@ -26,10 +26,10 @@
 (AIRPLANE a1)
 (AIRPLANE a2)
 (AIRPLANE a3)
-(AIRPLANEACCESS0 a0)
-(AIRPLANEACCESS1 a1)
-(AIRPLANEACCESS2 a2)
-(AIRPLANEACCESS3 a3)
+(AIRPLANE_ACCESS0 a0)
+(AIRPLANE_ACCESS1 a1)
+(AIRPLANE_ACCESS2 a2)
+(AIRPLANE_ACCESS3 a3)
 (CITY c0)
 (CITY c1)
 (CITY c2)
@@ -110,21 +110,21 @@
 (in-city  l72 c7)
 (LOCATION l73)
 (in-city  l73 c7)
-(AIRPORTACCESS0 l00)
-(AIRPORTACCESS0 l10)
-(AIRPORTACCESS0 l20)
-(AIRPORTACCESS0 l30)
+(AIRPORT_ACCESS0 l00)
+(AIRPORT_ACCESS0 l10)
+(AIRPORT_ACCESS0 l20)
+(AIRPORT_ACCESS0 l30)
 
-(AIRPORTACCESS1 l33)
-(AIRPORTACCESS1 l43)
+(AIRPORT_ACCESS1 l33)
+(AIRPORT_ACCESS1 l43)
 
-(AIRPORTACCESS2 l40)
-(AIRPORTACCESS2 l50)
-(AIRPORTACCESS2 l60)
+(AIRPORT_ACCESS2 l40)
+(AIRPORT_ACCESS2 l50)
+(AIRPORT_ACCESS2 l60)
 
-(AIRPORTACCESS3 l53)
-(AIRPORTACCESS3 l63)
-(AIRPORTACCESS3 l70)
+(AIRPORT_ACCESS3 l53)
+(AIRPORT_ACCESS3 l63)
+(AIRPORT_ACCESS3 l70)
 (OBJ p0)
 (in t0 l01)
 (in t1 l11)

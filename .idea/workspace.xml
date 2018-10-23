@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc2548e8-a632-4c17-9841-f8e07ed02a6d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/GroundedActionGenerator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logistics_pddl/bkup_TYPED_MODlogisticsDomain.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logistics_pddl/bkup_TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logistics_pddl/copy_TYPED_MODlogisticsDomain.pddl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logistics_pddl/copy_TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logistics_pddl/MODlogisticsDomain.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/MODlogisticsDomain.pddl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logistics_pddl/problem_MODlogistics_c8_s4_p1_a4.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/problem_MODlogistics_c8_s4_p1_a4.pddl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logistics_pddl/problem_logistics_c8_s4_p1_a4.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/problem_logistics_c8_s4_p1_a4.pddl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODlogisticsDomain.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem_MODlogistics_c8_s4_p1_a4.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroundedActionGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/GroundedActionGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logistics_pddl/sas_plan" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/sas_plan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scratch_pad.py" beforeDir="false" afterPath="$PROJECT_DIR$/scratch_pad.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,28 +30,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="6" />
-          <entry key="pddl" value="1051" />
-          <entry key="py" value="3103" />
+          <entry key="Python Console" value="79" />
+          <entry key="dummy" value="6" />
+          <entry key="pddl" value="1164" />
+          <entry key="py" value="6883" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="1051" />
-          <entry key="Python" value="3109" />
+          <entry key="PLAIN_TEXT" value="1170" />
+          <entry key="Python" value="6962" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="logistics" value="2" />
-          <entry key="pddl" value="16" />
-          <entry key="py" value="6" />
+          <entry key="pddl" value="18" />
+          <entry key="py" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="6" />
+          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="Python" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -61,65 +61,38 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WORKING_Full State and action trace gen.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="325" column="47" selection-start-line="325" selection-start-column="47" selection-end-line="325" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logistics_pddl/problem_MODlogistics_c8_s4_p1_a4.pddl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="715">
-              <caret line="62" column="10" selection-start-line="62" selection-start-column="10" selection-end-line="62" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logistics_pddl/MODlogisticsDomain.pddl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+            <state relative-caret-position="384">
+              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GroundedActionGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+            <state relative-caret-position="738">
+              <caret line="318" lean-forward="true" selection-start-line="318" selection-end-line="318" />
+              <folding>
+                <marker date="1540272948922" expanded="true" signature="12480:13198" ph="..." />
+                <marker date="1540272948922" expanded="true" signature="13912:15180" ph="..." />
+                <marker date="1540272948922" expanded="true" signature="17421:20215" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logistics_pddl/bkup_TYPED_MODlogisticsDomain.pddl">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logistics_pddl/bkup_TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GroundedActionGenerator.py">
+        <entry file="file://$PROJECT_DIR$/scratch_pad.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
+            <state relative-caret-position="384">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -153,12 +126,28 @@
       <find>preconditions</find>
       <find>in</find>
       <find>l40</find>
+      <find>in_effects</find>
+      <find>action_start_token</find>
+      <find>lower(</find>
+      <find>at</find>
+      <find>at ?</find>
+      <find>in ?</find>
+      <find>parameter_name_type_dict</find>
+      <find>(at ?</find>
+      <find>type</find>
+      <find>(at</find>
+      <find>AIRPORT_ACCESS</find>
+      <find>AIRPLANE_ACCESS</find>
     </findStrings>
     <replaceStrings>
       <replace>AIRPORT_ACCESS3</replace>
       <replace>AIRPORT_ACCESS0</replace>
       <replace>CC</replace>
       <replace>fluents</replace>
+      <replace>(in ?</replace>
+      <replace>(in</replace>
+      <replace>AIRPORTACCESS</replace>
+      <replace>AIRPLANEACCESS</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -174,7 +163,6 @@
         <option value="$PROJECT_DIR$/Logistics_pddl/domain.pddl" />
         <option value="$PROJECT_DIR$/Logistics_pddl/FULL propositions actions gen.py" />
         <option value="$PROJECT_DIR$/Logistics_pddl/FAILED propositions actions gen.py" />
-        <option value="$PROJECT_DIR$/scratch_pad.py" />
         <option value="$PROJECT_DIR$/Full State and action trace gen.py" />
         <option value="$PROJECT_DIR$/wADD_wDEL_Full State and action trace gen.py" />
         <option value="$PROJECT_DIR$/wDEL_Full State and action trace gen.py" />
@@ -182,10 +170,11 @@
         <option value="$PROJECT_DIR$/WORKING_Full State and action trace gen.py" />
         <option value="$PROJECT_DIR$/MODlogisticsDomain.pddl" />
         <option value="$PROJECT_DIR$/Logistics_pddl/problem_MODlogistics_c8_s4_p1_a4.pddl" />
-        <option value="$PROJECT_DIR$/GroundedActionGenerator.py" />
         <option value="$PROJECT_DIR$/Logistics_pddl/MODlogisticsDomain.pddl" />
         <option value="$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl" />
         <option value="$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl" />
+        <option value="$PROJECT_DIR$/scratch_pad.py" />
+        <option value="$PROJECT_DIR$/GroundedActionGenerator.py" />
       </list>
     </option>
   </component>
@@ -258,28 +247,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.GroundedActionGenerator">
-    <configuration name="Full State and action trace gen" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PR_withDoc2Vec" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Full State and action trace gen.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.scratch_pad">
     <configuration name="GroundedActionGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PR_withDoc2Vec" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -314,6 +282,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WORKING_Full State and action trace gen.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_pad" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PR_withDoc2Vec" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch_pad.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -365,19 +354,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Full State and action trace gen" />
       <item itemvalue="Python.wDEL_Full State and action trace gen" />
       <item itemvalue="Python.wADD_wDEL_Full State and action trace gen" />
       <item itemvalue="Python.WORKING_Full State and action trace gen" />
       <item itemvalue="Python.GroundedActionGenerator" />
+      <item itemvalue="Python.scratch_pad" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.scratch_pad" />
         <item itemvalue="Python.GroundedActionGenerator" />
         <item itemvalue="Python.WORKING_Full State and action trace gen" />
         <item itemvalue="Python.wDEL_Full State and action trace gen" />
         <item itemvalue="Python.wADD_wDEL_Full State and action trace gen" />
-        <item itemvalue="Python.Full State and action trace gen" />
       </list>
     </recent_temporary>
   </component>
@@ -407,13 +396,13 @@
     <frame x="65" y="-4" width="3375" height="1444" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.24970166" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.24970166" />
       <window_info id="Structure" order="1" sideWeight="0.5011338" side_tool="true" weight="0.24970166" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32826748" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39969605" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32826748" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39969605" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
@@ -454,7 +443,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/GroundedActionGenerator.py</url>
-          <line>293</line>
+          <line>447</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
@@ -514,20 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="4917" column="8" selection-start-line="4917" selection-start-column="8" selection-end-line="4917" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scratch_pad.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -617,17 +592,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WORKING_Full State and action trace gen.py">
+    <entry file="file://$PROJECT_DIR$/MODlogisticsDomain.pddl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="325" column="47" selection-start-line="325" selection-start-column="47" selection-end-line="325" selection-end-column="47" />
+        <state relative-caret-position="619">
+          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GroundedActionGenerator.py">
+    <entry file="file://$PROJECT_DIR$/Logistics_pddl/bkup_TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistics_pddl/bkup_TYPED_MODlogisticsDomain.pddl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistics_pddl/MODlogisticsDomain.pddl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
@@ -638,37 +619,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MODlogisticsDomain.pddl">
+    <entry file="file://$PROJECT_DIR$/WORKING_Full State and action trace gen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+        <state relative-caret-position="150">
+          <caret line="325" column="47" selection-start-line="325" selection-start-column="47" selection-end-line="325" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logistics_pddl/MODlogisticsDomain.pddl">
+    <entry file="file://$PROJECT_DIR$/Logistics_pddl/copy_TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="288">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logistics_pddl/bkup_TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl">
+    <entry file="file://$PROJECT_DIR$/Logistics_pddl/copy_TYPED_MODlogisticsDomain.pddl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logistics_pddl/bkup_TYPED_MODlogisticsDomain.pddl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="78" selection-start-line="8" selection-start-column="78" selection-end-line="8" selection-end-column="78" />
+        <state relative-caret-position="570">
+          <caret line="1663" selection-start-line="1663" selection-end-line="1663" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        <state relative-caret-position="384">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scratch_pad.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroundedActionGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="318" lean-forward="true" selection-start-line="318" selection-end-line="318" />
+          <folding>
+            <marker date="1540272948922" expanded="true" signature="12480:13198" ph="..." />
+            <marker date="1540272948922" expanded="true" signature="13912:15180" ph="..." />
+            <marker date="1540272948922" expanded="true" signature="17421:20215" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

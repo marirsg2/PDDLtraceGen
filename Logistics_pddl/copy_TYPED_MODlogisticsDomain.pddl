@@ -1,30 +1,31 @@
 (define (domain logistics-strips)
   (:requirements
                 :strips)
-  (:types
-            tOBJ tTRUCK tLOCATION tCITY tAIRPLANE tAIRPLANEACCESS0 tAIRPLANEACCESS1 tAIRPLANEACCESS2 tAIRPLANEACCESS3 tAIRPORTACCESS0 tAIRPORTACCESS1 tAIRPORTACCESS2 tAIRPORTACCESS3- object
-            tAIRPLANEACCESS0 tAIRPLANEACCESS1 tAIRPLANEACCESS2 tAIRPLANEACCESS3 - tAIRPLANE
-            tAIRPORTACCESS0 tAIRPORTACCESS1 tAIRPORTACCESS2 tAIRPORTACCESS3 - tLOCATION )
+  (:types tOBJ
+                tTRUCK tLOCATION tCITY tAIRPLANE tAIRPLANE_ACCESS0 tAIRPLANE_ACCESS1 tAIRPLANE_ACCESS2 tAIRPLANE_ACCESS3 tAIRPORT_ACCESS0 tAIRPORT_ACCESS1 tAIRPORT_ACCESS2 tAIRPORT_ACCESS3- object
+                tAIRPLANE_ACCESS0 tAIRPLANE_ACCESS1 tAIRPLANE_ACCESS2 tAIRPLANE_ACCESS3 - tAIRPLANE
+                tAIRPORT_ACCESS0 tAIRPORT_ACCESS1 tAIRPORT_ACCESS2 tAIRPORT_ACCESS3 - tLOCATION )
   (:predicates
             (OBJ ?obj)
 	       	(TRUCK ?truck)
                	(LOCATION ?loc)
         (AIRPLANE ?airplane)
-		(AIRPLANEACCESS0 ?airplane)
-		(AIRPLANEACCESS1 ?airplane)
-		(AIRPLANEACCESS2 ?airplane)
-		(AIRPLANEACCESS3 ?airplane)
+		(AIRPLANE_ACCESS0 ?airplane)
+		(AIRPLANE_ACCESS1 ?airplane)
+		(AIRPLANE_ACCESS2 ?airplane)
+		(AIRPLANE_ACCESS3 ?airplane)
                 (CITY ?city)
-                (AIRPORTACCESS0 ?airport)
-                (AIRPORTACCESS1 ?airport)
-                (AIRPORTACCESS2 ?airport)
-                (AIRPORTACCESS3 ?airport)
+                (AIRPORT_ACCESS0 ?airport)
+                (AIRPORT_ACCESS1 ?airport)
+                (AIRPORT_ACCESS2 ?airport)
+                (AIRPORT_ACCESS3 ?airport)
 		(in ?obj ?loc)
 		(in ?obj1 ?obj2)
 		(in-city ?obj ?city))
  
+  ; (:types )		; default object
 
-; ==================================================================================
+; #<class 'tuple'>: ('drive-truck_t1_l12_l10_c1', 'load-truck_p0_t1_l10', 'drive-truck_t1_l10_l11_c1', 'unload-truck_p0_t1_l11')
 
 (:action LOAD-TRUCK
   :parameters
@@ -87,48 +88,48 @@
 ;=======================================================
 ; The different fly actions for different access regions
 
-(:action FLY-AIRPLANEACCESS0
+(:action FLY-AIRPLANE_ACCESS0
   :parameters
-   (?airplane - tAIRPLANEACCESS0
-    ?loc-from - tAIRPORTACCESS0
-    ?loc-to - tAIRPORTACCESS0 )
+   (?airplane - tAIRPLANE_ACCESS0
+    ?loc-from - tAIRPORT_ACCESS0
+    ?loc-to - tAIRPORT_ACCESS0 )
   :precondition
-   (and (AIRPLANEACCESS0 ?airplane) (AIRPORTACCESS0 ?loc-from) (AIRPORTACCESS0 ?loc-to)
+   (and (AIRPLANE_ACCESS0 ?airplane) (AIRPORT_ACCESS0 ?loc-from) (AIRPORT_ACCESS0 ?loc-to)
 	(in ?airplane ?loc-from))
   :effect
    (and (not (in ?airplane ?loc-from)) (in ?airplane ?loc-to)))
 
-(:action FLY-AIRPLANEACCESS1
+(:action FLY-AIRPLANE_ACCESS1
   :parameters
-   (?airplane - tAIRPLANEACCESS1
-    ?loc-from - tAIRPORTACCESS1
-    ?loc-to - tAIRPORTACCESS1 )
+   (?airplane - tAIRPLANE_ACCESS1
+    ?loc-from - tAIRPORT_ACCESS1
+    ?loc-to - tAIRPORT_ACCESS1 )
   :precondition
-   (and (AIRPLANEACCESS1 ?airplane) (AIRPORTACCESS1 ?loc-from) (AIRPORTACCESS1 ?loc-to)
-	(in ?airplane ?loc-from))
-  :effect
-   (and (not (in ?airplane ?loc-from)) (in ?airplane ?loc-to)))
-
-
-(:action FLY-AIRPLANEACCESS2
-  :parameters
-   (?airplane - tAIRPLANEACCESS2
-    ?loc-from - tAIRPORTACCESS2
-    ?loc-to - tAIRPORTACCESS2 )
-  :precondition
-   (and (AIRPLANEACCESS2 ?airplane) (AIRPORTACCESS2 ?loc-from) (AIRPORTACCESS2 ?loc-to)
+   (and (AIRPLANE_ACCESS1 ?airplane) (AIRPORT_ACCESS1 ?loc-from) (AIRPORT_ACCESS1 ?loc-to)
 	(in ?airplane ?loc-from))
   :effect
    (and (not (in ?airplane ?loc-from)) (in ?airplane ?loc-to)))
 
 
-(:action FLY-AIRPLANEACCESS3
+(:action FLY-AIRPLANE_ACCESS2
   :parameters
-   (?airplane - tAIRPLANEACCESS3
-    ?loc-from - tAIRPORTACCESS3
-    ?loc-to - tAIRPORTACCESS3 )
+   (?airplane - tAIRPLANE_ACCESS2
+    ?loc-from - tAIRPORT_ACCESS2
+    ?loc-to - tAIRPORT_ACCESS2 )
   :precondition
-   (and (AIRPLANEACCESS3 ?airplane) (AIRPORTACCESS3 ?loc-from) (AIRPORTACCESS3 ?loc-to)
+   (and (AIRPLANE_ACCESS2 ?airplane) (AIRPORT_ACCESS2 ?loc-from) (AIRPORT_ACCESS2 ?loc-to)
+	(in ?airplane ?loc-from))
+  :effect
+   (and (not (in ?airplane ?loc-from)) (in ?airplane ?loc-to)))
+
+
+(:action FLY-AIRPLANE_ACCESS3
+  :parameters
+   (?airplane - tAIRPLANE_ACCESS3
+    ?loc-from - tAIRPORT_ACCESS3
+    ?loc-to - tAIRPORT_ACCESS3 )
+  :precondition
+   (and (AIRPLANE_ACCESS3 ?airplane) (AIRPORT_ACCESS3 ?loc-from) (AIRPORT_ACCESS3 ?loc-to)
 	(in ?airplane ?loc-from))
   :effect
    (and (not (in ?airplane ?loc-from)) (in ?airplane ?loc-to)))

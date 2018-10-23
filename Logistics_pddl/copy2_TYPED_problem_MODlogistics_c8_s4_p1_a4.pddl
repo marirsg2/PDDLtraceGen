@@ -6,11 +6,16 @@
 (:objects
           c0 c1 c2 c3 c4 c5 c6 c7 - tCITY
           t0 t1 t2 t3 t4 t5 t6 t7 - tTRUCK
-          l00 l10 l20 l30 l40 l50 l60 l70 l01 l02 l03 l11 l12 l13 l21 l22 l23 l31 l32 l41 l42 l51 l52 l61 l62 l71 l72 l73 - tLOCATION
+          l01 l02 l03 l11 l12 l13 l21 l22 l23 l31 l32 l41 l42 l51 l52 l61 l62 l71 l72 l73 - tLOCATION
           p0 - tOBJ
-          a0 a1 a2 a3- tAIRPLANE
-
-
+          a0 - tAIRPLANEACCESS0
+          a1 - tAIRPLANEACCESS1
+          a2 - tAIRPLANEACCESS2
+          a3 - tAIRPLANEACCESS3
+          l00 l10 l20 l30 - tAIRPORTACCESS0
+                  l43 l33 - tAIRPORTACCESS1
+              l40 l50 l60 - tAIRPORTACCESS2
+              l70 l53 l63 - tAIRPORTACCESS3
 )
 ; The major modification is that the airplanes are both regular airplanes (for loading and unloading) as well as special airplanes for accessing specific
 ; subset of cities. This separates the cities.
@@ -19,7 +24,14 @@
 ; IMPORTANT do NOT use "_" in any naming
 
 (:init
-(OBJ p0)
+(AIRPLANE a0)
+(AIRPLANE a1)
+(AIRPLANE a2)
+(AIRPLANE a3)
+(AIRPLANEACCESS0 a0)
+(AIRPLANEACCESS1 a1)
+(AIRPLANEACCESS2 a2)
+(AIRPLANEACCESS3 a3)
 (CITY c0)
 (CITY c1)
 (CITY c2)
@@ -28,18 +40,6 @@
 (CITY c5)
 (CITY c6)
 (CITY c7)
-(AIRPLANE a0)
-(AIRPLANE a1)
-(AIRPLANE a2)
-(AIRPLANE a3)
-(AIRPORT l00)
-(AIRPORT l10)
-(AIRPORT l20)
-(AIRPORT l30)
-(AIRPORT l40)
-(AIRPORT l50)
-(AIRPORT l60)
-(AIRPORT l70)
 (TRUCK t0)
 (TRUCK t1)
 (TRUCK t2)
@@ -48,14 +48,6 @@
 (TRUCK t5)
 (TRUCK t6)
 (TRUCK t7)
-(drivesInside t0 c0)
-(drivesInside t1 c1)
-(drivesInside t2 c2)
-(drivesInside t3 c3)
-(drivesInside t4 c4)
-(drivesInside t5 c5)
-(drivesInside t6 c6)
-(drivesInside t7 c7)
 (LOCATION l00)
 (inCity  l00 c0)
 (LOCATION l01)
@@ -120,25 +112,22 @@
 (inCity  l72 c7)
 (LOCATION l73)
 (inCity  l73 c7)
+(AIRPORTACCESS0 l00)
+(AIRPORTACCESS0 l10)
+(AIRPORTACCESS0 l20)
+(AIRPORTACCESS0 l30)
 
+(AIRPORTACCESS1 l33)
+(AIRPORTACCESS1 l43)
 
-(fliesTo a0 c0)
-(fliesTo a0 c1)
-(fliesTo a0 c2)
-(fliesTo a0 c3)
+(AIRPORTACCESS2 l40)
+(AIRPORTACCESS2 l50)
+(AIRPORTACCESS2 l60)
 
-(fliesTo a1 c3)
-(fliesTo a1 c4)
-
-(fliesTo a2 c4)
-(fliesTo a2 c5)
-(fliesTo a2 c6)
-
-(fliesTo a3 c5)
-(fliesTo a3 c6)
-(fliesTo a3 c7)
-
-
+(AIRPORTACCESS3 l53)
+(AIRPORTACCESS3 l63)
+(AIRPORTACCESS3 l70)
+(OBJ p0)
 (in t0 l01)
 (in t1 l11)
 (in t2 l22)
@@ -147,15 +136,15 @@
 (in t5 l50)
 (in t6 l60)
 (in t7 l70)
-(in p0 l10)
+(in p0 l02)
 (in a0 l10)
-(in a1 l40)
+(in a1 l33)
 (in a2 l60)
-(in a3 l70)
+(in a3 l63)
 )
 (:goal
 (and
-(in p0 a0)
+(in p0 l73)
 )
 )
 )

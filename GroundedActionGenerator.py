@@ -109,6 +109,7 @@ class Action:
         self.preconditions_set = set(convert_dict_to_list(preconditions_dict))
         self.pos_effects_set = set(convert_dict_to_list(pos_effects_dict))
         self.neg_effects_set = set(convert_dict_to_list(neg_effects_dict))
+        self.static_preconditions_set = set()
 
     def get_parameter_list(self):
         return self.parameter_name_type_dict
@@ -151,9 +152,15 @@ class Action:
             grounded_eff_params = translate_by_dict(eff_parameters,translation_dict)
             grounded_eff = eff_type + "_" + grounded_eff_params
             ret_state_set.add(grounded_eff)
-
-
         return ret_state_set
+
+    def set_static_preconditions(self,static_preconditions_set):
+        """
+        :summary: see name
+        :param static_fluents_set:
+        :return:
+        """
+        self.static_preconditions_set = static_preconditions_set
 
 #==================================================
 class Domain_manipulator:
@@ -169,10 +176,11 @@ class Domain_manipulator:
         in_types = 4 #speaking not an action parsing state but part of processing the domain file
     def __init__(self,domain_file_loc):
 
-        self.type_dict = {}
+        self.to_lower_type_dict = {}
+        self.to_upper_type_dict = {}
         self.non_static_fluents_set = set()
-        self.action_dict = self.parse_domain_file(domain_file_loc)
-        self.process_for_non_static_fluents()
+        self.actionObj_dict = self.parse_domain_file(domain_file_loc)
+        self.process_for_static_fluents()
 
     def parse_domain_file(self,domain_file_loc):
         """
@@ -190,7 +198,7 @@ class Domain_manipulator:
         parsing_state = self.Action_parsing_state.not_started
         #--end class
         action_name = None
-        parameter_name_type_dict = []
+        parameter_name_type_dict = {}
         preconditions_dict = {}
         pos_effects_dict = {}
         neg_effects_dict = {}
@@ -228,14 +236,20 @@ class Domain_manipulator:
                     object_mapping_values = [x.lower() for x in object_mapping_values if x != '']
                     object_mapping_key = line_parts[1].strip().lower()
                     object_mapping_key = object_mapping_key.replace(")","")
-                    self.type_dict[object_mapping_key] = object_mapping_values
-                    if ")" in line:
+                    self.to_lower_type_dict[object_mapping_key] = object_mapping_values
+                    for single_lower_type in object_mapping_values:
+                        try:
+                            self.to_upper_type_dict[single_lower_type].append(object_mapping_key)
+                        except KeyError:
+                            self.to_upper_type_dict[single_lower_type] = [object_mapping_key]
+                    #end for
+                    if ")" in line:# then it is the end of this section
                         parsing_state = self.Action_parsing_state.not_started
 
                 elif parsing_state == self.Action_parsing_state.in_parameters:
                     line = line.replace("(","").replace(")","").replace("?","").replace("\n","")
                     parameter_parts = (line.replace(" ","")).split("-")
-                    parameter_name_type_dict[parameter_parts[0]] = parameter_parts[1]
+                    parameter_name_type_dict[parameter_parts[0].lower()] = parameter_parts[1].lower()
                 elif parsing_state == self.Action_parsing_state.in_preconditions:
                     line = line.replace("(and","").replace("?","")
                     propositions = line.split(")")
@@ -267,18 +281,41 @@ class Domain_manipulator:
     #---end class method
     # =============================================================================+++
     # =============================================================================+++
-    def process_for_non_static_fluents(self):
+    def process_for_static_fluents(self):
         """
         :summary: go through the action dict and for each effect (pos and negative) save the fluents that were changed
         :return:
         """
-
-        for single_action in self.action_dict.keys():
-            all_changes_fluents = self.action_dict[single_action].pos_effects_set.union(self.action_dict[single_action].neg_effects_set)
+        #first find all the NON-static fluents, then update the action object to store the static preconditions in it
+        for single_action in self.actionObj_dict.keys():
+            all_changes_fluents = self.actionObj_dict[single_action].pos_effects_set.union(self.actionObj_dict[single_action].neg_effects_set)
             for single_eff in all_changes_fluents:
                 eff_parts = single_eff.split("_")
-                eff_obj_type = self.action_dict[single_action].parameter_name_type_dict[eff_parts[1]]
-                self.non_static_fluents_set.add(eff_parts[0] + "_" + eff_obj_type)#format <property_name> <object assoc to property>  eg: in_city_tLocation
+                eff_subj_type = self.actionObj_dict[single_action].parameter_name_type_dict[eff_parts[1]]
+                self.non_static_fluents_set.add((eff_parts[0] + "_" + eff_subj_type).lower())#format <property_name> <object assoc to property>  eg: in_city_tLocation
+                #todo UNSURE ABOUT THE FOLLOWING, it is NECESSARY in some cases. Eg: in_tAirplane_tloc may appear static, because only in_tAirplaneAccess0_tloc changes .
+                #also add all derived object types, even if it does not exist as a valid fluent
+                for single_upper_type in self.to_upper_type_dict[eff_subj_type]:
+                    if single_upper_type == "object":
+                        continue# we only ignore the default object type
+                    self.non_static_fluents_set.add((eff_parts[0] + "_" + single_upper_type).lower())
+
+
+        #now actually update the action model to store the static preconditions
+        for single_action in self.actionObj_dict.keys():
+            static_preconditions = set()
+            curr_action = self.actionObj_dict[single_action]
+            for single_precondition in curr_action.preconditions_set:
+                if "not" in single_precondition:
+                    single_precondition = single_precondition.replace("not","").replace("(","").replace(")","")
+                precondition_parts = single_precondition.split("_")
+                lifted_precondition_parts = [precondition_parts[0]] + [curr_action.parameter_name_type_dict[x]  for x in precondition_parts[1:]]
+                lifted_precondition_type = "_".join(lifted_precondition_parts[:-1]) # we are only look at things as STATE VARIABLES . If they are static or not
+                if lifted_precondition_type not in self.non_static_fluents_set:
+                    static_preconditions.add(single_precondition)
+            #end for loop
+            curr_action.set_static_preconditions(static_preconditions)
+        #end outer for loop
 
 
     # =============================================================================+++
@@ -292,34 +329,71 @@ class Domain_manipulator:
         """
         #simply apply the action with the right name
         action_name = action_string.split("_")[0]
-        return self.action_dict[action_name].produce_resultant_state_dict(action_string, state_proposition_set)
+        return self.actionObj_dict[action_name].produce_resultant_state_dict(action_string, state_proposition_set)
 
+    # =========================================================
+    # =========================================================
     def get_all_parameter_groundings(self,action_name,problem_parser_obj):
         """
         :summary: find all possible groundings that pass the static preconditions.
         :param problem_parser_obj:
         :return:
         """
-        parameter_dict = self.action_dict[action_name]
-        parameter_keys = list(parameter_dict.keys())
+        valid_groundings = set()
+        actionObj = self.actionObj_dict[action_name]
+        parameter_dict = actionObj.parameter_name_type_dict
+        parameter_keys = sorted(list(parameter_dict.keys()))
         #get the parameter object types to search in the problem file
         parameter_types = []
         for single_parameter in parameter_keys:
-            parameter_types.append(parameter_dict[single_parameter])
+            parameter_types.append(parameter_dict[single_parameter].lower())
         parameter_possible_values = []
         for single_type in parameter_types:
             parameter_possible_values.append(problem_parser_obj.obj_dict[single_type])
         idx_list = [0]*len(parameter_possible_values)
         #the following is a very involved command and condition.
         #it checks if each of the indexes is at the last position of the nested lists in parameter_possible_values
-        while(sum(1 for x in range(len(idx_list)) if idx_list[x] == len(parameter_possible_values[x]) )
-                            !=len(idx_list) ):
+        # while(sum(1 for x in range(len(idx_list)) if idx_list[x] == len(parameter_possible_values[x])-1 )
+        #                     !=len(idx_list) ):
+        #ABOVE complex check is not needed, see end of while loop
+        while True:
             current_var_instantitations = [ parameter_possible_values[x][idx_list[x]] for x in range(len(idx_list))]
             var_mapping = dict(zip(parameter_keys,current_var_instantitations))
-
-
-
-        #end while loop
+            # now with variable mapping, test if the translated preconditions which are static fluents are in the init state
+            passed_static_precond = True
+            for single_static_precondition in actionObj.static_preconditions_set:
+                precond_parts = single_static_precondition.split("_")
+                #we do NOT do a direct replace using the var to ground mapping, as the property type may match the variable, for example "OBJ obj"
+                grounded_precond_parts = [precond_parts[0]] + [var_mapping[precond_parts[i]] for i in range(1,len(precond_parts)) ]
+                grounded_precond = "_".join(grounded_precond_parts)
+                if not grounded_precond in problem_parser_obj.fluents_set:
+                    passed_static_precond = False
+                    break
+                #end if
+            #end for through the static preconditions
+            if passed_static_precond:
+                valid_groundings.add(tuple(current_var_instantitations))
+            #NOW update the indices to get the next possible instantiation.
+            update_pos = -1
+            while True:
+                idx_list[update_pos] += 1
+                if idx_list[update_pos] == len(parameter_possible_values[update_pos]):
+                    idx_list[update_pos] = 0
+                    update_pos -= 1
+                #end if
+                else:
+                    break
+                #end else
+                if update_pos == -1*len(parameter_possible_values)-1: #we HAVE CHECKED ALL CASES
+                    break
+            #end while true updating the indices of grounding list
+            if update_pos == -1 * len(parameter_possible_values) - 1:  # we HAVE CHECKED ALL CASES
+                # return what we have
+                break
+        #end while loop checking for valid index
+        return valid_groundings
+    #=========================================================
+    # =========================================================
 
     def generate_all_grounded_actions(self,problem_parser_obj):
         """
@@ -329,7 +403,7 @@ class Domain_manipulator:
         :return:
         """
         grounded_actions_set = set()
-        for single_action in self.action_dict.keys():
+        for single_action in self.actionObj_dict.keys():
             #get the parameter groundings
             self.get_all_parameter_groundings(single_action,problem_parser_obj)
 #---end class
@@ -421,7 +495,7 @@ class Problem_file_parser:
                         continue
                     #end if
                     line_in_problem = line_in_problem.replace(" ","_")
-                    self.fluents_set.add(line_in_problem)
+                    self.fluents_set.add(line_in_problem.lower())
                 elif parsing_state == self.ProblemFile_parsing_state.in_goal:
                     break #we are not processing the goal information yet
             #end for loop through lines in the file
@@ -452,7 +526,7 @@ all_actions = domain_parser_obj.generate_all_grounded_actions(problem_file_obj)
 
 
 with open(pickle_dest_file, "wb") as destination:
-    pickle.dump(all_solutions, destination)
+    pickle.dump(all_actions, destination)
 
 # testing code
 with open(pickle_dest_file, "rb") as source_file:

@@ -2,27 +2,26 @@
   (:requirements
                 :strips)
   (:types
-            tOBJ tTRUCK tLOCATION tCITY tAIRPLANE tAIRPLANEACCESS0 tAIRPLANEACCESS1 tAIRPLANEACCESS2 tAIRPLANEACCESS3 tAIRPORTACCESS0 tAIRPORTACCESS1 tAIRPORTACCESS2 tAIRPORTACCESS3- object
-            tAIRPLANEACCESS0 tAIRPLANEACCESS1 tAIRPLANEACCESS2 tAIRPLANEACCESS3 - tAIRPLANE
-            tAIRPORTACCESS0 tAIRPORTACCESS1 tAIRPORTACCESS2 tAIRPORTACCESS3 - tLOCATION )
+            tOBJ tTRUCK tLOCATION tCITY tAIRPLANE - object
+            )
   (:predicates
             (OBJ ?obj)
 	       	(TRUCK ?truck)
                	(LOCATION ?loc)
         (AIRPLANE ?airplane)
-		(AIRPLANEACCESS0 ?airplane)
-		(AIRPLANEACCESS1 ?airplane)
-		(AIRPLANEACCESS2 ?airplane)
-		(AIRPLANEACCESS3 ?airplane)
-                (CITY ?city)
-                (AIRPORTACCESS0 ?airport)
-                (AIRPORTACCESS1 ?airport)
-                (AIRPORTACCESS2 ?airport)
-                (AIRPORTACCESS3 ?airport)
+        (CITY ?city)
+        (AIRPORT ?loc)
 		(in ?obj ?loc)
 		(in ?obj1 ?obj2)
-		(in-city ?obj ?city))
- 
+		(inCity ?obj ?city)
+		(drivesInside ?truck ?city)
+		(fliesTo ?airplane ?city)
+		)
+
+;IMPORTANT in-city is swapped to inCity. "-" is used as a special character and allowed in naming. This is a mistake for a language specification.
+; ALSO IMPORTANT. locFrom and locTo have been changed to locFrom and locTo. The "-" is used in other places such as object definition , as a language special character.
+; this is a mistake on pddl specification on what characters should be allowed in names.
+; IMPORTANT do NOT use "_" in any naming
 
 ; ==================================================================================
 
@@ -30,21 +29,27 @@
   :parameters
    (?obj - tOBJ
     ?truck - tTRUCK
-    ?loc - tLOCATION )
+    ?loc - tLOCATION
+    ?city - tCity)
   :precondition
-   (and (OBJ ?obj) (TRUCK ?truck) (LOCATION ?loc)
-   (in ?truck ?loc) (in ?obj ?loc))
+   (and (OBJ ?obj) (TRUCK ?truck) (LOCATION ?loc) (CITY ?city)
+   (in ?truck ?loc) (in ?obj ?loc)
+   (inCity ?loc ?city)(drivesInside ?truck ?city))
   :effect
    (and (not (in ?obj ?loc)) (in ?obj ?truck)))
+
 
 (:action LOAD-AIRPLANE
   :parameters
    (?obj - tOBJ
     ?airplane - tAIRPLANE
-    ?loc - tLOCATION )
+    ?loc - tLOCATION
+    ?city - tCITY)
   :precondition
-   (and (OBJ ?obj) (AIRPLANE ?airplane) (LOCATION ?loc)
-   (in ?obj ?loc) (in ?airplane ?loc))
+   (and (OBJ ?obj) (AIRPLANE ?airplane) (AIRPORT ?loc) (CITY ?city)
+   (in ?obj ?loc) (in ?airplane ?loc)
+   (inCity ?loc ?city)(fliesTo ?airplane ?city)
+   )
   :effect
    (and (not (in ?obj ?loc)) (in ?obj ?airplane)))
 
@@ -52,10 +57,12 @@
   :parameters
    (?obj - tOBJ
     ?truck - tTRUCK
-    ?loc - tLOCATION)
+    ?loc - tLOCATION
+    ?city - tCITY)
   :precondition
-   (and (OBJ ?obj) (TRUCK ?truck) (LOCATION ?loc)
-        (in ?truck ?loc) (in ?obj ?truck))
+   (and (OBJ ?obj) (TRUCK ?truck) (LOCATION ?loc) (CITY ?city)
+    (in ?truck ?loc) (in ?obj ?truck)
+    (inCity ?loc ?city)(drivesInside ?truck ?city))
   :effect
    (and (not (in ?obj ?truck)) (in ?obj ?loc)))
 
@@ -63,75 +70,45 @@
   :parameters
    (?obj - tOBJ
     ?airplane - tAIRPLANE
-    ?loc - tLOCATION )
+    ?loc - tLOCATION
+    ?city - tCITY)
   :precondition
-   (and (OBJ ?obj) (AIRPLANE ?airplane) (LOCATION ?loc)
-        (in ?obj ?airplane) (in ?airplane ?loc))
+   (and (OBJ ?obj) (AIRPLANE ?airplane) (AIRPORT ?loc)
+        (in ?obj ?airplane) (in ?airplane ?loc)
+       (inCity ?loc ?city)(fliesTo ?airplane ?city) )
   :effect
    (and (not (in ?obj ?airplane)) (in ?obj ?loc)))
 
 (:action DRIVE-TRUCK
   :parameters
    (?truck - tTRUCK
-    ?loc-from - tLOCATION
-    ?loc-to - tLOCATION
+    ?locFrom - tLOCATION
+    ?locTo - tLOCATION
     ?city - tCITY )
   :precondition
-   (and (TRUCK ?truck) (LOCATION ?loc-from) (LOCATION ?loc-to) (CITY ?city)
-   (in ?truck ?loc-from)
-   (in-city ?loc-from ?city)
-   (in-city ?loc-to ?city))
+   (and (TRUCK ?truck) (LOCATION ?locFrom) (LOCATION ?locTo) (CITY ?city)
+   (in ?truck ?locFrom)
+   (inCity ?locFrom ?city)
+   (inCity ?locTo ?city)
+   (drivesInside ?truck ?city))
   :effect
-   (and (not (in ?truck ?loc-from)) (in ?truck ?loc-to)))
+   (and (not (in ?truck ?locFrom)) (in ?truck ?locTo)))
 
-;=======================================================
-; The different fly actions for different access regions
-
-(:action FLY-AIRPLANEACCESS0
+(:action FLY-AIRPLANE
   :parameters
-   (?airplane - tAIRPLANEACCESS0
-    ?loc-from - tAIRPORTACCESS0
-    ?loc-to - tAIRPORTACCESS0 )
+   (?airplane - tAIRPLANE
+    ?locFrom - tLOCATION
+    ?locTo - tLOCATION
+    ?cityFrom - tCity
+    ?cityTo - tCity)
   :precondition
-   (and (AIRPLANEACCESS0 ?airplane) (AIRPORTACCESS0 ?loc-from) (AIRPORTACCESS0 ?loc-to)
-	(in ?airplane ?loc-from))
+   (and (AIRPLANE ?airplane) (AIRPORT ?locFrom) (AIRPORT ?locTo) (CITY ?cityFrom) (CITY ?cityTo)
+   (inCity ?locFrom ?cityFrom)(inCity ?locTo ?cityTo)
+	(in ?airplane ?locFrom)
+	(fliesTo ?airplane ?cityFrom)
+	(fliesTo ?airplane ?cityTo))
   :effect
-   (and (not (in ?airplane ?loc-from)) (in ?airplane ?loc-to)))
-
-(:action FLY-AIRPLANEACCESS1
-  :parameters
-   (?airplane - tAIRPLANEACCESS1
-    ?loc-from - tAIRPORTACCESS1
-    ?loc-to - tAIRPORTACCESS1 )
-  :precondition
-   (and (AIRPLANEACCESS1 ?airplane) (AIRPORTACCESS1 ?loc-from) (AIRPORTACCESS1 ?loc-to)
-	(in ?airplane ?loc-from))
-  :effect
-   (and (not (in ?airplane ?loc-from)) (in ?airplane ?loc-to)))
-
-
-(:action FLY-AIRPLANEACCESS2
-  :parameters
-   (?airplane - tAIRPLANEACCESS2
-    ?loc-from - tAIRPORTACCESS2
-    ?loc-to - tAIRPORTACCESS2 )
-  :precondition
-   (and (AIRPLANEACCESS2 ?airplane) (AIRPORTACCESS2 ?loc-from) (AIRPORTACCESS2 ?loc-to)
-	(in ?airplane ?loc-from))
-  :effect
-   (and (not (in ?airplane ?loc-from)) (in ?airplane ?loc-to)))
-
-
-(:action FLY-AIRPLANEACCESS3
-  :parameters
-   (?airplane - tAIRPLANEACCESS3
-    ?loc-from - tAIRPORTACCESS3
-    ?loc-to - tAIRPORTACCESS3 )
-  :precondition
-   (and (AIRPLANEACCESS3 ?airplane) (AIRPORTACCESS3 ?loc-from) (AIRPORTACCESS3 ?loc-to)
-	(in ?airplane ?loc-from))
-  :effect
-   (and (not (in ?airplane ?loc-from)) (in ?airplane ?loc-to)))
+   (and (not (in ?airplane ?locFrom)) (in ?airplane ?locTo)))
 
 
 ) ; END OF DOMAIN FILE

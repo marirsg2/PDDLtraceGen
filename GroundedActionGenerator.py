@@ -1,6 +1,11 @@
 
 
 """
+
+
+Very sensitive to the position of brackets, this code is not yet robust. In the action definition for each of the sections
+the bracket cannot be in a line by itself.
+
 1)Takes a problem and domain file and generates all the possible grounded actions.
 2)It assumes only the static fluents need to be satisfied in the fluents, and that the other fluents can be satisfied
 through some walk through the domain graph.

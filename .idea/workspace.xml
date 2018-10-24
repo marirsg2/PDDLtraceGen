@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc2548e8-a632-4c17-9841-f8e07ed02a6d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Logistics_pddl/bkup2_TYPED_MODlogisticsDomain.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logistics_pddl/bkup2_TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GroundedActionGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/GroundedActionGenerator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logistics_pddl/sas_plan" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/sas_plan" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,16 +26,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="152" />
+          <entry key="Python Console" value="201" />
           <entry key="dummy" value="6" />
           <entry key="pddl" value="2228" />
-          <entry key="py" value="10108" />
+          <entry key="py" value="10308" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="2234" />
-          <entry key="Python" value="10260" />
+          <entry key="Python" value="10509" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,17 +59,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="103" column="64" selection-start-line="103" selection-start-column="64" selection-end-line="103" selection-end-column="64" />
+            <state relative-caret-position="715">
+              <caret line="70" column="3" lean-forward="true" selection-start-line="70" selection-start-column="3" selection-end-line="70" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1734">
+              <caret line="124" column="9" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl">
+        <entry file="file://$PROJECT_DIR$/GroundedActionGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="161" column="9" selection-start-line="161" selection-start-column="9" selection-end-line="161" selection-end-column="9" />
+            <state relative-caret-position="393">
+              <caret line="538" selection-start-line="538" selection-end-line="538" />
+              <folding>
+                <marker date="1540414126861" expanded="true" signature="13388:15939" ph="..." />
+                <marker date="1540414126861" expanded="true" signature="16784:20222" ph="..." />
+                <marker date="1540414126861" expanded="true" signature="22466:25268" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,22 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Haai_generator_actions_labels.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GroundedActionGenerator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="393" selection-start-line="393" selection-end-line="393" />
-              <folding>
-                <marker date="1540334257792" expanded="true" signature="13219:15770" ph="..." />
-                <marker date="1540334257792" expanded="true" signature="16615:20053" ph="..." />
-                <marker date="1540334257792" expanded="true" signature="22297:25099" ph="..." />
-              </folding>
+            <state relative-caret-position="690">
+              <caret line="314" lean-forward="true" selection-start-line="314" selection-end-line="314" />
             </state>
           </provider>
         </entry>
@@ -119,7 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>at</find>
       <find>at ?</find>
       <find>in ?</find>
       <find>(at ?</find>
@@ -149,6 +146,7 @@
       <find>covers</find>
       <find>tAIRPORT</find>
       <find>tCITY</find>
+      <find>inCity</find>
     </findStrings>
     <replaceStrings>
       <replace>AIRPORT_ACCESS3</replace>
@@ -165,6 +163,7 @@
       <replace>AIRPLANE</replace>
       <replace>fliesTo a</replace>
       <replace>drivesInside</replace>
+      <replace>inCity</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -189,9 +188,9 @@
         <option value="$PROJECT_DIR$/Logistics_pddl/problem_MODlogistics_c8_s4_p1_a4.pddl" />
         <option value="$PROJECT_DIR$/Logistics_pddl/MODlogisticsDomain.pddl" />
         <option value="$PROJECT_DIR$/scratch_pad.py" />
-        <option value="$PROJECT_DIR$/GroundedActionGenerator.py" />
         <option value="$PROJECT_DIR$/Haai_generator_actions_labels.py" />
         <option value="$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl" />
+        <option value="$PROJECT_DIR$/GroundedActionGenerator.py" />
         <option value="$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl" />
       </list>
     </option>
@@ -412,15 +411,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="3375" height="1444" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.2297136" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.2297136" />
       <window_info id="Structure" order="1" sideWeight="0.5011338" side_tool="true" weight="0.24970166" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32826748" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39969605" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.47948328" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
@@ -461,18 +459,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/GroundedActionGenerator.py</url>
-          <line>369</line>
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/GroundedActionGenerator.py</url>
-          <line>393</line>
+          <line>398</line>
           <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/GroundedActionGenerator.py</url>
-          <line>387</line>
-          <option name="timeStamp" value="82" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -695,18 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GroundedActionGenerator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="393" selection-start-line="393" selection-end-line="393" />
-          <folding>
-            <marker date="1540334257792" expanded="true" signature="13219:15770" ph="..." />
-            <marker date="1540334257792" expanded="true" signature="16615:20053" ph="..." />
-            <marker date="1540334257792" expanded="true" signature="22297:25099" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logistics_pddl/bkup2_TYPED_MODlogisticsDomain.pddl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -715,22 +691,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Haai_generator_actions_labels.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+        <state relative-caret-position="690">
+          <caret line="314" lean-forward="true" selection-start-line="314" selection-end-line="314" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="103" column="64" selection-start-line="103" selection-start-column="64" selection-end-line="103" selection-end-column="64" />
+        <state relative-caret-position="715">
+          <caret line="70" column="3" lean-forward="true" selection-start-line="70" selection-start-column="3" selection-end-line="70" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="161" column="9" selection-start-line="161" selection-start-column="9" selection-end-line="161" selection-end-column="9" />
+        <state relative-caret-position="1734">
+          <caret line="124" column="9" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GroundedActionGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="538" selection-start-line="538" selection-end-line="538" />
+          <folding>
+            <marker date="1540414126861" expanded="true" signature="13388:15939" ph="..." />
+            <marker date="1540414126861" expanded="true" signature="16784:20222" ph="..." />
+            <marker date="1540414126861" expanded="true" signature="22466:25268" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

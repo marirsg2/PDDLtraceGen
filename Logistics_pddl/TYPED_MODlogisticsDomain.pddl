@@ -45,11 +45,9 @@
     ?airplane - tAIRPLANE
     ?loc - tLOCATION)
   :precondition
-  (
-   and (OBJ ?obj) (AIRPLANE ?airplane) (AIRPORT ?loc)
+  (and (OBJ ?obj) (AIRPLANE ?airplane) (AIRPORT ?loc)
    (in ?obj ?loc) (in ?airplane ?loc)
-   (fliesTo ?airplane ?loc)
-   )
+   (fliesTo ?airplane ?loc))
 
   :effect
 

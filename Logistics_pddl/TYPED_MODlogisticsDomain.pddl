@@ -5,9 +5,9 @@
             tOBJ tTRUCK tLOCATION tCITY tAIRPLANE - object
             )
   (:predicates
-            (OBJ ?obj)
-	       	(TRUCK ?truck)
-               	(LOCATION ?loc)
+        (OBJ ?obj)
+        (TRUCK ?truck)
+        (LOCATION ?loc)
         (AIRPLANE ?airplane)
         (CITY ?city)
         (AIRPORT ?loc)
@@ -41,16 +41,21 @@
 
 (:action LOAD-AIRPLANE
   :parameters
-   (?obj - tOBJ
+   (
+    ?obj - tOBJ
     ?airplane - tAIRPLANE
     ?loc - tLOCATION
-    ?city - tCITY)
+    ?city - tCITY
+    )
   :precondition
-   (and (OBJ ?obj) (AIRPLANE ?airplane) (AIRPORT ?loc) (CITY ?city)
+  (
+   and (OBJ ?obj) (AIRPLANE ?airplane) (AIRPORT ?loc) (CITY ?city)
    (in ?obj ?loc) (in ?airplane ?loc)
    (inCity ?loc ?city)(fliesTo ?airplane ?city)
    )
+
   :effect
+
    (and (not (in ?obj ?loc)) (in ?obj ?airplane)))
 
 (:action UNLOAD-TRUCK

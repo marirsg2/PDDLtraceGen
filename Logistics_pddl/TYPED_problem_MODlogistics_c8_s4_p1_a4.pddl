@@ -5,11 +5,10 @@
 (:domain logistics-strips)
 (:objects
           c0 c1 c2 c3 c4 c5 c6 c7 - tCITY
-          t0 t1 t2 t3 t4 t5 t6 t7 - tTRUCK
+          a0 a1 a2 a3 - tAIRPLANE
           l00 l10 l20 l30 l40 l50 l60 l70 l01 l02 l03 l11 l12 l13 l21 l22 l23 l31 l32 l41 l42 l51 l52 l61 l62 l71 l72 l73 - tLOCATION
           p0 - tOBJ
-          a0 a1 a2 a3- tAIRPLANE
-
+          t0 t1 t2 t3 t4 t5 t6 t7 - tTRUCK
 
 )
 ; The major modification is that the airplanes are both regular airplanes (for loading and unloading) as well as special airplanes for accessing specific
@@ -139,7 +138,7 @@
 (fliesTo a3 c7)
 
 
-(in t0 l01)
+(in t0 l00)
 (in t1 l11)
 (in t2 l22)
 (in t3 l31)
@@ -147,15 +146,16 @@
 (in t5 l50)
 (in t6 l60)
 (in t7 l70)
-(in p0 l10)
-(in a0 l10)
+(in a0 l00)
 (in a1 l40)
 (in a2 l60)
 (in a3 l70)
+(in p0 l00)
+
 )
 (:goal
 (and
-(in p0 a0)
+(in p0 l72)
 )
 )
 )

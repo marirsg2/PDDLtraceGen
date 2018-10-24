@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc2548e8-a632-4c17-9841-f8e07ed02a6d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Haai_generator_actions_labels.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logistics_pddl/bkup2_TYPED_MODlogisticsDomain.pddl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logistics_pddl/bkup2_TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl" afterDir="false" />
@@ -29,26 +30,26 @@
         <counts>
           <entry key="Python Console" value="152" />
           <entry key="dummy" value="6" />
-          <entry key="pddl" value="2143" />
+          <entry key="pddl" value="2228" />
           <entry key="py" value="10108" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="2149" />
+          <entry key="PLAIN_TEXT" value="2234" />
           <entry key="Python" value="10260" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="logistics" value="2" />
-          <entry key="pddl" value="20" />
+          <entry key="pddl" value="22" />
           <entry key="py" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="PLAIN_TEXT" value="24" />
           <entry key="Python" value="11" />
         </counts>
       </usages-collector>
@@ -60,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+            <state relative-caret-position="403">
+              <caret line="103" column="64" selection-start-line="103" selection-start-column="64" selection-end-line="103" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -70,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
-              <caret line="157" column="9" selection-start-line="157" selection-start-column="9" selection-end-line="157" selection-end-column="9" />
+              <caret line="161" column="9" selection-start-line="161" selection-start-column="9" selection-end-line="161" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -248,8 +249,8 @@
       <recent name="$PROJECT_DIR$/Logistics_pddl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Logistics_pddl" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -413,7 +414,7 @@
     <frame x="65" y="-4" width="3375" height="1444" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.067422435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.2297136" />
       <window_info id="Structure" order="1" sideWeight="0.5011338" side_tool="true" weight="0.24970166" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -706,6 +707,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Logistics_pddl/bkup2_TYPED_MODlogisticsDomain.pddl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logistics_pddl/bkup2_TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Haai_generator_actions_labels.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -715,15 +722,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistics_pddl/TYPED_MODlogisticsDomain.pddl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="53" column="3" selection-start-line="53" selection-start-column="3" selection-end-line="53" selection-end-column="3" />
+        <state relative-caret-position="403">
+          <caret line="103" column="64" selection-start-line="103" selection-start-column="64" selection-end-line="103" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
-          <caret line="157" column="9" selection-start-line="157" selection-start-column="9" selection-end-line="157" selection-end-column="9" />
+          <caret line="161" column="9" selection-start-line="161" selection-start-column="9" selection-end-line="161" selection-end-column="9" />
         </state>
       </provider>
     </entry>

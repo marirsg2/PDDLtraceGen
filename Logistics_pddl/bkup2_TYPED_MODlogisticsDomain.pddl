@@ -15,7 +15,7 @@
 		(in ?obj1 ?obj2)
 		(inCity ?obj ?city)
 		(drivesInside ?truck ?city)
-		(fliesTo ?airplane ?location)
+		(fliesTo ?airplane ?city)
 		)
 
 ;IMPORTANT in-city is swapped to inCity. "-" is used as a special character and allowed in naming. This is a mistake for a language specification.
@@ -41,14 +41,17 @@
 
 (:action LOAD-AIRPLANE
   :parameters
-   (?obj - tOBJ
+   (
+    ?obj - tOBJ
     ?airplane - tAIRPLANE
-    ?loc - tLOCATION)
+    ?loc - tLOCATION
+    ?city - tCITY
+    )
   :precondition
   (
-   and (OBJ ?obj) (AIRPLANE ?airplane) (AIRPORT ?loc)
+   and (OBJ ?obj) (AIRPLANE ?airplane) (AIRPORT ?loc) (CITY ?city)
    (in ?obj ?loc) (in ?airplane ?loc)
-   (fliesTo ?airplane ?loc)
+   (inCity ?loc ?city)(fliesTo ?airplane ?city)
    )
 
   :effect
@@ -72,11 +75,12 @@
   :parameters
    (?obj - tOBJ
     ?airplane - tAIRPLANE
-    ?loc - tLOCATION)
+    ?loc - tLOCATION
+    ?city - tCITY)
   :precondition
    (and (OBJ ?obj) (AIRPLANE ?airplane) (AIRPORT ?loc)
         (in ?obj ?airplane) (in ?airplane ?loc)
-       (fliesTo ?airplane ?loc) )
+       (inCity ?loc ?city)(fliesTo ?airplane ?city) )
   :effect
    (and (not (in ?obj ?airplane)) (in ?obj ?loc)))
 
@@ -99,12 +103,15 @@
   :parameters
    (?airplane - tAIRPLANE
     ?locFrom - tLOCATION
-    ?locTo - tLOCATION)
+    ?locTo - tLOCATION
+    ?cityFrom - tCity
+    ?cityTo - tCity)
   :precondition
-   (and (AIRPLANE ?airplane) (AIRPORT ?locFrom) (AIRPORT ?locTo)
+   (and (AIRPLANE ?airplane) (AIRPORT ?locFrom) (AIRPORT ?locTo) (CITY ?cityFrom) (CITY ?cityTo)
+   (inCity ?locFrom ?cityFrom)(inCity ?locTo ?cityTo)
 	(in ?airplane ?locFrom)
-	(fliesTo ?airplane ?locFrom)
-	(fliesTo ?airplane ?locTo))
+	(fliesTo ?airplane ?cityFrom)
+	(fliesTo ?airplane ?cityTo))
   :effect
    (and (not (in ?airplane ?locFrom)) (in ?airplane ?locTo)))
 

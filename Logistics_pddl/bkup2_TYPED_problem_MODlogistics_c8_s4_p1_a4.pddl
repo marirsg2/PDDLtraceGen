@@ -6,7 +6,7 @@
 (:objects
           c0 c1 c2 c3 c4 c5 c6 c7 - tCITY
           a0 a1 a2 a3 - tAIRPLANE
-          l00 l10 l20 l30 l40 l50 l60 l70 l01 l02 l03 l11 l12 l13 l21 l22 l23 l31 l32 l33 l41 l42 l43 l51 l52 l53 l61 l62 l63 l71 l72 l73 - tLOCATION
+          l00 l10 l20 l30 l40 l50 l60 l70 l01 l02 l03 l11 l12 l13 l21 l22 l23 l31 l32 l41 l42 l51 l52 l61 l62 l71 l72 l73 - tLOCATION
           p0 - tOBJ
           t0 t1 t2 t3 t4 t5 t6 t7 - tTRUCK
 
@@ -35,13 +35,9 @@
 (AIRPORT l10)
 (AIRPORT l20)
 (AIRPORT l30)
-(AIRPORT l33)
 (AIRPORT l40)
-(AIRPORT l43)
 (AIRPORT l50)
-(AIRPORT l53)
 (AIRPORT l60)
-(AIRPORT l63)
 (AIRPORT l70)
 (TRUCK t0)
 (TRUCK t1)
@@ -125,21 +121,21 @@
 (inCity  l73 c7)
 
 
-(fliesTo a0 l00)
-(fliesTo a0 l10)
-(fliesTo a0 l20)
-(fliesTo a0 l30)
+(fliesTo a0 c0)
+(fliesTo a0 c1)
+(fliesTo a0 c2)
+(fliesTo a0 c3)
 
-(fliesTo a1 l33)
-(fliesTo a1 l43)
+(fliesTo a1 c3)
+(fliesTo a1 c4)
 
-(fliesTo a2 l40)
-(fliesTo a2 l50)
-(fliesTo a2 l60)
+(fliesTo a2 c4)
+(fliesTo a2 c5)
+(fliesTo a2 c6)
 
-(fliesTo a3 l53)
-(fliesTo a3 l63)
-(fliesTo a3 l70)
+(fliesTo a3 c5)
+(fliesTo a3 c6)
+(fliesTo a3 c7)
 
 
 (in t0 l00)
@@ -151,15 +147,15 @@
 (in t6 l60)
 (in t7 l70)
 (in a0 l00)
-(in a1 l43)
+(in a1 l40)
 (in a2 l60)
-(in a3 l63)
+(in a3 l70)
 (in p0 l00)
 
 )
 (:goal
 (and
-(in p0 l73)
+(in p0 l72)
 )
 )
 )

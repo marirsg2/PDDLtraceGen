@@ -408,9 +408,51 @@ class Domain_manipulator:
         :return:
         """
         grounded_actions_set = set()
-        for single_action in self.actionObj_dict.keys():
+        for single_action_name in self.actionObj_dict.keys():
             #get the parameter groundings
-            self.get_all_parameter_groundings(single_action,problem_parser_obj)
+            groundings_set = self.get_all_parameter_groundings(single_action_name,problem_parser_obj)
+            actionObj = self.actionObj_dict[single_action_name]
+            #the variables in each grounding are in alphabetical order
+            for curr_grounding in groundings_set:
+                curr_action_data = []
+                parameter_dict = actionObj.parameter_name_type_dict
+                parameter_keys = sorted(list(parameter_dict.keys()))
+                var_mapping = dict(zip(parameter_keys, curr_grounding))
+
+
+                static_fluents = set()
+                for single_fluent in actionObj.static_preconditions_set:
+                    fluent_parts = single_fluent.split("_")
+                    ground_fluent_parts = [fluent_parts[0]] + [var_mapping[fluent_parts[i]] for i in
+                                                                   range(1, len(fluent_parts))]
+                    static_fluents.add("_".join(ground_fluent_parts))
+
+                for single_fluent in actionObj.preconditions_set:
+                    fluent_parts = single_fluent.split("_")
+                    ground_fluent_parts = [fluent_parts[0]] + [var_mapping[fluent_parts[i]] for i in
+                                                                   range(1, len(fluent_parts))]
+                    ground_fluent = "_".join(ground_fluent_parts)
+                    if ground_fluent not in static_fluents:
+                        curr_action_data.append(ground_fluent)
+                #end for loop through preconditions
+                #now add the action name
+                curr_action_data.append("_".join(["ACTION",single_action_name] + list(curr_grounding)))  # first add the grounded action signature
+                #finally add just the positive effects, (neg effects is duplicate information when things are in state variable format)
+                for single_fluent in actionObj.pos_effects_set:
+                    fluent_parts = single_fluent.split("_")
+                    ground_fluent_parts = [fluent_parts[0]] + [var_mapping[fluent_parts[i]] for i in
+                                                                   range(1, len(fluent_parts))]
+                    ground_fluent = "_".join(ground_fluent_parts)
+                    #check if it is not static, and the pos effect was not already true in the preconditions (poor spec)
+                    if ground_fluent not in static_fluents and ground_fluent not in curr_action_data:
+                        curr_action_data.append(ground_fluent)
+                #end for loop through the positive effects
+                grounded_actions_set.add(tuple(curr_action_data))
+            #end for loop through the possible groundings for the aciton
+        #end for loop through the actions in the domain
+        return grounded_actions_set
+    #end function generate_all_grounded_actions
+
 #---end class
 
 #=============================================================================+++

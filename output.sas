@@ -180,23 +180,23 @@ Atom in(p0, t7)
 end_variable
 0
 begin_state
-0
-0
-0
-2
-1
-2
-1
-1
-1
-6
 3
+2
 1
+1
+2
+3
+0
+0
+3
 7
+1
+0
+18
 end_state
 begin_goal
 1
-12 28
+12 15
 end_goal
 448
 begin_operator

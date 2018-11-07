@@ -22,15 +22,17 @@
 ; ALSO IMPORTANT. locFrom and locTo have been changed to locFrom and locTo. The "-" is used in other places such as object definition , as a language special character.
 ; this is a mistake on pddl specification on what characters should be allowed in names.
 ; IMPORTANT do NOT use "_" in any naming
-
+; IMPORTANT put the action parameters in alphabetical ascending order of their variable names
 ; ==================================================================================
 
 (:action LOAD-TRUCK
   :parameters
-   (?obj - tOBJ
-    ?truck - tTRUCK
+   (
+   ?city - tCity
     ?loc - tLOCATION
-    ?city - tCity)
+    ?obj - tOBJ
+    ?truck - tTRUCK
+    )
   :precondition
    (and (OBJ ?obj) (TRUCK ?truck) (LOCATION ?loc) (CITY ?city)
    (in ?truck ?loc) (in ?obj ?loc)
@@ -41,9 +43,10 @@
 
 (:action LOAD-AIRPLANE
   :parameters
-   (?obj - tOBJ
+   (
     ?airplane - tAIRPLANE
-    ?loc - tLOCATION)
+    ?loc - tLOCATION
+    ?obj - tOBJ)
   :precondition
   (and (OBJ ?obj) (AIRPLANE ?airplane) (AIRPORT ?loc)
    (in ?obj ?loc) (in ?airplane ?loc)
@@ -55,10 +58,11 @@
 
 (:action UNLOAD-TRUCK
   :parameters
-   (?obj - tOBJ
-    ?truck - tTRUCK
+   (
+   ?city - tCITY
     ?loc - tLOCATION
-    ?city - tCITY)
+    ?obj - tOBJ
+    ?truck - tTRUCK)
   :precondition
    (and (OBJ ?obj) (TRUCK ?truck) (LOCATION ?loc) (CITY ?city)
     (in ?truck ?loc) (in ?obj ?truck)
@@ -68,9 +72,10 @@
 
 (:action UNLOAD-AIRPLANE
   :parameters
-   (?obj - tOBJ
+   (
     ?airplane - tAIRPLANE
-    ?loc - tLOCATION)
+    ?loc - tLOCATION
+    ?obj - tOBJ)
   :precondition
    (and (OBJ ?obj) (AIRPLANE ?airplane) (AIRPORT ?loc)
         (in ?obj ?airplane) (in ?airplane ?loc)
@@ -80,10 +85,12 @@
 
 (:action DRIVE-TRUCK
   :parameters
-   (?truck - tTRUCK
+   (
+   ?city - tCITY
     ?locFrom - tLOCATION
     ?locTo - tLOCATION
-    ?city - tCITY )
+    ?truck - tTRUCK
+    )
   :precondition
    (and (TRUCK ?truck) (LOCATION ?locFrom) (LOCATION ?locTo) (CITY ?city)
    (in ?truck ?locFrom)

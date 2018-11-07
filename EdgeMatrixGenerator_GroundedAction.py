@@ -2,8 +2,12 @@
 
 """
 
+Generate edge matrix using action groundings.coocc counts.
 
-Very sensitive to the position of brackets, this code is not yet robust. In the action definition for each of the sections
+? should precon and effects be counted together. coocc counts.
+
+----------------
+Very sensitive to the position of brackets in pddl file, this code is not yet robust. In the action definition for each of the sections
 the bracket cannot be in a line by itself.
 
 1)Takes a problem and domain file and generates all the possible grounded actions.
@@ -38,8 +42,8 @@ import copy
 from enum import Enum
 
 domain_file_loc = "./Logistics_pddl/TYPED_MODlogisticsDomain.pddl"
-problem_file_loc = "./Logistics_pddl/TYPED_problem2_MODlogistics_c8_s4_p1_a4.pddl"
-pickle_dest_file =  "logistics_v2_actionsGrounding_c8_s4_p1_a4.p" #THE PICKLE file where the generated data (plan traces) are stored
+problem_file_loc = "./Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl"
+pickle_dest_file =  "logistics_actionsGrounding_c8_s4_p1_a4.p" #THE PICKLE file where the generated data (plan traces) are stored
 
 #==============================================================================+++
 def insert_list_in_dict(input_list,dest_dict):

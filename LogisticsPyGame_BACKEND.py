@@ -12,7 +12,7 @@ INSTRUCTIONS:
 2) Install pddlpy  (used to parse the initial state from the problem file)
 3) Make sure to enter the location of fastdownward into the variables in the code correctly.
     "logisitics_gen_exec"
-4) Make sure the logistics domain.pddl file is in the "Logistics_pddl" folder. This domain file is from the sample
+4) Make sure the logistics TYPED_blocks_domain.pddl file is in the "Logistics_pddl" folder. This domain file is from the sample
 domains you get when you install fast downward. This should already be there, just double-check.
 
 NOTE: In the "Logistics_pddl" folder is an executable script called logistics that generates the problem.pddl files based

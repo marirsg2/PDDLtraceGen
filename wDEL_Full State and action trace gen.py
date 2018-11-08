@@ -12,7 +12,7 @@ INSTRUCTIONS:
 2) Install pddlpy  (used to parse the initial state from the problem file)
 3) Make sure to enter the location of fastdownward into the variables in the code correctly.
     "logisitics_gen_exec"
-4) Make sure the logistics domain.pddl file is in the "Logistics_pddl" folder. This domain file is from the sample
+4) Make sure the logistics TYPED_blocks_domain.pddl file is in the "Logistics_pddl" folder. This domain file is from the sample
 domains you get when you install fast downward. This should already be there, just double-check.
 
 NOTE: In the "Logistics_pddl" folder is an executable script called logistics that generates the problem.pddl files based
@@ -44,7 +44,7 @@ dest_problem_file_name = "./Logistics_pddl/problem_logistics_" + dest_name_suffi
 #---for FD
 fast_downward_exec_loc = "~/FastDownward/fast-downward.py"
 fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --search \"lazy_greedy([hff, hcea], preferred=[hff, hcea])\""
-domain_file_loc = "./Logistics_pddl/domain.pddl"
+domain_file_loc = "./Logistics_pddl/TYPED_blocks_domain.pddl"
 problem_file_loc = dest_problem_file_name
 solution_file_loc = "./Logistics_pddl/logistics_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
 pickle_dest_file = "wDEL_" + str(number_traces)+dest_name_suffix+"_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored

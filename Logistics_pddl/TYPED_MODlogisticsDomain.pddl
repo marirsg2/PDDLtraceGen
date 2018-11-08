@@ -23,16 +23,16 @@
 ; this is a mistake on pddl specification on what characters should be allowed in names.
 ; IMPORTANT do NOT use "_" in any naming
 ; IMPORTANT put the action parameters in alphabetical ascending order of their variable names
+; IMPORTANT sadly the code is not robust, and so in the action parameter list, as soon as you open bracket, you need a parameter in the same line i.e.
+; do ""(?var - type" not "( \n ?var - type"
 ; ==================================================================================
 
 (:action LOAD-TRUCK
   :parameters
-   (
-   ?city - tCity
+   (?city - tCity
     ?loc - tLOCATION
     ?obj - tOBJ
-    ?truck - tTRUCK
-    )
+    ?truck - tTRUCK)
   :precondition
    (and (OBJ ?obj) (TRUCK ?truck) (LOCATION ?loc) (CITY ?city)
    (in ?truck ?loc) (in ?obj ?loc)
@@ -43,23 +43,19 @@
 
 (:action LOAD-AIRPLANE
   :parameters
-   (
-    ?airplane - tAIRPLANE
+   (?airplane - tAIRPLANE
     ?loc - tLOCATION
     ?obj - tOBJ)
   :precondition
   (and (OBJ ?obj) (AIRPLANE ?airplane) (AIRPORT ?loc)
    (in ?obj ?loc) (in ?airplane ?loc)
    (fliesTo ?airplane ?loc))
-
   :effect
-
    (and (not (in ?obj ?loc)) (in ?obj ?airplane)))
 
 (:action UNLOAD-TRUCK
   :parameters
-   (
-   ?city - tCITY
+   (?city - tCITY
     ?loc - tLOCATION
     ?obj - tOBJ
     ?truck - tTRUCK)
@@ -72,8 +68,7 @@
 
 (:action UNLOAD-AIRPLANE
   :parameters
-   (
-    ?airplane - tAIRPLANE
+   (?airplane - tAIRPLANE
     ?loc - tLOCATION
     ?obj - tOBJ)
   :precondition
@@ -85,12 +80,10 @@
 
 (:action DRIVE-TRUCK
   :parameters
-   (
-   ?city - tCITY
+   (?city - tCITY
     ?locFrom - tLOCATION
     ?locTo - tLOCATION
-    ?truck - tTRUCK
-    )
+    ?truck - tTRUCK)
   :precondition
    (and (TRUCK ?truck) (LOCATION ?locFrom) (LOCATION ?locTo) (CITY ?city)
    (in ?truck ?locFrom)
@@ -113,5 +106,5 @@
   :effect
    (and (not (in ?airplane ?locFrom)) (in ?airplane ?locTo)))
 
-
 ) ; END OF DOMAIN FILE
+

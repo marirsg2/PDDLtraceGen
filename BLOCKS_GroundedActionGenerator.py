@@ -38,8 +38,8 @@ import copy
 from enum import Enum
 
 domain_file_loc = "./Blocks_pddl/TYPED_blocks_domain.pddl"
-problem_file_loc = "./Blocks_pddl/TYPED_blocks_problem.pddl"
-pickle_dest_file =  "blocks_actiongrounding_4blocks.p" #THE PICKLE file where the generated data (plan traces) are stored
+problem_file_loc = "./Blocks_pddl/TYPED_blocks8_problem.pddl"
+pickle_dest_file =  "blocks_actiongrounding_8blocks.p" #THE PICKLE file where the generated data (plan traces) are stored
 
 #==============================================================================+++
 def insert_list_in_dict(input_list,dest_dict):
@@ -483,13 +483,15 @@ class Domain_manipulator:
                 #finally add just the positive effects, (neg effects is duplicate information when things are in state variable format)
                 for single_fluent in actionObj.pos_effects_set:
                     fluent_parts = single_fluent.split("_")
-                    try:
-                        ground_fluent_parts = [fluent_parts[0]] + [var_mapping[fluent_parts[i]] for i in
-                                                                   range(1, len(var_mapping.keys())+1)]
-                        if len(ground_fluent_parts) < 3:#for propositions like onTable C which is ontable C is true. Or HANDEMPTY -> handempty is true
-                            ground_fluent_parts.append("true")
-                    except:
+
+                    if fluent_parts[-1] == "true" or fluent_parts[-1] == "false":
                         ground_fluent_parts = fluent_parts
+                        if len(fluent_parts) == 3:
+                            ground_fluent_parts = fluent_parts
+                            ground_fluent_parts[1] = var_mapping[fluent_parts[1]]
+                    else:
+                        ground_fluent_parts = [fluent_parts[0]] + [var_mapping[fluent_parts[i]] for i in range(1, len(fluent_parts))]
+
                     ground_fluent = "_".join(ground_fluent_parts)
                     #check if it is not static, and the pos effect was not already true in the preconditions (poor spec)
                     if ground_fluent not in static_fluents and ground_fluent not in curr_action_data:

@@ -1,7 +1,7 @@
 
 
 """
-This code first generates a logistics pddl problem file using a script generator.
+This code first generates a barman pddl problem file using a script generator.
 It then runs fast downward to find the the solution, and you have to give the problem and domain file
 The traces are sequences of list. Each tuple has the propositions of a state first , and the last entry is the action.
 For each action there are two entries in the list. A "before/precondition state" with the action, and "After/Effect state" with the same action.
@@ -11,11 +11,11 @@ INSTRUCTIONS:
 1) Install fastdownward planner
 2) Install pddlpy  (used to parse the initial state from the problem file)
 3) Make sure to enter the location of fastdownward into the variables in the code correctly.
-    "logisitics_gen_exec"
-4) Make sure the logistics TYPED_blocks_domain.pddl file is in the "Logistics_pddl" folder. This domain file is from the sample
+    "barman_gen_exec"
+4) Make sure the barman TYPED_blocks_domain.pddl file is in the "Barman_pddl" folder. This domain file is from the sample
 domains you get when you install fast downward. This should already be there, just double-check.
 
-NOTE: In the "Logistics_pddl" folder is an executable script called logistics that generates the problem.pddl files based
+NOTE: In the "Barman_pddl" folder is an executable script called barman that generates the problem.pddl files based
 on how many cities, locations and packages you want.
 
 """
@@ -32,17 +32,23 @@ import pddlpy
 import copy
 from enum import Enum
 
-number_traces = 1
+number_traces = 100
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
-dest_problem_file_name = "./Logistics_pddl/TYPED_problem_MODlogistics_c8_s4_p1_a4.pddl"#this is where the logistics problem file generator stores the problem.pddl file
+#---for making problem files
+barman_gen_exec = "./Barman_pddl_gen/barman-generator.py "
+#code to generate a random problem space
+barman_config = ["10", "20","10" , "4562"]# num cocktails, num ingredients, num shots, optional random seed.
+max_num_goals = 2
+dest_name_suffix = "_".join(barman_config).replace("-","").replace(" ","")
+dest_problem_file_name = "./Barman_pddl_gen/problem_barman_" + dest_name_suffix + ".pddl"#this is where the barman problem file generator stores the problem.pddl file
 #---for FD
 fast_downward_exec_loc = "~/FastDownward/fast-downward.py"
 fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --search \"lazy_greedy([hff, hcea], preferred=[hff, hcea])\""
-domain_file_loc = "./Logistics_pddl/TYPED_MODlogisticsDomain.pddl"
+domain_file_loc = "./Barman_pddl_gen/TYPED_barman_domain.pddl"
 problem_file_loc = dest_problem_file_name
-solution_file_loc = "./logistics_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
-pickle_dest_file = "PygameSolution_logistics.p" #THE PICKLE file where the generated data (plan traces) are stored
+solution_file_loc = "./Barman_pddl_gen/barman_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
+pickle_dest_file = str(number_traces)+dest_name_suffix+"_barman_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
 
 #==============================================================================+++
 def insert_list_in_dict(input_list,dest_dict):
@@ -219,9 +225,8 @@ class Domain_manipulator:
                     parsing_state = self.Action_parsing_state.in_effects
                 elif parsing_state == self.Action_parsing_state.in_parameters:
                     line = line.replace("(","").replace(")","").replace("?","").replace("\n","")
-                    line = line.split("-")[0]
-                    parameter = line.strip(" ")
-                    parameter_list += [parameter]
+                    parameters = line.split(" ")
+                    parameter_list += [x for x in parameters if x != '']
                 elif parsing_state == self.Action_parsing_state.in_preconditions:
                     line = line.replace("(and","").replace("?","")
                     propositions = line.split(")")
@@ -295,148 +300,122 @@ def convert_to_state_action_list(solution_list):
     #---end for loop
 
     return s_a_trace
-# ==============================================================================+++
-class Problem_file_parser:
-
-    class ProblemFile_parsing_state(Enum):
-        no_section = 0
-        in_objects = 1
-        in_init = 2
-        in_goal = 3
 
 
-    def __init__(self, problem_file_loc):
-        self.obj_dict = {}
-        self.fluents_set = set()
-        self.prefix_text = ""
-
-        self.process_problem_file(problem_file_loc)
-
-
-    def process_problem_file(self,problem_file_loc):
-        """
-        :summary: extract and set the obj dict and fluents set
-        :param problem_file_loc:
-        :return:
-        """
-        objects_start_token = ":object"
-        init_start_token = ":init"
-        goal_start_token = ":goal"
-        parsing_state = self.ProblemFile_parsing_state.no_section
-        save_text = True
-        with open(problem_file_loc,"r") as problem_file:
-            for line_in_problem in problem_file:
-                if save_text:
-                    self.prefix_text += line_in_problem
-
-                if line_in_problem.startswith(";"):
-                    continue
-                if objects_start_token in line_in_problem:
-                    parsing_state = self.ProblemFile_parsing_state.in_objects
-                elif init_start_token in line_in_problem:
-                    save_text = False #dont save any more as the prefix
-                    parsing_state = self.ProblemFile_parsing_state.in_init
-                elif goal_start_token in line_in_problem:
-                    parsing_state = self.ProblemFile_parsing_state.in_goal
-                elif parsing_state == self.ProblemFile_parsing_state.in_objects:
-                    line_parts = line_in_problem.split("-")
-                    if len(line_parts) < 2:#not a valid line
-                        continue
-                    object_mapping_values = line_parts[0].split(" ")
-                    object_mapping_values = [x.lower() for x in object_mapping_values if x != '']
-                    object_mapping_key = line_parts[1].strip().lower()
-                    object_mapping_key = object_mapping_key.replace(")","")
-                    self.obj_dict[object_mapping_key] = object_mapping_values
-                    if ")" in line_in_problem:
-                        parsing_state = self.ProblemFile_parsing_state.no_section
-                elif parsing_state == self.ProblemFile_parsing_state.in_init:
-                    line_in_problem = line_in_problem.replace(")","").replace("(","").replace("\n","")
-                    if len(line_in_problem) < 3: #minimum is "a b" = <property><space><value>
-                        continue
-                    #end if
-                    line_in_problem = line_in_problem.replace(" ","_")
-                    self.fluents_set.add(line_in_problem.lower())
-                elif parsing_state == self.ProblemFile_parsing_state.in_goal:
-                    break; # we dont parse the goals for now
-            #end for loop through lines in the file
-        #end with statement keeping the file open
-    #end function process file
-#---end class problem file parser
 
 # ==============================================================================+++
+domain_parser_obj = Domain_manipulator(domain_file_loc)
+all_solutions = set()
 
-if __name__ == "__main__":
-    domain_parser_obj = Domain_manipulator(domain_file_loc)
-    problem_file_obj = Problem_file_parser(problem_file_loc)
+# with open(pickle_dest_file, "rb") as source_file:
+#     all_solutions = pickle.load(source_file)
 
 
-    # From the interface we only specify the goal, and the BACKEND updates the state and returns the plan.
-    # Difference between the fluents there in the embeddings, and the total = the static set of fluents
 
+def modify_barman_problem_goal(problem_idx, num_cocktails, num_shots, max_num_goals, dest_problem_file_name):
     """
-    1)Feed the current state to the pygame. Non-on embeddings are white !, pygame returns the remaining, which are the
-    static embeddings
-    2) On click, get non-on embedding (and not action)  as the goal
-    3) put into problem file, and solve it
-    4) Get solution, DRAW solution mapping the state variable of the goal
+    :summary: simply change the goal
+    :param num_cocktails:
+    :param num_shorts:
+    :param max_num_goals:
+    :param dest_problem_file_name:
+    :return:
     """
+    new_lines = []
+    total_num = 0
+    cocktail_shot_combo_num =  1
+    list_goal_count_index = []
+    for i in range(max_num_goals):
+        total_num = total_num + cocktail_shot_combo_num*num_cocktails*num_shots
+        list_goal_count_index.append(total_num) #this will tell us what number of goals to add in this current problem iter
+        num_cocktails = 1#THIS STAYS THE SAME
+        num_shots -= 1
 
-    all_solutions = set()
+    num_goals = 0
+    for i in range(len(list_goal_count_index)):
+        if problem_idx < list_goal_count_index[i]:
+            num_goals = i+1
 
-    # Parse the initial state and feed into pygame
+    with open(dest_problem_file_name,"r") as source_file:
+        curr_line = source_file.readline()
+        if ":goal" in curr_line:
+            new_lines.append(curr_line)
+            new_lines.append("(and \n")
+            prev_block_size = 1
+            for goal_idx in range(num_goals):
+                problem_offset = problem_idx / prev_block_size
+                curr_problem_block = problem_offset % list_goal_count_index[goal_idx]
+                allowed_num_shots = num_shots-goal_idx+1
+                shot_num = curr_problem_block%allowed_num_shots
+                cocktail_num = (curr_problem_block/shot_num)%num_cocktails
+                new_lines.append("(contains shot" +str(shot_num) + "cocktail" + str(cocktail_num)  +" ) \n")
+            #end for
+            new_lines.append("))) \n")
+        #end if
+    #end with
+    with open(dest_problem_file_name, "w") as dest_file:
+        dest_file.writelines(new_lines)
+#end function modify barman problem
 
-    # function that given a set of goal fluents, and problem file, will generate the solution, and resultant STATE
-    #translate that state into a
+# action_solutions = set()
+counter = 0
+command = barman_gen_exec + " ".join(barman_config)
+num_cocktails = barman_config[0]
+num_shots = barman_config[2]
+#we have already defined num goals
+if num_cocktails > num_shots-1 or max_num_goals > num_cocktails:
+    raise("ERROR: num cocktails and max_num_goals must be less than shots-1 ")
+current_problem_index = 0 #will start with 1
+os.system(command +" > " + dest_problem_file_name)
+while len(all_solutions) < number_traces:
+    counter +=1
+    if counter%10 == 0:
+        print("At iteration", counter)
+        print("Number solutions", len(all_solutions))
+    if counter%1000 == 0:
+        print("At iteration",counter)
+        print("Number solutions",len(all_solutions))
+        with open(pickle_dest_file, "wb") as destination:
+            pickle.dump(all_solutions, destination)
+    #---create problem files
 
+    #TODO MODIFY THE BARMAN FILE PROBLEM
+    modify_barman_problem_goal(current_problem_index, num_cocktails, num_shots, max_num_goals, dest_problem_file_name)
+    current_problem_index += 1
 
-    # action_solutions = set()
-    counter = 0
-    while len(all_solutions) < number_traces:
-        counter +=1
-        if counter%10 == 0:
-            print("At iteration", counter)
-            print("Number solutions", len(all_solutions))
-        if counter%1000 == 0:
-            print("At iteration",counter)
-            print("Number solutions",len(all_solutions))
-            with open(pickle_dest_file, "wb") as destination:
-                pickle.dump(all_solutions, destination)
-        #---create problem files
-        # command = logisitics_gen_exec + " ".join(logistics_config)
-        # os.system(command +" > " + dest_problem_file_name)
-        # #---NOW we have the problem files ,lets generate the solutions with fast downward
-        fd_command = fast_downward_exec_loc + " " + domain_file_loc + " " + problem_file_loc + " " +fd_heuristic_config
-        os.system(fd_command+" > " + solution_file_loc)
-        #---now extract the solution
-        solution_list = []
-        with open(solution_file_loc,"r") as solution_file:
-            all_lines = solution_file.readlines()
-            start_of_solution = False
-            for single_line in all_lines:
-                if keywords_before_solution in single_line:
-                    start_of_solution = True
-                    continue# the NEXT line will have the start of the solution
-                if keywords_after_solution in single_line:
-                    break #end of the solution
-                if start_of_solution:
-                    the_word = single_line.split("(")[0].replace(" ","_")[:-1]# we get rid of trailing info like "(1)\n"
-                    solution_list.append(the_word)
-            #---end for
-        #---end with
-        # print(solution_list)
-        if len(solution_list)> 1: #need atleast two actions to have informational value
-            s_a_trace = convert_to_state_action_list(solution_list)
-            s_a_trace = tuple(s_a_trace)
-            all_solutions.add(s_a_trace)
-    #---end outer for
+    #---NOW we have the problem files ,lets generate the solutions with fast downward
+    fd_command = fast_downward_exec_loc + " " + domain_file_loc + " " + problem_file_loc + " " +fd_heuristic_config
+    os.system(fd_command+" > " + solution_file_loc)
+    #---now extract the solution
+    solution_list = []
+    with open(solution_file_loc,"r") as solution_file:
+        all_lines = solution_file.readlines()
+        start_of_solution = False
+        for single_line in all_lines:
+            if keywords_before_solution in single_line:
+                start_of_solution = True
+                continue# the NEXT line will have the start of the solution
+            if keywords_after_solution in single_line:
+                break #end of the solution
+            if start_of_solution:
+                the_word = single_line.split("(")[0].replace(" ","_")[:-1]# we get rid of trailing info like "(1)\n"
+                solution_list.append(the_word)
+        #---end for
+    #---end with
+    # print(solution_list)
+    if len(solution_list)> 1: #need atleast two actions to have informational value
+        s_a_trace = convert_to_state_action_list(solution_list)
+        s_a_trace = tuple(s_a_trace)
+        all_solutions.add(s_a_trace)
+#---end outer for
 
-    with open(pickle_dest_file, "wb") as destination:
-        pickle.dump(all_solutions, destination)
+with open(pickle_dest_file, "wb") as destination:
+    pickle.dump(all_solutions, destination)
 
-    # testing code
-    with open(pickle_dest_file, "rb") as source_file:
-        a = pickle.load(source_file)
-        for single in a:
-            print(single)
+# testing code
+with open(pickle_dest_file, "rb") as source_file:
+    a = pickle.load(source_file)
+    for single in a:
+        print(single)
 
 

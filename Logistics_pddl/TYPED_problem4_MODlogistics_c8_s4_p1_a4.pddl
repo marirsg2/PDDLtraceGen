@@ -5,7 +5,7 @@
 (:domain logistics-strips)
 (:objects
           c0 c1 c2 c3 c4 c5 c6 c7 - tCITY
-          a0 a1 a2 a3 a4 - tAIRPLANE
+          a0 a1 a2 a3 a4 a5 a6 - tAIRPLANE
           l00 l10 l20 l30 l40 l50 l60 l70 l01 l02 l03 l11 l12 l13 l21 l22 l23 l31 l32 l33 l41 l42 l43 l51 l52 l53 l61 l62 l63 l71 l72 l73 - tLOCATION
           p0 - tOBJ
           t0 t1 t2 t3 t4 t5 t6 t7 - tTRUCK
@@ -32,18 +32,33 @@
 (AIRPLANE a2)
 (AIRPLANE a3)
 (AIRPLANE a4)
+(AIRPLANE a5)
+(AIRPLANE a6)
+
 (AIRPORT l00)
+(AIRPORT l01)
+
 (AIRPORT l10)
+(AIRPORT l11)
+
 (AIRPORT l20)
 (AIRPORT l23)
+
 (AIRPORT l30)
 (AIRPORT l33)
+
 (AIRPORT l40)
+(AIRPORT l41)
 (AIRPORT l43)
+
 (AIRPORT l50)
+(AIRPORT l51)
 (AIRPORT l53)
+
 (AIRPORT l60)
+(AIRPORT l61)
 (AIRPORT l63)
+
 (AIRPORT l70)
 (AIRPORT l73)
 (TRUCK t0)
@@ -147,6 +162,12 @@
 (fliesTo a4 l23)
 (fliesTo a4 l73)
 
+(fliesTo a5 l11)
+(fliesTo a5 l51)
+
+(fliesTo a6 l01)
+(fliesTo a6 l41)
+
 
 (in t0 l00)
 (in t1 l11)
@@ -161,6 +182,8 @@
 (in a2 l60)
 (in a3 l63)
 (in a4 l23)
+(in a5 l11)
+(in a6 l41)
 (in p0 l00)
 
 )

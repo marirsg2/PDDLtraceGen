@@ -4,7 +4,7 @@ end_version
 begin_metric
 0
 end_metric
-10
+13
 begin_variable
 var0
 -1
@@ -81,6 +81,45 @@ begin_variable
 var8
 -1
 8
+Atom at(a3, l00)
+Atom at(a3, l10)
+Atom at(a3, l20)
+Atom at(a3, l30)
+Atom at(a3, l40)
+Atom at(a3, l50)
+Atom at(a3, l60)
+Atom at(a3, l70)
+end_variable
+begin_variable
+var9
+-1
+8
+Atom at(a2, l00)
+Atom at(a2, l10)
+Atom at(a2, l20)
+Atom at(a2, l30)
+Atom at(a2, l40)
+Atom at(a2, l50)
+Atom at(a2, l60)
+Atom at(a2, l70)
+end_variable
+begin_variable
+var10
+-1
+8
+Atom at(a1, l00)
+Atom at(a1, l10)
+Atom at(a1, l20)
+Atom at(a1, l30)
+Atom at(a1, l40)
+Atom at(a1, l50)
+Atom at(a1, l60)
+Atom at(a1, l70)
+end_variable
+begin_variable
+var11
+-1
+8
 Atom at(a0, l00)
 Atom at(a0, l10)
 Atom at(a0, l20)
@@ -91,9 +130,9 @@ Atom at(a0, l60)
 Atom at(a0, l70)
 end_variable
 begin_variable
-var9
+var12
 -1
-41
+44
 Atom at(p0, l00)
 Atom at(p0, l01)
 Atom at(p0, l02)
@@ -127,6 +166,9 @@ Atom at(p0, l71)
 Atom at(p0, l72)
 Atom at(p0, l73)
 Atom in(p0, a0)
+Atom in(p0, a1)
+Atom in(p0, a2)
+Atom in(p0, a3)
 Atom in(p0, t0)
 Atom in(p0, t1)
 Atom in(p0, t2)
@@ -138,22 +180,25 @@ Atom in(p0, t7)
 end_variable
 0
 begin_state
+2
+2
+3
+3
+0
+0
+2
+3
+6
+4
 3
 2
-0
-1
-2
-0
-0
-1
-1
-30
+4
 end_state
 begin_goal
 1
-9 11
+12 12
 end_goal
-232
+448
 begin_operator
 drive-truck t0 l00 l01 c0
 0
@@ -830,389 +875,1565 @@ begin_operator
 fly-airplane a0 l00 l10
 0
 1
-0 8 0 1
+0 11 0 1
 1
 end_operator
 begin_operator
 fly-airplane a0 l00 l20
 0
 1
-0 8 0 2
+0 11 0 2
 1
 end_operator
 begin_operator
 fly-airplane a0 l00 l30
 0
 1
-0 8 0 3
+0 11 0 3
 1
 end_operator
 begin_operator
 fly-airplane a0 l00 l40
 0
 1
-0 8 0 4
+0 11 0 4
 1
 end_operator
 begin_operator
 fly-airplane a0 l00 l50
 0
 1
-0 8 0 5
+0 11 0 5
 1
 end_operator
 begin_operator
 fly-airplane a0 l00 l60
 0
 1
-0 8 0 6
+0 11 0 6
 1
 end_operator
 begin_operator
 fly-airplane a0 l00 l70
 0
 1
-0 8 0 7
+0 11 0 7
 1
 end_operator
 begin_operator
 fly-airplane a0 l10 l00
 0
 1
-0 8 1 0
+0 11 1 0
 1
 end_operator
 begin_operator
 fly-airplane a0 l10 l20
 0
 1
-0 8 1 2
+0 11 1 2
 1
 end_operator
 begin_operator
 fly-airplane a0 l10 l30
 0
 1
-0 8 1 3
+0 11 1 3
 1
 end_operator
 begin_operator
 fly-airplane a0 l10 l40
 0
 1
-0 8 1 4
+0 11 1 4
 1
 end_operator
 begin_operator
 fly-airplane a0 l10 l50
 0
 1
-0 8 1 5
+0 11 1 5
 1
 end_operator
 begin_operator
 fly-airplane a0 l10 l60
 0
 1
-0 8 1 6
+0 11 1 6
 1
 end_operator
 begin_operator
 fly-airplane a0 l10 l70
 0
 1
-0 8 1 7
+0 11 1 7
 1
 end_operator
 begin_operator
 fly-airplane a0 l20 l00
 0
 1
-0 8 2 0
+0 11 2 0
 1
 end_operator
 begin_operator
 fly-airplane a0 l20 l10
 0
 1
-0 8 2 1
+0 11 2 1
 1
 end_operator
 begin_operator
 fly-airplane a0 l20 l30
 0
 1
-0 8 2 3
+0 11 2 3
 1
 end_operator
 begin_operator
 fly-airplane a0 l20 l40
 0
 1
-0 8 2 4
+0 11 2 4
 1
 end_operator
 begin_operator
 fly-airplane a0 l20 l50
 0
 1
-0 8 2 5
+0 11 2 5
 1
 end_operator
 begin_operator
 fly-airplane a0 l20 l60
 0
 1
-0 8 2 6
+0 11 2 6
 1
 end_operator
 begin_operator
 fly-airplane a0 l20 l70
 0
 1
-0 8 2 7
+0 11 2 7
 1
 end_operator
 begin_operator
 fly-airplane a0 l30 l00
 0
 1
-0 8 3 0
+0 11 3 0
 1
 end_operator
 begin_operator
 fly-airplane a0 l30 l10
 0
 1
-0 8 3 1
+0 11 3 1
 1
 end_operator
 begin_operator
 fly-airplane a0 l30 l20
 0
 1
-0 8 3 2
+0 11 3 2
 1
 end_operator
 begin_operator
 fly-airplane a0 l30 l40
 0
 1
-0 8 3 4
+0 11 3 4
 1
 end_operator
 begin_operator
 fly-airplane a0 l30 l50
 0
 1
-0 8 3 5
+0 11 3 5
 1
 end_operator
 begin_operator
 fly-airplane a0 l30 l60
 0
 1
-0 8 3 6
+0 11 3 6
 1
 end_operator
 begin_operator
 fly-airplane a0 l30 l70
 0
 1
-0 8 3 7
+0 11 3 7
 1
 end_operator
 begin_operator
 fly-airplane a0 l40 l00
 0
 1
-0 8 4 0
+0 11 4 0
 1
 end_operator
 begin_operator
 fly-airplane a0 l40 l10
 0
 1
-0 8 4 1
+0 11 4 1
 1
 end_operator
 begin_operator
 fly-airplane a0 l40 l20
 0
 1
-0 8 4 2
+0 11 4 2
 1
 end_operator
 begin_operator
 fly-airplane a0 l40 l30
 0
 1
-0 8 4 3
+0 11 4 3
 1
 end_operator
 begin_operator
 fly-airplane a0 l40 l50
 0
 1
-0 8 4 5
+0 11 4 5
 1
 end_operator
 begin_operator
 fly-airplane a0 l40 l60
 0
 1
-0 8 4 6
+0 11 4 6
 1
 end_operator
 begin_operator
 fly-airplane a0 l40 l70
 0
 1
-0 8 4 7
+0 11 4 7
 1
 end_operator
 begin_operator
 fly-airplane a0 l50 l00
 0
 1
-0 8 5 0
+0 11 5 0
 1
 end_operator
 begin_operator
 fly-airplane a0 l50 l10
 0
 1
-0 8 5 1
+0 11 5 1
 1
 end_operator
 begin_operator
 fly-airplane a0 l50 l20
 0
 1
-0 8 5 2
+0 11 5 2
 1
 end_operator
 begin_operator
 fly-airplane a0 l50 l30
 0
 1
-0 8 5 3
+0 11 5 3
 1
 end_operator
 begin_operator
 fly-airplane a0 l50 l40
 0
 1
-0 8 5 4
+0 11 5 4
 1
 end_operator
 begin_operator
 fly-airplane a0 l50 l60
 0
 1
-0 8 5 6
+0 11 5 6
 1
 end_operator
 begin_operator
 fly-airplane a0 l50 l70
 0
 1
-0 8 5 7
+0 11 5 7
 1
 end_operator
 begin_operator
 fly-airplane a0 l60 l00
 0
 1
-0 8 6 0
+0 11 6 0
 1
 end_operator
 begin_operator
 fly-airplane a0 l60 l10
 0
 1
-0 8 6 1
+0 11 6 1
 1
 end_operator
 begin_operator
 fly-airplane a0 l60 l20
 0
 1
-0 8 6 2
+0 11 6 2
 1
 end_operator
 begin_operator
 fly-airplane a0 l60 l30
 0
 1
-0 8 6 3
+0 11 6 3
 1
 end_operator
 begin_operator
 fly-airplane a0 l60 l40
 0
 1
-0 8 6 4
+0 11 6 4
 1
 end_operator
 begin_operator
 fly-airplane a0 l60 l50
 0
 1
-0 8 6 5
+0 11 6 5
 1
 end_operator
 begin_operator
 fly-airplane a0 l60 l70
 0
 1
-0 8 6 7
+0 11 6 7
 1
 end_operator
 begin_operator
 fly-airplane a0 l70 l00
 0
 1
-0 8 7 0
+0 11 7 0
 1
 end_operator
 begin_operator
 fly-airplane a0 l70 l10
 0
 1
-0 8 7 1
+0 11 7 1
 1
 end_operator
 begin_operator
 fly-airplane a0 l70 l20
 0
 1
-0 8 7 2
+0 11 7 2
 1
 end_operator
 begin_operator
 fly-airplane a0 l70 l30
 0
 1
-0 8 7 3
+0 11 7 3
 1
 end_operator
 begin_operator
 fly-airplane a0 l70 l40
 0
 1
-0 8 7 4
+0 11 7 4
 1
 end_operator
 begin_operator
 fly-airplane a0 l70 l50
 0
 1
-0 8 7 5
+0 11 7 5
 1
 end_operator
 begin_operator
 fly-airplane a0 l70 l60
+0
+1
+0 11 7 6
+1
+end_operator
+begin_operator
+fly-airplane a1 l00 l10
+0
+1
+0 10 0 1
+1
+end_operator
+begin_operator
+fly-airplane a1 l00 l20
+0
+1
+0 10 0 2
+1
+end_operator
+begin_operator
+fly-airplane a1 l00 l30
+0
+1
+0 10 0 3
+1
+end_operator
+begin_operator
+fly-airplane a1 l00 l40
+0
+1
+0 10 0 4
+1
+end_operator
+begin_operator
+fly-airplane a1 l00 l50
+0
+1
+0 10 0 5
+1
+end_operator
+begin_operator
+fly-airplane a1 l00 l60
+0
+1
+0 10 0 6
+1
+end_operator
+begin_operator
+fly-airplane a1 l00 l70
+0
+1
+0 10 0 7
+1
+end_operator
+begin_operator
+fly-airplane a1 l10 l00
+0
+1
+0 10 1 0
+1
+end_operator
+begin_operator
+fly-airplane a1 l10 l20
+0
+1
+0 10 1 2
+1
+end_operator
+begin_operator
+fly-airplane a1 l10 l30
+0
+1
+0 10 1 3
+1
+end_operator
+begin_operator
+fly-airplane a1 l10 l40
+0
+1
+0 10 1 4
+1
+end_operator
+begin_operator
+fly-airplane a1 l10 l50
+0
+1
+0 10 1 5
+1
+end_operator
+begin_operator
+fly-airplane a1 l10 l60
+0
+1
+0 10 1 6
+1
+end_operator
+begin_operator
+fly-airplane a1 l10 l70
+0
+1
+0 10 1 7
+1
+end_operator
+begin_operator
+fly-airplane a1 l20 l00
+0
+1
+0 10 2 0
+1
+end_operator
+begin_operator
+fly-airplane a1 l20 l10
+0
+1
+0 10 2 1
+1
+end_operator
+begin_operator
+fly-airplane a1 l20 l30
+0
+1
+0 10 2 3
+1
+end_operator
+begin_operator
+fly-airplane a1 l20 l40
+0
+1
+0 10 2 4
+1
+end_operator
+begin_operator
+fly-airplane a1 l20 l50
+0
+1
+0 10 2 5
+1
+end_operator
+begin_operator
+fly-airplane a1 l20 l60
+0
+1
+0 10 2 6
+1
+end_operator
+begin_operator
+fly-airplane a1 l20 l70
+0
+1
+0 10 2 7
+1
+end_operator
+begin_operator
+fly-airplane a1 l30 l00
+0
+1
+0 10 3 0
+1
+end_operator
+begin_operator
+fly-airplane a1 l30 l10
+0
+1
+0 10 3 1
+1
+end_operator
+begin_operator
+fly-airplane a1 l30 l20
+0
+1
+0 10 3 2
+1
+end_operator
+begin_operator
+fly-airplane a1 l30 l40
+0
+1
+0 10 3 4
+1
+end_operator
+begin_operator
+fly-airplane a1 l30 l50
+0
+1
+0 10 3 5
+1
+end_operator
+begin_operator
+fly-airplane a1 l30 l60
+0
+1
+0 10 3 6
+1
+end_operator
+begin_operator
+fly-airplane a1 l30 l70
+0
+1
+0 10 3 7
+1
+end_operator
+begin_operator
+fly-airplane a1 l40 l00
+0
+1
+0 10 4 0
+1
+end_operator
+begin_operator
+fly-airplane a1 l40 l10
+0
+1
+0 10 4 1
+1
+end_operator
+begin_operator
+fly-airplane a1 l40 l20
+0
+1
+0 10 4 2
+1
+end_operator
+begin_operator
+fly-airplane a1 l40 l30
+0
+1
+0 10 4 3
+1
+end_operator
+begin_operator
+fly-airplane a1 l40 l50
+0
+1
+0 10 4 5
+1
+end_operator
+begin_operator
+fly-airplane a1 l40 l60
+0
+1
+0 10 4 6
+1
+end_operator
+begin_operator
+fly-airplane a1 l40 l70
+0
+1
+0 10 4 7
+1
+end_operator
+begin_operator
+fly-airplane a1 l50 l00
+0
+1
+0 10 5 0
+1
+end_operator
+begin_operator
+fly-airplane a1 l50 l10
+0
+1
+0 10 5 1
+1
+end_operator
+begin_operator
+fly-airplane a1 l50 l20
+0
+1
+0 10 5 2
+1
+end_operator
+begin_operator
+fly-airplane a1 l50 l30
+0
+1
+0 10 5 3
+1
+end_operator
+begin_operator
+fly-airplane a1 l50 l40
+0
+1
+0 10 5 4
+1
+end_operator
+begin_operator
+fly-airplane a1 l50 l60
+0
+1
+0 10 5 6
+1
+end_operator
+begin_operator
+fly-airplane a1 l50 l70
+0
+1
+0 10 5 7
+1
+end_operator
+begin_operator
+fly-airplane a1 l60 l00
+0
+1
+0 10 6 0
+1
+end_operator
+begin_operator
+fly-airplane a1 l60 l10
+0
+1
+0 10 6 1
+1
+end_operator
+begin_operator
+fly-airplane a1 l60 l20
+0
+1
+0 10 6 2
+1
+end_operator
+begin_operator
+fly-airplane a1 l60 l30
+0
+1
+0 10 6 3
+1
+end_operator
+begin_operator
+fly-airplane a1 l60 l40
+0
+1
+0 10 6 4
+1
+end_operator
+begin_operator
+fly-airplane a1 l60 l50
+0
+1
+0 10 6 5
+1
+end_operator
+begin_operator
+fly-airplane a1 l60 l70
+0
+1
+0 10 6 7
+1
+end_operator
+begin_operator
+fly-airplane a1 l70 l00
+0
+1
+0 10 7 0
+1
+end_operator
+begin_operator
+fly-airplane a1 l70 l10
+0
+1
+0 10 7 1
+1
+end_operator
+begin_operator
+fly-airplane a1 l70 l20
+0
+1
+0 10 7 2
+1
+end_operator
+begin_operator
+fly-airplane a1 l70 l30
+0
+1
+0 10 7 3
+1
+end_operator
+begin_operator
+fly-airplane a1 l70 l40
+0
+1
+0 10 7 4
+1
+end_operator
+begin_operator
+fly-airplane a1 l70 l50
+0
+1
+0 10 7 5
+1
+end_operator
+begin_operator
+fly-airplane a1 l70 l60
+0
+1
+0 10 7 6
+1
+end_operator
+begin_operator
+fly-airplane a2 l00 l10
+0
+1
+0 9 0 1
+1
+end_operator
+begin_operator
+fly-airplane a2 l00 l20
+0
+1
+0 9 0 2
+1
+end_operator
+begin_operator
+fly-airplane a2 l00 l30
+0
+1
+0 9 0 3
+1
+end_operator
+begin_operator
+fly-airplane a2 l00 l40
+0
+1
+0 9 0 4
+1
+end_operator
+begin_operator
+fly-airplane a2 l00 l50
+0
+1
+0 9 0 5
+1
+end_operator
+begin_operator
+fly-airplane a2 l00 l60
+0
+1
+0 9 0 6
+1
+end_operator
+begin_operator
+fly-airplane a2 l00 l70
+0
+1
+0 9 0 7
+1
+end_operator
+begin_operator
+fly-airplane a2 l10 l00
+0
+1
+0 9 1 0
+1
+end_operator
+begin_operator
+fly-airplane a2 l10 l20
+0
+1
+0 9 1 2
+1
+end_operator
+begin_operator
+fly-airplane a2 l10 l30
+0
+1
+0 9 1 3
+1
+end_operator
+begin_operator
+fly-airplane a2 l10 l40
+0
+1
+0 9 1 4
+1
+end_operator
+begin_operator
+fly-airplane a2 l10 l50
+0
+1
+0 9 1 5
+1
+end_operator
+begin_operator
+fly-airplane a2 l10 l60
+0
+1
+0 9 1 6
+1
+end_operator
+begin_operator
+fly-airplane a2 l10 l70
+0
+1
+0 9 1 7
+1
+end_operator
+begin_operator
+fly-airplane a2 l20 l00
+0
+1
+0 9 2 0
+1
+end_operator
+begin_operator
+fly-airplane a2 l20 l10
+0
+1
+0 9 2 1
+1
+end_operator
+begin_operator
+fly-airplane a2 l20 l30
+0
+1
+0 9 2 3
+1
+end_operator
+begin_operator
+fly-airplane a2 l20 l40
+0
+1
+0 9 2 4
+1
+end_operator
+begin_operator
+fly-airplane a2 l20 l50
+0
+1
+0 9 2 5
+1
+end_operator
+begin_operator
+fly-airplane a2 l20 l60
+0
+1
+0 9 2 6
+1
+end_operator
+begin_operator
+fly-airplane a2 l20 l70
+0
+1
+0 9 2 7
+1
+end_operator
+begin_operator
+fly-airplane a2 l30 l00
+0
+1
+0 9 3 0
+1
+end_operator
+begin_operator
+fly-airplane a2 l30 l10
+0
+1
+0 9 3 1
+1
+end_operator
+begin_operator
+fly-airplane a2 l30 l20
+0
+1
+0 9 3 2
+1
+end_operator
+begin_operator
+fly-airplane a2 l30 l40
+0
+1
+0 9 3 4
+1
+end_operator
+begin_operator
+fly-airplane a2 l30 l50
+0
+1
+0 9 3 5
+1
+end_operator
+begin_operator
+fly-airplane a2 l30 l60
+0
+1
+0 9 3 6
+1
+end_operator
+begin_operator
+fly-airplane a2 l30 l70
+0
+1
+0 9 3 7
+1
+end_operator
+begin_operator
+fly-airplane a2 l40 l00
+0
+1
+0 9 4 0
+1
+end_operator
+begin_operator
+fly-airplane a2 l40 l10
+0
+1
+0 9 4 1
+1
+end_operator
+begin_operator
+fly-airplane a2 l40 l20
+0
+1
+0 9 4 2
+1
+end_operator
+begin_operator
+fly-airplane a2 l40 l30
+0
+1
+0 9 4 3
+1
+end_operator
+begin_operator
+fly-airplane a2 l40 l50
+0
+1
+0 9 4 5
+1
+end_operator
+begin_operator
+fly-airplane a2 l40 l60
+0
+1
+0 9 4 6
+1
+end_operator
+begin_operator
+fly-airplane a2 l40 l70
+0
+1
+0 9 4 7
+1
+end_operator
+begin_operator
+fly-airplane a2 l50 l00
+0
+1
+0 9 5 0
+1
+end_operator
+begin_operator
+fly-airplane a2 l50 l10
+0
+1
+0 9 5 1
+1
+end_operator
+begin_operator
+fly-airplane a2 l50 l20
+0
+1
+0 9 5 2
+1
+end_operator
+begin_operator
+fly-airplane a2 l50 l30
+0
+1
+0 9 5 3
+1
+end_operator
+begin_operator
+fly-airplane a2 l50 l40
+0
+1
+0 9 5 4
+1
+end_operator
+begin_operator
+fly-airplane a2 l50 l60
+0
+1
+0 9 5 6
+1
+end_operator
+begin_operator
+fly-airplane a2 l50 l70
+0
+1
+0 9 5 7
+1
+end_operator
+begin_operator
+fly-airplane a2 l60 l00
+0
+1
+0 9 6 0
+1
+end_operator
+begin_operator
+fly-airplane a2 l60 l10
+0
+1
+0 9 6 1
+1
+end_operator
+begin_operator
+fly-airplane a2 l60 l20
+0
+1
+0 9 6 2
+1
+end_operator
+begin_operator
+fly-airplane a2 l60 l30
+0
+1
+0 9 6 3
+1
+end_operator
+begin_operator
+fly-airplane a2 l60 l40
+0
+1
+0 9 6 4
+1
+end_operator
+begin_operator
+fly-airplane a2 l60 l50
+0
+1
+0 9 6 5
+1
+end_operator
+begin_operator
+fly-airplane a2 l60 l70
+0
+1
+0 9 6 7
+1
+end_operator
+begin_operator
+fly-airplane a2 l70 l00
+0
+1
+0 9 7 0
+1
+end_operator
+begin_operator
+fly-airplane a2 l70 l10
+0
+1
+0 9 7 1
+1
+end_operator
+begin_operator
+fly-airplane a2 l70 l20
+0
+1
+0 9 7 2
+1
+end_operator
+begin_operator
+fly-airplane a2 l70 l30
+0
+1
+0 9 7 3
+1
+end_operator
+begin_operator
+fly-airplane a2 l70 l40
+0
+1
+0 9 7 4
+1
+end_operator
+begin_operator
+fly-airplane a2 l70 l50
+0
+1
+0 9 7 5
+1
+end_operator
+begin_operator
+fly-airplane a2 l70 l60
+0
+1
+0 9 7 6
+1
+end_operator
+begin_operator
+fly-airplane a3 l00 l10
+0
+1
+0 8 0 1
+1
+end_operator
+begin_operator
+fly-airplane a3 l00 l20
+0
+1
+0 8 0 2
+1
+end_operator
+begin_operator
+fly-airplane a3 l00 l30
+0
+1
+0 8 0 3
+1
+end_operator
+begin_operator
+fly-airplane a3 l00 l40
+0
+1
+0 8 0 4
+1
+end_operator
+begin_operator
+fly-airplane a3 l00 l50
+0
+1
+0 8 0 5
+1
+end_operator
+begin_operator
+fly-airplane a3 l00 l60
+0
+1
+0 8 0 6
+1
+end_operator
+begin_operator
+fly-airplane a3 l00 l70
+0
+1
+0 8 0 7
+1
+end_operator
+begin_operator
+fly-airplane a3 l10 l00
+0
+1
+0 8 1 0
+1
+end_operator
+begin_operator
+fly-airplane a3 l10 l20
+0
+1
+0 8 1 2
+1
+end_operator
+begin_operator
+fly-airplane a3 l10 l30
+0
+1
+0 8 1 3
+1
+end_operator
+begin_operator
+fly-airplane a3 l10 l40
+0
+1
+0 8 1 4
+1
+end_operator
+begin_operator
+fly-airplane a3 l10 l50
+0
+1
+0 8 1 5
+1
+end_operator
+begin_operator
+fly-airplane a3 l10 l60
+0
+1
+0 8 1 6
+1
+end_operator
+begin_operator
+fly-airplane a3 l10 l70
+0
+1
+0 8 1 7
+1
+end_operator
+begin_operator
+fly-airplane a3 l20 l00
+0
+1
+0 8 2 0
+1
+end_operator
+begin_operator
+fly-airplane a3 l20 l10
+0
+1
+0 8 2 1
+1
+end_operator
+begin_operator
+fly-airplane a3 l20 l30
+0
+1
+0 8 2 3
+1
+end_operator
+begin_operator
+fly-airplane a3 l20 l40
+0
+1
+0 8 2 4
+1
+end_operator
+begin_operator
+fly-airplane a3 l20 l50
+0
+1
+0 8 2 5
+1
+end_operator
+begin_operator
+fly-airplane a3 l20 l60
+0
+1
+0 8 2 6
+1
+end_operator
+begin_operator
+fly-airplane a3 l20 l70
+0
+1
+0 8 2 7
+1
+end_operator
+begin_operator
+fly-airplane a3 l30 l00
+0
+1
+0 8 3 0
+1
+end_operator
+begin_operator
+fly-airplane a3 l30 l10
+0
+1
+0 8 3 1
+1
+end_operator
+begin_operator
+fly-airplane a3 l30 l20
+0
+1
+0 8 3 2
+1
+end_operator
+begin_operator
+fly-airplane a3 l30 l40
+0
+1
+0 8 3 4
+1
+end_operator
+begin_operator
+fly-airplane a3 l30 l50
+0
+1
+0 8 3 5
+1
+end_operator
+begin_operator
+fly-airplane a3 l30 l60
+0
+1
+0 8 3 6
+1
+end_operator
+begin_operator
+fly-airplane a3 l30 l70
+0
+1
+0 8 3 7
+1
+end_operator
+begin_operator
+fly-airplane a3 l40 l00
+0
+1
+0 8 4 0
+1
+end_operator
+begin_operator
+fly-airplane a3 l40 l10
+0
+1
+0 8 4 1
+1
+end_operator
+begin_operator
+fly-airplane a3 l40 l20
+0
+1
+0 8 4 2
+1
+end_operator
+begin_operator
+fly-airplane a3 l40 l30
+0
+1
+0 8 4 3
+1
+end_operator
+begin_operator
+fly-airplane a3 l40 l50
+0
+1
+0 8 4 5
+1
+end_operator
+begin_operator
+fly-airplane a3 l40 l60
+0
+1
+0 8 4 6
+1
+end_operator
+begin_operator
+fly-airplane a3 l40 l70
+0
+1
+0 8 4 7
+1
+end_operator
+begin_operator
+fly-airplane a3 l50 l00
+0
+1
+0 8 5 0
+1
+end_operator
+begin_operator
+fly-airplane a3 l50 l10
+0
+1
+0 8 5 1
+1
+end_operator
+begin_operator
+fly-airplane a3 l50 l20
+0
+1
+0 8 5 2
+1
+end_operator
+begin_operator
+fly-airplane a3 l50 l30
+0
+1
+0 8 5 3
+1
+end_operator
+begin_operator
+fly-airplane a3 l50 l40
+0
+1
+0 8 5 4
+1
+end_operator
+begin_operator
+fly-airplane a3 l50 l60
+0
+1
+0 8 5 6
+1
+end_operator
+begin_operator
+fly-airplane a3 l50 l70
+0
+1
+0 8 5 7
+1
+end_operator
+begin_operator
+fly-airplane a3 l60 l00
+0
+1
+0 8 6 0
+1
+end_operator
+begin_operator
+fly-airplane a3 l60 l10
+0
+1
+0 8 6 1
+1
+end_operator
+begin_operator
+fly-airplane a3 l60 l20
+0
+1
+0 8 6 2
+1
+end_operator
+begin_operator
+fly-airplane a3 l60 l30
+0
+1
+0 8 6 3
+1
+end_operator
+begin_operator
+fly-airplane a3 l60 l40
+0
+1
+0 8 6 4
+1
+end_operator
+begin_operator
+fly-airplane a3 l60 l50
+0
+1
+0 8 6 5
+1
+end_operator
+begin_operator
+fly-airplane a3 l60 l70
+0
+1
+0 8 6 7
+1
+end_operator
+begin_operator
+fly-airplane a3 l70 l00
+0
+1
+0 8 7 0
+1
+end_operator
+begin_operator
+fly-airplane a3 l70 l10
+0
+1
+0 8 7 1
+1
+end_operator
+begin_operator
+fly-airplane a3 l70 l20
+0
+1
+0 8 7 2
+1
+end_operator
+begin_operator
+fly-airplane a3 l70 l30
+0
+1
+0 8 7 3
+1
+end_operator
+begin_operator
+fly-airplane a3 l70 l40
+0
+1
+0 8 7 4
+1
+end_operator
+begin_operator
+fly-airplane a3 l70 l50
+0
+1
+0 8 7 5
+1
+end_operator
+begin_operator
+fly-airplane a3 l70 l60
 0
 1
 0 8 7 6
@@ -1221,65 +2442,257 @@ end_operator
 begin_operator
 load-airplane p0 a0 l00
 1
-8 0
+11 0
 1
-0 9 0 32
+0 12 0 32
 1
 end_operator
 begin_operator
 load-airplane p0 a0 l10
 1
-8 1
+11 1
 1
-0 9 4 32
+0 12 4 32
 1
 end_operator
 begin_operator
 load-airplane p0 a0 l20
 1
-8 2
+11 2
 1
-0 9 8 32
+0 12 8 32
 1
 end_operator
 begin_operator
 load-airplane p0 a0 l30
 1
-8 3
+11 3
 1
-0 9 12 32
+0 12 12 32
 1
 end_operator
 begin_operator
 load-airplane p0 a0 l40
 1
-8 4
+11 4
 1
-0 9 16 32
+0 12 16 32
 1
 end_operator
 begin_operator
 load-airplane p0 a0 l50
 1
-8 5
+11 5
 1
-0 9 20 32
+0 12 20 32
 1
 end_operator
 begin_operator
 load-airplane p0 a0 l60
 1
-8 6
+11 6
 1
-0 9 24 32
+0 12 24 32
 1
 end_operator
 begin_operator
 load-airplane p0 a0 l70
 1
+11 7
+1
+0 12 28 32
+1
+end_operator
+begin_operator
+load-airplane p0 a1 l00
+1
+10 0
+1
+0 12 0 33
+1
+end_operator
+begin_operator
+load-airplane p0 a1 l10
+1
+10 1
+1
+0 12 4 33
+1
+end_operator
+begin_operator
+load-airplane p0 a1 l20
+1
+10 2
+1
+0 12 8 33
+1
+end_operator
+begin_operator
+load-airplane p0 a1 l30
+1
+10 3
+1
+0 12 12 33
+1
+end_operator
+begin_operator
+load-airplane p0 a1 l40
+1
+10 4
+1
+0 12 16 33
+1
+end_operator
+begin_operator
+load-airplane p0 a1 l50
+1
+10 5
+1
+0 12 20 33
+1
+end_operator
+begin_operator
+load-airplane p0 a1 l60
+1
+10 6
+1
+0 12 24 33
+1
+end_operator
+begin_operator
+load-airplane p0 a1 l70
+1
+10 7
+1
+0 12 28 33
+1
+end_operator
+begin_operator
+load-airplane p0 a2 l00
+1
+9 0
+1
+0 12 0 34
+1
+end_operator
+begin_operator
+load-airplane p0 a2 l10
+1
+9 1
+1
+0 12 4 34
+1
+end_operator
+begin_operator
+load-airplane p0 a2 l20
+1
+9 2
+1
+0 12 8 34
+1
+end_operator
+begin_operator
+load-airplane p0 a2 l30
+1
+9 3
+1
+0 12 12 34
+1
+end_operator
+begin_operator
+load-airplane p0 a2 l40
+1
+9 4
+1
+0 12 16 34
+1
+end_operator
+begin_operator
+load-airplane p0 a2 l50
+1
+9 5
+1
+0 12 20 34
+1
+end_operator
+begin_operator
+load-airplane p0 a2 l60
+1
+9 6
+1
+0 12 24 34
+1
+end_operator
+begin_operator
+load-airplane p0 a2 l70
+1
+9 7
+1
+0 12 28 34
+1
+end_operator
+begin_operator
+load-airplane p0 a3 l00
+1
+8 0
+1
+0 12 0 35
+1
+end_operator
+begin_operator
+load-airplane p0 a3 l10
+1
+8 1
+1
+0 12 4 35
+1
+end_operator
+begin_operator
+load-airplane p0 a3 l20
+1
+8 2
+1
+0 12 8 35
+1
+end_operator
+begin_operator
+load-airplane p0 a3 l30
+1
+8 3
+1
+0 12 12 35
+1
+end_operator
+begin_operator
+load-airplane p0 a3 l40
+1
+8 4
+1
+0 12 16 35
+1
+end_operator
+begin_operator
+load-airplane p0 a3 l50
+1
+8 5
+1
+0 12 20 35
+1
+end_operator
+begin_operator
+load-airplane p0 a3 l60
+1
+8 6
+1
+0 12 24 35
+1
+end_operator
+begin_operator
+load-airplane p0 a3 l70
+1
 8 7
 1
-0 9 28 32
+0 12 28 35
 1
 end_operator
 begin_operator
@@ -1287,7 +2700,7 @@ load-truck p0 t0 l00
 1
 7 0
 1
-0 9 0 33
+0 12 0 36
 1
 end_operator
 begin_operator
@@ -1295,7 +2708,7 @@ load-truck p0 t0 l01
 1
 7 1
 1
-0 9 1 33
+0 12 1 36
 1
 end_operator
 begin_operator
@@ -1303,7 +2716,7 @@ load-truck p0 t0 l02
 1
 7 2
 1
-0 9 2 33
+0 12 2 36
 1
 end_operator
 begin_operator
@@ -1311,7 +2724,7 @@ load-truck p0 t0 l03
 1
 7 3
 1
-0 9 3 33
+0 12 3 36
 1
 end_operator
 begin_operator
@@ -1319,7 +2732,7 @@ load-truck p0 t1 l10
 1
 6 0
 1
-0 9 4 34
+0 12 4 37
 1
 end_operator
 begin_operator
@@ -1327,7 +2740,7 @@ load-truck p0 t1 l11
 1
 6 1
 1
-0 9 5 34
+0 12 5 37
 1
 end_operator
 begin_operator
@@ -1335,7 +2748,7 @@ load-truck p0 t1 l12
 1
 6 2
 1
-0 9 6 34
+0 12 6 37
 1
 end_operator
 begin_operator
@@ -1343,7 +2756,7 @@ load-truck p0 t1 l13
 1
 6 3
 1
-0 9 7 34
+0 12 7 37
 1
 end_operator
 begin_operator
@@ -1351,7 +2764,7 @@ load-truck p0 t2 l20
 1
 5 0
 1
-0 9 8 35
+0 12 8 38
 1
 end_operator
 begin_operator
@@ -1359,7 +2772,7 @@ load-truck p0 t2 l21
 1
 5 1
 1
-0 9 9 35
+0 12 9 38
 1
 end_operator
 begin_operator
@@ -1367,7 +2780,7 @@ load-truck p0 t2 l22
 1
 5 2
 1
-0 9 10 35
+0 12 10 38
 1
 end_operator
 begin_operator
@@ -1375,7 +2788,7 @@ load-truck p0 t2 l23
 1
 5 3
 1
-0 9 11 35
+0 12 11 38
 1
 end_operator
 begin_operator
@@ -1383,7 +2796,7 @@ load-truck p0 t3 l30
 1
 4 0
 1
-0 9 12 36
+0 12 12 39
 1
 end_operator
 begin_operator
@@ -1391,7 +2804,7 @@ load-truck p0 t3 l31
 1
 4 1
 1
-0 9 13 36
+0 12 13 39
 1
 end_operator
 begin_operator
@@ -1399,7 +2812,7 @@ load-truck p0 t3 l32
 1
 4 2
 1
-0 9 14 36
+0 12 14 39
 1
 end_operator
 begin_operator
@@ -1407,7 +2820,7 @@ load-truck p0 t3 l33
 1
 4 3
 1
-0 9 15 36
+0 12 15 39
 1
 end_operator
 begin_operator
@@ -1415,7 +2828,7 @@ load-truck p0 t4 l40
 1
 3 0
 1
-0 9 16 37
+0 12 16 40
 1
 end_operator
 begin_operator
@@ -1423,7 +2836,7 @@ load-truck p0 t4 l41
 1
 3 1
 1
-0 9 17 37
+0 12 17 40
 1
 end_operator
 begin_operator
@@ -1431,7 +2844,7 @@ load-truck p0 t4 l42
 1
 3 2
 1
-0 9 18 37
+0 12 18 40
 1
 end_operator
 begin_operator
@@ -1439,7 +2852,7 @@ load-truck p0 t4 l43
 1
 3 3
 1
-0 9 19 37
+0 12 19 40
 1
 end_operator
 begin_operator
@@ -1447,7 +2860,7 @@ load-truck p0 t5 l50
 1
 2 0
 1
-0 9 20 38
+0 12 20 41
 1
 end_operator
 begin_operator
@@ -1455,7 +2868,7 @@ load-truck p0 t5 l51
 1
 2 1
 1
-0 9 21 38
+0 12 21 41
 1
 end_operator
 begin_operator
@@ -1463,7 +2876,7 @@ load-truck p0 t5 l52
 1
 2 2
 1
-0 9 22 38
+0 12 22 41
 1
 end_operator
 begin_operator
@@ -1471,7 +2884,7 @@ load-truck p0 t5 l53
 1
 2 3
 1
-0 9 23 38
+0 12 23 41
 1
 end_operator
 begin_operator
@@ -1479,7 +2892,7 @@ load-truck p0 t6 l60
 1
 1 0
 1
-0 9 24 39
+0 12 24 42
 1
 end_operator
 begin_operator
@@ -1487,7 +2900,7 @@ load-truck p0 t6 l61
 1
 1 1
 1
-0 9 25 39
+0 12 25 42
 1
 end_operator
 begin_operator
@@ -1495,7 +2908,7 @@ load-truck p0 t6 l62
 1
 1 2
 1
-0 9 26 39
+0 12 26 42
 1
 end_operator
 begin_operator
@@ -1503,7 +2916,7 @@ load-truck p0 t6 l63
 1
 1 3
 1
-0 9 27 39
+0 12 27 42
 1
 end_operator
 begin_operator
@@ -1511,7 +2924,7 @@ load-truck p0 t7 l70
 1
 0 0
 1
-0 9 28 40
+0 12 28 43
 1
 end_operator
 begin_operator
@@ -1519,7 +2932,7 @@ load-truck p0 t7 l71
 1
 0 1
 1
-0 9 29 40
+0 12 29 43
 1
 end_operator
 begin_operator
@@ -1527,7 +2940,7 @@ load-truck p0 t7 l72
 1
 0 2
 1
-0 9 30 40
+0 12 30 43
 1
 end_operator
 begin_operator
@@ -1535,71 +2948,263 @@ load-truck p0 t7 l73
 1
 0 3
 1
-0 9 31 40
+0 12 31 43
 1
 end_operator
 begin_operator
 unload-airplane p0 a0 l00
 1
-8 0
+11 0
 1
-0 9 32 0
+0 12 32 0
 1
 end_operator
 begin_operator
 unload-airplane p0 a0 l10
 1
-8 1
+11 1
 1
-0 9 32 4
+0 12 32 4
 1
 end_operator
 begin_operator
 unload-airplane p0 a0 l20
 1
-8 2
+11 2
 1
-0 9 32 8
+0 12 32 8
 1
 end_operator
 begin_operator
 unload-airplane p0 a0 l30
 1
-8 3
+11 3
 1
-0 9 32 12
+0 12 32 12
 1
 end_operator
 begin_operator
 unload-airplane p0 a0 l40
 1
-8 4
+11 4
 1
-0 9 32 16
+0 12 32 16
 1
 end_operator
 begin_operator
 unload-airplane p0 a0 l50
 1
-8 5
+11 5
 1
-0 9 32 20
+0 12 32 20
 1
 end_operator
 begin_operator
 unload-airplane p0 a0 l60
 1
-8 6
+11 6
 1
-0 9 32 24
+0 12 32 24
 1
 end_operator
 begin_operator
 unload-airplane p0 a0 l70
 1
+11 7
+1
+0 12 32 28
+1
+end_operator
+begin_operator
+unload-airplane p0 a1 l00
+1
+10 0
+1
+0 12 33 0
+1
+end_operator
+begin_operator
+unload-airplane p0 a1 l10
+1
+10 1
+1
+0 12 33 4
+1
+end_operator
+begin_operator
+unload-airplane p0 a1 l20
+1
+10 2
+1
+0 12 33 8
+1
+end_operator
+begin_operator
+unload-airplane p0 a1 l30
+1
+10 3
+1
+0 12 33 12
+1
+end_operator
+begin_operator
+unload-airplane p0 a1 l40
+1
+10 4
+1
+0 12 33 16
+1
+end_operator
+begin_operator
+unload-airplane p0 a1 l50
+1
+10 5
+1
+0 12 33 20
+1
+end_operator
+begin_operator
+unload-airplane p0 a1 l60
+1
+10 6
+1
+0 12 33 24
+1
+end_operator
+begin_operator
+unload-airplane p0 a1 l70
+1
+10 7
+1
+0 12 33 28
+1
+end_operator
+begin_operator
+unload-airplane p0 a2 l00
+1
+9 0
+1
+0 12 34 0
+1
+end_operator
+begin_operator
+unload-airplane p0 a2 l10
+1
+9 1
+1
+0 12 34 4
+1
+end_operator
+begin_operator
+unload-airplane p0 a2 l20
+1
+9 2
+1
+0 12 34 8
+1
+end_operator
+begin_operator
+unload-airplane p0 a2 l30
+1
+9 3
+1
+0 12 34 12
+1
+end_operator
+begin_operator
+unload-airplane p0 a2 l40
+1
+9 4
+1
+0 12 34 16
+1
+end_operator
+begin_operator
+unload-airplane p0 a2 l50
+1
+9 5
+1
+0 12 34 20
+1
+end_operator
+begin_operator
+unload-airplane p0 a2 l60
+1
+9 6
+1
+0 12 34 24
+1
+end_operator
+begin_operator
+unload-airplane p0 a2 l70
+1
+9 7
+1
+0 12 34 28
+1
+end_operator
+begin_operator
+unload-airplane p0 a3 l00
+1
+8 0
+1
+0 12 35 0
+1
+end_operator
+begin_operator
+unload-airplane p0 a3 l10
+1
+8 1
+1
+0 12 35 4
+1
+end_operator
+begin_operator
+unload-airplane p0 a3 l20
+1
+8 2
+1
+0 12 35 8
+1
+end_operator
+begin_operator
+unload-airplane p0 a3 l30
+1
+8 3
+1
+0 12 35 12
+1
+end_operator
+begin_operator
+unload-airplane p0 a3 l40
+1
+8 4
+1
+0 12 35 16
+1
+end_operator
+begin_operator
+unload-airplane p0 a3 l50
+1
+8 5
+1
+0 12 35 20
+1
+end_operator
+begin_operator
+unload-airplane p0 a3 l60
+1
+8 6
+1
+0 12 35 24
+1
+end_operator
+begin_operator
+unload-airplane p0 a3 l70
+1
 8 7
 1
-0 9 32 28
+0 12 35 28
 1
 end_operator
 begin_operator
@@ -1607,7 +3212,7 @@ unload-truck p0 t0 l00
 1
 7 0
 1
-0 9 33 0
+0 12 36 0
 1
 end_operator
 begin_operator
@@ -1615,7 +3220,7 @@ unload-truck p0 t0 l01
 1
 7 1
 1
-0 9 33 1
+0 12 36 1
 1
 end_operator
 begin_operator
@@ -1623,7 +3228,7 @@ unload-truck p0 t0 l02
 1
 7 2
 1
-0 9 33 2
+0 12 36 2
 1
 end_operator
 begin_operator
@@ -1631,7 +3236,7 @@ unload-truck p0 t0 l03
 1
 7 3
 1
-0 9 33 3
+0 12 36 3
 1
 end_operator
 begin_operator
@@ -1639,7 +3244,7 @@ unload-truck p0 t1 l10
 1
 6 0
 1
-0 9 34 4
+0 12 37 4
 1
 end_operator
 begin_operator
@@ -1647,7 +3252,7 @@ unload-truck p0 t1 l11
 1
 6 1
 1
-0 9 34 5
+0 12 37 5
 1
 end_operator
 begin_operator
@@ -1655,7 +3260,7 @@ unload-truck p0 t1 l12
 1
 6 2
 1
-0 9 34 6
+0 12 37 6
 1
 end_operator
 begin_operator
@@ -1663,7 +3268,7 @@ unload-truck p0 t1 l13
 1
 6 3
 1
-0 9 34 7
+0 12 37 7
 1
 end_operator
 begin_operator
@@ -1671,7 +3276,7 @@ unload-truck p0 t2 l20
 1
 5 0
 1
-0 9 35 8
+0 12 38 8
 1
 end_operator
 begin_operator
@@ -1679,7 +3284,7 @@ unload-truck p0 t2 l21
 1
 5 1
 1
-0 9 35 9
+0 12 38 9
 1
 end_operator
 begin_operator
@@ -1687,7 +3292,7 @@ unload-truck p0 t2 l22
 1
 5 2
 1
-0 9 35 10
+0 12 38 10
 1
 end_operator
 begin_operator
@@ -1695,7 +3300,7 @@ unload-truck p0 t2 l23
 1
 5 3
 1
-0 9 35 11
+0 12 38 11
 1
 end_operator
 begin_operator
@@ -1703,7 +3308,7 @@ unload-truck p0 t3 l30
 1
 4 0
 1
-0 9 36 12
+0 12 39 12
 1
 end_operator
 begin_operator
@@ -1711,7 +3316,7 @@ unload-truck p0 t3 l31
 1
 4 1
 1
-0 9 36 13
+0 12 39 13
 1
 end_operator
 begin_operator
@@ -1719,7 +3324,7 @@ unload-truck p0 t3 l32
 1
 4 2
 1
-0 9 36 14
+0 12 39 14
 1
 end_operator
 begin_operator
@@ -1727,7 +3332,7 @@ unload-truck p0 t3 l33
 1
 4 3
 1
-0 9 36 15
+0 12 39 15
 1
 end_operator
 begin_operator
@@ -1735,7 +3340,7 @@ unload-truck p0 t4 l40
 1
 3 0
 1
-0 9 37 16
+0 12 40 16
 1
 end_operator
 begin_operator
@@ -1743,7 +3348,7 @@ unload-truck p0 t4 l41
 1
 3 1
 1
-0 9 37 17
+0 12 40 17
 1
 end_operator
 begin_operator
@@ -1751,7 +3356,7 @@ unload-truck p0 t4 l42
 1
 3 2
 1
-0 9 37 18
+0 12 40 18
 1
 end_operator
 begin_operator
@@ -1759,7 +3364,7 @@ unload-truck p0 t4 l43
 1
 3 3
 1
-0 9 37 19
+0 12 40 19
 1
 end_operator
 begin_operator
@@ -1767,7 +3372,7 @@ unload-truck p0 t5 l50
 1
 2 0
 1
-0 9 38 20
+0 12 41 20
 1
 end_operator
 begin_operator
@@ -1775,7 +3380,7 @@ unload-truck p0 t5 l51
 1
 2 1
 1
-0 9 38 21
+0 12 41 21
 1
 end_operator
 begin_operator
@@ -1783,7 +3388,7 @@ unload-truck p0 t5 l52
 1
 2 2
 1
-0 9 38 22
+0 12 41 22
 1
 end_operator
 begin_operator
@@ -1791,7 +3396,7 @@ unload-truck p0 t5 l53
 1
 2 3
 1
-0 9 38 23
+0 12 41 23
 1
 end_operator
 begin_operator
@@ -1799,7 +3404,7 @@ unload-truck p0 t6 l60
 1
 1 0
 1
-0 9 39 24
+0 12 42 24
 1
 end_operator
 begin_operator
@@ -1807,7 +3412,7 @@ unload-truck p0 t6 l61
 1
 1 1
 1
-0 9 39 25
+0 12 42 25
 1
 end_operator
 begin_operator
@@ -1815,7 +3420,7 @@ unload-truck p0 t6 l62
 1
 1 2
 1
-0 9 39 26
+0 12 42 26
 1
 end_operator
 begin_operator
@@ -1823,7 +3428,7 @@ unload-truck p0 t6 l63
 1
 1 3
 1
-0 9 39 27
+0 12 42 27
 1
 end_operator
 begin_operator
@@ -1831,7 +3436,7 @@ unload-truck p0 t7 l70
 1
 0 0
 1
-0 9 40 28
+0 12 43 28
 1
 end_operator
 begin_operator
@@ -1839,7 +3444,7 @@ unload-truck p0 t7 l71
 1
 0 1
 1
-0 9 40 29
+0 12 43 29
 1
 end_operator
 begin_operator
@@ -1847,7 +3452,7 @@ unload-truck p0 t7 l72
 1
 0 2
 1
-0 9 40 30
+0 12 43 30
 1
 end_operator
 begin_operator
@@ -1855,7 +3460,7 @@ unload-truck p0 t7 l73
 1
 0 3
 1
-0 9 40 31
+0 12 43 31
 1
 end_operator
 0

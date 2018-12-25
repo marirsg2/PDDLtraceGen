@@ -3,7 +3,7 @@
  (:objects
      shaker1 - shaker
      left right - hand
-     shot1 shot2 shot3 shot4 shot5 shot6 - shot
+     shot1 shot2 shot3 - shot
      ingredient1 ingredient2 ingredient3 - ingredient
      cocktail1 cocktail2 cocktail3 cocktail4 cocktail5 - cocktail
      dispenser1 dispenser2 dispenser3 - dispenser

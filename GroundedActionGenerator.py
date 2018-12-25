@@ -38,8 +38,8 @@ import copy
 from enum import Enum
 
 domain_file_loc = "./Logistics_pddl/TYPED_MODlogisticsDomain.pddl"
-problem_file_loc = "./Logistics_pddl/TYPED_problem2_MODlogistics_c8_s4_p1_a4.pddl"
-pickle_dest_file =  "logistics_v2_actionsGrounding_c8_s4_p1_a4.p" #THE PICKLE file where the generated data (plan traces) are stored
+problem_file_loc = "./Logistics_pddl/TYPED_problem4_MODlogistics_c8_s4_p1_a4.pddl"
+pickle_dest_file =  "logistics_v4_actionsGrounding_c8_s4_p1_a4.p" #THE PICKLE file where the generated data (plan traces) are stored
 
 #==============================================================================+++
 def insert_list_in_dict(input_list,dest_dict):
@@ -365,6 +365,8 @@ class Domain_manipulator:
             current_var_instantitations = [ parameter_possible_values[x][idx_list[x]] for x in range(len(idx_list))]
             var_mapping = dict(zip(parameter_keys,current_var_instantitations))
             # now with variable mapping, test if the translated preconditions which are static fluents are in the init state
+            # if current_var_instantitations[0] == "a5" and current_var_instantitations[1] == "l51":
+            #     print("catch")
             passed_static_precond = True
             for single_static_precondition in actionObj.static_preconditions_set:
                 precond_parts = single_static_precondition.split("_")

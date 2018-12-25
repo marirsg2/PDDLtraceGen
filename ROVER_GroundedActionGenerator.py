@@ -37,9 +37,9 @@ import pddlpy
 import copy
 from enum import Enum
 
-domain_file_loc = "./Blocks_pddl/TYPED_barman_domain.pddl"
-problem_file_loc = "./Blocks_pddl/TYPED_barman_4shots_problem.pddl"
-pickle_dest_file =  "barman_4shots_actiongrounding.p" #THE PICKLE file where the generated data (plan traces) are stored
+domain_file_loc = "./ROVER_pddl/ROVER_domain.pddl"
+problem_file_loc = "./ROVER_pddl/ROVER_problem.pddl"
+pickle_dest_file =  "ROVER_actiongrounding.p" #THE PICKLE file where the generated data (plan traces) are stored
 
 #==============================================================================+++
 def insert_list_in_dict(input_list,dest_dict):
@@ -271,7 +271,7 @@ class Domain_manipulator:
                         if "(" in single_proposition:
                             proposition_string = single_proposition.split("(")[-1]
                             proposition_parts_list = proposition_string.split(" ")
-                            if len(proposition_parts_list) < 3: # len is 2 or 1
+                            if len(proposition_parts_list) < 3 or len(proposition_parts_list) > 3: # len is 2 or 1
                                 proposition_parts_list.append("true") #just the string true, not the boolean
                             insert_list_in_dict(proposition_parts_list,preconditions_dict)
                 elif parsing_state == self.Action_parsing_state.in_effects:
@@ -287,7 +287,7 @@ class Domain_manipulator:
                                 single_proposition = single_proposition.replace("(not","")
                             proposition_string = single_proposition.split("(")[-1]
                             proposition_parts_list = proposition_string.split(" ")
-                            if len(proposition_parts_list) < 3: # len is 2 or 1
+                            if len(proposition_parts_list) < 3 or len(proposition_parts_list) > 3: # len is 2 or 1
                                 if negated_prop:
                                     proposition_parts_list.append("false") #just the string true, not the boolean
                                 else:
@@ -316,17 +316,24 @@ class Domain_manipulator:
                 eff_parts = single_eff.split("_")
                 if eff_parts[-1] == "true" or eff_parts[-1] == "false":
                     eff_parts[-1] = "bool"
-                try: #for those fluents that are true or false (propositions), as opposed to taking specific values
-                    eff_subj_type = self.actionObj_dict[single_action].parameter_name_type_dict[eff_parts[1]]
-                    self.non_static_fluents_set.add((eff_parts[0] + "_" + eff_subj_type).lower())  # format <property_name> <object assoc to property>  eg: in_city_tLocation
-                    # also add all derived object types, even if it does not exist as a valid fluent
-                    for single_upper_type in self.to_upper_type_dict[eff_subj_type]:
-                        if single_upper_type == "object":
-                            continue  # we only ignore the default object type
-                        self.non_static_fluents_set.add((eff_parts[0] + "_" + single_upper_type).lower())
-                except:
-                    if eff_parts[-1] == "bool": # for cases like handempty false/true
-                        self.non_static_fluents_set.add((eff_parts[0]).lower())
+
+                if len(eff_parts) == 5: #eg  "haveimage rover soilsample location true"
+                    part1 = self.actionObj_dict[single_action].parameter_name_type_dict[eff_parts[1]]
+                    part2 = self.actionObj_dict[single_action].parameter_name_type_dict[eff_parts[2]]
+                    part3 = self.actionObj_dict[single_action].parameter_name_type_dict[eff_parts[3]]
+                    self.non_static_fluents_set.add((eff_parts[0] + "_" + part1.lower()+ "_" + part2.lower()+ "_" + part3.lower()).lower())
+                else:
+                    try: #for those fluents that are true or false (propositions), as opposed to taking specific values
+                        eff_subj_type = self.actionObj_dict[single_action].parameter_name_type_dict[eff_parts[1]]
+                        self.non_static_fluents_set.add((eff_parts[0] + "_" + eff_subj_type).lower())  # format <property_name> <object assoc to property>  eg: in_city_tLocation
+                        # also add all derived object types, even if it does not exist as a valid fluent
+                        for single_upper_type in self.to_upper_type_dict[eff_subj_type]:
+                            if single_upper_type == "object":
+                                continue  # we only ignore the default object type
+                            self.non_static_fluents_set.add((eff_parts[0] + "_" + single_upper_type).lower())
+                    except:
+                        if eff_parts[-1] == "bool": # for cases like handempty false/true
+                            self.non_static_fluents_set.add((eff_parts[0]).lower())
 
 
 
@@ -341,8 +348,11 @@ class Domain_manipulator:
                 if precondition_parts[-1] == "true" or precondition_parts[-1] == "false":
                     lifted_precondition_parts = precondition_parts
                     if len(precondition_parts) == 3:
-                        lifted_precondition_parts = precondition_parts
                         lifted_precondition_parts[1] = curr_action.parameter_name_type_dict[precondition_parts[1]]
+                    if len(precondition_parts) == 5:
+                        lifted_precondition_parts[1] = curr_action.parameter_name_type_dict[precondition_parts[1]]
+                        lifted_precondition_parts[2] = curr_action.parameter_name_type_dict[precondition_parts[2]]
+                        lifted_precondition_parts[3] = curr_action.parameter_name_type_dict[precondition_parts[3]]
                 else:
                     lifted_precondition_parts = [precondition_parts[0]] + [curr_action.parameter_name_type_dict[x]  for x in precondition_parts[1:]]
                 lifted_precondition_type = "_".join(lifted_precondition_parts[:-1]) # we are only look at things as STATE VARIABLES . If they are static or not
@@ -414,11 +424,16 @@ class Domain_manipulator:
                 if precond_parts[-1] == "true" or precond_parts[-1] == "false":
                     grounded_precond_parts = precond_parts
                     if len(precond_parts) == 3:
-                        grounded_precond_parts = precond_parts
                         grounded_precond_parts[1] = var_mapping[precond_parts[1]]
+                    elif len(precond_parts) == 5:
+                        grounded_precond_parts[1] = var_mapping[precond_parts[1]]
+                        grounded_precond_parts[2] = var_mapping[precond_parts[2]]
+                        grounded_precond_parts[3] = var_mapping[precond_parts[3]]
                 else:
                     grounded_precond_parts = [precond_parts[0]] + [var_mapping[precond_parts[i]] for i in range(1, len(precond_parts))]
                 #end else
+                if grounded_precond_parts[-1] == "true" or grounded_precond_parts[-1] == "false":
+                    grounded_precond_parts = grounded_precond_parts[:-1]
                 grounded_precond = "_".join(grounded_precond_parts)
                 if not grounded_precond in problem_parser_obj.fluents_set:
                     passed_static_precond = False
@@ -479,8 +494,13 @@ class Domain_manipulator:
                 static_fluents = set()
                 for single_fluent in actionObj.static_preconditions_set:
                     fluent_parts = single_fluent.split("_")
-                    ground_fluent_parts = [fluent_parts[0]] + [var_mapping[fluent_parts[i]] for i in
-                                                                   range(1, len(fluent_parts))]
+                    if fluent_parts[-1] == "true" or fluent_parts[-1] == "false":
+                        ground_fluent_parts = fluent_parts
+                        if len(fluent_parts) == 3:
+                            ground_fluent_parts = fluent_parts
+                            ground_fluent_parts[1] = var_mapping[fluent_parts[1]]
+                    else:
+                        ground_fluent_parts = [fluent_parts[0]] + [var_mapping[fluent_parts[i]] for i in range(1, len(fluent_parts))]
                     static_fluents.add("_".join(ground_fluent_parts))
 
                 for single_fluent in actionObj.preconditions_set:

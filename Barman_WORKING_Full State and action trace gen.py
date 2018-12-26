@@ -19,6 +19,15 @@ NOTE: In the "Barman_pddl" folder is an executable script called barman that gen
 on how many cities, locations and packages you want.
 
 """
+#todo Yet to test the plan generation from fast downward. Only got the problem generation done
+"""
+SPECIFIC NOTES to barman
+
+
+The first goal (when num goals) currently has a bug when shot 0 is never used. So some goals maybe duplicated.
+I don't think this will cause a problem over many goals 
+
+"""
 
 
 #FOR 4 CITIES, 3 LOC, 1 AIRPLANE. tHERE ARE 3888 POSSIBLE initial starting cases. with 12 possible goal locations that
@@ -32,14 +41,15 @@ import pddlpy
 import copy
 from enum import Enum
 
-number_traces = 100
+number_traces = 10 #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
+max_num_goals = 2 #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
 barman_gen_exec = "./Barman_pddl_gen/barman-generator.py "
 #code to generate a random problem space
 barman_config = ["10", "20","10" , "4562"]# num cocktails, num ingredients, num shots, optional random seed.
-max_num_goals = 2
+
 dest_name_suffix = "_".join(barman_config).replace("-","").replace(" ","")
 dest_problem_file_name = "./Barman_pddl_gen/problem_barman_" + dest_name_suffix + ".pddl"#this is where the barman problem file generator stores the problem.pddl file
 #---for FD
@@ -312,46 +322,55 @@ all_solutions = set()
 
 
 
-def modify_barman_problem_goal(problem_idx, num_cocktails, num_shots, max_num_goals, dest_problem_file_name):
+def modify_barman_problem_goal(problem_idx, total_num_cocktails, total_num_shots, max_num_goals, dest_problem_file_name):
     """
     :summary: simply change the goal
-    :param num_cocktails:
+    :param total_num_cocktails:
     :param num_shorts:
     :param max_num_goals:
     :param dest_problem_file_name:
     :return:
     """
+
     new_lines = []
     total_num = 0
     cocktail_shot_combo_num =  1
     list_goal_count_index = []
+    num_cocktails = total_num_cocktails
+    num_shots = total_num_shots
+
     for i in range(max_num_goals):
-        total_num = total_num + cocktail_shot_combo_num*num_cocktails*num_shots
+        cocktail_shot_combo_num = cocktail_shot_combo_num * num_cocktails * num_shots
+        total_num = total_num + cocktail_shot_combo_num
         list_goal_count_index.append(total_num) #this will tell us what number of goals to add in this current problem iter
-        num_cocktails = 1#THIS STAYS THE SAME
         num_shots -= 1
 
     num_goals = 0
     for i in range(len(list_goal_count_index)):
         if problem_idx < list_goal_count_index[i]:
             num_goals = i+1
-
+            break
     with open(dest_problem_file_name,"r") as source_file:
-        curr_line = source_file.readline()
-        if ":goal" in curr_line:
+        for curr_line in source_file.readlines():
             new_lines.append(curr_line)
-            new_lines.append("(and \n")
-            prev_block_size = 1
-            for goal_idx in range(num_goals):
-                problem_offset = problem_idx / prev_block_size
-                curr_problem_block = problem_offset % list_goal_count_index[goal_idx]
-                allowed_num_shots = num_shots-goal_idx+1
-                shot_num = curr_problem_block%allowed_num_shots
-                cocktail_num = (curr_problem_block/shot_num)%num_cocktails
-                new_lines.append("(contains shot" +str(shot_num) + "cocktail" + str(cocktail_num)  +" ) \n")
-            #end for
-            new_lines.append("))) \n")
-        #end if
+            if ":goal" in curr_line:
+                new_lines.append("(and \n")
+                prev_block_size = 1
+                allowed_shots = list(range(1,total_num_shots+1))
+                for goal_idx in range(num_goals):
+                    problem_offset = int(problem_idx / prev_block_size)
+                    curr_problem_block = int(problem_offset % list_goal_count_index[goal_idx])
+                    allowed_num_shots = total_num_shots - goal_idx # "+1" is not needed since the index is 0-based
+                    shot_num = allowed_shots[int(curr_problem_block%allowed_num_shots -goal_idx+1)] #because the num is 1-based.
+                    allowed_shots.remove(shot_num)
+                    cocktail_num = int((curr_problem_block/allowed_num_shots) % total_num_cocktails +1)#because the num is 1-based.
+                    new_lines.append("(contains shot" +str(shot_num) + " " +"cocktail" + str(cocktail_num)  +" ) \n")
+                    prev_block_size = list_goal_count_index[goal_idx]
+                #end for
+                new_lines.append("))) \n")
+                break
+            #end if
+        #end for
     #end with
     with open(dest_problem_file_name, "w") as dest_file:
         dest_file.writelines(new_lines)
@@ -360,12 +379,12 @@ def modify_barman_problem_goal(problem_idx, num_cocktails, num_shots, max_num_go
 # action_solutions = set()
 counter = 0
 command = barman_gen_exec + " ".join(barman_config)
-num_cocktails = barman_config[0]
-num_shots = barman_config[2]
+num_cocktails = int(barman_config[0])
+num_shots = int(barman_config[2])
 #we have already defined num goals
-if num_cocktails > num_shots-1 or max_num_goals > num_cocktails:
+if not(num_cocktails > (num_shots-1)) or not(max_num_goals < num_cocktails):
     raise("ERROR: num cocktails and max_num_goals must be less than shots-1 ")
-current_problem_index = 0 #will start with 1
+current_problem_index = 0 #yes we start at 0 zero index
 os.system(command +" > " + dest_problem_file_name)
 while len(all_solutions) < number_traces:
     counter +=1
@@ -378,7 +397,6 @@ while len(all_solutions) < number_traces:
         with open(pickle_dest_file, "wb") as destination:
             pickle.dump(all_solutions, destination)
     #---create problem files
-
     #TODO MODIFY THE BARMAN FILE PROBLEM
     modify_barman_problem_goal(current_problem_index, num_cocktails, num_shots, max_num_goals, dest_problem_file_name)
     current_problem_index += 1

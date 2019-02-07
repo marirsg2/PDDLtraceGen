@@ -250,8 +250,8 @@ class Domain_manipulator:
                     #--end if
                     #start of a new action
                     action_name = line.split(action_start_token)[-1].strip()
-                    if action_name.startswith("pour-shot-to-used-shaker"):
-                        print("catch")
+                    # if action_name.startswith("pour-shot-to-used-shaker"):
+                    #     print("catch")
                     action_name = str.lower(action_name)
                     parameter_list = []
                     preconditions_dict = {}
@@ -382,8 +382,13 @@ def modify_barman_problem_goal(problem_idx, total_num_cocktails, total_num_shots
         if problem_idx < list_goal_count_index[i]:
             num_goals = i+1
             break
+
+
     with open(dest_problem_file_name,"r") as source_file:
-        for curr_line in source_file.readlines()[1:]:
+        for idx,curr_line in enumerate(source_file.readlines()):
+            if idx == 0: #counter is not 0 based
+                if "(define" not in curr_line: #this is because of a strange fast downward line added at the top, and only sometimes
+                    continue
             new_lines.append(curr_line)
             if ":goal" in curr_line:
                 new_lines.append("(and \n")

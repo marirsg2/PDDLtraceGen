@@ -138,13 +138,7 @@
 
 
   (:action pour-shot-to-used-shaker
-           :parameters
-           (?s - shot
-           ?i - ingredient
-           ?d - shaker
-           ?h1 - hand
-           ?l - level
-           ?l1 - level)
+           :parameters (?s - shot ?i - ingredient ?d - shaker ?h1 - hand ?l ?l1 - level)
            :precondition (and (holding ?h1 ?s)
                (contains ?s ?i)
                               (unshaked ?d)
@@ -158,12 +152,7 @@
          ))
 
   (:action empty-shaker
-           :parameters
-           (?h - hand
-           ?s - shaker
-           ?b - cocktail
-           ?l - level
-           ?l1 - level)
+           :parameters (?h - hand ?s - shaker ?b - cocktail ?l ?l1 - level)
            :precondition (and (holding ?h ?s)
                               (contains ?s ?b)
                (shaked ?s)
@@ -177,10 +166,7 @@
          ))
 
   (:action clean-shaker
-        :parameters
-        (?h1 - hand
-        ?h2 - hand
-        ?s - shaker)
+        :parameters (?h1 ?h2 - hand ?s - shaker)
            :precondition (and (holding ?h1 ?s)
                               (handempty ?h2)
                               (empty ?s))
@@ -188,13 +174,7 @@
          ))
 
   (:action shake
-        :parameters
-        (?b - cocktail
-        ?d1 - ingredient
-        ?d2 - ingredient
-        ?s - shaker
-        ?h1 - hand
-        ?h2 - hand)
+        :parameters (?b - cocktail ?d1 ?d2 - ingredient ?s - shaker ?h1 ?h2 - hand)
            :precondition (and (holding ?h1 ?s)
                               (handempty ?h2)
                (contains ?s ?d1)
@@ -210,13 +190,7 @@
          ))
 
   (:action pour-shaker-to-shot
-           :parameters
-           (?b - beverage
-           ?d - shot
-           ?h - hand
-           ?s - shaker
-           ?l - level
-           ?l1 - level)
+           :parameters (?b - beverage ?d - shot ?h - hand ?s - shaker ?l ?l1 - level)
            :precondition (and (holding ?h ?s)
                (shaked ?s)
                (empty ?d)

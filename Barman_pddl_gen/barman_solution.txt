@@ -1,0 +1,155 @@
+INFO     Running translator.
+INFO     translator input: ['./Barman_pddl_gen/TYPED_barman_domain.pddl', './Barman_pddl_gen/problem_barman_10_20_10_4562.pddl']
+INFO     translator arguments: []
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     callstring: /usr/bin/python /home/yochan/FastDownward/builds/release32/bin/translate/translate.py ./Barman_pddl_gen/TYPED_barman_domain.pddl ./Barman_pddl_gen/problem_barman_10_20_10_4562.pddl
+Parsing...
+Parsing: [0.010s CPU, 0.004s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.005s wall-clock]
+Preparing model... [0.010s CPU, 0.004s wall-clock]
+Generated 115 rules.
+Computing model... [0.100s CPU, 0.105s wall-clock]
+6823 relevant atoms
+5601 auxiliary atoms
+12424 final queue length
+23938 total queue pushes
+Completing instantiation... [0.240s CPU, 0.236s wall-clock]
+Instantiating: [0.350s CPU, 0.353s wall-clock]
+Computing fact groups...
+Finding invariants...
+24 initial candidates
+Finding invariants: [0.020s CPU, 0.018s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.001s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+565 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.010s CPU, 0.002s wall-clock]
+Computing fact groups: [0.030s CPU, 0.026s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.001s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.010s CPU, 0.014s wall-clock]
+Translating task: [0.300s CPU, 0.302s wall-clock]
+8002 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+3 propositions removed
+Detecting unreachable propositions: [0.150s CPU, 0.152s wall-clock]
+Reordering and filtering variables...
+568 of 568 variables necessary.
+11 of 14 mutex groups necessary.
+4726 of 4726 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.070s CPU, 0.067s wall-clock]
+Translator variables: 568
+Translator derived variables: 0
+Translator facts: 1157
+Translator goal facts: 1
+Translator mutex groups: 11
+Translator total mutex groups size: 33
+Translator operators: 4726
+Translator axioms: 0
+Translator task size: 45707
+Translator peak memory: 68844 KB
+Writing output... [0.050s CPU, 0.046s wall-clock]
+Done! [0.970s CPU, 0.964s wall-clock]
+INFO     Running search (release32).
+INFO     search input: output.sas
+INFO     search arguments: ['--heuristic', 'hff=ff()', '--heuristic', 'hcea=cea()', '--search', 'lazy_greedy([hff, hcea], preferred=[hff, hcea])']
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search executable: /home/yochan/FastDownward/builds/release32/bin/downward
+INFO     callstring: /home/yochan/FastDownward/builds/release32/bin/downward --heuristic 'hff=ff()' --heuristic 'hcea=cea()' --search 'lazy_greedy([hff, hcea], preferred=[hff, hcea])' --internal-plan-file sas_plan < output.sas
+reading input... [t=5.0085e-05s]
+done reading input! [t=0.0499559s]
+packing state variables...done! [t=0.0500001s]
+Variables: 568
+FactPairs: 1157
+Bytes per state: 72
+Building successor generator...done! [t=0.0522812s]
+peak memory difference for root successor generator creation: 380 KB
+time for root successor generation creation: 0.00223094s
+done initializing global data [t=0.0523297s]
+Simplifying 18410 unary operators... done! [14442 unary operators]
+Initializing additive heuristic...
+Initializing FF heuristic...
+Initializing context-enhanced additive heuristic...
+Conducting lazy best first search, (real) bound = 2147483647
+New best heuristic value for cea: 34
+New best heuristic value for ff: 10
+[g=0, 1 evaluated, 0 expanded, t=0.143341s, 9808 KB]
+Initial heuristic value for cea: 34
+Initial heuristic value for ff: 10
+New best heuristic value for cea: 22
+[g=1, 4 evaluated, 3 expanded, t=0.14546s, 9808 KB]
+New best heuristic value for ff: 9
+[g=2, 24 evaluated, 23 expanded, t=0.15919s, 9808 KB]
+New best heuristic value for ff: 8
+[g=3, 27 evaluated, 26 expanded, t=0.161306s, 9808 KB]
+New best heuristic value for cea: 20
+[g=5, 39 evaluated, 38 expanded, t=0.169641s, 9808 KB]
+New best heuristic value for cea: 13
+New best heuristic value for ff: 7
+[g=6, 48 evaluated, 47 expanded, t=0.175846s, 9872 KB]
+New best heuristic value for cea: 12
+New best heuristic value for ff: 6
+[g=7, 51 evaluated, 50 expanded, t=0.177732s, 9872 KB]
+New best heuristic value for cea: 11
+New best heuristic value for ff: 5
+[g=8, 52 evaluated, 51 expanded, t=0.178399s, 9872 KB]
+New best heuristic value for cea: 7
+New best heuristic value for ff: 4
+[g=9, 53 evaluated, 52 expanded, t=0.179033s, 9872 KB]
+New best heuristic value for cea: 5
+New best heuristic value for ff: 3
+[g=11, 55 evaluated, 54 expanded, t=0.180276s, 10016 KB]
+New best heuristic value for cea: 3
+New best heuristic value for ff: 2
+[g=12, 56 evaluated, 55 expanded, t=0.180823s, 10016 KB]
+New best heuristic value for cea: 1
+New best heuristic value for ff: 1
+[g=13, 57 evaluated, 56 expanded, t=0.181291s, 10016 KB]
+Solution found!
+Actual search time: 0.0393199s [t=0.181384s]
+grasp left shot7 (1)
+fill-shot shot7 ingredient11 left right dispenser11 (1)
+leave left shot7 (1)
+grasp right shot1 (1)
+fill-shot shot1 ingredient14 right left dispenser14 (1)
+pour-shot-to-clean-shaker shot1 ingredient14 shaker1 right l0 l1 (1)
+clean-shot shot1 ingredient14 right left (1)
+grasp left shaker1 (1)
+leave right shot1 (1)
+grasp right shot7 (1)
+pour-shot-to-used-shaker shot7 ingredient11 shaker1 right l1 l2 (1)
+leave right shot7 (1)
+shake cocktail1 ingredient14 ingredient11 shaker1 left right (1)
+pour-shaker-to-shot cocktail1 shot1 left shaker1 l2 l1 (1)
+Plan length: 14 step(s).
+Plan cost: 14
+Expanded 57 state(s).
+Reopened 0 state(s).
+Evaluated 58 state(s).
+Evaluations: 116
+Generated 673 state(s).
+Dead ends: 0 state(s).
+Number of registered states: 58
+Int hash set load factor: 58/64 = 0.90625
+Int hash set resizes: 6
+Search time: 0.0393379s
+Total time: 0.181387s
+Solution found.
+Peak memory: 10016 KB

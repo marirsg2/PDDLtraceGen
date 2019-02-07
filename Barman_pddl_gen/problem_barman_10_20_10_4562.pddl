@@ -1,4 +1,3 @@
-['./Barman_pddl_gen/barman-generator.py', '10', '20', '10', '4562']
 (define (problem prob)
  (:domain barman)
  (:objects 
@@ -92,15 +91,6 @@
   (cocktail-part2 cocktail10 ingredient3)
 )
  (:goal
-  (and
-      (contains shot1 cocktail4)
-      (contains shot2 cocktail7)
-      (contains shot3 cocktail6)
-      (contains shot4 cocktail3)
-      (contains shot5 cocktail9)
-      (contains shot6 cocktail8)
-      (contains shot7 cocktail2)
-      (contains shot8 cocktail5)
-      (contains shot9 cocktail1)
-      (contains shot10 cocktail10)
-)))
+(and 
+(contains shot1 cocktail1 ) 
+))) 

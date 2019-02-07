@@ -19,19 +19,31 @@ NOTE: In the "Barman_pddl" folder is an executable script called barman that gen
 on how many cities, locations and packages you want.
 
 """
-#todo Yet to test the plan generation from fast downward. Only got the problem generation done
+
 """
 SPECIFIC NOTES to barman
 
+1) in domain file Cannot write "?l ?l1 - level)" 
+must write "?l - level ?l1 - level)"
 
-The first goal (when num goals) currently has a bug when shot 0 is never used. So some goals maybe duplicated.
-I don't think this will cause a problem over many goals 
+2) In domain file, no tabs, must not have separate lines with only closing brackets or opening brackets. close them all in the last line
+and open a bracket with the first line. SEE the example domain file.
+
+3) In domain file, for each action , the parameters MUST be presented in this format. One line per parameter, and starting in separate lines
+    :parameters
+           (?b - beverage
+           ?d - shot
+           ?h - hand
+           ?s - shaker
+           ?l - level
+           ?l1 - level)
 
 """
 
+#Todo Yet to test the plan generation from fast downward. Only got the problem generation done
 
-#FOR 4 CITIES, 3 LOC, 1 AIRPLANE. tHERE ARE 3888 POSSIBLE initial starting cases. with 12 possible goal locations that
-#makes 46k traces. Factor in ordering actions, and you have ~120k traces.
+
+# CONTINUE DEBUGGING THE DOMAIN PARSER , and check the solution saved
 
 
 import subprocess
@@ -122,6 +134,23 @@ def translate_by_dict(input_string,translation_dict):
     #end for
     return input_string
 #==================================================
+def translate_list_by_dict(input_list,translation_dict):
+    """
+    :param single_precondition:
+    :param translation_dict:
+    :return:
+    """
+    ret_list = []
+    translation_dict_keys = translation_dict.keys()
+    for single_key in input_list:
+        if single_key in translation_dict_keys:
+            ret_list.append(translation_dict[single_key])
+        else:
+            ret_list.append(single_key)
+        #end if
+    #end for
+    return ret_list
+#==================================================
 class Action:
     """
     Contains information about a LIFTED action such as preconditions and effects.
@@ -154,8 +183,8 @@ class Action:
         for single_precondition in self.preconditions_set:
             #sadly the python str translate functionality does not meet our needs
             precondition_type = single_precondition.split("_")[0]
-            precondition_parameters = "_".join(single_precondition.split("_")[1:])
-            grounded_precondition_params = translate_by_dict(precondition_parameters,translation_dict)
+            precondition_parameters = single_precondition.split("_")[1:]
+            grounded_precondition_params = "_".join(translate_list_by_dict(precondition_parameters,translation_dict))
             grounded_precondition = precondition_type + "_" + grounded_precondition_params
             if not grounded_precondition in starting_state_set:
                 return starting_state_set
@@ -163,15 +192,15 @@ class Action:
         for single_neg_effect in self.neg_effects_set:
             #sadly the python str translate functionality does not meet our needs
             eff_type = single_neg_effect.split("_")[0]
-            eff_parameters = "_".join(single_neg_effect.split("_")[1:])
-            grounded_eff_params = translate_by_dict(eff_parameters,translation_dict)
+            eff_parameters = single_neg_effect.split("_")[1:]
+            grounded_eff_params = "_".join(translate_list_by_dict(eff_parameters,translation_dict))
             grounded_eff = eff_type + "_" + grounded_eff_params
             ret_state_set.remove(grounded_eff)
         for single_pos_effect in self.pos_effects_set:
             #sadly the python str translate functionality does not meet our needs
             eff_type = single_pos_effect.split("_")[0]
-            eff_parameters = "_".join(single_pos_effect.split("_")[1:])
-            grounded_eff_params = translate_by_dict(eff_parameters,translation_dict)
+            eff_parameters = single_pos_effect.split("_")[1:]
+            grounded_eff_params = "_".join(translate_list_by_dict(eff_parameters,translation_dict))
             grounded_eff = eff_type + "_" + grounded_eff_params
             ret_state_set.add(grounded_eff)
 
@@ -221,6 +250,8 @@ class Domain_manipulator:
                     #--end if
                     #start of a new action
                     action_name = line.split(action_start_token)[-1].strip()
+                    if action_name.startswith("pour-shot-to-used-shaker"):
+                        print("catch")
                     action_name = str.lower(action_name)
                     parameter_list = []
                     preconditions_dict = {}
@@ -236,7 +267,8 @@ class Domain_manipulator:
                 elif parsing_state == self.Action_parsing_state.in_parameters:
                     line = line.replace("(","").replace(")","").replace("?","").replace("\n","")
                     parameters = line.split(" ")
-                    parameter_list += [x for x in parameters if x != '']
+                    parameters = [x for x in parameters if x != '']
+                    parameter_list.append(parameters[0])
                 elif parsing_state == self.Action_parsing_state.in_preconditions:
                     line = line.replace("(and","").replace("?","")
                     propositions = line.split(")")
@@ -351,7 +383,7 @@ def modify_barman_problem_goal(problem_idx, total_num_cocktails, total_num_shots
             num_goals = i+1
             break
     with open(dest_problem_file_name,"r") as source_file:
-        for curr_line in source_file.readlines():
+        for curr_line in source_file.readlines()[1:]:
             new_lines.append(curr_line)
             if ":goal" in curr_line:
                 new_lines.append("(and \n")
@@ -361,7 +393,7 @@ def modify_barman_problem_goal(problem_idx, total_num_cocktails, total_num_shots
                     problem_offset = int(problem_idx / prev_block_size)
                     curr_problem_block = int(problem_offset % list_goal_count_index[goal_idx])
                     allowed_num_shots = total_num_shots - goal_idx # "+1" is not needed since the index is 0-based
-                    shot_num = allowed_shots[int(curr_problem_block%allowed_num_shots -goal_idx+1)] #because the num is 1-based.
+                    shot_num = allowed_shots[int(curr_problem_block%allowed_num_shots -goal_idx)] #because the num is 1-based.
                     allowed_shots.remove(shot_num)
                     cocktail_num = int((curr_problem_block/allowed_num_shots) % total_num_cocktails +1)#because the num is 1-based.
                     new_lines.append("(contains shot" +str(shot_num) + " " +"cocktail" + str(cocktail_num)  +" ) \n")

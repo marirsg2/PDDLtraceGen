@@ -92,5 +92,5 @@
 )
  (:goal
 (and 
-(contains shot4 cocktail1 ) 
+(contains shot10 cocktail10 ) 
 ))) 

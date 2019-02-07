@@ -53,7 +53,7 @@ import pddlpy
 import copy
 from enum import Enum
 
-number_traces = 10 #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
+number_traces = 100 #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
 max_num_goals = 2 #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
@@ -70,7 +70,7 @@ fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --sea
 domain_file_loc = "./Barman_pddl_gen/TYPED_barman_domain.pddl"
 problem_file_loc = dest_problem_file_name
 solution_file_loc = "./Barman_pddl_gen/barman_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
-pickle_dest_file = str(number_traces)+dest_name_suffix+"_barman_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
+pickle_dest_file = str(number_traces)+"_"+dest_name_suffix+"_barman_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
 
 #==============================================================================+++
 def insert_list_in_dict(input_list,dest_dict):
@@ -470,7 +470,11 @@ with open(pickle_dest_file, "wb") as destination:
 # testing code
 with open(pickle_dest_file, "rb") as source_file:
     a = pickle.load(source_file)
+    counter = 5
     for single in a:
         print(single)
+        counter -= 1
+        if counter == 0:
+            break
 
 

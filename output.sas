@@ -1590,99 +1590,99 @@ begin_variable
 var223
 -1
 2
-Atom contains(shot9, cocktail1)
-NegatedAtom contains(shot9, cocktail1)
-end_variable
-begin_variable
-var224
--1
-2
 Atom contains(shaker1, cocktail2)
 NegatedAtom contains(shaker1, cocktail2)
 end_variable
 begin_variable
-var225
+var224
 -1
 2
 Atom contains(shot1, cocktail2)
 NegatedAtom contains(shot1, cocktail2)
 end_variable
 begin_variable
-var226
+var225
 -1
 2
 Atom contains(shot10, cocktail2)
 NegatedAtom contains(shot10, cocktail2)
 end_variable
 begin_variable
-var227
+var226
 -1
 2
 Atom contains(shot2, cocktail2)
 NegatedAtom contains(shot2, cocktail2)
 end_variable
 begin_variable
-var228
+var227
 -1
 2
 Atom contains(shot3, cocktail2)
 NegatedAtom contains(shot3, cocktail2)
 end_variable
 begin_variable
-var229
+var228
 -1
 2
 Atom contains(shot4, cocktail2)
 NegatedAtom contains(shot4, cocktail2)
 end_variable
 begin_variable
-var230
+var229
 -1
 2
 Atom contains(shot5, cocktail2)
 NegatedAtom contains(shot5, cocktail2)
 end_variable
 begin_variable
-var231
+var230
 -1
 2
 Atom contains(shot6, cocktail2)
 NegatedAtom contains(shot6, cocktail2)
 end_variable
 begin_variable
-var232
+var231
 -1
 2
 Atom contains(shot7, cocktail2)
 NegatedAtom contains(shot7, cocktail2)
 end_variable
 begin_variable
-var233
+var232
 -1
 2
 Atom contains(shot8, cocktail2)
 NegatedAtom contains(shot8, cocktail2)
 end_variable
 begin_variable
-var234
+var233
 -1
 2
 Atom contains(shot9, cocktail2)
 NegatedAtom contains(shot9, cocktail2)
 end_variable
 begin_variable
-var235
+var234
 -1
 2
 Atom contains(shaker1, cocktail10)
 NegatedAtom contains(shaker1, cocktail10)
 end_variable
 begin_variable
-var236
+var235
 -1
 2
 Atom contains(shot1, cocktail10)
 NegatedAtom contains(shot1, cocktail10)
+end_variable
+begin_variable
+var236
+-1
+2
+Atom contains(shot10, cocktail10)
+NegatedAtom contains(shot10, cocktail10)
 end_variable
 begin_variable
 var237
@@ -3907,64 +3907,64 @@ begin_variable
 var554
 -1
 2
+Atom empty(shot10)
+NegatedAtom empty(shot10)
+end_variable
+begin_variable
+var555
+-1
+2
 Atom empty(shot2)
 NegatedAtom empty(shot2)
 end_variable
 begin_variable
-var555
+var556
 -1
 2
 Atom empty(shot3)
 NegatedAtom empty(shot3)
 end_variable
 begin_variable
-var556
+var557
 -1
 2
 Atom empty(shot4)
 NegatedAtom empty(shot4)
 end_variable
 begin_variable
-var557
+var558
 -1
 2
 Atom empty(shot5)
 NegatedAtom empty(shot5)
 end_variable
 begin_variable
-var558
+var559
 -1
 2
 Atom empty(shot6)
 NegatedAtom empty(shot6)
 end_variable
 begin_variable
-var559
+var560
 -1
 2
 Atom empty(shot7)
 NegatedAtom empty(shot7)
 end_variable
 begin_variable
-var560
+var561
 -1
 2
 Atom empty(shot8)
 NegatedAtom empty(shot8)
 end_variable
 begin_variable
-var561
+var562
 -1
 2
 Atom empty(shot9)
 NegatedAtom empty(shot9)
-end_variable
-begin_variable
-var562
--1
-2
-Atom empty(shot10)
-NegatedAtom empty(shot10)
 end_variable
 begin_variable
 var563
@@ -3999,8 +3999,8 @@ begin_variable
 var567
 -1
 2
-Atom contains(shot10, cocktail10)
-NegatedAtom contains(shot10, cocktail10)
+Atom contains(shot9, cocktail1)
+NegatedAtom contains(shot9, cocktail1)
 end_variable
 11
 begin_mutex_group
@@ -5107,7 +5107,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient1 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5118,7 +5118,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient1 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5129,7 +5129,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient10 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5140,7 +5140,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient10 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5151,7 +5151,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient11 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5162,7 +5162,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient11 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5173,7 +5173,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient12 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5184,7 +5184,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient12 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5195,7 +5195,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient13 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5206,7 +5206,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient13 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5217,7 +5217,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient14 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5228,7 +5228,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient14 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5239,7 +5239,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient15 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5250,7 +5250,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient15 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5261,7 +5261,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient16 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5272,7 +5272,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient16 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5283,7 +5283,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient17 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5294,7 +5294,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient17 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5305,7 +5305,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient18 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5316,7 +5316,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient18 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5327,7 +5327,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient19 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5338,7 +5338,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient19 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5349,7 +5349,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient2 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5360,7 +5360,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient2 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5371,7 +5371,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient20 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5382,7 +5382,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient20 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5393,7 +5393,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient3 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5404,7 +5404,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient3 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5415,7 +5415,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient4 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5426,7 +5426,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient4 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5437,7 +5437,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient5 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5448,7 +5448,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient5 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5459,7 +5459,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient6 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5470,7 +5470,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient6 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5481,7 +5481,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient7 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5492,7 +5492,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient7 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5503,7 +5503,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient8 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5514,7 +5514,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient8 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5525,7 +5525,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient9 left right
 3
-562 0
+554 0
 8 3
 11 0
 2
@@ -5536,7 +5536,7 @@ end_operator
 begin_operator
 clean-shot shot10 ingredient9 right left
 3
-562 0
+554 0
 8 0
 11 3
 2
@@ -5547,7 +5547,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient1 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5558,7 +5558,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient1 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5569,7 +5569,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient10 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5580,7 +5580,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient10 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5591,7 +5591,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient11 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5602,7 +5602,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient11 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5613,7 +5613,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient12 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5624,7 +5624,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient12 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5635,7 +5635,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient13 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5646,7 +5646,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient13 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5657,7 +5657,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient14 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5668,7 +5668,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient14 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5679,7 +5679,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient15 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5690,7 +5690,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient15 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5701,7 +5701,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient16 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5712,7 +5712,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient16 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5723,7 +5723,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient17 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5734,7 +5734,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient17 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5745,7 +5745,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient18 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5756,7 +5756,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient18 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5767,7 +5767,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient19 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5778,7 +5778,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient19 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5789,7 +5789,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient2 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5800,7 +5800,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient2 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5811,7 +5811,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient20 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5822,7 +5822,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient20 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5833,7 +5833,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient3 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5844,7 +5844,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient3 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5855,7 +5855,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient4 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5866,7 +5866,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient4 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5877,7 +5877,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient5 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5888,7 +5888,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient5 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5899,7 +5899,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient6 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5910,7 +5910,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient6 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5921,7 +5921,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient7 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5932,7 +5932,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient7 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5943,7 +5943,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient8 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5954,7 +5954,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient8 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5965,7 +5965,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient9 left right
 3
-554 0
+555 0
 8 4
 11 0
 2
@@ -5976,7 +5976,7 @@ end_operator
 begin_operator
 clean-shot shot2 ingredient9 right left
 3
-554 0
+555 0
 8 0
 11 4
 2
@@ -5987,7 +5987,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient1 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -5998,7 +5998,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient1 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6009,7 +6009,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient10 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6020,7 +6020,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient10 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6031,7 +6031,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient11 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6042,7 +6042,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient11 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6053,7 +6053,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient12 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6064,7 +6064,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient12 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6075,7 +6075,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient13 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6086,7 +6086,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient13 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6097,7 +6097,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient14 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6108,7 +6108,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient14 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6119,7 +6119,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient15 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6130,7 +6130,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient15 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6141,7 +6141,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient16 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6152,7 +6152,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient16 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6163,7 +6163,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient17 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6174,7 +6174,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient17 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6185,7 +6185,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient18 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6196,7 +6196,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient18 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6207,7 +6207,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient19 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6218,7 +6218,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient19 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6229,7 +6229,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient2 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6240,7 +6240,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient2 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6251,7 +6251,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient20 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6262,7 +6262,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient20 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6273,7 +6273,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient3 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6284,7 +6284,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient3 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6295,7 +6295,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient4 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6306,7 +6306,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient4 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6317,7 +6317,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient5 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6328,7 +6328,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient5 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6339,7 +6339,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient6 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6350,7 +6350,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient6 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6361,7 +6361,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient7 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6372,7 +6372,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient7 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6383,7 +6383,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient8 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6394,7 +6394,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient8 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6405,7 +6405,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient9 left right
 3
-555 0
+556 0
 8 5
 11 0
 2
@@ -6416,7 +6416,7 @@ end_operator
 begin_operator
 clean-shot shot3 ingredient9 right left
 3
-555 0
+556 0
 8 0
 11 5
 2
@@ -6427,7 +6427,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient1 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6438,7 +6438,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient1 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6449,7 +6449,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient10 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6460,7 +6460,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient10 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6471,7 +6471,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient11 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6482,7 +6482,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient11 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6493,7 +6493,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient12 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6504,7 +6504,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient12 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6515,7 +6515,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient13 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6526,7 +6526,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient13 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6537,7 +6537,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient14 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6548,7 +6548,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient14 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6559,7 +6559,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient15 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6570,7 +6570,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient15 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6581,7 +6581,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient16 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6592,7 +6592,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient16 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6603,7 +6603,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient17 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6614,7 +6614,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient17 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6625,7 +6625,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient18 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6636,7 +6636,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient18 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6647,7 +6647,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient19 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6658,7 +6658,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient19 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6669,7 +6669,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient2 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6680,7 +6680,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient2 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6691,7 +6691,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient20 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6702,7 +6702,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient20 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6713,7 +6713,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient3 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6724,7 +6724,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient3 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6735,7 +6735,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient4 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6746,7 +6746,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient4 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6757,7 +6757,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient5 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6768,7 +6768,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient5 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6779,7 +6779,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient6 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6790,7 +6790,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient6 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6801,7 +6801,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient7 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6812,7 +6812,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient7 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6823,7 +6823,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient8 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6834,7 +6834,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient8 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6845,7 +6845,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient9 left right
 3
-556 0
+557 0
 8 6
 11 0
 2
@@ -6856,7 +6856,7 @@ end_operator
 begin_operator
 clean-shot shot4 ingredient9 right left
 3
-556 0
+557 0
 8 0
 11 6
 2
@@ -6867,7 +6867,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient1 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -6878,7 +6878,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient1 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -6889,7 +6889,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient10 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -6900,7 +6900,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient10 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -6911,7 +6911,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient11 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -6922,7 +6922,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient11 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -6933,7 +6933,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient12 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -6944,7 +6944,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient12 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -6955,7 +6955,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient13 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -6966,7 +6966,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient13 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -6977,7 +6977,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient14 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -6988,7 +6988,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient14 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -6999,7 +6999,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient15 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -7010,7 +7010,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient15 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -7021,7 +7021,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient16 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -7032,7 +7032,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient16 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -7043,7 +7043,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient17 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -7054,7 +7054,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient17 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -7065,7 +7065,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient18 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -7076,7 +7076,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient18 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -7087,7 +7087,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient19 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -7098,7 +7098,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient19 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -7109,7 +7109,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient2 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -7120,7 +7120,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient2 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -7131,7 +7131,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient20 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -7142,7 +7142,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient20 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -7153,7 +7153,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient3 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -7164,7 +7164,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient3 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -7175,7 +7175,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient4 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -7186,7 +7186,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient4 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -7197,7 +7197,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient5 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -7208,7 +7208,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient5 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -7219,7 +7219,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient6 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -7230,7 +7230,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient6 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -7241,7 +7241,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient7 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -7252,7 +7252,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient7 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -7263,7 +7263,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient8 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -7274,7 +7274,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient8 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -7285,7 +7285,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient9 left right
 3
-557 0
+558 0
 8 7
 11 0
 2
@@ -7296,7 +7296,7 @@ end_operator
 begin_operator
 clean-shot shot5 ingredient9 right left
 3
-557 0
+558 0
 8 0
 11 7
 2
@@ -7307,7 +7307,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient1 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7318,7 +7318,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient1 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7329,7 +7329,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient10 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7340,7 +7340,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient10 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7351,7 +7351,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient11 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7362,7 +7362,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient11 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7373,7 +7373,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient12 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7384,7 +7384,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient12 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7395,7 +7395,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient13 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7406,7 +7406,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient13 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7417,7 +7417,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient14 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7428,7 +7428,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient14 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7439,7 +7439,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient15 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7450,7 +7450,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient15 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7461,7 +7461,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient16 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7472,7 +7472,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient16 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7483,7 +7483,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient17 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7494,7 +7494,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient17 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7505,7 +7505,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient18 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7516,7 +7516,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient18 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7527,7 +7527,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient19 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7538,7 +7538,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient19 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7549,7 +7549,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient2 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7560,7 +7560,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient2 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7571,7 +7571,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient20 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7582,7 +7582,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient20 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7593,7 +7593,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient3 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7604,7 +7604,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient3 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7615,7 +7615,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient4 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7626,7 +7626,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient4 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7637,7 +7637,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient5 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7648,7 +7648,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient5 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7659,7 +7659,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient6 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7670,7 +7670,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient6 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7681,7 +7681,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient7 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7692,7 +7692,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient7 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7703,7 +7703,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient8 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7714,7 +7714,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient8 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7725,7 +7725,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient9 left right
 3
-558 0
+559 0
 8 8
 11 0
 2
@@ -7736,7 +7736,7 @@ end_operator
 begin_operator
 clean-shot shot6 ingredient9 right left
 3
-558 0
+559 0
 8 0
 11 8
 2
@@ -7747,7 +7747,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient1 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -7758,7 +7758,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient1 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -7769,7 +7769,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient10 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -7780,7 +7780,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient10 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -7791,7 +7791,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient11 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -7802,7 +7802,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient11 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -7813,7 +7813,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient12 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -7824,7 +7824,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient12 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -7835,7 +7835,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient13 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -7846,7 +7846,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient13 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -7857,7 +7857,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient14 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -7868,7 +7868,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient14 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -7879,7 +7879,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient15 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -7890,7 +7890,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient15 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -7901,7 +7901,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient16 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -7912,7 +7912,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient16 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -7923,7 +7923,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient17 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -7934,7 +7934,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient17 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -7945,7 +7945,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient18 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -7956,7 +7956,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient18 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -7967,7 +7967,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient19 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -7978,7 +7978,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient19 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -7989,7 +7989,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient2 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -8000,7 +8000,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient2 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -8011,7 +8011,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient20 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -8022,7 +8022,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient20 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -8033,7 +8033,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient3 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -8044,7 +8044,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient3 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -8055,7 +8055,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient4 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -8066,7 +8066,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient4 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -8077,7 +8077,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient5 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -8088,7 +8088,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient5 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -8099,7 +8099,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient6 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -8110,7 +8110,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient6 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -8121,7 +8121,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient7 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -8132,7 +8132,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient7 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -8143,7 +8143,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient8 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -8154,7 +8154,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient8 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -8165,7 +8165,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient9 left right
 3
-559 0
+560 0
 8 9
 11 0
 2
@@ -8176,7 +8176,7 @@ end_operator
 begin_operator
 clean-shot shot7 ingredient9 right left
 3
-559 0
+560 0
 8 0
 11 9
 2
@@ -8187,7 +8187,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient1 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8198,7 +8198,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient1 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8209,7 +8209,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient10 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8220,7 +8220,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient10 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8231,7 +8231,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient11 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8242,7 +8242,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient11 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8253,7 +8253,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient12 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8264,7 +8264,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient12 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8275,7 +8275,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient13 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8286,7 +8286,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient13 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8297,7 +8297,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient14 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8308,7 +8308,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient14 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8319,7 +8319,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient15 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8330,7 +8330,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient15 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8341,7 +8341,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient16 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8352,7 +8352,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient16 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8363,7 +8363,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient17 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8374,7 +8374,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient17 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8385,7 +8385,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient18 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8396,7 +8396,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient18 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8407,7 +8407,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient19 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8418,7 +8418,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient19 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8429,7 +8429,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient2 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8440,7 +8440,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient2 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8451,7 +8451,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient20 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8462,7 +8462,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient20 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8473,7 +8473,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient3 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8484,7 +8484,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient3 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8495,7 +8495,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient4 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8506,7 +8506,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient4 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8517,7 +8517,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient5 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8528,7 +8528,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient5 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8539,7 +8539,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient6 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8550,7 +8550,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient6 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8561,7 +8561,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient7 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8572,7 +8572,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient7 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8583,7 +8583,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient8 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8594,7 +8594,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient8 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8605,7 +8605,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient9 left right
 3
-560 0
+561 0
 8 10
 11 0
 2
@@ -8616,7 +8616,7 @@ end_operator
 begin_operator
 clean-shot shot8 ingredient9 right left
 3
-560 0
+561 0
 8 0
 11 10
 2
@@ -8627,7 +8627,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient1 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8638,7 +8638,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient1 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8649,7 +8649,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient10 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8660,7 +8660,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient10 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8671,7 +8671,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient11 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8682,7 +8682,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient11 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8693,7 +8693,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient12 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8704,7 +8704,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient12 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8715,7 +8715,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient13 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8726,7 +8726,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient13 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8737,7 +8737,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient14 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8748,7 +8748,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient14 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8759,7 +8759,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient15 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8770,7 +8770,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient15 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8781,7 +8781,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient16 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8792,7 +8792,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient16 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8803,7 +8803,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient17 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8814,7 +8814,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient17 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8825,7 +8825,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient18 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8836,7 +8836,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient18 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8847,7 +8847,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient19 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8858,7 +8858,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient19 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8869,7 +8869,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient2 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8880,7 +8880,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient2 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8891,7 +8891,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient20 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8902,7 +8902,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient20 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8913,7 +8913,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient3 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8924,7 +8924,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient3 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8935,7 +8935,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient4 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8946,7 +8946,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient4 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8957,7 +8957,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient5 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8968,7 +8968,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient5 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -8979,7 +8979,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient6 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -8990,7 +8990,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient6 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -9001,7 +9001,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient7 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -9012,7 +9012,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient7 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -9023,7 +9023,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient8 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -9034,7 +9034,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient8 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -9045,7 +9045,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient9 left right
 3
-561 0
+562 0
 8 11
 11 0
 2
@@ -9056,7 +9056,7 @@ end_operator
 begin_operator
 clean-shot shot9 ingredient9 right left
 3
-561 0
+562 0
 8 0
 11 11
 2
@@ -9103,7 +9103,7 @@ empty-shaker left shaker1 cocktail10 l0 l0
 8 1
 565 0
 3
-0 235 0 1
+0 234 0 1
 0 564 -1 0
 0 522 0 1
 1
@@ -9113,7 +9113,7 @@ empty-shaker left shaker1 cocktail10 l1 l0
 1
 8 1
 4
-0 235 0 1
+0 234 0 1
 0 564 -1 0
 0 522 0 1
 0 565 1 0
@@ -9124,7 +9124,7 @@ empty-shaker left shaker1 cocktail10 l2 l0
 1
 8 1
 4
-0 235 0 1
+0 234 0 1
 0 564 -1 0
 0 522 0 1
 0 565 2 0
@@ -9136,7 +9136,7 @@ empty-shaker left shaker1 cocktail2 l0 l0
 8 1
 565 0
 3
-0 224 0 1
+0 223 0 1
 0 564 -1 0
 0 522 0 1
 1
@@ -9146,7 +9146,7 @@ empty-shaker left shaker1 cocktail2 l1 l0
 1
 8 1
 4
-0 224 0 1
+0 223 0 1
 0 564 -1 0
 0 522 0 1
 0 565 1 0
@@ -9157,7 +9157,7 @@ empty-shaker left shaker1 cocktail2 l2 l0
 1
 8 1
 4
-0 224 0 1
+0 223 0 1
 0 564 -1 0
 0 522 0 1
 0 565 2 0
@@ -9433,7 +9433,7 @@ empty-shaker right shaker1 cocktail10 l0 l0
 11 1
 565 0
 3
-0 235 0 1
+0 234 0 1
 0 564 -1 0
 0 522 0 1
 1
@@ -9443,7 +9443,7 @@ empty-shaker right shaker1 cocktail10 l1 l0
 1
 11 1
 4
-0 235 0 1
+0 234 0 1
 0 564 -1 0
 0 522 0 1
 0 565 1 0
@@ -9454,7 +9454,7 @@ empty-shaker right shaker1 cocktail10 l2 l0
 1
 11 1
 4
-0 235 0 1
+0 234 0 1
 0 564 -1 0
 0 522 0 1
 0 565 2 0
@@ -9466,7 +9466,7 @@ empty-shaker right shaker1 cocktail2 l0 l0
 11 1
 565 0
 3
-0 224 0 1
+0 223 0 1
 0 564 -1 0
 0 522 0 1
 1
@@ -9476,7 +9476,7 @@ empty-shaker right shaker1 cocktail2 l1 l0
 1
 11 1
 4
-0 224 0 1
+0 223 0 1
 0 564 -1 0
 0 522 0 1
 0 565 1 0
@@ -9487,7 +9487,7 @@ empty-shaker right shaker1 cocktail2 l2 l0
 1
 11 1
 4
-0 224 0 1
+0 223 0 1
 0 564 -1 0
 0 522 0 1
 0 565 2 0
@@ -9738,7 +9738,7 @@ empty-shot left shot1 cocktail10
 1
 8 2
 2
-0 236 0 1
+0 235 0 1
 0 553 -1 0
 1
 end_operator
@@ -9747,7 +9747,7 @@ empty-shot left shot1 cocktail2
 1
 8 2
 2
-0 225 0 1
+0 224 0 1
 0 553 -1 0
 1
 end_operator
@@ -10000,7 +10000,7 @@ empty-shot left shot10 cocktail1
 8 3
 2
 0 215 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10008,8 +10008,8 @@ empty-shot left shot10 cocktail10
 1
 8 3
 2
-0 567 0 1
-0 562 -1 0
+0 236 0 1
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10017,8 +10017,8 @@ empty-shot left shot10 cocktail2
 1
 8 3
 2
-0 226 0 1
-0 562 -1 0
+0 225 0 1
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10027,7 +10027,7 @@ empty-shot left shot10 cocktail3
 8 3
 2
 0 247 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10036,7 +10036,7 @@ empty-shot left shot10 cocktail4
 8 3
 2
 0 258 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10045,7 +10045,7 @@ empty-shot left shot10 cocktail5
 8 3
 2
 0 269 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10054,7 +10054,7 @@ empty-shot left shot10 cocktail6
 8 3
 2
 0 280 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10063,7 +10063,7 @@ empty-shot left shot10 cocktail7
 8 3
 2
 0 291 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10072,7 +10072,7 @@ empty-shot left shot10 cocktail8
 8 3
 2
 0 302 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10081,7 +10081,7 @@ empty-shot left shot10 cocktail9
 8 3
 2
 0 313 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10090,7 +10090,7 @@ empty-shot left shot10 ingredient1
 8 3
 2
 0 482 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10099,7 +10099,7 @@ empty-shot left shot10 ingredient10
 8 3
 2
 0 483 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10108,7 +10108,7 @@ empty-shot left shot10 ingredient11
 8 3
 2
 0 484 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10117,7 +10117,7 @@ empty-shot left shot10 ingredient12
 8 3
 2
 0 485 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10126,7 +10126,7 @@ empty-shot left shot10 ingredient13
 8 3
 2
 0 486 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10135,7 +10135,7 @@ empty-shot left shot10 ingredient14
 8 3
 2
 0 487 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10144,7 +10144,7 @@ empty-shot left shot10 ingredient15
 8 3
 2
 0 488 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10153,7 +10153,7 @@ empty-shot left shot10 ingredient16
 8 3
 2
 0 489 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10162,7 +10162,7 @@ empty-shot left shot10 ingredient17
 8 3
 2
 0 490 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10171,7 +10171,7 @@ empty-shot left shot10 ingredient18
 8 3
 2
 0 491 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10180,7 +10180,7 @@ empty-shot left shot10 ingredient19
 8 3
 2
 0 492 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10189,7 +10189,7 @@ empty-shot left shot10 ingredient2
 8 3
 2
 0 493 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10198,7 +10198,7 @@ empty-shot left shot10 ingredient20
 8 3
 2
 0 494 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10207,7 +10207,7 @@ empty-shot left shot10 ingredient3
 8 3
 2
 0 495 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10216,7 +10216,7 @@ empty-shot left shot10 ingredient4
 8 3
 2
 0 496 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10225,7 +10225,7 @@ empty-shot left shot10 ingredient5
 8 3
 2
 0 497 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10234,7 +10234,7 @@ empty-shot left shot10 ingredient6
 8 3
 2
 0 498 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10243,7 +10243,7 @@ empty-shot left shot10 ingredient7
 8 3
 2
 0 499 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10252,7 +10252,7 @@ empty-shot left shot10 ingredient8
 8 3
 2
 0 500 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10261,7 +10261,7 @@ empty-shot left shot10 ingredient9
 8 3
 2
 0 501 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -10270,7 +10270,7 @@ empty-shot left shot2 cocktail1
 8 4
 2
 0 216 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10279,7 +10279,7 @@ empty-shot left shot2 cocktail10
 8 4
 2
 0 237 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10287,8 +10287,8 @@ empty-shot left shot2 cocktail2
 1
 8 4
 2
-0 227 0 1
-0 554 -1 0
+0 226 0 1
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10297,7 +10297,7 @@ empty-shot left shot2 cocktail3
 8 4
 2
 0 248 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10306,7 +10306,7 @@ empty-shot left shot2 cocktail4
 8 4
 2
 0 259 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10315,7 +10315,7 @@ empty-shot left shot2 cocktail5
 8 4
 2
 0 270 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10324,7 +10324,7 @@ empty-shot left shot2 cocktail6
 8 4
 2
 0 281 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10333,7 +10333,7 @@ empty-shot left shot2 cocktail7
 8 4
 2
 0 292 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10342,7 +10342,7 @@ empty-shot left shot2 cocktail8
 8 4
 2
 0 303 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10351,7 +10351,7 @@ empty-shot left shot2 cocktail9
 8 4
 2
 0 314 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10360,7 +10360,7 @@ empty-shot left shot2 ingredient1
 8 4
 2
 0 462 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10369,7 +10369,7 @@ empty-shot left shot2 ingredient10
 8 4
 2
 0 463 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10378,7 +10378,7 @@ empty-shot left shot2 ingredient11
 8 4
 2
 0 464 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10387,7 +10387,7 @@ empty-shot left shot2 ingredient12
 8 4
 2
 0 465 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10396,7 +10396,7 @@ empty-shot left shot2 ingredient13
 8 4
 2
 0 466 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10405,7 +10405,7 @@ empty-shot left shot2 ingredient14
 8 4
 2
 0 467 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10414,7 +10414,7 @@ empty-shot left shot2 ingredient15
 8 4
 2
 0 468 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10423,7 +10423,7 @@ empty-shot left shot2 ingredient16
 8 4
 2
 0 469 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10432,7 +10432,7 @@ empty-shot left shot2 ingredient17
 8 4
 2
 0 470 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10441,7 +10441,7 @@ empty-shot left shot2 ingredient18
 8 4
 2
 0 471 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10450,7 +10450,7 @@ empty-shot left shot2 ingredient19
 8 4
 2
 0 472 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10459,7 +10459,7 @@ empty-shot left shot2 ingredient2
 8 4
 2
 0 473 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10468,7 +10468,7 @@ empty-shot left shot2 ingredient20
 8 4
 2
 0 474 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10477,7 +10477,7 @@ empty-shot left shot2 ingredient3
 8 4
 2
 0 475 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10486,7 +10486,7 @@ empty-shot left shot2 ingredient4
 8 4
 2
 0 476 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10495,7 +10495,7 @@ empty-shot left shot2 ingredient5
 8 4
 2
 0 477 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10504,7 +10504,7 @@ empty-shot left shot2 ingredient6
 8 4
 2
 0 478 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10513,7 +10513,7 @@ empty-shot left shot2 ingredient7
 8 4
 2
 0 479 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10522,7 +10522,7 @@ empty-shot left shot2 ingredient8
 8 4
 2
 0 480 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10531,7 +10531,7 @@ empty-shot left shot2 ingredient9
 8 4
 2
 0 481 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -10540,7 +10540,7 @@ empty-shot left shot3 cocktail1
 8 5
 2
 0 217 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10549,7 +10549,7 @@ empty-shot left shot3 cocktail10
 8 5
 2
 0 238 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10557,8 +10557,8 @@ empty-shot left shot3 cocktail2
 1
 8 5
 2
-0 228 0 1
-0 555 -1 0
+0 227 0 1
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10567,7 +10567,7 @@ empty-shot left shot3 cocktail3
 8 5
 2
 0 249 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10576,7 +10576,7 @@ empty-shot left shot3 cocktail4
 8 5
 2
 0 260 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10585,7 +10585,7 @@ empty-shot left shot3 cocktail5
 8 5
 2
 0 271 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10594,7 +10594,7 @@ empty-shot left shot3 cocktail6
 8 5
 2
 0 282 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10603,7 +10603,7 @@ empty-shot left shot3 cocktail7
 8 5
 2
 0 293 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10612,7 +10612,7 @@ empty-shot left shot3 cocktail8
 8 5
 2
 0 304 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10621,7 +10621,7 @@ empty-shot left shot3 cocktail9
 8 5
 2
 0 315 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10630,7 +10630,7 @@ empty-shot left shot3 ingredient1
 8 5
 2
 0 442 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10639,7 +10639,7 @@ empty-shot left shot3 ingredient10
 8 5
 2
 0 443 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10648,7 +10648,7 @@ empty-shot left shot3 ingredient11
 8 5
 2
 0 444 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10657,7 +10657,7 @@ empty-shot left shot3 ingredient12
 8 5
 2
 0 445 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10666,7 +10666,7 @@ empty-shot left shot3 ingredient13
 8 5
 2
 0 446 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10675,7 +10675,7 @@ empty-shot left shot3 ingredient14
 8 5
 2
 0 447 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10684,7 +10684,7 @@ empty-shot left shot3 ingredient15
 8 5
 2
 0 448 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10693,7 +10693,7 @@ empty-shot left shot3 ingredient16
 8 5
 2
 0 449 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10702,7 +10702,7 @@ empty-shot left shot3 ingredient17
 8 5
 2
 0 450 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10711,7 +10711,7 @@ empty-shot left shot3 ingredient18
 8 5
 2
 0 451 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10720,7 +10720,7 @@ empty-shot left shot3 ingredient19
 8 5
 2
 0 452 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10729,7 +10729,7 @@ empty-shot left shot3 ingredient2
 8 5
 2
 0 453 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10738,7 +10738,7 @@ empty-shot left shot3 ingredient20
 8 5
 2
 0 454 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10747,7 +10747,7 @@ empty-shot left shot3 ingredient3
 8 5
 2
 0 455 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10756,7 +10756,7 @@ empty-shot left shot3 ingredient4
 8 5
 2
 0 456 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10765,7 +10765,7 @@ empty-shot left shot3 ingredient5
 8 5
 2
 0 457 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10774,7 +10774,7 @@ empty-shot left shot3 ingredient6
 8 5
 2
 0 458 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10783,7 +10783,7 @@ empty-shot left shot3 ingredient7
 8 5
 2
 0 459 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10792,7 +10792,7 @@ empty-shot left shot3 ingredient8
 8 5
 2
 0 460 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10801,7 +10801,7 @@ empty-shot left shot3 ingredient9
 8 5
 2
 0 461 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -10810,7 +10810,7 @@ empty-shot left shot4 cocktail1
 8 6
 2
 0 218 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10819,7 +10819,7 @@ empty-shot left shot4 cocktail10
 8 6
 2
 0 239 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10827,8 +10827,8 @@ empty-shot left shot4 cocktail2
 1
 8 6
 2
-0 229 0 1
-0 556 -1 0
+0 228 0 1
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10837,7 +10837,7 @@ empty-shot left shot4 cocktail3
 8 6
 2
 0 250 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10846,7 +10846,7 @@ empty-shot left shot4 cocktail4
 8 6
 2
 0 261 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10855,7 +10855,7 @@ empty-shot left shot4 cocktail5
 8 6
 2
 0 272 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10864,7 +10864,7 @@ empty-shot left shot4 cocktail6
 8 6
 2
 0 283 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10873,7 +10873,7 @@ empty-shot left shot4 cocktail7
 8 6
 2
 0 294 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10882,7 +10882,7 @@ empty-shot left shot4 cocktail8
 8 6
 2
 0 305 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10891,7 +10891,7 @@ empty-shot left shot4 cocktail9
 8 6
 2
 0 316 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10900,7 +10900,7 @@ empty-shot left shot4 ingredient1
 8 6
 2
 0 422 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10909,7 +10909,7 @@ empty-shot left shot4 ingredient10
 8 6
 2
 0 423 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10918,7 +10918,7 @@ empty-shot left shot4 ingredient11
 8 6
 2
 0 424 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10927,7 +10927,7 @@ empty-shot left shot4 ingredient12
 8 6
 2
 0 425 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10936,7 +10936,7 @@ empty-shot left shot4 ingredient13
 8 6
 2
 0 426 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10945,7 +10945,7 @@ empty-shot left shot4 ingredient14
 8 6
 2
 0 427 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10954,7 +10954,7 @@ empty-shot left shot4 ingredient15
 8 6
 2
 0 428 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10963,7 +10963,7 @@ empty-shot left shot4 ingredient16
 8 6
 2
 0 429 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10972,7 +10972,7 @@ empty-shot left shot4 ingredient17
 8 6
 2
 0 430 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10981,7 +10981,7 @@ empty-shot left shot4 ingredient18
 8 6
 2
 0 431 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10990,7 +10990,7 @@ empty-shot left shot4 ingredient19
 8 6
 2
 0 432 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -10999,7 +10999,7 @@ empty-shot left shot4 ingredient2
 8 6
 2
 0 433 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -11008,7 +11008,7 @@ empty-shot left shot4 ingredient20
 8 6
 2
 0 434 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -11017,7 +11017,7 @@ empty-shot left shot4 ingredient3
 8 6
 2
 0 435 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -11026,7 +11026,7 @@ empty-shot left shot4 ingredient4
 8 6
 2
 0 436 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -11035,7 +11035,7 @@ empty-shot left shot4 ingredient5
 8 6
 2
 0 437 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -11044,7 +11044,7 @@ empty-shot left shot4 ingredient6
 8 6
 2
 0 438 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -11053,7 +11053,7 @@ empty-shot left shot4 ingredient7
 8 6
 2
 0 439 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -11062,7 +11062,7 @@ empty-shot left shot4 ingredient8
 8 6
 2
 0 440 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -11071,7 +11071,7 @@ empty-shot left shot4 ingredient9
 8 6
 2
 0 441 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -11080,7 +11080,7 @@ empty-shot left shot5 cocktail1
 8 7
 2
 0 219 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11089,7 +11089,7 @@ empty-shot left shot5 cocktail10
 8 7
 2
 0 240 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11097,8 +11097,8 @@ empty-shot left shot5 cocktail2
 1
 8 7
 2
-0 230 0 1
-0 557 -1 0
+0 229 0 1
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11107,7 +11107,7 @@ empty-shot left shot5 cocktail3
 8 7
 2
 0 251 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11116,7 +11116,7 @@ empty-shot left shot5 cocktail4
 8 7
 2
 0 262 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11125,7 +11125,7 @@ empty-shot left shot5 cocktail5
 8 7
 2
 0 273 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11134,7 +11134,7 @@ empty-shot left shot5 cocktail6
 8 7
 2
 0 284 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11143,7 +11143,7 @@ empty-shot left shot5 cocktail7
 8 7
 2
 0 295 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11152,7 +11152,7 @@ empty-shot left shot5 cocktail8
 8 7
 2
 0 306 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11161,7 +11161,7 @@ empty-shot left shot5 cocktail9
 8 7
 2
 0 317 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11170,7 +11170,7 @@ empty-shot left shot5 ingredient1
 8 7
 2
 0 402 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11179,7 +11179,7 @@ empty-shot left shot5 ingredient10
 8 7
 2
 0 403 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11188,7 +11188,7 @@ empty-shot left shot5 ingredient11
 8 7
 2
 0 404 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11197,7 +11197,7 @@ empty-shot left shot5 ingredient12
 8 7
 2
 0 405 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11206,7 +11206,7 @@ empty-shot left shot5 ingredient13
 8 7
 2
 0 406 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11215,7 +11215,7 @@ empty-shot left shot5 ingredient14
 8 7
 2
 0 407 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11224,7 +11224,7 @@ empty-shot left shot5 ingredient15
 8 7
 2
 0 408 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11233,7 +11233,7 @@ empty-shot left shot5 ingredient16
 8 7
 2
 0 409 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11242,7 +11242,7 @@ empty-shot left shot5 ingredient17
 8 7
 2
 0 410 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11251,7 +11251,7 @@ empty-shot left shot5 ingredient18
 8 7
 2
 0 411 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11260,7 +11260,7 @@ empty-shot left shot5 ingredient19
 8 7
 2
 0 412 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11269,7 +11269,7 @@ empty-shot left shot5 ingredient2
 8 7
 2
 0 413 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11278,7 +11278,7 @@ empty-shot left shot5 ingredient20
 8 7
 2
 0 414 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11287,7 +11287,7 @@ empty-shot left shot5 ingredient3
 8 7
 2
 0 415 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11296,7 +11296,7 @@ empty-shot left shot5 ingredient4
 8 7
 2
 0 416 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11305,7 +11305,7 @@ empty-shot left shot5 ingredient5
 8 7
 2
 0 417 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11314,7 +11314,7 @@ empty-shot left shot5 ingredient6
 8 7
 2
 0 418 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11323,7 +11323,7 @@ empty-shot left shot5 ingredient7
 8 7
 2
 0 419 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11332,7 +11332,7 @@ empty-shot left shot5 ingredient8
 8 7
 2
 0 420 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11341,7 +11341,7 @@ empty-shot left shot5 ingredient9
 8 7
 2
 0 421 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -11350,7 +11350,7 @@ empty-shot left shot6 cocktail1
 8 8
 2
 0 220 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11359,7 +11359,7 @@ empty-shot left shot6 cocktail10
 8 8
 2
 0 241 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11367,8 +11367,8 @@ empty-shot left shot6 cocktail2
 1
 8 8
 2
-0 231 0 1
-0 558 -1 0
+0 230 0 1
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11377,7 +11377,7 @@ empty-shot left shot6 cocktail3
 8 8
 2
 0 252 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11386,7 +11386,7 @@ empty-shot left shot6 cocktail4
 8 8
 2
 0 263 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11395,7 +11395,7 @@ empty-shot left shot6 cocktail5
 8 8
 2
 0 274 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11404,7 +11404,7 @@ empty-shot left shot6 cocktail6
 8 8
 2
 0 285 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11413,7 +11413,7 @@ empty-shot left shot6 cocktail7
 8 8
 2
 0 296 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11422,7 +11422,7 @@ empty-shot left shot6 cocktail8
 8 8
 2
 0 307 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11431,7 +11431,7 @@ empty-shot left shot6 cocktail9
 8 8
 2
 0 318 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11440,7 +11440,7 @@ empty-shot left shot6 ingredient1
 8 8
 2
 0 382 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11449,7 +11449,7 @@ empty-shot left shot6 ingredient10
 8 8
 2
 0 383 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11458,7 +11458,7 @@ empty-shot left shot6 ingredient11
 8 8
 2
 0 384 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11467,7 +11467,7 @@ empty-shot left shot6 ingredient12
 8 8
 2
 0 385 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11476,7 +11476,7 @@ empty-shot left shot6 ingredient13
 8 8
 2
 0 386 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11485,7 +11485,7 @@ empty-shot left shot6 ingredient14
 8 8
 2
 0 387 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11494,7 +11494,7 @@ empty-shot left shot6 ingredient15
 8 8
 2
 0 388 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11503,7 +11503,7 @@ empty-shot left shot6 ingredient16
 8 8
 2
 0 389 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11512,7 +11512,7 @@ empty-shot left shot6 ingredient17
 8 8
 2
 0 390 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11521,7 +11521,7 @@ empty-shot left shot6 ingredient18
 8 8
 2
 0 391 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11530,7 +11530,7 @@ empty-shot left shot6 ingredient19
 8 8
 2
 0 392 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11539,7 +11539,7 @@ empty-shot left shot6 ingredient2
 8 8
 2
 0 393 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11548,7 +11548,7 @@ empty-shot left shot6 ingredient20
 8 8
 2
 0 394 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11557,7 +11557,7 @@ empty-shot left shot6 ingredient3
 8 8
 2
 0 395 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11566,7 +11566,7 @@ empty-shot left shot6 ingredient4
 8 8
 2
 0 396 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11575,7 +11575,7 @@ empty-shot left shot6 ingredient5
 8 8
 2
 0 397 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11584,7 +11584,7 @@ empty-shot left shot6 ingredient6
 8 8
 2
 0 398 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11593,7 +11593,7 @@ empty-shot left shot6 ingredient7
 8 8
 2
 0 399 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11602,7 +11602,7 @@ empty-shot left shot6 ingredient8
 8 8
 2
 0 400 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11611,7 +11611,7 @@ empty-shot left shot6 ingredient9
 8 8
 2
 0 401 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -11620,7 +11620,7 @@ empty-shot left shot7 cocktail1
 8 9
 2
 0 221 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11629,7 +11629,7 @@ empty-shot left shot7 cocktail10
 8 9
 2
 0 242 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11637,8 +11637,8 @@ empty-shot left shot7 cocktail2
 1
 8 9
 2
-0 232 0 1
-0 559 -1 0
+0 231 0 1
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11647,7 +11647,7 @@ empty-shot left shot7 cocktail3
 8 9
 2
 0 253 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11656,7 +11656,7 @@ empty-shot left shot7 cocktail4
 8 9
 2
 0 264 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11665,7 +11665,7 @@ empty-shot left shot7 cocktail5
 8 9
 2
 0 275 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11674,7 +11674,7 @@ empty-shot left shot7 cocktail6
 8 9
 2
 0 286 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11683,7 +11683,7 @@ empty-shot left shot7 cocktail7
 8 9
 2
 0 297 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11692,7 +11692,7 @@ empty-shot left shot7 cocktail8
 8 9
 2
 0 308 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11701,7 +11701,7 @@ empty-shot left shot7 cocktail9
 8 9
 2
 0 319 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11710,7 +11710,7 @@ empty-shot left shot7 ingredient1
 8 9
 2
 0 362 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11719,7 +11719,7 @@ empty-shot left shot7 ingredient10
 8 9
 2
 0 363 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11728,7 +11728,7 @@ empty-shot left shot7 ingredient11
 8 9
 2
 0 364 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11737,7 +11737,7 @@ empty-shot left shot7 ingredient12
 8 9
 2
 0 365 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11746,7 +11746,7 @@ empty-shot left shot7 ingredient13
 8 9
 2
 0 366 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11755,7 +11755,7 @@ empty-shot left shot7 ingredient14
 8 9
 2
 0 367 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11764,7 +11764,7 @@ empty-shot left shot7 ingredient15
 8 9
 2
 0 368 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11773,7 +11773,7 @@ empty-shot left shot7 ingredient16
 8 9
 2
 0 369 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11782,7 +11782,7 @@ empty-shot left shot7 ingredient17
 8 9
 2
 0 370 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11791,7 +11791,7 @@ empty-shot left shot7 ingredient18
 8 9
 2
 0 371 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11800,7 +11800,7 @@ empty-shot left shot7 ingredient19
 8 9
 2
 0 372 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11809,7 +11809,7 @@ empty-shot left shot7 ingredient2
 8 9
 2
 0 373 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11818,7 +11818,7 @@ empty-shot left shot7 ingredient20
 8 9
 2
 0 374 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11827,7 +11827,7 @@ empty-shot left shot7 ingredient3
 8 9
 2
 0 375 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11836,7 +11836,7 @@ empty-shot left shot7 ingredient4
 8 9
 2
 0 376 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11845,7 +11845,7 @@ empty-shot left shot7 ingredient5
 8 9
 2
 0 377 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11854,7 +11854,7 @@ empty-shot left shot7 ingredient6
 8 9
 2
 0 378 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11863,7 +11863,7 @@ empty-shot left shot7 ingredient7
 8 9
 2
 0 379 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11872,7 +11872,7 @@ empty-shot left shot7 ingredient8
 8 9
 2
 0 380 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11881,7 +11881,7 @@ empty-shot left shot7 ingredient9
 8 9
 2
 0 381 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -11890,7 +11890,7 @@ empty-shot left shot8 cocktail1
 8 10
 2
 0 222 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -11899,7 +11899,7 @@ empty-shot left shot8 cocktail10
 8 10
 2
 0 243 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -11907,8 +11907,8 @@ empty-shot left shot8 cocktail2
 1
 8 10
 2
-0 233 0 1
-0 560 -1 0
+0 232 0 1
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -11917,7 +11917,7 @@ empty-shot left shot8 cocktail3
 8 10
 2
 0 254 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -11926,7 +11926,7 @@ empty-shot left shot8 cocktail4
 8 10
 2
 0 265 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -11935,7 +11935,7 @@ empty-shot left shot8 cocktail5
 8 10
 2
 0 276 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -11944,7 +11944,7 @@ empty-shot left shot8 cocktail6
 8 10
 2
 0 287 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -11953,7 +11953,7 @@ empty-shot left shot8 cocktail7
 8 10
 2
 0 298 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -11962,7 +11962,7 @@ empty-shot left shot8 cocktail8
 8 10
 2
 0 309 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -11971,7 +11971,7 @@ empty-shot left shot8 cocktail9
 8 10
 2
 0 320 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -11980,7 +11980,7 @@ empty-shot left shot8 ingredient1
 8 10
 2
 0 342 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -11989,7 +11989,7 @@ empty-shot left shot8 ingredient10
 8 10
 2
 0 343 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -11998,7 +11998,7 @@ empty-shot left shot8 ingredient11
 8 10
 2
 0 344 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12007,7 +12007,7 @@ empty-shot left shot8 ingredient12
 8 10
 2
 0 345 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12016,7 +12016,7 @@ empty-shot left shot8 ingredient13
 8 10
 2
 0 346 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12025,7 +12025,7 @@ empty-shot left shot8 ingredient14
 8 10
 2
 0 347 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12034,7 +12034,7 @@ empty-shot left shot8 ingredient15
 8 10
 2
 0 348 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12043,7 +12043,7 @@ empty-shot left shot8 ingredient16
 8 10
 2
 0 349 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12052,7 +12052,7 @@ empty-shot left shot8 ingredient17
 8 10
 2
 0 350 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12061,7 +12061,7 @@ empty-shot left shot8 ingredient18
 8 10
 2
 0 351 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12070,7 +12070,7 @@ empty-shot left shot8 ingredient19
 8 10
 2
 0 352 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12079,7 +12079,7 @@ empty-shot left shot8 ingredient2
 8 10
 2
 0 353 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12088,7 +12088,7 @@ empty-shot left shot8 ingredient20
 8 10
 2
 0 354 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12097,7 +12097,7 @@ empty-shot left shot8 ingredient3
 8 10
 2
 0 355 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12106,7 +12106,7 @@ empty-shot left shot8 ingredient4
 8 10
 2
 0 356 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12115,7 +12115,7 @@ empty-shot left shot8 ingredient5
 8 10
 2
 0 357 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12124,7 +12124,7 @@ empty-shot left shot8 ingredient6
 8 10
 2
 0 358 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12133,7 +12133,7 @@ empty-shot left shot8 ingredient7
 8 10
 2
 0 359 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12142,7 +12142,7 @@ empty-shot left shot8 ingredient8
 8 10
 2
 0 360 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12151,7 +12151,7 @@ empty-shot left shot8 ingredient9
 8 10
 2
 0 361 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -12159,8 +12159,8 @@ empty-shot left shot9 cocktail1
 1
 8 11
 2
-0 223 0 1
-0 561 -1 0
+0 567 0 1
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12169,7 +12169,7 @@ empty-shot left shot9 cocktail10
 8 11
 2
 0 244 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12177,8 +12177,8 @@ empty-shot left shot9 cocktail2
 1
 8 11
 2
-0 234 0 1
-0 561 -1 0
+0 233 0 1
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12187,7 +12187,7 @@ empty-shot left shot9 cocktail3
 8 11
 2
 0 255 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12196,7 +12196,7 @@ empty-shot left shot9 cocktail4
 8 11
 2
 0 266 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12205,7 +12205,7 @@ empty-shot left shot9 cocktail5
 8 11
 2
 0 277 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12214,7 +12214,7 @@ empty-shot left shot9 cocktail6
 8 11
 2
 0 288 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12223,7 +12223,7 @@ empty-shot left shot9 cocktail7
 8 11
 2
 0 299 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12232,7 +12232,7 @@ empty-shot left shot9 cocktail8
 8 11
 2
 0 310 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12241,7 +12241,7 @@ empty-shot left shot9 cocktail9
 8 11
 2
 0 321 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12250,7 +12250,7 @@ empty-shot left shot9 ingredient1
 8 11
 2
 0 322 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12259,7 +12259,7 @@ empty-shot left shot9 ingredient10
 8 11
 2
 0 323 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12268,7 +12268,7 @@ empty-shot left shot9 ingredient11
 8 11
 2
 0 324 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12277,7 +12277,7 @@ empty-shot left shot9 ingredient12
 8 11
 2
 0 325 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12286,7 +12286,7 @@ empty-shot left shot9 ingredient13
 8 11
 2
 0 326 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12295,7 +12295,7 @@ empty-shot left shot9 ingredient14
 8 11
 2
 0 327 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12304,7 +12304,7 @@ empty-shot left shot9 ingredient15
 8 11
 2
 0 328 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12313,7 +12313,7 @@ empty-shot left shot9 ingredient16
 8 11
 2
 0 329 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12322,7 +12322,7 @@ empty-shot left shot9 ingredient17
 8 11
 2
 0 330 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12331,7 +12331,7 @@ empty-shot left shot9 ingredient18
 8 11
 2
 0 331 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12340,7 +12340,7 @@ empty-shot left shot9 ingredient19
 8 11
 2
 0 332 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12349,7 +12349,7 @@ empty-shot left shot9 ingredient2
 8 11
 2
 0 333 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12358,7 +12358,7 @@ empty-shot left shot9 ingredient20
 8 11
 2
 0 334 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12367,7 +12367,7 @@ empty-shot left shot9 ingredient3
 8 11
 2
 0 335 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12376,7 +12376,7 @@ empty-shot left shot9 ingredient4
 8 11
 2
 0 336 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12385,7 +12385,7 @@ empty-shot left shot9 ingredient5
 8 11
 2
 0 337 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12394,7 +12394,7 @@ empty-shot left shot9 ingredient6
 8 11
 2
 0 338 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12403,7 +12403,7 @@ empty-shot left shot9 ingredient7
 8 11
 2
 0 339 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12412,7 +12412,7 @@ empty-shot left shot9 ingredient8
 8 11
 2
 0 340 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12421,7 +12421,7 @@ empty-shot left shot9 ingredient9
 8 11
 2
 0 341 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -12438,7 +12438,7 @@ empty-shot right shot1 cocktail10
 1
 11 2
 2
-0 236 0 1
+0 235 0 1
 0 553 -1 0
 1
 end_operator
@@ -12447,7 +12447,7 @@ empty-shot right shot1 cocktail2
 1
 11 2
 2
-0 225 0 1
+0 224 0 1
 0 553 -1 0
 1
 end_operator
@@ -12700,7 +12700,7 @@ empty-shot right shot10 cocktail1
 11 3
 2
 0 215 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12708,8 +12708,8 @@ empty-shot right shot10 cocktail10
 1
 11 3
 2
-0 567 0 1
-0 562 -1 0
+0 236 0 1
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12717,8 +12717,8 @@ empty-shot right shot10 cocktail2
 1
 11 3
 2
-0 226 0 1
-0 562 -1 0
+0 225 0 1
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12727,7 +12727,7 @@ empty-shot right shot10 cocktail3
 11 3
 2
 0 247 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12736,7 +12736,7 @@ empty-shot right shot10 cocktail4
 11 3
 2
 0 258 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12745,7 +12745,7 @@ empty-shot right shot10 cocktail5
 11 3
 2
 0 269 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12754,7 +12754,7 @@ empty-shot right shot10 cocktail6
 11 3
 2
 0 280 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12763,7 +12763,7 @@ empty-shot right shot10 cocktail7
 11 3
 2
 0 291 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12772,7 +12772,7 @@ empty-shot right shot10 cocktail8
 11 3
 2
 0 302 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12781,7 +12781,7 @@ empty-shot right shot10 cocktail9
 11 3
 2
 0 313 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12790,7 +12790,7 @@ empty-shot right shot10 ingredient1
 11 3
 2
 0 482 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12799,7 +12799,7 @@ empty-shot right shot10 ingredient10
 11 3
 2
 0 483 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12808,7 +12808,7 @@ empty-shot right shot10 ingredient11
 11 3
 2
 0 484 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12817,7 +12817,7 @@ empty-shot right shot10 ingredient12
 11 3
 2
 0 485 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12826,7 +12826,7 @@ empty-shot right shot10 ingredient13
 11 3
 2
 0 486 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12835,7 +12835,7 @@ empty-shot right shot10 ingredient14
 11 3
 2
 0 487 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12844,7 +12844,7 @@ empty-shot right shot10 ingredient15
 11 3
 2
 0 488 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12853,7 +12853,7 @@ empty-shot right shot10 ingredient16
 11 3
 2
 0 489 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12862,7 +12862,7 @@ empty-shot right shot10 ingredient17
 11 3
 2
 0 490 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12871,7 +12871,7 @@ empty-shot right shot10 ingredient18
 11 3
 2
 0 491 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12880,7 +12880,7 @@ empty-shot right shot10 ingredient19
 11 3
 2
 0 492 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12889,7 +12889,7 @@ empty-shot right shot10 ingredient2
 11 3
 2
 0 493 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12898,7 +12898,7 @@ empty-shot right shot10 ingredient20
 11 3
 2
 0 494 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12907,7 +12907,7 @@ empty-shot right shot10 ingredient3
 11 3
 2
 0 495 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12916,7 +12916,7 @@ empty-shot right shot10 ingredient4
 11 3
 2
 0 496 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12925,7 +12925,7 @@ empty-shot right shot10 ingredient5
 11 3
 2
 0 497 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12934,7 +12934,7 @@ empty-shot right shot10 ingredient6
 11 3
 2
 0 498 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12943,7 +12943,7 @@ empty-shot right shot10 ingredient7
 11 3
 2
 0 499 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12952,7 +12952,7 @@ empty-shot right shot10 ingredient8
 11 3
 2
 0 500 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12961,7 +12961,7 @@ empty-shot right shot10 ingredient9
 11 3
 2
 0 501 0 1
-0 562 -1 0
+0 554 -1 0
 1
 end_operator
 begin_operator
@@ -12970,7 +12970,7 @@ empty-shot right shot2 cocktail1
 11 4
 2
 0 216 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -12979,7 +12979,7 @@ empty-shot right shot2 cocktail10
 11 4
 2
 0 237 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -12987,8 +12987,8 @@ empty-shot right shot2 cocktail2
 1
 11 4
 2
-0 227 0 1
-0 554 -1 0
+0 226 0 1
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -12997,7 +12997,7 @@ empty-shot right shot2 cocktail3
 11 4
 2
 0 248 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13006,7 +13006,7 @@ empty-shot right shot2 cocktail4
 11 4
 2
 0 259 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13015,7 +13015,7 @@ empty-shot right shot2 cocktail5
 11 4
 2
 0 270 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13024,7 +13024,7 @@ empty-shot right shot2 cocktail6
 11 4
 2
 0 281 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13033,7 +13033,7 @@ empty-shot right shot2 cocktail7
 11 4
 2
 0 292 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13042,7 +13042,7 @@ empty-shot right shot2 cocktail8
 11 4
 2
 0 303 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13051,7 +13051,7 @@ empty-shot right shot2 cocktail9
 11 4
 2
 0 314 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13060,7 +13060,7 @@ empty-shot right shot2 ingredient1
 11 4
 2
 0 462 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13069,7 +13069,7 @@ empty-shot right shot2 ingredient10
 11 4
 2
 0 463 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13078,7 +13078,7 @@ empty-shot right shot2 ingredient11
 11 4
 2
 0 464 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13087,7 +13087,7 @@ empty-shot right shot2 ingredient12
 11 4
 2
 0 465 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13096,7 +13096,7 @@ empty-shot right shot2 ingredient13
 11 4
 2
 0 466 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13105,7 +13105,7 @@ empty-shot right shot2 ingredient14
 11 4
 2
 0 467 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13114,7 +13114,7 @@ empty-shot right shot2 ingredient15
 11 4
 2
 0 468 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13123,7 +13123,7 @@ empty-shot right shot2 ingredient16
 11 4
 2
 0 469 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13132,7 +13132,7 @@ empty-shot right shot2 ingredient17
 11 4
 2
 0 470 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13141,7 +13141,7 @@ empty-shot right shot2 ingredient18
 11 4
 2
 0 471 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13150,7 +13150,7 @@ empty-shot right shot2 ingredient19
 11 4
 2
 0 472 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13159,7 +13159,7 @@ empty-shot right shot2 ingredient2
 11 4
 2
 0 473 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13168,7 +13168,7 @@ empty-shot right shot2 ingredient20
 11 4
 2
 0 474 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13177,7 +13177,7 @@ empty-shot right shot2 ingredient3
 11 4
 2
 0 475 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13186,7 +13186,7 @@ empty-shot right shot2 ingredient4
 11 4
 2
 0 476 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13195,7 +13195,7 @@ empty-shot right shot2 ingredient5
 11 4
 2
 0 477 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13204,7 +13204,7 @@ empty-shot right shot2 ingredient6
 11 4
 2
 0 478 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13213,7 +13213,7 @@ empty-shot right shot2 ingredient7
 11 4
 2
 0 479 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13222,7 +13222,7 @@ empty-shot right shot2 ingredient8
 11 4
 2
 0 480 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13231,7 +13231,7 @@ empty-shot right shot2 ingredient9
 11 4
 2
 0 481 0 1
-0 554 -1 0
+0 555 -1 0
 1
 end_operator
 begin_operator
@@ -13240,7 +13240,7 @@ empty-shot right shot3 cocktail1
 11 5
 2
 0 217 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13249,7 +13249,7 @@ empty-shot right shot3 cocktail10
 11 5
 2
 0 238 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13257,8 +13257,8 @@ empty-shot right shot3 cocktail2
 1
 11 5
 2
-0 228 0 1
-0 555 -1 0
+0 227 0 1
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13267,7 +13267,7 @@ empty-shot right shot3 cocktail3
 11 5
 2
 0 249 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13276,7 +13276,7 @@ empty-shot right shot3 cocktail4
 11 5
 2
 0 260 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13285,7 +13285,7 @@ empty-shot right shot3 cocktail5
 11 5
 2
 0 271 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13294,7 +13294,7 @@ empty-shot right shot3 cocktail6
 11 5
 2
 0 282 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13303,7 +13303,7 @@ empty-shot right shot3 cocktail7
 11 5
 2
 0 293 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13312,7 +13312,7 @@ empty-shot right shot3 cocktail8
 11 5
 2
 0 304 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13321,7 +13321,7 @@ empty-shot right shot3 cocktail9
 11 5
 2
 0 315 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13330,7 +13330,7 @@ empty-shot right shot3 ingredient1
 11 5
 2
 0 442 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13339,7 +13339,7 @@ empty-shot right shot3 ingredient10
 11 5
 2
 0 443 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13348,7 +13348,7 @@ empty-shot right shot3 ingredient11
 11 5
 2
 0 444 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13357,7 +13357,7 @@ empty-shot right shot3 ingredient12
 11 5
 2
 0 445 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13366,7 +13366,7 @@ empty-shot right shot3 ingredient13
 11 5
 2
 0 446 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13375,7 +13375,7 @@ empty-shot right shot3 ingredient14
 11 5
 2
 0 447 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13384,7 +13384,7 @@ empty-shot right shot3 ingredient15
 11 5
 2
 0 448 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13393,7 +13393,7 @@ empty-shot right shot3 ingredient16
 11 5
 2
 0 449 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13402,7 +13402,7 @@ empty-shot right shot3 ingredient17
 11 5
 2
 0 450 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13411,7 +13411,7 @@ empty-shot right shot3 ingredient18
 11 5
 2
 0 451 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13420,7 +13420,7 @@ empty-shot right shot3 ingredient19
 11 5
 2
 0 452 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13429,7 +13429,7 @@ empty-shot right shot3 ingredient2
 11 5
 2
 0 453 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13438,7 +13438,7 @@ empty-shot right shot3 ingredient20
 11 5
 2
 0 454 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13447,7 +13447,7 @@ empty-shot right shot3 ingredient3
 11 5
 2
 0 455 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13456,7 +13456,7 @@ empty-shot right shot3 ingredient4
 11 5
 2
 0 456 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13465,7 +13465,7 @@ empty-shot right shot3 ingredient5
 11 5
 2
 0 457 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13474,7 +13474,7 @@ empty-shot right shot3 ingredient6
 11 5
 2
 0 458 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13483,7 +13483,7 @@ empty-shot right shot3 ingredient7
 11 5
 2
 0 459 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13492,7 +13492,7 @@ empty-shot right shot3 ingredient8
 11 5
 2
 0 460 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13501,7 +13501,7 @@ empty-shot right shot3 ingredient9
 11 5
 2
 0 461 0 1
-0 555 -1 0
+0 556 -1 0
 1
 end_operator
 begin_operator
@@ -13510,7 +13510,7 @@ empty-shot right shot4 cocktail1
 11 6
 2
 0 218 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13519,7 +13519,7 @@ empty-shot right shot4 cocktail10
 11 6
 2
 0 239 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13527,8 +13527,8 @@ empty-shot right shot4 cocktail2
 1
 11 6
 2
-0 229 0 1
-0 556 -1 0
+0 228 0 1
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13537,7 +13537,7 @@ empty-shot right shot4 cocktail3
 11 6
 2
 0 250 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13546,7 +13546,7 @@ empty-shot right shot4 cocktail4
 11 6
 2
 0 261 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13555,7 +13555,7 @@ empty-shot right shot4 cocktail5
 11 6
 2
 0 272 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13564,7 +13564,7 @@ empty-shot right shot4 cocktail6
 11 6
 2
 0 283 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13573,7 +13573,7 @@ empty-shot right shot4 cocktail7
 11 6
 2
 0 294 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13582,7 +13582,7 @@ empty-shot right shot4 cocktail8
 11 6
 2
 0 305 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13591,7 +13591,7 @@ empty-shot right shot4 cocktail9
 11 6
 2
 0 316 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13600,7 +13600,7 @@ empty-shot right shot4 ingredient1
 11 6
 2
 0 422 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13609,7 +13609,7 @@ empty-shot right shot4 ingredient10
 11 6
 2
 0 423 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13618,7 +13618,7 @@ empty-shot right shot4 ingredient11
 11 6
 2
 0 424 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13627,7 +13627,7 @@ empty-shot right shot4 ingredient12
 11 6
 2
 0 425 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13636,7 +13636,7 @@ empty-shot right shot4 ingredient13
 11 6
 2
 0 426 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13645,7 +13645,7 @@ empty-shot right shot4 ingredient14
 11 6
 2
 0 427 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13654,7 +13654,7 @@ empty-shot right shot4 ingredient15
 11 6
 2
 0 428 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13663,7 +13663,7 @@ empty-shot right shot4 ingredient16
 11 6
 2
 0 429 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13672,7 +13672,7 @@ empty-shot right shot4 ingredient17
 11 6
 2
 0 430 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13681,7 +13681,7 @@ empty-shot right shot4 ingredient18
 11 6
 2
 0 431 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13690,7 +13690,7 @@ empty-shot right shot4 ingredient19
 11 6
 2
 0 432 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13699,7 +13699,7 @@ empty-shot right shot4 ingredient2
 11 6
 2
 0 433 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13708,7 +13708,7 @@ empty-shot right shot4 ingredient20
 11 6
 2
 0 434 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13717,7 +13717,7 @@ empty-shot right shot4 ingredient3
 11 6
 2
 0 435 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13726,7 +13726,7 @@ empty-shot right shot4 ingredient4
 11 6
 2
 0 436 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13735,7 +13735,7 @@ empty-shot right shot4 ingredient5
 11 6
 2
 0 437 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13744,7 +13744,7 @@ empty-shot right shot4 ingredient6
 11 6
 2
 0 438 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13753,7 +13753,7 @@ empty-shot right shot4 ingredient7
 11 6
 2
 0 439 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13762,7 +13762,7 @@ empty-shot right shot4 ingredient8
 11 6
 2
 0 440 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13771,7 +13771,7 @@ empty-shot right shot4 ingredient9
 11 6
 2
 0 441 0 1
-0 556 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
@@ -13780,7 +13780,7 @@ empty-shot right shot5 cocktail1
 11 7
 2
 0 219 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13789,7 +13789,7 @@ empty-shot right shot5 cocktail10
 11 7
 2
 0 240 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13797,8 +13797,8 @@ empty-shot right shot5 cocktail2
 1
 11 7
 2
-0 230 0 1
-0 557 -1 0
+0 229 0 1
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13807,7 +13807,7 @@ empty-shot right shot5 cocktail3
 11 7
 2
 0 251 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13816,7 +13816,7 @@ empty-shot right shot5 cocktail4
 11 7
 2
 0 262 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13825,7 +13825,7 @@ empty-shot right shot5 cocktail5
 11 7
 2
 0 273 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13834,7 +13834,7 @@ empty-shot right shot5 cocktail6
 11 7
 2
 0 284 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13843,7 +13843,7 @@ empty-shot right shot5 cocktail7
 11 7
 2
 0 295 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13852,7 +13852,7 @@ empty-shot right shot5 cocktail8
 11 7
 2
 0 306 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13861,7 +13861,7 @@ empty-shot right shot5 cocktail9
 11 7
 2
 0 317 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13870,7 +13870,7 @@ empty-shot right shot5 ingredient1
 11 7
 2
 0 402 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13879,7 +13879,7 @@ empty-shot right shot5 ingredient10
 11 7
 2
 0 403 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13888,7 +13888,7 @@ empty-shot right shot5 ingredient11
 11 7
 2
 0 404 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13897,7 +13897,7 @@ empty-shot right shot5 ingredient12
 11 7
 2
 0 405 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13906,7 +13906,7 @@ empty-shot right shot5 ingredient13
 11 7
 2
 0 406 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13915,7 +13915,7 @@ empty-shot right shot5 ingredient14
 11 7
 2
 0 407 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13924,7 +13924,7 @@ empty-shot right shot5 ingredient15
 11 7
 2
 0 408 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13933,7 +13933,7 @@ empty-shot right shot5 ingredient16
 11 7
 2
 0 409 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13942,7 +13942,7 @@ empty-shot right shot5 ingredient17
 11 7
 2
 0 410 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13951,7 +13951,7 @@ empty-shot right shot5 ingredient18
 11 7
 2
 0 411 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13960,7 +13960,7 @@ empty-shot right shot5 ingredient19
 11 7
 2
 0 412 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13969,7 +13969,7 @@ empty-shot right shot5 ingredient2
 11 7
 2
 0 413 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13978,7 +13978,7 @@ empty-shot right shot5 ingredient20
 11 7
 2
 0 414 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13987,7 +13987,7 @@ empty-shot right shot5 ingredient3
 11 7
 2
 0 415 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -13996,7 +13996,7 @@ empty-shot right shot5 ingredient4
 11 7
 2
 0 416 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -14005,7 +14005,7 @@ empty-shot right shot5 ingredient5
 11 7
 2
 0 417 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -14014,7 +14014,7 @@ empty-shot right shot5 ingredient6
 11 7
 2
 0 418 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -14023,7 +14023,7 @@ empty-shot right shot5 ingredient7
 11 7
 2
 0 419 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -14032,7 +14032,7 @@ empty-shot right shot5 ingredient8
 11 7
 2
 0 420 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -14041,7 +14041,7 @@ empty-shot right shot5 ingredient9
 11 7
 2
 0 421 0 1
-0 557 -1 0
+0 558 -1 0
 1
 end_operator
 begin_operator
@@ -14050,7 +14050,7 @@ empty-shot right shot6 cocktail1
 11 8
 2
 0 220 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14059,7 +14059,7 @@ empty-shot right shot6 cocktail10
 11 8
 2
 0 241 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14067,8 +14067,8 @@ empty-shot right shot6 cocktail2
 1
 11 8
 2
-0 231 0 1
-0 558 -1 0
+0 230 0 1
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14077,7 +14077,7 @@ empty-shot right shot6 cocktail3
 11 8
 2
 0 252 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14086,7 +14086,7 @@ empty-shot right shot6 cocktail4
 11 8
 2
 0 263 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14095,7 +14095,7 @@ empty-shot right shot6 cocktail5
 11 8
 2
 0 274 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14104,7 +14104,7 @@ empty-shot right shot6 cocktail6
 11 8
 2
 0 285 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14113,7 +14113,7 @@ empty-shot right shot6 cocktail7
 11 8
 2
 0 296 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14122,7 +14122,7 @@ empty-shot right shot6 cocktail8
 11 8
 2
 0 307 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14131,7 +14131,7 @@ empty-shot right shot6 cocktail9
 11 8
 2
 0 318 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14140,7 +14140,7 @@ empty-shot right shot6 ingredient1
 11 8
 2
 0 382 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14149,7 +14149,7 @@ empty-shot right shot6 ingredient10
 11 8
 2
 0 383 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14158,7 +14158,7 @@ empty-shot right shot6 ingredient11
 11 8
 2
 0 384 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14167,7 +14167,7 @@ empty-shot right shot6 ingredient12
 11 8
 2
 0 385 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14176,7 +14176,7 @@ empty-shot right shot6 ingredient13
 11 8
 2
 0 386 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14185,7 +14185,7 @@ empty-shot right shot6 ingredient14
 11 8
 2
 0 387 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14194,7 +14194,7 @@ empty-shot right shot6 ingredient15
 11 8
 2
 0 388 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14203,7 +14203,7 @@ empty-shot right shot6 ingredient16
 11 8
 2
 0 389 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14212,7 +14212,7 @@ empty-shot right shot6 ingredient17
 11 8
 2
 0 390 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14221,7 +14221,7 @@ empty-shot right shot6 ingredient18
 11 8
 2
 0 391 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14230,7 +14230,7 @@ empty-shot right shot6 ingredient19
 11 8
 2
 0 392 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14239,7 +14239,7 @@ empty-shot right shot6 ingredient2
 11 8
 2
 0 393 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14248,7 +14248,7 @@ empty-shot right shot6 ingredient20
 11 8
 2
 0 394 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14257,7 +14257,7 @@ empty-shot right shot6 ingredient3
 11 8
 2
 0 395 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14266,7 +14266,7 @@ empty-shot right shot6 ingredient4
 11 8
 2
 0 396 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14275,7 +14275,7 @@ empty-shot right shot6 ingredient5
 11 8
 2
 0 397 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14284,7 +14284,7 @@ empty-shot right shot6 ingredient6
 11 8
 2
 0 398 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14293,7 +14293,7 @@ empty-shot right shot6 ingredient7
 11 8
 2
 0 399 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14302,7 +14302,7 @@ empty-shot right shot6 ingredient8
 11 8
 2
 0 400 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14311,7 +14311,7 @@ empty-shot right shot6 ingredient9
 11 8
 2
 0 401 0 1
-0 558 -1 0
+0 559 -1 0
 1
 end_operator
 begin_operator
@@ -14320,7 +14320,7 @@ empty-shot right shot7 cocktail1
 11 9
 2
 0 221 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14329,7 +14329,7 @@ empty-shot right shot7 cocktail10
 11 9
 2
 0 242 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14337,8 +14337,8 @@ empty-shot right shot7 cocktail2
 1
 11 9
 2
-0 232 0 1
-0 559 -1 0
+0 231 0 1
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14347,7 +14347,7 @@ empty-shot right shot7 cocktail3
 11 9
 2
 0 253 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14356,7 +14356,7 @@ empty-shot right shot7 cocktail4
 11 9
 2
 0 264 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14365,7 +14365,7 @@ empty-shot right shot7 cocktail5
 11 9
 2
 0 275 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14374,7 +14374,7 @@ empty-shot right shot7 cocktail6
 11 9
 2
 0 286 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14383,7 +14383,7 @@ empty-shot right shot7 cocktail7
 11 9
 2
 0 297 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14392,7 +14392,7 @@ empty-shot right shot7 cocktail8
 11 9
 2
 0 308 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14401,7 +14401,7 @@ empty-shot right shot7 cocktail9
 11 9
 2
 0 319 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14410,7 +14410,7 @@ empty-shot right shot7 ingredient1
 11 9
 2
 0 362 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14419,7 +14419,7 @@ empty-shot right shot7 ingredient10
 11 9
 2
 0 363 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14428,7 +14428,7 @@ empty-shot right shot7 ingredient11
 11 9
 2
 0 364 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14437,7 +14437,7 @@ empty-shot right shot7 ingredient12
 11 9
 2
 0 365 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14446,7 +14446,7 @@ empty-shot right shot7 ingredient13
 11 9
 2
 0 366 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14455,7 +14455,7 @@ empty-shot right shot7 ingredient14
 11 9
 2
 0 367 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14464,7 +14464,7 @@ empty-shot right shot7 ingredient15
 11 9
 2
 0 368 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14473,7 +14473,7 @@ empty-shot right shot7 ingredient16
 11 9
 2
 0 369 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14482,7 +14482,7 @@ empty-shot right shot7 ingredient17
 11 9
 2
 0 370 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14491,7 +14491,7 @@ empty-shot right shot7 ingredient18
 11 9
 2
 0 371 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14500,7 +14500,7 @@ empty-shot right shot7 ingredient19
 11 9
 2
 0 372 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14509,7 +14509,7 @@ empty-shot right shot7 ingredient2
 11 9
 2
 0 373 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14518,7 +14518,7 @@ empty-shot right shot7 ingredient20
 11 9
 2
 0 374 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14527,7 +14527,7 @@ empty-shot right shot7 ingredient3
 11 9
 2
 0 375 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14536,7 +14536,7 @@ empty-shot right shot7 ingredient4
 11 9
 2
 0 376 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14545,7 +14545,7 @@ empty-shot right shot7 ingredient5
 11 9
 2
 0 377 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14554,7 +14554,7 @@ empty-shot right shot7 ingredient6
 11 9
 2
 0 378 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14563,7 +14563,7 @@ empty-shot right shot7 ingredient7
 11 9
 2
 0 379 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14572,7 +14572,7 @@ empty-shot right shot7 ingredient8
 11 9
 2
 0 380 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14581,7 +14581,7 @@ empty-shot right shot7 ingredient9
 11 9
 2
 0 381 0 1
-0 559 -1 0
+0 560 -1 0
 1
 end_operator
 begin_operator
@@ -14590,7 +14590,7 @@ empty-shot right shot8 cocktail1
 11 10
 2
 0 222 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14599,7 +14599,7 @@ empty-shot right shot8 cocktail10
 11 10
 2
 0 243 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14607,8 +14607,8 @@ empty-shot right shot8 cocktail2
 1
 11 10
 2
-0 233 0 1
-0 560 -1 0
+0 232 0 1
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14617,7 +14617,7 @@ empty-shot right shot8 cocktail3
 11 10
 2
 0 254 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14626,7 +14626,7 @@ empty-shot right shot8 cocktail4
 11 10
 2
 0 265 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14635,7 +14635,7 @@ empty-shot right shot8 cocktail5
 11 10
 2
 0 276 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14644,7 +14644,7 @@ empty-shot right shot8 cocktail6
 11 10
 2
 0 287 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14653,7 +14653,7 @@ empty-shot right shot8 cocktail7
 11 10
 2
 0 298 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14662,7 +14662,7 @@ empty-shot right shot8 cocktail8
 11 10
 2
 0 309 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14671,7 +14671,7 @@ empty-shot right shot8 cocktail9
 11 10
 2
 0 320 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14680,7 +14680,7 @@ empty-shot right shot8 ingredient1
 11 10
 2
 0 342 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14689,7 +14689,7 @@ empty-shot right shot8 ingredient10
 11 10
 2
 0 343 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14698,7 +14698,7 @@ empty-shot right shot8 ingredient11
 11 10
 2
 0 344 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14707,7 +14707,7 @@ empty-shot right shot8 ingredient12
 11 10
 2
 0 345 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14716,7 +14716,7 @@ empty-shot right shot8 ingredient13
 11 10
 2
 0 346 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14725,7 +14725,7 @@ empty-shot right shot8 ingredient14
 11 10
 2
 0 347 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14734,7 +14734,7 @@ empty-shot right shot8 ingredient15
 11 10
 2
 0 348 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14743,7 +14743,7 @@ empty-shot right shot8 ingredient16
 11 10
 2
 0 349 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14752,7 +14752,7 @@ empty-shot right shot8 ingredient17
 11 10
 2
 0 350 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14761,7 +14761,7 @@ empty-shot right shot8 ingredient18
 11 10
 2
 0 351 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14770,7 +14770,7 @@ empty-shot right shot8 ingredient19
 11 10
 2
 0 352 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14779,7 +14779,7 @@ empty-shot right shot8 ingredient2
 11 10
 2
 0 353 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14788,7 +14788,7 @@ empty-shot right shot8 ingredient20
 11 10
 2
 0 354 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14797,7 +14797,7 @@ empty-shot right shot8 ingredient3
 11 10
 2
 0 355 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14806,7 +14806,7 @@ empty-shot right shot8 ingredient4
 11 10
 2
 0 356 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14815,7 +14815,7 @@ empty-shot right shot8 ingredient5
 11 10
 2
 0 357 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14824,7 +14824,7 @@ empty-shot right shot8 ingredient6
 11 10
 2
 0 358 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14833,7 +14833,7 @@ empty-shot right shot8 ingredient7
 11 10
 2
 0 359 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14842,7 +14842,7 @@ empty-shot right shot8 ingredient8
 11 10
 2
 0 360 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14851,7 +14851,7 @@ empty-shot right shot8 ingredient9
 11 10
 2
 0 361 0 1
-0 560 -1 0
+0 561 -1 0
 1
 end_operator
 begin_operator
@@ -14859,8 +14859,8 @@ empty-shot right shot9 cocktail1
 1
 11 11
 2
-0 223 0 1
-0 561 -1 0
+0 567 0 1
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14869,7 +14869,7 @@ empty-shot right shot9 cocktail10
 11 11
 2
 0 244 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14877,8 +14877,8 @@ empty-shot right shot9 cocktail2
 1
 11 11
 2
-0 234 0 1
-0 561 -1 0
+0 233 0 1
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14887,7 +14887,7 @@ empty-shot right shot9 cocktail3
 11 11
 2
 0 255 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14896,7 +14896,7 @@ empty-shot right shot9 cocktail4
 11 11
 2
 0 266 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14905,7 +14905,7 @@ empty-shot right shot9 cocktail5
 11 11
 2
 0 277 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14914,7 +14914,7 @@ empty-shot right shot9 cocktail6
 11 11
 2
 0 288 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14923,7 +14923,7 @@ empty-shot right shot9 cocktail7
 11 11
 2
 0 299 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14932,7 +14932,7 @@ empty-shot right shot9 cocktail8
 11 11
 2
 0 310 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14941,7 +14941,7 @@ empty-shot right shot9 cocktail9
 11 11
 2
 0 321 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14950,7 +14950,7 @@ empty-shot right shot9 ingredient1
 11 11
 2
 0 322 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14959,7 +14959,7 @@ empty-shot right shot9 ingredient10
 11 11
 2
 0 323 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14968,7 +14968,7 @@ empty-shot right shot9 ingredient11
 11 11
 2
 0 324 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14977,7 +14977,7 @@ empty-shot right shot9 ingredient12
 11 11
 2
 0 325 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14986,7 +14986,7 @@ empty-shot right shot9 ingredient13
 11 11
 2
 0 326 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -14995,7 +14995,7 @@ empty-shot right shot9 ingredient14
 11 11
 2
 0 327 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15004,7 +15004,7 @@ empty-shot right shot9 ingredient15
 11 11
 2
 0 328 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15013,7 +15013,7 @@ empty-shot right shot9 ingredient16
 11 11
 2
 0 329 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15022,7 +15022,7 @@ empty-shot right shot9 ingredient17
 11 11
 2
 0 330 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15031,7 +15031,7 @@ empty-shot right shot9 ingredient18
 11 11
 2
 0 331 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15040,7 +15040,7 @@ empty-shot right shot9 ingredient19
 11 11
 2
 0 332 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15049,7 +15049,7 @@ empty-shot right shot9 ingredient2
 11 11
 2
 0 333 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15058,7 +15058,7 @@ empty-shot right shot9 ingredient20
 11 11
 2
 0 334 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15067,7 +15067,7 @@ empty-shot right shot9 ingredient3
 11 11
 2
 0 335 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15076,7 +15076,7 @@ empty-shot right shot9 ingredient4
 11 11
 2
 0 336 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15085,7 +15085,7 @@ empty-shot right shot9 ingredient5
 11 11
 2
 0 337 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15094,7 +15094,7 @@ empty-shot right shot9 ingredient6
 11 11
 2
 0 338 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15103,7 +15103,7 @@ empty-shot right shot9 ingredient7
 11 11
 2
 0 339 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15112,7 +15112,7 @@ empty-shot right shot9 ingredient8
 11 11
 2
 0 340 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15121,7 +15121,7 @@ empty-shot right shot9 ingredient9
 11 11
 2
 0 341 0 1
-0 561 -1 0
+0 562 -1 0
 1
 end_operator
 begin_operator
@@ -15612,7 +15612,7 @@ fill-shot shot10 ingredient1 left right dispenser1
 4
 0 544 0 1
 0 482 -1 0
-0 562 0 1
+0 554 0 1
 0 173 -1 0
 1
 end_operator
@@ -15624,7 +15624,7 @@ fill-shot shot10 ingredient1 right left dispenser1
 4
 0 544 0 1
 0 482 -1 0
-0 562 0 1
+0 554 0 1
 0 173 -1 0
 1
 end_operator
@@ -15636,7 +15636,7 @@ fill-shot shot10 ingredient10 left right dispenser10
 4
 0 544 0 1
 0 483 -1 0
-0 562 0 1
+0 554 0 1
 0 174 -1 0
 1
 end_operator
@@ -15648,7 +15648,7 @@ fill-shot shot10 ingredient10 right left dispenser10
 4
 0 544 0 1
 0 483 -1 0
-0 562 0 1
+0 554 0 1
 0 174 -1 0
 1
 end_operator
@@ -15660,7 +15660,7 @@ fill-shot shot10 ingredient11 left right dispenser11
 4
 0 544 0 1
 0 484 -1 0
-0 562 0 1
+0 554 0 1
 0 175 -1 0
 1
 end_operator
@@ -15672,7 +15672,7 @@ fill-shot shot10 ingredient11 right left dispenser11
 4
 0 544 0 1
 0 484 -1 0
-0 562 0 1
+0 554 0 1
 0 175 -1 0
 1
 end_operator
@@ -15684,7 +15684,7 @@ fill-shot shot10 ingredient12 left right dispenser12
 4
 0 544 0 1
 0 485 -1 0
-0 562 0 1
+0 554 0 1
 0 176 -1 0
 1
 end_operator
@@ -15696,7 +15696,7 @@ fill-shot shot10 ingredient12 right left dispenser12
 4
 0 544 0 1
 0 485 -1 0
-0 562 0 1
+0 554 0 1
 0 176 -1 0
 1
 end_operator
@@ -15708,7 +15708,7 @@ fill-shot shot10 ingredient13 left right dispenser13
 4
 0 544 0 1
 0 486 -1 0
-0 562 0 1
+0 554 0 1
 0 177 -1 0
 1
 end_operator
@@ -15720,7 +15720,7 @@ fill-shot shot10 ingredient13 right left dispenser13
 4
 0 544 0 1
 0 486 -1 0
-0 562 0 1
+0 554 0 1
 0 177 -1 0
 1
 end_operator
@@ -15732,7 +15732,7 @@ fill-shot shot10 ingredient14 left right dispenser14
 4
 0 544 0 1
 0 487 -1 0
-0 562 0 1
+0 554 0 1
 0 178 -1 0
 1
 end_operator
@@ -15744,7 +15744,7 @@ fill-shot shot10 ingredient14 right left dispenser14
 4
 0 544 0 1
 0 487 -1 0
-0 562 0 1
+0 554 0 1
 0 178 -1 0
 1
 end_operator
@@ -15756,7 +15756,7 @@ fill-shot shot10 ingredient15 left right dispenser15
 4
 0 544 0 1
 0 488 -1 0
-0 562 0 1
+0 554 0 1
 0 179 -1 0
 1
 end_operator
@@ -15768,7 +15768,7 @@ fill-shot shot10 ingredient15 right left dispenser15
 4
 0 544 0 1
 0 488 -1 0
-0 562 0 1
+0 554 0 1
 0 179 -1 0
 1
 end_operator
@@ -15780,7 +15780,7 @@ fill-shot shot10 ingredient16 left right dispenser16
 4
 0 544 0 1
 0 489 -1 0
-0 562 0 1
+0 554 0 1
 0 180 -1 0
 1
 end_operator
@@ -15792,7 +15792,7 @@ fill-shot shot10 ingredient16 right left dispenser16
 4
 0 544 0 1
 0 489 -1 0
-0 562 0 1
+0 554 0 1
 0 180 -1 0
 1
 end_operator
@@ -15804,7 +15804,7 @@ fill-shot shot10 ingredient17 left right dispenser17
 4
 0 544 0 1
 0 490 -1 0
-0 562 0 1
+0 554 0 1
 0 181 -1 0
 1
 end_operator
@@ -15816,7 +15816,7 @@ fill-shot shot10 ingredient17 right left dispenser17
 4
 0 544 0 1
 0 490 -1 0
-0 562 0 1
+0 554 0 1
 0 181 -1 0
 1
 end_operator
@@ -15828,7 +15828,7 @@ fill-shot shot10 ingredient18 left right dispenser18
 4
 0 544 0 1
 0 491 -1 0
-0 562 0 1
+0 554 0 1
 0 182 -1 0
 1
 end_operator
@@ -15840,7 +15840,7 @@ fill-shot shot10 ingredient18 right left dispenser18
 4
 0 544 0 1
 0 491 -1 0
-0 562 0 1
+0 554 0 1
 0 182 -1 0
 1
 end_operator
@@ -15852,7 +15852,7 @@ fill-shot shot10 ingredient19 left right dispenser19
 4
 0 544 0 1
 0 492 -1 0
-0 562 0 1
+0 554 0 1
 0 183 -1 0
 1
 end_operator
@@ -15864,7 +15864,7 @@ fill-shot shot10 ingredient19 right left dispenser19
 4
 0 544 0 1
 0 492 -1 0
-0 562 0 1
+0 554 0 1
 0 183 -1 0
 1
 end_operator
@@ -15876,7 +15876,7 @@ fill-shot shot10 ingredient2 left right dispenser2
 4
 0 544 0 1
 0 493 -1 0
-0 562 0 1
+0 554 0 1
 0 184 -1 0
 1
 end_operator
@@ -15888,7 +15888,7 @@ fill-shot shot10 ingredient2 right left dispenser2
 4
 0 544 0 1
 0 493 -1 0
-0 562 0 1
+0 554 0 1
 0 184 -1 0
 1
 end_operator
@@ -15900,7 +15900,7 @@ fill-shot shot10 ingredient20 left right dispenser20
 4
 0 544 0 1
 0 494 -1 0
-0 562 0 1
+0 554 0 1
 0 185 -1 0
 1
 end_operator
@@ -15912,7 +15912,7 @@ fill-shot shot10 ingredient20 right left dispenser20
 4
 0 544 0 1
 0 494 -1 0
-0 562 0 1
+0 554 0 1
 0 185 -1 0
 1
 end_operator
@@ -15924,7 +15924,7 @@ fill-shot shot10 ingredient3 left right dispenser3
 4
 0 544 0 1
 0 495 -1 0
-0 562 0 1
+0 554 0 1
 0 186 -1 0
 1
 end_operator
@@ -15936,7 +15936,7 @@ fill-shot shot10 ingredient3 right left dispenser3
 4
 0 544 0 1
 0 495 -1 0
-0 562 0 1
+0 554 0 1
 0 186 -1 0
 1
 end_operator
@@ -15948,7 +15948,7 @@ fill-shot shot10 ingredient4 left right dispenser4
 4
 0 544 0 1
 0 496 -1 0
-0 562 0 1
+0 554 0 1
 0 187 -1 0
 1
 end_operator
@@ -15960,7 +15960,7 @@ fill-shot shot10 ingredient4 right left dispenser4
 4
 0 544 0 1
 0 496 -1 0
-0 562 0 1
+0 554 0 1
 0 187 -1 0
 1
 end_operator
@@ -15972,7 +15972,7 @@ fill-shot shot10 ingredient5 left right dispenser5
 4
 0 544 0 1
 0 497 -1 0
-0 562 0 1
+0 554 0 1
 0 188 -1 0
 1
 end_operator
@@ -15984,7 +15984,7 @@ fill-shot shot10 ingredient5 right left dispenser5
 4
 0 544 0 1
 0 497 -1 0
-0 562 0 1
+0 554 0 1
 0 188 -1 0
 1
 end_operator
@@ -15996,7 +15996,7 @@ fill-shot shot10 ingredient6 left right dispenser6
 4
 0 544 0 1
 0 498 -1 0
-0 562 0 1
+0 554 0 1
 0 189 -1 0
 1
 end_operator
@@ -16008,7 +16008,7 @@ fill-shot shot10 ingredient6 right left dispenser6
 4
 0 544 0 1
 0 498 -1 0
-0 562 0 1
+0 554 0 1
 0 189 -1 0
 1
 end_operator
@@ -16020,7 +16020,7 @@ fill-shot shot10 ingredient7 left right dispenser7
 4
 0 544 0 1
 0 499 -1 0
-0 562 0 1
+0 554 0 1
 0 190 -1 0
 1
 end_operator
@@ -16032,7 +16032,7 @@ fill-shot shot10 ingredient7 right left dispenser7
 4
 0 544 0 1
 0 499 -1 0
-0 562 0 1
+0 554 0 1
 0 190 -1 0
 1
 end_operator
@@ -16044,7 +16044,7 @@ fill-shot shot10 ingredient8 left right dispenser8
 4
 0 544 0 1
 0 500 -1 0
-0 562 0 1
+0 554 0 1
 0 191 -1 0
 1
 end_operator
@@ -16056,7 +16056,7 @@ fill-shot shot10 ingredient8 right left dispenser8
 4
 0 544 0 1
 0 500 -1 0
-0 562 0 1
+0 554 0 1
 0 191 -1 0
 1
 end_operator
@@ -16068,7 +16068,7 @@ fill-shot shot10 ingredient9 left right dispenser9
 4
 0 544 0 1
 0 501 -1 0
-0 562 0 1
+0 554 0 1
 0 192 -1 0
 1
 end_operator
@@ -16080,7 +16080,7 @@ fill-shot shot10 ingredient9 right left dispenser9
 4
 0 544 0 1
 0 501 -1 0
-0 562 0 1
+0 554 0 1
 0 192 -1 0
 1
 end_operator
@@ -16092,7 +16092,7 @@ fill-shot shot2 ingredient1 left right dispenser1
 4
 0 545 0 1
 0 462 -1 0
-0 554 0 1
+0 555 0 1
 0 153 -1 0
 1
 end_operator
@@ -16104,7 +16104,7 @@ fill-shot shot2 ingredient1 right left dispenser1
 4
 0 545 0 1
 0 462 -1 0
-0 554 0 1
+0 555 0 1
 0 153 -1 0
 1
 end_operator
@@ -16116,7 +16116,7 @@ fill-shot shot2 ingredient10 left right dispenser10
 4
 0 545 0 1
 0 463 -1 0
-0 554 0 1
+0 555 0 1
 0 154 -1 0
 1
 end_operator
@@ -16128,7 +16128,7 @@ fill-shot shot2 ingredient10 right left dispenser10
 4
 0 545 0 1
 0 463 -1 0
-0 554 0 1
+0 555 0 1
 0 154 -1 0
 1
 end_operator
@@ -16140,7 +16140,7 @@ fill-shot shot2 ingredient11 left right dispenser11
 4
 0 545 0 1
 0 464 -1 0
-0 554 0 1
+0 555 0 1
 0 155 -1 0
 1
 end_operator
@@ -16152,7 +16152,7 @@ fill-shot shot2 ingredient11 right left dispenser11
 4
 0 545 0 1
 0 464 -1 0
-0 554 0 1
+0 555 0 1
 0 155 -1 0
 1
 end_operator
@@ -16164,7 +16164,7 @@ fill-shot shot2 ingredient12 left right dispenser12
 4
 0 545 0 1
 0 465 -1 0
-0 554 0 1
+0 555 0 1
 0 156 -1 0
 1
 end_operator
@@ -16176,7 +16176,7 @@ fill-shot shot2 ingredient12 right left dispenser12
 4
 0 545 0 1
 0 465 -1 0
-0 554 0 1
+0 555 0 1
 0 156 -1 0
 1
 end_operator
@@ -16188,7 +16188,7 @@ fill-shot shot2 ingredient13 left right dispenser13
 4
 0 545 0 1
 0 466 -1 0
-0 554 0 1
+0 555 0 1
 0 157 -1 0
 1
 end_operator
@@ -16200,7 +16200,7 @@ fill-shot shot2 ingredient13 right left dispenser13
 4
 0 545 0 1
 0 466 -1 0
-0 554 0 1
+0 555 0 1
 0 157 -1 0
 1
 end_operator
@@ -16212,7 +16212,7 @@ fill-shot shot2 ingredient14 left right dispenser14
 4
 0 545 0 1
 0 467 -1 0
-0 554 0 1
+0 555 0 1
 0 158 -1 0
 1
 end_operator
@@ -16224,7 +16224,7 @@ fill-shot shot2 ingredient14 right left dispenser14
 4
 0 545 0 1
 0 467 -1 0
-0 554 0 1
+0 555 0 1
 0 158 -1 0
 1
 end_operator
@@ -16236,7 +16236,7 @@ fill-shot shot2 ingredient15 left right dispenser15
 4
 0 545 0 1
 0 468 -1 0
-0 554 0 1
+0 555 0 1
 0 159 -1 0
 1
 end_operator
@@ -16248,7 +16248,7 @@ fill-shot shot2 ingredient15 right left dispenser15
 4
 0 545 0 1
 0 468 -1 0
-0 554 0 1
+0 555 0 1
 0 159 -1 0
 1
 end_operator
@@ -16260,7 +16260,7 @@ fill-shot shot2 ingredient16 left right dispenser16
 4
 0 545 0 1
 0 469 -1 0
-0 554 0 1
+0 555 0 1
 0 160 -1 0
 1
 end_operator
@@ -16272,7 +16272,7 @@ fill-shot shot2 ingredient16 right left dispenser16
 4
 0 545 0 1
 0 469 -1 0
-0 554 0 1
+0 555 0 1
 0 160 -1 0
 1
 end_operator
@@ -16284,7 +16284,7 @@ fill-shot shot2 ingredient17 left right dispenser17
 4
 0 545 0 1
 0 470 -1 0
-0 554 0 1
+0 555 0 1
 0 161 -1 0
 1
 end_operator
@@ -16296,7 +16296,7 @@ fill-shot shot2 ingredient17 right left dispenser17
 4
 0 545 0 1
 0 470 -1 0
-0 554 0 1
+0 555 0 1
 0 161 -1 0
 1
 end_operator
@@ -16308,7 +16308,7 @@ fill-shot shot2 ingredient18 left right dispenser18
 4
 0 545 0 1
 0 471 -1 0
-0 554 0 1
+0 555 0 1
 0 162 -1 0
 1
 end_operator
@@ -16320,7 +16320,7 @@ fill-shot shot2 ingredient18 right left dispenser18
 4
 0 545 0 1
 0 471 -1 0
-0 554 0 1
+0 555 0 1
 0 162 -1 0
 1
 end_operator
@@ -16332,7 +16332,7 @@ fill-shot shot2 ingredient19 left right dispenser19
 4
 0 545 0 1
 0 472 -1 0
-0 554 0 1
+0 555 0 1
 0 163 -1 0
 1
 end_operator
@@ -16344,7 +16344,7 @@ fill-shot shot2 ingredient19 right left dispenser19
 4
 0 545 0 1
 0 472 -1 0
-0 554 0 1
+0 555 0 1
 0 163 -1 0
 1
 end_operator
@@ -16356,7 +16356,7 @@ fill-shot shot2 ingredient2 left right dispenser2
 4
 0 545 0 1
 0 473 -1 0
-0 554 0 1
+0 555 0 1
 0 164 -1 0
 1
 end_operator
@@ -16368,7 +16368,7 @@ fill-shot shot2 ingredient2 right left dispenser2
 4
 0 545 0 1
 0 473 -1 0
-0 554 0 1
+0 555 0 1
 0 164 -1 0
 1
 end_operator
@@ -16380,7 +16380,7 @@ fill-shot shot2 ingredient20 left right dispenser20
 4
 0 545 0 1
 0 474 -1 0
-0 554 0 1
+0 555 0 1
 0 165 -1 0
 1
 end_operator
@@ -16392,7 +16392,7 @@ fill-shot shot2 ingredient20 right left dispenser20
 4
 0 545 0 1
 0 474 -1 0
-0 554 0 1
+0 555 0 1
 0 165 -1 0
 1
 end_operator
@@ -16404,7 +16404,7 @@ fill-shot shot2 ingredient3 left right dispenser3
 4
 0 545 0 1
 0 475 -1 0
-0 554 0 1
+0 555 0 1
 0 166 -1 0
 1
 end_operator
@@ -16416,7 +16416,7 @@ fill-shot shot2 ingredient3 right left dispenser3
 4
 0 545 0 1
 0 475 -1 0
-0 554 0 1
+0 555 0 1
 0 166 -1 0
 1
 end_operator
@@ -16428,7 +16428,7 @@ fill-shot shot2 ingredient4 left right dispenser4
 4
 0 545 0 1
 0 476 -1 0
-0 554 0 1
+0 555 0 1
 0 167 -1 0
 1
 end_operator
@@ -16440,7 +16440,7 @@ fill-shot shot2 ingredient4 right left dispenser4
 4
 0 545 0 1
 0 476 -1 0
-0 554 0 1
+0 555 0 1
 0 167 -1 0
 1
 end_operator
@@ -16452,7 +16452,7 @@ fill-shot shot2 ingredient5 left right dispenser5
 4
 0 545 0 1
 0 477 -1 0
-0 554 0 1
+0 555 0 1
 0 168 -1 0
 1
 end_operator
@@ -16464,7 +16464,7 @@ fill-shot shot2 ingredient5 right left dispenser5
 4
 0 545 0 1
 0 477 -1 0
-0 554 0 1
+0 555 0 1
 0 168 -1 0
 1
 end_operator
@@ -16476,7 +16476,7 @@ fill-shot shot2 ingredient6 left right dispenser6
 4
 0 545 0 1
 0 478 -1 0
-0 554 0 1
+0 555 0 1
 0 169 -1 0
 1
 end_operator
@@ -16488,7 +16488,7 @@ fill-shot shot2 ingredient6 right left dispenser6
 4
 0 545 0 1
 0 478 -1 0
-0 554 0 1
+0 555 0 1
 0 169 -1 0
 1
 end_operator
@@ -16500,7 +16500,7 @@ fill-shot shot2 ingredient7 left right dispenser7
 4
 0 545 0 1
 0 479 -1 0
-0 554 0 1
+0 555 0 1
 0 170 -1 0
 1
 end_operator
@@ -16512,7 +16512,7 @@ fill-shot shot2 ingredient7 right left dispenser7
 4
 0 545 0 1
 0 479 -1 0
-0 554 0 1
+0 555 0 1
 0 170 -1 0
 1
 end_operator
@@ -16524,7 +16524,7 @@ fill-shot shot2 ingredient8 left right dispenser8
 4
 0 545 0 1
 0 480 -1 0
-0 554 0 1
+0 555 0 1
 0 171 -1 0
 1
 end_operator
@@ -16536,7 +16536,7 @@ fill-shot shot2 ingredient8 right left dispenser8
 4
 0 545 0 1
 0 480 -1 0
-0 554 0 1
+0 555 0 1
 0 171 -1 0
 1
 end_operator
@@ -16548,7 +16548,7 @@ fill-shot shot2 ingredient9 left right dispenser9
 4
 0 545 0 1
 0 481 -1 0
-0 554 0 1
+0 555 0 1
 0 172 -1 0
 1
 end_operator
@@ -16560,7 +16560,7 @@ fill-shot shot2 ingredient9 right left dispenser9
 4
 0 545 0 1
 0 481 -1 0
-0 554 0 1
+0 555 0 1
 0 172 -1 0
 1
 end_operator
@@ -16572,7 +16572,7 @@ fill-shot shot3 ingredient1 left right dispenser1
 4
 0 546 0 1
 0 442 -1 0
-0 555 0 1
+0 556 0 1
 0 133 -1 0
 1
 end_operator
@@ -16584,7 +16584,7 @@ fill-shot shot3 ingredient1 right left dispenser1
 4
 0 546 0 1
 0 442 -1 0
-0 555 0 1
+0 556 0 1
 0 133 -1 0
 1
 end_operator
@@ -16596,7 +16596,7 @@ fill-shot shot3 ingredient10 left right dispenser10
 4
 0 546 0 1
 0 443 -1 0
-0 555 0 1
+0 556 0 1
 0 134 -1 0
 1
 end_operator
@@ -16608,7 +16608,7 @@ fill-shot shot3 ingredient10 right left dispenser10
 4
 0 546 0 1
 0 443 -1 0
-0 555 0 1
+0 556 0 1
 0 134 -1 0
 1
 end_operator
@@ -16620,7 +16620,7 @@ fill-shot shot3 ingredient11 left right dispenser11
 4
 0 546 0 1
 0 444 -1 0
-0 555 0 1
+0 556 0 1
 0 135 -1 0
 1
 end_operator
@@ -16632,7 +16632,7 @@ fill-shot shot3 ingredient11 right left dispenser11
 4
 0 546 0 1
 0 444 -1 0
-0 555 0 1
+0 556 0 1
 0 135 -1 0
 1
 end_operator
@@ -16644,7 +16644,7 @@ fill-shot shot3 ingredient12 left right dispenser12
 4
 0 546 0 1
 0 445 -1 0
-0 555 0 1
+0 556 0 1
 0 136 -1 0
 1
 end_operator
@@ -16656,7 +16656,7 @@ fill-shot shot3 ingredient12 right left dispenser12
 4
 0 546 0 1
 0 445 -1 0
-0 555 0 1
+0 556 0 1
 0 136 -1 0
 1
 end_operator
@@ -16668,7 +16668,7 @@ fill-shot shot3 ingredient13 left right dispenser13
 4
 0 546 0 1
 0 446 -1 0
-0 555 0 1
+0 556 0 1
 0 137 -1 0
 1
 end_operator
@@ -16680,7 +16680,7 @@ fill-shot shot3 ingredient13 right left dispenser13
 4
 0 546 0 1
 0 446 -1 0
-0 555 0 1
+0 556 0 1
 0 137 -1 0
 1
 end_operator
@@ -16692,7 +16692,7 @@ fill-shot shot3 ingredient14 left right dispenser14
 4
 0 546 0 1
 0 447 -1 0
-0 555 0 1
+0 556 0 1
 0 138 -1 0
 1
 end_operator
@@ -16704,7 +16704,7 @@ fill-shot shot3 ingredient14 right left dispenser14
 4
 0 546 0 1
 0 447 -1 0
-0 555 0 1
+0 556 0 1
 0 138 -1 0
 1
 end_operator
@@ -16716,7 +16716,7 @@ fill-shot shot3 ingredient15 left right dispenser15
 4
 0 546 0 1
 0 448 -1 0
-0 555 0 1
+0 556 0 1
 0 139 -1 0
 1
 end_operator
@@ -16728,7 +16728,7 @@ fill-shot shot3 ingredient15 right left dispenser15
 4
 0 546 0 1
 0 448 -1 0
-0 555 0 1
+0 556 0 1
 0 139 -1 0
 1
 end_operator
@@ -16740,7 +16740,7 @@ fill-shot shot3 ingredient16 left right dispenser16
 4
 0 546 0 1
 0 449 -1 0
-0 555 0 1
+0 556 0 1
 0 140 -1 0
 1
 end_operator
@@ -16752,7 +16752,7 @@ fill-shot shot3 ingredient16 right left dispenser16
 4
 0 546 0 1
 0 449 -1 0
-0 555 0 1
+0 556 0 1
 0 140 -1 0
 1
 end_operator
@@ -16764,7 +16764,7 @@ fill-shot shot3 ingredient17 left right dispenser17
 4
 0 546 0 1
 0 450 -1 0
-0 555 0 1
+0 556 0 1
 0 141 -1 0
 1
 end_operator
@@ -16776,7 +16776,7 @@ fill-shot shot3 ingredient17 right left dispenser17
 4
 0 546 0 1
 0 450 -1 0
-0 555 0 1
+0 556 0 1
 0 141 -1 0
 1
 end_operator
@@ -16788,7 +16788,7 @@ fill-shot shot3 ingredient18 left right dispenser18
 4
 0 546 0 1
 0 451 -1 0
-0 555 0 1
+0 556 0 1
 0 142 -1 0
 1
 end_operator
@@ -16800,7 +16800,7 @@ fill-shot shot3 ingredient18 right left dispenser18
 4
 0 546 0 1
 0 451 -1 0
-0 555 0 1
+0 556 0 1
 0 142 -1 0
 1
 end_operator
@@ -16812,7 +16812,7 @@ fill-shot shot3 ingredient19 left right dispenser19
 4
 0 546 0 1
 0 452 -1 0
-0 555 0 1
+0 556 0 1
 0 143 -1 0
 1
 end_operator
@@ -16824,7 +16824,7 @@ fill-shot shot3 ingredient19 right left dispenser19
 4
 0 546 0 1
 0 452 -1 0
-0 555 0 1
+0 556 0 1
 0 143 -1 0
 1
 end_operator
@@ -16836,7 +16836,7 @@ fill-shot shot3 ingredient2 left right dispenser2
 4
 0 546 0 1
 0 453 -1 0
-0 555 0 1
+0 556 0 1
 0 144 -1 0
 1
 end_operator
@@ -16848,7 +16848,7 @@ fill-shot shot3 ingredient2 right left dispenser2
 4
 0 546 0 1
 0 453 -1 0
-0 555 0 1
+0 556 0 1
 0 144 -1 0
 1
 end_operator
@@ -16860,7 +16860,7 @@ fill-shot shot3 ingredient20 left right dispenser20
 4
 0 546 0 1
 0 454 -1 0
-0 555 0 1
+0 556 0 1
 0 145 -1 0
 1
 end_operator
@@ -16872,7 +16872,7 @@ fill-shot shot3 ingredient20 right left dispenser20
 4
 0 546 0 1
 0 454 -1 0
-0 555 0 1
+0 556 0 1
 0 145 -1 0
 1
 end_operator
@@ -16884,7 +16884,7 @@ fill-shot shot3 ingredient3 left right dispenser3
 4
 0 546 0 1
 0 455 -1 0
-0 555 0 1
+0 556 0 1
 0 146 -1 0
 1
 end_operator
@@ -16896,7 +16896,7 @@ fill-shot shot3 ingredient3 right left dispenser3
 4
 0 546 0 1
 0 455 -1 0
-0 555 0 1
+0 556 0 1
 0 146 -1 0
 1
 end_operator
@@ -16908,7 +16908,7 @@ fill-shot shot3 ingredient4 left right dispenser4
 4
 0 546 0 1
 0 456 -1 0
-0 555 0 1
+0 556 0 1
 0 147 -1 0
 1
 end_operator
@@ -16920,7 +16920,7 @@ fill-shot shot3 ingredient4 right left dispenser4
 4
 0 546 0 1
 0 456 -1 0
-0 555 0 1
+0 556 0 1
 0 147 -1 0
 1
 end_operator
@@ -16932,7 +16932,7 @@ fill-shot shot3 ingredient5 left right dispenser5
 4
 0 546 0 1
 0 457 -1 0
-0 555 0 1
+0 556 0 1
 0 148 -1 0
 1
 end_operator
@@ -16944,7 +16944,7 @@ fill-shot shot3 ingredient5 right left dispenser5
 4
 0 546 0 1
 0 457 -1 0
-0 555 0 1
+0 556 0 1
 0 148 -1 0
 1
 end_operator
@@ -16956,7 +16956,7 @@ fill-shot shot3 ingredient6 left right dispenser6
 4
 0 546 0 1
 0 458 -1 0
-0 555 0 1
+0 556 0 1
 0 149 -1 0
 1
 end_operator
@@ -16968,7 +16968,7 @@ fill-shot shot3 ingredient6 right left dispenser6
 4
 0 546 0 1
 0 458 -1 0
-0 555 0 1
+0 556 0 1
 0 149 -1 0
 1
 end_operator
@@ -16980,7 +16980,7 @@ fill-shot shot3 ingredient7 left right dispenser7
 4
 0 546 0 1
 0 459 -1 0
-0 555 0 1
+0 556 0 1
 0 150 -1 0
 1
 end_operator
@@ -16992,7 +16992,7 @@ fill-shot shot3 ingredient7 right left dispenser7
 4
 0 546 0 1
 0 459 -1 0
-0 555 0 1
+0 556 0 1
 0 150 -1 0
 1
 end_operator
@@ -17004,7 +17004,7 @@ fill-shot shot3 ingredient8 left right dispenser8
 4
 0 546 0 1
 0 460 -1 0
-0 555 0 1
+0 556 0 1
 0 151 -1 0
 1
 end_operator
@@ -17016,7 +17016,7 @@ fill-shot shot3 ingredient8 right left dispenser8
 4
 0 546 0 1
 0 460 -1 0
-0 555 0 1
+0 556 0 1
 0 151 -1 0
 1
 end_operator
@@ -17028,7 +17028,7 @@ fill-shot shot3 ingredient9 left right dispenser9
 4
 0 546 0 1
 0 461 -1 0
-0 555 0 1
+0 556 0 1
 0 152 -1 0
 1
 end_operator
@@ -17040,7 +17040,7 @@ fill-shot shot3 ingredient9 right left dispenser9
 4
 0 546 0 1
 0 461 -1 0
-0 555 0 1
+0 556 0 1
 0 152 -1 0
 1
 end_operator
@@ -17052,7 +17052,7 @@ fill-shot shot4 ingredient1 left right dispenser1
 4
 0 547 0 1
 0 422 -1 0
-0 556 0 1
+0 557 0 1
 0 113 -1 0
 1
 end_operator
@@ -17064,7 +17064,7 @@ fill-shot shot4 ingredient1 right left dispenser1
 4
 0 547 0 1
 0 422 -1 0
-0 556 0 1
+0 557 0 1
 0 113 -1 0
 1
 end_operator
@@ -17076,7 +17076,7 @@ fill-shot shot4 ingredient10 left right dispenser10
 4
 0 547 0 1
 0 423 -1 0
-0 556 0 1
+0 557 0 1
 0 114 -1 0
 1
 end_operator
@@ -17088,7 +17088,7 @@ fill-shot shot4 ingredient10 right left dispenser10
 4
 0 547 0 1
 0 423 -1 0
-0 556 0 1
+0 557 0 1
 0 114 -1 0
 1
 end_operator
@@ -17100,7 +17100,7 @@ fill-shot shot4 ingredient11 left right dispenser11
 4
 0 547 0 1
 0 424 -1 0
-0 556 0 1
+0 557 0 1
 0 115 -1 0
 1
 end_operator
@@ -17112,7 +17112,7 @@ fill-shot shot4 ingredient11 right left dispenser11
 4
 0 547 0 1
 0 424 -1 0
-0 556 0 1
+0 557 0 1
 0 115 -1 0
 1
 end_operator
@@ -17124,7 +17124,7 @@ fill-shot shot4 ingredient12 left right dispenser12
 4
 0 547 0 1
 0 425 -1 0
-0 556 0 1
+0 557 0 1
 0 116 -1 0
 1
 end_operator
@@ -17136,7 +17136,7 @@ fill-shot shot4 ingredient12 right left dispenser12
 4
 0 547 0 1
 0 425 -1 0
-0 556 0 1
+0 557 0 1
 0 116 -1 0
 1
 end_operator
@@ -17148,7 +17148,7 @@ fill-shot shot4 ingredient13 left right dispenser13
 4
 0 547 0 1
 0 426 -1 0
-0 556 0 1
+0 557 0 1
 0 117 -1 0
 1
 end_operator
@@ -17160,7 +17160,7 @@ fill-shot shot4 ingredient13 right left dispenser13
 4
 0 547 0 1
 0 426 -1 0
-0 556 0 1
+0 557 0 1
 0 117 -1 0
 1
 end_operator
@@ -17172,7 +17172,7 @@ fill-shot shot4 ingredient14 left right dispenser14
 4
 0 547 0 1
 0 427 -1 0
-0 556 0 1
+0 557 0 1
 0 118 -1 0
 1
 end_operator
@@ -17184,7 +17184,7 @@ fill-shot shot4 ingredient14 right left dispenser14
 4
 0 547 0 1
 0 427 -1 0
-0 556 0 1
+0 557 0 1
 0 118 -1 0
 1
 end_operator
@@ -17196,7 +17196,7 @@ fill-shot shot4 ingredient15 left right dispenser15
 4
 0 547 0 1
 0 428 -1 0
-0 556 0 1
+0 557 0 1
 0 119 -1 0
 1
 end_operator
@@ -17208,7 +17208,7 @@ fill-shot shot4 ingredient15 right left dispenser15
 4
 0 547 0 1
 0 428 -1 0
-0 556 0 1
+0 557 0 1
 0 119 -1 0
 1
 end_operator
@@ -17220,7 +17220,7 @@ fill-shot shot4 ingredient16 left right dispenser16
 4
 0 547 0 1
 0 429 -1 0
-0 556 0 1
+0 557 0 1
 0 120 -1 0
 1
 end_operator
@@ -17232,7 +17232,7 @@ fill-shot shot4 ingredient16 right left dispenser16
 4
 0 547 0 1
 0 429 -1 0
-0 556 0 1
+0 557 0 1
 0 120 -1 0
 1
 end_operator
@@ -17244,7 +17244,7 @@ fill-shot shot4 ingredient17 left right dispenser17
 4
 0 547 0 1
 0 430 -1 0
-0 556 0 1
+0 557 0 1
 0 121 -1 0
 1
 end_operator
@@ -17256,7 +17256,7 @@ fill-shot shot4 ingredient17 right left dispenser17
 4
 0 547 0 1
 0 430 -1 0
-0 556 0 1
+0 557 0 1
 0 121 -1 0
 1
 end_operator
@@ -17268,7 +17268,7 @@ fill-shot shot4 ingredient18 left right dispenser18
 4
 0 547 0 1
 0 431 -1 0
-0 556 0 1
+0 557 0 1
 0 122 -1 0
 1
 end_operator
@@ -17280,7 +17280,7 @@ fill-shot shot4 ingredient18 right left dispenser18
 4
 0 547 0 1
 0 431 -1 0
-0 556 0 1
+0 557 0 1
 0 122 -1 0
 1
 end_operator
@@ -17292,7 +17292,7 @@ fill-shot shot4 ingredient19 left right dispenser19
 4
 0 547 0 1
 0 432 -1 0
-0 556 0 1
+0 557 0 1
 0 123 -1 0
 1
 end_operator
@@ -17304,7 +17304,7 @@ fill-shot shot4 ingredient19 right left dispenser19
 4
 0 547 0 1
 0 432 -1 0
-0 556 0 1
+0 557 0 1
 0 123 -1 0
 1
 end_operator
@@ -17316,7 +17316,7 @@ fill-shot shot4 ingredient2 left right dispenser2
 4
 0 547 0 1
 0 433 -1 0
-0 556 0 1
+0 557 0 1
 0 124 -1 0
 1
 end_operator
@@ -17328,7 +17328,7 @@ fill-shot shot4 ingredient2 right left dispenser2
 4
 0 547 0 1
 0 433 -1 0
-0 556 0 1
+0 557 0 1
 0 124 -1 0
 1
 end_operator
@@ -17340,7 +17340,7 @@ fill-shot shot4 ingredient20 left right dispenser20
 4
 0 547 0 1
 0 434 -1 0
-0 556 0 1
+0 557 0 1
 0 125 -1 0
 1
 end_operator
@@ -17352,7 +17352,7 @@ fill-shot shot4 ingredient20 right left dispenser20
 4
 0 547 0 1
 0 434 -1 0
-0 556 0 1
+0 557 0 1
 0 125 -1 0
 1
 end_operator
@@ -17364,7 +17364,7 @@ fill-shot shot4 ingredient3 left right dispenser3
 4
 0 547 0 1
 0 435 -1 0
-0 556 0 1
+0 557 0 1
 0 126 -1 0
 1
 end_operator
@@ -17376,7 +17376,7 @@ fill-shot shot4 ingredient3 right left dispenser3
 4
 0 547 0 1
 0 435 -1 0
-0 556 0 1
+0 557 0 1
 0 126 -1 0
 1
 end_operator
@@ -17388,7 +17388,7 @@ fill-shot shot4 ingredient4 left right dispenser4
 4
 0 547 0 1
 0 436 -1 0
-0 556 0 1
+0 557 0 1
 0 127 -1 0
 1
 end_operator
@@ -17400,7 +17400,7 @@ fill-shot shot4 ingredient4 right left dispenser4
 4
 0 547 0 1
 0 436 -1 0
-0 556 0 1
+0 557 0 1
 0 127 -1 0
 1
 end_operator
@@ -17412,7 +17412,7 @@ fill-shot shot4 ingredient5 left right dispenser5
 4
 0 547 0 1
 0 437 -1 0
-0 556 0 1
+0 557 0 1
 0 128 -1 0
 1
 end_operator
@@ -17424,7 +17424,7 @@ fill-shot shot4 ingredient5 right left dispenser5
 4
 0 547 0 1
 0 437 -1 0
-0 556 0 1
+0 557 0 1
 0 128 -1 0
 1
 end_operator
@@ -17436,7 +17436,7 @@ fill-shot shot4 ingredient6 left right dispenser6
 4
 0 547 0 1
 0 438 -1 0
-0 556 0 1
+0 557 0 1
 0 129 -1 0
 1
 end_operator
@@ -17448,7 +17448,7 @@ fill-shot shot4 ingredient6 right left dispenser6
 4
 0 547 0 1
 0 438 -1 0
-0 556 0 1
+0 557 0 1
 0 129 -1 0
 1
 end_operator
@@ -17460,7 +17460,7 @@ fill-shot shot4 ingredient7 left right dispenser7
 4
 0 547 0 1
 0 439 -1 0
-0 556 0 1
+0 557 0 1
 0 130 -1 0
 1
 end_operator
@@ -17472,7 +17472,7 @@ fill-shot shot4 ingredient7 right left dispenser7
 4
 0 547 0 1
 0 439 -1 0
-0 556 0 1
+0 557 0 1
 0 130 -1 0
 1
 end_operator
@@ -17484,7 +17484,7 @@ fill-shot shot4 ingredient8 left right dispenser8
 4
 0 547 0 1
 0 440 -1 0
-0 556 0 1
+0 557 0 1
 0 131 -1 0
 1
 end_operator
@@ -17496,7 +17496,7 @@ fill-shot shot4 ingredient8 right left dispenser8
 4
 0 547 0 1
 0 440 -1 0
-0 556 0 1
+0 557 0 1
 0 131 -1 0
 1
 end_operator
@@ -17508,7 +17508,7 @@ fill-shot shot4 ingredient9 left right dispenser9
 4
 0 547 0 1
 0 441 -1 0
-0 556 0 1
+0 557 0 1
 0 132 -1 0
 1
 end_operator
@@ -17520,7 +17520,7 @@ fill-shot shot4 ingredient9 right left dispenser9
 4
 0 547 0 1
 0 441 -1 0
-0 556 0 1
+0 557 0 1
 0 132 -1 0
 1
 end_operator
@@ -17532,7 +17532,7 @@ fill-shot shot5 ingredient1 left right dispenser1
 4
 0 548 0 1
 0 402 -1 0
-0 557 0 1
+0 558 0 1
 0 93 -1 0
 1
 end_operator
@@ -17544,7 +17544,7 @@ fill-shot shot5 ingredient1 right left dispenser1
 4
 0 548 0 1
 0 402 -1 0
-0 557 0 1
+0 558 0 1
 0 93 -1 0
 1
 end_operator
@@ -17556,7 +17556,7 @@ fill-shot shot5 ingredient10 left right dispenser10
 4
 0 548 0 1
 0 403 -1 0
-0 557 0 1
+0 558 0 1
 0 94 -1 0
 1
 end_operator
@@ -17568,7 +17568,7 @@ fill-shot shot5 ingredient10 right left dispenser10
 4
 0 548 0 1
 0 403 -1 0
-0 557 0 1
+0 558 0 1
 0 94 -1 0
 1
 end_operator
@@ -17580,7 +17580,7 @@ fill-shot shot5 ingredient11 left right dispenser11
 4
 0 548 0 1
 0 404 -1 0
-0 557 0 1
+0 558 0 1
 0 95 -1 0
 1
 end_operator
@@ -17592,7 +17592,7 @@ fill-shot shot5 ingredient11 right left dispenser11
 4
 0 548 0 1
 0 404 -1 0
-0 557 0 1
+0 558 0 1
 0 95 -1 0
 1
 end_operator
@@ -17604,7 +17604,7 @@ fill-shot shot5 ingredient12 left right dispenser12
 4
 0 548 0 1
 0 405 -1 0
-0 557 0 1
+0 558 0 1
 0 96 -1 0
 1
 end_operator
@@ -17616,7 +17616,7 @@ fill-shot shot5 ingredient12 right left dispenser12
 4
 0 548 0 1
 0 405 -1 0
-0 557 0 1
+0 558 0 1
 0 96 -1 0
 1
 end_operator
@@ -17628,7 +17628,7 @@ fill-shot shot5 ingredient13 left right dispenser13
 4
 0 548 0 1
 0 406 -1 0
-0 557 0 1
+0 558 0 1
 0 97 -1 0
 1
 end_operator
@@ -17640,7 +17640,7 @@ fill-shot shot5 ingredient13 right left dispenser13
 4
 0 548 0 1
 0 406 -1 0
-0 557 0 1
+0 558 0 1
 0 97 -1 0
 1
 end_operator
@@ -17652,7 +17652,7 @@ fill-shot shot5 ingredient14 left right dispenser14
 4
 0 548 0 1
 0 407 -1 0
-0 557 0 1
+0 558 0 1
 0 98 -1 0
 1
 end_operator
@@ -17664,7 +17664,7 @@ fill-shot shot5 ingredient14 right left dispenser14
 4
 0 548 0 1
 0 407 -1 0
-0 557 0 1
+0 558 0 1
 0 98 -1 0
 1
 end_operator
@@ -17676,7 +17676,7 @@ fill-shot shot5 ingredient15 left right dispenser15
 4
 0 548 0 1
 0 408 -1 0
-0 557 0 1
+0 558 0 1
 0 99 -1 0
 1
 end_operator
@@ -17688,7 +17688,7 @@ fill-shot shot5 ingredient15 right left dispenser15
 4
 0 548 0 1
 0 408 -1 0
-0 557 0 1
+0 558 0 1
 0 99 -1 0
 1
 end_operator
@@ -17700,7 +17700,7 @@ fill-shot shot5 ingredient16 left right dispenser16
 4
 0 548 0 1
 0 409 -1 0
-0 557 0 1
+0 558 0 1
 0 100 -1 0
 1
 end_operator
@@ -17712,7 +17712,7 @@ fill-shot shot5 ingredient16 right left dispenser16
 4
 0 548 0 1
 0 409 -1 0
-0 557 0 1
+0 558 0 1
 0 100 -1 0
 1
 end_operator
@@ -17724,7 +17724,7 @@ fill-shot shot5 ingredient17 left right dispenser17
 4
 0 548 0 1
 0 410 -1 0
-0 557 0 1
+0 558 0 1
 0 101 -1 0
 1
 end_operator
@@ -17736,7 +17736,7 @@ fill-shot shot5 ingredient17 right left dispenser17
 4
 0 548 0 1
 0 410 -1 0
-0 557 0 1
+0 558 0 1
 0 101 -1 0
 1
 end_operator
@@ -17748,7 +17748,7 @@ fill-shot shot5 ingredient18 left right dispenser18
 4
 0 548 0 1
 0 411 -1 0
-0 557 0 1
+0 558 0 1
 0 102 -1 0
 1
 end_operator
@@ -17760,7 +17760,7 @@ fill-shot shot5 ingredient18 right left dispenser18
 4
 0 548 0 1
 0 411 -1 0
-0 557 0 1
+0 558 0 1
 0 102 -1 0
 1
 end_operator
@@ -17772,7 +17772,7 @@ fill-shot shot5 ingredient19 left right dispenser19
 4
 0 548 0 1
 0 412 -1 0
-0 557 0 1
+0 558 0 1
 0 103 -1 0
 1
 end_operator
@@ -17784,7 +17784,7 @@ fill-shot shot5 ingredient19 right left dispenser19
 4
 0 548 0 1
 0 412 -1 0
-0 557 0 1
+0 558 0 1
 0 103 -1 0
 1
 end_operator
@@ -17796,7 +17796,7 @@ fill-shot shot5 ingredient2 left right dispenser2
 4
 0 548 0 1
 0 413 -1 0
-0 557 0 1
+0 558 0 1
 0 104 -1 0
 1
 end_operator
@@ -17808,7 +17808,7 @@ fill-shot shot5 ingredient2 right left dispenser2
 4
 0 548 0 1
 0 413 -1 0
-0 557 0 1
+0 558 0 1
 0 104 -1 0
 1
 end_operator
@@ -17820,7 +17820,7 @@ fill-shot shot5 ingredient20 left right dispenser20
 4
 0 548 0 1
 0 414 -1 0
-0 557 0 1
+0 558 0 1
 0 105 -1 0
 1
 end_operator
@@ -17832,7 +17832,7 @@ fill-shot shot5 ingredient20 right left dispenser20
 4
 0 548 0 1
 0 414 -1 0
-0 557 0 1
+0 558 0 1
 0 105 -1 0
 1
 end_operator
@@ -17844,7 +17844,7 @@ fill-shot shot5 ingredient3 left right dispenser3
 4
 0 548 0 1
 0 415 -1 0
-0 557 0 1
+0 558 0 1
 0 106 -1 0
 1
 end_operator
@@ -17856,7 +17856,7 @@ fill-shot shot5 ingredient3 right left dispenser3
 4
 0 548 0 1
 0 415 -1 0
-0 557 0 1
+0 558 0 1
 0 106 -1 0
 1
 end_operator
@@ -17868,7 +17868,7 @@ fill-shot shot5 ingredient4 left right dispenser4
 4
 0 548 0 1
 0 416 -1 0
-0 557 0 1
+0 558 0 1
 0 107 -1 0
 1
 end_operator
@@ -17880,7 +17880,7 @@ fill-shot shot5 ingredient4 right left dispenser4
 4
 0 548 0 1
 0 416 -1 0
-0 557 0 1
+0 558 0 1
 0 107 -1 0
 1
 end_operator
@@ -17892,7 +17892,7 @@ fill-shot shot5 ingredient5 left right dispenser5
 4
 0 548 0 1
 0 417 -1 0
-0 557 0 1
+0 558 0 1
 0 108 -1 0
 1
 end_operator
@@ -17904,7 +17904,7 @@ fill-shot shot5 ingredient5 right left dispenser5
 4
 0 548 0 1
 0 417 -1 0
-0 557 0 1
+0 558 0 1
 0 108 -1 0
 1
 end_operator
@@ -17916,7 +17916,7 @@ fill-shot shot5 ingredient6 left right dispenser6
 4
 0 548 0 1
 0 418 -1 0
-0 557 0 1
+0 558 0 1
 0 109 -1 0
 1
 end_operator
@@ -17928,7 +17928,7 @@ fill-shot shot5 ingredient6 right left dispenser6
 4
 0 548 0 1
 0 418 -1 0
-0 557 0 1
+0 558 0 1
 0 109 -1 0
 1
 end_operator
@@ -17940,7 +17940,7 @@ fill-shot shot5 ingredient7 left right dispenser7
 4
 0 548 0 1
 0 419 -1 0
-0 557 0 1
+0 558 0 1
 0 110 -1 0
 1
 end_operator
@@ -17952,7 +17952,7 @@ fill-shot shot5 ingredient7 right left dispenser7
 4
 0 548 0 1
 0 419 -1 0
-0 557 0 1
+0 558 0 1
 0 110 -1 0
 1
 end_operator
@@ -17964,7 +17964,7 @@ fill-shot shot5 ingredient8 left right dispenser8
 4
 0 548 0 1
 0 420 -1 0
-0 557 0 1
+0 558 0 1
 0 111 -1 0
 1
 end_operator
@@ -17976,7 +17976,7 @@ fill-shot shot5 ingredient8 right left dispenser8
 4
 0 548 0 1
 0 420 -1 0
-0 557 0 1
+0 558 0 1
 0 111 -1 0
 1
 end_operator
@@ -17988,7 +17988,7 @@ fill-shot shot5 ingredient9 left right dispenser9
 4
 0 548 0 1
 0 421 -1 0
-0 557 0 1
+0 558 0 1
 0 112 -1 0
 1
 end_operator
@@ -18000,7 +18000,7 @@ fill-shot shot5 ingredient9 right left dispenser9
 4
 0 548 0 1
 0 421 -1 0
-0 557 0 1
+0 558 0 1
 0 112 -1 0
 1
 end_operator
@@ -18012,7 +18012,7 @@ fill-shot shot6 ingredient1 left right dispenser1
 4
 0 549 0 1
 0 382 -1 0
-0 558 0 1
+0 559 0 1
 0 73 -1 0
 1
 end_operator
@@ -18024,7 +18024,7 @@ fill-shot shot6 ingredient1 right left dispenser1
 4
 0 549 0 1
 0 382 -1 0
-0 558 0 1
+0 559 0 1
 0 73 -1 0
 1
 end_operator
@@ -18036,7 +18036,7 @@ fill-shot shot6 ingredient10 left right dispenser10
 4
 0 549 0 1
 0 383 -1 0
-0 558 0 1
+0 559 0 1
 0 74 -1 0
 1
 end_operator
@@ -18048,7 +18048,7 @@ fill-shot shot6 ingredient10 right left dispenser10
 4
 0 549 0 1
 0 383 -1 0
-0 558 0 1
+0 559 0 1
 0 74 -1 0
 1
 end_operator
@@ -18060,7 +18060,7 @@ fill-shot shot6 ingredient11 left right dispenser11
 4
 0 549 0 1
 0 384 -1 0
-0 558 0 1
+0 559 0 1
 0 75 -1 0
 1
 end_operator
@@ -18072,7 +18072,7 @@ fill-shot shot6 ingredient11 right left dispenser11
 4
 0 549 0 1
 0 384 -1 0
-0 558 0 1
+0 559 0 1
 0 75 -1 0
 1
 end_operator
@@ -18084,7 +18084,7 @@ fill-shot shot6 ingredient12 left right dispenser12
 4
 0 549 0 1
 0 385 -1 0
-0 558 0 1
+0 559 0 1
 0 76 -1 0
 1
 end_operator
@@ -18096,7 +18096,7 @@ fill-shot shot6 ingredient12 right left dispenser12
 4
 0 549 0 1
 0 385 -1 0
-0 558 0 1
+0 559 0 1
 0 76 -1 0
 1
 end_operator
@@ -18108,7 +18108,7 @@ fill-shot shot6 ingredient13 left right dispenser13
 4
 0 549 0 1
 0 386 -1 0
-0 558 0 1
+0 559 0 1
 0 77 -1 0
 1
 end_operator
@@ -18120,7 +18120,7 @@ fill-shot shot6 ingredient13 right left dispenser13
 4
 0 549 0 1
 0 386 -1 0
-0 558 0 1
+0 559 0 1
 0 77 -1 0
 1
 end_operator
@@ -18132,7 +18132,7 @@ fill-shot shot6 ingredient14 left right dispenser14
 4
 0 549 0 1
 0 387 -1 0
-0 558 0 1
+0 559 0 1
 0 78 -1 0
 1
 end_operator
@@ -18144,7 +18144,7 @@ fill-shot shot6 ingredient14 right left dispenser14
 4
 0 549 0 1
 0 387 -1 0
-0 558 0 1
+0 559 0 1
 0 78 -1 0
 1
 end_operator
@@ -18156,7 +18156,7 @@ fill-shot shot6 ingredient15 left right dispenser15
 4
 0 549 0 1
 0 388 -1 0
-0 558 0 1
+0 559 0 1
 0 79 -1 0
 1
 end_operator
@@ -18168,7 +18168,7 @@ fill-shot shot6 ingredient15 right left dispenser15
 4
 0 549 0 1
 0 388 -1 0
-0 558 0 1
+0 559 0 1
 0 79 -1 0
 1
 end_operator
@@ -18180,7 +18180,7 @@ fill-shot shot6 ingredient16 left right dispenser16
 4
 0 549 0 1
 0 389 -1 0
-0 558 0 1
+0 559 0 1
 0 80 -1 0
 1
 end_operator
@@ -18192,7 +18192,7 @@ fill-shot shot6 ingredient16 right left dispenser16
 4
 0 549 0 1
 0 389 -1 0
-0 558 0 1
+0 559 0 1
 0 80 -1 0
 1
 end_operator
@@ -18204,7 +18204,7 @@ fill-shot shot6 ingredient17 left right dispenser17
 4
 0 549 0 1
 0 390 -1 0
-0 558 0 1
+0 559 0 1
 0 81 -1 0
 1
 end_operator
@@ -18216,7 +18216,7 @@ fill-shot shot6 ingredient17 right left dispenser17
 4
 0 549 0 1
 0 390 -1 0
-0 558 0 1
+0 559 0 1
 0 81 -1 0
 1
 end_operator
@@ -18228,7 +18228,7 @@ fill-shot shot6 ingredient18 left right dispenser18
 4
 0 549 0 1
 0 391 -1 0
-0 558 0 1
+0 559 0 1
 0 82 -1 0
 1
 end_operator
@@ -18240,7 +18240,7 @@ fill-shot shot6 ingredient18 right left dispenser18
 4
 0 549 0 1
 0 391 -1 0
-0 558 0 1
+0 559 0 1
 0 82 -1 0
 1
 end_operator
@@ -18252,7 +18252,7 @@ fill-shot shot6 ingredient19 left right dispenser19
 4
 0 549 0 1
 0 392 -1 0
-0 558 0 1
+0 559 0 1
 0 83 -1 0
 1
 end_operator
@@ -18264,7 +18264,7 @@ fill-shot shot6 ingredient19 right left dispenser19
 4
 0 549 0 1
 0 392 -1 0
-0 558 0 1
+0 559 0 1
 0 83 -1 0
 1
 end_operator
@@ -18276,7 +18276,7 @@ fill-shot shot6 ingredient2 left right dispenser2
 4
 0 549 0 1
 0 393 -1 0
-0 558 0 1
+0 559 0 1
 0 84 -1 0
 1
 end_operator
@@ -18288,7 +18288,7 @@ fill-shot shot6 ingredient2 right left dispenser2
 4
 0 549 0 1
 0 393 -1 0
-0 558 0 1
+0 559 0 1
 0 84 -1 0
 1
 end_operator
@@ -18300,7 +18300,7 @@ fill-shot shot6 ingredient20 left right dispenser20
 4
 0 549 0 1
 0 394 -1 0
-0 558 0 1
+0 559 0 1
 0 85 -1 0
 1
 end_operator
@@ -18312,7 +18312,7 @@ fill-shot shot6 ingredient20 right left dispenser20
 4
 0 549 0 1
 0 394 -1 0
-0 558 0 1
+0 559 0 1
 0 85 -1 0
 1
 end_operator
@@ -18324,7 +18324,7 @@ fill-shot shot6 ingredient3 left right dispenser3
 4
 0 549 0 1
 0 395 -1 0
-0 558 0 1
+0 559 0 1
 0 86 -1 0
 1
 end_operator
@@ -18336,7 +18336,7 @@ fill-shot shot6 ingredient3 right left dispenser3
 4
 0 549 0 1
 0 395 -1 0
-0 558 0 1
+0 559 0 1
 0 86 -1 0
 1
 end_operator
@@ -18348,7 +18348,7 @@ fill-shot shot6 ingredient4 left right dispenser4
 4
 0 549 0 1
 0 396 -1 0
-0 558 0 1
+0 559 0 1
 0 87 -1 0
 1
 end_operator
@@ -18360,7 +18360,7 @@ fill-shot shot6 ingredient4 right left dispenser4
 4
 0 549 0 1
 0 396 -1 0
-0 558 0 1
+0 559 0 1
 0 87 -1 0
 1
 end_operator
@@ -18372,7 +18372,7 @@ fill-shot shot6 ingredient5 left right dispenser5
 4
 0 549 0 1
 0 397 -1 0
-0 558 0 1
+0 559 0 1
 0 88 -1 0
 1
 end_operator
@@ -18384,7 +18384,7 @@ fill-shot shot6 ingredient5 right left dispenser5
 4
 0 549 0 1
 0 397 -1 0
-0 558 0 1
+0 559 0 1
 0 88 -1 0
 1
 end_operator
@@ -18396,7 +18396,7 @@ fill-shot shot6 ingredient6 left right dispenser6
 4
 0 549 0 1
 0 398 -1 0
-0 558 0 1
+0 559 0 1
 0 89 -1 0
 1
 end_operator
@@ -18408,7 +18408,7 @@ fill-shot shot6 ingredient6 right left dispenser6
 4
 0 549 0 1
 0 398 -1 0
-0 558 0 1
+0 559 0 1
 0 89 -1 0
 1
 end_operator
@@ -18420,7 +18420,7 @@ fill-shot shot6 ingredient7 left right dispenser7
 4
 0 549 0 1
 0 399 -1 0
-0 558 0 1
+0 559 0 1
 0 90 -1 0
 1
 end_operator
@@ -18432,7 +18432,7 @@ fill-shot shot6 ingredient7 right left dispenser7
 4
 0 549 0 1
 0 399 -1 0
-0 558 0 1
+0 559 0 1
 0 90 -1 0
 1
 end_operator
@@ -18444,7 +18444,7 @@ fill-shot shot6 ingredient8 left right dispenser8
 4
 0 549 0 1
 0 400 -1 0
-0 558 0 1
+0 559 0 1
 0 91 -1 0
 1
 end_operator
@@ -18456,7 +18456,7 @@ fill-shot shot6 ingredient8 right left dispenser8
 4
 0 549 0 1
 0 400 -1 0
-0 558 0 1
+0 559 0 1
 0 91 -1 0
 1
 end_operator
@@ -18468,7 +18468,7 @@ fill-shot shot6 ingredient9 left right dispenser9
 4
 0 549 0 1
 0 401 -1 0
-0 558 0 1
+0 559 0 1
 0 92 -1 0
 1
 end_operator
@@ -18480,7 +18480,7 @@ fill-shot shot6 ingredient9 right left dispenser9
 4
 0 549 0 1
 0 401 -1 0
-0 558 0 1
+0 559 0 1
 0 92 -1 0
 1
 end_operator
@@ -18492,7 +18492,7 @@ fill-shot shot7 ingredient1 left right dispenser1
 4
 0 550 0 1
 0 362 -1 0
-0 559 0 1
+0 560 0 1
 0 53 -1 0
 1
 end_operator
@@ -18504,7 +18504,7 @@ fill-shot shot7 ingredient1 right left dispenser1
 4
 0 550 0 1
 0 362 -1 0
-0 559 0 1
+0 560 0 1
 0 53 -1 0
 1
 end_operator
@@ -18516,7 +18516,7 @@ fill-shot shot7 ingredient10 left right dispenser10
 4
 0 550 0 1
 0 363 -1 0
-0 559 0 1
+0 560 0 1
 0 54 -1 0
 1
 end_operator
@@ -18528,7 +18528,7 @@ fill-shot shot7 ingredient10 right left dispenser10
 4
 0 550 0 1
 0 363 -1 0
-0 559 0 1
+0 560 0 1
 0 54 -1 0
 1
 end_operator
@@ -18540,7 +18540,7 @@ fill-shot shot7 ingredient11 left right dispenser11
 4
 0 550 0 1
 0 364 -1 0
-0 559 0 1
+0 560 0 1
 0 55 -1 0
 1
 end_operator
@@ -18552,7 +18552,7 @@ fill-shot shot7 ingredient11 right left dispenser11
 4
 0 550 0 1
 0 364 -1 0
-0 559 0 1
+0 560 0 1
 0 55 -1 0
 1
 end_operator
@@ -18564,7 +18564,7 @@ fill-shot shot7 ingredient12 left right dispenser12
 4
 0 550 0 1
 0 365 -1 0
-0 559 0 1
+0 560 0 1
 0 56 -1 0
 1
 end_operator
@@ -18576,7 +18576,7 @@ fill-shot shot7 ingredient12 right left dispenser12
 4
 0 550 0 1
 0 365 -1 0
-0 559 0 1
+0 560 0 1
 0 56 -1 0
 1
 end_operator
@@ -18588,7 +18588,7 @@ fill-shot shot7 ingredient13 left right dispenser13
 4
 0 550 0 1
 0 366 -1 0
-0 559 0 1
+0 560 0 1
 0 57 -1 0
 1
 end_operator
@@ -18600,7 +18600,7 @@ fill-shot shot7 ingredient13 right left dispenser13
 4
 0 550 0 1
 0 366 -1 0
-0 559 0 1
+0 560 0 1
 0 57 -1 0
 1
 end_operator
@@ -18612,7 +18612,7 @@ fill-shot shot7 ingredient14 left right dispenser14
 4
 0 550 0 1
 0 367 -1 0
-0 559 0 1
+0 560 0 1
 0 58 -1 0
 1
 end_operator
@@ -18624,7 +18624,7 @@ fill-shot shot7 ingredient14 right left dispenser14
 4
 0 550 0 1
 0 367 -1 0
-0 559 0 1
+0 560 0 1
 0 58 -1 0
 1
 end_operator
@@ -18636,7 +18636,7 @@ fill-shot shot7 ingredient15 left right dispenser15
 4
 0 550 0 1
 0 368 -1 0
-0 559 0 1
+0 560 0 1
 0 59 -1 0
 1
 end_operator
@@ -18648,7 +18648,7 @@ fill-shot shot7 ingredient15 right left dispenser15
 4
 0 550 0 1
 0 368 -1 0
-0 559 0 1
+0 560 0 1
 0 59 -1 0
 1
 end_operator
@@ -18660,7 +18660,7 @@ fill-shot shot7 ingredient16 left right dispenser16
 4
 0 550 0 1
 0 369 -1 0
-0 559 0 1
+0 560 0 1
 0 60 -1 0
 1
 end_operator
@@ -18672,7 +18672,7 @@ fill-shot shot7 ingredient16 right left dispenser16
 4
 0 550 0 1
 0 369 -1 0
-0 559 0 1
+0 560 0 1
 0 60 -1 0
 1
 end_operator
@@ -18684,7 +18684,7 @@ fill-shot shot7 ingredient17 left right dispenser17
 4
 0 550 0 1
 0 370 -1 0
-0 559 0 1
+0 560 0 1
 0 61 -1 0
 1
 end_operator
@@ -18696,7 +18696,7 @@ fill-shot shot7 ingredient17 right left dispenser17
 4
 0 550 0 1
 0 370 -1 0
-0 559 0 1
+0 560 0 1
 0 61 -1 0
 1
 end_operator
@@ -18708,7 +18708,7 @@ fill-shot shot7 ingredient18 left right dispenser18
 4
 0 550 0 1
 0 371 -1 0
-0 559 0 1
+0 560 0 1
 0 62 -1 0
 1
 end_operator
@@ -18720,7 +18720,7 @@ fill-shot shot7 ingredient18 right left dispenser18
 4
 0 550 0 1
 0 371 -1 0
-0 559 0 1
+0 560 0 1
 0 62 -1 0
 1
 end_operator
@@ -18732,7 +18732,7 @@ fill-shot shot7 ingredient19 left right dispenser19
 4
 0 550 0 1
 0 372 -1 0
-0 559 0 1
+0 560 0 1
 0 63 -1 0
 1
 end_operator
@@ -18744,7 +18744,7 @@ fill-shot shot7 ingredient19 right left dispenser19
 4
 0 550 0 1
 0 372 -1 0
-0 559 0 1
+0 560 0 1
 0 63 -1 0
 1
 end_operator
@@ -18756,7 +18756,7 @@ fill-shot shot7 ingredient2 left right dispenser2
 4
 0 550 0 1
 0 373 -1 0
-0 559 0 1
+0 560 0 1
 0 64 -1 0
 1
 end_operator
@@ -18768,7 +18768,7 @@ fill-shot shot7 ingredient2 right left dispenser2
 4
 0 550 0 1
 0 373 -1 0
-0 559 0 1
+0 560 0 1
 0 64 -1 0
 1
 end_operator
@@ -18780,7 +18780,7 @@ fill-shot shot7 ingredient20 left right dispenser20
 4
 0 550 0 1
 0 374 -1 0
-0 559 0 1
+0 560 0 1
 0 65 -1 0
 1
 end_operator
@@ -18792,7 +18792,7 @@ fill-shot shot7 ingredient20 right left dispenser20
 4
 0 550 0 1
 0 374 -1 0
-0 559 0 1
+0 560 0 1
 0 65 -1 0
 1
 end_operator
@@ -18804,7 +18804,7 @@ fill-shot shot7 ingredient3 left right dispenser3
 4
 0 550 0 1
 0 375 -1 0
-0 559 0 1
+0 560 0 1
 0 66 -1 0
 1
 end_operator
@@ -18816,7 +18816,7 @@ fill-shot shot7 ingredient3 right left dispenser3
 4
 0 550 0 1
 0 375 -1 0
-0 559 0 1
+0 560 0 1
 0 66 -1 0
 1
 end_operator
@@ -18828,7 +18828,7 @@ fill-shot shot7 ingredient4 left right dispenser4
 4
 0 550 0 1
 0 376 -1 0
-0 559 0 1
+0 560 0 1
 0 67 -1 0
 1
 end_operator
@@ -18840,7 +18840,7 @@ fill-shot shot7 ingredient4 right left dispenser4
 4
 0 550 0 1
 0 376 -1 0
-0 559 0 1
+0 560 0 1
 0 67 -1 0
 1
 end_operator
@@ -18852,7 +18852,7 @@ fill-shot shot7 ingredient5 left right dispenser5
 4
 0 550 0 1
 0 377 -1 0
-0 559 0 1
+0 560 0 1
 0 68 -1 0
 1
 end_operator
@@ -18864,7 +18864,7 @@ fill-shot shot7 ingredient5 right left dispenser5
 4
 0 550 0 1
 0 377 -1 0
-0 559 0 1
+0 560 0 1
 0 68 -1 0
 1
 end_operator
@@ -18876,7 +18876,7 @@ fill-shot shot7 ingredient6 left right dispenser6
 4
 0 550 0 1
 0 378 -1 0
-0 559 0 1
+0 560 0 1
 0 69 -1 0
 1
 end_operator
@@ -18888,7 +18888,7 @@ fill-shot shot7 ingredient6 right left dispenser6
 4
 0 550 0 1
 0 378 -1 0
-0 559 0 1
+0 560 0 1
 0 69 -1 0
 1
 end_operator
@@ -18900,7 +18900,7 @@ fill-shot shot7 ingredient7 left right dispenser7
 4
 0 550 0 1
 0 379 -1 0
-0 559 0 1
+0 560 0 1
 0 70 -1 0
 1
 end_operator
@@ -18912,7 +18912,7 @@ fill-shot shot7 ingredient7 right left dispenser7
 4
 0 550 0 1
 0 379 -1 0
-0 559 0 1
+0 560 0 1
 0 70 -1 0
 1
 end_operator
@@ -18924,7 +18924,7 @@ fill-shot shot7 ingredient8 left right dispenser8
 4
 0 550 0 1
 0 380 -1 0
-0 559 0 1
+0 560 0 1
 0 71 -1 0
 1
 end_operator
@@ -18936,7 +18936,7 @@ fill-shot shot7 ingredient8 right left dispenser8
 4
 0 550 0 1
 0 380 -1 0
-0 559 0 1
+0 560 0 1
 0 71 -1 0
 1
 end_operator
@@ -18948,7 +18948,7 @@ fill-shot shot7 ingredient9 left right dispenser9
 4
 0 550 0 1
 0 381 -1 0
-0 559 0 1
+0 560 0 1
 0 72 -1 0
 1
 end_operator
@@ -18960,7 +18960,7 @@ fill-shot shot7 ingredient9 right left dispenser9
 4
 0 550 0 1
 0 381 -1 0
-0 559 0 1
+0 560 0 1
 0 72 -1 0
 1
 end_operator
@@ -18972,7 +18972,7 @@ fill-shot shot8 ingredient1 left right dispenser1
 4
 0 551 0 1
 0 342 -1 0
-0 560 0 1
+0 561 0 1
 0 33 -1 0
 1
 end_operator
@@ -18984,7 +18984,7 @@ fill-shot shot8 ingredient1 right left dispenser1
 4
 0 551 0 1
 0 342 -1 0
-0 560 0 1
+0 561 0 1
 0 33 -1 0
 1
 end_operator
@@ -18996,7 +18996,7 @@ fill-shot shot8 ingredient10 left right dispenser10
 4
 0 551 0 1
 0 343 -1 0
-0 560 0 1
+0 561 0 1
 0 34 -1 0
 1
 end_operator
@@ -19008,7 +19008,7 @@ fill-shot shot8 ingredient10 right left dispenser10
 4
 0 551 0 1
 0 343 -1 0
-0 560 0 1
+0 561 0 1
 0 34 -1 0
 1
 end_operator
@@ -19020,7 +19020,7 @@ fill-shot shot8 ingredient11 left right dispenser11
 4
 0 551 0 1
 0 344 -1 0
-0 560 0 1
+0 561 0 1
 0 35 -1 0
 1
 end_operator
@@ -19032,7 +19032,7 @@ fill-shot shot8 ingredient11 right left dispenser11
 4
 0 551 0 1
 0 344 -1 0
-0 560 0 1
+0 561 0 1
 0 35 -1 0
 1
 end_operator
@@ -19044,7 +19044,7 @@ fill-shot shot8 ingredient12 left right dispenser12
 4
 0 551 0 1
 0 345 -1 0
-0 560 0 1
+0 561 0 1
 0 36 -1 0
 1
 end_operator
@@ -19056,7 +19056,7 @@ fill-shot shot8 ingredient12 right left dispenser12
 4
 0 551 0 1
 0 345 -1 0
-0 560 0 1
+0 561 0 1
 0 36 -1 0
 1
 end_operator
@@ -19068,7 +19068,7 @@ fill-shot shot8 ingredient13 left right dispenser13
 4
 0 551 0 1
 0 346 -1 0
-0 560 0 1
+0 561 0 1
 0 37 -1 0
 1
 end_operator
@@ -19080,7 +19080,7 @@ fill-shot shot8 ingredient13 right left dispenser13
 4
 0 551 0 1
 0 346 -1 0
-0 560 0 1
+0 561 0 1
 0 37 -1 0
 1
 end_operator
@@ -19092,7 +19092,7 @@ fill-shot shot8 ingredient14 left right dispenser14
 4
 0 551 0 1
 0 347 -1 0
-0 560 0 1
+0 561 0 1
 0 38 -1 0
 1
 end_operator
@@ -19104,7 +19104,7 @@ fill-shot shot8 ingredient14 right left dispenser14
 4
 0 551 0 1
 0 347 -1 0
-0 560 0 1
+0 561 0 1
 0 38 -1 0
 1
 end_operator
@@ -19116,7 +19116,7 @@ fill-shot shot8 ingredient15 left right dispenser15
 4
 0 551 0 1
 0 348 -1 0
-0 560 0 1
+0 561 0 1
 0 39 -1 0
 1
 end_operator
@@ -19128,7 +19128,7 @@ fill-shot shot8 ingredient15 right left dispenser15
 4
 0 551 0 1
 0 348 -1 0
-0 560 0 1
+0 561 0 1
 0 39 -1 0
 1
 end_operator
@@ -19140,7 +19140,7 @@ fill-shot shot8 ingredient16 left right dispenser16
 4
 0 551 0 1
 0 349 -1 0
-0 560 0 1
+0 561 0 1
 0 40 -1 0
 1
 end_operator
@@ -19152,7 +19152,7 @@ fill-shot shot8 ingredient16 right left dispenser16
 4
 0 551 0 1
 0 349 -1 0
-0 560 0 1
+0 561 0 1
 0 40 -1 0
 1
 end_operator
@@ -19164,7 +19164,7 @@ fill-shot shot8 ingredient17 left right dispenser17
 4
 0 551 0 1
 0 350 -1 0
-0 560 0 1
+0 561 0 1
 0 41 -1 0
 1
 end_operator
@@ -19176,7 +19176,7 @@ fill-shot shot8 ingredient17 right left dispenser17
 4
 0 551 0 1
 0 350 -1 0
-0 560 0 1
+0 561 0 1
 0 41 -1 0
 1
 end_operator
@@ -19188,7 +19188,7 @@ fill-shot shot8 ingredient18 left right dispenser18
 4
 0 551 0 1
 0 351 -1 0
-0 560 0 1
+0 561 0 1
 0 42 -1 0
 1
 end_operator
@@ -19200,7 +19200,7 @@ fill-shot shot8 ingredient18 right left dispenser18
 4
 0 551 0 1
 0 351 -1 0
-0 560 0 1
+0 561 0 1
 0 42 -1 0
 1
 end_operator
@@ -19212,7 +19212,7 @@ fill-shot shot8 ingredient19 left right dispenser19
 4
 0 551 0 1
 0 352 -1 0
-0 560 0 1
+0 561 0 1
 0 43 -1 0
 1
 end_operator
@@ -19224,7 +19224,7 @@ fill-shot shot8 ingredient19 right left dispenser19
 4
 0 551 0 1
 0 352 -1 0
-0 560 0 1
+0 561 0 1
 0 43 -1 0
 1
 end_operator
@@ -19236,7 +19236,7 @@ fill-shot shot8 ingredient2 left right dispenser2
 4
 0 551 0 1
 0 353 -1 0
-0 560 0 1
+0 561 0 1
 0 44 -1 0
 1
 end_operator
@@ -19248,7 +19248,7 @@ fill-shot shot8 ingredient2 right left dispenser2
 4
 0 551 0 1
 0 353 -1 0
-0 560 0 1
+0 561 0 1
 0 44 -1 0
 1
 end_operator
@@ -19260,7 +19260,7 @@ fill-shot shot8 ingredient20 left right dispenser20
 4
 0 551 0 1
 0 354 -1 0
-0 560 0 1
+0 561 0 1
 0 45 -1 0
 1
 end_operator
@@ -19272,7 +19272,7 @@ fill-shot shot8 ingredient20 right left dispenser20
 4
 0 551 0 1
 0 354 -1 0
-0 560 0 1
+0 561 0 1
 0 45 -1 0
 1
 end_operator
@@ -19284,7 +19284,7 @@ fill-shot shot8 ingredient3 left right dispenser3
 4
 0 551 0 1
 0 355 -1 0
-0 560 0 1
+0 561 0 1
 0 46 -1 0
 1
 end_operator
@@ -19296,7 +19296,7 @@ fill-shot shot8 ingredient3 right left dispenser3
 4
 0 551 0 1
 0 355 -1 0
-0 560 0 1
+0 561 0 1
 0 46 -1 0
 1
 end_operator
@@ -19308,7 +19308,7 @@ fill-shot shot8 ingredient4 left right dispenser4
 4
 0 551 0 1
 0 356 -1 0
-0 560 0 1
+0 561 0 1
 0 47 -1 0
 1
 end_operator
@@ -19320,7 +19320,7 @@ fill-shot shot8 ingredient4 right left dispenser4
 4
 0 551 0 1
 0 356 -1 0
-0 560 0 1
+0 561 0 1
 0 47 -1 0
 1
 end_operator
@@ -19332,7 +19332,7 @@ fill-shot shot8 ingredient5 left right dispenser5
 4
 0 551 0 1
 0 357 -1 0
-0 560 0 1
+0 561 0 1
 0 48 -1 0
 1
 end_operator
@@ -19344,7 +19344,7 @@ fill-shot shot8 ingredient5 right left dispenser5
 4
 0 551 0 1
 0 357 -1 0
-0 560 0 1
+0 561 0 1
 0 48 -1 0
 1
 end_operator
@@ -19356,7 +19356,7 @@ fill-shot shot8 ingredient6 left right dispenser6
 4
 0 551 0 1
 0 358 -1 0
-0 560 0 1
+0 561 0 1
 0 49 -1 0
 1
 end_operator
@@ -19368,7 +19368,7 @@ fill-shot shot8 ingredient6 right left dispenser6
 4
 0 551 0 1
 0 358 -1 0
-0 560 0 1
+0 561 0 1
 0 49 -1 0
 1
 end_operator
@@ -19380,7 +19380,7 @@ fill-shot shot8 ingredient7 left right dispenser7
 4
 0 551 0 1
 0 359 -1 0
-0 560 0 1
+0 561 0 1
 0 50 -1 0
 1
 end_operator
@@ -19392,7 +19392,7 @@ fill-shot shot8 ingredient7 right left dispenser7
 4
 0 551 0 1
 0 359 -1 0
-0 560 0 1
+0 561 0 1
 0 50 -1 0
 1
 end_operator
@@ -19404,7 +19404,7 @@ fill-shot shot8 ingredient8 left right dispenser8
 4
 0 551 0 1
 0 360 -1 0
-0 560 0 1
+0 561 0 1
 0 51 -1 0
 1
 end_operator
@@ -19416,7 +19416,7 @@ fill-shot shot8 ingredient8 right left dispenser8
 4
 0 551 0 1
 0 360 -1 0
-0 560 0 1
+0 561 0 1
 0 51 -1 0
 1
 end_operator
@@ -19428,7 +19428,7 @@ fill-shot shot8 ingredient9 left right dispenser9
 4
 0 551 0 1
 0 361 -1 0
-0 560 0 1
+0 561 0 1
 0 52 -1 0
 1
 end_operator
@@ -19440,7 +19440,7 @@ fill-shot shot8 ingredient9 right left dispenser9
 4
 0 551 0 1
 0 361 -1 0
-0 560 0 1
+0 561 0 1
 0 52 -1 0
 1
 end_operator
@@ -19452,7 +19452,7 @@ fill-shot shot9 ingredient1 left right dispenser1
 4
 0 552 0 1
 0 322 -1 0
-0 561 0 1
+0 562 0 1
 0 13 -1 0
 1
 end_operator
@@ -19464,7 +19464,7 @@ fill-shot shot9 ingredient1 right left dispenser1
 4
 0 552 0 1
 0 322 -1 0
-0 561 0 1
+0 562 0 1
 0 13 -1 0
 1
 end_operator
@@ -19476,7 +19476,7 @@ fill-shot shot9 ingredient10 left right dispenser10
 4
 0 552 0 1
 0 323 -1 0
-0 561 0 1
+0 562 0 1
 0 14 -1 0
 1
 end_operator
@@ -19488,7 +19488,7 @@ fill-shot shot9 ingredient10 right left dispenser10
 4
 0 552 0 1
 0 323 -1 0
-0 561 0 1
+0 562 0 1
 0 14 -1 0
 1
 end_operator
@@ -19500,7 +19500,7 @@ fill-shot shot9 ingredient11 left right dispenser11
 4
 0 552 0 1
 0 324 -1 0
-0 561 0 1
+0 562 0 1
 0 15 -1 0
 1
 end_operator
@@ -19512,7 +19512,7 @@ fill-shot shot9 ingredient11 right left dispenser11
 4
 0 552 0 1
 0 324 -1 0
-0 561 0 1
+0 562 0 1
 0 15 -1 0
 1
 end_operator
@@ -19524,7 +19524,7 @@ fill-shot shot9 ingredient12 left right dispenser12
 4
 0 552 0 1
 0 325 -1 0
-0 561 0 1
+0 562 0 1
 0 16 -1 0
 1
 end_operator
@@ -19536,7 +19536,7 @@ fill-shot shot9 ingredient12 right left dispenser12
 4
 0 552 0 1
 0 325 -1 0
-0 561 0 1
+0 562 0 1
 0 16 -1 0
 1
 end_operator
@@ -19548,7 +19548,7 @@ fill-shot shot9 ingredient13 left right dispenser13
 4
 0 552 0 1
 0 326 -1 0
-0 561 0 1
+0 562 0 1
 0 17 -1 0
 1
 end_operator
@@ -19560,7 +19560,7 @@ fill-shot shot9 ingredient13 right left dispenser13
 4
 0 552 0 1
 0 326 -1 0
-0 561 0 1
+0 562 0 1
 0 17 -1 0
 1
 end_operator
@@ -19572,7 +19572,7 @@ fill-shot shot9 ingredient14 left right dispenser14
 4
 0 552 0 1
 0 327 -1 0
-0 561 0 1
+0 562 0 1
 0 18 -1 0
 1
 end_operator
@@ -19584,7 +19584,7 @@ fill-shot shot9 ingredient14 right left dispenser14
 4
 0 552 0 1
 0 327 -1 0
-0 561 0 1
+0 562 0 1
 0 18 -1 0
 1
 end_operator
@@ -19596,7 +19596,7 @@ fill-shot shot9 ingredient15 left right dispenser15
 4
 0 552 0 1
 0 328 -1 0
-0 561 0 1
+0 562 0 1
 0 19 -1 0
 1
 end_operator
@@ -19608,7 +19608,7 @@ fill-shot shot9 ingredient15 right left dispenser15
 4
 0 552 0 1
 0 328 -1 0
-0 561 0 1
+0 562 0 1
 0 19 -1 0
 1
 end_operator
@@ -19620,7 +19620,7 @@ fill-shot shot9 ingredient16 left right dispenser16
 4
 0 552 0 1
 0 329 -1 0
-0 561 0 1
+0 562 0 1
 0 20 -1 0
 1
 end_operator
@@ -19632,7 +19632,7 @@ fill-shot shot9 ingredient16 right left dispenser16
 4
 0 552 0 1
 0 329 -1 0
-0 561 0 1
+0 562 0 1
 0 20 -1 0
 1
 end_operator
@@ -19644,7 +19644,7 @@ fill-shot shot9 ingredient17 left right dispenser17
 4
 0 552 0 1
 0 330 -1 0
-0 561 0 1
+0 562 0 1
 0 21 -1 0
 1
 end_operator
@@ -19656,7 +19656,7 @@ fill-shot shot9 ingredient17 right left dispenser17
 4
 0 552 0 1
 0 330 -1 0
-0 561 0 1
+0 562 0 1
 0 21 -1 0
 1
 end_operator
@@ -19668,7 +19668,7 @@ fill-shot shot9 ingredient18 left right dispenser18
 4
 0 552 0 1
 0 331 -1 0
-0 561 0 1
+0 562 0 1
 0 22 -1 0
 1
 end_operator
@@ -19680,7 +19680,7 @@ fill-shot shot9 ingredient18 right left dispenser18
 4
 0 552 0 1
 0 331 -1 0
-0 561 0 1
+0 562 0 1
 0 22 -1 0
 1
 end_operator
@@ -19692,7 +19692,7 @@ fill-shot shot9 ingredient19 left right dispenser19
 4
 0 552 0 1
 0 332 -1 0
-0 561 0 1
+0 562 0 1
 0 23 -1 0
 1
 end_operator
@@ -19704,7 +19704,7 @@ fill-shot shot9 ingredient19 right left dispenser19
 4
 0 552 0 1
 0 332 -1 0
-0 561 0 1
+0 562 0 1
 0 23 -1 0
 1
 end_operator
@@ -19716,7 +19716,7 @@ fill-shot shot9 ingredient2 left right dispenser2
 4
 0 552 0 1
 0 333 -1 0
-0 561 0 1
+0 562 0 1
 0 24 -1 0
 1
 end_operator
@@ -19728,7 +19728,7 @@ fill-shot shot9 ingredient2 right left dispenser2
 4
 0 552 0 1
 0 333 -1 0
-0 561 0 1
+0 562 0 1
 0 24 -1 0
 1
 end_operator
@@ -19740,7 +19740,7 @@ fill-shot shot9 ingredient20 left right dispenser20
 4
 0 552 0 1
 0 334 -1 0
-0 561 0 1
+0 562 0 1
 0 25 -1 0
 1
 end_operator
@@ -19752,7 +19752,7 @@ fill-shot shot9 ingredient20 right left dispenser20
 4
 0 552 0 1
 0 334 -1 0
-0 561 0 1
+0 562 0 1
 0 25 -1 0
 1
 end_operator
@@ -19764,7 +19764,7 @@ fill-shot shot9 ingredient3 left right dispenser3
 4
 0 552 0 1
 0 335 -1 0
-0 561 0 1
+0 562 0 1
 0 26 -1 0
 1
 end_operator
@@ -19776,7 +19776,7 @@ fill-shot shot9 ingredient3 right left dispenser3
 4
 0 552 0 1
 0 335 -1 0
-0 561 0 1
+0 562 0 1
 0 26 -1 0
 1
 end_operator
@@ -19788,7 +19788,7 @@ fill-shot shot9 ingredient4 left right dispenser4
 4
 0 552 0 1
 0 336 -1 0
-0 561 0 1
+0 562 0 1
 0 27 -1 0
 1
 end_operator
@@ -19800,7 +19800,7 @@ fill-shot shot9 ingredient4 right left dispenser4
 4
 0 552 0 1
 0 336 -1 0
-0 561 0 1
+0 562 0 1
 0 27 -1 0
 1
 end_operator
@@ -19812,7 +19812,7 @@ fill-shot shot9 ingredient5 left right dispenser5
 4
 0 552 0 1
 0 337 -1 0
-0 561 0 1
+0 562 0 1
 0 28 -1 0
 1
 end_operator
@@ -19824,7 +19824,7 @@ fill-shot shot9 ingredient5 right left dispenser5
 4
 0 552 0 1
 0 337 -1 0
-0 561 0 1
+0 562 0 1
 0 28 -1 0
 1
 end_operator
@@ -19836,7 +19836,7 @@ fill-shot shot9 ingredient6 left right dispenser6
 4
 0 552 0 1
 0 338 -1 0
-0 561 0 1
+0 562 0 1
 0 29 -1 0
 1
 end_operator
@@ -19848,7 +19848,7 @@ fill-shot shot9 ingredient6 right left dispenser6
 4
 0 552 0 1
 0 338 -1 0
-0 561 0 1
+0 562 0 1
 0 29 -1 0
 1
 end_operator
@@ -19860,7 +19860,7 @@ fill-shot shot9 ingredient7 left right dispenser7
 4
 0 552 0 1
 0 339 -1 0
-0 561 0 1
+0 562 0 1
 0 30 -1 0
 1
 end_operator
@@ -19872,7 +19872,7 @@ fill-shot shot9 ingredient7 right left dispenser7
 4
 0 552 0 1
 0 339 -1 0
-0 561 0 1
+0 562 0 1
 0 30 -1 0
 1
 end_operator
@@ -19884,7 +19884,7 @@ fill-shot shot9 ingredient8 left right dispenser8
 4
 0 552 0 1
 0 340 -1 0
-0 561 0 1
+0 562 0 1
 0 31 -1 0
 1
 end_operator
@@ -19896,7 +19896,7 @@ fill-shot shot9 ingredient8 right left dispenser8
 4
 0 552 0 1
 0 340 -1 0
-0 561 0 1
+0 562 0 1
 0 31 -1 0
 1
 end_operator
@@ -19908,7 +19908,7 @@ fill-shot shot9 ingredient9 left right dispenser9
 4
 0 552 0 1
 0 341 -1 0
-0 561 0 1
+0 562 0 1
 0 32 -1 0
 1
 end_operator
@@ -19920,7 +19920,7 @@ fill-shot shot9 ingredient9 right left dispenser9
 4
 0 552 0 1
 0 341 -1 0
-0 561 0 1
+0 562 0 1
 0 32 -1 0
 1
 end_operator
@@ -20337,7 +20337,7 @@ pour-shaker-to-shot cocktail1 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 215 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -20350,7 +20350,7 @@ pour-shaker-to-shot cocktail1 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 215 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -20363,7 +20363,7 @@ pour-shaker-to-shot cocktail1 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 215 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -20376,7 +20376,7 @@ pour-shaker-to-shot cocktail1 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 215 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -20389,7 +20389,7 @@ pour-shaker-to-shot cocktail1 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 216 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -20402,7 +20402,7 @@ pour-shaker-to-shot cocktail1 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 216 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -20415,7 +20415,7 @@ pour-shaker-to-shot cocktail1 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 216 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -20428,7 +20428,7 @@ pour-shaker-to-shot cocktail1 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 216 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -20441,7 +20441,7 @@ pour-shaker-to-shot cocktail1 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 217 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -20454,7 +20454,7 @@ pour-shaker-to-shot cocktail1 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 217 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -20467,7 +20467,7 @@ pour-shaker-to-shot cocktail1 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 217 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -20480,7 +20480,7 @@ pour-shaker-to-shot cocktail1 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 217 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -20493,7 +20493,7 @@ pour-shaker-to-shot cocktail1 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 218 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -20506,7 +20506,7 @@ pour-shaker-to-shot cocktail1 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 218 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -20519,7 +20519,7 @@ pour-shaker-to-shot cocktail1 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 218 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -20532,7 +20532,7 @@ pour-shaker-to-shot cocktail1 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 218 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -20545,7 +20545,7 @@ pour-shaker-to-shot cocktail1 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 219 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -20558,7 +20558,7 @@ pour-shaker-to-shot cocktail1 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 219 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -20571,7 +20571,7 @@ pour-shaker-to-shot cocktail1 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 219 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -20584,7 +20584,7 @@ pour-shaker-to-shot cocktail1 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 219 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -20597,7 +20597,7 @@ pour-shaker-to-shot cocktail1 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 220 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -20610,7 +20610,7 @@ pour-shaker-to-shot cocktail1 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 220 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -20623,7 +20623,7 @@ pour-shaker-to-shot cocktail1 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 220 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -20636,7 +20636,7 @@ pour-shaker-to-shot cocktail1 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 220 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -20649,7 +20649,7 @@ pour-shaker-to-shot cocktail1 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 221 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -20662,7 +20662,7 @@ pour-shaker-to-shot cocktail1 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 221 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -20675,7 +20675,7 @@ pour-shaker-to-shot cocktail1 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 221 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -20688,7 +20688,7 @@ pour-shaker-to-shot cocktail1 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 221 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -20701,7 +20701,7 @@ pour-shaker-to-shot cocktail1 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 222 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -20714,7 +20714,7 @@ pour-shaker-to-shot cocktail1 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 222 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -20727,7 +20727,7 @@ pour-shaker-to-shot cocktail1 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 222 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -20740,7 +20740,7 @@ pour-shaker-to-shot cocktail1 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 222 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -20752,8 +20752,8 @@ pour-shaker-to-shot cocktail1 shot9 left shaker1 l1 l0
 522 0
 4
 0 552 0 1
-0 223 -1 0
-0 561 0 1
+0 567 -1 0
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -20765,8 +20765,8 @@ pour-shaker-to-shot cocktail1 shot9 left shaker1 l2 l1
 522 0
 4
 0 552 0 1
-0 223 -1 0
-0 561 0 1
+0 567 -1 0
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -20778,8 +20778,8 @@ pour-shaker-to-shot cocktail1 shot9 right shaker1 l1 l0
 522 0
 4
 0 552 0 1
-0 223 -1 0
-0 561 0 1
+0 567 -1 0
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -20791,20 +20791,20 @@ pour-shaker-to-shot cocktail1 shot9 right shaker1 l2 l1
 522 0
 4
 0 552 0 1
-0 223 -1 0
-0 561 0 1
+0 567 -1 0
+0 562 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot1 left shaker1 l1 l0
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 543 0 1
-0 236 -1 0
+0 235 -1 0
 0 553 0 1
 0 565 1 0
 1
@@ -20812,12 +20812,12 @@ end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot1 left shaker1 l2 l1
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 543 0 1
-0 236 -1 0
+0 235 -1 0
 0 553 0 1
 0 565 2 1
 1
@@ -20825,12 +20825,12 @@ end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot1 right shaker1 l1 l0
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 543 0 1
-0 236 -1 0
+0 235 -1 0
 0 553 0 1
 0 565 1 0
 1
@@ -20838,12 +20838,12 @@ end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot1 right shaker1 l2 l1
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 543 0 1
-0 236 -1 0
+0 235 -1 0
 0 553 0 1
 0 565 2 1
 1
@@ -20851,480 +20851,480 @@ end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot10 left shaker1 l1 l0
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 544 0 1
-0 567 -1 0
-0 562 0 1
+0 236 -1 0
+0 554 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot10 left shaker1 l2 l1
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 544 0 1
-0 567 -1 0
-0 562 0 1
+0 236 -1 0
+0 554 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot10 right shaker1 l1 l0
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 544 0 1
-0 567 -1 0
-0 562 0 1
+0 236 -1 0
+0 554 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot10 right shaker1 l2 l1
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 544 0 1
-0 567 -1 0
-0 562 0 1
+0 236 -1 0
+0 554 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot2 left shaker1 l1 l0
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 545 0 1
 0 237 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot2 left shaker1 l2 l1
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 545 0 1
 0 237 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot2 right shaker1 l1 l0
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 545 0 1
 0 237 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot2 right shaker1 l2 l1
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 545 0 1
 0 237 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot3 left shaker1 l1 l0
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 546 0 1
 0 238 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot3 left shaker1 l2 l1
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 546 0 1
 0 238 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot3 right shaker1 l1 l0
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 546 0 1
 0 238 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot3 right shaker1 l2 l1
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 546 0 1
 0 238 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot4 left shaker1 l1 l0
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 547 0 1
 0 239 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot4 left shaker1 l2 l1
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 547 0 1
 0 239 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot4 right shaker1 l1 l0
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 547 0 1
 0 239 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot4 right shaker1 l2 l1
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 547 0 1
 0 239 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot5 left shaker1 l1 l0
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 548 0 1
 0 240 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot5 left shaker1 l2 l1
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 548 0 1
 0 240 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot5 right shaker1 l1 l0
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 548 0 1
 0 240 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot5 right shaker1 l2 l1
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 548 0 1
 0 240 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot6 left shaker1 l1 l0
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 549 0 1
 0 241 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot6 left shaker1 l2 l1
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 549 0 1
 0 241 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot6 right shaker1 l1 l0
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 549 0 1
 0 241 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot6 right shaker1 l2 l1
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 549 0 1
 0 241 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot7 left shaker1 l1 l0
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 550 0 1
 0 242 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot7 left shaker1 l2 l1
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 550 0 1
 0 242 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot7 right shaker1 l1 l0
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 550 0 1
 0 242 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot7 right shaker1 l2 l1
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 550 0 1
 0 242 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot8 left shaker1 l1 l0
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 551 0 1
 0 243 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot8 left shaker1 l2 l1
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 551 0 1
 0 243 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot8 right shaker1 l1 l0
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 551 0 1
 0 243 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot8 right shaker1 l2 l1
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 551 0 1
 0 243 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot9 left shaker1 l1 l0
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 552 0 1
 0 244 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot9 left shaker1 l2 l1
 3
-235 0
+234 0
 8 1
 522 0
 4
 0 552 0 1
 0 244 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot9 right shaker1 l1 l0
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 552 0 1
 0 244 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail10 shot9 right shaker1 l2 l1
 3
-235 0
+234 0
 11 1
 522 0
 4
 0 552 0 1
 0 244 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot1 left shaker1 l1 l0
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 543 0 1
-0 225 -1 0
+0 224 -1 0
 0 553 0 1
 0 565 1 0
 1
@@ -21332,12 +21332,12 @@ end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot1 left shaker1 l2 l1
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 543 0 1
-0 225 -1 0
+0 224 -1 0
 0 553 0 1
 0 565 2 1
 1
@@ -21345,12 +21345,12 @@ end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot1 right shaker1 l1 l0
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 543 0 1
-0 225 -1 0
+0 224 -1 0
 0 553 0 1
 0 565 1 0
 1
@@ -21358,12 +21358,12 @@ end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot1 right shaker1 l2 l1
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 543 0 1
-0 225 -1 0
+0 224 -1 0
 0 553 0 1
 0 565 2 1
 1
@@ -21371,468 +21371,468 @@ end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot10 left shaker1 l1 l0
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 544 0 1
-0 226 -1 0
-0 562 0 1
+0 225 -1 0
+0 554 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot10 left shaker1 l2 l1
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 544 0 1
-0 226 -1 0
-0 562 0 1
+0 225 -1 0
+0 554 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot10 right shaker1 l1 l0
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 544 0 1
-0 226 -1 0
-0 562 0 1
+0 225 -1 0
+0 554 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot10 right shaker1 l2 l1
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 544 0 1
-0 226 -1 0
-0 562 0 1
+0 225 -1 0
+0 554 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot2 left shaker1 l1 l0
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 545 0 1
-0 227 -1 0
-0 554 0 1
+0 226 -1 0
+0 555 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot2 left shaker1 l2 l1
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 545 0 1
-0 227 -1 0
-0 554 0 1
+0 226 -1 0
+0 555 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot2 right shaker1 l1 l0
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 545 0 1
-0 227 -1 0
-0 554 0 1
+0 226 -1 0
+0 555 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot2 right shaker1 l2 l1
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 545 0 1
-0 227 -1 0
-0 554 0 1
+0 226 -1 0
+0 555 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot3 left shaker1 l1 l0
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 546 0 1
-0 228 -1 0
-0 555 0 1
+0 227 -1 0
+0 556 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot3 left shaker1 l2 l1
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 546 0 1
-0 228 -1 0
-0 555 0 1
+0 227 -1 0
+0 556 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot3 right shaker1 l1 l0
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 546 0 1
-0 228 -1 0
-0 555 0 1
+0 227 -1 0
+0 556 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot3 right shaker1 l2 l1
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 546 0 1
-0 228 -1 0
-0 555 0 1
+0 227 -1 0
+0 556 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot4 left shaker1 l1 l0
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 547 0 1
-0 229 -1 0
-0 556 0 1
+0 228 -1 0
+0 557 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot4 left shaker1 l2 l1
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 547 0 1
-0 229 -1 0
-0 556 0 1
+0 228 -1 0
+0 557 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot4 right shaker1 l1 l0
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 547 0 1
-0 229 -1 0
-0 556 0 1
+0 228 -1 0
+0 557 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot4 right shaker1 l2 l1
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 547 0 1
-0 229 -1 0
-0 556 0 1
+0 228 -1 0
+0 557 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot5 left shaker1 l1 l0
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 548 0 1
-0 230 -1 0
-0 557 0 1
+0 229 -1 0
+0 558 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot5 left shaker1 l2 l1
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 548 0 1
-0 230 -1 0
-0 557 0 1
+0 229 -1 0
+0 558 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot5 right shaker1 l1 l0
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 548 0 1
-0 230 -1 0
-0 557 0 1
+0 229 -1 0
+0 558 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot5 right shaker1 l2 l1
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 548 0 1
-0 230 -1 0
-0 557 0 1
+0 229 -1 0
+0 558 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot6 left shaker1 l1 l0
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 549 0 1
-0 231 -1 0
-0 558 0 1
+0 230 -1 0
+0 559 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot6 left shaker1 l2 l1
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 549 0 1
-0 231 -1 0
-0 558 0 1
+0 230 -1 0
+0 559 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot6 right shaker1 l1 l0
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 549 0 1
-0 231 -1 0
-0 558 0 1
+0 230 -1 0
+0 559 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot6 right shaker1 l2 l1
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 549 0 1
-0 231 -1 0
-0 558 0 1
+0 230 -1 0
+0 559 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot7 left shaker1 l1 l0
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 550 0 1
-0 232 -1 0
-0 559 0 1
+0 231 -1 0
+0 560 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot7 left shaker1 l2 l1
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 550 0 1
-0 232 -1 0
-0 559 0 1
+0 231 -1 0
+0 560 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot7 right shaker1 l1 l0
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 550 0 1
-0 232 -1 0
-0 559 0 1
+0 231 -1 0
+0 560 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot7 right shaker1 l2 l1
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 550 0 1
-0 232 -1 0
-0 559 0 1
+0 231 -1 0
+0 560 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot8 left shaker1 l1 l0
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 551 0 1
-0 233 -1 0
-0 560 0 1
+0 232 -1 0
+0 561 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot8 left shaker1 l2 l1
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 551 0 1
-0 233 -1 0
-0 560 0 1
+0 232 -1 0
+0 561 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot8 right shaker1 l1 l0
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 551 0 1
-0 233 -1 0
-0 560 0 1
+0 232 -1 0
+0 561 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot8 right shaker1 l2 l1
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 551 0 1
-0 233 -1 0
-0 560 0 1
+0 232 -1 0
+0 561 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot9 left shaker1 l1 l0
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 552 0 1
-0 234 -1 0
-0 561 0 1
+0 233 -1 0
+0 562 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot9 left shaker1 l2 l1
 3
-224 0
+223 0
 8 1
 522 0
 4
 0 552 0 1
-0 234 -1 0
-0 561 0 1
+0 233 -1 0
+0 562 0 1
 0 565 2 1
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot9 right shaker1 l1 l0
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 552 0 1
-0 234 -1 0
-0 561 0 1
+0 233 -1 0
+0 562 0 1
 0 565 1 0
 1
 end_operator
 begin_operator
 pour-shaker-to-shot cocktail2 shot9 right shaker1 l2 l1
 3
-224 0
+223 0
 11 1
 522 0
 4
 0 552 0 1
-0 234 -1 0
-0 561 0 1
+0 233 -1 0
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -21897,7 +21897,7 @@ pour-shaker-to-shot cocktail3 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 247 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -21910,7 +21910,7 @@ pour-shaker-to-shot cocktail3 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 247 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -21923,7 +21923,7 @@ pour-shaker-to-shot cocktail3 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 247 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -21936,7 +21936,7 @@ pour-shaker-to-shot cocktail3 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 247 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -21949,7 +21949,7 @@ pour-shaker-to-shot cocktail3 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 248 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -21962,7 +21962,7 @@ pour-shaker-to-shot cocktail3 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 248 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -21975,7 +21975,7 @@ pour-shaker-to-shot cocktail3 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 248 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -21988,7 +21988,7 @@ pour-shaker-to-shot cocktail3 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 248 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -22001,7 +22001,7 @@ pour-shaker-to-shot cocktail3 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 249 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -22014,7 +22014,7 @@ pour-shaker-to-shot cocktail3 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 249 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -22027,7 +22027,7 @@ pour-shaker-to-shot cocktail3 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 249 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -22040,7 +22040,7 @@ pour-shaker-to-shot cocktail3 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 249 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -22053,7 +22053,7 @@ pour-shaker-to-shot cocktail3 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 250 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -22066,7 +22066,7 @@ pour-shaker-to-shot cocktail3 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 250 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -22079,7 +22079,7 @@ pour-shaker-to-shot cocktail3 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 250 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -22092,7 +22092,7 @@ pour-shaker-to-shot cocktail3 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 250 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -22105,7 +22105,7 @@ pour-shaker-to-shot cocktail3 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 251 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -22118,7 +22118,7 @@ pour-shaker-to-shot cocktail3 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 251 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -22131,7 +22131,7 @@ pour-shaker-to-shot cocktail3 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 251 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -22144,7 +22144,7 @@ pour-shaker-to-shot cocktail3 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 251 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -22157,7 +22157,7 @@ pour-shaker-to-shot cocktail3 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 252 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -22170,7 +22170,7 @@ pour-shaker-to-shot cocktail3 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 252 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -22183,7 +22183,7 @@ pour-shaker-to-shot cocktail3 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 252 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -22196,7 +22196,7 @@ pour-shaker-to-shot cocktail3 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 252 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -22209,7 +22209,7 @@ pour-shaker-to-shot cocktail3 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 253 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -22222,7 +22222,7 @@ pour-shaker-to-shot cocktail3 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 253 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -22235,7 +22235,7 @@ pour-shaker-to-shot cocktail3 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 253 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -22248,7 +22248,7 @@ pour-shaker-to-shot cocktail3 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 253 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -22261,7 +22261,7 @@ pour-shaker-to-shot cocktail3 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 254 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -22274,7 +22274,7 @@ pour-shaker-to-shot cocktail3 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 254 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -22287,7 +22287,7 @@ pour-shaker-to-shot cocktail3 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 254 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -22300,7 +22300,7 @@ pour-shaker-to-shot cocktail3 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 254 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -22313,7 +22313,7 @@ pour-shaker-to-shot cocktail3 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 255 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -22326,7 +22326,7 @@ pour-shaker-to-shot cocktail3 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 255 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -22339,7 +22339,7 @@ pour-shaker-to-shot cocktail3 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 255 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -22352,7 +22352,7 @@ pour-shaker-to-shot cocktail3 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 255 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -22417,7 +22417,7 @@ pour-shaker-to-shot cocktail4 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 258 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -22430,7 +22430,7 @@ pour-shaker-to-shot cocktail4 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 258 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -22443,7 +22443,7 @@ pour-shaker-to-shot cocktail4 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 258 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -22456,7 +22456,7 @@ pour-shaker-to-shot cocktail4 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 258 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -22469,7 +22469,7 @@ pour-shaker-to-shot cocktail4 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 259 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -22482,7 +22482,7 @@ pour-shaker-to-shot cocktail4 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 259 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -22495,7 +22495,7 @@ pour-shaker-to-shot cocktail4 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 259 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -22508,7 +22508,7 @@ pour-shaker-to-shot cocktail4 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 259 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -22521,7 +22521,7 @@ pour-shaker-to-shot cocktail4 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 260 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -22534,7 +22534,7 @@ pour-shaker-to-shot cocktail4 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 260 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -22547,7 +22547,7 @@ pour-shaker-to-shot cocktail4 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 260 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -22560,7 +22560,7 @@ pour-shaker-to-shot cocktail4 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 260 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -22573,7 +22573,7 @@ pour-shaker-to-shot cocktail4 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 261 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -22586,7 +22586,7 @@ pour-shaker-to-shot cocktail4 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 261 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -22599,7 +22599,7 @@ pour-shaker-to-shot cocktail4 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 261 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -22612,7 +22612,7 @@ pour-shaker-to-shot cocktail4 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 261 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -22625,7 +22625,7 @@ pour-shaker-to-shot cocktail4 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 262 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -22638,7 +22638,7 @@ pour-shaker-to-shot cocktail4 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 262 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -22651,7 +22651,7 @@ pour-shaker-to-shot cocktail4 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 262 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -22664,7 +22664,7 @@ pour-shaker-to-shot cocktail4 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 262 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -22677,7 +22677,7 @@ pour-shaker-to-shot cocktail4 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 263 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -22690,7 +22690,7 @@ pour-shaker-to-shot cocktail4 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 263 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -22703,7 +22703,7 @@ pour-shaker-to-shot cocktail4 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 263 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -22716,7 +22716,7 @@ pour-shaker-to-shot cocktail4 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 263 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -22729,7 +22729,7 @@ pour-shaker-to-shot cocktail4 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 264 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -22742,7 +22742,7 @@ pour-shaker-to-shot cocktail4 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 264 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -22755,7 +22755,7 @@ pour-shaker-to-shot cocktail4 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 264 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -22768,7 +22768,7 @@ pour-shaker-to-shot cocktail4 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 264 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -22781,7 +22781,7 @@ pour-shaker-to-shot cocktail4 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 265 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -22794,7 +22794,7 @@ pour-shaker-to-shot cocktail4 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 265 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -22807,7 +22807,7 @@ pour-shaker-to-shot cocktail4 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 265 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -22820,7 +22820,7 @@ pour-shaker-to-shot cocktail4 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 265 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -22833,7 +22833,7 @@ pour-shaker-to-shot cocktail4 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 266 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -22846,7 +22846,7 @@ pour-shaker-to-shot cocktail4 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 266 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -22859,7 +22859,7 @@ pour-shaker-to-shot cocktail4 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 266 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -22872,7 +22872,7 @@ pour-shaker-to-shot cocktail4 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 266 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -22937,7 +22937,7 @@ pour-shaker-to-shot cocktail5 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 269 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -22950,7 +22950,7 @@ pour-shaker-to-shot cocktail5 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 269 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -22963,7 +22963,7 @@ pour-shaker-to-shot cocktail5 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 269 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -22976,7 +22976,7 @@ pour-shaker-to-shot cocktail5 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 269 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -22989,7 +22989,7 @@ pour-shaker-to-shot cocktail5 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 270 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -23002,7 +23002,7 @@ pour-shaker-to-shot cocktail5 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 270 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -23015,7 +23015,7 @@ pour-shaker-to-shot cocktail5 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 270 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -23028,7 +23028,7 @@ pour-shaker-to-shot cocktail5 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 270 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -23041,7 +23041,7 @@ pour-shaker-to-shot cocktail5 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 271 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -23054,7 +23054,7 @@ pour-shaker-to-shot cocktail5 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 271 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -23067,7 +23067,7 @@ pour-shaker-to-shot cocktail5 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 271 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -23080,7 +23080,7 @@ pour-shaker-to-shot cocktail5 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 271 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -23093,7 +23093,7 @@ pour-shaker-to-shot cocktail5 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 272 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -23106,7 +23106,7 @@ pour-shaker-to-shot cocktail5 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 272 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -23119,7 +23119,7 @@ pour-shaker-to-shot cocktail5 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 272 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -23132,7 +23132,7 @@ pour-shaker-to-shot cocktail5 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 272 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -23145,7 +23145,7 @@ pour-shaker-to-shot cocktail5 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 273 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -23158,7 +23158,7 @@ pour-shaker-to-shot cocktail5 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 273 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -23171,7 +23171,7 @@ pour-shaker-to-shot cocktail5 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 273 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -23184,7 +23184,7 @@ pour-shaker-to-shot cocktail5 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 273 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -23197,7 +23197,7 @@ pour-shaker-to-shot cocktail5 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 274 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -23210,7 +23210,7 @@ pour-shaker-to-shot cocktail5 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 274 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -23223,7 +23223,7 @@ pour-shaker-to-shot cocktail5 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 274 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -23236,7 +23236,7 @@ pour-shaker-to-shot cocktail5 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 274 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -23249,7 +23249,7 @@ pour-shaker-to-shot cocktail5 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 275 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -23262,7 +23262,7 @@ pour-shaker-to-shot cocktail5 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 275 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -23275,7 +23275,7 @@ pour-shaker-to-shot cocktail5 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 275 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -23288,7 +23288,7 @@ pour-shaker-to-shot cocktail5 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 275 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -23301,7 +23301,7 @@ pour-shaker-to-shot cocktail5 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 276 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -23314,7 +23314,7 @@ pour-shaker-to-shot cocktail5 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 276 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -23327,7 +23327,7 @@ pour-shaker-to-shot cocktail5 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 276 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -23340,7 +23340,7 @@ pour-shaker-to-shot cocktail5 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 276 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -23353,7 +23353,7 @@ pour-shaker-to-shot cocktail5 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 277 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -23366,7 +23366,7 @@ pour-shaker-to-shot cocktail5 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 277 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -23379,7 +23379,7 @@ pour-shaker-to-shot cocktail5 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 277 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -23392,7 +23392,7 @@ pour-shaker-to-shot cocktail5 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 277 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -23457,7 +23457,7 @@ pour-shaker-to-shot cocktail6 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 280 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -23470,7 +23470,7 @@ pour-shaker-to-shot cocktail6 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 280 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -23483,7 +23483,7 @@ pour-shaker-to-shot cocktail6 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 280 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -23496,7 +23496,7 @@ pour-shaker-to-shot cocktail6 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 280 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -23509,7 +23509,7 @@ pour-shaker-to-shot cocktail6 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 281 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -23522,7 +23522,7 @@ pour-shaker-to-shot cocktail6 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 281 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -23535,7 +23535,7 @@ pour-shaker-to-shot cocktail6 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 281 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -23548,7 +23548,7 @@ pour-shaker-to-shot cocktail6 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 281 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -23561,7 +23561,7 @@ pour-shaker-to-shot cocktail6 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 282 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -23574,7 +23574,7 @@ pour-shaker-to-shot cocktail6 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 282 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -23587,7 +23587,7 @@ pour-shaker-to-shot cocktail6 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 282 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -23600,7 +23600,7 @@ pour-shaker-to-shot cocktail6 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 282 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -23613,7 +23613,7 @@ pour-shaker-to-shot cocktail6 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 283 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -23626,7 +23626,7 @@ pour-shaker-to-shot cocktail6 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 283 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -23639,7 +23639,7 @@ pour-shaker-to-shot cocktail6 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 283 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -23652,7 +23652,7 @@ pour-shaker-to-shot cocktail6 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 283 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -23665,7 +23665,7 @@ pour-shaker-to-shot cocktail6 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 284 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -23678,7 +23678,7 @@ pour-shaker-to-shot cocktail6 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 284 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -23691,7 +23691,7 @@ pour-shaker-to-shot cocktail6 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 284 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -23704,7 +23704,7 @@ pour-shaker-to-shot cocktail6 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 284 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -23717,7 +23717,7 @@ pour-shaker-to-shot cocktail6 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 285 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -23730,7 +23730,7 @@ pour-shaker-to-shot cocktail6 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 285 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -23743,7 +23743,7 @@ pour-shaker-to-shot cocktail6 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 285 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -23756,7 +23756,7 @@ pour-shaker-to-shot cocktail6 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 285 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -23769,7 +23769,7 @@ pour-shaker-to-shot cocktail6 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 286 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -23782,7 +23782,7 @@ pour-shaker-to-shot cocktail6 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 286 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -23795,7 +23795,7 @@ pour-shaker-to-shot cocktail6 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 286 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -23808,7 +23808,7 @@ pour-shaker-to-shot cocktail6 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 286 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -23821,7 +23821,7 @@ pour-shaker-to-shot cocktail6 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 287 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -23834,7 +23834,7 @@ pour-shaker-to-shot cocktail6 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 287 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -23847,7 +23847,7 @@ pour-shaker-to-shot cocktail6 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 287 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -23860,7 +23860,7 @@ pour-shaker-to-shot cocktail6 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 287 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -23873,7 +23873,7 @@ pour-shaker-to-shot cocktail6 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 288 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -23886,7 +23886,7 @@ pour-shaker-to-shot cocktail6 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 288 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -23899,7 +23899,7 @@ pour-shaker-to-shot cocktail6 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 288 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -23912,7 +23912,7 @@ pour-shaker-to-shot cocktail6 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 288 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -23977,7 +23977,7 @@ pour-shaker-to-shot cocktail7 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 291 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -23990,7 +23990,7 @@ pour-shaker-to-shot cocktail7 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 291 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -24003,7 +24003,7 @@ pour-shaker-to-shot cocktail7 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 291 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -24016,7 +24016,7 @@ pour-shaker-to-shot cocktail7 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 291 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -24029,7 +24029,7 @@ pour-shaker-to-shot cocktail7 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 292 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -24042,7 +24042,7 @@ pour-shaker-to-shot cocktail7 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 292 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -24055,7 +24055,7 @@ pour-shaker-to-shot cocktail7 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 292 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -24068,7 +24068,7 @@ pour-shaker-to-shot cocktail7 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 292 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -24081,7 +24081,7 @@ pour-shaker-to-shot cocktail7 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 293 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -24094,7 +24094,7 @@ pour-shaker-to-shot cocktail7 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 293 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -24107,7 +24107,7 @@ pour-shaker-to-shot cocktail7 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 293 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -24120,7 +24120,7 @@ pour-shaker-to-shot cocktail7 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 293 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -24133,7 +24133,7 @@ pour-shaker-to-shot cocktail7 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 294 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -24146,7 +24146,7 @@ pour-shaker-to-shot cocktail7 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 294 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -24159,7 +24159,7 @@ pour-shaker-to-shot cocktail7 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 294 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -24172,7 +24172,7 @@ pour-shaker-to-shot cocktail7 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 294 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -24185,7 +24185,7 @@ pour-shaker-to-shot cocktail7 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 295 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -24198,7 +24198,7 @@ pour-shaker-to-shot cocktail7 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 295 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -24211,7 +24211,7 @@ pour-shaker-to-shot cocktail7 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 295 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -24224,7 +24224,7 @@ pour-shaker-to-shot cocktail7 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 295 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -24237,7 +24237,7 @@ pour-shaker-to-shot cocktail7 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 296 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -24250,7 +24250,7 @@ pour-shaker-to-shot cocktail7 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 296 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -24263,7 +24263,7 @@ pour-shaker-to-shot cocktail7 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 296 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -24276,7 +24276,7 @@ pour-shaker-to-shot cocktail7 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 296 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -24289,7 +24289,7 @@ pour-shaker-to-shot cocktail7 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 297 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -24302,7 +24302,7 @@ pour-shaker-to-shot cocktail7 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 297 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -24315,7 +24315,7 @@ pour-shaker-to-shot cocktail7 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 297 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -24328,7 +24328,7 @@ pour-shaker-to-shot cocktail7 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 297 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -24341,7 +24341,7 @@ pour-shaker-to-shot cocktail7 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 298 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -24354,7 +24354,7 @@ pour-shaker-to-shot cocktail7 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 298 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -24367,7 +24367,7 @@ pour-shaker-to-shot cocktail7 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 298 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -24380,7 +24380,7 @@ pour-shaker-to-shot cocktail7 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 298 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -24393,7 +24393,7 @@ pour-shaker-to-shot cocktail7 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 299 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -24406,7 +24406,7 @@ pour-shaker-to-shot cocktail7 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 299 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -24419,7 +24419,7 @@ pour-shaker-to-shot cocktail7 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 299 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -24432,7 +24432,7 @@ pour-shaker-to-shot cocktail7 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 299 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -24497,7 +24497,7 @@ pour-shaker-to-shot cocktail8 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 302 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -24510,7 +24510,7 @@ pour-shaker-to-shot cocktail8 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 302 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -24523,7 +24523,7 @@ pour-shaker-to-shot cocktail8 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 302 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -24536,7 +24536,7 @@ pour-shaker-to-shot cocktail8 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 302 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -24549,7 +24549,7 @@ pour-shaker-to-shot cocktail8 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 303 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -24562,7 +24562,7 @@ pour-shaker-to-shot cocktail8 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 303 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -24575,7 +24575,7 @@ pour-shaker-to-shot cocktail8 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 303 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -24588,7 +24588,7 @@ pour-shaker-to-shot cocktail8 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 303 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -24601,7 +24601,7 @@ pour-shaker-to-shot cocktail8 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 304 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -24614,7 +24614,7 @@ pour-shaker-to-shot cocktail8 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 304 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -24627,7 +24627,7 @@ pour-shaker-to-shot cocktail8 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 304 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -24640,7 +24640,7 @@ pour-shaker-to-shot cocktail8 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 304 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -24653,7 +24653,7 @@ pour-shaker-to-shot cocktail8 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 305 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -24666,7 +24666,7 @@ pour-shaker-to-shot cocktail8 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 305 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -24679,7 +24679,7 @@ pour-shaker-to-shot cocktail8 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 305 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -24692,7 +24692,7 @@ pour-shaker-to-shot cocktail8 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 305 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -24705,7 +24705,7 @@ pour-shaker-to-shot cocktail8 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 306 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -24718,7 +24718,7 @@ pour-shaker-to-shot cocktail8 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 306 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -24731,7 +24731,7 @@ pour-shaker-to-shot cocktail8 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 306 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -24744,7 +24744,7 @@ pour-shaker-to-shot cocktail8 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 306 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -24757,7 +24757,7 @@ pour-shaker-to-shot cocktail8 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 307 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -24770,7 +24770,7 @@ pour-shaker-to-shot cocktail8 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 307 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -24783,7 +24783,7 @@ pour-shaker-to-shot cocktail8 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 307 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -24796,7 +24796,7 @@ pour-shaker-to-shot cocktail8 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 307 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -24809,7 +24809,7 @@ pour-shaker-to-shot cocktail8 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 308 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -24822,7 +24822,7 @@ pour-shaker-to-shot cocktail8 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 308 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -24835,7 +24835,7 @@ pour-shaker-to-shot cocktail8 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 308 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -24848,7 +24848,7 @@ pour-shaker-to-shot cocktail8 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 308 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -24861,7 +24861,7 @@ pour-shaker-to-shot cocktail8 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 309 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -24874,7 +24874,7 @@ pour-shaker-to-shot cocktail8 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 309 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -24887,7 +24887,7 @@ pour-shaker-to-shot cocktail8 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 309 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -24900,7 +24900,7 @@ pour-shaker-to-shot cocktail8 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 309 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -24913,7 +24913,7 @@ pour-shaker-to-shot cocktail8 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 310 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -24926,7 +24926,7 @@ pour-shaker-to-shot cocktail8 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 310 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -24939,7 +24939,7 @@ pour-shaker-to-shot cocktail8 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 310 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -24952,7 +24952,7 @@ pour-shaker-to-shot cocktail8 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 310 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -25017,7 +25017,7 @@ pour-shaker-to-shot cocktail9 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 313 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -25030,7 +25030,7 @@ pour-shaker-to-shot cocktail9 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 313 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -25043,7 +25043,7 @@ pour-shaker-to-shot cocktail9 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 313 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -25056,7 +25056,7 @@ pour-shaker-to-shot cocktail9 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 313 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -25069,7 +25069,7 @@ pour-shaker-to-shot cocktail9 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 314 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -25082,7 +25082,7 @@ pour-shaker-to-shot cocktail9 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 314 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -25095,7 +25095,7 @@ pour-shaker-to-shot cocktail9 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 314 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -25108,7 +25108,7 @@ pour-shaker-to-shot cocktail9 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 314 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -25121,7 +25121,7 @@ pour-shaker-to-shot cocktail9 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 315 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -25134,7 +25134,7 @@ pour-shaker-to-shot cocktail9 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 315 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -25147,7 +25147,7 @@ pour-shaker-to-shot cocktail9 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 315 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -25160,7 +25160,7 @@ pour-shaker-to-shot cocktail9 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 315 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -25173,7 +25173,7 @@ pour-shaker-to-shot cocktail9 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 316 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -25186,7 +25186,7 @@ pour-shaker-to-shot cocktail9 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 316 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -25199,7 +25199,7 @@ pour-shaker-to-shot cocktail9 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 316 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -25212,7 +25212,7 @@ pour-shaker-to-shot cocktail9 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 316 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -25225,7 +25225,7 @@ pour-shaker-to-shot cocktail9 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 317 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -25238,7 +25238,7 @@ pour-shaker-to-shot cocktail9 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 317 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -25251,7 +25251,7 @@ pour-shaker-to-shot cocktail9 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 317 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -25264,7 +25264,7 @@ pour-shaker-to-shot cocktail9 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 317 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -25277,7 +25277,7 @@ pour-shaker-to-shot cocktail9 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 318 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -25290,7 +25290,7 @@ pour-shaker-to-shot cocktail9 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 318 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -25303,7 +25303,7 @@ pour-shaker-to-shot cocktail9 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 318 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -25316,7 +25316,7 @@ pour-shaker-to-shot cocktail9 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 318 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -25329,7 +25329,7 @@ pour-shaker-to-shot cocktail9 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 319 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -25342,7 +25342,7 @@ pour-shaker-to-shot cocktail9 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 319 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -25355,7 +25355,7 @@ pour-shaker-to-shot cocktail9 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 319 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -25368,7 +25368,7 @@ pour-shaker-to-shot cocktail9 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 319 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -25381,7 +25381,7 @@ pour-shaker-to-shot cocktail9 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 320 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -25394,7 +25394,7 @@ pour-shaker-to-shot cocktail9 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 320 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -25407,7 +25407,7 @@ pour-shaker-to-shot cocktail9 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 320 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -25420,7 +25420,7 @@ pour-shaker-to-shot cocktail9 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 320 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -25433,7 +25433,7 @@ pour-shaker-to-shot cocktail9 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 321 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -25446,7 +25446,7 @@ pour-shaker-to-shot cocktail9 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 321 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -25459,7 +25459,7 @@ pour-shaker-to-shot cocktail9 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 321 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -25472,7 +25472,7 @@ pour-shaker-to-shot cocktail9 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 321 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -25537,7 +25537,7 @@ pour-shaker-to-shot ingredient1 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 482 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -25550,7 +25550,7 @@ pour-shaker-to-shot ingredient1 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 482 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -25563,7 +25563,7 @@ pour-shaker-to-shot ingredient1 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 482 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -25576,7 +25576,7 @@ pour-shaker-to-shot ingredient1 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 482 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -25589,7 +25589,7 @@ pour-shaker-to-shot ingredient1 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 462 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -25602,7 +25602,7 @@ pour-shaker-to-shot ingredient1 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 462 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -25615,7 +25615,7 @@ pour-shaker-to-shot ingredient1 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 462 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -25628,7 +25628,7 @@ pour-shaker-to-shot ingredient1 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 462 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -25641,7 +25641,7 @@ pour-shaker-to-shot ingredient1 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 442 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -25654,7 +25654,7 @@ pour-shaker-to-shot ingredient1 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 442 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -25667,7 +25667,7 @@ pour-shaker-to-shot ingredient1 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 442 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -25680,7 +25680,7 @@ pour-shaker-to-shot ingredient1 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 442 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -25693,7 +25693,7 @@ pour-shaker-to-shot ingredient1 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 422 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -25706,7 +25706,7 @@ pour-shaker-to-shot ingredient1 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 422 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -25719,7 +25719,7 @@ pour-shaker-to-shot ingredient1 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 422 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -25732,7 +25732,7 @@ pour-shaker-to-shot ingredient1 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 422 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -25745,7 +25745,7 @@ pour-shaker-to-shot ingredient1 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 402 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -25758,7 +25758,7 @@ pour-shaker-to-shot ingredient1 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 402 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -25771,7 +25771,7 @@ pour-shaker-to-shot ingredient1 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 402 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -25784,7 +25784,7 @@ pour-shaker-to-shot ingredient1 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 402 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -25797,7 +25797,7 @@ pour-shaker-to-shot ingredient1 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 382 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -25810,7 +25810,7 @@ pour-shaker-to-shot ingredient1 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 382 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -25823,7 +25823,7 @@ pour-shaker-to-shot ingredient1 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 382 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -25836,7 +25836,7 @@ pour-shaker-to-shot ingredient1 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 382 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -25849,7 +25849,7 @@ pour-shaker-to-shot ingredient1 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 362 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -25862,7 +25862,7 @@ pour-shaker-to-shot ingredient1 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 362 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -25875,7 +25875,7 @@ pour-shaker-to-shot ingredient1 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 362 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -25888,7 +25888,7 @@ pour-shaker-to-shot ingredient1 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 362 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -25901,7 +25901,7 @@ pour-shaker-to-shot ingredient1 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 342 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -25914,7 +25914,7 @@ pour-shaker-to-shot ingredient1 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 342 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -25927,7 +25927,7 @@ pour-shaker-to-shot ingredient1 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 342 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -25940,7 +25940,7 @@ pour-shaker-to-shot ingredient1 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 342 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -25953,7 +25953,7 @@ pour-shaker-to-shot ingredient1 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 322 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -25966,7 +25966,7 @@ pour-shaker-to-shot ingredient1 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 322 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -25979,7 +25979,7 @@ pour-shaker-to-shot ingredient1 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 322 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -25992,7 +25992,7 @@ pour-shaker-to-shot ingredient1 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 322 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -26057,7 +26057,7 @@ pour-shaker-to-shot ingredient10 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 483 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -26070,7 +26070,7 @@ pour-shaker-to-shot ingredient10 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 483 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -26083,7 +26083,7 @@ pour-shaker-to-shot ingredient10 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 483 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -26096,7 +26096,7 @@ pour-shaker-to-shot ingredient10 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 483 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -26109,7 +26109,7 @@ pour-shaker-to-shot ingredient10 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 463 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -26122,7 +26122,7 @@ pour-shaker-to-shot ingredient10 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 463 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -26135,7 +26135,7 @@ pour-shaker-to-shot ingredient10 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 463 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -26148,7 +26148,7 @@ pour-shaker-to-shot ingredient10 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 463 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -26161,7 +26161,7 @@ pour-shaker-to-shot ingredient10 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 443 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -26174,7 +26174,7 @@ pour-shaker-to-shot ingredient10 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 443 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -26187,7 +26187,7 @@ pour-shaker-to-shot ingredient10 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 443 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -26200,7 +26200,7 @@ pour-shaker-to-shot ingredient10 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 443 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -26213,7 +26213,7 @@ pour-shaker-to-shot ingredient10 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 423 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -26226,7 +26226,7 @@ pour-shaker-to-shot ingredient10 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 423 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -26239,7 +26239,7 @@ pour-shaker-to-shot ingredient10 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 423 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -26252,7 +26252,7 @@ pour-shaker-to-shot ingredient10 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 423 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -26265,7 +26265,7 @@ pour-shaker-to-shot ingredient10 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 403 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -26278,7 +26278,7 @@ pour-shaker-to-shot ingredient10 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 403 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -26291,7 +26291,7 @@ pour-shaker-to-shot ingredient10 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 403 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -26304,7 +26304,7 @@ pour-shaker-to-shot ingredient10 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 403 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -26317,7 +26317,7 @@ pour-shaker-to-shot ingredient10 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 383 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -26330,7 +26330,7 @@ pour-shaker-to-shot ingredient10 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 383 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -26343,7 +26343,7 @@ pour-shaker-to-shot ingredient10 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 383 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -26356,7 +26356,7 @@ pour-shaker-to-shot ingredient10 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 383 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -26369,7 +26369,7 @@ pour-shaker-to-shot ingredient10 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 363 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -26382,7 +26382,7 @@ pour-shaker-to-shot ingredient10 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 363 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -26395,7 +26395,7 @@ pour-shaker-to-shot ingredient10 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 363 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -26408,7 +26408,7 @@ pour-shaker-to-shot ingredient10 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 363 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -26421,7 +26421,7 @@ pour-shaker-to-shot ingredient10 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 343 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -26434,7 +26434,7 @@ pour-shaker-to-shot ingredient10 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 343 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -26447,7 +26447,7 @@ pour-shaker-to-shot ingredient10 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 343 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -26460,7 +26460,7 @@ pour-shaker-to-shot ingredient10 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 343 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -26473,7 +26473,7 @@ pour-shaker-to-shot ingredient10 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 323 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -26486,7 +26486,7 @@ pour-shaker-to-shot ingredient10 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 323 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -26499,7 +26499,7 @@ pour-shaker-to-shot ingredient10 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 323 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -26512,7 +26512,7 @@ pour-shaker-to-shot ingredient10 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 323 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -26577,7 +26577,7 @@ pour-shaker-to-shot ingredient11 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 484 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -26590,7 +26590,7 @@ pour-shaker-to-shot ingredient11 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 484 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -26603,7 +26603,7 @@ pour-shaker-to-shot ingredient11 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 484 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -26616,7 +26616,7 @@ pour-shaker-to-shot ingredient11 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 484 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -26629,7 +26629,7 @@ pour-shaker-to-shot ingredient11 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 464 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -26642,7 +26642,7 @@ pour-shaker-to-shot ingredient11 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 464 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -26655,7 +26655,7 @@ pour-shaker-to-shot ingredient11 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 464 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -26668,7 +26668,7 @@ pour-shaker-to-shot ingredient11 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 464 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -26681,7 +26681,7 @@ pour-shaker-to-shot ingredient11 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 444 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -26694,7 +26694,7 @@ pour-shaker-to-shot ingredient11 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 444 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -26707,7 +26707,7 @@ pour-shaker-to-shot ingredient11 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 444 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -26720,7 +26720,7 @@ pour-shaker-to-shot ingredient11 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 444 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -26733,7 +26733,7 @@ pour-shaker-to-shot ingredient11 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 424 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -26746,7 +26746,7 @@ pour-shaker-to-shot ingredient11 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 424 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -26759,7 +26759,7 @@ pour-shaker-to-shot ingredient11 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 424 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -26772,7 +26772,7 @@ pour-shaker-to-shot ingredient11 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 424 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -26785,7 +26785,7 @@ pour-shaker-to-shot ingredient11 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 404 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -26798,7 +26798,7 @@ pour-shaker-to-shot ingredient11 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 404 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -26811,7 +26811,7 @@ pour-shaker-to-shot ingredient11 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 404 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -26824,7 +26824,7 @@ pour-shaker-to-shot ingredient11 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 404 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -26837,7 +26837,7 @@ pour-shaker-to-shot ingredient11 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 384 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -26850,7 +26850,7 @@ pour-shaker-to-shot ingredient11 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 384 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -26863,7 +26863,7 @@ pour-shaker-to-shot ingredient11 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 384 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -26876,7 +26876,7 @@ pour-shaker-to-shot ingredient11 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 384 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -26889,7 +26889,7 @@ pour-shaker-to-shot ingredient11 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 364 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -26902,7 +26902,7 @@ pour-shaker-to-shot ingredient11 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 364 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -26915,7 +26915,7 @@ pour-shaker-to-shot ingredient11 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 364 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -26928,7 +26928,7 @@ pour-shaker-to-shot ingredient11 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 364 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -26941,7 +26941,7 @@ pour-shaker-to-shot ingredient11 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 344 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -26954,7 +26954,7 @@ pour-shaker-to-shot ingredient11 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 344 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -26967,7 +26967,7 @@ pour-shaker-to-shot ingredient11 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 344 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -26980,7 +26980,7 @@ pour-shaker-to-shot ingredient11 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 344 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -26993,7 +26993,7 @@ pour-shaker-to-shot ingredient11 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 324 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -27006,7 +27006,7 @@ pour-shaker-to-shot ingredient11 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 324 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -27019,7 +27019,7 @@ pour-shaker-to-shot ingredient11 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 324 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -27032,7 +27032,7 @@ pour-shaker-to-shot ingredient11 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 324 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -27097,7 +27097,7 @@ pour-shaker-to-shot ingredient12 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 485 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -27110,7 +27110,7 @@ pour-shaker-to-shot ingredient12 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 485 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -27123,7 +27123,7 @@ pour-shaker-to-shot ingredient12 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 485 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -27136,7 +27136,7 @@ pour-shaker-to-shot ingredient12 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 485 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -27149,7 +27149,7 @@ pour-shaker-to-shot ingredient12 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 465 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -27162,7 +27162,7 @@ pour-shaker-to-shot ingredient12 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 465 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -27175,7 +27175,7 @@ pour-shaker-to-shot ingredient12 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 465 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -27188,7 +27188,7 @@ pour-shaker-to-shot ingredient12 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 465 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -27201,7 +27201,7 @@ pour-shaker-to-shot ingredient12 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 445 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -27214,7 +27214,7 @@ pour-shaker-to-shot ingredient12 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 445 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -27227,7 +27227,7 @@ pour-shaker-to-shot ingredient12 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 445 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -27240,7 +27240,7 @@ pour-shaker-to-shot ingredient12 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 445 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -27253,7 +27253,7 @@ pour-shaker-to-shot ingredient12 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 425 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -27266,7 +27266,7 @@ pour-shaker-to-shot ingredient12 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 425 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -27279,7 +27279,7 @@ pour-shaker-to-shot ingredient12 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 425 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -27292,7 +27292,7 @@ pour-shaker-to-shot ingredient12 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 425 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -27305,7 +27305,7 @@ pour-shaker-to-shot ingredient12 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 405 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -27318,7 +27318,7 @@ pour-shaker-to-shot ingredient12 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 405 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -27331,7 +27331,7 @@ pour-shaker-to-shot ingredient12 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 405 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -27344,7 +27344,7 @@ pour-shaker-to-shot ingredient12 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 405 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -27357,7 +27357,7 @@ pour-shaker-to-shot ingredient12 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 385 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -27370,7 +27370,7 @@ pour-shaker-to-shot ingredient12 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 385 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -27383,7 +27383,7 @@ pour-shaker-to-shot ingredient12 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 385 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -27396,7 +27396,7 @@ pour-shaker-to-shot ingredient12 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 385 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -27409,7 +27409,7 @@ pour-shaker-to-shot ingredient12 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 365 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -27422,7 +27422,7 @@ pour-shaker-to-shot ingredient12 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 365 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -27435,7 +27435,7 @@ pour-shaker-to-shot ingredient12 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 365 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -27448,7 +27448,7 @@ pour-shaker-to-shot ingredient12 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 365 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -27461,7 +27461,7 @@ pour-shaker-to-shot ingredient12 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 345 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -27474,7 +27474,7 @@ pour-shaker-to-shot ingredient12 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 345 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -27487,7 +27487,7 @@ pour-shaker-to-shot ingredient12 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 345 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -27500,7 +27500,7 @@ pour-shaker-to-shot ingredient12 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 345 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -27513,7 +27513,7 @@ pour-shaker-to-shot ingredient12 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 325 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -27526,7 +27526,7 @@ pour-shaker-to-shot ingredient12 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 325 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -27539,7 +27539,7 @@ pour-shaker-to-shot ingredient12 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 325 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -27552,7 +27552,7 @@ pour-shaker-to-shot ingredient12 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 325 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -27617,7 +27617,7 @@ pour-shaker-to-shot ingredient13 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 486 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -27630,7 +27630,7 @@ pour-shaker-to-shot ingredient13 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 486 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -27643,7 +27643,7 @@ pour-shaker-to-shot ingredient13 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 486 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -27656,7 +27656,7 @@ pour-shaker-to-shot ingredient13 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 486 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -27669,7 +27669,7 @@ pour-shaker-to-shot ingredient13 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 466 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -27682,7 +27682,7 @@ pour-shaker-to-shot ingredient13 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 466 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -27695,7 +27695,7 @@ pour-shaker-to-shot ingredient13 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 466 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -27708,7 +27708,7 @@ pour-shaker-to-shot ingredient13 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 466 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -27721,7 +27721,7 @@ pour-shaker-to-shot ingredient13 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 446 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -27734,7 +27734,7 @@ pour-shaker-to-shot ingredient13 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 446 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -27747,7 +27747,7 @@ pour-shaker-to-shot ingredient13 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 446 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -27760,7 +27760,7 @@ pour-shaker-to-shot ingredient13 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 446 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -27773,7 +27773,7 @@ pour-shaker-to-shot ingredient13 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 426 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -27786,7 +27786,7 @@ pour-shaker-to-shot ingredient13 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 426 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -27799,7 +27799,7 @@ pour-shaker-to-shot ingredient13 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 426 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -27812,7 +27812,7 @@ pour-shaker-to-shot ingredient13 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 426 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -27825,7 +27825,7 @@ pour-shaker-to-shot ingredient13 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 406 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -27838,7 +27838,7 @@ pour-shaker-to-shot ingredient13 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 406 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -27851,7 +27851,7 @@ pour-shaker-to-shot ingredient13 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 406 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -27864,7 +27864,7 @@ pour-shaker-to-shot ingredient13 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 406 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -27877,7 +27877,7 @@ pour-shaker-to-shot ingredient13 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 386 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -27890,7 +27890,7 @@ pour-shaker-to-shot ingredient13 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 386 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -27903,7 +27903,7 @@ pour-shaker-to-shot ingredient13 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 386 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -27916,7 +27916,7 @@ pour-shaker-to-shot ingredient13 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 386 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -27929,7 +27929,7 @@ pour-shaker-to-shot ingredient13 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 366 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -27942,7 +27942,7 @@ pour-shaker-to-shot ingredient13 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 366 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -27955,7 +27955,7 @@ pour-shaker-to-shot ingredient13 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 366 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -27968,7 +27968,7 @@ pour-shaker-to-shot ingredient13 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 366 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -27981,7 +27981,7 @@ pour-shaker-to-shot ingredient13 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 346 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -27994,7 +27994,7 @@ pour-shaker-to-shot ingredient13 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 346 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -28007,7 +28007,7 @@ pour-shaker-to-shot ingredient13 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 346 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -28020,7 +28020,7 @@ pour-shaker-to-shot ingredient13 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 346 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -28033,7 +28033,7 @@ pour-shaker-to-shot ingredient13 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 326 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -28046,7 +28046,7 @@ pour-shaker-to-shot ingredient13 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 326 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -28059,7 +28059,7 @@ pour-shaker-to-shot ingredient13 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 326 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -28072,7 +28072,7 @@ pour-shaker-to-shot ingredient13 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 326 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -28137,7 +28137,7 @@ pour-shaker-to-shot ingredient14 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 487 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -28150,7 +28150,7 @@ pour-shaker-to-shot ingredient14 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 487 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -28163,7 +28163,7 @@ pour-shaker-to-shot ingredient14 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 487 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -28176,7 +28176,7 @@ pour-shaker-to-shot ingredient14 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 487 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -28189,7 +28189,7 @@ pour-shaker-to-shot ingredient14 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 467 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -28202,7 +28202,7 @@ pour-shaker-to-shot ingredient14 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 467 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -28215,7 +28215,7 @@ pour-shaker-to-shot ingredient14 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 467 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -28228,7 +28228,7 @@ pour-shaker-to-shot ingredient14 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 467 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -28241,7 +28241,7 @@ pour-shaker-to-shot ingredient14 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 447 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -28254,7 +28254,7 @@ pour-shaker-to-shot ingredient14 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 447 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -28267,7 +28267,7 @@ pour-shaker-to-shot ingredient14 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 447 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -28280,7 +28280,7 @@ pour-shaker-to-shot ingredient14 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 447 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -28293,7 +28293,7 @@ pour-shaker-to-shot ingredient14 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 427 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -28306,7 +28306,7 @@ pour-shaker-to-shot ingredient14 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 427 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -28319,7 +28319,7 @@ pour-shaker-to-shot ingredient14 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 427 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -28332,7 +28332,7 @@ pour-shaker-to-shot ingredient14 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 427 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -28345,7 +28345,7 @@ pour-shaker-to-shot ingredient14 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 407 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -28358,7 +28358,7 @@ pour-shaker-to-shot ingredient14 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 407 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -28371,7 +28371,7 @@ pour-shaker-to-shot ingredient14 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 407 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -28384,7 +28384,7 @@ pour-shaker-to-shot ingredient14 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 407 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -28397,7 +28397,7 @@ pour-shaker-to-shot ingredient14 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 387 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -28410,7 +28410,7 @@ pour-shaker-to-shot ingredient14 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 387 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -28423,7 +28423,7 @@ pour-shaker-to-shot ingredient14 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 387 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -28436,7 +28436,7 @@ pour-shaker-to-shot ingredient14 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 387 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -28449,7 +28449,7 @@ pour-shaker-to-shot ingredient14 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 367 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -28462,7 +28462,7 @@ pour-shaker-to-shot ingredient14 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 367 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -28475,7 +28475,7 @@ pour-shaker-to-shot ingredient14 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 367 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -28488,7 +28488,7 @@ pour-shaker-to-shot ingredient14 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 367 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -28501,7 +28501,7 @@ pour-shaker-to-shot ingredient14 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 347 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -28514,7 +28514,7 @@ pour-shaker-to-shot ingredient14 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 347 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -28527,7 +28527,7 @@ pour-shaker-to-shot ingredient14 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 347 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -28540,7 +28540,7 @@ pour-shaker-to-shot ingredient14 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 347 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -28553,7 +28553,7 @@ pour-shaker-to-shot ingredient14 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 327 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -28566,7 +28566,7 @@ pour-shaker-to-shot ingredient14 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 327 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -28579,7 +28579,7 @@ pour-shaker-to-shot ingredient14 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 327 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -28592,7 +28592,7 @@ pour-shaker-to-shot ingredient14 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 327 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -28657,7 +28657,7 @@ pour-shaker-to-shot ingredient15 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 488 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -28670,7 +28670,7 @@ pour-shaker-to-shot ingredient15 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 488 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -28683,7 +28683,7 @@ pour-shaker-to-shot ingredient15 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 488 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -28696,7 +28696,7 @@ pour-shaker-to-shot ingredient15 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 488 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -28709,7 +28709,7 @@ pour-shaker-to-shot ingredient15 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 468 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -28722,7 +28722,7 @@ pour-shaker-to-shot ingredient15 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 468 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -28735,7 +28735,7 @@ pour-shaker-to-shot ingredient15 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 468 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -28748,7 +28748,7 @@ pour-shaker-to-shot ingredient15 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 468 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -28761,7 +28761,7 @@ pour-shaker-to-shot ingredient15 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 448 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -28774,7 +28774,7 @@ pour-shaker-to-shot ingredient15 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 448 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -28787,7 +28787,7 @@ pour-shaker-to-shot ingredient15 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 448 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -28800,7 +28800,7 @@ pour-shaker-to-shot ingredient15 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 448 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -28813,7 +28813,7 @@ pour-shaker-to-shot ingredient15 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 428 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -28826,7 +28826,7 @@ pour-shaker-to-shot ingredient15 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 428 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -28839,7 +28839,7 @@ pour-shaker-to-shot ingredient15 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 428 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -28852,7 +28852,7 @@ pour-shaker-to-shot ingredient15 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 428 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -28865,7 +28865,7 @@ pour-shaker-to-shot ingredient15 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 408 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -28878,7 +28878,7 @@ pour-shaker-to-shot ingredient15 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 408 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -28891,7 +28891,7 @@ pour-shaker-to-shot ingredient15 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 408 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -28904,7 +28904,7 @@ pour-shaker-to-shot ingredient15 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 408 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -28917,7 +28917,7 @@ pour-shaker-to-shot ingredient15 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 388 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -28930,7 +28930,7 @@ pour-shaker-to-shot ingredient15 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 388 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -28943,7 +28943,7 @@ pour-shaker-to-shot ingredient15 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 388 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -28956,7 +28956,7 @@ pour-shaker-to-shot ingredient15 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 388 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -28969,7 +28969,7 @@ pour-shaker-to-shot ingredient15 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 368 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -28982,7 +28982,7 @@ pour-shaker-to-shot ingredient15 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 368 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -28995,7 +28995,7 @@ pour-shaker-to-shot ingredient15 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 368 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -29008,7 +29008,7 @@ pour-shaker-to-shot ingredient15 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 368 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -29021,7 +29021,7 @@ pour-shaker-to-shot ingredient15 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 348 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -29034,7 +29034,7 @@ pour-shaker-to-shot ingredient15 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 348 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -29047,7 +29047,7 @@ pour-shaker-to-shot ingredient15 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 348 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -29060,7 +29060,7 @@ pour-shaker-to-shot ingredient15 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 348 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -29073,7 +29073,7 @@ pour-shaker-to-shot ingredient15 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 328 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -29086,7 +29086,7 @@ pour-shaker-to-shot ingredient15 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 328 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -29099,7 +29099,7 @@ pour-shaker-to-shot ingredient15 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 328 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -29112,7 +29112,7 @@ pour-shaker-to-shot ingredient15 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 328 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -29177,7 +29177,7 @@ pour-shaker-to-shot ingredient16 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 489 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -29190,7 +29190,7 @@ pour-shaker-to-shot ingredient16 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 489 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -29203,7 +29203,7 @@ pour-shaker-to-shot ingredient16 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 489 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -29216,7 +29216,7 @@ pour-shaker-to-shot ingredient16 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 489 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -29229,7 +29229,7 @@ pour-shaker-to-shot ingredient16 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 469 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -29242,7 +29242,7 @@ pour-shaker-to-shot ingredient16 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 469 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -29255,7 +29255,7 @@ pour-shaker-to-shot ingredient16 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 469 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -29268,7 +29268,7 @@ pour-shaker-to-shot ingredient16 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 469 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -29281,7 +29281,7 @@ pour-shaker-to-shot ingredient16 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 449 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -29294,7 +29294,7 @@ pour-shaker-to-shot ingredient16 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 449 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -29307,7 +29307,7 @@ pour-shaker-to-shot ingredient16 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 449 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -29320,7 +29320,7 @@ pour-shaker-to-shot ingredient16 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 449 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -29333,7 +29333,7 @@ pour-shaker-to-shot ingredient16 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 429 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -29346,7 +29346,7 @@ pour-shaker-to-shot ingredient16 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 429 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -29359,7 +29359,7 @@ pour-shaker-to-shot ingredient16 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 429 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -29372,7 +29372,7 @@ pour-shaker-to-shot ingredient16 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 429 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -29385,7 +29385,7 @@ pour-shaker-to-shot ingredient16 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 409 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -29398,7 +29398,7 @@ pour-shaker-to-shot ingredient16 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 409 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -29411,7 +29411,7 @@ pour-shaker-to-shot ingredient16 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 409 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -29424,7 +29424,7 @@ pour-shaker-to-shot ingredient16 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 409 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -29437,7 +29437,7 @@ pour-shaker-to-shot ingredient16 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 389 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -29450,7 +29450,7 @@ pour-shaker-to-shot ingredient16 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 389 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -29463,7 +29463,7 @@ pour-shaker-to-shot ingredient16 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 389 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -29476,7 +29476,7 @@ pour-shaker-to-shot ingredient16 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 389 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -29489,7 +29489,7 @@ pour-shaker-to-shot ingredient16 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 369 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -29502,7 +29502,7 @@ pour-shaker-to-shot ingredient16 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 369 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -29515,7 +29515,7 @@ pour-shaker-to-shot ingredient16 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 369 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -29528,7 +29528,7 @@ pour-shaker-to-shot ingredient16 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 369 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -29541,7 +29541,7 @@ pour-shaker-to-shot ingredient16 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 349 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -29554,7 +29554,7 @@ pour-shaker-to-shot ingredient16 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 349 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -29567,7 +29567,7 @@ pour-shaker-to-shot ingredient16 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 349 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -29580,7 +29580,7 @@ pour-shaker-to-shot ingredient16 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 349 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -29593,7 +29593,7 @@ pour-shaker-to-shot ingredient16 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 329 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -29606,7 +29606,7 @@ pour-shaker-to-shot ingredient16 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 329 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -29619,7 +29619,7 @@ pour-shaker-to-shot ingredient16 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 329 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -29632,7 +29632,7 @@ pour-shaker-to-shot ingredient16 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 329 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -29697,7 +29697,7 @@ pour-shaker-to-shot ingredient17 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 490 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -29710,7 +29710,7 @@ pour-shaker-to-shot ingredient17 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 490 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -29723,7 +29723,7 @@ pour-shaker-to-shot ingredient17 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 490 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -29736,7 +29736,7 @@ pour-shaker-to-shot ingredient17 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 490 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -29749,7 +29749,7 @@ pour-shaker-to-shot ingredient17 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 470 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -29762,7 +29762,7 @@ pour-shaker-to-shot ingredient17 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 470 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -29775,7 +29775,7 @@ pour-shaker-to-shot ingredient17 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 470 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -29788,7 +29788,7 @@ pour-shaker-to-shot ingredient17 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 470 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -29801,7 +29801,7 @@ pour-shaker-to-shot ingredient17 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 450 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -29814,7 +29814,7 @@ pour-shaker-to-shot ingredient17 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 450 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -29827,7 +29827,7 @@ pour-shaker-to-shot ingredient17 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 450 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -29840,7 +29840,7 @@ pour-shaker-to-shot ingredient17 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 450 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -29853,7 +29853,7 @@ pour-shaker-to-shot ingredient17 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 430 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -29866,7 +29866,7 @@ pour-shaker-to-shot ingredient17 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 430 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -29879,7 +29879,7 @@ pour-shaker-to-shot ingredient17 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 430 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -29892,7 +29892,7 @@ pour-shaker-to-shot ingredient17 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 430 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -29905,7 +29905,7 @@ pour-shaker-to-shot ingredient17 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 410 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -29918,7 +29918,7 @@ pour-shaker-to-shot ingredient17 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 410 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -29931,7 +29931,7 @@ pour-shaker-to-shot ingredient17 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 410 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -29944,7 +29944,7 @@ pour-shaker-to-shot ingredient17 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 410 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -29957,7 +29957,7 @@ pour-shaker-to-shot ingredient17 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 390 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -29970,7 +29970,7 @@ pour-shaker-to-shot ingredient17 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 390 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -29983,7 +29983,7 @@ pour-shaker-to-shot ingredient17 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 390 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -29996,7 +29996,7 @@ pour-shaker-to-shot ingredient17 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 390 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -30009,7 +30009,7 @@ pour-shaker-to-shot ingredient17 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 370 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -30022,7 +30022,7 @@ pour-shaker-to-shot ingredient17 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 370 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -30035,7 +30035,7 @@ pour-shaker-to-shot ingredient17 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 370 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -30048,7 +30048,7 @@ pour-shaker-to-shot ingredient17 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 370 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -30061,7 +30061,7 @@ pour-shaker-to-shot ingredient17 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 350 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -30074,7 +30074,7 @@ pour-shaker-to-shot ingredient17 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 350 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -30087,7 +30087,7 @@ pour-shaker-to-shot ingredient17 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 350 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -30100,7 +30100,7 @@ pour-shaker-to-shot ingredient17 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 350 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -30113,7 +30113,7 @@ pour-shaker-to-shot ingredient17 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 330 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -30126,7 +30126,7 @@ pour-shaker-to-shot ingredient17 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 330 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -30139,7 +30139,7 @@ pour-shaker-to-shot ingredient17 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 330 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -30152,7 +30152,7 @@ pour-shaker-to-shot ingredient17 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 330 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -30217,7 +30217,7 @@ pour-shaker-to-shot ingredient18 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 491 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -30230,7 +30230,7 @@ pour-shaker-to-shot ingredient18 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 491 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -30243,7 +30243,7 @@ pour-shaker-to-shot ingredient18 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 491 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -30256,7 +30256,7 @@ pour-shaker-to-shot ingredient18 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 491 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -30269,7 +30269,7 @@ pour-shaker-to-shot ingredient18 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 471 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -30282,7 +30282,7 @@ pour-shaker-to-shot ingredient18 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 471 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -30295,7 +30295,7 @@ pour-shaker-to-shot ingredient18 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 471 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -30308,7 +30308,7 @@ pour-shaker-to-shot ingredient18 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 471 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -30321,7 +30321,7 @@ pour-shaker-to-shot ingredient18 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 451 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -30334,7 +30334,7 @@ pour-shaker-to-shot ingredient18 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 451 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -30347,7 +30347,7 @@ pour-shaker-to-shot ingredient18 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 451 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -30360,7 +30360,7 @@ pour-shaker-to-shot ingredient18 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 451 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -30373,7 +30373,7 @@ pour-shaker-to-shot ingredient18 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 431 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -30386,7 +30386,7 @@ pour-shaker-to-shot ingredient18 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 431 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -30399,7 +30399,7 @@ pour-shaker-to-shot ingredient18 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 431 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -30412,7 +30412,7 @@ pour-shaker-to-shot ingredient18 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 431 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -30425,7 +30425,7 @@ pour-shaker-to-shot ingredient18 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 411 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -30438,7 +30438,7 @@ pour-shaker-to-shot ingredient18 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 411 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -30451,7 +30451,7 @@ pour-shaker-to-shot ingredient18 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 411 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -30464,7 +30464,7 @@ pour-shaker-to-shot ingredient18 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 411 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -30477,7 +30477,7 @@ pour-shaker-to-shot ingredient18 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 391 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -30490,7 +30490,7 @@ pour-shaker-to-shot ingredient18 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 391 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -30503,7 +30503,7 @@ pour-shaker-to-shot ingredient18 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 391 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -30516,7 +30516,7 @@ pour-shaker-to-shot ingredient18 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 391 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -30529,7 +30529,7 @@ pour-shaker-to-shot ingredient18 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 371 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -30542,7 +30542,7 @@ pour-shaker-to-shot ingredient18 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 371 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -30555,7 +30555,7 @@ pour-shaker-to-shot ingredient18 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 371 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -30568,7 +30568,7 @@ pour-shaker-to-shot ingredient18 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 371 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -30581,7 +30581,7 @@ pour-shaker-to-shot ingredient18 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 351 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -30594,7 +30594,7 @@ pour-shaker-to-shot ingredient18 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 351 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -30607,7 +30607,7 @@ pour-shaker-to-shot ingredient18 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 351 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -30620,7 +30620,7 @@ pour-shaker-to-shot ingredient18 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 351 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -30633,7 +30633,7 @@ pour-shaker-to-shot ingredient18 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 331 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -30646,7 +30646,7 @@ pour-shaker-to-shot ingredient18 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 331 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -30659,7 +30659,7 @@ pour-shaker-to-shot ingredient18 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 331 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -30672,7 +30672,7 @@ pour-shaker-to-shot ingredient18 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 331 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -30737,7 +30737,7 @@ pour-shaker-to-shot ingredient19 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 492 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -30750,7 +30750,7 @@ pour-shaker-to-shot ingredient19 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 492 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -30763,7 +30763,7 @@ pour-shaker-to-shot ingredient19 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 492 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -30776,7 +30776,7 @@ pour-shaker-to-shot ingredient19 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 492 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -30789,7 +30789,7 @@ pour-shaker-to-shot ingredient19 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 472 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -30802,7 +30802,7 @@ pour-shaker-to-shot ingredient19 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 472 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -30815,7 +30815,7 @@ pour-shaker-to-shot ingredient19 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 472 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -30828,7 +30828,7 @@ pour-shaker-to-shot ingredient19 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 472 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -30841,7 +30841,7 @@ pour-shaker-to-shot ingredient19 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 452 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -30854,7 +30854,7 @@ pour-shaker-to-shot ingredient19 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 452 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -30867,7 +30867,7 @@ pour-shaker-to-shot ingredient19 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 452 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -30880,7 +30880,7 @@ pour-shaker-to-shot ingredient19 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 452 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -30893,7 +30893,7 @@ pour-shaker-to-shot ingredient19 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 432 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -30906,7 +30906,7 @@ pour-shaker-to-shot ingredient19 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 432 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -30919,7 +30919,7 @@ pour-shaker-to-shot ingredient19 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 432 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -30932,7 +30932,7 @@ pour-shaker-to-shot ingredient19 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 432 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -30945,7 +30945,7 @@ pour-shaker-to-shot ingredient19 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 412 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -30958,7 +30958,7 @@ pour-shaker-to-shot ingredient19 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 412 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -30971,7 +30971,7 @@ pour-shaker-to-shot ingredient19 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 412 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -30984,7 +30984,7 @@ pour-shaker-to-shot ingredient19 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 412 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -30997,7 +30997,7 @@ pour-shaker-to-shot ingredient19 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 392 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -31010,7 +31010,7 @@ pour-shaker-to-shot ingredient19 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 392 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -31023,7 +31023,7 @@ pour-shaker-to-shot ingredient19 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 392 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -31036,7 +31036,7 @@ pour-shaker-to-shot ingredient19 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 392 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -31049,7 +31049,7 @@ pour-shaker-to-shot ingredient19 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 372 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -31062,7 +31062,7 @@ pour-shaker-to-shot ingredient19 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 372 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -31075,7 +31075,7 @@ pour-shaker-to-shot ingredient19 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 372 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -31088,7 +31088,7 @@ pour-shaker-to-shot ingredient19 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 372 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -31101,7 +31101,7 @@ pour-shaker-to-shot ingredient19 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 352 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -31114,7 +31114,7 @@ pour-shaker-to-shot ingredient19 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 352 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -31127,7 +31127,7 @@ pour-shaker-to-shot ingredient19 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 352 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -31140,7 +31140,7 @@ pour-shaker-to-shot ingredient19 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 352 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -31153,7 +31153,7 @@ pour-shaker-to-shot ingredient19 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 332 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -31166,7 +31166,7 @@ pour-shaker-to-shot ingredient19 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 332 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -31179,7 +31179,7 @@ pour-shaker-to-shot ingredient19 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 332 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -31192,7 +31192,7 @@ pour-shaker-to-shot ingredient19 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 332 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -31257,7 +31257,7 @@ pour-shaker-to-shot ingredient2 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 493 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -31270,7 +31270,7 @@ pour-shaker-to-shot ingredient2 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 493 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -31283,7 +31283,7 @@ pour-shaker-to-shot ingredient2 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 493 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -31296,7 +31296,7 @@ pour-shaker-to-shot ingredient2 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 493 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -31309,7 +31309,7 @@ pour-shaker-to-shot ingredient2 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 473 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -31322,7 +31322,7 @@ pour-shaker-to-shot ingredient2 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 473 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -31335,7 +31335,7 @@ pour-shaker-to-shot ingredient2 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 473 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -31348,7 +31348,7 @@ pour-shaker-to-shot ingredient2 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 473 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -31361,7 +31361,7 @@ pour-shaker-to-shot ingredient2 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 453 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -31374,7 +31374,7 @@ pour-shaker-to-shot ingredient2 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 453 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -31387,7 +31387,7 @@ pour-shaker-to-shot ingredient2 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 453 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -31400,7 +31400,7 @@ pour-shaker-to-shot ingredient2 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 453 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -31413,7 +31413,7 @@ pour-shaker-to-shot ingredient2 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 433 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -31426,7 +31426,7 @@ pour-shaker-to-shot ingredient2 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 433 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -31439,7 +31439,7 @@ pour-shaker-to-shot ingredient2 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 433 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -31452,7 +31452,7 @@ pour-shaker-to-shot ingredient2 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 433 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -31465,7 +31465,7 @@ pour-shaker-to-shot ingredient2 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 413 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -31478,7 +31478,7 @@ pour-shaker-to-shot ingredient2 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 413 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -31491,7 +31491,7 @@ pour-shaker-to-shot ingredient2 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 413 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -31504,7 +31504,7 @@ pour-shaker-to-shot ingredient2 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 413 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -31517,7 +31517,7 @@ pour-shaker-to-shot ingredient2 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 393 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -31530,7 +31530,7 @@ pour-shaker-to-shot ingredient2 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 393 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -31543,7 +31543,7 @@ pour-shaker-to-shot ingredient2 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 393 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -31556,7 +31556,7 @@ pour-shaker-to-shot ingredient2 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 393 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -31569,7 +31569,7 @@ pour-shaker-to-shot ingredient2 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 373 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -31582,7 +31582,7 @@ pour-shaker-to-shot ingredient2 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 373 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -31595,7 +31595,7 @@ pour-shaker-to-shot ingredient2 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 373 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -31608,7 +31608,7 @@ pour-shaker-to-shot ingredient2 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 373 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -31621,7 +31621,7 @@ pour-shaker-to-shot ingredient2 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 353 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -31634,7 +31634,7 @@ pour-shaker-to-shot ingredient2 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 353 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -31647,7 +31647,7 @@ pour-shaker-to-shot ingredient2 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 353 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -31660,7 +31660,7 @@ pour-shaker-to-shot ingredient2 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 353 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -31673,7 +31673,7 @@ pour-shaker-to-shot ingredient2 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 333 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -31686,7 +31686,7 @@ pour-shaker-to-shot ingredient2 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 333 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -31699,7 +31699,7 @@ pour-shaker-to-shot ingredient2 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 333 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -31712,7 +31712,7 @@ pour-shaker-to-shot ingredient2 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 333 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -31777,7 +31777,7 @@ pour-shaker-to-shot ingredient20 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 494 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -31790,7 +31790,7 @@ pour-shaker-to-shot ingredient20 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 494 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -31803,7 +31803,7 @@ pour-shaker-to-shot ingredient20 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 494 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -31816,7 +31816,7 @@ pour-shaker-to-shot ingredient20 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 494 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -31829,7 +31829,7 @@ pour-shaker-to-shot ingredient20 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 474 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -31842,7 +31842,7 @@ pour-shaker-to-shot ingredient20 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 474 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -31855,7 +31855,7 @@ pour-shaker-to-shot ingredient20 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 474 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -31868,7 +31868,7 @@ pour-shaker-to-shot ingredient20 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 474 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -31881,7 +31881,7 @@ pour-shaker-to-shot ingredient20 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 454 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -31894,7 +31894,7 @@ pour-shaker-to-shot ingredient20 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 454 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -31907,7 +31907,7 @@ pour-shaker-to-shot ingredient20 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 454 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -31920,7 +31920,7 @@ pour-shaker-to-shot ingredient20 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 454 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -31933,7 +31933,7 @@ pour-shaker-to-shot ingredient20 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 434 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -31946,7 +31946,7 @@ pour-shaker-to-shot ingredient20 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 434 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -31959,7 +31959,7 @@ pour-shaker-to-shot ingredient20 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 434 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -31972,7 +31972,7 @@ pour-shaker-to-shot ingredient20 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 434 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -31985,7 +31985,7 @@ pour-shaker-to-shot ingredient20 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 414 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -31998,7 +31998,7 @@ pour-shaker-to-shot ingredient20 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 414 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -32011,7 +32011,7 @@ pour-shaker-to-shot ingredient20 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 414 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -32024,7 +32024,7 @@ pour-shaker-to-shot ingredient20 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 414 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -32037,7 +32037,7 @@ pour-shaker-to-shot ingredient20 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 394 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -32050,7 +32050,7 @@ pour-shaker-to-shot ingredient20 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 394 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -32063,7 +32063,7 @@ pour-shaker-to-shot ingredient20 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 394 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -32076,7 +32076,7 @@ pour-shaker-to-shot ingredient20 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 394 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -32089,7 +32089,7 @@ pour-shaker-to-shot ingredient20 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 374 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -32102,7 +32102,7 @@ pour-shaker-to-shot ingredient20 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 374 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -32115,7 +32115,7 @@ pour-shaker-to-shot ingredient20 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 374 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -32128,7 +32128,7 @@ pour-shaker-to-shot ingredient20 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 374 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -32141,7 +32141,7 @@ pour-shaker-to-shot ingredient20 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 354 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -32154,7 +32154,7 @@ pour-shaker-to-shot ingredient20 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 354 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -32167,7 +32167,7 @@ pour-shaker-to-shot ingredient20 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 354 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -32180,7 +32180,7 @@ pour-shaker-to-shot ingredient20 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 354 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -32193,7 +32193,7 @@ pour-shaker-to-shot ingredient20 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 334 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -32206,7 +32206,7 @@ pour-shaker-to-shot ingredient20 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 334 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -32219,7 +32219,7 @@ pour-shaker-to-shot ingredient20 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 334 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -32232,7 +32232,7 @@ pour-shaker-to-shot ingredient20 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 334 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -32297,7 +32297,7 @@ pour-shaker-to-shot ingredient3 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 495 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -32310,7 +32310,7 @@ pour-shaker-to-shot ingredient3 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 495 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -32323,7 +32323,7 @@ pour-shaker-to-shot ingredient3 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 495 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -32336,7 +32336,7 @@ pour-shaker-to-shot ingredient3 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 495 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -32349,7 +32349,7 @@ pour-shaker-to-shot ingredient3 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 475 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -32362,7 +32362,7 @@ pour-shaker-to-shot ingredient3 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 475 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -32375,7 +32375,7 @@ pour-shaker-to-shot ingredient3 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 475 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -32388,7 +32388,7 @@ pour-shaker-to-shot ingredient3 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 475 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -32401,7 +32401,7 @@ pour-shaker-to-shot ingredient3 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 455 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -32414,7 +32414,7 @@ pour-shaker-to-shot ingredient3 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 455 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -32427,7 +32427,7 @@ pour-shaker-to-shot ingredient3 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 455 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -32440,7 +32440,7 @@ pour-shaker-to-shot ingredient3 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 455 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -32453,7 +32453,7 @@ pour-shaker-to-shot ingredient3 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 435 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -32466,7 +32466,7 @@ pour-shaker-to-shot ingredient3 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 435 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -32479,7 +32479,7 @@ pour-shaker-to-shot ingredient3 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 435 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -32492,7 +32492,7 @@ pour-shaker-to-shot ingredient3 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 435 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -32505,7 +32505,7 @@ pour-shaker-to-shot ingredient3 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 415 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -32518,7 +32518,7 @@ pour-shaker-to-shot ingredient3 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 415 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -32531,7 +32531,7 @@ pour-shaker-to-shot ingredient3 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 415 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -32544,7 +32544,7 @@ pour-shaker-to-shot ingredient3 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 415 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -32557,7 +32557,7 @@ pour-shaker-to-shot ingredient3 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 395 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -32570,7 +32570,7 @@ pour-shaker-to-shot ingredient3 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 395 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -32583,7 +32583,7 @@ pour-shaker-to-shot ingredient3 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 395 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -32596,7 +32596,7 @@ pour-shaker-to-shot ingredient3 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 395 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -32609,7 +32609,7 @@ pour-shaker-to-shot ingredient3 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 375 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -32622,7 +32622,7 @@ pour-shaker-to-shot ingredient3 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 375 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -32635,7 +32635,7 @@ pour-shaker-to-shot ingredient3 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 375 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -32648,7 +32648,7 @@ pour-shaker-to-shot ingredient3 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 375 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -32661,7 +32661,7 @@ pour-shaker-to-shot ingredient3 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 355 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -32674,7 +32674,7 @@ pour-shaker-to-shot ingredient3 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 355 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -32687,7 +32687,7 @@ pour-shaker-to-shot ingredient3 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 355 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -32700,7 +32700,7 @@ pour-shaker-to-shot ingredient3 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 355 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -32713,7 +32713,7 @@ pour-shaker-to-shot ingredient3 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 335 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -32726,7 +32726,7 @@ pour-shaker-to-shot ingredient3 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 335 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -32739,7 +32739,7 @@ pour-shaker-to-shot ingredient3 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 335 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -32752,7 +32752,7 @@ pour-shaker-to-shot ingredient3 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 335 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -32817,7 +32817,7 @@ pour-shaker-to-shot ingredient4 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 496 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -32830,7 +32830,7 @@ pour-shaker-to-shot ingredient4 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 496 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -32843,7 +32843,7 @@ pour-shaker-to-shot ingredient4 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 496 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -32856,7 +32856,7 @@ pour-shaker-to-shot ingredient4 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 496 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -32869,7 +32869,7 @@ pour-shaker-to-shot ingredient4 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 476 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -32882,7 +32882,7 @@ pour-shaker-to-shot ingredient4 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 476 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -32895,7 +32895,7 @@ pour-shaker-to-shot ingredient4 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 476 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -32908,7 +32908,7 @@ pour-shaker-to-shot ingredient4 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 476 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -32921,7 +32921,7 @@ pour-shaker-to-shot ingredient4 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 456 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -32934,7 +32934,7 @@ pour-shaker-to-shot ingredient4 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 456 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -32947,7 +32947,7 @@ pour-shaker-to-shot ingredient4 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 456 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -32960,7 +32960,7 @@ pour-shaker-to-shot ingredient4 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 456 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -32973,7 +32973,7 @@ pour-shaker-to-shot ingredient4 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 436 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -32986,7 +32986,7 @@ pour-shaker-to-shot ingredient4 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 436 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -32999,7 +32999,7 @@ pour-shaker-to-shot ingredient4 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 436 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -33012,7 +33012,7 @@ pour-shaker-to-shot ingredient4 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 436 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -33025,7 +33025,7 @@ pour-shaker-to-shot ingredient4 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 416 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -33038,7 +33038,7 @@ pour-shaker-to-shot ingredient4 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 416 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -33051,7 +33051,7 @@ pour-shaker-to-shot ingredient4 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 416 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -33064,7 +33064,7 @@ pour-shaker-to-shot ingredient4 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 416 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -33077,7 +33077,7 @@ pour-shaker-to-shot ingredient4 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 396 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -33090,7 +33090,7 @@ pour-shaker-to-shot ingredient4 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 396 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -33103,7 +33103,7 @@ pour-shaker-to-shot ingredient4 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 396 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -33116,7 +33116,7 @@ pour-shaker-to-shot ingredient4 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 396 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -33129,7 +33129,7 @@ pour-shaker-to-shot ingredient4 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 376 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -33142,7 +33142,7 @@ pour-shaker-to-shot ingredient4 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 376 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -33155,7 +33155,7 @@ pour-shaker-to-shot ingredient4 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 376 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -33168,7 +33168,7 @@ pour-shaker-to-shot ingredient4 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 376 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -33181,7 +33181,7 @@ pour-shaker-to-shot ingredient4 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 356 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -33194,7 +33194,7 @@ pour-shaker-to-shot ingredient4 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 356 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -33207,7 +33207,7 @@ pour-shaker-to-shot ingredient4 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 356 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -33220,7 +33220,7 @@ pour-shaker-to-shot ingredient4 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 356 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -33233,7 +33233,7 @@ pour-shaker-to-shot ingredient4 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 336 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -33246,7 +33246,7 @@ pour-shaker-to-shot ingredient4 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 336 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -33259,7 +33259,7 @@ pour-shaker-to-shot ingredient4 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 336 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -33272,7 +33272,7 @@ pour-shaker-to-shot ingredient4 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 336 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -33337,7 +33337,7 @@ pour-shaker-to-shot ingredient5 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 497 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -33350,7 +33350,7 @@ pour-shaker-to-shot ingredient5 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 497 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -33363,7 +33363,7 @@ pour-shaker-to-shot ingredient5 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 497 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -33376,7 +33376,7 @@ pour-shaker-to-shot ingredient5 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 497 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -33389,7 +33389,7 @@ pour-shaker-to-shot ingredient5 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 477 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -33402,7 +33402,7 @@ pour-shaker-to-shot ingredient5 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 477 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -33415,7 +33415,7 @@ pour-shaker-to-shot ingredient5 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 477 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -33428,7 +33428,7 @@ pour-shaker-to-shot ingredient5 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 477 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -33441,7 +33441,7 @@ pour-shaker-to-shot ingredient5 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 457 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -33454,7 +33454,7 @@ pour-shaker-to-shot ingredient5 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 457 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -33467,7 +33467,7 @@ pour-shaker-to-shot ingredient5 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 457 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -33480,7 +33480,7 @@ pour-shaker-to-shot ingredient5 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 457 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -33493,7 +33493,7 @@ pour-shaker-to-shot ingredient5 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 437 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -33506,7 +33506,7 @@ pour-shaker-to-shot ingredient5 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 437 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -33519,7 +33519,7 @@ pour-shaker-to-shot ingredient5 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 437 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -33532,7 +33532,7 @@ pour-shaker-to-shot ingredient5 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 437 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -33545,7 +33545,7 @@ pour-shaker-to-shot ingredient5 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 417 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -33558,7 +33558,7 @@ pour-shaker-to-shot ingredient5 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 417 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -33571,7 +33571,7 @@ pour-shaker-to-shot ingredient5 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 417 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -33584,7 +33584,7 @@ pour-shaker-to-shot ingredient5 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 417 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -33597,7 +33597,7 @@ pour-shaker-to-shot ingredient5 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 397 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -33610,7 +33610,7 @@ pour-shaker-to-shot ingredient5 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 397 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -33623,7 +33623,7 @@ pour-shaker-to-shot ingredient5 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 397 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -33636,7 +33636,7 @@ pour-shaker-to-shot ingredient5 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 397 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -33649,7 +33649,7 @@ pour-shaker-to-shot ingredient5 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 377 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -33662,7 +33662,7 @@ pour-shaker-to-shot ingredient5 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 377 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -33675,7 +33675,7 @@ pour-shaker-to-shot ingredient5 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 377 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -33688,7 +33688,7 @@ pour-shaker-to-shot ingredient5 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 377 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -33701,7 +33701,7 @@ pour-shaker-to-shot ingredient5 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 357 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -33714,7 +33714,7 @@ pour-shaker-to-shot ingredient5 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 357 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -33727,7 +33727,7 @@ pour-shaker-to-shot ingredient5 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 357 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -33740,7 +33740,7 @@ pour-shaker-to-shot ingredient5 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 357 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -33753,7 +33753,7 @@ pour-shaker-to-shot ingredient5 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 337 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -33766,7 +33766,7 @@ pour-shaker-to-shot ingredient5 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 337 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -33779,7 +33779,7 @@ pour-shaker-to-shot ingredient5 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 337 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -33792,7 +33792,7 @@ pour-shaker-to-shot ingredient5 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 337 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -33857,7 +33857,7 @@ pour-shaker-to-shot ingredient6 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 498 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -33870,7 +33870,7 @@ pour-shaker-to-shot ingredient6 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 498 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -33883,7 +33883,7 @@ pour-shaker-to-shot ingredient6 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 498 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -33896,7 +33896,7 @@ pour-shaker-to-shot ingredient6 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 498 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -33909,7 +33909,7 @@ pour-shaker-to-shot ingredient6 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 478 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -33922,7 +33922,7 @@ pour-shaker-to-shot ingredient6 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 478 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -33935,7 +33935,7 @@ pour-shaker-to-shot ingredient6 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 478 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -33948,7 +33948,7 @@ pour-shaker-to-shot ingredient6 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 478 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -33961,7 +33961,7 @@ pour-shaker-to-shot ingredient6 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 458 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -33974,7 +33974,7 @@ pour-shaker-to-shot ingredient6 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 458 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -33987,7 +33987,7 @@ pour-shaker-to-shot ingredient6 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 458 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -34000,7 +34000,7 @@ pour-shaker-to-shot ingredient6 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 458 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -34013,7 +34013,7 @@ pour-shaker-to-shot ingredient6 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 438 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -34026,7 +34026,7 @@ pour-shaker-to-shot ingredient6 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 438 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -34039,7 +34039,7 @@ pour-shaker-to-shot ingredient6 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 438 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -34052,7 +34052,7 @@ pour-shaker-to-shot ingredient6 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 438 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -34065,7 +34065,7 @@ pour-shaker-to-shot ingredient6 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 418 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -34078,7 +34078,7 @@ pour-shaker-to-shot ingredient6 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 418 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -34091,7 +34091,7 @@ pour-shaker-to-shot ingredient6 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 418 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -34104,7 +34104,7 @@ pour-shaker-to-shot ingredient6 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 418 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -34117,7 +34117,7 @@ pour-shaker-to-shot ingredient6 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 398 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -34130,7 +34130,7 @@ pour-shaker-to-shot ingredient6 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 398 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -34143,7 +34143,7 @@ pour-shaker-to-shot ingredient6 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 398 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -34156,7 +34156,7 @@ pour-shaker-to-shot ingredient6 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 398 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -34169,7 +34169,7 @@ pour-shaker-to-shot ingredient6 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 378 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -34182,7 +34182,7 @@ pour-shaker-to-shot ingredient6 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 378 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -34195,7 +34195,7 @@ pour-shaker-to-shot ingredient6 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 378 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -34208,7 +34208,7 @@ pour-shaker-to-shot ingredient6 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 378 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -34221,7 +34221,7 @@ pour-shaker-to-shot ingredient6 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 358 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -34234,7 +34234,7 @@ pour-shaker-to-shot ingredient6 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 358 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -34247,7 +34247,7 @@ pour-shaker-to-shot ingredient6 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 358 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -34260,7 +34260,7 @@ pour-shaker-to-shot ingredient6 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 358 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -34273,7 +34273,7 @@ pour-shaker-to-shot ingredient6 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 338 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -34286,7 +34286,7 @@ pour-shaker-to-shot ingredient6 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 338 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -34299,7 +34299,7 @@ pour-shaker-to-shot ingredient6 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 338 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -34312,7 +34312,7 @@ pour-shaker-to-shot ingredient6 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 338 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -34377,7 +34377,7 @@ pour-shaker-to-shot ingredient7 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 499 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -34390,7 +34390,7 @@ pour-shaker-to-shot ingredient7 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 499 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -34403,7 +34403,7 @@ pour-shaker-to-shot ingredient7 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 499 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -34416,7 +34416,7 @@ pour-shaker-to-shot ingredient7 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 499 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -34429,7 +34429,7 @@ pour-shaker-to-shot ingredient7 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 479 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -34442,7 +34442,7 @@ pour-shaker-to-shot ingredient7 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 479 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -34455,7 +34455,7 @@ pour-shaker-to-shot ingredient7 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 479 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -34468,7 +34468,7 @@ pour-shaker-to-shot ingredient7 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 479 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -34481,7 +34481,7 @@ pour-shaker-to-shot ingredient7 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 459 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -34494,7 +34494,7 @@ pour-shaker-to-shot ingredient7 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 459 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -34507,7 +34507,7 @@ pour-shaker-to-shot ingredient7 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 459 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -34520,7 +34520,7 @@ pour-shaker-to-shot ingredient7 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 459 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -34533,7 +34533,7 @@ pour-shaker-to-shot ingredient7 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 439 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -34546,7 +34546,7 @@ pour-shaker-to-shot ingredient7 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 439 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -34559,7 +34559,7 @@ pour-shaker-to-shot ingredient7 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 439 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -34572,7 +34572,7 @@ pour-shaker-to-shot ingredient7 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 439 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -34585,7 +34585,7 @@ pour-shaker-to-shot ingredient7 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 419 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -34598,7 +34598,7 @@ pour-shaker-to-shot ingredient7 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 419 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -34611,7 +34611,7 @@ pour-shaker-to-shot ingredient7 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 419 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -34624,7 +34624,7 @@ pour-shaker-to-shot ingredient7 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 419 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -34637,7 +34637,7 @@ pour-shaker-to-shot ingredient7 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 399 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -34650,7 +34650,7 @@ pour-shaker-to-shot ingredient7 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 399 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -34663,7 +34663,7 @@ pour-shaker-to-shot ingredient7 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 399 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -34676,7 +34676,7 @@ pour-shaker-to-shot ingredient7 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 399 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -34689,7 +34689,7 @@ pour-shaker-to-shot ingredient7 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 379 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -34702,7 +34702,7 @@ pour-shaker-to-shot ingredient7 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 379 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -34715,7 +34715,7 @@ pour-shaker-to-shot ingredient7 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 379 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -34728,7 +34728,7 @@ pour-shaker-to-shot ingredient7 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 379 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -34741,7 +34741,7 @@ pour-shaker-to-shot ingredient7 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 359 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -34754,7 +34754,7 @@ pour-shaker-to-shot ingredient7 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 359 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -34767,7 +34767,7 @@ pour-shaker-to-shot ingredient7 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 359 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -34780,7 +34780,7 @@ pour-shaker-to-shot ingredient7 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 359 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -34793,7 +34793,7 @@ pour-shaker-to-shot ingredient7 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 339 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -34806,7 +34806,7 @@ pour-shaker-to-shot ingredient7 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 339 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -34819,7 +34819,7 @@ pour-shaker-to-shot ingredient7 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 339 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -34832,7 +34832,7 @@ pour-shaker-to-shot ingredient7 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 339 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -34897,7 +34897,7 @@ pour-shaker-to-shot ingredient8 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 500 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -34910,7 +34910,7 @@ pour-shaker-to-shot ingredient8 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 500 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -34923,7 +34923,7 @@ pour-shaker-to-shot ingredient8 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 500 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -34936,7 +34936,7 @@ pour-shaker-to-shot ingredient8 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 500 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -34949,7 +34949,7 @@ pour-shaker-to-shot ingredient8 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 480 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -34962,7 +34962,7 @@ pour-shaker-to-shot ingredient8 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 480 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -34975,7 +34975,7 @@ pour-shaker-to-shot ingredient8 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 480 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -34988,7 +34988,7 @@ pour-shaker-to-shot ingredient8 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 480 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -35001,7 +35001,7 @@ pour-shaker-to-shot ingredient8 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 460 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -35014,7 +35014,7 @@ pour-shaker-to-shot ingredient8 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 460 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -35027,7 +35027,7 @@ pour-shaker-to-shot ingredient8 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 460 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -35040,7 +35040,7 @@ pour-shaker-to-shot ingredient8 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 460 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -35053,7 +35053,7 @@ pour-shaker-to-shot ingredient8 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 440 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -35066,7 +35066,7 @@ pour-shaker-to-shot ingredient8 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 440 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -35079,7 +35079,7 @@ pour-shaker-to-shot ingredient8 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 440 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -35092,7 +35092,7 @@ pour-shaker-to-shot ingredient8 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 440 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -35105,7 +35105,7 @@ pour-shaker-to-shot ingredient8 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 420 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -35118,7 +35118,7 @@ pour-shaker-to-shot ingredient8 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 420 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -35131,7 +35131,7 @@ pour-shaker-to-shot ingredient8 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 420 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -35144,7 +35144,7 @@ pour-shaker-to-shot ingredient8 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 420 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -35157,7 +35157,7 @@ pour-shaker-to-shot ingredient8 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 400 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -35170,7 +35170,7 @@ pour-shaker-to-shot ingredient8 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 400 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -35183,7 +35183,7 @@ pour-shaker-to-shot ingredient8 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 400 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -35196,7 +35196,7 @@ pour-shaker-to-shot ingredient8 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 400 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -35209,7 +35209,7 @@ pour-shaker-to-shot ingredient8 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 380 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -35222,7 +35222,7 @@ pour-shaker-to-shot ingredient8 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 380 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -35235,7 +35235,7 @@ pour-shaker-to-shot ingredient8 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 380 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -35248,7 +35248,7 @@ pour-shaker-to-shot ingredient8 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 380 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -35261,7 +35261,7 @@ pour-shaker-to-shot ingredient8 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 360 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -35274,7 +35274,7 @@ pour-shaker-to-shot ingredient8 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 360 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -35287,7 +35287,7 @@ pour-shaker-to-shot ingredient8 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 360 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -35300,7 +35300,7 @@ pour-shaker-to-shot ingredient8 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 360 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -35313,7 +35313,7 @@ pour-shaker-to-shot ingredient8 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 340 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -35326,7 +35326,7 @@ pour-shaker-to-shot ingredient8 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 340 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -35339,7 +35339,7 @@ pour-shaker-to-shot ingredient8 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 340 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -35352,7 +35352,7 @@ pour-shaker-to-shot ingredient8 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 340 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -35417,7 +35417,7 @@ pour-shaker-to-shot ingredient9 shot10 left shaker1 l1 l0
 4
 0 544 0 1
 0 501 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -35430,7 +35430,7 @@ pour-shaker-to-shot ingredient9 shot10 left shaker1 l2 l1
 4
 0 544 0 1
 0 501 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -35443,7 +35443,7 @@ pour-shaker-to-shot ingredient9 shot10 right shaker1 l1 l0
 4
 0 544 0 1
 0 501 -1 0
-0 562 0 1
+0 554 0 1
 0 565 1 0
 1
 end_operator
@@ -35456,7 +35456,7 @@ pour-shaker-to-shot ingredient9 shot10 right shaker1 l2 l1
 4
 0 544 0 1
 0 501 -1 0
-0 562 0 1
+0 554 0 1
 0 565 2 1
 1
 end_operator
@@ -35469,7 +35469,7 @@ pour-shaker-to-shot ingredient9 shot2 left shaker1 l1 l0
 4
 0 545 0 1
 0 481 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -35482,7 +35482,7 @@ pour-shaker-to-shot ingredient9 shot2 left shaker1 l2 l1
 4
 0 545 0 1
 0 481 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -35495,7 +35495,7 @@ pour-shaker-to-shot ingredient9 shot2 right shaker1 l1 l0
 4
 0 545 0 1
 0 481 -1 0
-0 554 0 1
+0 555 0 1
 0 565 1 0
 1
 end_operator
@@ -35508,7 +35508,7 @@ pour-shaker-to-shot ingredient9 shot2 right shaker1 l2 l1
 4
 0 545 0 1
 0 481 -1 0
-0 554 0 1
+0 555 0 1
 0 565 2 1
 1
 end_operator
@@ -35521,7 +35521,7 @@ pour-shaker-to-shot ingredient9 shot3 left shaker1 l1 l0
 4
 0 546 0 1
 0 461 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -35534,7 +35534,7 @@ pour-shaker-to-shot ingredient9 shot3 left shaker1 l2 l1
 4
 0 546 0 1
 0 461 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -35547,7 +35547,7 @@ pour-shaker-to-shot ingredient9 shot3 right shaker1 l1 l0
 4
 0 546 0 1
 0 461 -1 0
-0 555 0 1
+0 556 0 1
 0 565 1 0
 1
 end_operator
@@ -35560,7 +35560,7 @@ pour-shaker-to-shot ingredient9 shot3 right shaker1 l2 l1
 4
 0 546 0 1
 0 461 -1 0
-0 555 0 1
+0 556 0 1
 0 565 2 1
 1
 end_operator
@@ -35573,7 +35573,7 @@ pour-shaker-to-shot ingredient9 shot4 left shaker1 l1 l0
 4
 0 547 0 1
 0 441 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -35586,7 +35586,7 @@ pour-shaker-to-shot ingredient9 shot4 left shaker1 l2 l1
 4
 0 547 0 1
 0 441 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -35599,7 +35599,7 @@ pour-shaker-to-shot ingredient9 shot4 right shaker1 l1 l0
 4
 0 547 0 1
 0 441 -1 0
-0 556 0 1
+0 557 0 1
 0 565 1 0
 1
 end_operator
@@ -35612,7 +35612,7 @@ pour-shaker-to-shot ingredient9 shot4 right shaker1 l2 l1
 4
 0 547 0 1
 0 441 -1 0
-0 556 0 1
+0 557 0 1
 0 565 2 1
 1
 end_operator
@@ -35625,7 +35625,7 @@ pour-shaker-to-shot ingredient9 shot5 left shaker1 l1 l0
 4
 0 548 0 1
 0 421 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -35638,7 +35638,7 @@ pour-shaker-to-shot ingredient9 shot5 left shaker1 l2 l1
 4
 0 548 0 1
 0 421 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -35651,7 +35651,7 @@ pour-shaker-to-shot ingredient9 shot5 right shaker1 l1 l0
 4
 0 548 0 1
 0 421 -1 0
-0 557 0 1
+0 558 0 1
 0 565 1 0
 1
 end_operator
@@ -35664,7 +35664,7 @@ pour-shaker-to-shot ingredient9 shot5 right shaker1 l2 l1
 4
 0 548 0 1
 0 421 -1 0
-0 557 0 1
+0 558 0 1
 0 565 2 1
 1
 end_operator
@@ -35677,7 +35677,7 @@ pour-shaker-to-shot ingredient9 shot6 left shaker1 l1 l0
 4
 0 549 0 1
 0 401 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -35690,7 +35690,7 @@ pour-shaker-to-shot ingredient9 shot6 left shaker1 l2 l1
 4
 0 549 0 1
 0 401 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -35703,7 +35703,7 @@ pour-shaker-to-shot ingredient9 shot6 right shaker1 l1 l0
 4
 0 549 0 1
 0 401 -1 0
-0 558 0 1
+0 559 0 1
 0 565 1 0
 1
 end_operator
@@ -35716,7 +35716,7 @@ pour-shaker-to-shot ingredient9 shot6 right shaker1 l2 l1
 4
 0 549 0 1
 0 401 -1 0
-0 558 0 1
+0 559 0 1
 0 565 2 1
 1
 end_operator
@@ -35729,7 +35729,7 @@ pour-shaker-to-shot ingredient9 shot7 left shaker1 l1 l0
 4
 0 550 0 1
 0 381 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -35742,7 +35742,7 @@ pour-shaker-to-shot ingredient9 shot7 left shaker1 l2 l1
 4
 0 550 0 1
 0 381 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -35755,7 +35755,7 @@ pour-shaker-to-shot ingredient9 shot7 right shaker1 l1 l0
 4
 0 550 0 1
 0 381 -1 0
-0 559 0 1
+0 560 0 1
 0 565 1 0
 1
 end_operator
@@ -35768,7 +35768,7 @@ pour-shaker-to-shot ingredient9 shot7 right shaker1 l2 l1
 4
 0 550 0 1
 0 381 -1 0
-0 559 0 1
+0 560 0 1
 0 565 2 1
 1
 end_operator
@@ -35781,7 +35781,7 @@ pour-shaker-to-shot ingredient9 shot8 left shaker1 l1 l0
 4
 0 551 0 1
 0 361 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -35794,7 +35794,7 @@ pour-shaker-to-shot ingredient9 shot8 left shaker1 l2 l1
 4
 0 551 0 1
 0 361 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -35807,7 +35807,7 @@ pour-shaker-to-shot ingredient9 shot8 right shaker1 l1 l0
 4
 0 551 0 1
 0 361 -1 0
-0 560 0 1
+0 561 0 1
 0 565 1 0
 1
 end_operator
@@ -35820,7 +35820,7 @@ pour-shaker-to-shot ingredient9 shot8 right shaker1 l2 l1
 4
 0 551 0 1
 0 361 -1 0
-0 560 0 1
+0 561 0 1
 0 565 2 1
 1
 end_operator
@@ -35833,7 +35833,7 @@ pour-shaker-to-shot ingredient9 shot9 left shaker1 l1 l0
 4
 0 552 0 1
 0 341 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -35846,7 +35846,7 @@ pour-shaker-to-shot ingredient9 shot9 left shaker1 l2 l1
 4
 0 552 0 1
 0 341 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -35859,7 +35859,7 @@ pour-shaker-to-shot ingredient9 shot9 right shaker1 l1 l0
 4
 0 552 0 1
 0 341 -1 0
-0 561 0 1
+0 562 0 1
 0 565 1 0
 1
 end_operator
@@ -35872,7 +35872,7 @@ pour-shaker-to-shot ingredient9 shot9 right shaker1 l2 l1
 4
 0 552 0 1
 0 341 -1 0
-0 561 0 1
+0 562 0 1
 0 565 2 1
 1
 end_operator
@@ -37005,7 +37005,7 @@ pour-shot-to-clean-shaker shot10 ingredient1 shaker1 left l0 l1
 0 523 -1 0
 0 482 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37019,7 +37019,7 @@ pour-shot-to-clean-shaker shot10 ingredient1 shaker1 left l1 l2
 0 523 -1 0
 0 482 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37033,7 +37033,7 @@ pour-shot-to-clean-shaker shot10 ingredient1 shaker1 right l0 l1
 0 523 -1 0
 0 482 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37047,7 +37047,7 @@ pour-shot-to-clean-shaker shot10 ingredient1 shaker1 right l1 l2
 0 523 -1 0
 0 482 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37061,7 +37061,7 @@ pour-shot-to-clean-shaker shot10 ingredient10 shaker1 left l0 l1
 0 540 -1 0
 0 483 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37075,7 +37075,7 @@ pour-shot-to-clean-shaker shot10 ingredient10 shaker1 left l1 l2
 0 540 -1 0
 0 483 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37089,7 +37089,7 @@ pour-shot-to-clean-shaker shot10 ingredient10 shaker1 right l0 l1
 0 540 -1 0
 0 483 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37103,7 +37103,7 @@ pour-shot-to-clean-shaker shot10 ingredient10 shaker1 right l1 l2
 0 540 -1 0
 0 483 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37117,7 +37117,7 @@ pour-shot-to-clean-shaker shot10 ingredient11 shaker1 left l0 l1
 0 530 -1 0
 0 484 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37131,7 +37131,7 @@ pour-shot-to-clean-shaker shot10 ingredient11 shaker1 left l1 l2
 0 530 -1 0
 0 484 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37145,7 +37145,7 @@ pour-shot-to-clean-shaker shot10 ingredient11 shaker1 right l0 l1
 0 530 -1 0
 0 484 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37159,7 +37159,7 @@ pour-shot-to-clean-shaker shot10 ingredient11 shaker1 right l1 l2
 0 530 -1 0
 0 484 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37173,7 +37173,7 @@ pour-shot-to-clean-shaker shot10 ingredient12 shaker1 left l0 l1
 0 542 -1 0
 0 485 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37187,7 +37187,7 @@ pour-shot-to-clean-shaker shot10 ingredient12 shaker1 left l1 l2
 0 542 -1 0
 0 485 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37201,7 +37201,7 @@ pour-shot-to-clean-shaker shot10 ingredient12 shaker1 right l0 l1
 0 542 -1 0
 0 485 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37215,7 +37215,7 @@ pour-shot-to-clean-shaker shot10 ingredient12 shaker1 right l1 l2
 0 542 -1 0
 0 485 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37229,7 +37229,7 @@ pour-shot-to-clean-shaker shot10 ingredient13 shaker1 left l0 l1
 0 524 -1 0
 0 486 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37243,7 +37243,7 @@ pour-shot-to-clean-shaker shot10 ingredient13 shaker1 left l1 l2
 0 524 -1 0
 0 486 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37257,7 +37257,7 @@ pour-shot-to-clean-shaker shot10 ingredient13 shaker1 right l0 l1
 0 524 -1 0
 0 486 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37271,7 +37271,7 @@ pour-shot-to-clean-shaker shot10 ingredient13 shaker1 right l1 l2
 0 524 -1 0
 0 486 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37285,7 +37285,7 @@ pour-shot-to-clean-shaker shot10 ingredient14 shaker1 left l0 l1
 0 531 -1 0
 0 487 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37299,7 +37299,7 @@ pour-shot-to-clean-shaker shot10 ingredient14 shaker1 left l1 l2
 0 531 -1 0
 0 487 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37313,7 +37313,7 @@ pour-shot-to-clean-shaker shot10 ingredient14 shaker1 right l0 l1
 0 531 -1 0
 0 487 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37327,7 +37327,7 @@ pour-shot-to-clean-shaker shot10 ingredient14 shaker1 right l1 l2
 0 531 -1 0
 0 487 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37341,7 +37341,7 @@ pour-shot-to-clean-shaker shot10 ingredient15 shaker1 left l0 l1
 0 532 -1 0
 0 488 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37355,7 +37355,7 @@ pour-shot-to-clean-shaker shot10 ingredient15 shaker1 left l1 l2
 0 532 -1 0
 0 488 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37369,7 +37369,7 @@ pour-shot-to-clean-shaker shot10 ingredient15 shaker1 right l0 l1
 0 532 -1 0
 0 488 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37383,7 +37383,7 @@ pour-shot-to-clean-shaker shot10 ingredient15 shaker1 right l1 l2
 0 532 -1 0
 0 488 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37397,7 +37397,7 @@ pour-shot-to-clean-shaker shot10 ingredient16 shaker1 left l0 l1
 0 525 -1 0
 0 489 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37411,7 +37411,7 @@ pour-shot-to-clean-shaker shot10 ingredient16 shaker1 left l1 l2
 0 525 -1 0
 0 489 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37425,7 +37425,7 @@ pour-shot-to-clean-shaker shot10 ingredient16 shaker1 right l0 l1
 0 525 -1 0
 0 489 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37439,7 +37439,7 @@ pour-shot-to-clean-shaker shot10 ingredient16 shaker1 right l1 l2
 0 525 -1 0
 0 489 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37453,7 +37453,7 @@ pour-shot-to-clean-shaker shot10 ingredient17 shaker1 left l0 l1
 0 533 -1 0
 0 490 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37467,7 +37467,7 @@ pour-shot-to-clean-shaker shot10 ingredient17 shaker1 left l1 l2
 0 533 -1 0
 0 490 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37481,7 +37481,7 @@ pour-shot-to-clean-shaker shot10 ingredient17 shaker1 right l0 l1
 0 533 -1 0
 0 490 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37495,7 +37495,7 @@ pour-shot-to-clean-shaker shot10 ingredient17 shaker1 right l1 l2
 0 533 -1 0
 0 490 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37509,7 +37509,7 @@ pour-shot-to-clean-shaker shot10 ingredient18 shaker1 left l0 l1
 0 534 -1 0
 0 491 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37523,7 +37523,7 @@ pour-shot-to-clean-shaker shot10 ingredient18 shaker1 left l1 l2
 0 534 -1 0
 0 491 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37537,7 +37537,7 @@ pour-shot-to-clean-shaker shot10 ingredient18 shaker1 right l0 l1
 0 534 -1 0
 0 491 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37551,7 +37551,7 @@ pour-shot-to-clean-shaker shot10 ingredient18 shaker1 right l1 l2
 0 534 -1 0
 0 491 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37565,7 +37565,7 @@ pour-shot-to-clean-shaker shot10 ingredient19 shaker1 left l0 l1
 0 526 -1 0
 0 492 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37579,7 +37579,7 @@ pour-shot-to-clean-shaker shot10 ingredient19 shaker1 left l1 l2
 0 526 -1 0
 0 492 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37593,7 +37593,7 @@ pour-shot-to-clean-shaker shot10 ingredient19 shaker1 right l0 l1
 0 526 -1 0
 0 492 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37607,7 +37607,7 @@ pour-shot-to-clean-shaker shot10 ingredient19 shaker1 right l1 l2
 0 526 -1 0
 0 492 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37621,7 +37621,7 @@ pour-shot-to-clean-shaker shot10 ingredient2 shaker1 left l0 l1
 0 539 -1 0
 0 493 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37635,7 +37635,7 @@ pour-shot-to-clean-shaker shot10 ingredient2 shaker1 left l1 l2
 0 539 -1 0
 0 493 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37649,7 +37649,7 @@ pour-shot-to-clean-shaker shot10 ingredient2 shaker1 right l0 l1
 0 539 -1 0
 0 493 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37663,7 +37663,7 @@ pour-shot-to-clean-shaker shot10 ingredient2 shaker1 right l1 l2
 0 539 -1 0
 0 493 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37677,7 +37677,7 @@ pour-shot-to-clean-shaker shot10 ingredient20 shaker1 left l0 l1
 0 527 -1 0
 0 494 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37691,7 +37691,7 @@ pour-shot-to-clean-shaker shot10 ingredient20 shaker1 left l1 l2
 0 527 -1 0
 0 494 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37705,7 +37705,7 @@ pour-shot-to-clean-shaker shot10 ingredient20 shaker1 right l0 l1
 0 527 -1 0
 0 494 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37719,7 +37719,7 @@ pour-shot-to-clean-shaker shot10 ingredient20 shaker1 right l1 l2
 0 527 -1 0
 0 494 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37733,7 +37733,7 @@ pour-shot-to-clean-shaker shot10 ingredient3 shaker1 left l0 l1
 0 536 -1 0
 0 495 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37747,7 +37747,7 @@ pour-shot-to-clean-shaker shot10 ingredient3 shaker1 left l1 l2
 0 536 -1 0
 0 495 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37761,7 +37761,7 @@ pour-shot-to-clean-shaker shot10 ingredient3 shaker1 right l0 l1
 0 536 -1 0
 0 495 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37775,7 +37775,7 @@ pour-shot-to-clean-shaker shot10 ingredient3 shaker1 right l1 l2
 0 536 -1 0
 0 495 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37789,7 +37789,7 @@ pour-shot-to-clean-shaker shot10 ingredient4 shaker1 left l0 l1
 0 541 -1 0
 0 496 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37803,7 +37803,7 @@ pour-shot-to-clean-shaker shot10 ingredient4 shaker1 left l1 l2
 0 541 -1 0
 0 496 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37817,7 +37817,7 @@ pour-shot-to-clean-shaker shot10 ingredient4 shaker1 right l0 l1
 0 541 -1 0
 0 496 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37831,7 +37831,7 @@ pour-shot-to-clean-shaker shot10 ingredient4 shaker1 right l1 l2
 0 541 -1 0
 0 496 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37845,7 +37845,7 @@ pour-shot-to-clean-shaker shot10 ingredient5 shaker1 left l0 l1
 0 537 -1 0
 0 497 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37859,7 +37859,7 @@ pour-shot-to-clean-shaker shot10 ingredient5 shaker1 left l1 l2
 0 537 -1 0
 0 497 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37873,7 +37873,7 @@ pour-shot-to-clean-shaker shot10 ingredient5 shaker1 right l0 l1
 0 537 -1 0
 0 497 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37887,7 +37887,7 @@ pour-shot-to-clean-shaker shot10 ingredient5 shaker1 right l1 l2
 0 537 -1 0
 0 497 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37901,7 +37901,7 @@ pour-shot-to-clean-shaker shot10 ingredient6 shaker1 left l0 l1
 0 528 -1 0
 0 498 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37915,7 +37915,7 @@ pour-shot-to-clean-shaker shot10 ingredient6 shaker1 left l1 l2
 0 528 -1 0
 0 498 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37929,7 +37929,7 @@ pour-shot-to-clean-shaker shot10 ingredient6 shaker1 right l0 l1
 0 528 -1 0
 0 498 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37943,7 +37943,7 @@ pour-shot-to-clean-shaker shot10 ingredient6 shaker1 right l1 l2
 0 528 -1 0
 0 498 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37957,7 +37957,7 @@ pour-shot-to-clean-shaker shot10 ingredient7 shaker1 left l0 l1
 0 538 -1 0
 0 499 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37971,7 +37971,7 @@ pour-shot-to-clean-shaker shot10 ingredient7 shaker1 left l1 l2
 0 538 -1 0
 0 499 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -37985,7 +37985,7 @@ pour-shot-to-clean-shaker shot10 ingredient7 shaker1 right l0 l1
 0 538 -1 0
 0 499 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -37999,7 +37999,7 @@ pour-shot-to-clean-shaker shot10 ingredient7 shaker1 right l1 l2
 0 538 -1 0
 0 499 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38013,7 +38013,7 @@ pour-shot-to-clean-shaker shot10 ingredient8 shaker1 left l0 l1
 0 529 -1 0
 0 500 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38027,7 +38027,7 @@ pour-shot-to-clean-shaker shot10 ingredient8 shaker1 left l1 l2
 0 529 -1 0
 0 500 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38041,7 +38041,7 @@ pour-shot-to-clean-shaker shot10 ingredient8 shaker1 right l0 l1
 0 529 -1 0
 0 500 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38055,7 +38055,7 @@ pour-shot-to-clean-shaker shot10 ingredient8 shaker1 right l1 l2
 0 529 -1 0
 0 500 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38069,7 +38069,7 @@ pour-shot-to-clean-shaker shot10 ingredient9 shaker1 left l0 l1
 0 535 -1 0
 0 501 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38083,7 +38083,7 @@ pour-shot-to-clean-shaker shot10 ingredient9 shaker1 left l1 l2
 0 535 -1 0
 0 501 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38097,7 +38097,7 @@ pour-shot-to-clean-shaker shot10 ingredient9 shaker1 right l0 l1
 0 535 -1 0
 0 501 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38111,7 +38111,7 @@ pour-shot-to-clean-shaker shot10 ingredient9 shaker1 right l1 l2
 0 535 -1 0
 0 501 0 1
 0 564 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38125,7 +38125,7 @@ pour-shot-to-clean-shaker shot2 ingredient1 shaker1 left l0 l1
 0 523 -1 0
 0 462 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38139,7 +38139,7 @@ pour-shot-to-clean-shaker shot2 ingredient1 shaker1 left l1 l2
 0 523 -1 0
 0 462 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38153,7 +38153,7 @@ pour-shot-to-clean-shaker shot2 ingredient1 shaker1 right l0 l1
 0 523 -1 0
 0 462 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38167,7 +38167,7 @@ pour-shot-to-clean-shaker shot2 ingredient1 shaker1 right l1 l2
 0 523 -1 0
 0 462 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38181,7 +38181,7 @@ pour-shot-to-clean-shaker shot2 ingredient10 shaker1 left l0 l1
 0 540 -1 0
 0 463 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38195,7 +38195,7 @@ pour-shot-to-clean-shaker shot2 ingredient10 shaker1 left l1 l2
 0 540 -1 0
 0 463 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38209,7 +38209,7 @@ pour-shot-to-clean-shaker shot2 ingredient10 shaker1 right l0 l1
 0 540 -1 0
 0 463 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38223,7 +38223,7 @@ pour-shot-to-clean-shaker shot2 ingredient10 shaker1 right l1 l2
 0 540 -1 0
 0 463 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38237,7 +38237,7 @@ pour-shot-to-clean-shaker shot2 ingredient11 shaker1 left l0 l1
 0 530 -1 0
 0 464 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38251,7 +38251,7 @@ pour-shot-to-clean-shaker shot2 ingredient11 shaker1 left l1 l2
 0 530 -1 0
 0 464 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38265,7 +38265,7 @@ pour-shot-to-clean-shaker shot2 ingredient11 shaker1 right l0 l1
 0 530 -1 0
 0 464 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38279,7 +38279,7 @@ pour-shot-to-clean-shaker shot2 ingredient11 shaker1 right l1 l2
 0 530 -1 0
 0 464 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38293,7 +38293,7 @@ pour-shot-to-clean-shaker shot2 ingredient12 shaker1 left l0 l1
 0 542 -1 0
 0 465 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38307,7 +38307,7 @@ pour-shot-to-clean-shaker shot2 ingredient12 shaker1 left l1 l2
 0 542 -1 0
 0 465 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38321,7 +38321,7 @@ pour-shot-to-clean-shaker shot2 ingredient12 shaker1 right l0 l1
 0 542 -1 0
 0 465 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38335,7 +38335,7 @@ pour-shot-to-clean-shaker shot2 ingredient12 shaker1 right l1 l2
 0 542 -1 0
 0 465 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38349,7 +38349,7 @@ pour-shot-to-clean-shaker shot2 ingredient13 shaker1 left l0 l1
 0 524 -1 0
 0 466 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38363,7 +38363,7 @@ pour-shot-to-clean-shaker shot2 ingredient13 shaker1 left l1 l2
 0 524 -1 0
 0 466 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38377,7 +38377,7 @@ pour-shot-to-clean-shaker shot2 ingredient13 shaker1 right l0 l1
 0 524 -1 0
 0 466 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38391,7 +38391,7 @@ pour-shot-to-clean-shaker shot2 ingredient13 shaker1 right l1 l2
 0 524 -1 0
 0 466 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38405,7 +38405,7 @@ pour-shot-to-clean-shaker shot2 ingredient14 shaker1 left l0 l1
 0 531 -1 0
 0 467 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38419,7 +38419,7 @@ pour-shot-to-clean-shaker shot2 ingredient14 shaker1 left l1 l2
 0 531 -1 0
 0 467 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38433,7 +38433,7 @@ pour-shot-to-clean-shaker shot2 ingredient14 shaker1 right l0 l1
 0 531 -1 0
 0 467 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38447,7 +38447,7 @@ pour-shot-to-clean-shaker shot2 ingredient14 shaker1 right l1 l2
 0 531 -1 0
 0 467 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38461,7 +38461,7 @@ pour-shot-to-clean-shaker shot2 ingredient15 shaker1 left l0 l1
 0 532 -1 0
 0 468 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38475,7 +38475,7 @@ pour-shot-to-clean-shaker shot2 ingredient15 shaker1 left l1 l2
 0 532 -1 0
 0 468 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38489,7 +38489,7 @@ pour-shot-to-clean-shaker shot2 ingredient15 shaker1 right l0 l1
 0 532 -1 0
 0 468 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38503,7 +38503,7 @@ pour-shot-to-clean-shaker shot2 ingredient15 shaker1 right l1 l2
 0 532 -1 0
 0 468 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38517,7 +38517,7 @@ pour-shot-to-clean-shaker shot2 ingredient16 shaker1 left l0 l1
 0 525 -1 0
 0 469 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38531,7 +38531,7 @@ pour-shot-to-clean-shaker shot2 ingredient16 shaker1 left l1 l2
 0 525 -1 0
 0 469 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38545,7 +38545,7 @@ pour-shot-to-clean-shaker shot2 ingredient16 shaker1 right l0 l1
 0 525 -1 0
 0 469 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38559,7 +38559,7 @@ pour-shot-to-clean-shaker shot2 ingredient16 shaker1 right l1 l2
 0 525 -1 0
 0 469 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38573,7 +38573,7 @@ pour-shot-to-clean-shaker shot2 ingredient17 shaker1 left l0 l1
 0 533 -1 0
 0 470 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38587,7 +38587,7 @@ pour-shot-to-clean-shaker shot2 ingredient17 shaker1 left l1 l2
 0 533 -1 0
 0 470 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38601,7 +38601,7 @@ pour-shot-to-clean-shaker shot2 ingredient17 shaker1 right l0 l1
 0 533 -1 0
 0 470 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38615,7 +38615,7 @@ pour-shot-to-clean-shaker shot2 ingredient17 shaker1 right l1 l2
 0 533 -1 0
 0 470 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38629,7 +38629,7 @@ pour-shot-to-clean-shaker shot2 ingredient18 shaker1 left l0 l1
 0 534 -1 0
 0 471 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38643,7 +38643,7 @@ pour-shot-to-clean-shaker shot2 ingredient18 shaker1 left l1 l2
 0 534 -1 0
 0 471 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38657,7 +38657,7 @@ pour-shot-to-clean-shaker shot2 ingredient18 shaker1 right l0 l1
 0 534 -1 0
 0 471 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38671,7 +38671,7 @@ pour-shot-to-clean-shaker shot2 ingredient18 shaker1 right l1 l2
 0 534 -1 0
 0 471 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38685,7 +38685,7 @@ pour-shot-to-clean-shaker shot2 ingredient19 shaker1 left l0 l1
 0 526 -1 0
 0 472 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38699,7 +38699,7 @@ pour-shot-to-clean-shaker shot2 ingredient19 shaker1 left l1 l2
 0 526 -1 0
 0 472 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38713,7 +38713,7 @@ pour-shot-to-clean-shaker shot2 ingredient19 shaker1 right l0 l1
 0 526 -1 0
 0 472 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38727,7 +38727,7 @@ pour-shot-to-clean-shaker shot2 ingredient19 shaker1 right l1 l2
 0 526 -1 0
 0 472 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38741,7 +38741,7 @@ pour-shot-to-clean-shaker shot2 ingredient2 shaker1 left l0 l1
 0 539 -1 0
 0 473 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38755,7 +38755,7 @@ pour-shot-to-clean-shaker shot2 ingredient2 shaker1 left l1 l2
 0 539 -1 0
 0 473 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38769,7 +38769,7 @@ pour-shot-to-clean-shaker shot2 ingredient2 shaker1 right l0 l1
 0 539 -1 0
 0 473 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38783,7 +38783,7 @@ pour-shot-to-clean-shaker shot2 ingredient2 shaker1 right l1 l2
 0 539 -1 0
 0 473 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38797,7 +38797,7 @@ pour-shot-to-clean-shaker shot2 ingredient20 shaker1 left l0 l1
 0 527 -1 0
 0 474 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38811,7 +38811,7 @@ pour-shot-to-clean-shaker shot2 ingredient20 shaker1 left l1 l2
 0 527 -1 0
 0 474 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38825,7 +38825,7 @@ pour-shot-to-clean-shaker shot2 ingredient20 shaker1 right l0 l1
 0 527 -1 0
 0 474 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38839,7 +38839,7 @@ pour-shot-to-clean-shaker shot2 ingredient20 shaker1 right l1 l2
 0 527 -1 0
 0 474 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38853,7 +38853,7 @@ pour-shot-to-clean-shaker shot2 ingredient3 shaker1 left l0 l1
 0 536 -1 0
 0 475 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38867,7 +38867,7 @@ pour-shot-to-clean-shaker shot2 ingredient3 shaker1 left l1 l2
 0 536 -1 0
 0 475 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38881,7 +38881,7 @@ pour-shot-to-clean-shaker shot2 ingredient3 shaker1 right l0 l1
 0 536 -1 0
 0 475 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38895,7 +38895,7 @@ pour-shot-to-clean-shaker shot2 ingredient3 shaker1 right l1 l2
 0 536 -1 0
 0 475 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38909,7 +38909,7 @@ pour-shot-to-clean-shaker shot2 ingredient4 shaker1 left l0 l1
 0 541 -1 0
 0 476 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38923,7 +38923,7 @@ pour-shot-to-clean-shaker shot2 ingredient4 shaker1 left l1 l2
 0 541 -1 0
 0 476 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38937,7 +38937,7 @@ pour-shot-to-clean-shaker shot2 ingredient4 shaker1 right l0 l1
 0 541 -1 0
 0 476 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38951,7 +38951,7 @@ pour-shot-to-clean-shaker shot2 ingredient4 shaker1 right l1 l2
 0 541 -1 0
 0 476 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38965,7 +38965,7 @@ pour-shot-to-clean-shaker shot2 ingredient5 shaker1 left l0 l1
 0 537 -1 0
 0 477 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -38979,7 +38979,7 @@ pour-shot-to-clean-shaker shot2 ingredient5 shaker1 left l1 l2
 0 537 -1 0
 0 477 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -38993,7 +38993,7 @@ pour-shot-to-clean-shaker shot2 ingredient5 shaker1 right l0 l1
 0 537 -1 0
 0 477 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39007,7 +39007,7 @@ pour-shot-to-clean-shaker shot2 ingredient5 shaker1 right l1 l2
 0 537 -1 0
 0 477 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39021,7 +39021,7 @@ pour-shot-to-clean-shaker shot2 ingredient6 shaker1 left l0 l1
 0 528 -1 0
 0 478 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39035,7 +39035,7 @@ pour-shot-to-clean-shaker shot2 ingredient6 shaker1 left l1 l2
 0 528 -1 0
 0 478 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39049,7 +39049,7 @@ pour-shot-to-clean-shaker shot2 ingredient6 shaker1 right l0 l1
 0 528 -1 0
 0 478 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39063,7 +39063,7 @@ pour-shot-to-clean-shaker shot2 ingredient6 shaker1 right l1 l2
 0 528 -1 0
 0 478 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39077,7 +39077,7 @@ pour-shot-to-clean-shaker shot2 ingredient7 shaker1 left l0 l1
 0 538 -1 0
 0 479 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39091,7 +39091,7 @@ pour-shot-to-clean-shaker shot2 ingredient7 shaker1 left l1 l2
 0 538 -1 0
 0 479 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39105,7 +39105,7 @@ pour-shot-to-clean-shaker shot2 ingredient7 shaker1 right l0 l1
 0 538 -1 0
 0 479 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39119,7 +39119,7 @@ pour-shot-to-clean-shaker shot2 ingredient7 shaker1 right l1 l2
 0 538 -1 0
 0 479 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39133,7 +39133,7 @@ pour-shot-to-clean-shaker shot2 ingredient8 shaker1 left l0 l1
 0 529 -1 0
 0 480 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39147,7 +39147,7 @@ pour-shot-to-clean-shaker shot2 ingredient8 shaker1 left l1 l2
 0 529 -1 0
 0 480 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39161,7 +39161,7 @@ pour-shot-to-clean-shaker shot2 ingredient8 shaker1 right l0 l1
 0 529 -1 0
 0 480 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39175,7 +39175,7 @@ pour-shot-to-clean-shaker shot2 ingredient8 shaker1 right l1 l2
 0 529 -1 0
 0 480 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39189,7 +39189,7 @@ pour-shot-to-clean-shaker shot2 ingredient9 shaker1 left l0 l1
 0 535 -1 0
 0 481 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39203,7 +39203,7 @@ pour-shot-to-clean-shaker shot2 ingredient9 shaker1 left l1 l2
 0 535 -1 0
 0 481 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39217,7 +39217,7 @@ pour-shot-to-clean-shaker shot2 ingredient9 shaker1 right l0 l1
 0 535 -1 0
 0 481 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39231,7 +39231,7 @@ pour-shot-to-clean-shaker shot2 ingredient9 shaker1 right l1 l2
 0 535 -1 0
 0 481 0 1
 0 564 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39245,7 +39245,7 @@ pour-shot-to-clean-shaker shot3 ingredient1 shaker1 left l0 l1
 0 523 -1 0
 0 442 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39259,7 +39259,7 @@ pour-shot-to-clean-shaker shot3 ingredient1 shaker1 left l1 l2
 0 523 -1 0
 0 442 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39273,7 +39273,7 @@ pour-shot-to-clean-shaker shot3 ingredient1 shaker1 right l0 l1
 0 523 -1 0
 0 442 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39287,7 +39287,7 @@ pour-shot-to-clean-shaker shot3 ingredient1 shaker1 right l1 l2
 0 523 -1 0
 0 442 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39301,7 +39301,7 @@ pour-shot-to-clean-shaker shot3 ingredient10 shaker1 left l0 l1
 0 540 -1 0
 0 443 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39315,7 +39315,7 @@ pour-shot-to-clean-shaker shot3 ingredient10 shaker1 left l1 l2
 0 540 -1 0
 0 443 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39329,7 +39329,7 @@ pour-shot-to-clean-shaker shot3 ingredient10 shaker1 right l0 l1
 0 540 -1 0
 0 443 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39343,7 +39343,7 @@ pour-shot-to-clean-shaker shot3 ingredient10 shaker1 right l1 l2
 0 540 -1 0
 0 443 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39357,7 +39357,7 @@ pour-shot-to-clean-shaker shot3 ingredient11 shaker1 left l0 l1
 0 530 -1 0
 0 444 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39371,7 +39371,7 @@ pour-shot-to-clean-shaker shot3 ingredient11 shaker1 left l1 l2
 0 530 -1 0
 0 444 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39385,7 +39385,7 @@ pour-shot-to-clean-shaker shot3 ingredient11 shaker1 right l0 l1
 0 530 -1 0
 0 444 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39399,7 +39399,7 @@ pour-shot-to-clean-shaker shot3 ingredient11 shaker1 right l1 l2
 0 530 -1 0
 0 444 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39413,7 +39413,7 @@ pour-shot-to-clean-shaker shot3 ingredient12 shaker1 left l0 l1
 0 542 -1 0
 0 445 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39427,7 +39427,7 @@ pour-shot-to-clean-shaker shot3 ingredient12 shaker1 left l1 l2
 0 542 -1 0
 0 445 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39441,7 +39441,7 @@ pour-shot-to-clean-shaker shot3 ingredient12 shaker1 right l0 l1
 0 542 -1 0
 0 445 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39455,7 +39455,7 @@ pour-shot-to-clean-shaker shot3 ingredient12 shaker1 right l1 l2
 0 542 -1 0
 0 445 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39469,7 +39469,7 @@ pour-shot-to-clean-shaker shot3 ingredient13 shaker1 left l0 l1
 0 524 -1 0
 0 446 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39483,7 +39483,7 @@ pour-shot-to-clean-shaker shot3 ingredient13 shaker1 left l1 l2
 0 524 -1 0
 0 446 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39497,7 +39497,7 @@ pour-shot-to-clean-shaker shot3 ingredient13 shaker1 right l0 l1
 0 524 -1 0
 0 446 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39511,7 +39511,7 @@ pour-shot-to-clean-shaker shot3 ingredient13 shaker1 right l1 l2
 0 524 -1 0
 0 446 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39525,7 +39525,7 @@ pour-shot-to-clean-shaker shot3 ingredient14 shaker1 left l0 l1
 0 531 -1 0
 0 447 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39539,7 +39539,7 @@ pour-shot-to-clean-shaker shot3 ingredient14 shaker1 left l1 l2
 0 531 -1 0
 0 447 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39553,7 +39553,7 @@ pour-shot-to-clean-shaker shot3 ingredient14 shaker1 right l0 l1
 0 531 -1 0
 0 447 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39567,7 +39567,7 @@ pour-shot-to-clean-shaker shot3 ingredient14 shaker1 right l1 l2
 0 531 -1 0
 0 447 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39581,7 +39581,7 @@ pour-shot-to-clean-shaker shot3 ingredient15 shaker1 left l0 l1
 0 532 -1 0
 0 448 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39595,7 +39595,7 @@ pour-shot-to-clean-shaker shot3 ingredient15 shaker1 left l1 l2
 0 532 -1 0
 0 448 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39609,7 +39609,7 @@ pour-shot-to-clean-shaker shot3 ingredient15 shaker1 right l0 l1
 0 532 -1 0
 0 448 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39623,7 +39623,7 @@ pour-shot-to-clean-shaker shot3 ingredient15 shaker1 right l1 l2
 0 532 -1 0
 0 448 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39637,7 +39637,7 @@ pour-shot-to-clean-shaker shot3 ingredient16 shaker1 left l0 l1
 0 525 -1 0
 0 449 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39651,7 +39651,7 @@ pour-shot-to-clean-shaker shot3 ingredient16 shaker1 left l1 l2
 0 525 -1 0
 0 449 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39665,7 +39665,7 @@ pour-shot-to-clean-shaker shot3 ingredient16 shaker1 right l0 l1
 0 525 -1 0
 0 449 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39679,7 +39679,7 @@ pour-shot-to-clean-shaker shot3 ingredient16 shaker1 right l1 l2
 0 525 -1 0
 0 449 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39693,7 +39693,7 @@ pour-shot-to-clean-shaker shot3 ingredient17 shaker1 left l0 l1
 0 533 -1 0
 0 450 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39707,7 +39707,7 @@ pour-shot-to-clean-shaker shot3 ingredient17 shaker1 left l1 l2
 0 533 -1 0
 0 450 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39721,7 +39721,7 @@ pour-shot-to-clean-shaker shot3 ingredient17 shaker1 right l0 l1
 0 533 -1 0
 0 450 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39735,7 +39735,7 @@ pour-shot-to-clean-shaker shot3 ingredient17 shaker1 right l1 l2
 0 533 -1 0
 0 450 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39749,7 +39749,7 @@ pour-shot-to-clean-shaker shot3 ingredient18 shaker1 left l0 l1
 0 534 -1 0
 0 451 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39763,7 +39763,7 @@ pour-shot-to-clean-shaker shot3 ingredient18 shaker1 left l1 l2
 0 534 -1 0
 0 451 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39777,7 +39777,7 @@ pour-shot-to-clean-shaker shot3 ingredient18 shaker1 right l0 l1
 0 534 -1 0
 0 451 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39791,7 +39791,7 @@ pour-shot-to-clean-shaker shot3 ingredient18 shaker1 right l1 l2
 0 534 -1 0
 0 451 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39805,7 +39805,7 @@ pour-shot-to-clean-shaker shot3 ingredient19 shaker1 left l0 l1
 0 526 -1 0
 0 452 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39819,7 +39819,7 @@ pour-shot-to-clean-shaker shot3 ingredient19 shaker1 left l1 l2
 0 526 -1 0
 0 452 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39833,7 +39833,7 @@ pour-shot-to-clean-shaker shot3 ingredient19 shaker1 right l0 l1
 0 526 -1 0
 0 452 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39847,7 +39847,7 @@ pour-shot-to-clean-shaker shot3 ingredient19 shaker1 right l1 l2
 0 526 -1 0
 0 452 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39861,7 +39861,7 @@ pour-shot-to-clean-shaker shot3 ingredient2 shaker1 left l0 l1
 0 539 -1 0
 0 453 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39875,7 +39875,7 @@ pour-shot-to-clean-shaker shot3 ingredient2 shaker1 left l1 l2
 0 539 -1 0
 0 453 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39889,7 +39889,7 @@ pour-shot-to-clean-shaker shot3 ingredient2 shaker1 right l0 l1
 0 539 -1 0
 0 453 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39903,7 +39903,7 @@ pour-shot-to-clean-shaker shot3 ingredient2 shaker1 right l1 l2
 0 539 -1 0
 0 453 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39917,7 +39917,7 @@ pour-shot-to-clean-shaker shot3 ingredient20 shaker1 left l0 l1
 0 527 -1 0
 0 454 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39931,7 +39931,7 @@ pour-shot-to-clean-shaker shot3 ingredient20 shaker1 left l1 l2
 0 527 -1 0
 0 454 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39945,7 +39945,7 @@ pour-shot-to-clean-shaker shot3 ingredient20 shaker1 right l0 l1
 0 527 -1 0
 0 454 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39959,7 +39959,7 @@ pour-shot-to-clean-shaker shot3 ingredient20 shaker1 right l1 l2
 0 527 -1 0
 0 454 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -39973,7 +39973,7 @@ pour-shot-to-clean-shaker shot3 ingredient3 shaker1 left l0 l1
 0 536 -1 0
 0 455 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -39987,7 +39987,7 @@ pour-shot-to-clean-shaker shot3 ingredient3 shaker1 left l1 l2
 0 536 -1 0
 0 455 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40001,7 +40001,7 @@ pour-shot-to-clean-shaker shot3 ingredient3 shaker1 right l0 l1
 0 536 -1 0
 0 455 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40015,7 +40015,7 @@ pour-shot-to-clean-shaker shot3 ingredient3 shaker1 right l1 l2
 0 536 -1 0
 0 455 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40029,7 +40029,7 @@ pour-shot-to-clean-shaker shot3 ingredient4 shaker1 left l0 l1
 0 541 -1 0
 0 456 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40043,7 +40043,7 @@ pour-shot-to-clean-shaker shot3 ingredient4 shaker1 left l1 l2
 0 541 -1 0
 0 456 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40057,7 +40057,7 @@ pour-shot-to-clean-shaker shot3 ingredient4 shaker1 right l0 l1
 0 541 -1 0
 0 456 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40071,7 +40071,7 @@ pour-shot-to-clean-shaker shot3 ingredient4 shaker1 right l1 l2
 0 541 -1 0
 0 456 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40085,7 +40085,7 @@ pour-shot-to-clean-shaker shot3 ingredient5 shaker1 left l0 l1
 0 537 -1 0
 0 457 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40099,7 +40099,7 @@ pour-shot-to-clean-shaker shot3 ingredient5 shaker1 left l1 l2
 0 537 -1 0
 0 457 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40113,7 +40113,7 @@ pour-shot-to-clean-shaker shot3 ingredient5 shaker1 right l0 l1
 0 537 -1 0
 0 457 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40127,7 +40127,7 @@ pour-shot-to-clean-shaker shot3 ingredient5 shaker1 right l1 l2
 0 537 -1 0
 0 457 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40141,7 +40141,7 @@ pour-shot-to-clean-shaker shot3 ingredient6 shaker1 left l0 l1
 0 528 -1 0
 0 458 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40155,7 +40155,7 @@ pour-shot-to-clean-shaker shot3 ingredient6 shaker1 left l1 l2
 0 528 -1 0
 0 458 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40169,7 +40169,7 @@ pour-shot-to-clean-shaker shot3 ingredient6 shaker1 right l0 l1
 0 528 -1 0
 0 458 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40183,7 +40183,7 @@ pour-shot-to-clean-shaker shot3 ingredient6 shaker1 right l1 l2
 0 528 -1 0
 0 458 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40197,7 +40197,7 @@ pour-shot-to-clean-shaker shot3 ingredient7 shaker1 left l0 l1
 0 538 -1 0
 0 459 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40211,7 +40211,7 @@ pour-shot-to-clean-shaker shot3 ingredient7 shaker1 left l1 l2
 0 538 -1 0
 0 459 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40225,7 +40225,7 @@ pour-shot-to-clean-shaker shot3 ingredient7 shaker1 right l0 l1
 0 538 -1 0
 0 459 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40239,7 +40239,7 @@ pour-shot-to-clean-shaker shot3 ingredient7 shaker1 right l1 l2
 0 538 -1 0
 0 459 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40253,7 +40253,7 @@ pour-shot-to-clean-shaker shot3 ingredient8 shaker1 left l0 l1
 0 529 -1 0
 0 460 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40267,7 +40267,7 @@ pour-shot-to-clean-shaker shot3 ingredient8 shaker1 left l1 l2
 0 529 -1 0
 0 460 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40281,7 +40281,7 @@ pour-shot-to-clean-shaker shot3 ingredient8 shaker1 right l0 l1
 0 529 -1 0
 0 460 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40295,7 +40295,7 @@ pour-shot-to-clean-shaker shot3 ingredient8 shaker1 right l1 l2
 0 529 -1 0
 0 460 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40309,7 +40309,7 @@ pour-shot-to-clean-shaker shot3 ingredient9 shaker1 left l0 l1
 0 535 -1 0
 0 461 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40323,7 +40323,7 @@ pour-shot-to-clean-shaker shot3 ingredient9 shaker1 left l1 l2
 0 535 -1 0
 0 461 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40337,7 +40337,7 @@ pour-shot-to-clean-shaker shot3 ingredient9 shaker1 right l0 l1
 0 535 -1 0
 0 461 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40351,7 +40351,7 @@ pour-shot-to-clean-shaker shot3 ingredient9 shaker1 right l1 l2
 0 535 -1 0
 0 461 0 1
 0 564 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40365,7 +40365,7 @@ pour-shot-to-clean-shaker shot4 ingredient1 shaker1 left l0 l1
 0 523 -1 0
 0 422 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40379,7 +40379,7 @@ pour-shot-to-clean-shaker shot4 ingredient1 shaker1 left l1 l2
 0 523 -1 0
 0 422 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40393,7 +40393,7 @@ pour-shot-to-clean-shaker shot4 ingredient1 shaker1 right l0 l1
 0 523 -1 0
 0 422 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40407,7 +40407,7 @@ pour-shot-to-clean-shaker shot4 ingredient1 shaker1 right l1 l2
 0 523 -1 0
 0 422 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40421,7 +40421,7 @@ pour-shot-to-clean-shaker shot4 ingredient10 shaker1 left l0 l1
 0 540 -1 0
 0 423 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40435,7 +40435,7 @@ pour-shot-to-clean-shaker shot4 ingredient10 shaker1 left l1 l2
 0 540 -1 0
 0 423 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40449,7 +40449,7 @@ pour-shot-to-clean-shaker shot4 ingredient10 shaker1 right l0 l1
 0 540 -1 0
 0 423 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40463,7 +40463,7 @@ pour-shot-to-clean-shaker shot4 ingredient10 shaker1 right l1 l2
 0 540 -1 0
 0 423 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40477,7 +40477,7 @@ pour-shot-to-clean-shaker shot4 ingredient11 shaker1 left l0 l1
 0 530 -1 0
 0 424 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40491,7 +40491,7 @@ pour-shot-to-clean-shaker shot4 ingredient11 shaker1 left l1 l2
 0 530 -1 0
 0 424 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40505,7 +40505,7 @@ pour-shot-to-clean-shaker shot4 ingredient11 shaker1 right l0 l1
 0 530 -1 0
 0 424 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40519,7 +40519,7 @@ pour-shot-to-clean-shaker shot4 ingredient11 shaker1 right l1 l2
 0 530 -1 0
 0 424 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40533,7 +40533,7 @@ pour-shot-to-clean-shaker shot4 ingredient12 shaker1 left l0 l1
 0 542 -1 0
 0 425 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40547,7 +40547,7 @@ pour-shot-to-clean-shaker shot4 ingredient12 shaker1 left l1 l2
 0 542 -1 0
 0 425 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40561,7 +40561,7 @@ pour-shot-to-clean-shaker shot4 ingredient12 shaker1 right l0 l1
 0 542 -1 0
 0 425 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40575,7 +40575,7 @@ pour-shot-to-clean-shaker shot4 ingredient12 shaker1 right l1 l2
 0 542 -1 0
 0 425 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40589,7 +40589,7 @@ pour-shot-to-clean-shaker shot4 ingredient13 shaker1 left l0 l1
 0 524 -1 0
 0 426 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40603,7 +40603,7 @@ pour-shot-to-clean-shaker shot4 ingredient13 shaker1 left l1 l2
 0 524 -1 0
 0 426 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40617,7 +40617,7 @@ pour-shot-to-clean-shaker shot4 ingredient13 shaker1 right l0 l1
 0 524 -1 0
 0 426 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40631,7 +40631,7 @@ pour-shot-to-clean-shaker shot4 ingredient13 shaker1 right l1 l2
 0 524 -1 0
 0 426 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40645,7 +40645,7 @@ pour-shot-to-clean-shaker shot4 ingredient14 shaker1 left l0 l1
 0 531 -1 0
 0 427 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40659,7 +40659,7 @@ pour-shot-to-clean-shaker shot4 ingredient14 shaker1 left l1 l2
 0 531 -1 0
 0 427 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40673,7 +40673,7 @@ pour-shot-to-clean-shaker shot4 ingredient14 shaker1 right l0 l1
 0 531 -1 0
 0 427 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40687,7 +40687,7 @@ pour-shot-to-clean-shaker shot4 ingredient14 shaker1 right l1 l2
 0 531 -1 0
 0 427 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40701,7 +40701,7 @@ pour-shot-to-clean-shaker shot4 ingredient15 shaker1 left l0 l1
 0 532 -1 0
 0 428 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40715,7 +40715,7 @@ pour-shot-to-clean-shaker shot4 ingredient15 shaker1 left l1 l2
 0 532 -1 0
 0 428 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40729,7 +40729,7 @@ pour-shot-to-clean-shaker shot4 ingredient15 shaker1 right l0 l1
 0 532 -1 0
 0 428 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40743,7 +40743,7 @@ pour-shot-to-clean-shaker shot4 ingredient15 shaker1 right l1 l2
 0 532 -1 0
 0 428 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40757,7 +40757,7 @@ pour-shot-to-clean-shaker shot4 ingredient16 shaker1 left l0 l1
 0 525 -1 0
 0 429 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40771,7 +40771,7 @@ pour-shot-to-clean-shaker shot4 ingredient16 shaker1 left l1 l2
 0 525 -1 0
 0 429 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40785,7 +40785,7 @@ pour-shot-to-clean-shaker shot4 ingredient16 shaker1 right l0 l1
 0 525 -1 0
 0 429 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40799,7 +40799,7 @@ pour-shot-to-clean-shaker shot4 ingredient16 shaker1 right l1 l2
 0 525 -1 0
 0 429 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40813,7 +40813,7 @@ pour-shot-to-clean-shaker shot4 ingredient17 shaker1 left l0 l1
 0 533 -1 0
 0 430 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40827,7 +40827,7 @@ pour-shot-to-clean-shaker shot4 ingredient17 shaker1 left l1 l2
 0 533 -1 0
 0 430 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40841,7 +40841,7 @@ pour-shot-to-clean-shaker shot4 ingredient17 shaker1 right l0 l1
 0 533 -1 0
 0 430 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40855,7 +40855,7 @@ pour-shot-to-clean-shaker shot4 ingredient17 shaker1 right l1 l2
 0 533 -1 0
 0 430 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40869,7 +40869,7 @@ pour-shot-to-clean-shaker shot4 ingredient18 shaker1 left l0 l1
 0 534 -1 0
 0 431 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40883,7 +40883,7 @@ pour-shot-to-clean-shaker shot4 ingredient18 shaker1 left l1 l2
 0 534 -1 0
 0 431 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40897,7 +40897,7 @@ pour-shot-to-clean-shaker shot4 ingredient18 shaker1 right l0 l1
 0 534 -1 0
 0 431 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40911,7 +40911,7 @@ pour-shot-to-clean-shaker shot4 ingredient18 shaker1 right l1 l2
 0 534 -1 0
 0 431 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40925,7 +40925,7 @@ pour-shot-to-clean-shaker shot4 ingredient19 shaker1 left l0 l1
 0 526 -1 0
 0 432 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40939,7 +40939,7 @@ pour-shot-to-clean-shaker shot4 ingredient19 shaker1 left l1 l2
 0 526 -1 0
 0 432 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40953,7 +40953,7 @@ pour-shot-to-clean-shaker shot4 ingredient19 shaker1 right l0 l1
 0 526 -1 0
 0 432 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40967,7 +40967,7 @@ pour-shot-to-clean-shaker shot4 ingredient19 shaker1 right l1 l2
 0 526 -1 0
 0 432 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -40981,7 +40981,7 @@ pour-shot-to-clean-shaker shot4 ingredient2 shaker1 left l0 l1
 0 539 -1 0
 0 433 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -40995,7 +40995,7 @@ pour-shot-to-clean-shaker shot4 ingredient2 shaker1 left l1 l2
 0 539 -1 0
 0 433 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41009,7 +41009,7 @@ pour-shot-to-clean-shaker shot4 ingredient2 shaker1 right l0 l1
 0 539 -1 0
 0 433 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41023,7 +41023,7 @@ pour-shot-to-clean-shaker shot4 ingredient2 shaker1 right l1 l2
 0 539 -1 0
 0 433 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41037,7 +41037,7 @@ pour-shot-to-clean-shaker shot4 ingredient20 shaker1 left l0 l1
 0 527 -1 0
 0 434 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41051,7 +41051,7 @@ pour-shot-to-clean-shaker shot4 ingredient20 shaker1 left l1 l2
 0 527 -1 0
 0 434 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41065,7 +41065,7 @@ pour-shot-to-clean-shaker shot4 ingredient20 shaker1 right l0 l1
 0 527 -1 0
 0 434 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41079,7 +41079,7 @@ pour-shot-to-clean-shaker shot4 ingredient20 shaker1 right l1 l2
 0 527 -1 0
 0 434 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41093,7 +41093,7 @@ pour-shot-to-clean-shaker shot4 ingredient3 shaker1 left l0 l1
 0 536 -1 0
 0 435 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41107,7 +41107,7 @@ pour-shot-to-clean-shaker shot4 ingredient3 shaker1 left l1 l2
 0 536 -1 0
 0 435 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41121,7 +41121,7 @@ pour-shot-to-clean-shaker shot4 ingredient3 shaker1 right l0 l1
 0 536 -1 0
 0 435 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41135,7 +41135,7 @@ pour-shot-to-clean-shaker shot4 ingredient3 shaker1 right l1 l2
 0 536 -1 0
 0 435 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41149,7 +41149,7 @@ pour-shot-to-clean-shaker shot4 ingredient4 shaker1 left l0 l1
 0 541 -1 0
 0 436 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41163,7 +41163,7 @@ pour-shot-to-clean-shaker shot4 ingredient4 shaker1 left l1 l2
 0 541 -1 0
 0 436 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41177,7 +41177,7 @@ pour-shot-to-clean-shaker shot4 ingredient4 shaker1 right l0 l1
 0 541 -1 0
 0 436 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41191,7 +41191,7 @@ pour-shot-to-clean-shaker shot4 ingredient4 shaker1 right l1 l2
 0 541 -1 0
 0 436 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41205,7 +41205,7 @@ pour-shot-to-clean-shaker shot4 ingredient5 shaker1 left l0 l1
 0 537 -1 0
 0 437 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41219,7 +41219,7 @@ pour-shot-to-clean-shaker shot4 ingredient5 shaker1 left l1 l2
 0 537 -1 0
 0 437 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41233,7 +41233,7 @@ pour-shot-to-clean-shaker shot4 ingredient5 shaker1 right l0 l1
 0 537 -1 0
 0 437 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41247,7 +41247,7 @@ pour-shot-to-clean-shaker shot4 ingredient5 shaker1 right l1 l2
 0 537 -1 0
 0 437 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41261,7 +41261,7 @@ pour-shot-to-clean-shaker shot4 ingredient6 shaker1 left l0 l1
 0 528 -1 0
 0 438 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41275,7 +41275,7 @@ pour-shot-to-clean-shaker shot4 ingredient6 shaker1 left l1 l2
 0 528 -1 0
 0 438 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41289,7 +41289,7 @@ pour-shot-to-clean-shaker shot4 ingredient6 shaker1 right l0 l1
 0 528 -1 0
 0 438 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41303,7 +41303,7 @@ pour-shot-to-clean-shaker shot4 ingredient6 shaker1 right l1 l2
 0 528 -1 0
 0 438 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41317,7 +41317,7 @@ pour-shot-to-clean-shaker shot4 ingredient7 shaker1 left l0 l1
 0 538 -1 0
 0 439 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41331,7 +41331,7 @@ pour-shot-to-clean-shaker shot4 ingredient7 shaker1 left l1 l2
 0 538 -1 0
 0 439 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41345,7 +41345,7 @@ pour-shot-to-clean-shaker shot4 ingredient7 shaker1 right l0 l1
 0 538 -1 0
 0 439 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41359,7 +41359,7 @@ pour-shot-to-clean-shaker shot4 ingredient7 shaker1 right l1 l2
 0 538 -1 0
 0 439 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41373,7 +41373,7 @@ pour-shot-to-clean-shaker shot4 ingredient8 shaker1 left l0 l1
 0 529 -1 0
 0 440 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41387,7 +41387,7 @@ pour-shot-to-clean-shaker shot4 ingredient8 shaker1 left l1 l2
 0 529 -1 0
 0 440 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41401,7 +41401,7 @@ pour-shot-to-clean-shaker shot4 ingredient8 shaker1 right l0 l1
 0 529 -1 0
 0 440 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41415,7 +41415,7 @@ pour-shot-to-clean-shaker shot4 ingredient8 shaker1 right l1 l2
 0 529 -1 0
 0 440 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41429,7 +41429,7 @@ pour-shot-to-clean-shaker shot4 ingredient9 shaker1 left l0 l1
 0 535 -1 0
 0 441 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41443,7 +41443,7 @@ pour-shot-to-clean-shaker shot4 ingredient9 shaker1 left l1 l2
 0 535 -1 0
 0 441 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41457,7 +41457,7 @@ pour-shot-to-clean-shaker shot4 ingredient9 shaker1 right l0 l1
 0 535 -1 0
 0 441 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41471,7 +41471,7 @@ pour-shot-to-clean-shaker shot4 ingredient9 shaker1 right l1 l2
 0 535 -1 0
 0 441 0 1
 0 564 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41485,7 +41485,7 @@ pour-shot-to-clean-shaker shot5 ingredient1 shaker1 left l0 l1
 0 523 -1 0
 0 402 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41499,7 +41499,7 @@ pour-shot-to-clean-shaker shot5 ingredient1 shaker1 left l1 l2
 0 523 -1 0
 0 402 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41513,7 +41513,7 @@ pour-shot-to-clean-shaker shot5 ingredient1 shaker1 right l0 l1
 0 523 -1 0
 0 402 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41527,7 +41527,7 @@ pour-shot-to-clean-shaker shot5 ingredient1 shaker1 right l1 l2
 0 523 -1 0
 0 402 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41541,7 +41541,7 @@ pour-shot-to-clean-shaker shot5 ingredient10 shaker1 left l0 l1
 0 540 -1 0
 0 403 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41555,7 +41555,7 @@ pour-shot-to-clean-shaker shot5 ingredient10 shaker1 left l1 l2
 0 540 -1 0
 0 403 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41569,7 +41569,7 @@ pour-shot-to-clean-shaker shot5 ingredient10 shaker1 right l0 l1
 0 540 -1 0
 0 403 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41583,7 +41583,7 @@ pour-shot-to-clean-shaker shot5 ingredient10 shaker1 right l1 l2
 0 540 -1 0
 0 403 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41597,7 +41597,7 @@ pour-shot-to-clean-shaker shot5 ingredient11 shaker1 left l0 l1
 0 530 -1 0
 0 404 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41611,7 +41611,7 @@ pour-shot-to-clean-shaker shot5 ingredient11 shaker1 left l1 l2
 0 530 -1 0
 0 404 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41625,7 +41625,7 @@ pour-shot-to-clean-shaker shot5 ingredient11 shaker1 right l0 l1
 0 530 -1 0
 0 404 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41639,7 +41639,7 @@ pour-shot-to-clean-shaker shot5 ingredient11 shaker1 right l1 l2
 0 530 -1 0
 0 404 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41653,7 +41653,7 @@ pour-shot-to-clean-shaker shot5 ingredient12 shaker1 left l0 l1
 0 542 -1 0
 0 405 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41667,7 +41667,7 @@ pour-shot-to-clean-shaker shot5 ingredient12 shaker1 left l1 l2
 0 542 -1 0
 0 405 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41681,7 +41681,7 @@ pour-shot-to-clean-shaker shot5 ingredient12 shaker1 right l0 l1
 0 542 -1 0
 0 405 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41695,7 +41695,7 @@ pour-shot-to-clean-shaker shot5 ingredient12 shaker1 right l1 l2
 0 542 -1 0
 0 405 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41709,7 +41709,7 @@ pour-shot-to-clean-shaker shot5 ingredient13 shaker1 left l0 l1
 0 524 -1 0
 0 406 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41723,7 +41723,7 @@ pour-shot-to-clean-shaker shot5 ingredient13 shaker1 left l1 l2
 0 524 -1 0
 0 406 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41737,7 +41737,7 @@ pour-shot-to-clean-shaker shot5 ingredient13 shaker1 right l0 l1
 0 524 -1 0
 0 406 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41751,7 +41751,7 @@ pour-shot-to-clean-shaker shot5 ingredient13 shaker1 right l1 l2
 0 524 -1 0
 0 406 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41765,7 +41765,7 @@ pour-shot-to-clean-shaker shot5 ingredient14 shaker1 left l0 l1
 0 531 -1 0
 0 407 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41779,7 +41779,7 @@ pour-shot-to-clean-shaker shot5 ingredient14 shaker1 left l1 l2
 0 531 -1 0
 0 407 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41793,7 +41793,7 @@ pour-shot-to-clean-shaker shot5 ingredient14 shaker1 right l0 l1
 0 531 -1 0
 0 407 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41807,7 +41807,7 @@ pour-shot-to-clean-shaker shot5 ingredient14 shaker1 right l1 l2
 0 531 -1 0
 0 407 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41821,7 +41821,7 @@ pour-shot-to-clean-shaker shot5 ingredient15 shaker1 left l0 l1
 0 532 -1 0
 0 408 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41835,7 +41835,7 @@ pour-shot-to-clean-shaker shot5 ingredient15 shaker1 left l1 l2
 0 532 -1 0
 0 408 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41849,7 +41849,7 @@ pour-shot-to-clean-shaker shot5 ingredient15 shaker1 right l0 l1
 0 532 -1 0
 0 408 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41863,7 +41863,7 @@ pour-shot-to-clean-shaker shot5 ingredient15 shaker1 right l1 l2
 0 532 -1 0
 0 408 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41877,7 +41877,7 @@ pour-shot-to-clean-shaker shot5 ingredient16 shaker1 left l0 l1
 0 525 -1 0
 0 409 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41891,7 +41891,7 @@ pour-shot-to-clean-shaker shot5 ingredient16 shaker1 left l1 l2
 0 525 -1 0
 0 409 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41905,7 +41905,7 @@ pour-shot-to-clean-shaker shot5 ingredient16 shaker1 right l0 l1
 0 525 -1 0
 0 409 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41919,7 +41919,7 @@ pour-shot-to-clean-shaker shot5 ingredient16 shaker1 right l1 l2
 0 525 -1 0
 0 409 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41933,7 +41933,7 @@ pour-shot-to-clean-shaker shot5 ingredient17 shaker1 left l0 l1
 0 533 -1 0
 0 410 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41947,7 +41947,7 @@ pour-shot-to-clean-shaker shot5 ingredient17 shaker1 left l1 l2
 0 533 -1 0
 0 410 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41961,7 +41961,7 @@ pour-shot-to-clean-shaker shot5 ingredient17 shaker1 right l0 l1
 0 533 -1 0
 0 410 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -41975,7 +41975,7 @@ pour-shot-to-clean-shaker shot5 ingredient17 shaker1 right l1 l2
 0 533 -1 0
 0 410 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -41989,7 +41989,7 @@ pour-shot-to-clean-shaker shot5 ingredient18 shaker1 left l0 l1
 0 534 -1 0
 0 411 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42003,7 +42003,7 @@ pour-shot-to-clean-shaker shot5 ingredient18 shaker1 left l1 l2
 0 534 -1 0
 0 411 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42017,7 +42017,7 @@ pour-shot-to-clean-shaker shot5 ingredient18 shaker1 right l0 l1
 0 534 -1 0
 0 411 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42031,7 +42031,7 @@ pour-shot-to-clean-shaker shot5 ingredient18 shaker1 right l1 l2
 0 534 -1 0
 0 411 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42045,7 +42045,7 @@ pour-shot-to-clean-shaker shot5 ingredient19 shaker1 left l0 l1
 0 526 -1 0
 0 412 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42059,7 +42059,7 @@ pour-shot-to-clean-shaker shot5 ingredient19 shaker1 left l1 l2
 0 526 -1 0
 0 412 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42073,7 +42073,7 @@ pour-shot-to-clean-shaker shot5 ingredient19 shaker1 right l0 l1
 0 526 -1 0
 0 412 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42087,7 +42087,7 @@ pour-shot-to-clean-shaker shot5 ingredient19 shaker1 right l1 l2
 0 526 -1 0
 0 412 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42101,7 +42101,7 @@ pour-shot-to-clean-shaker shot5 ingredient2 shaker1 left l0 l1
 0 539 -1 0
 0 413 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42115,7 +42115,7 @@ pour-shot-to-clean-shaker shot5 ingredient2 shaker1 left l1 l2
 0 539 -1 0
 0 413 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42129,7 +42129,7 @@ pour-shot-to-clean-shaker shot5 ingredient2 shaker1 right l0 l1
 0 539 -1 0
 0 413 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42143,7 +42143,7 @@ pour-shot-to-clean-shaker shot5 ingredient2 shaker1 right l1 l2
 0 539 -1 0
 0 413 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42157,7 +42157,7 @@ pour-shot-to-clean-shaker shot5 ingredient20 shaker1 left l0 l1
 0 527 -1 0
 0 414 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42171,7 +42171,7 @@ pour-shot-to-clean-shaker shot5 ingredient20 shaker1 left l1 l2
 0 527 -1 0
 0 414 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42185,7 +42185,7 @@ pour-shot-to-clean-shaker shot5 ingredient20 shaker1 right l0 l1
 0 527 -1 0
 0 414 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42199,7 +42199,7 @@ pour-shot-to-clean-shaker shot5 ingredient20 shaker1 right l1 l2
 0 527 -1 0
 0 414 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42213,7 +42213,7 @@ pour-shot-to-clean-shaker shot5 ingredient3 shaker1 left l0 l1
 0 536 -1 0
 0 415 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42227,7 +42227,7 @@ pour-shot-to-clean-shaker shot5 ingredient3 shaker1 left l1 l2
 0 536 -1 0
 0 415 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42241,7 +42241,7 @@ pour-shot-to-clean-shaker shot5 ingredient3 shaker1 right l0 l1
 0 536 -1 0
 0 415 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42255,7 +42255,7 @@ pour-shot-to-clean-shaker shot5 ingredient3 shaker1 right l1 l2
 0 536 -1 0
 0 415 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42269,7 +42269,7 @@ pour-shot-to-clean-shaker shot5 ingredient4 shaker1 left l0 l1
 0 541 -1 0
 0 416 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42283,7 +42283,7 @@ pour-shot-to-clean-shaker shot5 ingredient4 shaker1 left l1 l2
 0 541 -1 0
 0 416 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42297,7 +42297,7 @@ pour-shot-to-clean-shaker shot5 ingredient4 shaker1 right l0 l1
 0 541 -1 0
 0 416 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42311,7 +42311,7 @@ pour-shot-to-clean-shaker shot5 ingredient4 shaker1 right l1 l2
 0 541 -1 0
 0 416 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42325,7 +42325,7 @@ pour-shot-to-clean-shaker shot5 ingredient5 shaker1 left l0 l1
 0 537 -1 0
 0 417 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42339,7 +42339,7 @@ pour-shot-to-clean-shaker shot5 ingredient5 shaker1 left l1 l2
 0 537 -1 0
 0 417 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42353,7 +42353,7 @@ pour-shot-to-clean-shaker shot5 ingredient5 shaker1 right l0 l1
 0 537 -1 0
 0 417 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42367,7 +42367,7 @@ pour-shot-to-clean-shaker shot5 ingredient5 shaker1 right l1 l2
 0 537 -1 0
 0 417 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42381,7 +42381,7 @@ pour-shot-to-clean-shaker shot5 ingredient6 shaker1 left l0 l1
 0 528 -1 0
 0 418 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42395,7 +42395,7 @@ pour-shot-to-clean-shaker shot5 ingredient6 shaker1 left l1 l2
 0 528 -1 0
 0 418 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42409,7 +42409,7 @@ pour-shot-to-clean-shaker shot5 ingredient6 shaker1 right l0 l1
 0 528 -1 0
 0 418 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42423,7 +42423,7 @@ pour-shot-to-clean-shaker shot5 ingredient6 shaker1 right l1 l2
 0 528 -1 0
 0 418 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42437,7 +42437,7 @@ pour-shot-to-clean-shaker shot5 ingredient7 shaker1 left l0 l1
 0 538 -1 0
 0 419 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42451,7 +42451,7 @@ pour-shot-to-clean-shaker shot5 ingredient7 shaker1 left l1 l2
 0 538 -1 0
 0 419 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42465,7 +42465,7 @@ pour-shot-to-clean-shaker shot5 ingredient7 shaker1 right l0 l1
 0 538 -1 0
 0 419 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42479,7 +42479,7 @@ pour-shot-to-clean-shaker shot5 ingredient7 shaker1 right l1 l2
 0 538 -1 0
 0 419 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42493,7 +42493,7 @@ pour-shot-to-clean-shaker shot5 ingredient8 shaker1 left l0 l1
 0 529 -1 0
 0 420 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42507,7 +42507,7 @@ pour-shot-to-clean-shaker shot5 ingredient8 shaker1 left l1 l2
 0 529 -1 0
 0 420 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42521,7 +42521,7 @@ pour-shot-to-clean-shaker shot5 ingredient8 shaker1 right l0 l1
 0 529 -1 0
 0 420 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42535,7 +42535,7 @@ pour-shot-to-clean-shaker shot5 ingredient8 shaker1 right l1 l2
 0 529 -1 0
 0 420 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42549,7 +42549,7 @@ pour-shot-to-clean-shaker shot5 ingredient9 shaker1 left l0 l1
 0 535 -1 0
 0 421 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42563,7 +42563,7 @@ pour-shot-to-clean-shaker shot5 ingredient9 shaker1 left l1 l2
 0 535 -1 0
 0 421 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42577,7 +42577,7 @@ pour-shot-to-clean-shaker shot5 ingredient9 shaker1 right l0 l1
 0 535 -1 0
 0 421 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42591,7 +42591,7 @@ pour-shot-to-clean-shaker shot5 ingredient9 shaker1 right l1 l2
 0 535 -1 0
 0 421 0 1
 0 564 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42605,7 +42605,7 @@ pour-shot-to-clean-shaker shot6 ingredient1 shaker1 left l0 l1
 0 523 -1 0
 0 382 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42619,7 +42619,7 @@ pour-shot-to-clean-shaker shot6 ingredient1 shaker1 left l1 l2
 0 523 -1 0
 0 382 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42633,7 +42633,7 @@ pour-shot-to-clean-shaker shot6 ingredient1 shaker1 right l0 l1
 0 523 -1 0
 0 382 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42647,7 +42647,7 @@ pour-shot-to-clean-shaker shot6 ingredient1 shaker1 right l1 l2
 0 523 -1 0
 0 382 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42661,7 +42661,7 @@ pour-shot-to-clean-shaker shot6 ingredient10 shaker1 left l0 l1
 0 540 -1 0
 0 383 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42675,7 +42675,7 @@ pour-shot-to-clean-shaker shot6 ingredient10 shaker1 left l1 l2
 0 540 -1 0
 0 383 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42689,7 +42689,7 @@ pour-shot-to-clean-shaker shot6 ingredient10 shaker1 right l0 l1
 0 540 -1 0
 0 383 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42703,7 +42703,7 @@ pour-shot-to-clean-shaker shot6 ingredient10 shaker1 right l1 l2
 0 540 -1 0
 0 383 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42717,7 +42717,7 @@ pour-shot-to-clean-shaker shot6 ingredient11 shaker1 left l0 l1
 0 530 -1 0
 0 384 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42731,7 +42731,7 @@ pour-shot-to-clean-shaker shot6 ingredient11 shaker1 left l1 l2
 0 530 -1 0
 0 384 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42745,7 +42745,7 @@ pour-shot-to-clean-shaker shot6 ingredient11 shaker1 right l0 l1
 0 530 -1 0
 0 384 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42759,7 +42759,7 @@ pour-shot-to-clean-shaker shot6 ingredient11 shaker1 right l1 l2
 0 530 -1 0
 0 384 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42773,7 +42773,7 @@ pour-shot-to-clean-shaker shot6 ingredient12 shaker1 left l0 l1
 0 542 -1 0
 0 385 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42787,7 +42787,7 @@ pour-shot-to-clean-shaker shot6 ingredient12 shaker1 left l1 l2
 0 542 -1 0
 0 385 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42801,7 +42801,7 @@ pour-shot-to-clean-shaker shot6 ingredient12 shaker1 right l0 l1
 0 542 -1 0
 0 385 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42815,7 +42815,7 @@ pour-shot-to-clean-shaker shot6 ingredient12 shaker1 right l1 l2
 0 542 -1 0
 0 385 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42829,7 +42829,7 @@ pour-shot-to-clean-shaker shot6 ingredient13 shaker1 left l0 l1
 0 524 -1 0
 0 386 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42843,7 +42843,7 @@ pour-shot-to-clean-shaker shot6 ingredient13 shaker1 left l1 l2
 0 524 -1 0
 0 386 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42857,7 +42857,7 @@ pour-shot-to-clean-shaker shot6 ingredient13 shaker1 right l0 l1
 0 524 -1 0
 0 386 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42871,7 +42871,7 @@ pour-shot-to-clean-shaker shot6 ingredient13 shaker1 right l1 l2
 0 524 -1 0
 0 386 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42885,7 +42885,7 @@ pour-shot-to-clean-shaker shot6 ingredient14 shaker1 left l0 l1
 0 531 -1 0
 0 387 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42899,7 +42899,7 @@ pour-shot-to-clean-shaker shot6 ingredient14 shaker1 left l1 l2
 0 531 -1 0
 0 387 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42913,7 +42913,7 @@ pour-shot-to-clean-shaker shot6 ingredient14 shaker1 right l0 l1
 0 531 -1 0
 0 387 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42927,7 +42927,7 @@ pour-shot-to-clean-shaker shot6 ingredient14 shaker1 right l1 l2
 0 531 -1 0
 0 387 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42941,7 +42941,7 @@ pour-shot-to-clean-shaker shot6 ingredient15 shaker1 left l0 l1
 0 532 -1 0
 0 388 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42955,7 +42955,7 @@ pour-shot-to-clean-shaker shot6 ingredient15 shaker1 left l1 l2
 0 532 -1 0
 0 388 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42969,7 +42969,7 @@ pour-shot-to-clean-shaker shot6 ingredient15 shaker1 right l0 l1
 0 532 -1 0
 0 388 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -42983,7 +42983,7 @@ pour-shot-to-clean-shaker shot6 ingredient15 shaker1 right l1 l2
 0 532 -1 0
 0 388 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -42997,7 +42997,7 @@ pour-shot-to-clean-shaker shot6 ingredient16 shaker1 left l0 l1
 0 525 -1 0
 0 389 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43011,7 +43011,7 @@ pour-shot-to-clean-shaker shot6 ingredient16 shaker1 left l1 l2
 0 525 -1 0
 0 389 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43025,7 +43025,7 @@ pour-shot-to-clean-shaker shot6 ingredient16 shaker1 right l0 l1
 0 525 -1 0
 0 389 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43039,7 +43039,7 @@ pour-shot-to-clean-shaker shot6 ingredient16 shaker1 right l1 l2
 0 525 -1 0
 0 389 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43053,7 +43053,7 @@ pour-shot-to-clean-shaker shot6 ingredient17 shaker1 left l0 l1
 0 533 -1 0
 0 390 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43067,7 +43067,7 @@ pour-shot-to-clean-shaker shot6 ingredient17 shaker1 left l1 l2
 0 533 -1 0
 0 390 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43081,7 +43081,7 @@ pour-shot-to-clean-shaker shot6 ingredient17 shaker1 right l0 l1
 0 533 -1 0
 0 390 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43095,7 +43095,7 @@ pour-shot-to-clean-shaker shot6 ingredient17 shaker1 right l1 l2
 0 533 -1 0
 0 390 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43109,7 +43109,7 @@ pour-shot-to-clean-shaker shot6 ingredient18 shaker1 left l0 l1
 0 534 -1 0
 0 391 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43123,7 +43123,7 @@ pour-shot-to-clean-shaker shot6 ingredient18 shaker1 left l1 l2
 0 534 -1 0
 0 391 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43137,7 +43137,7 @@ pour-shot-to-clean-shaker shot6 ingredient18 shaker1 right l0 l1
 0 534 -1 0
 0 391 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43151,7 +43151,7 @@ pour-shot-to-clean-shaker shot6 ingredient18 shaker1 right l1 l2
 0 534 -1 0
 0 391 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43165,7 +43165,7 @@ pour-shot-to-clean-shaker shot6 ingredient19 shaker1 left l0 l1
 0 526 -1 0
 0 392 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43179,7 +43179,7 @@ pour-shot-to-clean-shaker shot6 ingredient19 shaker1 left l1 l2
 0 526 -1 0
 0 392 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43193,7 +43193,7 @@ pour-shot-to-clean-shaker shot6 ingredient19 shaker1 right l0 l1
 0 526 -1 0
 0 392 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43207,7 +43207,7 @@ pour-shot-to-clean-shaker shot6 ingredient19 shaker1 right l1 l2
 0 526 -1 0
 0 392 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43221,7 +43221,7 @@ pour-shot-to-clean-shaker shot6 ingredient2 shaker1 left l0 l1
 0 539 -1 0
 0 393 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43235,7 +43235,7 @@ pour-shot-to-clean-shaker shot6 ingredient2 shaker1 left l1 l2
 0 539 -1 0
 0 393 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43249,7 +43249,7 @@ pour-shot-to-clean-shaker shot6 ingredient2 shaker1 right l0 l1
 0 539 -1 0
 0 393 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43263,7 +43263,7 @@ pour-shot-to-clean-shaker shot6 ingredient2 shaker1 right l1 l2
 0 539 -1 0
 0 393 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43277,7 +43277,7 @@ pour-shot-to-clean-shaker shot6 ingredient20 shaker1 left l0 l1
 0 527 -1 0
 0 394 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43291,7 +43291,7 @@ pour-shot-to-clean-shaker shot6 ingredient20 shaker1 left l1 l2
 0 527 -1 0
 0 394 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43305,7 +43305,7 @@ pour-shot-to-clean-shaker shot6 ingredient20 shaker1 right l0 l1
 0 527 -1 0
 0 394 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43319,7 +43319,7 @@ pour-shot-to-clean-shaker shot6 ingredient20 shaker1 right l1 l2
 0 527 -1 0
 0 394 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43333,7 +43333,7 @@ pour-shot-to-clean-shaker shot6 ingredient3 shaker1 left l0 l1
 0 536 -1 0
 0 395 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43347,7 +43347,7 @@ pour-shot-to-clean-shaker shot6 ingredient3 shaker1 left l1 l2
 0 536 -1 0
 0 395 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43361,7 +43361,7 @@ pour-shot-to-clean-shaker shot6 ingredient3 shaker1 right l0 l1
 0 536 -1 0
 0 395 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43375,7 +43375,7 @@ pour-shot-to-clean-shaker shot6 ingredient3 shaker1 right l1 l2
 0 536 -1 0
 0 395 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43389,7 +43389,7 @@ pour-shot-to-clean-shaker shot6 ingredient4 shaker1 left l0 l1
 0 541 -1 0
 0 396 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43403,7 +43403,7 @@ pour-shot-to-clean-shaker shot6 ingredient4 shaker1 left l1 l2
 0 541 -1 0
 0 396 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43417,7 +43417,7 @@ pour-shot-to-clean-shaker shot6 ingredient4 shaker1 right l0 l1
 0 541 -1 0
 0 396 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43431,7 +43431,7 @@ pour-shot-to-clean-shaker shot6 ingredient4 shaker1 right l1 l2
 0 541 -1 0
 0 396 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43445,7 +43445,7 @@ pour-shot-to-clean-shaker shot6 ingredient5 shaker1 left l0 l1
 0 537 -1 0
 0 397 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43459,7 +43459,7 @@ pour-shot-to-clean-shaker shot6 ingredient5 shaker1 left l1 l2
 0 537 -1 0
 0 397 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43473,7 +43473,7 @@ pour-shot-to-clean-shaker shot6 ingredient5 shaker1 right l0 l1
 0 537 -1 0
 0 397 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43487,7 +43487,7 @@ pour-shot-to-clean-shaker shot6 ingredient5 shaker1 right l1 l2
 0 537 -1 0
 0 397 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43501,7 +43501,7 @@ pour-shot-to-clean-shaker shot6 ingredient6 shaker1 left l0 l1
 0 528 -1 0
 0 398 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43515,7 +43515,7 @@ pour-shot-to-clean-shaker shot6 ingredient6 shaker1 left l1 l2
 0 528 -1 0
 0 398 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43529,7 +43529,7 @@ pour-shot-to-clean-shaker shot6 ingredient6 shaker1 right l0 l1
 0 528 -1 0
 0 398 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43543,7 +43543,7 @@ pour-shot-to-clean-shaker shot6 ingredient6 shaker1 right l1 l2
 0 528 -1 0
 0 398 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43557,7 +43557,7 @@ pour-shot-to-clean-shaker shot6 ingredient7 shaker1 left l0 l1
 0 538 -1 0
 0 399 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43571,7 +43571,7 @@ pour-shot-to-clean-shaker shot6 ingredient7 shaker1 left l1 l2
 0 538 -1 0
 0 399 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43585,7 +43585,7 @@ pour-shot-to-clean-shaker shot6 ingredient7 shaker1 right l0 l1
 0 538 -1 0
 0 399 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43599,7 +43599,7 @@ pour-shot-to-clean-shaker shot6 ingredient7 shaker1 right l1 l2
 0 538 -1 0
 0 399 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43613,7 +43613,7 @@ pour-shot-to-clean-shaker shot6 ingredient8 shaker1 left l0 l1
 0 529 -1 0
 0 400 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43627,7 +43627,7 @@ pour-shot-to-clean-shaker shot6 ingredient8 shaker1 left l1 l2
 0 529 -1 0
 0 400 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43641,7 +43641,7 @@ pour-shot-to-clean-shaker shot6 ingredient8 shaker1 right l0 l1
 0 529 -1 0
 0 400 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43655,7 +43655,7 @@ pour-shot-to-clean-shaker shot6 ingredient8 shaker1 right l1 l2
 0 529 -1 0
 0 400 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43669,7 +43669,7 @@ pour-shot-to-clean-shaker shot6 ingredient9 shaker1 left l0 l1
 0 535 -1 0
 0 401 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43683,7 +43683,7 @@ pour-shot-to-clean-shaker shot6 ingredient9 shaker1 left l1 l2
 0 535 -1 0
 0 401 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43697,7 +43697,7 @@ pour-shot-to-clean-shaker shot6 ingredient9 shaker1 right l0 l1
 0 535 -1 0
 0 401 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43711,7 +43711,7 @@ pour-shot-to-clean-shaker shot6 ingredient9 shaker1 right l1 l2
 0 535 -1 0
 0 401 0 1
 0 564 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43725,7 +43725,7 @@ pour-shot-to-clean-shaker shot7 ingredient1 shaker1 left l0 l1
 0 523 -1 0
 0 362 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43739,7 +43739,7 @@ pour-shot-to-clean-shaker shot7 ingredient1 shaker1 left l1 l2
 0 523 -1 0
 0 362 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43753,7 +43753,7 @@ pour-shot-to-clean-shaker shot7 ingredient1 shaker1 right l0 l1
 0 523 -1 0
 0 362 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43767,7 +43767,7 @@ pour-shot-to-clean-shaker shot7 ingredient1 shaker1 right l1 l2
 0 523 -1 0
 0 362 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43781,7 +43781,7 @@ pour-shot-to-clean-shaker shot7 ingredient10 shaker1 left l0 l1
 0 540 -1 0
 0 363 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43795,7 +43795,7 @@ pour-shot-to-clean-shaker shot7 ingredient10 shaker1 left l1 l2
 0 540 -1 0
 0 363 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43809,7 +43809,7 @@ pour-shot-to-clean-shaker shot7 ingredient10 shaker1 right l0 l1
 0 540 -1 0
 0 363 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43823,7 +43823,7 @@ pour-shot-to-clean-shaker shot7 ingredient10 shaker1 right l1 l2
 0 540 -1 0
 0 363 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43837,7 +43837,7 @@ pour-shot-to-clean-shaker shot7 ingredient11 shaker1 left l0 l1
 0 530 -1 0
 0 364 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43851,7 +43851,7 @@ pour-shot-to-clean-shaker shot7 ingredient11 shaker1 left l1 l2
 0 530 -1 0
 0 364 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43865,7 +43865,7 @@ pour-shot-to-clean-shaker shot7 ingredient11 shaker1 right l0 l1
 0 530 -1 0
 0 364 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43879,7 +43879,7 @@ pour-shot-to-clean-shaker shot7 ingredient11 shaker1 right l1 l2
 0 530 -1 0
 0 364 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43893,7 +43893,7 @@ pour-shot-to-clean-shaker shot7 ingredient12 shaker1 left l0 l1
 0 542 -1 0
 0 365 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43907,7 +43907,7 @@ pour-shot-to-clean-shaker shot7 ingredient12 shaker1 left l1 l2
 0 542 -1 0
 0 365 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43921,7 +43921,7 @@ pour-shot-to-clean-shaker shot7 ingredient12 shaker1 right l0 l1
 0 542 -1 0
 0 365 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43935,7 +43935,7 @@ pour-shot-to-clean-shaker shot7 ingredient12 shaker1 right l1 l2
 0 542 -1 0
 0 365 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43949,7 +43949,7 @@ pour-shot-to-clean-shaker shot7 ingredient13 shaker1 left l0 l1
 0 524 -1 0
 0 366 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43963,7 +43963,7 @@ pour-shot-to-clean-shaker shot7 ingredient13 shaker1 left l1 l2
 0 524 -1 0
 0 366 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -43977,7 +43977,7 @@ pour-shot-to-clean-shaker shot7 ingredient13 shaker1 right l0 l1
 0 524 -1 0
 0 366 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -43991,7 +43991,7 @@ pour-shot-to-clean-shaker shot7 ingredient13 shaker1 right l1 l2
 0 524 -1 0
 0 366 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44005,7 +44005,7 @@ pour-shot-to-clean-shaker shot7 ingredient14 shaker1 left l0 l1
 0 531 -1 0
 0 367 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44019,7 +44019,7 @@ pour-shot-to-clean-shaker shot7 ingredient14 shaker1 left l1 l2
 0 531 -1 0
 0 367 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44033,7 +44033,7 @@ pour-shot-to-clean-shaker shot7 ingredient14 shaker1 right l0 l1
 0 531 -1 0
 0 367 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44047,7 +44047,7 @@ pour-shot-to-clean-shaker shot7 ingredient14 shaker1 right l1 l2
 0 531 -1 0
 0 367 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44061,7 +44061,7 @@ pour-shot-to-clean-shaker shot7 ingredient15 shaker1 left l0 l1
 0 532 -1 0
 0 368 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44075,7 +44075,7 @@ pour-shot-to-clean-shaker shot7 ingredient15 shaker1 left l1 l2
 0 532 -1 0
 0 368 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44089,7 +44089,7 @@ pour-shot-to-clean-shaker shot7 ingredient15 shaker1 right l0 l1
 0 532 -1 0
 0 368 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44103,7 +44103,7 @@ pour-shot-to-clean-shaker shot7 ingredient15 shaker1 right l1 l2
 0 532 -1 0
 0 368 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44117,7 +44117,7 @@ pour-shot-to-clean-shaker shot7 ingredient16 shaker1 left l0 l1
 0 525 -1 0
 0 369 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44131,7 +44131,7 @@ pour-shot-to-clean-shaker shot7 ingredient16 shaker1 left l1 l2
 0 525 -1 0
 0 369 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44145,7 +44145,7 @@ pour-shot-to-clean-shaker shot7 ingredient16 shaker1 right l0 l1
 0 525 -1 0
 0 369 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44159,7 +44159,7 @@ pour-shot-to-clean-shaker shot7 ingredient16 shaker1 right l1 l2
 0 525 -1 0
 0 369 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44173,7 +44173,7 @@ pour-shot-to-clean-shaker shot7 ingredient17 shaker1 left l0 l1
 0 533 -1 0
 0 370 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44187,7 +44187,7 @@ pour-shot-to-clean-shaker shot7 ingredient17 shaker1 left l1 l2
 0 533 -1 0
 0 370 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44201,7 +44201,7 @@ pour-shot-to-clean-shaker shot7 ingredient17 shaker1 right l0 l1
 0 533 -1 0
 0 370 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44215,7 +44215,7 @@ pour-shot-to-clean-shaker shot7 ingredient17 shaker1 right l1 l2
 0 533 -1 0
 0 370 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44229,7 +44229,7 @@ pour-shot-to-clean-shaker shot7 ingredient18 shaker1 left l0 l1
 0 534 -1 0
 0 371 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44243,7 +44243,7 @@ pour-shot-to-clean-shaker shot7 ingredient18 shaker1 left l1 l2
 0 534 -1 0
 0 371 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44257,7 +44257,7 @@ pour-shot-to-clean-shaker shot7 ingredient18 shaker1 right l0 l1
 0 534 -1 0
 0 371 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44271,7 +44271,7 @@ pour-shot-to-clean-shaker shot7 ingredient18 shaker1 right l1 l2
 0 534 -1 0
 0 371 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44285,7 +44285,7 @@ pour-shot-to-clean-shaker shot7 ingredient19 shaker1 left l0 l1
 0 526 -1 0
 0 372 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44299,7 +44299,7 @@ pour-shot-to-clean-shaker shot7 ingredient19 shaker1 left l1 l2
 0 526 -1 0
 0 372 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44313,7 +44313,7 @@ pour-shot-to-clean-shaker shot7 ingredient19 shaker1 right l0 l1
 0 526 -1 0
 0 372 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44327,7 +44327,7 @@ pour-shot-to-clean-shaker shot7 ingredient19 shaker1 right l1 l2
 0 526 -1 0
 0 372 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44341,7 +44341,7 @@ pour-shot-to-clean-shaker shot7 ingredient2 shaker1 left l0 l1
 0 539 -1 0
 0 373 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44355,7 +44355,7 @@ pour-shot-to-clean-shaker shot7 ingredient2 shaker1 left l1 l2
 0 539 -1 0
 0 373 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44369,7 +44369,7 @@ pour-shot-to-clean-shaker shot7 ingredient2 shaker1 right l0 l1
 0 539 -1 0
 0 373 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44383,7 +44383,7 @@ pour-shot-to-clean-shaker shot7 ingredient2 shaker1 right l1 l2
 0 539 -1 0
 0 373 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44397,7 +44397,7 @@ pour-shot-to-clean-shaker shot7 ingredient20 shaker1 left l0 l1
 0 527 -1 0
 0 374 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44411,7 +44411,7 @@ pour-shot-to-clean-shaker shot7 ingredient20 shaker1 left l1 l2
 0 527 -1 0
 0 374 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44425,7 +44425,7 @@ pour-shot-to-clean-shaker shot7 ingredient20 shaker1 right l0 l1
 0 527 -1 0
 0 374 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44439,7 +44439,7 @@ pour-shot-to-clean-shaker shot7 ingredient20 shaker1 right l1 l2
 0 527 -1 0
 0 374 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44453,7 +44453,7 @@ pour-shot-to-clean-shaker shot7 ingredient3 shaker1 left l0 l1
 0 536 -1 0
 0 375 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44467,7 +44467,7 @@ pour-shot-to-clean-shaker shot7 ingredient3 shaker1 left l1 l2
 0 536 -1 0
 0 375 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44481,7 +44481,7 @@ pour-shot-to-clean-shaker shot7 ingredient3 shaker1 right l0 l1
 0 536 -1 0
 0 375 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44495,7 +44495,7 @@ pour-shot-to-clean-shaker shot7 ingredient3 shaker1 right l1 l2
 0 536 -1 0
 0 375 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44509,7 +44509,7 @@ pour-shot-to-clean-shaker shot7 ingredient4 shaker1 left l0 l1
 0 541 -1 0
 0 376 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44523,7 +44523,7 @@ pour-shot-to-clean-shaker shot7 ingredient4 shaker1 left l1 l2
 0 541 -1 0
 0 376 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44537,7 +44537,7 @@ pour-shot-to-clean-shaker shot7 ingredient4 shaker1 right l0 l1
 0 541 -1 0
 0 376 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44551,7 +44551,7 @@ pour-shot-to-clean-shaker shot7 ingredient4 shaker1 right l1 l2
 0 541 -1 0
 0 376 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44565,7 +44565,7 @@ pour-shot-to-clean-shaker shot7 ingredient5 shaker1 left l0 l1
 0 537 -1 0
 0 377 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44579,7 +44579,7 @@ pour-shot-to-clean-shaker shot7 ingredient5 shaker1 left l1 l2
 0 537 -1 0
 0 377 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44593,7 +44593,7 @@ pour-shot-to-clean-shaker shot7 ingredient5 shaker1 right l0 l1
 0 537 -1 0
 0 377 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44607,7 +44607,7 @@ pour-shot-to-clean-shaker shot7 ingredient5 shaker1 right l1 l2
 0 537 -1 0
 0 377 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44621,7 +44621,7 @@ pour-shot-to-clean-shaker shot7 ingredient6 shaker1 left l0 l1
 0 528 -1 0
 0 378 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44635,7 +44635,7 @@ pour-shot-to-clean-shaker shot7 ingredient6 shaker1 left l1 l2
 0 528 -1 0
 0 378 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44649,7 +44649,7 @@ pour-shot-to-clean-shaker shot7 ingredient6 shaker1 right l0 l1
 0 528 -1 0
 0 378 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44663,7 +44663,7 @@ pour-shot-to-clean-shaker shot7 ingredient6 shaker1 right l1 l2
 0 528 -1 0
 0 378 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44677,7 +44677,7 @@ pour-shot-to-clean-shaker shot7 ingredient7 shaker1 left l0 l1
 0 538 -1 0
 0 379 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44691,7 +44691,7 @@ pour-shot-to-clean-shaker shot7 ingredient7 shaker1 left l1 l2
 0 538 -1 0
 0 379 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44705,7 +44705,7 @@ pour-shot-to-clean-shaker shot7 ingredient7 shaker1 right l0 l1
 0 538 -1 0
 0 379 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44719,7 +44719,7 @@ pour-shot-to-clean-shaker shot7 ingredient7 shaker1 right l1 l2
 0 538 -1 0
 0 379 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44733,7 +44733,7 @@ pour-shot-to-clean-shaker shot7 ingredient8 shaker1 left l0 l1
 0 529 -1 0
 0 380 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44747,7 +44747,7 @@ pour-shot-to-clean-shaker shot7 ingredient8 shaker1 left l1 l2
 0 529 -1 0
 0 380 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44761,7 +44761,7 @@ pour-shot-to-clean-shaker shot7 ingredient8 shaker1 right l0 l1
 0 529 -1 0
 0 380 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44775,7 +44775,7 @@ pour-shot-to-clean-shaker shot7 ingredient8 shaker1 right l1 l2
 0 529 -1 0
 0 380 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44789,7 +44789,7 @@ pour-shot-to-clean-shaker shot7 ingredient9 shaker1 left l0 l1
 0 535 -1 0
 0 381 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44803,7 +44803,7 @@ pour-shot-to-clean-shaker shot7 ingredient9 shaker1 left l1 l2
 0 535 -1 0
 0 381 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44817,7 +44817,7 @@ pour-shot-to-clean-shaker shot7 ingredient9 shaker1 right l0 l1
 0 535 -1 0
 0 381 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44831,7 +44831,7 @@ pour-shot-to-clean-shaker shot7 ingredient9 shaker1 right l1 l2
 0 535 -1 0
 0 381 0 1
 0 564 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44845,7 +44845,7 @@ pour-shot-to-clean-shaker shot8 ingredient1 shaker1 left l0 l1
 0 523 -1 0
 0 342 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44859,7 +44859,7 @@ pour-shot-to-clean-shaker shot8 ingredient1 shaker1 left l1 l2
 0 523 -1 0
 0 342 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44873,7 +44873,7 @@ pour-shot-to-clean-shaker shot8 ingredient1 shaker1 right l0 l1
 0 523 -1 0
 0 342 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44887,7 +44887,7 @@ pour-shot-to-clean-shaker shot8 ingredient1 shaker1 right l1 l2
 0 523 -1 0
 0 342 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44901,7 +44901,7 @@ pour-shot-to-clean-shaker shot8 ingredient10 shaker1 left l0 l1
 0 540 -1 0
 0 343 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44915,7 +44915,7 @@ pour-shot-to-clean-shaker shot8 ingredient10 shaker1 left l1 l2
 0 540 -1 0
 0 343 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44929,7 +44929,7 @@ pour-shot-to-clean-shaker shot8 ingredient10 shaker1 right l0 l1
 0 540 -1 0
 0 343 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44943,7 +44943,7 @@ pour-shot-to-clean-shaker shot8 ingredient10 shaker1 right l1 l2
 0 540 -1 0
 0 343 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44957,7 +44957,7 @@ pour-shot-to-clean-shaker shot8 ingredient11 shaker1 left l0 l1
 0 530 -1 0
 0 344 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44971,7 +44971,7 @@ pour-shot-to-clean-shaker shot8 ingredient11 shaker1 left l1 l2
 0 530 -1 0
 0 344 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -44985,7 +44985,7 @@ pour-shot-to-clean-shaker shot8 ingredient11 shaker1 right l0 l1
 0 530 -1 0
 0 344 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -44999,7 +44999,7 @@ pour-shot-to-clean-shaker shot8 ingredient11 shaker1 right l1 l2
 0 530 -1 0
 0 344 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45013,7 +45013,7 @@ pour-shot-to-clean-shaker shot8 ingredient12 shaker1 left l0 l1
 0 542 -1 0
 0 345 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45027,7 +45027,7 @@ pour-shot-to-clean-shaker shot8 ingredient12 shaker1 left l1 l2
 0 542 -1 0
 0 345 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45041,7 +45041,7 @@ pour-shot-to-clean-shaker shot8 ingredient12 shaker1 right l0 l1
 0 542 -1 0
 0 345 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45055,7 +45055,7 @@ pour-shot-to-clean-shaker shot8 ingredient12 shaker1 right l1 l2
 0 542 -1 0
 0 345 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45069,7 +45069,7 @@ pour-shot-to-clean-shaker shot8 ingredient13 shaker1 left l0 l1
 0 524 -1 0
 0 346 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45083,7 +45083,7 @@ pour-shot-to-clean-shaker shot8 ingredient13 shaker1 left l1 l2
 0 524 -1 0
 0 346 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45097,7 +45097,7 @@ pour-shot-to-clean-shaker shot8 ingredient13 shaker1 right l0 l1
 0 524 -1 0
 0 346 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45111,7 +45111,7 @@ pour-shot-to-clean-shaker shot8 ingredient13 shaker1 right l1 l2
 0 524 -1 0
 0 346 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45125,7 +45125,7 @@ pour-shot-to-clean-shaker shot8 ingredient14 shaker1 left l0 l1
 0 531 -1 0
 0 347 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45139,7 +45139,7 @@ pour-shot-to-clean-shaker shot8 ingredient14 shaker1 left l1 l2
 0 531 -1 0
 0 347 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45153,7 +45153,7 @@ pour-shot-to-clean-shaker shot8 ingredient14 shaker1 right l0 l1
 0 531 -1 0
 0 347 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45167,7 +45167,7 @@ pour-shot-to-clean-shaker shot8 ingredient14 shaker1 right l1 l2
 0 531 -1 0
 0 347 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45181,7 +45181,7 @@ pour-shot-to-clean-shaker shot8 ingredient15 shaker1 left l0 l1
 0 532 -1 0
 0 348 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45195,7 +45195,7 @@ pour-shot-to-clean-shaker shot8 ingredient15 shaker1 left l1 l2
 0 532 -1 0
 0 348 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45209,7 +45209,7 @@ pour-shot-to-clean-shaker shot8 ingredient15 shaker1 right l0 l1
 0 532 -1 0
 0 348 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45223,7 +45223,7 @@ pour-shot-to-clean-shaker shot8 ingredient15 shaker1 right l1 l2
 0 532 -1 0
 0 348 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45237,7 +45237,7 @@ pour-shot-to-clean-shaker shot8 ingredient16 shaker1 left l0 l1
 0 525 -1 0
 0 349 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45251,7 +45251,7 @@ pour-shot-to-clean-shaker shot8 ingredient16 shaker1 left l1 l2
 0 525 -1 0
 0 349 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45265,7 +45265,7 @@ pour-shot-to-clean-shaker shot8 ingredient16 shaker1 right l0 l1
 0 525 -1 0
 0 349 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45279,7 +45279,7 @@ pour-shot-to-clean-shaker shot8 ingredient16 shaker1 right l1 l2
 0 525 -1 0
 0 349 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45293,7 +45293,7 @@ pour-shot-to-clean-shaker shot8 ingredient17 shaker1 left l0 l1
 0 533 -1 0
 0 350 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45307,7 +45307,7 @@ pour-shot-to-clean-shaker shot8 ingredient17 shaker1 left l1 l2
 0 533 -1 0
 0 350 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45321,7 +45321,7 @@ pour-shot-to-clean-shaker shot8 ingredient17 shaker1 right l0 l1
 0 533 -1 0
 0 350 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45335,7 +45335,7 @@ pour-shot-to-clean-shaker shot8 ingredient17 shaker1 right l1 l2
 0 533 -1 0
 0 350 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45349,7 +45349,7 @@ pour-shot-to-clean-shaker shot8 ingredient18 shaker1 left l0 l1
 0 534 -1 0
 0 351 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45363,7 +45363,7 @@ pour-shot-to-clean-shaker shot8 ingredient18 shaker1 left l1 l2
 0 534 -1 0
 0 351 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45377,7 +45377,7 @@ pour-shot-to-clean-shaker shot8 ingredient18 shaker1 right l0 l1
 0 534 -1 0
 0 351 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45391,7 +45391,7 @@ pour-shot-to-clean-shaker shot8 ingredient18 shaker1 right l1 l2
 0 534 -1 0
 0 351 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45405,7 +45405,7 @@ pour-shot-to-clean-shaker shot8 ingredient19 shaker1 left l0 l1
 0 526 -1 0
 0 352 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45419,7 +45419,7 @@ pour-shot-to-clean-shaker shot8 ingredient19 shaker1 left l1 l2
 0 526 -1 0
 0 352 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45433,7 +45433,7 @@ pour-shot-to-clean-shaker shot8 ingredient19 shaker1 right l0 l1
 0 526 -1 0
 0 352 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45447,7 +45447,7 @@ pour-shot-to-clean-shaker shot8 ingredient19 shaker1 right l1 l2
 0 526 -1 0
 0 352 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45461,7 +45461,7 @@ pour-shot-to-clean-shaker shot8 ingredient2 shaker1 left l0 l1
 0 539 -1 0
 0 353 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45475,7 +45475,7 @@ pour-shot-to-clean-shaker shot8 ingredient2 shaker1 left l1 l2
 0 539 -1 0
 0 353 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45489,7 +45489,7 @@ pour-shot-to-clean-shaker shot8 ingredient2 shaker1 right l0 l1
 0 539 -1 0
 0 353 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45503,7 +45503,7 @@ pour-shot-to-clean-shaker shot8 ingredient2 shaker1 right l1 l2
 0 539 -1 0
 0 353 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45517,7 +45517,7 @@ pour-shot-to-clean-shaker shot8 ingredient20 shaker1 left l0 l1
 0 527 -1 0
 0 354 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45531,7 +45531,7 @@ pour-shot-to-clean-shaker shot8 ingredient20 shaker1 left l1 l2
 0 527 -1 0
 0 354 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45545,7 +45545,7 @@ pour-shot-to-clean-shaker shot8 ingredient20 shaker1 right l0 l1
 0 527 -1 0
 0 354 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45559,7 +45559,7 @@ pour-shot-to-clean-shaker shot8 ingredient20 shaker1 right l1 l2
 0 527 -1 0
 0 354 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45573,7 +45573,7 @@ pour-shot-to-clean-shaker shot8 ingredient3 shaker1 left l0 l1
 0 536 -1 0
 0 355 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45587,7 +45587,7 @@ pour-shot-to-clean-shaker shot8 ingredient3 shaker1 left l1 l2
 0 536 -1 0
 0 355 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45601,7 +45601,7 @@ pour-shot-to-clean-shaker shot8 ingredient3 shaker1 right l0 l1
 0 536 -1 0
 0 355 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45615,7 +45615,7 @@ pour-shot-to-clean-shaker shot8 ingredient3 shaker1 right l1 l2
 0 536 -1 0
 0 355 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45629,7 +45629,7 @@ pour-shot-to-clean-shaker shot8 ingredient4 shaker1 left l0 l1
 0 541 -1 0
 0 356 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45643,7 +45643,7 @@ pour-shot-to-clean-shaker shot8 ingredient4 shaker1 left l1 l2
 0 541 -1 0
 0 356 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45657,7 +45657,7 @@ pour-shot-to-clean-shaker shot8 ingredient4 shaker1 right l0 l1
 0 541 -1 0
 0 356 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45671,7 +45671,7 @@ pour-shot-to-clean-shaker shot8 ingredient4 shaker1 right l1 l2
 0 541 -1 0
 0 356 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45685,7 +45685,7 @@ pour-shot-to-clean-shaker shot8 ingredient5 shaker1 left l0 l1
 0 537 -1 0
 0 357 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45699,7 +45699,7 @@ pour-shot-to-clean-shaker shot8 ingredient5 shaker1 left l1 l2
 0 537 -1 0
 0 357 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45713,7 +45713,7 @@ pour-shot-to-clean-shaker shot8 ingredient5 shaker1 right l0 l1
 0 537 -1 0
 0 357 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45727,7 +45727,7 @@ pour-shot-to-clean-shaker shot8 ingredient5 shaker1 right l1 l2
 0 537 -1 0
 0 357 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45741,7 +45741,7 @@ pour-shot-to-clean-shaker shot8 ingredient6 shaker1 left l0 l1
 0 528 -1 0
 0 358 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45755,7 +45755,7 @@ pour-shot-to-clean-shaker shot8 ingredient6 shaker1 left l1 l2
 0 528 -1 0
 0 358 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45769,7 +45769,7 @@ pour-shot-to-clean-shaker shot8 ingredient6 shaker1 right l0 l1
 0 528 -1 0
 0 358 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45783,7 +45783,7 @@ pour-shot-to-clean-shaker shot8 ingredient6 shaker1 right l1 l2
 0 528 -1 0
 0 358 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45797,7 +45797,7 @@ pour-shot-to-clean-shaker shot8 ingredient7 shaker1 left l0 l1
 0 538 -1 0
 0 359 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45811,7 +45811,7 @@ pour-shot-to-clean-shaker shot8 ingredient7 shaker1 left l1 l2
 0 538 -1 0
 0 359 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45825,7 +45825,7 @@ pour-shot-to-clean-shaker shot8 ingredient7 shaker1 right l0 l1
 0 538 -1 0
 0 359 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45839,7 +45839,7 @@ pour-shot-to-clean-shaker shot8 ingredient7 shaker1 right l1 l2
 0 538 -1 0
 0 359 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45853,7 +45853,7 @@ pour-shot-to-clean-shaker shot8 ingredient8 shaker1 left l0 l1
 0 529 -1 0
 0 360 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45867,7 +45867,7 @@ pour-shot-to-clean-shaker shot8 ingredient8 shaker1 left l1 l2
 0 529 -1 0
 0 360 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45881,7 +45881,7 @@ pour-shot-to-clean-shaker shot8 ingredient8 shaker1 right l0 l1
 0 529 -1 0
 0 360 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45895,7 +45895,7 @@ pour-shot-to-clean-shaker shot8 ingredient8 shaker1 right l1 l2
 0 529 -1 0
 0 360 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45909,7 +45909,7 @@ pour-shot-to-clean-shaker shot8 ingredient9 shaker1 left l0 l1
 0 535 -1 0
 0 361 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45923,7 +45923,7 @@ pour-shot-to-clean-shaker shot8 ingredient9 shaker1 left l1 l2
 0 535 -1 0
 0 361 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45937,7 +45937,7 @@ pour-shot-to-clean-shaker shot8 ingredient9 shaker1 right l0 l1
 0 535 -1 0
 0 361 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45951,7 +45951,7 @@ pour-shot-to-clean-shaker shot8 ingredient9 shaker1 right l1 l2
 0 535 -1 0
 0 361 0 1
 0 564 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45965,7 +45965,7 @@ pour-shot-to-clean-shaker shot9 ingredient1 shaker1 left l0 l1
 0 523 -1 0
 0 322 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -45979,7 +45979,7 @@ pour-shot-to-clean-shaker shot9 ingredient1 shaker1 left l1 l2
 0 523 -1 0
 0 322 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -45993,7 +45993,7 @@ pour-shot-to-clean-shaker shot9 ingredient1 shaker1 right l0 l1
 0 523 -1 0
 0 322 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46007,7 +46007,7 @@ pour-shot-to-clean-shaker shot9 ingredient1 shaker1 right l1 l2
 0 523 -1 0
 0 322 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46021,7 +46021,7 @@ pour-shot-to-clean-shaker shot9 ingredient10 shaker1 left l0 l1
 0 540 -1 0
 0 323 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46035,7 +46035,7 @@ pour-shot-to-clean-shaker shot9 ingredient10 shaker1 left l1 l2
 0 540 -1 0
 0 323 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46049,7 +46049,7 @@ pour-shot-to-clean-shaker shot9 ingredient10 shaker1 right l0 l1
 0 540 -1 0
 0 323 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46063,7 +46063,7 @@ pour-shot-to-clean-shaker shot9 ingredient10 shaker1 right l1 l2
 0 540 -1 0
 0 323 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46077,7 +46077,7 @@ pour-shot-to-clean-shaker shot9 ingredient11 shaker1 left l0 l1
 0 530 -1 0
 0 324 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46091,7 +46091,7 @@ pour-shot-to-clean-shaker shot9 ingredient11 shaker1 left l1 l2
 0 530 -1 0
 0 324 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46105,7 +46105,7 @@ pour-shot-to-clean-shaker shot9 ingredient11 shaker1 right l0 l1
 0 530 -1 0
 0 324 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46119,7 +46119,7 @@ pour-shot-to-clean-shaker shot9 ingredient11 shaker1 right l1 l2
 0 530 -1 0
 0 324 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46133,7 +46133,7 @@ pour-shot-to-clean-shaker shot9 ingredient12 shaker1 left l0 l1
 0 542 -1 0
 0 325 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46147,7 +46147,7 @@ pour-shot-to-clean-shaker shot9 ingredient12 shaker1 left l1 l2
 0 542 -1 0
 0 325 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46161,7 +46161,7 @@ pour-shot-to-clean-shaker shot9 ingredient12 shaker1 right l0 l1
 0 542 -1 0
 0 325 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46175,7 +46175,7 @@ pour-shot-to-clean-shaker shot9 ingredient12 shaker1 right l1 l2
 0 542 -1 0
 0 325 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46189,7 +46189,7 @@ pour-shot-to-clean-shaker shot9 ingredient13 shaker1 left l0 l1
 0 524 -1 0
 0 326 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46203,7 +46203,7 @@ pour-shot-to-clean-shaker shot9 ingredient13 shaker1 left l1 l2
 0 524 -1 0
 0 326 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46217,7 +46217,7 @@ pour-shot-to-clean-shaker shot9 ingredient13 shaker1 right l0 l1
 0 524 -1 0
 0 326 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46231,7 +46231,7 @@ pour-shot-to-clean-shaker shot9 ingredient13 shaker1 right l1 l2
 0 524 -1 0
 0 326 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46245,7 +46245,7 @@ pour-shot-to-clean-shaker shot9 ingredient14 shaker1 left l0 l1
 0 531 -1 0
 0 327 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46259,7 +46259,7 @@ pour-shot-to-clean-shaker shot9 ingredient14 shaker1 left l1 l2
 0 531 -1 0
 0 327 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46273,7 +46273,7 @@ pour-shot-to-clean-shaker shot9 ingredient14 shaker1 right l0 l1
 0 531 -1 0
 0 327 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46287,7 +46287,7 @@ pour-shot-to-clean-shaker shot9 ingredient14 shaker1 right l1 l2
 0 531 -1 0
 0 327 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46301,7 +46301,7 @@ pour-shot-to-clean-shaker shot9 ingredient15 shaker1 left l0 l1
 0 532 -1 0
 0 328 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46315,7 +46315,7 @@ pour-shot-to-clean-shaker shot9 ingredient15 shaker1 left l1 l2
 0 532 -1 0
 0 328 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46329,7 +46329,7 @@ pour-shot-to-clean-shaker shot9 ingredient15 shaker1 right l0 l1
 0 532 -1 0
 0 328 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46343,7 +46343,7 @@ pour-shot-to-clean-shaker shot9 ingredient15 shaker1 right l1 l2
 0 532 -1 0
 0 328 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46357,7 +46357,7 @@ pour-shot-to-clean-shaker shot9 ingredient16 shaker1 left l0 l1
 0 525 -1 0
 0 329 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46371,7 +46371,7 @@ pour-shot-to-clean-shaker shot9 ingredient16 shaker1 left l1 l2
 0 525 -1 0
 0 329 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46385,7 +46385,7 @@ pour-shot-to-clean-shaker shot9 ingredient16 shaker1 right l0 l1
 0 525 -1 0
 0 329 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46399,7 +46399,7 @@ pour-shot-to-clean-shaker shot9 ingredient16 shaker1 right l1 l2
 0 525 -1 0
 0 329 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46413,7 +46413,7 @@ pour-shot-to-clean-shaker shot9 ingredient17 shaker1 left l0 l1
 0 533 -1 0
 0 330 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46427,7 +46427,7 @@ pour-shot-to-clean-shaker shot9 ingredient17 shaker1 left l1 l2
 0 533 -1 0
 0 330 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46441,7 +46441,7 @@ pour-shot-to-clean-shaker shot9 ingredient17 shaker1 right l0 l1
 0 533 -1 0
 0 330 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46455,7 +46455,7 @@ pour-shot-to-clean-shaker shot9 ingredient17 shaker1 right l1 l2
 0 533 -1 0
 0 330 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46469,7 +46469,7 @@ pour-shot-to-clean-shaker shot9 ingredient18 shaker1 left l0 l1
 0 534 -1 0
 0 331 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46483,7 +46483,7 @@ pour-shot-to-clean-shaker shot9 ingredient18 shaker1 left l1 l2
 0 534 -1 0
 0 331 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46497,7 +46497,7 @@ pour-shot-to-clean-shaker shot9 ingredient18 shaker1 right l0 l1
 0 534 -1 0
 0 331 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46511,7 +46511,7 @@ pour-shot-to-clean-shaker shot9 ingredient18 shaker1 right l1 l2
 0 534 -1 0
 0 331 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46525,7 +46525,7 @@ pour-shot-to-clean-shaker shot9 ingredient19 shaker1 left l0 l1
 0 526 -1 0
 0 332 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46539,7 +46539,7 @@ pour-shot-to-clean-shaker shot9 ingredient19 shaker1 left l1 l2
 0 526 -1 0
 0 332 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46553,7 +46553,7 @@ pour-shot-to-clean-shaker shot9 ingredient19 shaker1 right l0 l1
 0 526 -1 0
 0 332 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46567,7 +46567,7 @@ pour-shot-to-clean-shaker shot9 ingredient19 shaker1 right l1 l2
 0 526 -1 0
 0 332 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46581,7 +46581,7 @@ pour-shot-to-clean-shaker shot9 ingredient2 shaker1 left l0 l1
 0 539 -1 0
 0 333 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46595,7 +46595,7 @@ pour-shot-to-clean-shaker shot9 ingredient2 shaker1 left l1 l2
 0 539 -1 0
 0 333 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46609,7 +46609,7 @@ pour-shot-to-clean-shaker shot9 ingredient2 shaker1 right l0 l1
 0 539 -1 0
 0 333 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46623,7 +46623,7 @@ pour-shot-to-clean-shaker shot9 ingredient2 shaker1 right l1 l2
 0 539 -1 0
 0 333 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46637,7 +46637,7 @@ pour-shot-to-clean-shaker shot9 ingredient20 shaker1 left l0 l1
 0 527 -1 0
 0 334 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46651,7 +46651,7 @@ pour-shot-to-clean-shaker shot9 ingredient20 shaker1 left l1 l2
 0 527 -1 0
 0 334 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46665,7 +46665,7 @@ pour-shot-to-clean-shaker shot9 ingredient20 shaker1 right l0 l1
 0 527 -1 0
 0 334 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46679,7 +46679,7 @@ pour-shot-to-clean-shaker shot9 ingredient20 shaker1 right l1 l2
 0 527 -1 0
 0 334 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46693,7 +46693,7 @@ pour-shot-to-clean-shaker shot9 ingredient3 shaker1 left l0 l1
 0 536 -1 0
 0 335 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46707,7 +46707,7 @@ pour-shot-to-clean-shaker shot9 ingredient3 shaker1 left l1 l2
 0 536 -1 0
 0 335 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46721,7 +46721,7 @@ pour-shot-to-clean-shaker shot9 ingredient3 shaker1 right l0 l1
 0 536 -1 0
 0 335 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46735,7 +46735,7 @@ pour-shot-to-clean-shaker shot9 ingredient3 shaker1 right l1 l2
 0 536 -1 0
 0 335 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46749,7 +46749,7 @@ pour-shot-to-clean-shaker shot9 ingredient4 shaker1 left l0 l1
 0 541 -1 0
 0 336 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46763,7 +46763,7 @@ pour-shot-to-clean-shaker shot9 ingredient4 shaker1 left l1 l2
 0 541 -1 0
 0 336 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46777,7 +46777,7 @@ pour-shot-to-clean-shaker shot9 ingredient4 shaker1 right l0 l1
 0 541 -1 0
 0 336 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46791,7 +46791,7 @@ pour-shot-to-clean-shaker shot9 ingredient4 shaker1 right l1 l2
 0 541 -1 0
 0 336 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46805,7 +46805,7 @@ pour-shot-to-clean-shaker shot9 ingredient5 shaker1 left l0 l1
 0 537 -1 0
 0 337 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46819,7 +46819,7 @@ pour-shot-to-clean-shaker shot9 ingredient5 shaker1 left l1 l2
 0 537 -1 0
 0 337 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46833,7 +46833,7 @@ pour-shot-to-clean-shaker shot9 ingredient5 shaker1 right l0 l1
 0 537 -1 0
 0 337 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46847,7 +46847,7 @@ pour-shot-to-clean-shaker shot9 ingredient5 shaker1 right l1 l2
 0 537 -1 0
 0 337 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46861,7 +46861,7 @@ pour-shot-to-clean-shaker shot9 ingredient6 shaker1 left l0 l1
 0 528 -1 0
 0 338 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46875,7 +46875,7 @@ pour-shot-to-clean-shaker shot9 ingredient6 shaker1 left l1 l2
 0 528 -1 0
 0 338 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46889,7 +46889,7 @@ pour-shot-to-clean-shaker shot9 ingredient6 shaker1 right l0 l1
 0 528 -1 0
 0 338 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46903,7 +46903,7 @@ pour-shot-to-clean-shaker shot9 ingredient6 shaker1 right l1 l2
 0 528 -1 0
 0 338 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46917,7 +46917,7 @@ pour-shot-to-clean-shaker shot9 ingredient7 shaker1 left l0 l1
 0 538 -1 0
 0 339 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46931,7 +46931,7 @@ pour-shot-to-clean-shaker shot9 ingredient7 shaker1 left l1 l2
 0 538 -1 0
 0 339 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46945,7 +46945,7 @@ pour-shot-to-clean-shaker shot9 ingredient7 shaker1 right l0 l1
 0 538 -1 0
 0 339 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46959,7 +46959,7 @@ pour-shot-to-clean-shaker shot9 ingredient7 shaker1 right l1 l2
 0 538 -1 0
 0 339 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -46973,7 +46973,7 @@ pour-shot-to-clean-shaker shot9 ingredient8 shaker1 left l0 l1
 0 529 -1 0
 0 340 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -46987,7 +46987,7 @@ pour-shot-to-clean-shaker shot9 ingredient8 shaker1 left l1 l2
 0 529 -1 0
 0 340 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -47001,7 +47001,7 @@ pour-shot-to-clean-shaker shot9 ingredient8 shaker1 right l0 l1
 0 529 -1 0
 0 340 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -47015,7 +47015,7 @@ pour-shot-to-clean-shaker shot9 ingredient8 shaker1 right l1 l2
 0 529 -1 0
 0 340 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -47029,7 +47029,7 @@ pour-shot-to-clean-shaker shot9 ingredient9 shaker1 left l0 l1
 0 535 -1 0
 0 341 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -47043,7 +47043,7 @@ pour-shot-to-clean-shaker shot9 ingredient9 shaker1 left l1 l2
 0 535 -1 0
 0 341 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -47057,7 +47057,7 @@ pour-shot-to-clean-shaker shot9 ingredient9 shaker1 right l0 l1
 0 535 -1 0
 0 341 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 0 566 -1 0
 1
@@ -47071,7 +47071,7 @@ pour-shot-to-clean-shaker shot9 ingredient9 shaker1 right l1 l2
 0 535 -1 0
 0 341 0 1
 0 564 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 0 566 -1 0
 1
@@ -48044,7 +48044,7 @@ pour-shot-to-used-shaker shot10 ingredient1 shaker1 left l0 l1
 4
 0 523 -1 0
 0 482 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48056,7 +48056,7 @@ pour-shot-to-used-shaker shot10 ingredient1 shaker1 left l1 l2
 4
 0 523 -1 0
 0 482 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48068,7 +48068,7 @@ pour-shot-to-used-shaker shot10 ingredient1 shaker1 right l0 l1
 4
 0 523 -1 0
 0 482 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48080,7 +48080,7 @@ pour-shot-to-used-shaker shot10 ingredient1 shaker1 right l1 l2
 4
 0 523 -1 0
 0 482 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48092,7 +48092,7 @@ pour-shot-to-used-shaker shot10 ingredient10 shaker1 left l0 l1
 4
 0 540 -1 0
 0 483 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48104,7 +48104,7 @@ pour-shot-to-used-shaker shot10 ingredient10 shaker1 left l1 l2
 4
 0 540 -1 0
 0 483 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48116,7 +48116,7 @@ pour-shot-to-used-shaker shot10 ingredient10 shaker1 right l0 l1
 4
 0 540 -1 0
 0 483 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48128,7 +48128,7 @@ pour-shot-to-used-shaker shot10 ingredient10 shaker1 right l1 l2
 4
 0 540 -1 0
 0 483 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48140,7 +48140,7 @@ pour-shot-to-used-shaker shot10 ingredient11 shaker1 left l0 l1
 4
 0 530 -1 0
 0 484 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48152,7 +48152,7 @@ pour-shot-to-used-shaker shot10 ingredient11 shaker1 left l1 l2
 4
 0 530 -1 0
 0 484 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48164,7 +48164,7 @@ pour-shot-to-used-shaker shot10 ingredient11 shaker1 right l0 l1
 4
 0 530 -1 0
 0 484 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48176,7 +48176,7 @@ pour-shot-to-used-shaker shot10 ingredient11 shaker1 right l1 l2
 4
 0 530 -1 0
 0 484 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48188,7 +48188,7 @@ pour-shot-to-used-shaker shot10 ingredient12 shaker1 left l0 l1
 4
 0 542 -1 0
 0 485 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48200,7 +48200,7 @@ pour-shot-to-used-shaker shot10 ingredient12 shaker1 left l1 l2
 4
 0 542 -1 0
 0 485 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48212,7 +48212,7 @@ pour-shot-to-used-shaker shot10 ingredient12 shaker1 right l0 l1
 4
 0 542 -1 0
 0 485 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48224,7 +48224,7 @@ pour-shot-to-used-shaker shot10 ingredient12 shaker1 right l1 l2
 4
 0 542 -1 0
 0 485 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48236,7 +48236,7 @@ pour-shot-to-used-shaker shot10 ingredient13 shaker1 left l0 l1
 4
 0 524 -1 0
 0 486 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48248,7 +48248,7 @@ pour-shot-to-used-shaker shot10 ingredient13 shaker1 left l1 l2
 4
 0 524 -1 0
 0 486 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48260,7 +48260,7 @@ pour-shot-to-used-shaker shot10 ingredient13 shaker1 right l0 l1
 4
 0 524 -1 0
 0 486 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48272,7 +48272,7 @@ pour-shot-to-used-shaker shot10 ingredient13 shaker1 right l1 l2
 4
 0 524 -1 0
 0 486 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48284,7 +48284,7 @@ pour-shot-to-used-shaker shot10 ingredient14 shaker1 left l0 l1
 4
 0 531 -1 0
 0 487 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48296,7 +48296,7 @@ pour-shot-to-used-shaker shot10 ingredient14 shaker1 left l1 l2
 4
 0 531 -1 0
 0 487 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48308,7 +48308,7 @@ pour-shot-to-used-shaker shot10 ingredient14 shaker1 right l0 l1
 4
 0 531 -1 0
 0 487 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48320,7 +48320,7 @@ pour-shot-to-used-shaker shot10 ingredient14 shaker1 right l1 l2
 4
 0 531 -1 0
 0 487 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48332,7 +48332,7 @@ pour-shot-to-used-shaker shot10 ingredient15 shaker1 left l0 l1
 4
 0 532 -1 0
 0 488 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48344,7 +48344,7 @@ pour-shot-to-used-shaker shot10 ingredient15 shaker1 left l1 l2
 4
 0 532 -1 0
 0 488 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48356,7 +48356,7 @@ pour-shot-to-used-shaker shot10 ingredient15 shaker1 right l0 l1
 4
 0 532 -1 0
 0 488 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48368,7 +48368,7 @@ pour-shot-to-used-shaker shot10 ingredient15 shaker1 right l1 l2
 4
 0 532 -1 0
 0 488 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48380,7 +48380,7 @@ pour-shot-to-used-shaker shot10 ingredient16 shaker1 left l0 l1
 4
 0 525 -1 0
 0 489 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48392,7 +48392,7 @@ pour-shot-to-used-shaker shot10 ingredient16 shaker1 left l1 l2
 4
 0 525 -1 0
 0 489 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48404,7 +48404,7 @@ pour-shot-to-used-shaker shot10 ingredient16 shaker1 right l0 l1
 4
 0 525 -1 0
 0 489 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48416,7 +48416,7 @@ pour-shot-to-used-shaker shot10 ingredient16 shaker1 right l1 l2
 4
 0 525 -1 0
 0 489 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48428,7 +48428,7 @@ pour-shot-to-used-shaker shot10 ingredient17 shaker1 left l0 l1
 4
 0 533 -1 0
 0 490 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48440,7 +48440,7 @@ pour-shot-to-used-shaker shot10 ingredient17 shaker1 left l1 l2
 4
 0 533 -1 0
 0 490 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48452,7 +48452,7 @@ pour-shot-to-used-shaker shot10 ingredient17 shaker1 right l0 l1
 4
 0 533 -1 0
 0 490 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48464,7 +48464,7 @@ pour-shot-to-used-shaker shot10 ingredient17 shaker1 right l1 l2
 4
 0 533 -1 0
 0 490 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48476,7 +48476,7 @@ pour-shot-to-used-shaker shot10 ingredient18 shaker1 left l0 l1
 4
 0 534 -1 0
 0 491 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48488,7 +48488,7 @@ pour-shot-to-used-shaker shot10 ingredient18 shaker1 left l1 l2
 4
 0 534 -1 0
 0 491 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48500,7 +48500,7 @@ pour-shot-to-used-shaker shot10 ingredient18 shaker1 right l0 l1
 4
 0 534 -1 0
 0 491 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48512,7 +48512,7 @@ pour-shot-to-used-shaker shot10 ingredient18 shaker1 right l1 l2
 4
 0 534 -1 0
 0 491 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48524,7 +48524,7 @@ pour-shot-to-used-shaker shot10 ingredient19 shaker1 left l0 l1
 4
 0 526 -1 0
 0 492 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48536,7 +48536,7 @@ pour-shot-to-used-shaker shot10 ingredient19 shaker1 left l1 l2
 4
 0 526 -1 0
 0 492 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48548,7 +48548,7 @@ pour-shot-to-used-shaker shot10 ingredient19 shaker1 right l0 l1
 4
 0 526 -1 0
 0 492 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48560,7 +48560,7 @@ pour-shot-to-used-shaker shot10 ingredient19 shaker1 right l1 l2
 4
 0 526 -1 0
 0 492 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48572,7 +48572,7 @@ pour-shot-to-used-shaker shot10 ingredient2 shaker1 left l0 l1
 4
 0 539 -1 0
 0 493 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48584,7 +48584,7 @@ pour-shot-to-used-shaker shot10 ingredient2 shaker1 left l1 l2
 4
 0 539 -1 0
 0 493 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48596,7 +48596,7 @@ pour-shot-to-used-shaker shot10 ingredient2 shaker1 right l0 l1
 4
 0 539 -1 0
 0 493 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48608,7 +48608,7 @@ pour-shot-to-used-shaker shot10 ingredient2 shaker1 right l1 l2
 4
 0 539 -1 0
 0 493 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48620,7 +48620,7 @@ pour-shot-to-used-shaker shot10 ingredient20 shaker1 left l0 l1
 4
 0 527 -1 0
 0 494 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48632,7 +48632,7 @@ pour-shot-to-used-shaker shot10 ingredient20 shaker1 left l1 l2
 4
 0 527 -1 0
 0 494 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48644,7 +48644,7 @@ pour-shot-to-used-shaker shot10 ingredient20 shaker1 right l0 l1
 4
 0 527 -1 0
 0 494 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48656,7 +48656,7 @@ pour-shot-to-used-shaker shot10 ingredient20 shaker1 right l1 l2
 4
 0 527 -1 0
 0 494 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48668,7 +48668,7 @@ pour-shot-to-used-shaker shot10 ingredient3 shaker1 left l0 l1
 4
 0 536 -1 0
 0 495 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48680,7 +48680,7 @@ pour-shot-to-used-shaker shot10 ingredient3 shaker1 left l1 l2
 4
 0 536 -1 0
 0 495 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48692,7 +48692,7 @@ pour-shot-to-used-shaker shot10 ingredient3 shaker1 right l0 l1
 4
 0 536 -1 0
 0 495 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48704,7 +48704,7 @@ pour-shot-to-used-shaker shot10 ingredient3 shaker1 right l1 l2
 4
 0 536 -1 0
 0 495 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48716,7 +48716,7 @@ pour-shot-to-used-shaker shot10 ingredient4 shaker1 left l0 l1
 4
 0 541 -1 0
 0 496 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48728,7 +48728,7 @@ pour-shot-to-used-shaker shot10 ingredient4 shaker1 left l1 l2
 4
 0 541 -1 0
 0 496 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48740,7 +48740,7 @@ pour-shot-to-used-shaker shot10 ingredient4 shaker1 right l0 l1
 4
 0 541 -1 0
 0 496 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48752,7 +48752,7 @@ pour-shot-to-used-shaker shot10 ingredient4 shaker1 right l1 l2
 4
 0 541 -1 0
 0 496 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48764,7 +48764,7 @@ pour-shot-to-used-shaker shot10 ingredient5 shaker1 left l0 l1
 4
 0 537 -1 0
 0 497 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48776,7 +48776,7 @@ pour-shot-to-used-shaker shot10 ingredient5 shaker1 left l1 l2
 4
 0 537 -1 0
 0 497 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48788,7 +48788,7 @@ pour-shot-to-used-shaker shot10 ingredient5 shaker1 right l0 l1
 4
 0 537 -1 0
 0 497 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48800,7 +48800,7 @@ pour-shot-to-used-shaker shot10 ingredient5 shaker1 right l1 l2
 4
 0 537 -1 0
 0 497 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48812,7 +48812,7 @@ pour-shot-to-used-shaker shot10 ingredient6 shaker1 left l0 l1
 4
 0 528 -1 0
 0 498 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48824,7 +48824,7 @@ pour-shot-to-used-shaker shot10 ingredient6 shaker1 left l1 l2
 4
 0 528 -1 0
 0 498 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48836,7 +48836,7 @@ pour-shot-to-used-shaker shot10 ingredient6 shaker1 right l0 l1
 4
 0 528 -1 0
 0 498 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48848,7 +48848,7 @@ pour-shot-to-used-shaker shot10 ingredient6 shaker1 right l1 l2
 4
 0 528 -1 0
 0 498 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48860,7 +48860,7 @@ pour-shot-to-used-shaker shot10 ingredient7 shaker1 left l0 l1
 4
 0 538 -1 0
 0 499 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48872,7 +48872,7 @@ pour-shot-to-used-shaker shot10 ingredient7 shaker1 left l1 l2
 4
 0 538 -1 0
 0 499 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48884,7 +48884,7 @@ pour-shot-to-used-shaker shot10 ingredient7 shaker1 right l0 l1
 4
 0 538 -1 0
 0 499 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48896,7 +48896,7 @@ pour-shot-to-used-shaker shot10 ingredient7 shaker1 right l1 l2
 4
 0 538 -1 0
 0 499 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48908,7 +48908,7 @@ pour-shot-to-used-shaker shot10 ingredient8 shaker1 left l0 l1
 4
 0 529 -1 0
 0 500 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48920,7 +48920,7 @@ pour-shot-to-used-shaker shot10 ingredient8 shaker1 left l1 l2
 4
 0 529 -1 0
 0 500 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48932,7 +48932,7 @@ pour-shot-to-used-shaker shot10 ingredient8 shaker1 right l0 l1
 4
 0 529 -1 0
 0 500 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48944,7 +48944,7 @@ pour-shot-to-used-shaker shot10 ingredient8 shaker1 right l1 l2
 4
 0 529 -1 0
 0 500 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48956,7 +48956,7 @@ pour-shot-to-used-shaker shot10 ingredient9 shaker1 left l0 l1
 4
 0 535 -1 0
 0 501 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48968,7 +48968,7 @@ pour-shot-to-used-shaker shot10 ingredient9 shaker1 left l1 l2
 4
 0 535 -1 0
 0 501 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -48980,7 +48980,7 @@ pour-shot-to-used-shaker shot10 ingredient9 shaker1 right l0 l1
 4
 0 535 -1 0
 0 501 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 0 1
 1
 end_operator
@@ -48992,7 +48992,7 @@ pour-shot-to-used-shaker shot10 ingredient9 shaker1 right l1 l2
 4
 0 535 -1 0
 0 501 0 1
-0 562 -1 0
+0 554 -1 0
 0 565 1 2
 1
 end_operator
@@ -49004,7 +49004,7 @@ pour-shot-to-used-shaker shot2 ingredient1 shaker1 left l0 l1
 4
 0 523 -1 0
 0 462 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49016,7 +49016,7 @@ pour-shot-to-used-shaker shot2 ingredient1 shaker1 left l1 l2
 4
 0 523 -1 0
 0 462 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49028,7 +49028,7 @@ pour-shot-to-used-shaker shot2 ingredient1 shaker1 right l0 l1
 4
 0 523 -1 0
 0 462 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49040,7 +49040,7 @@ pour-shot-to-used-shaker shot2 ingredient1 shaker1 right l1 l2
 4
 0 523 -1 0
 0 462 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49052,7 +49052,7 @@ pour-shot-to-used-shaker shot2 ingredient10 shaker1 left l0 l1
 4
 0 540 -1 0
 0 463 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49064,7 +49064,7 @@ pour-shot-to-used-shaker shot2 ingredient10 shaker1 left l1 l2
 4
 0 540 -1 0
 0 463 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49076,7 +49076,7 @@ pour-shot-to-used-shaker shot2 ingredient10 shaker1 right l0 l1
 4
 0 540 -1 0
 0 463 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49088,7 +49088,7 @@ pour-shot-to-used-shaker shot2 ingredient10 shaker1 right l1 l2
 4
 0 540 -1 0
 0 463 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49100,7 +49100,7 @@ pour-shot-to-used-shaker shot2 ingredient11 shaker1 left l0 l1
 4
 0 530 -1 0
 0 464 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49112,7 +49112,7 @@ pour-shot-to-used-shaker shot2 ingredient11 shaker1 left l1 l2
 4
 0 530 -1 0
 0 464 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49124,7 +49124,7 @@ pour-shot-to-used-shaker shot2 ingredient11 shaker1 right l0 l1
 4
 0 530 -1 0
 0 464 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49136,7 +49136,7 @@ pour-shot-to-used-shaker shot2 ingredient11 shaker1 right l1 l2
 4
 0 530 -1 0
 0 464 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49148,7 +49148,7 @@ pour-shot-to-used-shaker shot2 ingredient12 shaker1 left l0 l1
 4
 0 542 -1 0
 0 465 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49160,7 +49160,7 @@ pour-shot-to-used-shaker shot2 ingredient12 shaker1 left l1 l2
 4
 0 542 -1 0
 0 465 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49172,7 +49172,7 @@ pour-shot-to-used-shaker shot2 ingredient12 shaker1 right l0 l1
 4
 0 542 -1 0
 0 465 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49184,7 +49184,7 @@ pour-shot-to-used-shaker shot2 ingredient12 shaker1 right l1 l2
 4
 0 542 -1 0
 0 465 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49196,7 +49196,7 @@ pour-shot-to-used-shaker shot2 ingredient13 shaker1 left l0 l1
 4
 0 524 -1 0
 0 466 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49208,7 +49208,7 @@ pour-shot-to-used-shaker shot2 ingredient13 shaker1 left l1 l2
 4
 0 524 -1 0
 0 466 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49220,7 +49220,7 @@ pour-shot-to-used-shaker shot2 ingredient13 shaker1 right l0 l1
 4
 0 524 -1 0
 0 466 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49232,7 +49232,7 @@ pour-shot-to-used-shaker shot2 ingredient13 shaker1 right l1 l2
 4
 0 524 -1 0
 0 466 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49244,7 +49244,7 @@ pour-shot-to-used-shaker shot2 ingredient14 shaker1 left l0 l1
 4
 0 531 -1 0
 0 467 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49256,7 +49256,7 @@ pour-shot-to-used-shaker shot2 ingredient14 shaker1 left l1 l2
 4
 0 531 -1 0
 0 467 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49268,7 +49268,7 @@ pour-shot-to-used-shaker shot2 ingredient14 shaker1 right l0 l1
 4
 0 531 -1 0
 0 467 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49280,7 +49280,7 @@ pour-shot-to-used-shaker shot2 ingredient14 shaker1 right l1 l2
 4
 0 531 -1 0
 0 467 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49292,7 +49292,7 @@ pour-shot-to-used-shaker shot2 ingredient15 shaker1 left l0 l1
 4
 0 532 -1 0
 0 468 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49304,7 +49304,7 @@ pour-shot-to-used-shaker shot2 ingredient15 shaker1 left l1 l2
 4
 0 532 -1 0
 0 468 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49316,7 +49316,7 @@ pour-shot-to-used-shaker shot2 ingredient15 shaker1 right l0 l1
 4
 0 532 -1 0
 0 468 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49328,7 +49328,7 @@ pour-shot-to-used-shaker shot2 ingredient15 shaker1 right l1 l2
 4
 0 532 -1 0
 0 468 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49340,7 +49340,7 @@ pour-shot-to-used-shaker shot2 ingredient16 shaker1 left l0 l1
 4
 0 525 -1 0
 0 469 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49352,7 +49352,7 @@ pour-shot-to-used-shaker shot2 ingredient16 shaker1 left l1 l2
 4
 0 525 -1 0
 0 469 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49364,7 +49364,7 @@ pour-shot-to-used-shaker shot2 ingredient16 shaker1 right l0 l1
 4
 0 525 -1 0
 0 469 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49376,7 +49376,7 @@ pour-shot-to-used-shaker shot2 ingredient16 shaker1 right l1 l2
 4
 0 525 -1 0
 0 469 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49388,7 +49388,7 @@ pour-shot-to-used-shaker shot2 ingredient17 shaker1 left l0 l1
 4
 0 533 -1 0
 0 470 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49400,7 +49400,7 @@ pour-shot-to-used-shaker shot2 ingredient17 shaker1 left l1 l2
 4
 0 533 -1 0
 0 470 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49412,7 +49412,7 @@ pour-shot-to-used-shaker shot2 ingredient17 shaker1 right l0 l1
 4
 0 533 -1 0
 0 470 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49424,7 +49424,7 @@ pour-shot-to-used-shaker shot2 ingredient17 shaker1 right l1 l2
 4
 0 533 -1 0
 0 470 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49436,7 +49436,7 @@ pour-shot-to-used-shaker shot2 ingredient18 shaker1 left l0 l1
 4
 0 534 -1 0
 0 471 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49448,7 +49448,7 @@ pour-shot-to-used-shaker shot2 ingredient18 shaker1 left l1 l2
 4
 0 534 -1 0
 0 471 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49460,7 +49460,7 @@ pour-shot-to-used-shaker shot2 ingredient18 shaker1 right l0 l1
 4
 0 534 -1 0
 0 471 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49472,7 +49472,7 @@ pour-shot-to-used-shaker shot2 ingredient18 shaker1 right l1 l2
 4
 0 534 -1 0
 0 471 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49484,7 +49484,7 @@ pour-shot-to-used-shaker shot2 ingredient19 shaker1 left l0 l1
 4
 0 526 -1 0
 0 472 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49496,7 +49496,7 @@ pour-shot-to-used-shaker shot2 ingredient19 shaker1 left l1 l2
 4
 0 526 -1 0
 0 472 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49508,7 +49508,7 @@ pour-shot-to-used-shaker shot2 ingredient19 shaker1 right l0 l1
 4
 0 526 -1 0
 0 472 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49520,7 +49520,7 @@ pour-shot-to-used-shaker shot2 ingredient19 shaker1 right l1 l2
 4
 0 526 -1 0
 0 472 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49532,7 +49532,7 @@ pour-shot-to-used-shaker shot2 ingredient2 shaker1 left l0 l1
 4
 0 539 -1 0
 0 473 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49544,7 +49544,7 @@ pour-shot-to-used-shaker shot2 ingredient2 shaker1 left l1 l2
 4
 0 539 -1 0
 0 473 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49556,7 +49556,7 @@ pour-shot-to-used-shaker shot2 ingredient2 shaker1 right l0 l1
 4
 0 539 -1 0
 0 473 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49568,7 +49568,7 @@ pour-shot-to-used-shaker shot2 ingredient2 shaker1 right l1 l2
 4
 0 539 -1 0
 0 473 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49580,7 +49580,7 @@ pour-shot-to-used-shaker shot2 ingredient20 shaker1 left l0 l1
 4
 0 527 -1 0
 0 474 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49592,7 +49592,7 @@ pour-shot-to-used-shaker shot2 ingredient20 shaker1 left l1 l2
 4
 0 527 -1 0
 0 474 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49604,7 +49604,7 @@ pour-shot-to-used-shaker shot2 ingredient20 shaker1 right l0 l1
 4
 0 527 -1 0
 0 474 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49616,7 +49616,7 @@ pour-shot-to-used-shaker shot2 ingredient20 shaker1 right l1 l2
 4
 0 527 -1 0
 0 474 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49628,7 +49628,7 @@ pour-shot-to-used-shaker shot2 ingredient3 shaker1 left l0 l1
 4
 0 536 -1 0
 0 475 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49640,7 +49640,7 @@ pour-shot-to-used-shaker shot2 ingredient3 shaker1 left l1 l2
 4
 0 536 -1 0
 0 475 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49652,7 +49652,7 @@ pour-shot-to-used-shaker shot2 ingredient3 shaker1 right l0 l1
 4
 0 536 -1 0
 0 475 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49664,7 +49664,7 @@ pour-shot-to-used-shaker shot2 ingredient3 shaker1 right l1 l2
 4
 0 536 -1 0
 0 475 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49676,7 +49676,7 @@ pour-shot-to-used-shaker shot2 ingredient4 shaker1 left l0 l1
 4
 0 541 -1 0
 0 476 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49688,7 +49688,7 @@ pour-shot-to-used-shaker shot2 ingredient4 shaker1 left l1 l2
 4
 0 541 -1 0
 0 476 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49700,7 +49700,7 @@ pour-shot-to-used-shaker shot2 ingredient4 shaker1 right l0 l1
 4
 0 541 -1 0
 0 476 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49712,7 +49712,7 @@ pour-shot-to-used-shaker shot2 ingredient4 shaker1 right l1 l2
 4
 0 541 -1 0
 0 476 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49724,7 +49724,7 @@ pour-shot-to-used-shaker shot2 ingredient5 shaker1 left l0 l1
 4
 0 537 -1 0
 0 477 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49736,7 +49736,7 @@ pour-shot-to-used-shaker shot2 ingredient5 shaker1 left l1 l2
 4
 0 537 -1 0
 0 477 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49748,7 +49748,7 @@ pour-shot-to-used-shaker shot2 ingredient5 shaker1 right l0 l1
 4
 0 537 -1 0
 0 477 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49760,7 +49760,7 @@ pour-shot-to-used-shaker shot2 ingredient5 shaker1 right l1 l2
 4
 0 537 -1 0
 0 477 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49772,7 +49772,7 @@ pour-shot-to-used-shaker shot2 ingredient6 shaker1 left l0 l1
 4
 0 528 -1 0
 0 478 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49784,7 +49784,7 @@ pour-shot-to-used-shaker shot2 ingredient6 shaker1 left l1 l2
 4
 0 528 -1 0
 0 478 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49796,7 +49796,7 @@ pour-shot-to-used-shaker shot2 ingredient6 shaker1 right l0 l1
 4
 0 528 -1 0
 0 478 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49808,7 +49808,7 @@ pour-shot-to-used-shaker shot2 ingredient6 shaker1 right l1 l2
 4
 0 528 -1 0
 0 478 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49820,7 +49820,7 @@ pour-shot-to-used-shaker shot2 ingredient7 shaker1 left l0 l1
 4
 0 538 -1 0
 0 479 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49832,7 +49832,7 @@ pour-shot-to-used-shaker shot2 ingredient7 shaker1 left l1 l2
 4
 0 538 -1 0
 0 479 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49844,7 +49844,7 @@ pour-shot-to-used-shaker shot2 ingredient7 shaker1 right l0 l1
 4
 0 538 -1 0
 0 479 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49856,7 +49856,7 @@ pour-shot-to-used-shaker shot2 ingredient7 shaker1 right l1 l2
 4
 0 538 -1 0
 0 479 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49868,7 +49868,7 @@ pour-shot-to-used-shaker shot2 ingredient8 shaker1 left l0 l1
 4
 0 529 -1 0
 0 480 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49880,7 +49880,7 @@ pour-shot-to-used-shaker shot2 ingredient8 shaker1 left l1 l2
 4
 0 529 -1 0
 0 480 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49892,7 +49892,7 @@ pour-shot-to-used-shaker shot2 ingredient8 shaker1 right l0 l1
 4
 0 529 -1 0
 0 480 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49904,7 +49904,7 @@ pour-shot-to-used-shaker shot2 ingredient8 shaker1 right l1 l2
 4
 0 529 -1 0
 0 480 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49916,7 +49916,7 @@ pour-shot-to-used-shaker shot2 ingredient9 shaker1 left l0 l1
 4
 0 535 -1 0
 0 481 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49928,7 +49928,7 @@ pour-shot-to-used-shaker shot2 ingredient9 shaker1 left l1 l2
 4
 0 535 -1 0
 0 481 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49940,7 +49940,7 @@ pour-shot-to-used-shaker shot2 ingredient9 shaker1 right l0 l1
 4
 0 535 -1 0
 0 481 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 0 1
 1
 end_operator
@@ -49952,7 +49952,7 @@ pour-shot-to-used-shaker shot2 ingredient9 shaker1 right l1 l2
 4
 0 535 -1 0
 0 481 0 1
-0 554 -1 0
+0 555 -1 0
 0 565 1 2
 1
 end_operator
@@ -49964,7 +49964,7 @@ pour-shot-to-used-shaker shot3 ingredient1 shaker1 left l0 l1
 4
 0 523 -1 0
 0 442 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -49976,7 +49976,7 @@ pour-shot-to-used-shaker shot3 ingredient1 shaker1 left l1 l2
 4
 0 523 -1 0
 0 442 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -49988,7 +49988,7 @@ pour-shot-to-used-shaker shot3 ingredient1 shaker1 right l0 l1
 4
 0 523 -1 0
 0 442 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50000,7 +50000,7 @@ pour-shot-to-used-shaker shot3 ingredient1 shaker1 right l1 l2
 4
 0 523 -1 0
 0 442 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50012,7 +50012,7 @@ pour-shot-to-used-shaker shot3 ingredient10 shaker1 left l0 l1
 4
 0 540 -1 0
 0 443 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50024,7 +50024,7 @@ pour-shot-to-used-shaker shot3 ingredient10 shaker1 left l1 l2
 4
 0 540 -1 0
 0 443 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50036,7 +50036,7 @@ pour-shot-to-used-shaker shot3 ingredient10 shaker1 right l0 l1
 4
 0 540 -1 0
 0 443 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50048,7 +50048,7 @@ pour-shot-to-used-shaker shot3 ingredient10 shaker1 right l1 l2
 4
 0 540 -1 0
 0 443 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50060,7 +50060,7 @@ pour-shot-to-used-shaker shot3 ingredient11 shaker1 left l0 l1
 4
 0 530 -1 0
 0 444 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50072,7 +50072,7 @@ pour-shot-to-used-shaker shot3 ingredient11 shaker1 left l1 l2
 4
 0 530 -1 0
 0 444 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50084,7 +50084,7 @@ pour-shot-to-used-shaker shot3 ingredient11 shaker1 right l0 l1
 4
 0 530 -1 0
 0 444 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50096,7 +50096,7 @@ pour-shot-to-used-shaker shot3 ingredient11 shaker1 right l1 l2
 4
 0 530 -1 0
 0 444 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50108,7 +50108,7 @@ pour-shot-to-used-shaker shot3 ingredient12 shaker1 left l0 l1
 4
 0 542 -1 0
 0 445 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50120,7 +50120,7 @@ pour-shot-to-used-shaker shot3 ingredient12 shaker1 left l1 l2
 4
 0 542 -1 0
 0 445 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50132,7 +50132,7 @@ pour-shot-to-used-shaker shot3 ingredient12 shaker1 right l0 l1
 4
 0 542 -1 0
 0 445 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50144,7 +50144,7 @@ pour-shot-to-used-shaker shot3 ingredient12 shaker1 right l1 l2
 4
 0 542 -1 0
 0 445 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50156,7 +50156,7 @@ pour-shot-to-used-shaker shot3 ingredient13 shaker1 left l0 l1
 4
 0 524 -1 0
 0 446 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50168,7 +50168,7 @@ pour-shot-to-used-shaker shot3 ingredient13 shaker1 left l1 l2
 4
 0 524 -1 0
 0 446 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50180,7 +50180,7 @@ pour-shot-to-used-shaker shot3 ingredient13 shaker1 right l0 l1
 4
 0 524 -1 0
 0 446 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50192,7 +50192,7 @@ pour-shot-to-used-shaker shot3 ingredient13 shaker1 right l1 l2
 4
 0 524 -1 0
 0 446 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50204,7 +50204,7 @@ pour-shot-to-used-shaker shot3 ingredient14 shaker1 left l0 l1
 4
 0 531 -1 0
 0 447 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50216,7 +50216,7 @@ pour-shot-to-used-shaker shot3 ingredient14 shaker1 left l1 l2
 4
 0 531 -1 0
 0 447 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50228,7 +50228,7 @@ pour-shot-to-used-shaker shot3 ingredient14 shaker1 right l0 l1
 4
 0 531 -1 0
 0 447 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50240,7 +50240,7 @@ pour-shot-to-used-shaker shot3 ingredient14 shaker1 right l1 l2
 4
 0 531 -1 0
 0 447 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50252,7 +50252,7 @@ pour-shot-to-used-shaker shot3 ingredient15 shaker1 left l0 l1
 4
 0 532 -1 0
 0 448 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50264,7 +50264,7 @@ pour-shot-to-used-shaker shot3 ingredient15 shaker1 left l1 l2
 4
 0 532 -1 0
 0 448 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50276,7 +50276,7 @@ pour-shot-to-used-shaker shot3 ingredient15 shaker1 right l0 l1
 4
 0 532 -1 0
 0 448 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50288,7 +50288,7 @@ pour-shot-to-used-shaker shot3 ingredient15 shaker1 right l1 l2
 4
 0 532 -1 0
 0 448 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50300,7 +50300,7 @@ pour-shot-to-used-shaker shot3 ingredient16 shaker1 left l0 l1
 4
 0 525 -1 0
 0 449 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50312,7 +50312,7 @@ pour-shot-to-used-shaker shot3 ingredient16 shaker1 left l1 l2
 4
 0 525 -1 0
 0 449 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50324,7 +50324,7 @@ pour-shot-to-used-shaker shot3 ingredient16 shaker1 right l0 l1
 4
 0 525 -1 0
 0 449 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50336,7 +50336,7 @@ pour-shot-to-used-shaker shot3 ingredient16 shaker1 right l1 l2
 4
 0 525 -1 0
 0 449 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50348,7 +50348,7 @@ pour-shot-to-used-shaker shot3 ingredient17 shaker1 left l0 l1
 4
 0 533 -1 0
 0 450 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50360,7 +50360,7 @@ pour-shot-to-used-shaker shot3 ingredient17 shaker1 left l1 l2
 4
 0 533 -1 0
 0 450 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50372,7 +50372,7 @@ pour-shot-to-used-shaker shot3 ingredient17 shaker1 right l0 l1
 4
 0 533 -1 0
 0 450 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50384,7 +50384,7 @@ pour-shot-to-used-shaker shot3 ingredient17 shaker1 right l1 l2
 4
 0 533 -1 0
 0 450 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50396,7 +50396,7 @@ pour-shot-to-used-shaker shot3 ingredient18 shaker1 left l0 l1
 4
 0 534 -1 0
 0 451 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50408,7 +50408,7 @@ pour-shot-to-used-shaker shot3 ingredient18 shaker1 left l1 l2
 4
 0 534 -1 0
 0 451 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50420,7 +50420,7 @@ pour-shot-to-used-shaker shot3 ingredient18 shaker1 right l0 l1
 4
 0 534 -1 0
 0 451 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50432,7 +50432,7 @@ pour-shot-to-used-shaker shot3 ingredient18 shaker1 right l1 l2
 4
 0 534 -1 0
 0 451 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50444,7 +50444,7 @@ pour-shot-to-used-shaker shot3 ingredient19 shaker1 left l0 l1
 4
 0 526 -1 0
 0 452 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50456,7 +50456,7 @@ pour-shot-to-used-shaker shot3 ingredient19 shaker1 left l1 l2
 4
 0 526 -1 0
 0 452 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50468,7 +50468,7 @@ pour-shot-to-used-shaker shot3 ingredient19 shaker1 right l0 l1
 4
 0 526 -1 0
 0 452 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50480,7 +50480,7 @@ pour-shot-to-used-shaker shot3 ingredient19 shaker1 right l1 l2
 4
 0 526 -1 0
 0 452 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50492,7 +50492,7 @@ pour-shot-to-used-shaker shot3 ingredient2 shaker1 left l0 l1
 4
 0 539 -1 0
 0 453 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50504,7 +50504,7 @@ pour-shot-to-used-shaker shot3 ingredient2 shaker1 left l1 l2
 4
 0 539 -1 0
 0 453 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50516,7 +50516,7 @@ pour-shot-to-used-shaker shot3 ingredient2 shaker1 right l0 l1
 4
 0 539 -1 0
 0 453 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50528,7 +50528,7 @@ pour-shot-to-used-shaker shot3 ingredient2 shaker1 right l1 l2
 4
 0 539 -1 0
 0 453 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50540,7 +50540,7 @@ pour-shot-to-used-shaker shot3 ingredient20 shaker1 left l0 l1
 4
 0 527 -1 0
 0 454 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50552,7 +50552,7 @@ pour-shot-to-used-shaker shot3 ingredient20 shaker1 left l1 l2
 4
 0 527 -1 0
 0 454 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50564,7 +50564,7 @@ pour-shot-to-used-shaker shot3 ingredient20 shaker1 right l0 l1
 4
 0 527 -1 0
 0 454 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50576,7 +50576,7 @@ pour-shot-to-used-shaker shot3 ingredient20 shaker1 right l1 l2
 4
 0 527 -1 0
 0 454 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50588,7 +50588,7 @@ pour-shot-to-used-shaker shot3 ingredient3 shaker1 left l0 l1
 4
 0 536 -1 0
 0 455 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50600,7 +50600,7 @@ pour-shot-to-used-shaker shot3 ingredient3 shaker1 left l1 l2
 4
 0 536 -1 0
 0 455 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50612,7 +50612,7 @@ pour-shot-to-used-shaker shot3 ingredient3 shaker1 right l0 l1
 4
 0 536 -1 0
 0 455 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50624,7 +50624,7 @@ pour-shot-to-used-shaker shot3 ingredient3 shaker1 right l1 l2
 4
 0 536 -1 0
 0 455 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50636,7 +50636,7 @@ pour-shot-to-used-shaker shot3 ingredient4 shaker1 left l0 l1
 4
 0 541 -1 0
 0 456 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50648,7 +50648,7 @@ pour-shot-to-used-shaker shot3 ingredient4 shaker1 left l1 l2
 4
 0 541 -1 0
 0 456 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50660,7 +50660,7 @@ pour-shot-to-used-shaker shot3 ingredient4 shaker1 right l0 l1
 4
 0 541 -1 0
 0 456 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50672,7 +50672,7 @@ pour-shot-to-used-shaker shot3 ingredient4 shaker1 right l1 l2
 4
 0 541 -1 0
 0 456 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50684,7 +50684,7 @@ pour-shot-to-used-shaker shot3 ingredient5 shaker1 left l0 l1
 4
 0 537 -1 0
 0 457 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50696,7 +50696,7 @@ pour-shot-to-used-shaker shot3 ingredient5 shaker1 left l1 l2
 4
 0 537 -1 0
 0 457 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50708,7 +50708,7 @@ pour-shot-to-used-shaker shot3 ingredient5 shaker1 right l0 l1
 4
 0 537 -1 0
 0 457 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50720,7 +50720,7 @@ pour-shot-to-used-shaker shot3 ingredient5 shaker1 right l1 l2
 4
 0 537 -1 0
 0 457 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50732,7 +50732,7 @@ pour-shot-to-used-shaker shot3 ingredient6 shaker1 left l0 l1
 4
 0 528 -1 0
 0 458 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50744,7 +50744,7 @@ pour-shot-to-used-shaker shot3 ingredient6 shaker1 left l1 l2
 4
 0 528 -1 0
 0 458 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50756,7 +50756,7 @@ pour-shot-to-used-shaker shot3 ingredient6 shaker1 right l0 l1
 4
 0 528 -1 0
 0 458 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50768,7 +50768,7 @@ pour-shot-to-used-shaker shot3 ingredient6 shaker1 right l1 l2
 4
 0 528 -1 0
 0 458 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50780,7 +50780,7 @@ pour-shot-to-used-shaker shot3 ingredient7 shaker1 left l0 l1
 4
 0 538 -1 0
 0 459 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50792,7 +50792,7 @@ pour-shot-to-used-shaker shot3 ingredient7 shaker1 left l1 l2
 4
 0 538 -1 0
 0 459 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50804,7 +50804,7 @@ pour-shot-to-used-shaker shot3 ingredient7 shaker1 right l0 l1
 4
 0 538 -1 0
 0 459 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50816,7 +50816,7 @@ pour-shot-to-used-shaker shot3 ingredient7 shaker1 right l1 l2
 4
 0 538 -1 0
 0 459 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50828,7 +50828,7 @@ pour-shot-to-used-shaker shot3 ingredient8 shaker1 left l0 l1
 4
 0 529 -1 0
 0 460 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50840,7 +50840,7 @@ pour-shot-to-used-shaker shot3 ingredient8 shaker1 left l1 l2
 4
 0 529 -1 0
 0 460 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50852,7 +50852,7 @@ pour-shot-to-used-shaker shot3 ingredient8 shaker1 right l0 l1
 4
 0 529 -1 0
 0 460 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50864,7 +50864,7 @@ pour-shot-to-used-shaker shot3 ingredient8 shaker1 right l1 l2
 4
 0 529 -1 0
 0 460 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50876,7 +50876,7 @@ pour-shot-to-used-shaker shot3 ingredient9 shaker1 left l0 l1
 4
 0 535 -1 0
 0 461 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50888,7 +50888,7 @@ pour-shot-to-used-shaker shot3 ingredient9 shaker1 left l1 l2
 4
 0 535 -1 0
 0 461 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50900,7 +50900,7 @@ pour-shot-to-used-shaker shot3 ingredient9 shaker1 right l0 l1
 4
 0 535 -1 0
 0 461 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 0 1
 1
 end_operator
@@ -50912,7 +50912,7 @@ pour-shot-to-used-shaker shot3 ingredient9 shaker1 right l1 l2
 4
 0 535 -1 0
 0 461 0 1
-0 555 -1 0
+0 556 -1 0
 0 565 1 2
 1
 end_operator
@@ -50924,7 +50924,7 @@ pour-shot-to-used-shaker shot4 ingredient1 shaker1 left l0 l1
 4
 0 523 -1 0
 0 422 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -50936,7 +50936,7 @@ pour-shot-to-used-shaker shot4 ingredient1 shaker1 left l1 l2
 4
 0 523 -1 0
 0 422 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -50948,7 +50948,7 @@ pour-shot-to-used-shaker shot4 ingredient1 shaker1 right l0 l1
 4
 0 523 -1 0
 0 422 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -50960,7 +50960,7 @@ pour-shot-to-used-shaker shot4 ingredient1 shaker1 right l1 l2
 4
 0 523 -1 0
 0 422 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -50972,7 +50972,7 @@ pour-shot-to-used-shaker shot4 ingredient10 shaker1 left l0 l1
 4
 0 540 -1 0
 0 423 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -50984,7 +50984,7 @@ pour-shot-to-used-shaker shot4 ingredient10 shaker1 left l1 l2
 4
 0 540 -1 0
 0 423 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -50996,7 +50996,7 @@ pour-shot-to-used-shaker shot4 ingredient10 shaker1 right l0 l1
 4
 0 540 -1 0
 0 423 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51008,7 +51008,7 @@ pour-shot-to-used-shaker shot4 ingredient10 shaker1 right l1 l2
 4
 0 540 -1 0
 0 423 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51020,7 +51020,7 @@ pour-shot-to-used-shaker shot4 ingredient11 shaker1 left l0 l1
 4
 0 530 -1 0
 0 424 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51032,7 +51032,7 @@ pour-shot-to-used-shaker shot4 ingredient11 shaker1 left l1 l2
 4
 0 530 -1 0
 0 424 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51044,7 +51044,7 @@ pour-shot-to-used-shaker shot4 ingredient11 shaker1 right l0 l1
 4
 0 530 -1 0
 0 424 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51056,7 +51056,7 @@ pour-shot-to-used-shaker shot4 ingredient11 shaker1 right l1 l2
 4
 0 530 -1 0
 0 424 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51068,7 +51068,7 @@ pour-shot-to-used-shaker shot4 ingredient12 shaker1 left l0 l1
 4
 0 542 -1 0
 0 425 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51080,7 +51080,7 @@ pour-shot-to-used-shaker shot4 ingredient12 shaker1 left l1 l2
 4
 0 542 -1 0
 0 425 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51092,7 +51092,7 @@ pour-shot-to-used-shaker shot4 ingredient12 shaker1 right l0 l1
 4
 0 542 -1 0
 0 425 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51104,7 +51104,7 @@ pour-shot-to-used-shaker shot4 ingredient12 shaker1 right l1 l2
 4
 0 542 -1 0
 0 425 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51116,7 +51116,7 @@ pour-shot-to-used-shaker shot4 ingredient13 shaker1 left l0 l1
 4
 0 524 -1 0
 0 426 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51128,7 +51128,7 @@ pour-shot-to-used-shaker shot4 ingredient13 shaker1 left l1 l2
 4
 0 524 -1 0
 0 426 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51140,7 +51140,7 @@ pour-shot-to-used-shaker shot4 ingredient13 shaker1 right l0 l1
 4
 0 524 -1 0
 0 426 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51152,7 +51152,7 @@ pour-shot-to-used-shaker shot4 ingredient13 shaker1 right l1 l2
 4
 0 524 -1 0
 0 426 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51164,7 +51164,7 @@ pour-shot-to-used-shaker shot4 ingredient14 shaker1 left l0 l1
 4
 0 531 -1 0
 0 427 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51176,7 +51176,7 @@ pour-shot-to-used-shaker shot4 ingredient14 shaker1 left l1 l2
 4
 0 531 -1 0
 0 427 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51188,7 +51188,7 @@ pour-shot-to-used-shaker shot4 ingredient14 shaker1 right l0 l1
 4
 0 531 -1 0
 0 427 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51200,7 +51200,7 @@ pour-shot-to-used-shaker shot4 ingredient14 shaker1 right l1 l2
 4
 0 531 -1 0
 0 427 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51212,7 +51212,7 @@ pour-shot-to-used-shaker shot4 ingredient15 shaker1 left l0 l1
 4
 0 532 -1 0
 0 428 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51224,7 +51224,7 @@ pour-shot-to-used-shaker shot4 ingredient15 shaker1 left l1 l2
 4
 0 532 -1 0
 0 428 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51236,7 +51236,7 @@ pour-shot-to-used-shaker shot4 ingredient15 shaker1 right l0 l1
 4
 0 532 -1 0
 0 428 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51248,7 +51248,7 @@ pour-shot-to-used-shaker shot4 ingredient15 shaker1 right l1 l2
 4
 0 532 -1 0
 0 428 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51260,7 +51260,7 @@ pour-shot-to-used-shaker shot4 ingredient16 shaker1 left l0 l1
 4
 0 525 -1 0
 0 429 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51272,7 +51272,7 @@ pour-shot-to-used-shaker shot4 ingredient16 shaker1 left l1 l2
 4
 0 525 -1 0
 0 429 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51284,7 +51284,7 @@ pour-shot-to-used-shaker shot4 ingredient16 shaker1 right l0 l1
 4
 0 525 -1 0
 0 429 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51296,7 +51296,7 @@ pour-shot-to-used-shaker shot4 ingredient16 shaker1 right l1 l2
 4
 0 525 -1 0
 0 429 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51308,7 +51308,7 @@ pour-shot-to-used-shaker shot4 ingredient17 shaker1 left l0 l1
 4
 0 533 -1 0
 0 430 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51320,7 +51320,7 @@ pour-shot-to-used-shaker shot4 ingredient17 shaker1 left l1 l2
 4
 0 533 -1 0
 0 430 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51332,7 +51332,7 @@ pour-shot-to-used-shaker shot4 ingredient17 shaker1 right l0 l1
 4
 0 533 -1 0
 0 430 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51344,7 +51344,7 @@ pour-shot-to-used-shaker shot4 ingredient17 shaker1 right l1 l2
 4
 0 533 -1 0
 0 430 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51356,7 +51356,7 @@ pour-shot-to-used-shaker shot4 ingredient18 shaker1 left l0 l1
 4
 0 534 -1 0
 0 431 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51368,7 +51368,7 @@ pour-shot-to-used-shaker shot4 ingredient18 shaker1 left l1 l2
 4
 0 534 -1 0
 0 431 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51380,7 +51380,7 @@ pour-shot-to-used-shaker shot4 ingredient18 shaker1 right l0 l1
 4
 0 534 -1 0
 0 431 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51392,7 +51392,7 @@ pour-shot-to-used-shaker shot4 ingredient18 shaker1 right l1 l2
 4
 0 534 -1 0
 0 431 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51404,7 +51404,7 @@ pour-shot-to-used-shaker shot4 ingredient19 shaker1 left l0 l1
 4
 0 526 -1 0
 0 432 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51416,7 +51416,7 @@ pour-shot-to-used-shaker shot4 ingredient19 shaker1 left l1 l2
 4
 0 526 -1 0
 0 432 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51428,7 +51428,7 @@ pour-shot-to-used-shaker shot4 ingredient19 shaker1 right l0 l1
 4
 0 526 -1 0
 0 432 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51440,7 +51440,7 @@ pour-shot-to-used-shaker shot4 ingredient19 shaker1 right l1 l2
 4
 0 526 -1 0
 0 432 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51452,7 +51452,7 @@ pour-shot-to-used-shaker shot4 ingredient2 shaker1 left l0 l1
 4
 0 539 -1 0
 0 433 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51464,7 +51464,7 @@ pour-shot-to-used-shaker shot4 ingredient2 shaker1 left l1 l2
 4
 0 539 -1 0
 0 433 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51476,7 +51476,7 @@ pour-shot-to-used-shaker shot4 ingredient2 shaker1 right l0 l1
 4
 0 539 -1 0
 0 433 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51488,7 +51488,7 @@ pour-shot-to-used-shaker shot4 ingredient2 shaker1 right l1 l2
 4
 0 539 -1 0
 0 433 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51500,7 +51500,7 @@ pour-shot-to-used-shaker shot4 ingredient20 shaker1 left l0 l1
 4
 0 527 -1 0
 0 434 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51512,7 +51512,7 @@ pour-shot-to-used-shaker shot4 ingredient20 shaker1 left l1 l2
 4
 0 527 -1 0
 0 434 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51524,7 +51524,7 @@ pour-shot-to-used-shaker shot4 ingredient20 shaker1 right l0 l1
 4
 0 527 -1 0
 0 434 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51536,7 +51536,7 @@ pour-shot-to-used-shaker shot4 ingredient20 shaker1 right l1 l2
 4
 0 527 -1 0
 0 434 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51548,7 +51548,7 @@ pour-shot-to-used-shaker shot4 ingredient3 shaker1 left l0 l1
 4
 0 536 -1 0
 0 435 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51560,7 +51560,7 @@ pour-shot-to-used-shaker shot4 ingredient3 shaker1 left l1 l2
 4
 0 536 -1 0
 0 435 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51572,7 +51572,7 @@ pour-shot-to-used-shaker shot4 ingredient3 shaker1 right l0 l1
 4
 0 536 -1 0
 0 435 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51584,7 +51584,7 @@ pour-shot-to-used-shaker shot4 ingredient3 shaker1 right l1 l2
 4
 0 536 -1 0
 0 435 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51596,7 +51596,7 @@ pour-shot-to-used-shaker shot4 ingredient4 shaker1 left l0 l1
 4
 0 541 -1 0
 0 436 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51608,7 +51608,7 @@ pour-shot-to-used-shaker shot4 ingredient4 shaker1 left l1 l2
 4
 0 541 -1 0
 0 436 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51620,7 +51620,7 @@ pour-shot-to-used-shaker shot4 ingredient4 shaker1 right l0 l1
 4
 0 541 -1 0
 0 436 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51632,7 +51632,7 @@ pour-shot-to-used-shaker shot4 ingredient4 shaker1 right l1 l2
 4
 0 541 -1 0
 0 436 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51644,7 +51644,7 @@ pour-shot-to-used-shaker shot4 ingredient5 shaker1 left l0 l1
 4
 0 537 -1 0
 0 437 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51656,7 +51656,7 @@ pour-shot-to-used-shaker shot4 ingredient5 shaker1 left l1 l2
 4
 0 537 -1 0
 0 437 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51668,7 +51668,7 @@ pour-shot-to-used-shaker shot4 ingredient5 shaker1 right l0 l1
 4
 0 537 -1 0
 0 437 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51680,7 +51680,7 @@ pour-shot-to-used-shaker shot4 ingredient5 shaker1 right l1 l2
 4
 0 537 -1 0
 0 437 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51692,7 +51692,7 @@ pour-shot-to-used-shaker shot4 ingredient6 shaker1 left l0 l1
 4
 0 528 -1 0
 0 438 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51704,7 +51704,7 @@ pour-shot-to-used-shaker shot4 ingredient6 shaker1 left l1 l2
 4
 0 528 -1 0
 0 438 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51716,7 +51716,7 @@ pour-shot-to-used-shaker shot4 ingredient6 shaker1 right l0 l1
 4
 0 528 -1 0
 0 438 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51728,7 +51728,7 @@ pour-shot-to-used-shaker shot4 ingredient6 shaker1 right l1 l2
 4
 0 528 -1 0
 0 438 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51740,7 +51740,7 @@ pour-shot-to-used-shaker shot4 ingredient7 shaker1 left l0 l1
 4
 0 538 -1 0
 0 439 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51752,7 +51752,7 @@ pour-shot-to-used-shaker shot4 ingredient7 shaker1 left l1 l2
 4
 0 538 -1 0
 0 439 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51764,7 +51764,7 @@ pour-shot-to-used-shaker shot4 ingredient7 shaker1 right l0 l1
 4
 0 538 -1 0
 0 439 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51776,7 +51776,7 @@ pour-shot-to-used-shaker shot4 ingredient7 shaker1 right l1 l2
 4
 0 538 -1 0
 0 439 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51788,7 +51788,7 @@ pour-shot-to-used-shaker shot4 ingredient8 shaker1 left l0 l1
 4
 0 529 -1 0
 0 440 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51800,7 +51800,7 @@ pour-shot-to-used-shaker shot4 ingredient8 shaker1 left l1 l2
 4
 0 529 -1 0
 0 440 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51812,7 +51812,7 @@ pour-shot-to-used-shaker shot4 ingredient8 shaker1 right l0 l1
 4
 0 529 -1 0
 0 440 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51824,7 +51824,7 @@ pour-shot-to-used-shaker shot4 ingredient8 shaker1 right l1 l2
 4
 0 529 -1 0
 0 440 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51836,7 +51836,7 @@ pour-shot-to-used-shaker shot4 ingredient9 shaker1 left l0 l1
 4
 0 535 -1 0
 0 441 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51848,7 +51848,7 @@ pour-shot-to-used-shaker shot4 ingredient9 shaker1 left l1 l2
 4
 0 535 -1 0
 0 441 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51860,7 +51860,7 @@ pour-shot-to-used-shaker shot4 ingredient9 shaker1 right l0 l1
 4
 0 535 -1 0
 0 441 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 0 1
 1
 end_operator
@@ -51872,7 +51872,7 @@ pour-shot-to-used-shaker shot4 ingredient9 shaker1 right l1 l2
 4
 0 535 -1 0
 0 441 0 1
-0 556 -1 0
+0 557 -1 0
 0 565 1 2
 1
 end_operator
@@ -51884,7 +51884,7 @@ pour-shot-to-used-shaker shot5 ingredient1 shaker1 left l0 l1
 4
 0 523 -1 0
 0 402 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -51896,7 +51896,7 @@ pour-shot-to-used-shaker shot5 ingredient1 shaker1 left l1 l2
 4
 0 523 -1 0
 0 402 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -51908,7 +51908,7 @@ pour-shot-to-used-shaker shot5 ingredient1 shaker1 right l0 l1
 4
 0 523 -1 0
 0 402 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -51920,7 +51920,7 @@ pour-shot-to-used-shaker shot5 ingredient1 shaker1 right l1 l2
 4
 0 523 -1 0
 0 402 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -51932,7 +51932,7 @@ pour-shot-to-used-shaker shot5 ingredient10 shaker1 left l0 l1
 4
 0 540 -1 0
 0 403 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -51944,7 +51944,7 @@ pour-shot-to-used-shaker shot5 ingredient10 shaker1 left l1 l2
 4
 0 540 -1 0
 0 403 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -51956,7 +51956,7 @@ pour-shot-to-used-shaker shot5 ingredient10 shaker1 right l0 l1
 4
 0 540 -1 0
 0 403 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -51968,7 +51968,7 @@ pour-shot-to-used-shaker shot5 ingredient10 shaker1 right l1 l2
 4
 0 540 -1 0
 0 403 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -51980,7 +51980,7 @@ pour-shot-to-used-shaker shot5 ingredient11 shaker1 left l0 l1
 4
 0 530 -1 0
 0 404 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -51992,7 +51992,7 @@ pour-shot-to-used-shaker shot5 ingredient11 shaker1 left l1 l2
 4
 0 530 -1 0
 0 404 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52004,7 +52004,7 @@ pour-shot-to-used-shaker shot5 ingredient11 shaker1 right l0 l1
 4
 0 530 -1 0
 0 404 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52016,7 +52016,7 @@ pour-shot-to-used-shaker shot5 ingredient11 shaker1 right l1 l2
 4
 0 530 -1 0
 0 404 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52028,7 +52028,7 @@ pour-shot-to-used-shaker shot5 ingredient12 shaker1 left l0 l1
 4
 0 542 -1 0
 0 405 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52040,7 +52040,7 @@ pour-shot-to-used-shaker shot5 ingredient12 shaker1 left l1 l2
 4
 0 542 -1 0
 0 405 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52052,7 +52052,7 @@ pour-shot-to-used-shaker shot5 ingredient12 shaker1 right l0 l1
 4
 0 542 -1 0
 0 405 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52064,7 +52064,7 @@ pour-shot-to-used-shaker shot5 ingredient12 shaker1 right l1 l2
 4
 0 542 -1 0
 0 405 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52076,7 +52076,7 @@ pour-shot-to-used-shaker shot5 ingredient13 shaker1 left l0 l1
 4
 0 524 -1 0
 0 406 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52088,7 +52088,7 @@ pour-shot-to-used-shaker shot5 ingredient13 shaker1 left l1 l2
 4
 0 524 -1 0
 0 406 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52100,7 +52100,7 @@ pour-shot-to-used-shaker shot5 ingredient13 shaker1 right l0 l1
 4
 0 524 -1 0
 0 406 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52112,7 +52112,7 @@ pour-shot-to-used-shaker shot5 ingredient13 shaker1 right l1 l2
 4
 0 524 -1 0
 0 406 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52124,7 +52124,7 @@ pour-shot-to-used-shaker shot5 ingredient14 shaker1 left l0 l1
 4
 0 531 -1 0
 0 407 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52136,7 +52136,7 @@ pour-shot-to-used-shaker shot5 ingredient14 shaker1 left l1 l2
 4
 0 531 -1 0
 0 407 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52148,7 +52148,7 @@ pour-shot-to-used-shaker shot5 ingredient14 shaker1 right l0 l1
 4
 0 531 -1 0
 0 407 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52160,7 +52160,7 @@ pour-shot-to-used-shaker shot5 ingredient14 shaker1 right l1 l2
 4
 0 531 -1 0
 0 407 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52172,7 +52172,7 @@ pour-shot-to-used-shaker shot5 ingredient15 shaker1 left l0 l1
 4
 0 532 -1 0
 0 408 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52184,7 +52184,7 @@ pour-shot-to-used-shaker shot5 ingredient15 shaker1 left l1 l2
 4
 0 532 -1 0
 0 408 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52196,7 +52196,7 @@ pour-shot-to-used-shaker shot5 ingredient15 shaker1 right l0 l1
 4
 0 532 -1 0
 0 408 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52208,7 +52208,7 @@ pour-shot-to-used-shaker shot5 ingredient15 shaker1 right l1 l2
 4
 0 532 -1 0
 0 408 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52220,7 +52220,7 @@ pour-shot-to-used-shaker shot5 ingredient16 shaker1 left l0 l1
 4
 0 525 -1 0
 0 409 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52232,7 +52232,7 @@ pour-shot-to-used-shaker shot5 ingredient16 shaker1 left l1 l2
 4
 0 525 -1 0
 0 409 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52244,7 +52244,7 @@ pour-shot-to-used-shaker shot5 ingredient16 shaker1 right l0 l1
 4
 0 525 -1 0
 0 409 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52256,7 +52256,7 @@ pour-shot-to-used-shaker shot5 ingredient16 shaker1 right l1 l2
 4
 0 525 -1 0
 0 409 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52268,7 +52268,7 @@ pour-shot-to-used-shaker shot5 ingredient17 shaker1 left l0 l1
 4
 0 533 -1 0
 0 410 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52280,7 +52280,7 @@ pour-shot-to-used-shaker shot5 ingredient17 shaker1 left l1 l2
 4
 0 533 -1 0
 0 410 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52292,7 +52292,7 @@ pour-shot-to-used-shaker shot5 ingredient17 shaker1 right l0 l1
 4
 0 533 -1 0
 0 410 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52304,7 +52304,7 @@ pour-shot-to-used-shaker shot5 ingredient17 shaker1 right l1 l2
 4
 0 533 -1 0
 0 410 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52316,7 +52316,7 @@ pour-shot-to-used-shaker shot5 ingredient18 shaker1 left l0 l1
 4
 0 534 -1 0
 0 411 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52328,7 +52328,7 @@ pour-shot-to-used-shaker shot5 ingredient18 shaker1 left l1 l2
 4
 0 534 -1 0
 0 411 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52340,7 +52340,7 @@ pour-shot-to-used-shaker shot5 ingredient18 shaker1 right l0 l1
 4
 0 534 -1 0
 0 411 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52352,7 +52352,7 @@ pour-shot-to-used-shaker shot5 ingredient18 shaker1 right l1 l2
 4
 0 534 -1 0
 0 411 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52364,7 +52364,7 @@ pour-shot-to-used-shaker shot5 ingredient19 shaker1 left l0 l1
 4
 0 526 -1 0
 0 412 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52376,7 +52376,7 @@ pour-shot-to-used-shaker shot5 ingredient19 shaker1 left l1 l2
 4
 0 526 -1 0
 0 412 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52388,7 +52388,7 @@ pour-shot-to-used-shaker shot5 ingredient19 shaker1 right l0 l1
 4
 0 526 -1 0
 0 412 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52400,7 +52400,7 @@ pour-shot-to-used-shaker shot5 ingredient19 shaker1 right l1 l2
 4
 0 526 -1 0
 0 412 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52412,7 +52412,7 @@ pour-shot-to-used-shaker shot5 ingredient2 shaker1 left l0 l1
 4
 0 539 -1 0
 0 413 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52424,7 +52424,7 @@ pour-shot-to-used-shaker shot5 ingredient2 shaker1 left l1 l2
 4
 0 539 -1 0
 0 413 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52436,7 +52436,7 @@ pour-shot-to-used-shaker shot5 ingredient2 shaker1 right l0 l1
 4
 0 539 -1 0
 0 413 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52448,7 +52448,7 @@ pour-shot-to-used-shaker shot5 ingredient2 shaker1 right l1 l2
 4
 0 539 -1 0
 0 413 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52460,7 +52460,7 @@ pour-shot-to-used-shaker shot5 ingredient20 shaker1 left l0 l1
 4
 0 527 -1 0
 0 414 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52472,7 +52472,7 @@ pour-shot-to-used-shaker shot5 ingredient20 shaker1 left l1 l2
 4
 0 527 -1 0
 0 414 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52484,7 +52484,7 @@ pour-shot-to-used-shaker shot5 ingredient20 shaker1 right l0 l1
 4
 0 527 -1 0
 0 414 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52496,7 +52496,7 @@ pour-shot-to-used-shaker shot5 ingredient20 shaker1 right l1 l2
 4
 0 527 -1 0
 0 414 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52508,7 +52508,7 @@ pour-shot-to-used-shaker shot5 ingredient3 shaker1 left l0 l1
 4
 0 536 -1 0
 0 415 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52520,7 +52520,7 @@ pour-shot-to-used-shaker shot5 ingredient3 shaker1 left l1 l2
 4
 0 536 -1 0
 0 415 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52532,7 +52532,7 @@ pour-shot-to-used-shaker shot5 ingredient3 shaker1 right l0 l1
 4
 0 536 -1 0
 0 415 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52544,7 +52544,7 @@ pour-shot-to-used-shaker shot5 ingredient3 shaker1 right l1 l2
 4
 0 536 -1 0
 0 415 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52556,7 +52556,7 @@ pour-shot-to-used-shaker shot5 ingredient4 shaker1 left l0 l1
 4
 0 541 -1 0
 0 416 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52568,7 +52568,7 @@ pour-shot-to-used-shaker shot5 ingredient4 shaker1 left l1 l2
 4
 0 541 -1 0
 0 416 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52580,7 +52580,7 @@ pour-shot-to-used-shaker shot5 ingredient4 shaker1 right l0 l1
 4
 0 541 -1 0
 0 416 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52592,7 +52592,7 @@ pour-shot-to-used-shaker shot5 ingredient4 shaker1 right l1 l2
 4
 0 541 -1 0
 0 416 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52604,7 +52604,7 @@ pour-shot-to-used-shaker shot5 ingredient5 shaker1 left l0 l1
 4
 0 537 -1 0
 0 417 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52616,7 +52616,7 @@ pour-shot-to-used-shaker shot5 ingredient5 shaker1 left l1 l2
 4
 0 537 -1 0
 0 417 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52628,7 +52628,7 @@ pour-shot-to-used-shaker shot5 ingredient5 shaker1 right l0 l1
 4
 0 537 -1 0
 0 417 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52640,7 +52640,7 @@ pour-shot-to-used-shaker shot5 ingredient5 shaker1 right l1 l2
 4
 0 537 -1 0
 0 417 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52652,7 +52652,7 @@ pour-shot-to-used-shaker shot5 ingredient6 shaker1 left l0 l1
 4
 0 528 -1 0
 0 418 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52664,7 +52664,7 @@ pour-shot-to-used-shaker shot5 ingredient6 shaker1 left l1 l2
 4
 0 528 -1 0
 0 418 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52676,7 +52676,7 @@ pour-shot-to-used-shaker shot5 ingredient6 shaker1 right l0 l1
 4
 0 528 -1 0
 0 418 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52688,7 +52688,7 @@ pour-shot-to-used-shaker shot5 ingredient6 shaker1 right l1 l2
 4
 0 528 -1 0
 0 418 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52700,7 +52700,7 @@ pour-shot-to-used-shaker shot5 ingredient7 shaker1 left l0 l1
 4
 0 538 -1 0
 0 419 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52712,7 +52712,7 @@ pour-shot-to-used-shaker shot5 ingredient7 shaker1 left l1 l2
 4
 0 538 -1 0
 0 419 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52724,7 +52724,7 @@ pour-shot-to-used-shaker shot5 ingredient7 shaker1 right l0 l1
 4
 0 538 -1 0
 0 419 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52736,7 +52736,7 @@ pour-shot-to-used-shaker shot5 ingredient7 shaker1 right l1 l2
 4
 0 538 -1 0
 0 419 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52748,7 +52748,7 @@ pour-shot-to-used-shaker shot5 ingredient8 shaker1 left l0 l1
 4
 0 529 -1 0
 0 420 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52760,7 +52760,7 @@ pour-shot-to-used-shaker shot5 ingredient8 shaker1 left l1 l2
 4
 0 529 -1 0
 0 420 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52772,7 +52772,7 @@ pour-shot-to-used-shaker shot5 ingredient8 shaker1 right l0 l1
 4
 0 529 -1 0
 0 420 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52784,7 +52784,7 @@ pour-shot-to-used-shaker shot5 ingredient8 shaker1 right l1 l2
 4
 0 529 -1 0
 0 420 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52796,7 +52796,7 @@ pour-shot-to-used-shaker shot5 ingredient9 shaker1 left l0 l1
 4
 0 535 -1 0
 0 421 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52808,7 +52808,7 @@ pour-shot-to-used-shaker shot5 ingredient9 shaker1 left l1 l2
 4
 0 535 -1 0
 0 421 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52820,7 +52820,7 @@ pour-shot-to-used-shaker shot5 ingredient9 shaker1 right l0 l1
 4
 0 535 -1 0
 0 421 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 0 1
 1
 end_operator
@@ -52832,7 +52832,7 @@ pour-shot-to-used-shaker shot5 ingredient9 shaker1 right l1 l2
 4
 0 535 -1 0
 0 421 0 1
-0 557 -1 0
+0 558 -1 0
 0 565 1 2
 1
 end_operator
@@ -52844,7 +52844,7 @@ pour-shot-to-used-shaker shot6 ingredient1 shaker1 left l0 l1
 4
 0 523 -1 0
 0 382 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -52856,7 +52856,7 @@ pour-shot-to-used-shaker shot6 ingredient1 shaker1 left l1 l2
 4
 0 523 -1 0
 0 382 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -52868,7 +52868,7 @@ pour-shot-to-used-shaker shot6 ingredient1 shaker1 right l0 l1
 4
 0 523 -1 0
 0 382 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -52880,7 +52880,7 @@ pour-shot-to-used-shaker shot6 ingredient1 shaker1 right l1 l2
 4
 0 523 -1 0
 0 382 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -52892,7 +52892,7 @@ pour-shot-to-used-shaker shot6 ingredient10 shaker1 left l0 l1
 4
 0 540 -1 0
 0 383 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -52904,7 +52904,7 @@ pour-shot-to-used-shaker shot6 ingredient10 shaker1 left l1 l2
 4
 0 540 -1 0
 0 383 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -52916,7 +52916,7 @@ pour-shot-to-used-shaker shot6 ingredient10 shaker1 right l0 l1
 4
 0 540 -1 0
 0 383 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -52928,7 +52928,7 @@ pour-shot-to-used-shaker shot6 ingredient10 shaker1 right l1 l2
 4
 0 540 -1 0
 0 383 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -52940,7 +52940,7 @@ pour-shot-to-used-shaker shot6 ingredient11 shaker1 left l0 l1
 4
 0 530 -1 0
 0 384 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -52952,7 +52952,7 @@ pour-shot-to-used-shaker shot6 ingredient11 shaker1 left l1 l2
 4
 0 530 -1 0
 0 384 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -52964,7 +52964,7 @@ pour-shot-to-used-shaker shot6 ingredient11 shaker1 right l0 l1
 4
 0 530 -1 0
 0 384 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -52976,7 +52976,7 @@ pour-shot-to-used-shaker shot6 ingredient11 shaker1 right l1 l2
 4
 0 530 -1 0
 0 384 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -52988,7 +52988,7 @@ pour-shot-to-used-shaker shot6 ingredient12 shaker1 left l0 l1
 4
 0 542 -1 0
 0 385 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53000,7 +53000,7 @@ pour-shot-to-used-shaker shot6 ingredient12 shaker1 left l1 l2
 4
 0 542 -1 0
 0 385 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53012,7 +53012,7 @@ pour-shot-to-used-shaker shot6 ingredient12 shaker1 right l0 l1
 4
 0 542 -1 0
 0 385 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53024,7 +53024,7 @@ pour-shot-to-used-shaker shot6 ingredient12 shaker1 right l1 l2
 4
 0 542 -1 0
 0 385 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53036,7 +53036,7 @@ pour-shot-to-used-shaker shot6 ingredient13 shaker1 left l0 l1
 4
 0 524 -1 0
 0 386 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53048,7 +53048,7 @@ pour-shot-to-used-shaker shot6 ingredient13 shaker1 left l1 l2
 4
 0 524 -1 0
 0 386 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53060,7 +53060,7 @@ pour-shot-to-used-shaker shot6 ingredient13 shaker1 right l0 l1
 4
 0 524 -1 0
 0 386 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53072,7 +53072,7 @@ pour-shot-to-used-shaker shot6 ingredient13 shaker1 right l1 l2
 4
 0 524 -1 0
 0 386 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53084,7 +53084,7 @@ pour-shot-to-used-shaker shot6 ingredient14 shaker1 left l0 l1
 4
 0 531 -1 0
 0 387 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53096,7 +53096,7 @@ pour-shot-to-used-shaker shot6 ingredient14 shaker1 left l1 l2
 4
 0 531 -1 0
 0 387 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53108,7 +53108,7 @@ pour-shot-to-used-shaker shot6 ingredient14 shaker1 right l0 l1
 4
 0 531 -1 0
 0 387 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53120,7 +53120,7 @@ pour-shot-to-used-shaker shot6 ingredient14 shaker1 right l1 l2
 4
 0 531 -1 0
 0 387 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53132,7 +53132,7 @@ pour-shot-to-used-shaker shot6 ingredient15 shaker1 left l0 l1
 4
 0 532 -1 0
 0 388 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53144,7 +53144,7 @@ pour-shot-to-used-shaker shot6 ingredient15 shaker1 left l1 l2
 4
 0 532 -1 0
 0 388 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53156,7 +53156,7 @@ pour-shot-to-used-shaker shot6 ingredient15 shaker1 right l0 l1
 4
 0 532 -1 0
 0 388 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53168,7 +53168,7 @@ pour-shot-to-used-shaker shot6 ingredient15 shaker1 right l1 l2
 4
 0 532 -1 0
 0 388 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53180,7 +53180,7 @@ pour-shot-to-used-shaker shot6 ingredient16 shaker1 left l0 l1
 4
 0 525 -1 0
 0 389 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53192,7 +53192,7 @@ pour-shot-to-used-shaker shot6 ingredient16 shaker1 left l1 l2
 4
 0 525 -1 0
 0 389 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53204,7 +53204,7 @@ pour-shot-to-used-shaker shot6 ingredient16 shaker1 right l0 l1
 4
 0 525 -1 0
 0 389 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53216,7 +53216,7 @@ pour-shot-to-used-shaker shot6 ingredient16 shaker1 right l1 l2
 4
 0 525 -1 0
 0 389 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53228,7 +53228,7 @@ pour-shot-to-used-shaker shot6 ingredient17 shaker1 left l0 l1
 4
 0 533 -1 0
 0 390 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53240,7 +53240,7 @@ pour-shot-to-used-shaker shot6 ingredient17 shaker1 left l1 l2
 4
 0 533 -1 0
 0 390 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53252,7 +53252,7 @@ pour-shot-to-used-shaker shot6 ingredient17 shaker1 right l0 l1
 4
 0 533 -1 0
 0 390 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53264,7 +53264,7 @@ pour-shot-to-used-shaker shot6 ingredient17 shaker1 right l1 l2
 4
 0 533 -1 0
 0 390 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53276,7 +53276,7 @@ pour-shot-to-used-shaker shot6 ingredient18 shaker1 left l0 l1
 4
 0 534 -1 0
 0 391 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53288,7 +53288,7 @@ pour-shot-to-used-shaker shot6 ingredient18 shaker1 left l1 l2
 4
 0 534 -1 0
 0 391 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53300,7 +53300,7 @@ pour-shot-to-used-shaker shot6 ingredient18 shaker1 right l0 l1
 4
 0 534 -1 0
 0 391 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53312,7 +53312,7 @@ pour-shot-to-used-shaker shot6 ingredient18 shaker1 right l1 l2
 4
 0 534 -1 0
 0 391 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53324,7 +53324,7 @@ pour-shot-to-used-shaker shot6 ingredient19 shaker1 left l0 l1
 4
 0 526 -1 0
 0 392 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53336,7 +53336,7 @@ pour-shot-to-used-shaker shot6 ingredient19 shaker1 left l1 l2
 4
 0 526 -1 0
 0 392 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53348,7 +53348,7 @@ pour-shot-to-used-shaker shot6 ingredient19 shaker1 right l0 l1
 4
 0 526 -1 0
 0 392 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53360,7 +53360,7 @@ pour-shot-to-used-shaker shot6 ingredient19 shaker1 right l1 l2
 4
 0 526 -1 0
 0 392 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53372,7 +53372,7 @@ pour-shot-to-used-shaker shot6 ingredient2 shaker1 left l0 l1
 4
 0 539 -1 0
 0 393 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53384,7 +53384,7 @@ pour-shot-to-used-shaker shot6 ingredient2 shaker1 left l1 l2
 4
 0 539 -1 0
 0 393 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53396,7 +53396,7 @@ pour-shot-to-used-shaker shot6 ingredient2 shaker1 right l0 l1
 4
 0 539 -1 0
 0 393 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53408,7 +53408,7 @@ pour-shot-to-used-shaker shot6 ingredient2 shaker1 right l1 l2
 4
 0 539 -1 0
 0 393 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53420,7 +53420,7 @@ pour-shot-to-used-shaker shot6 ingredient20 shaker1 left l0 l1
 4
 0 527 -1 0
 0 394 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53432,7 +53432,7 @@ pour-shot-to-used-shaker shot6 ingredient20 shaker1 left l1 l2
 4
 0 527 -1 0
 0 394 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53444,7 +53444,7 @@ pour-shot-to-used-shaker shot6 ingredient20 shaker1 right l0 l1
 4
 0 527 -1 0
 0 394 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53456,7 +53456,7 @@ pour-shot-to-used-shaker shot6 ingredient20 shaker1 right l1 l2
 4
 0 527 -1 0
 0 394 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53468,7 +53468,7 @@ pour-shot-to-used-shaker shot6 ingredient3 shaker1 left l0 l1
 4
 0 536 -1 0
 0 395 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53480,7 +53480,7 @@ pour-shot-to-used-shaker shot6 ingredient3 shaker1 left l1 l2
 4
 0 536 -1 0
 0 395 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53492,7 +53492,7 @@ pour-shot-to-used-shaker shot6 ingredient3 shaker1 right l0 l1
 4
 0 536 -1 0
 0 395 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53504,7 +53504,7 @@ pour-shot-to-used-shaker shot6 ingredient3 shaker1 right l1 l2
 4
 0 536 -1 0
 0 395 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53516,7 +53516,7 @@ pour-shot-to-used-shaker shot6 ingredient4 shaker1 left l0 l1
 4
 0 541 -1 0
 0 396 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53528,7 +53528,7 @@ pour-shot-to-used-shaker shot6 ingredient4 shaker1 left l1 l2
 4
 0 541 -1 0
 0 396 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53540,7 +53540,7 @@ pour-shot-to-used-shaker shot6 ingredient4 shaker1 right l0 l1
 4
 0 541 -1 0
 0 396 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53552,7 +53552,7 @@ pour-shot-to-used-shaker shot6 ingredient4 shaker1 right l1 l2
 4
 0 541 -1 0
 0 396 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53564,7 +53564,7 @@ pour-shot-to-used-shaker shot6 ingredient5 shaker1 left l0 l1
 4
 0 537 -1 0
 0 397 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53576,7 +53576,7 @@ pour-shot-to-used-shaker shot6 ingredient5 shaker1 left l1 l2
 4
 0 537 -1 0
 0 397 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53588,7 +53588,7 @@ pour-shot-to-used-shaker shot6 ingredient5 shaker1 right l0 l1
 4
 0 537 -1 0
 0 397 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53600,7 +53600,7 @@ pour-shot-to-used-shaker shot6 ingredient5 shaker1 right l1 l2
 4
 0 537 -1 0
 0 397 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53612,7 +53612,7 @@ pour-shot-to-used-shaker shot6 ingredient6 shaker1 left l0 l1
 4
 0 528 -1 0
 0 398 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53624,7 +53624,7 @@ pour-shot-to-used-shaker shot6 ingredient6 shaker1 left l1 l2
 4
 0 528 -1 0
 0 398 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53636,7 +53636,7 @@ pour-shot-to-used-shaker shot6 ingredient6 shaker1 right l0 l1
 4
 0 528 -1 0
 0 398 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53648,7 +53648,7 @@ pour-shot-to-used-shaker shot6 ingredient6 shaker1 right l1 l2
 4
 0 528 -1 0
 0 398 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53660,7 +53660,7 @@ pour-shot-to-used-shaker shot6 ingredient7 shaker1 left l0 l1
 4
 0 538 -1 0
 0 399 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53672,7 +53672,7 @@ pour-shot-to-used-shaker shot6 ingredient7 shaker1 left l1 l2
 4
 0 538 -1 0
 0 399 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53684,7 +53684,7 @@ pour-shot-to-used-shaker shot6 ingredient7 shaker1 right l0 l1
 4
 0 538 -1 0
 0 399 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53696,7 +53696,7 @@ pour-shot-to-used-shaker shot6 ingredient7 shaker1 right l1 l2
 4
 0 538 -1 0
 0 399 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53708,7 +53708,7 @@ pour-shot-to-used-shaker shot6 ingredient8 shaker1 left l0 l1
 4
 0 529 -1 0
 0 400 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53720,7 +53720,7 @@ pour-shot-to-used-shaker shot6 ingredient8 shaker1 left l1 l2
 4
 0 529 -1 0
 0 400 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53732,7 +53732,7 @@ pour-shot-to-used-shaker shot6 ingredient8 shaker1 right l0 l1
 4
 0 529 -1 0
 0 400 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53744,7 +53744,7 @@ pour-shot-to-used-shaker shot6 ingredient8 shaker1 right l1 l2
 4
 0 529 -1 0
 0 400 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53756,7 +53756,7 @@ pour-shot-to-used-shaker shot6 ingredient9 shaker1 left l0 l1
 4
 0 535 -1 0
 0 401 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53768,7 +53768,7 @@ pour-shot-to-used-shaker shot6 ingredient9 shaker1 left l1 l2
 4
 0 535 -1 0
 0 401 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53780,7 +53780,7 @@ pour-shot-to-used-shaker shot6 ingredient9 shaker1 right l0 l1
 4
 0 535 -1 0
 0 401 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 0 1
 1
 end_operator
@@ -53792,7 +53792,7 @@ pour-shot-to-used-shaker shot6 ingredient9 shaker1 right l1 l2
 4
 0 535 -1 0
 0 401 0 1
-0 558 -1 0
+0 559 -1 0
 0 565 1 2
 1
 end_operator
@@ -53804,7 +53804,7 @@ pour-shot-to-used-shaker shot7 ingredient1 shaker1 left l0 l1
 4
 0 523 -1 0
 0 362 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -53816,7 +53816,7 @@ pour-shot-to-used-shaker shot7 ingredient1 shaker1 left l1 l2
 4
 0 523 -1 0
 0 362 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -53828,7 +53828,7 @@ pour-shot-to-used-shaker shot7 ingredient1 shaker1 right l0 l1
 4
 0 523 -1 0
 0 362 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -53840,7 +53840,7 @@ pour-shot-to-used-shaker shot7 ingredient1 shaker1 right l1 l2
 4
 0 523 -1 0
 0 362 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -53852,7 +53852,7 @@ pour-shot-to-used-shaker shot7 ingredient10 shaker1 left l0 l1
 4
 0 540 -1 0
 0 363 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -53864,7 +53864,7 @@ pour-shot-to-used-shaker shot7 ingredient10 shaker1 left l1 l2
 4
 0 540 -1 0
 0 363 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -53876,7 +53876,7 @@ pour-shot-to-used-shaker shot7 ingredient10 shaker1 right l0 l1
 4
 0 540 -1 0
 0 363 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -53888,7 +53888,7 @@ pour-shot-to-used-shaker shot7 ingredient10 shaker1 right l1 l2
 4
 0 540 -1 0
 0 363 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -53900,7 +53900,7 @@ pour-shot-to-used-shaker shot7 ingredient11 shaker1 left l0 l1
 4
 0 530 -1 0
 0 364 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -53912,7 +53912,7 @@ pour-shot-to-used-shaker shot7 ingredient11 shaker1 left l1 l2
 4
 0 530 -1 0
 0 364 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -53924,7 +53924,7 @@ pour-shot-to-used-shaker shot7 ingredient11 shaker1 right l0 l1
 4
 0 530 -1 0
 0 364 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -53936,7 +53936,7 @@ pour-shot-to-used-shaker shot7 ingredient11 shaker1 right l1 l2
 4
 0 530 -1 0
 0 364 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -53948,7 +53948,7 @@ pour-shot-to-used-shaker shot7 ingredient12 shaker1 left l0 l1
 4
 0 542 -1 0
 0 365 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -53960,7 +53960,7 @@ pour-shot-to-used-shaker shot7 ingredient12 shaker1 left l1 l2
 4
 0 542 -1 0
 0 365 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -53972,7 +53972,7 @@ pour-shot-to-used-shaker shot7 ingredient12 shaker1 right l0 l1
 4
 0 542 -1 0
 0 365 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -53984,7 +53984,7 @@ pour-shot-to-used-shaker shot7 ingredient12 shaker1 right l1 l2
 4
 0 542 -1 0
 0 365 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -53996,7 +53996,7 @@ pour-shot-to-used-shaker shot7 ingredient13 shaker1 left l0 l1
 4
 0 524 -1 0
 0 366 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54008,7 +54008,7 @@ pour-shot-to-used-shaker shot7 ingredient13 shaker1 left l1 l2
 4
 0 524 -1 0
 0 366 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54020,7 +54020,7 @@ pour-shot-to-used-shaker shot7 ingredient13 shaker1 right l0 l1
 4
 0 524 -1 0
 0 366 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54032,7 +54032,7 @@ pour-shot-to-used-shaker shot7 ingredient13 shaker1 right l1 l2
 4
 0 524 -1 0
 0 366 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54044,7 +54044,7 @@ pour-shot-to-used-shaker shot7 ingredient14 shaker1 left l0 l1
 4
 0 531 -1 0
 0 367 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54056,7 +54056,7 @@ pour-shot-to-used-shaker shot7 ingredient14 shaker1 left l1 l2
 4
 0 531 -1 0
 0 367 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54068,7 +54068,7 @@ pour-shot-to-used-shaker shot7 ingredient14 shaker1 right l0 l1
 4
 0 531 -1 0
 0 367 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54080,7 +54080,7 @@ pour-shot-to-used-shaker shot7 ingredient14 shaker1 right l1 l2
 4
 0 531 -1 0
 0 367 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54092,7 +54092,7 @@ pour-shot-to-used-shaker shot7 ingredient15 shaker1 left l0 l1
 4
 0 532 -1 0
 0 368 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54104,7 +54104,7 @@ pour-shot-to-used-shaker shot7 ingredient15 shaker1 left l1 l2
 4
 0 532 -1 0
 0 368 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54116,7 +54116,7 @@ pour-shot-to-used-shaker shot7 ingredient15 shaker1 right l0 l1
 4
 0 532 -1 0
 0 368 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54128,7 +54128,7 @@ pour-shot-to-used-shaker shot7 ingredient15 shaker1 right l1 l2
 4
 0 532 -1 0
 0 368 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54140,7 +54140,7 @@ pour-shot-to-used-shaker shot7 ingredient16 shaker1 left l0 l1
 4
 0 525 -1 0
 0 369 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54152,7 +54152,7 @@ pour-shot-to-used-shaker shot7 ingredient16 shaker1 left l1 l2
 4
 0 525 -1 0
 0 369 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54164,7 +54164,7 @@ pour-shot-to-used-shaker shot7 ingredient16 shaker1 right l0 l1
 4
 0 525 -1 0
 0 369 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54176,7 +54176,7 @@ pour-shot-to-used-shaker shot7 ingredient16 shaker1 right l1 l2
 4
 0 525 -1 0
 0 369 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54188,7 +54188,7 @@ pour-shot-to-used-shaker shot7 ingredient17 shaker1 left l0 l1
 4
 0 533 -1 0
 0 370 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54200,7 +54200,7 @@ pour-shot-to-used-shaker shot7 ingredient17 shaker1 left l1 l2
 4
 0 533 -1 0
 0 370 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54212,7 +54212,7 @@ pour-shot-to-used-shaker shot7 ingredient17 shaker1 right l0 l1
 4
 0 533 -1 0
 0 370 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54224,7 +54224,7 @@ pour-shot-to-used-shaker shot7 ingredient17 shaker1 right l1 l2
 4
 0 533 -1 0
 0 370 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54236,7 +54236,7 @@ pour-shot-to-used-shaker shot7 ingredient18 shaker1 left l0 l1
 4
 0 534 -1 0
 0 371 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54248,7 +54248,7 @@ pour-shot-to-used-shaker shot7 ingredient18 shaker1 left l1 l2
 4
 0 534 -1 0
 0 371 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54260,7 +54260,7 @@ pour-shot-to-used-shaker shot7 ingredient18 shaker1 right l0 l1
 4
 0 534 -1 0
 0 371 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54272,7 +54272,7 @@ pour-shot-to-used-shaker shot7 ingredient18 shaker1 right l1 l2
 4
 0 534 -1 0
 0 371 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54284,7 +54284,7 @@ pour-shot-to-used-shaker shot7 ingredient19 shaker1 left l0 l1
 4
 0 526 -1 0
 0 372 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54296,7 +54296,7 @@ pour-shot-to-used-shaker shot7 ingredient19 shaker1 left l1 l2
 4
 0 526 -1 0
 0 372 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54308,7 +54308,7 @@ pour-shot-to-used-shaker shot7 ingredient19 shaker1 right l0 l1
 4
 0 526 -1 0
 0 372 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54320,7 +54320,7 @@ pour-shot-to-used-shaker shot7 ingredient19 shaker1 right l1 l2
 4
 0 526 -1 0
 0 372 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54332,7 +54332,7 @@ pour-shot-to-used-shaker shot7 ingredient2 shaker1 left l0 l1
 4
 0 539 -1 0
 0 373 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54344,7 +54344,7 @@ pour-shot-to-used-shaker shot7 ingredient2 shaker1 left l1 l2
 4
 0 539 -1 0
 0 373 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54356,7 +54356,7 @@ pour-shot-to-used-shaker shot7 ingredient2 shaker1 right l0 l1
 4
 0 539 -1 0
 0 373 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54368,7 +54368,7 @@ pour-shot-to-used-shaker shot7 ingredient2 shaker1 right l1 l2
 4
 0 539 -1 0
 0 373 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54380,7 +54380,7 @@ pour-shot-to-used-shaker shot7 ingredient20 shaker1 left l0 l1
 4
 0 527 -1 0
 0 374 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54392,7 +54392,7 @@ pour-shot-to-used-shaker shot7 ingredient20 shaker1 left l1 l2
 4
 0 527 -1 0
 0 374 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54404,7 +54404,7 @@ pour-shot-to-used-shaker shot7 ingredient20 shaker1 right l0 l1
 4
 0 527 -1 0
 0 374 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54416,7 +54416,7 @@ pour-shot-to-used-shaker shot7 ingredient20 shaker1 right l1 l2
 4
 0 527 -1 0
 0 374 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54428,7 +54428,7 @@ pour-shot-to-used-shaker shot7 ingredient3 shaker1 left l0 l1
 4
 0 536 -1 0
 0 375 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54440,7 +54440,7 @@ pour-shot-to-used-shaker shot7 ingredient3 shaker1 left l1 l2
 4
 0 536 -1 0
 0 375 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54452,7 +54452,7 @@ pour-shot-to-used-shaker shot7 ingredient3 shaker1 right l0 l1
 4
 0 536 -1 0
 0 375 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54464,7 +54464,7 @@ pour-shot-to-used-shaker shot7 ingredient3 shaker1 right l1 l2
 4
 0 536 -1 0
 0 375 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54476,7 +54476,7 @@ pour-shot-to-used-shaker shot7 ingredient4 shaker1 left l0 l1
 4
 0 541 -1 0
 0 376 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54488,7 +54488,7 @@ pour-shot-to-used-shaker shot7 ingredient4 shaker1 left l1 l2
 4
 0 541 -1 0
 0 376 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54500,7 +54500,7 @@ pour-shot-to-used-shaker shot7 ingredient4 shaker1 right l0 l1
 4
 0 541 -1 0
 0 376 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54512,7 +54512,7 @@ pour-shot-to-used-shaker shot7 ingredient4 shaker1 right l1 l2
 4
 0 541 -1 0
 0 376 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54524,7 +54524,7 @@ pour-shot-to-used-shaker shot7 ingredient5 shaker1 left l0 l1
 4
 0 537 -1 0
 0 377 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54536,7 +54536,7 @@ pour-shot-to-used-shaker shot7 ingredient5 shaker1 left l1 l2
 4
 0 537 -1 0
 0 377 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54548,7 +54548,7 @@ pour-shot-to-used-shaker shot7 ingredient5 shaker1 right l0 l1
 4
 0 537 -1 0
 0 377 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54560,7 +54560,7 @@ pour-shot-to-used-shaker shot7 ingredient5 shaker1 right l1 l2
 4
 0 537 -1 0
 0 377 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54572,7 +54572,7 @@ pour-shot-to-used-shaker shot7 ingredient6 shaker1 left l0 l1
 4
 0 528 -1 0
 0 378 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54584,7 +54584,7 @@ pour-shot-to-used-shaker shot7 ingredient6 shaker1 left l1 l2
 4
 0 528 -1 0
 0 378 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54596,7 +54596,7 @@ pour-shot-to-used-shaker shot7 ingredient6 shaker1 right l0 l1
 4
 0 528 -1 0
 0 378 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54608,7 +54608,7 @@ pour-shot-to-used-shaker shot7 ingredient6 shaker1 right l1 l2
 4
 0 528 -1 0
 0 378 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54620,7 +54620,7 @@ pour-shot-to-used-shaker shot7 ingredient7 shaker1 left l0 l1
 4
 0 538 -1 0
 0 379 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54632,7 +54632,7 @@ pour-shot-to-used-shaker shot7 ingredient7 shaker1 left l1 l2
 4
 0 538 -1 0
 0 379 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54644,7 +54644,7 @@ pour-shot-to-used-shaker shot7 ingredient7 shaker1 right l0 l1
 4
 0 538 -1 0
 0 379 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54656,7 +54656,7 @@ pour-shot-to-used-shaker shot7 ingredient7 shaker1 right l1 l2
 4
 0 538 -1 0
 0 379 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54668,7 +54668,7 @@ pour-shot-to-used-shaker shot7 ingredient8 shaker1 left l0 l1
 4
 0 529 -1 0
 0 380 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54680,7 +54680,7 @@ pour-shot-to-used-shaker shot7 ingredient8 shaker1 left l1 l2
 4
 0 529 -1 0
 0 380 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54692,7 +54692,7 @@ pour-shot-to-used-shaker shot7 ingredient8 shaker1 right l0 l1
 4
 0 529 -1 0
 0 380 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54704,7 +54704,7 @@ pour-shot-to-used-shaker shot7 ingredient8 shaker1 right l1 l2
 4
 0 529 -1 0
 0 380 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54716,7 +54716,7 @@ pour-shot-to-used-shaker shot7 ingredient9 shaker1 left l0 l1
 4
 0 535 -1 0
 0 381 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54728,7 +54728,7 @@ pour-shot-to-used-shaker shot7 ingredient9 shaker1 left l1 l2
 4
 0 535 -1 0
 0 381 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54740,7 +54740,7 @@ pour-shot-to-used-shaker shot7 ingredient9 shaker1 right l0 l1
 4
 0 535 -1 0
 0 381 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 0 1
 1
 end_operator
@@ -54752,7 +54752,7 @@ pour-shot-to-used-shaker shot7 ingredient9 shaker1 right l1 l2
 4
 0 535 -1 0
 0 381 0 1
-0 559 -1 0
+0 560 -1 0
 0 565 1 2
 1
 end_operator
@@ -54764,7 +54764,7 @@ pour-shot-to-used-shaker shot8 ingredient1 shaker1 left l0 l1
 4
 0 523 -1 0
 0 342 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -54776,7 +54776,7 @@ pour-shot-to-used-shaker shot8 ingredient1 shaker1 left l1 l2
 4
 0 523 -1 0
 0 342 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -54788,7 +54788,7 @@ pour-shot-to-used-shaker shot8 ingredient1 shaker1 right l0 l1
 4
 0 523 -1 0
 0 342 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -54800,7 +54800,7 @@ pour-shot-to-used-shaker shot8 ingredient1 shaker1 right l1 l2
 4
 0 523 -1 0
 0 342 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -54812,7 +54812,7 @@ pour-shot-to-used-shaker shot8 ingredient10 shaker1 left l0 l1
 4
 0 540 -1 0
 0 343 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -54824,7 +54824,7 @@ pour-shot-to-used-shaker shot8 ingredient10 shaker1 left l1 l2
 4
 0 540 -1 0
 0 343 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -54836,7 +54836,7 @@ pour-shot-to-used-shaker shot8 ingredient10 shaker1 right l0 l1
 4
 0 540 -1 0
 0 343 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -54848,7 +54848,7 @@ pour-shot-to-used-shaker shot8 ingredient10 shaker1 right l1 l2
 4
 0 540 -1 0
 0 343 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -54860,7 +54860,7 @@ pour-shot-to-used-shaker shot8 ingredient11 shaker1 left l0 l1
 4
 0 530 -1 0
 0 344 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -54872,7 +54872,7 @@ pour-shot-to-used-shaker shot8 ingredient11 shaker1 left l1 l2
 4
 0 530 -1 0
 0 344 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -54884,7 +54884,7 @@ pour-shot-to-used-shaker shot8 ingredient11 shaker1 right l0 l1
 4
 0 530 -1 0
 0 344 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -54896,7 +54896,7 @@ pour-shot-to-used-shaker shot8 ingredient11 shaker1 right l1 l2
 4
 0 530 -1 0
 0 344 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -54908,7 +54908,7 @@ pour-shot-to-used-shaker shot8 ingredient12 shaker1 left l0 l1
 4
 0 542 -1 0
 0 345 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -54920,7 +54920,7 @@ pour-shot-to-used-shaker shot8 ingredient12 shaker1 left l1 l2
 4
 0 542 -1 0
 0 345 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -54932,7 +54932,7 @@ pour-shot-to-used-shaker shot8 ingredient12 shaker1 right l0 l1
 4
 0 542 -1 0
 0 345 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -54944,7 +54944,7 @@ pour-shot-to-used-shaker shot8 ingredient12 shaker1 right l1 l2
 4
 0 542 -1 0
 0 345 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -54956,7 +54956,7 @@ pour-shot-to-used-shaker shot8 ingredient13 shaker1 left l0 l1
 4
 0 524 -1 0
 0 346 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -54968,7 +54968,7 @@ pour-shot-to-used-shaker shot8 ingredient13 shaker1 left l1 l2
 4
 0 524 -1 0
 0 346 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -54980,7 +54980,7 @@ pour-shot-to-used-shaker shot8 ingredient13 shaker1 right l0 l1
 4
 0 524 -1 0
 0 346 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -54992,7 +54992,7 @@ pour-shot-to-used-shaker shot8 ingredient13 shaker1 right l1 l2
 4
 0 524 -1 0
 0 346 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55004,7 +55004,7 @@ pour-shot-to-used-shaker shot8 ingredient14 shaker1 left l0 l1
 4
 0 531 -1 0
 0 347 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55016,7 +55016,7 @@ pour-shot-to-used-shaker shot8 ingredient14 shaker1 left l1 l2
 4
 0 531 -1 0
 0 347 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55028,7 +55028,7 @@ pour-shot-to-used-shaker shot8 ingredient14 shaker1 right l0 l1
 4
 0 531 -1 0
 0 347 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55040,7 +55040,7 @@ pour-shot-to-used-shaker shot8 ingredient14 shaker1 right l1 l2
 4
 0 531 -1 0
 0 347 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55052,7 +55052,7 @@ pour-shot-to-used-shaker shot8 ingredient15 shaker1 left l0 l1
 4
 0 532 -1 0
 0 348 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55064,7 +55064,7 @@ pour-shot-to-used-shaker shot8 ingredient15 shaker1 left l1 l2
 4
 0 532 -1 0
 0 348 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55076,7 +55076,7 @@ pour-shot-to-used-shaker shot8 ingredient15 shaker1 right l0 l1
 4
 0 532 -1 0
 0 348 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55088,7 +55088,7 @@ pour-shot-to-used-shaker shot8 ingredient15 shaker1 right l1 l2
 4
 0 532 -1 0
 0 348 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55100,7 +55100,7 @@ pour-shot-to-used-shaker shot8 ingredient16 shaker1 left l0 l1
 4
 0 525 -1 0
 0 349 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55112,7 +55112,7 @@ pour-shot-to-used-shaker shot8 ingredient16 shaker1 left l1 l2
 4
 0 525 -1 0
 0 349 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55124,7 +55124,7 @@ pour-shot-to-used-shaker shot8 ingredient16 shaker1 right l0 l1
 4
 0 525 -1 0
 0 349 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55136,7 +55136,7 @@ pour-shot-to-used-shaker shot8 ingredient16 shaker1 right l1 l2
 4
 0 525 -1 0
 0 349 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55148,7 +55148,7 @@ pour-shot-to-used-shaker shot8 ingredient17 shaker1 left l0 l1
 4
 0 533 -1 0
 0 350 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55160,7 +55160,7 @@ pour-shot-to-used-shaker shot8 ingredient17 shaker1 left l1 l2
 4
 0 533 -1 0
 0 350 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55172,7 +55172,7 @@ pour-shot-to-used-shaker shot8 ingredient17 shaker1 right l0 l1
 4
 0 533 -1 0
 0 350 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55184,7 +55184,7 @@ pour-shot-to-used-shaker shot8 ingredient17 shaker1 right l1 l2
 4
 0 533 -1 0
 0 350 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55196,7 +55196,7 @@ pour-shot-to-used-shaker shot8 ingredient18 shaker1 left l0 l1
 4
 0 534 -1 0
 0 351 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55208,7 +55208,7 @@ pour-shot-to-used-shaker shot8 ingredient18 shaker1 left l1 l2
 4
 0 534 -1 0
 0 351 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55220,7 +55220,7 @@ pour-shot-to-used-shaker shot8 ingredient18 shaker1 right l0 l1
 4
 0 534 -1 0
 0 351 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55232,7 +55232,7 @@ pour-shot-to-used-shaker shot8 ingredient18 shaker1 right l1 l2
 4
 0 534 -1 0
 0 351 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55244,7 +55244,7 @@ pour-shot-to-used-shaker shot8 ingredient19 shaker1 left l0 l1
 4
 0 526 -1 0
 0 352 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55256,7 +55256,7 @@ pour-shot-to-used-shaker shot8 ingredient19 shaker1 left l1 l2
 4
 0 526 -1 0
 0 352 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55268,7 +55268,7 @@ pour-shot-to-used-shaker shot8 ingredient19 shaker1 right l0 l1
 4
 0 526 -1 0
 0 352 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55280,7 +55280,7 @@ pour-shot-to-used-shaker shot8 ingredient19 shaker1 right l1 l2
 4
 0 526 -1 0
 0 352 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55292,7 +55292,7 @@ pour-shot-to-used-shaker shot8 ingredient2 shaker1 left l0 l1
 4
 0 539 -1 0
 0 353 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55304,7 +55304,7 @@ pour-shot-to-used-shaker shot8 ingredient2 shaker1 left l1 l2
 4
 0 539 -1 0
 0 353 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55316,7 +55316,7 @@ pour-shot-to-used-shaker shot8 ingredient2 shaker1 right l0 l1
 4
 0 539 -1 0
 0 353 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55328,7 +55328,7 @@ pour-shot-to-used-shaker shot8 ingredient2 shaker1 right l1 l2
 4
 0 539 -1 0
 0 353 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55340,7 +55340,7 @@ pour-shot-to-used-shaker shot8 ingredient20 shaker1 left l0 l1
 4
 0 527 -1 0
 0 354 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55352,7 +55352,7 @@ pour-shot-to-used-shaker shot8 ingredient20 shaker1 left l1 l2
 4
 0 527 -1 0
 0 354 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55364,7 +55364,7 @@ pour-shot-to-used-shaker shot8 ingredient20 shaker1 right l0 l1
 4
 0 527 -1 0
 0 354 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55376,7 +55376,7 @@ pour-shot-to-used-shaker shot8 ingredient20 shaker1 right l1 l2
 4
 0 527 -1 0
 0 354 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55388,7 +55388,7 @@ pour-shot-to-used-shaker shot8 ingredient3 shaker1 left l0 l1
 4
 0 536 -1 0
 0 355 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55400,7 +55400,7 @@ pour-shot-to-used-shaker shot8 ingredient3 shaker1 left l1 l2
 4
 0 536 -1 0
 0 355 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55412,7 +55412,7 @@ pour-shot-to-used-shaker shot8 ingredient3 shaker1 right l0 l1
 4
 0 536 -1 0
 0 355 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55424,7 +55424,7 @@ pour-shot-to-used-shaker shot8 ingredient3 shaker1 right l1 l2
 4
 0 536 -1 0
 0 355 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55436,7 +55436,7 @@ pour-shot-to-used-shaker shot8 ingredient4 shaker1 left l0 l1
 4
 0 541 -1 0
 0 356 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55448,7 +55448,7 @@ pour-shot-to-used-shaker shot8 ingredient4 shaker1 left l1 l2
 4
 0 541 -1 0
 0 356 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55460,7 +55460,7 @@ pour-shot-to-used-shaker shot8 ingredient4 shaker1 right l0 l1
 4
 0 541 -1 0
 0 356 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55472,7 +55472,7 @@ pour-shot-to-used-shaker shot8 ingredient4 shaker1 right l1 l2
 4
 0 541 -1 0
 0 356 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55484,7 +55484,7 @@ pour-shot-to-used-shaker shot8 ingredient5 shaker1 left l0 l1
 4
 0 537 -1 0
 0 357 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55496,7 +55496,7 @@ pour-shot-to-used-shaker shot8 ingredient5 shaker1 left l1 l2
 4
 0 537 -1 0
 0 357 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55508,7 +55508,7 @@ pour-shot-to-used-shaker shot8 ingredient5 shaker1 right l0 l1
 4
 0 537 -1 0
 0 357 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55520,7 +55520,7 @@ pour-shot-to-used-shaker shot8 ingredient5 shaker1 right l1 l2
 4
 0 537 -1 0
 0 357 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55532,7 +55532,7 @@ pour-shot-to-used-shaker shot8 ingredient6 shaker1 left l0 l1
 4
 0 528 -1 0
 0 358 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55544,7 +55544,7 @@ pour-shot-to-used-shaker shot8 ingredient6 shaker1 left l1 l2
 4
 0 528 -1 0
 0 358 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55556,7 +55556,7 @@ pour-shot-to-used-shaker shot8 ingredient6 shaker1 right l0 l1
 4
 0 528 -1 0
 0 358 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55568,7 +55568,7 @@ pour-shot-to-used-shaker shot8 ingredient6 shaker1 right l1 l2
 4
 0 528 -1 0
 0 358 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55580,7 +55580,7 @@ pour-shot-to-used-shaker shot8 ingredient7 shaker1 left l0 l1
 4
 0 538 -1 0
 0 359 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55592,7 +55592,7 @@ pour-shot-to-used-shaker shot8 ingredient7 shaker1 left l1 l2
 4
 0 538 -1 0
 0 359 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55604,7 +55604,7 @@ pour-shot-to-used-shaker shot8 ingredient7 shaker1 right l0 l1
 4
 0 538 -1 0
 0 359 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55616,7 +55616,7 @@ pour-shot-to-used-shaker shot8 ingredient7 shaker1 right l1 l2
 4
 0 538 -1 0
 0 359 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55628,7 +55628,7 @@ pour-shot-to-used-shaker shot8 ingredient8 shaker1 left l0 l1
 4
 0 529 -1 0
 0 360 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55640,7 +55640,7 @@ pour-shot-to-used-shaker shot8 ingredient8 shaker1 left l1 l2
 4
 0 529 -1 0
 0 360 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55652,7 +55652,7 @@ pour-shot-to-used-shaker shot8 ingredient8 shaker1 right l0 l1
 4
 0 529 -1 0
 0 360 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55664,7 +55664,7 @@ pour-shot-to-used-shaker shot8 ingredient8 shaker1 right l1 l2
 4
 0 529 -1 0
 0 360 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55676,7 +55676,7 @@ pour-shot-to-used-shaker shot8 ingredient9 shaker1 left l0 l1
 4
 0 535 -1 0
 0 361 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55688,7 +55688,7 @@ pour-shot-to-used-shaker shot8 ingredient9 shaker1 left l1 l2
 4
 0 535 -1 0
 0 361 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55700,7 +55700,7 @@ pour-shot-to-used-shaker shot8 ingredient9 shaker1 right l0 l1
 4
 0 535 -1 0
 0 361 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 0 1
 1
 end_operator
@@ -55712,7 +55712,7 @@ pour-shot-to-used-shaker shot8 ingredient9 shaker1 right l1 l2
 4
 0 535 -1 0
 0 361 0 1
-0 560 -1 0
+0 561 -1 0
 0 565 1 2
 1
 end_operator
@@ -55724,7 +55724,7 @@ pour-shot-to-used-shaker shot9 ingredient1 shaker1 left l0 l1
 4
 0 523 -1 0
 0 322 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -55736,7 +55736,7 @@ pour-shot-to-used-shaker shot9 ingredient1 shaker1 left l1 l2
 4
 0 523 -1 0
 0 322 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -55748,7 +55748,7 @@ pour-shot-to-used-shaker shot9 ingredient1 shaker1 right l0 l1
 4
 0 523 -1 0
 0 322 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -55760,7 +55760,7 @@ pour-shot-to-used-shaker shot9 ingredient1 shaker1 right l1 l2
 4
 0 523 -1 0
 0 322 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -55772,7 +55772,7 @@ pour-shot-to-used-shaker shot9 ingredient10 shaker1 left l0 l1
 4
 0 540 -1 0
 0 323 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -55784,7 +55784,7 @@ pour-shot-to-used-shaker shot9 ingredient10 shaker1 left l1 l2
 4
 0 540 -1 0
 0 323 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -55796,7 +55796,7 @@ pour-shot-to-used-shaker shot9 ingredient10 shaker1 right l0 l1
 4
 0 540 -1 0
 0 323 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -55808,7 +55808,7 @@ pour-shot-to-used-shaker shot9 ingredient10 shaker1 right l1 l2
 4
 0 540 -1 0
 0 323 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -55820,7 +55820,7 @@ pour-shot-to-used-shaker shot9 ingredient11 shaker1 left l0 l1
 4
 0 530 -1 0
 0 324 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -55832,7 +55832,7 @@ pour-shot-to-used-shaker shot9 ingredient11 shaker1 left l1 l2
 4
 0 530 -1 0
 0 324 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -55844,7 +55844,7 @@ pour-shot-to-used-shaker shot9 ingredient11 shaker1 right l0 l1
 4
 0 530 -1 0
 0 324 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -55856,7 +55856,7 @@ pour-shot-to-used-shaker shot9 ingredient11 shaker1 right l1 l2
 4
 0 530 -1 0
 0 324 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -55868,7 +55868,7 @@ pour-shot-to-used-shaker shot9 ingredient12 shaker1 left l0 l1
 4
 0 542 -1 0
 0 325 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -55880,7 +55880,7 @@ pour-shot-to-used-shaker shot9 ingredient12 shaker1 left l1 l2
 4
 0 542 -1 0
 0 325 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -55892,7 +55892,7 @@ pour-shot-to-used-shaker shot9 ingredient12 shaker1 right l0 l1
 4
 0 542 -1 0
 0 325 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -55904,7 +55904,7 @@ pour-shot-to-used-shaker shot9 ingredient12 shaker1 right l1 l2
 4
 0 542 -1 0
 0 325 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -55916,7 +55916,7 @@ pour-shot-to-used-shaker shot9 ingredient13 shaker1 left l0 l1
 4
 0 524 -1 0
 0 326 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -55928,7 +55928,7 @@ pour-shot-to-used-shaker shot9 ingredient13 shaker1 left l1 l2
 4
 0 524 -1 0
 0 326 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -55940,7 +55940,7 @@ pour-shot-to-used-shaker shot9 ingredient13 shaker1 right l0 l1
 4
 0 524 -1 0
 0 326 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -55952,7 +55952,7 @@ pour-shot-to-used-shaker shot9 ingredient13 shaker1 right l1 l2
 4
 0 524 -1 0
 0 326 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -55964,7 +55964,7 @@ pour-shot-to-used-shaker shot9 ingredient14 shaker1 left l0 l1
 4
 0 531 -1 0
 0 327 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -55976,7 +55976,7 @@ pour-shot-to-used-shaker shot9 ingredient14 shaker1 left l1 l2
 4
 0 531 -1 0
 0 327 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -55988,7 +55988,7 @@ pour-shot-to-used-shaker shot9 ingredient14 shaker1 right l0 l1
 4
 0 531 -1 0
 0 327 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56000,7 +56000,7 @@ pour-shot-to-used-shaker shot9 ingredient14 shaker1 right l1 l2
 4
 0 531 -1 0
 0 327 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56012,7 +56012,7 @@ pour-shot-to-used-shaker shot9 ingredient15 shaker1 left l0 l1
 4
 0 532 -1 0
 0 328 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56024,7 +56024,7 @@ pour-shot-to-used-shaker shot9 ingredient15 shaker1 left l1 l2
 4
 0 532 -1 0
 0 328 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56036,7 +56036,7 @@ pour-shot-to-used-shaker shot9 ingredient15 shaker1 right l0 l1
 4
 0 532 -1 0
 0 328 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56048,7 +56048,7 @@ pour-shot-to-used-shaker shot9 ingredient15 shaker1 right l1 l2
 4
 0 532 -1 0
 0 328 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56060,7 +56060,7 @@ pour-shot-to-used-shaker shot9 ingredient16 shaker1 left l0 l1
 4
 0 525 -1 0
 0 329 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56072,7 +56072,7 @@ pour-shot-to-used-shaker shot9 ingredient16 shaker1 left l1 l2
 4
 0 525 -1 0
 0 329 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56084,7 +56084,7 @@ pour-shot-to-used-shaker shot9 ingredient16 shaker1 right l0 l1
 4
 0 525 -1 0
 0 329 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56096,7 +56096,7 @@ pour-shot-to-used-shaker shot9 ingredient16 shaker1 right l1 l2
 4
 0 525 -1 0
 0 329 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56108,7 +56108,7 @@ pour-shot-to-used-shaker shot9 ingredient17 shaker1 left l0 l1
 4
 0 533 -1 0
 0 330 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56120,7 +56120,7 @@ pour-shot-to-used-shaker shot9 ingredient17 shaker1 left l1 l2
 4
 0 533 -1 0
 0 330 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56132,7 +56132,7 @@ pour-shot-to-used-shaker shot9 ingredient17 shaker1 right l0 l1
 4
 0 533 -1 0
 0 330 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56144,7 +56144,7 @@ pour-shot-to-used-shaker shot9 ingredient17 shaker1 right l1 l2
 4
 0 533 -1 0
 0 330 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56156,7 +56156,7 @@ pour-shot-to-used-shaker shot9 ingredient18 shaker1 left l0 l1
 4
 0 534 -1 0
 0 331 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56168,7 +56168,7 @@ pour-shot-to-used-shaker shot9 ingredient18 shaker1 left l1 l2
 4
 0 534 -1 0
 0 331 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56180,7 +56180,7 @@ pour-shot-to-used-shaker shot9 ingredient18 shaker1 right l0 l1
 4
 0 534 -1 0
 0 331 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56192,7 +56192,7 @@ pour-shot-to-used-shaker shot9 ingredient18 shaker1 right l1 l2
 4
 0 534 -1 0
 0 331 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56204,7 +56204,7 @@ pour-shot-to-used-shaker shot9 ingredient19 shaker1 left l0 l1
 4
 0 526 -1 0
 0 332 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56216,7 +56216,7 @@ pour-shot-to-used-shaker shot9 ingredient19 shaker1 left l1 l2
 4
 0 526 -1 0
 0 332 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56228,7 +56228,7 @@ pour-shot-to-used-shaker shot9 ingredient19 shaker1 right l0 l1
 4
 0 526 -1 0
 0 332 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56240,7 +56240,7 @@ pour-shot-to-used-shaker shot9 ingredient19 shaker1 right l1 l2
 4
 0 526 -1 0
 0 332 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56252,7 +56252,7 @@ pour-shot-to-used-shaker shot9 ingredient2 shaker1 left l0 l1
 4
 0 539 -1 0
 0 333 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56264,7 +56264,7 @@ pour-shot-to-used-shaker shot9 ingredient2 shaker1 left l1 l2
 4
 0 539 -1 0
 0 333 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56276,7 +56276,7 @@ pour-shot-to-used-shaker shot9 ingredient2 shaker1 right l0 l1
 4
 0 539 -1 0
 0 333 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56288,7 +56288,7 @@ pour-shot-to-used-shaker shot9 ingredient2 shaker1 right l1 l2
 4
 0 539 -1 0
 0 333 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56300,7 +56300,7 @@ pour-shot-to-used-shaker shot9 ingredient20 shaker1 left l0 l1
 4
 0 527 -1 0
 0 334 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56312,7 +56312,7 @@ pour-shot-to-used-shaker shot9 ingredient20 shaker1 left l1 l2
 4
 0 527 -1 0
 0 334 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56324,7 +56324,7 @@ pour-shot-to-used-shaker shot9 ingredient20 shaker1 right l0 l1
 4
 0 527 -1 0
 0 334 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56336,7 +56336,7 @@ pour-shot-to-used-shaker shot9 ingredient20 shaker1 right l1 l2
 4
 0 527 -1 0
 0 334 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56348,7 +56348,7 @@ pour-shot-to-used-shaker shot9 ingredient3 shaker1 left l0 l1
 4
 0 536 -1 0
 0 335 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56360,7 +56360,7 @@ pour-shot-to-used-shaker shot9 ingredient3 shaker1 left l1 l2
 4
 0 536 -1 0
 0 335 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56372,7 +56372,7 @@ pour-shot-to-used-shaker shot9 ingredient3 shaker1 right l0 l1
 4
 0 536 -1 0
 0 335 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56384,7 +56384,7 @@ pour-shot-to-used-shaker shot9 ingredient3 shaker1 right l1 l2
 4
 0 536 -1 0
 0 335 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56396,7 +56396,7 @@ pour-shot-to-used-shaker shot9 ingredient4 shaker1 left l0 l1
 4
 0 541 -1 0
 0 336 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56408,7 +56408,7 @@ pour-shot-to-used-shaker shot9 ingredient4 shaker1 left l1 l2
 4
 0 541 -1 0
 0 336 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56420,7 +56420,7 @@ pour-shot-to-used-shaker shot9 ingredient4 shaker1 right l0 l1
 4
 0 541 -1 0
 0 336 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56432,7 +56432,7 @@ pour-shot-to-used-shaker shot9 ingredient4 shaker1 right l1 l2
 4
 0 541 -1 0
 0 336 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56444,7 +56444,7 @@ pour-shot-to-used-shaker shot9 ingredient5 shaker1 left l0 l1
 4
 0 537 -1 0
 0 337 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56456,7 +56456,7 @@ pour-shot-to-used-shaker shot9 ingredient5 shaker1 left l1 l2
 4
 0 537 -1 0
 0 337 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56468,7 +56468,7 @@ pour-shot-to-used-shaker shot9 ingredient5 shaker1 right l0 l1
 4
 0 537 -1 0
 0 337 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56480,7 +56480,7 @@ pour-shot-to-used-shaker shot9 ingredient5 shaker1 right l1 l2
 4
 0 537 -1 0
 0 337 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56492,7 +56492,7 @@ pour-shot-to-used-shaker shot9 ingredient6 shaker1 left l0 l1
 4
 0 528 -1 0
 0 338 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56504,7 +56504,7 @@ pour-shot-to-used-shaker shot9 ingredient6 shaker1 left l1 l2
 4
 0 528 -1 0
 0 338 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56516,7 +56516,7 @@ pour-shot-to-used-shaker shot9 ingredient6 shaker1 right l0 l1
 4
 0 528 -1 0
 0 338 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56528,7 +56528,7 @@ pour-shot-to-used-shaker shot9 ingredient6 shaker1 right l1 l2
 4
 0 528 -1 0
 0 338 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56540,7 +56540,7 @@ pour-shot-to-used-shaker shot9 ingredient7 shaker1 left l0 l1
 4
 0 538 -1 0
 0 339 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56552,7 +56552,7 @@ pour-shot-to-used-shaker shot9 ingredient7 shaker1 left l1 l2
 4
 0 538 -1 0
 0 339 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56564,7 +56564,7 @@ pour-shot-to-used-shaker shot9 ingredient7 shaker1 right l0 l1
 4
 0 538 -1 0
 0 339 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56576,7 +56576,7 @@ pour-shot-to-used-shaker shot9 ingredient7 shaker1 right l1 l2
 4
 0 538 -1 0
 0 339 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56588,7 +56588,7 @@ pour-shot-to-used-shaker shot9 ingredient8 shaker1 left l0 l1
 4
 0 529 -1 0
 0 340 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56600,7 +56600,7 @@ pour-shot-to-used-shaker shot9 ingredient8 shaker1 left l1 l2
 4
 0 529 -1 0
 0 340 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56612,7 +56612,7 @@ pour-shot-to-used-shaker shot9 ingredient8 shaker1 right l0 l1
 4
 0 529 -1 0
 0 340 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56624,7 +56624,7 @@ pour-shot-to-used-shaker shot9 ingredient8 shaker1 right l1 l2
 4
 0 529 -1 0
 0 340 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56636,7 +56636,7 @@ pour-shot-to-used-shaker shot9 ingredient9 shaker1 left l0 l1
 4
 0 535 -1 0
 0 341 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56648,7 +56648,7 @@ pour-shot-to-used-shaker shot9 ingredient9 shaker1 left l1 l2
 4
 0 535 -1 0
 0 341 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -56660,7 +56660,7 @@ pour-shot-to-used-shaker shot9 ingredient9 shaker1 right l0 l1
 4
 0 535 -1 0
 0 341 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 0 1
 1
 end_operator
@@ -56672,7 +56672,7 @@ pour-shot-to-used-shaker shot9 ingredient9 shaker1 right l1 l2
 4
 0 535 -1 0
 0 341 0 1
-0 561 -1 0
+0 562 -1 0
 0 565 1 2
 1
 end_operator
@@ -57124,7 +57124,7 @@ refill-shot shot10 ingredient1 left right dispenser1
 173 0
 2
 0 482 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57135,7 +57135,7 @@ refill-shot shot10 ingredient1 right left dispenser1
 173 0
 2
 0 482 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57146,7 +57146,7 @@ refill-shot shot10 ingredient10 left right dispenser10
 174 0
 2
 0 483 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57157,7 +57157,7 @@ refill-shot shot10 ingredient10 right left dispenser10
 174 0
 2
 0 483 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57168,7 +57168,7 @@ refill-shot shot10 ingredient11 left right dispenser11
 175 0
 2
 0 484 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57179,7 +57179,7 @@ refill-shot shot10 ingredient11 right left dispenser11
 175 0
 2
 0 484 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57190,7 +57190,7 @@ refill-shot shot10 ingredient12 left right dispenser12
 176 0
 2
 0 485 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57201,7 +57201,7 @@ refill-shot shot10 ingredient12 right left dispenser12
 176 0
 2
 0 485 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57212,7 +57212,7 @@ refill-shot shot10 ingredient13 left right dispenser13
 177 0
 2
 0 486 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57223,7 +57223,7 @@ refill-shot shot10 ingredient13 right left dispenser13
 177 0
 2
 0 486 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57234,7 +57234,7 @@ refill-shot shot10 ingredient14 left right dispenser14
 178 0
 2
 0 487 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57245,7 +57245,7 @@ refill-shot shot10 ingredient14 right left dispenser14
 178 0
 2
 0 487 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57256,7 +57256,7 @@ refill-shot shot10 ingredient15 left right dispenser15
 179 0
 2
 0 488 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57267,7 +57267,7 @@ refill-shot shot10 ingredient15 right left dispenser15
 179 0
 2
 0 488 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57278,7 +57278,7 @@ refill-shot shot10 ingredient16 left right dispenser16
 180 0
 2
 0 489 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57289,7 +57289,7 @@ refill-shot shot10 ingredient16 right left dispenser16
 180 0
 2
 0 489 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57300,7 +57300,7 @@ refill-shot shot10 ingredient17 left right dispenser17
 181 0
 2
 0 490 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57311,7 +57311,7 @@ refill-shot shot10 ingredient17 right left dispenser17
 181 0
 2
 0 490 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57322,7 +57322,7 @@ refill-shot shot10 ingredient18 left right dispenser18
 182 0
 2
 0 491 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57333,7 +57333,7 @@ refill-shot shot10 ingredient18 right left dispenser18
 182 0
 2
 0 491 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57344,7 +57344,7 @@ refill-shot shot10 ingredient19 left right dispenser19
 183 0
 2
 0 492 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57355,7 +57355,7 @@ refill-shot shot10 ingredient19 right left dispenser19
 183 0
 2
 0 492 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57366,7 +57366,7 @@ refill-shot shot10 ingredient2 left right dispenser2
 184 0
 2
 0 493 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57377,7 +57377,7 @@ refill-shot shot10 ingredient2 right left dispenser2
 184 0
 2
 0 493 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57388,7 +57388,7 @@ refill-shot shot10 ingredient20 left right dispenser20
 185 0
 2
 0 494 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57399,7 +57399,7 @@ refill-shot shot10 ingredient20 right left dispenser20
 185 0
 2
 0 494 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57410,7 +57410,7 @@ refill-shot shot10 ingredient3 left right dispenser3
 186 0
 2
 0 495 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57421,7 +57421,7 @@ refill-shot shot10 ingredient3 right left dispenser3
 186 0
 2
 0 495 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57432,7 +57432,7 @@ refill-shot shot10 ingredient4 left right dispenser4
 187 0
 2
 0 496 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57443,7 +57443,7 @@ refill-shot shot10 ingredient4 right left dispenser4
 187 0
 2
 0 496 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57454,7 +57454,7 @@ refill-shot shot10 ingredient5 left right dispenser5
 188 0
 2
 0 497 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57465,7 +57465,7 @@ refill-shot shot10 ingredient5 right left dispenser5
 188 0
 2
 0 497 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57476,7 +57476,7 @@ refill-shot shot10 ingredient6 left right dispenser6
 189 0
 2
 0 498 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57487,7 +57487,7 @@ refill-shot shot10 ingredient6 right left dispenser6
 189 0
 2
 0 498 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57498,7 +57498,7 @@ refill-shot shot10 ingredient7 left right dispenser7
 190 0
 2
 0 499 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57509,7 +57509,7 @@ refill-shot shot10 ingredient7 right left dispenser7
 190 0
 2
 0 499 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57520,7 +57520,7 @@ refill-shot shot10 ingredient8 left right dispenser8
 191 0
 2
 0 500 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57531,7 +57531,7 @@ refill-shot shot10 ingredient8 right left dispenser8
 191 0
 2
 0 500 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57542,7 +57542,7 @@ refill-shot shot10 ingredient9 left right dispenser9
 192 0
 2
 0 501 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57553,7 +57553,7 @@ refill-shot shot10 ingredient9 right left dispenser9
 192 0
 2
 0 501 -1 0
-0 562 0 1
+0 554 0 1
 1
 end_operator
 begin_operator
@@ -57564,7 +57564,7 @@ refill-shot shot2 ingredient1 left right dispenser1
 153 0
 2
 0 462 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57575,7 +57575,7 @@ refill-shot shot2 ingredient1 right left dispenser1
 153 0
 2
 0 462 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57586,7 +57586,7 @@ refill-shot shot2 ingredient10 left right dispenser10
 154 0
 2
 0 463 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57597,7 +57597,7 @@ refill-shot shot2 ingredient10 right left dispenser10
 154 0
 2
 0 463 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57608,7 +57608,7 @@ refill-shot shot2 ingredient11 left right dispenser11
 155 0
 2
 0 464 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57619,7 +57619,7 @@ refill-shot shot2 ingredient11 right left dispenser11
 155 0
 2
 0 464 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57630,7 +57630,7 @@ refill-shot shot2 ingredient12 left right dispenser12
 156 0
 2
 0 465 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57641,7 +57641,7 @@ refill-shot shot2 ingredient12 right left dispenser12
 156 0
 2
 0 465 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57652,7 +57652,7 @@ refill-shot shot2 ingredient13 left right dispenser13
 157 0
 2
 0 466 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57663,7 +57663,7 @@ refill-shot shot2 ingredient13 right left dispenser13
 157 0
 2
 0 466 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57674,7 +57674,7 @@ refill-shot shot2 ingredient14 left right dispenser14
 158 0
 2
 0 467 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57685,7 +57685,7 @@ refill-shot shot2 ingredient14 right left dispenser14
 158 0
 2
 0 467 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57696,7 +57696,7 @@ refill-shot shot2 ingredient15 left right dispenser15
 159 0
 2
 0 468 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57707,7 +57707,7 @@ refill-shot shot2 ingredient15 right left dispenser15
 159 0
 2
 0 468 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57718,7 +57718,7 @@ refill-shot shot2 ingredient16 left right dispenser16
 160 0
 2
 0 469 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57729,7 +57729,7 @@ refill-shot shot2 ingredient16 right left dispenser16
 160 0
 2
 0 469 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57740,7 +57740,7 @@ refill-shot shot2 ingredient17 left right dispenser17
 161 0
 2
 0 470 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57751,7 +57751,7 @@ refill-shot shot2 ingredient17 right left dispenser17
 161 0
 2
 0 470 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57762,7 +57762,7 @@ refill-shot shot2 ingredient18 left right dispenser18
 162 0
 2
 0 471 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57773,7 +57773,7 @@ refill-shot shot2 ingredient18 right left dispenser18
 162 0
 2
 0 471 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57784,7 +57784,7 @@ refill-shot shot2 ingredient19 left right dispenser19
 163 0
 2
 0 472 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57795,7 +57795,7 @@ refill-shot shot2 ingredient19 right left dispenser19
 163 0
 2
 0 472 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57806,7 +57806,7 @@ refill-shot shot2 ingredient2 left right dispenser2
 164 0
 2
 0 473 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57817,7 +57817,7 @@ refill-shot shot2 ingredient2 right left dispenser2
 164 0
 2
 0 473 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57828,7 +57828,7 @@ refill-shot shot2 ingredient20 left right dispenser20
 165 0
 2
 0 474 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57839,7 +57839,7 @@ refill-shot shot2 ingredient20 right left dispenser20
 165 0
 2
 0 474 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57850,7 +57850,7 @@ refill-shot shot2 ingredient3 left right dispenser3
 166 0
 2
 0 475 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57861,7 +57861,7 @@ refill-shot shot2 ingredient3 right left dispenser3
 166 0
 2
 0 475 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57872,7 +57872,7 @@ refill-shot shot2 ingredient4 left right dispenser4
 167 0
 2
 0 476 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57883,7 +57883,7 @@ refill-shot shot2 ingredient4 right left dispenser4
 167 0
 2
 0 476 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57894,7 +57894,7 @@ refill-shot shot2 ingredient5 left right dispenser5
 168 0
 2
 0 477 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57905,7 +57905,7 @@ refill-shot shot2 ingredient5 right left dispenser5
 168 0
 2
 0 477 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57916,7 +57916,7 @@ refill-shot shot2 ingredient6 left right dispenser6
 169 0
 2
 0 478 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57927,7 +57927,7 @@ refill-shot shot2 ingredient6 right left dispenser6
 169 0
 2
 0 478 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57938,7 +57938,7 @@ refill-shot shot2 ingredient7 left right dispenser7
 170 0
 2
 0 479 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57949,7 +57949,7 @@ refill-shot shot2 ingredient7 right left dispenser7
 170 0
 2
 0 479 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57960,7 +57960,7 @@ refill-shot shot2 ingredient8 left right dispenser8
 171 0
 2
 0 480 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57971,7 +57971,7 @@ refill-shot shot2 ingredient8 right left dispenser8
 171 0
 2
 0 480 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57982,7 +57982,7 @@ refill-shot shot2 ingredient9 left right dispenser9
 172 0
 2
 0 481 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -57993,7 +57993,7 @@ refill-shot shot2 ingredient9 right left dispenser9
 172 0
 2
 0 481 -1 0
-0 554 0 1
+0 555 0 1
 1
 end_operator
 begin_operator
@@ -58004,7 +58004,7 @@ refill-shot shot3 ingredient1 left right dispenser1
 133 0
 2
 0 442 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58015,7 +58015,7 @@ refill-shot shot3 ingredient1 right left dispenser1
 133 0
 2
 0 442 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58026,7 +58026,7 @@ refill-shot shot3 ingredient10 left right dispenser10
 134 0
 2
 0 443 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58037,7 +58037,7 @@ refill-shot shot3 ingredient10 right left dispenser10
 134 0
 2
 0 443 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58048,7 +58048,7 @@ refill-shot shot3 ingredient11 left right dispenser11
 135 0
 2
 0 444 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58059,7 +58059,7 @@ refill-shot shot3 ingredient11 right left dispenser11
 135 0
 2
 0 444 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58070,7 +58070,7 @@ refill-shot shot3 ingredient12 left right dispenser12
 136 0
 2
 0 445 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58081,7 +58081,7 @@ refill-shot shot3 ingredient12 right left dispenser12
 136 0
 2
 0 445 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58092,7 +58092,7 @@ refill-shot shot3 ingredient13 left right dispenser13
 137 0
 2
 0 446 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58103,7 +58103,7 @@ refill-shot shot3 ingredient13 right left dispenser13
 137 0
 2
 0 446 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58114,7 +58114,7 @@ refill-shot shot3 ingredient14 left right dispenser14
 138 0
 2
 0 447 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58125,7 +58125,7 @@ refill-shot shot3 ingredient14 right left dispenser14
 138 0
 2
 0 447 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58136,7 +58136,7 @@ refill-shot shot3 ingredient15 left right dispenser15
 139 0
 2
 0 448 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58147,7 +58147,7 @@ refill-shot shot3 ingredient15 right left dispenser15
 139 0
 2
 0 448 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58158,7 +58158,7 @@ refill-shot shot3 ingredient16 left right dispenser16
 140 0
 2
 0 449 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58169,7 +58169,7 @@ refill-shot shot3 ingredient16 right left dispenser16
 140 0
 2
 0 449 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58180,7 +58180,7 @@ refill-shot shot3 ingredient17 left right dispenser17
 141 0
 2
 0 450 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58191,7 +58191,7 @@ refill-shot shot3 ingredient17 right left dispenser17
 141 0
 2
 0 450 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58202,7 +58202,7 @@ refill-shot shot3 ingredient18 left right dispenser18
 142 0
 2
 0 451 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58213,7 +58213,7 @@ refill-shot shot3 ingredient18 right left dispenser18
 142 0
 2
 0 451 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58224,7 +58224,7 @@ refill-shot shot3 ingredient19 left right dispenser19
 143 0
 2
 0 452 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58235,7 +58235,7 @@ refill-shot shot3 ingredient19 right left dispenser19
 143 0
 2
 0 452 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58246,7 +58246,7 @@ refill-shot shot3 ingredient2 left right dispenser2
 144 0
 2
 0 453 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58257,7 +58257,7 @@ refill-shot shot3 ingredient2 right left dispenser2
 144 0
 2
 0 453 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58268,7 +58268,7 @@ refill-shot shot3 ingredient20 left right dispenser20
 145 0
 2
 0 454 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58279,7 +58279,7 @@ refill-shot shot3 ingredient20 right left dispenser20
 145 0
 2
 0 454 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58290,7 +58290,7 @@ refill-shot shot3 ingredient3 left right dispenser3
 146 0
 2
 0 455 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58301,7 +58301,7 @@ refill-shot shot3 ingredient3 right left dispenser3
 146 0
 2
 0 455 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58312,7 +58312,7 @@ refill-shot shot3 ingredient4 left right dispenser4
 147 0
 2
 0 456 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58323,7 +58323,7 @@ refill-shot shot3 ingredient4 right left dispenser4
 147 0
 2
 0 456 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58334,7 +58334,7 @@ refill-shot shot3 ingredient5 left right dispenser5
 148 0
 2
 0 457 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58345,7 +58345,7 @@ refill-shot shot3 ingredient5 right left dispenser5
 148 0
 2
 0 457 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58356,7 +58356,7 @@ refill-shot shot3 ingredient6 left right dispenser6
 149 0
 2
 0 458 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58367,7 +58367,7 @@ refill-shot shot3 ingredient6 right left dispenser6
 149 0
 2
 0 458 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58378,7 +58378,7 @@ refill-shot shot3 ingredient7 left right dispenser7
 150 0
 2
 0 459 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58389,7 +58389,7 @@ refill-shot shot3 ingredient7 right left dispenser7
 150 0
 2
 0 459 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58400,7 +58400,7 @@ refill-shot shot3 ingredient8 left right dispenser8
 151 0
 2
 0 460 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58411,7 +58411,7 @@ refill-shot shot3 ingredient8 right left dispenser8
 151 0
 2
 0 460 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58422,7 +58422,7 @@ refill-shot shot3 ingredient9 left right dispenser9
 152 0
 2
 0 461 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58433,7 +58433,7 @@ refill-shot shot3 ingredient9 right left dispenser9
 152 0
 2
 0 461 -1 0
-0 555 0 1
+0 556 0 1
 1
 end_operator
 begin_operator
@@ -58444,7 +58444,7 @@ refill-shot shot4 ingredient1 left right dispenser1
 113 0
 2
 0 422 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58455,7 +58455,7 @@ refill-shot shot4 ingredient1 right left dispenser1
 113 0
 2
 0 422 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58466,7 +58466,7 @@ refill-shot shot4 ingredient10 left right dispenser10
 114 0
 2
 0 423 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58477,7 +58477,7 @@ refill-shot shot4 ingredient10 right left dispenser10
 114 0
 2
 0 423 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58488,7 +58488,7 @@ refill-shot shot4 ingredient11 left right dispenser11
 115 0
 2
 0 424 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58499,7 +58499,7 @@ refill-shot shot4 ingredient11 right left dispenser11
 115 0
 2
 0 424 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58510,7 +58510,7 @@ refill-shot shot4 ingredient12 left right dispenser12
 116 0
 2
 0 425 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58521,7 +58521,7 @@ refill-shot shot4 ingredient12 right left dispenser12
 116 0
 2
 0 425 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58532,7 +58532,7 @@ refill-shot shot4 ingredient13 left right dispenser13
 117 0
 2
 0 426 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58543,7 +58543,7 @@ refill-shot shot4 ingredient13 right left dispenser13
 117 0
 2
 0 426 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58554,7 +58554,7 @@ refill-shot shot4 ingredient14 left right dispenser14
 118 0
 2
 0 427 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58565,7 +58565,7 @@ refill-shot shot4 ingredient14 right left dispenser14
 118 0
 2
 0 427 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58576,7 +58576,7 @@ refill-shot shot4 ingredient15 left right dispenser15
 119 0
 2
 0 428 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58587,7 +58587,7 @@ refill-shot shot4 ingredient15 right left dispenser15
 119 0
 2
 0 428 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58598,7 +58598,7 @@ refill-shot shot4 ingredient16 left right dispenser16
 120 0
 2
 0 429 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58609,7 +58609,7 @@ refill-shot shot4 ingredient16 right left dispenser16
 120 0
 2
 0 429 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58620,7 +58620,7 @@ refill-shot shot4 ingredient17 left right dispenser17
 121 0
 2
 0 430 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58631,7 +58631,7 @@ refill-shot shot4 ingredient17 right left dispenser17
 121 0
 2
 0 430 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58642,7 +58642,7 @@ refill-shot shot4 ingredient18 left right dispenser18
 122 0
 2
 0 431 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58653,7 +58653,7 @@ refill-shot shot4 ingredient18 right left dispenser18
 122 0
 2
 0 431 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58664,7 +58664,7 @@ refill-shot shot4 ingredient19 left right dispenser19
 123 0
 2
 0 432 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58675,7 +58675,7 @@ refill-shot shot4 ingredient19 right left dispenser19
 123 0
 2
 0 432 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58686,7 +58686,7 @@ refill-shot shot4 ingredient2 left right dispenser2
 124 0
 2
 0 433 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58697,7 +58697,7 @@ refill-shot shot4 ingredient2 right left dispenser2
 124 0
 2
 0 433 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58708,7 +58708,7 @@ refill-shot shot4 ingredient20 left right dispenser20
 125 0
 2
 0 434 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58719,7 +58719,7 @@ refill-shot shot4 ingredient20 right left dispenser20
 125 0
 2
 0 434 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58730,7 +58730,7 @@ refill-shot shot4 ingredient3 left right dispenser3
 126 0
 2
 0 435 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58741,7 +58741,7 @@ refill-shot shot4 ingredient3 right left dispenser3
 126 0
 2
 0 435 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58752,7 +58752,7 @@ refill-shot shot4 ingredient4 left right dispenser4
 127 0
 2
 0 436 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58763,7 +58763,7 @@ refill-shot shot4 ingredient4 right left dispenser4
 127 0
 2
 0 436 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58774,7 +58774,7 @@ refill-shot shot4 ingredient5 left right dispenser5
 128 0
 2
 0 437 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58785,7 +58785,7 @@ refill-shot shot4 ingredient5 right left dispenser5
 128 0
 2
 0 437 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58796,7 +58796,7 @@ refill-shot shot4 ingredient6 left right dispenser6
 129 0
 2
 0 438 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58807,7 +58807,7 @@ refill-shot shot4 ingredient6 right left dispenser6
 129 0
 2
 0 438 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58818,7 +58818,7 @@ refill-shot shot4 ingredient7 left right dispenser7
 130 0
 2
 0 439 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58829,7 +58829,7 @@ refill-shot shot4 ingredient7 right left dispenser7
 130 0
 2
 0 439 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58840,7 +58840,7 @@ refill-shot shot4 ingredient8 left right dispenser8
 131 0
 2
 0 440 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58851,7 +58851,7 @@ refill-shot shot4 ingredient8 right left dispenser8
 131 0
 2
 0 440 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58862,7 +58862,7 @@ refill-shot shot4 ingredient9 left right dispenser9
 132 0
 2
 0 441 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58873,7 +58873,7 @@ refill-shot shot4 ingredient9 right left dispenser9
 132 0
 2
 0 441 -1 0
-0 556 0 1
+0 557 0 1
 1
 end_operator
 begin_operator
@@ -58884,7 +58884,7 @@ refill-shot shot5 ingredient1 left right dispenser1
 93 0
 2
 0 402 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -58895,7 +58895,7 @@ refill-shot shot5 ingredient1 right left dispenser1
 93 0
 2
 0 402 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -58906,7 +58906,7 @@ refill-shot shot5 ingredient10 left right dispenser10
 94 0
 2
 0 403 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -58917,7 +58917,7 @@ refill-shot shot5 ingredient10 right left dispenser10
 94 0
 2
 0 403 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -58928,7 +58928,7 @@ refill-shot shot5 ingredient11 left right dispenser11
 95 0
 2
 0 404 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -58939,7 +58939,7 @@ refill-shot shot5 ingredient11 right left dispenser11
 95 0
 2
 0 404 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -58950,7 +58950,7 @@ refill-shot shot5 ingredient12 left right dispenser12
 96 0
 2
 0 405 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -58961,7 +58961,7 @@ refill-shot shot5 ingredient12 right left dispenser12
 96 0
 2
 0 405 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -58972,7 +58972,7 @@ refill-shot shot5 ingredient13 left right dispenser13
 97 0
 2
 0 406 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -58983,7 +58983,7 @@ refill-shot shot5 ingredient13 right left dispenser13
 97 0
 2
 0 406 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -58994,7 +58994,7 @@ refill-shot shot5 ingredient14 left right dispenser14
 98 0
 2
 0 407 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59005,7 +59005,7 @@ refill-shot shot5 ingredient14 right left dispenser14
 98 0
 2
 0 407 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59016,7 +59016,7 @@ refill-shot shot5 ingredient15 left right dispenser15
 99 0
 2
 0 408 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59027,7 +59027,7 @@ refill-shot shot5 ingredient15 right left dispenser15
 99 0
 2
 0 408 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59038,7 +59038,7 @@ refill-shot shot5 ingredient16 left right dispenser16
 100 0
 2
 0 409 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59049,7 +59049,7 @@ refill-shot shot5 ingredient16 right left dispenser16
 100 0
 2
 0 409 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59060,7 +59060,7 @@ refill-shot shot5 ingredient17 left right dispenser17
 101 0
 2
 0 410 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59071,7 +59071,7 @@ refill-shot shot5 ingredient17 right left dispenser17
 101 0
 2
 0 410 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59082,7 +59082,7 @@ refill-shot shot5 ingredient18 left right dispenser18
 102 0
 2
 0 411 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59093,7 +59093,7 @@ refill-shot shot5 ingredient18 right left dispenser18
 102 0
 2
 0 411 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59104,7 +59104,7 @@ refill-shot shot5 ingredient19 left right dispenser19
 103 0
 2
 0 412 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59115,7 +59115,7 @@ refill-shot shot5 ingredient19 right left dispenser19
 103 0
 2
 0 412 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59126,7 +59126,7 @@ refill-shot shot5 ingredient2 left right dispenser2
 104 0
 2
 0 413 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59137,7 +59137,7 @@ refill-shot shot5 ingredient2 right left dispenser2
 104 0
 2
 0 413 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59148,7 +59148,7 @@ refill-shot shot5 ingredient20 left right dispenser20
 105 0
 2
 0 414 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59159,7 +59159,7 @@ refill-shot shot5 ingredient20 right left dispenser20
 105 0
 2
 0 414 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59170,7 +59170,7 @@ refill-shot shot5 ingredient3 left right dispenser3
 106 0
 2
 0 415 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59181,7 +59181,7 @@ refill-shot shot5 ingredient3 right left dispenser3
 106 0
 2
 0 415 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59192,7 +59192,7 @@ refill-shot shot5 ingredient4 left right dispenser4
 107 0
 2
 0 416 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59203,7 +59203,7 @@ refill-shot shot5 ingredient4 right left dispenser4
 107 0
 2
 0 416 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59214,7 +59214,7 @@ refill-shot shot5 ingredient5 left right dispenser5
 108 0
 2
 0 417 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59225,7 +59225,7 @@ refill-shot shot5 ingredient5 right left dispenser5
 108 0
 2
 0 417 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59236,7 +59236,7 @@ refill-shot shot5 ingredient6 left right dispenser6
 109 0
 2
 0 418 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59247,7 +59247,7 @@ refill-shot shot5 ingredient6 right left dispenser6
 109 0
 2
 0 418 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59258,7 +59258,7 @@ refill-shot shot5 ingredient7 left right dispenser7
 110 0
 2
 0 419 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59269,7 +59269,7 @@ refill-shot shot5 ingredient7 right left dispenser7
 110 0
 2
 0 419 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59280,7 +59280,7 @@ refill-shot shot5 ingredient8 left right dispenser8
 111 0
 2
 0 420 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59291,7 +59291,7 @@ refill-shot shot5 ingredient8 right left dispenser8
 111 0
 2
 0 420 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59302,7 +59302,7 @@ refill-shot shot5 ingredient9 left right dispenser9
 112 0
 2
 0 421 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59313,7 +59313,7 @@ refill-shot shot5 ingredient9 right left dispenser9
 112 0
 2
 0 421 -1 0
-0 557 0 1
+0 558 0 1
 1
 end_operator
 begin_operator
@@ -59324,7 +59324,7 @@ refill-shot shot6 ingredient1 left right dispenser1
 73 0
 2
 0 382 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59335,7 +59335,7 @@ refill-shot shot6 ingredient1 right left dispenser1
 73 0
 2
 0 382 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59346,7 +59346,7 @@ refill-shot shot6 ingredient10 left right dispenser10
 74 0
 2
 0 383 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59357,7 +59357,7 @@ refill-shot shot6 ingredient10 right left dispenser10
 74 0
 2
 0 383 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59368,7 +59368,7 @@ refill-shot shot6 ingredient11 left right dispenser11
 75 0
 2
 0 384 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59379,7 +59379,7 @@ refill-shot shot6 ingredient11 right left dispenser11
 75 0
 2
 0 384 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59390,7 +59390,7 @@ refill-shot shot6 ingredient12 left right dispenser12
 76 0
 2
 0 385 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59401,7 +59401,7 @@ refill-shot shot6 ingredient12 right left dispenser12
 76 0
 2
 0 385 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59412,7 +59412,7 @@ refill-shot shot6 ingredient13 left right dispenser13
 77 0
 2
 0 386 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59423,7 +59423,7 @@ refill-shot shot6 ingredient13 right left dispenser13
 77 0
 2
 0 386 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59434,7 +59434,7 @@ refill-shot shot6 ingredient14 left right dispenser14
 78 0
 2
 0 387 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59445,7 +59445,7 @@ refill-shot shot6 ingredient14 right left dispenser14
 78 0
 2
 0 387 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59456,7 +59456,7 @@ refill-shot shot6 ingredient15 left right dispenser15
 79 0
 2
 0 388 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59467,7 +59467,7 @@ refill-shot shot6 ingredient15 right left dispenser15
 79 0
 2
 0 388 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59478,7 +59478,7 @@ refill-shot shot6 ingredient16 left right dispenser16
 80 0
 2
 0 389 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59489,7 +59489,7 @@ refill-shot shot6 ingredient16 right left dispenser16
 80 0
 2
 0 389 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59500,7 +59500,7 @@ refill-shot shot6 ingredient17 left right dispenser17
 81 0
 2
 0 390 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59511,7 +59511,7 @@ refill-shot shot6 ingredient17 right left dispenser17
 81 0
 2
 0 390 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59522,7 +59522,7 @@ refill-shot shot6 ingredient18 left right dispenser18
 82 0
 2
 0 391 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59533,7 +59533,7 @@ refill-shot shot6 ingredient18 right left dispenser18
 82 0
 2
 0 391 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59544,7 +59544,7 @@ refill-shot shot6 ingredient19 left right dispenser19
 83 0
 2
 0 392 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59555,7 +59555,7 @@ refill-shot shot6 ingredient19 right left dispenser19
 83 0
 2
 0 392 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59566,7 +59566,7 @@ refill-shot shot6 ingredient2 left right dispenser2
 84 0
 2
 0 393 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59577,7 +59577,7 @@ refill-shot shot6 ingredient2 right left dispenser2
 84 0
 2
 0 393 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59588,7 +59588,7 @@ refill-shot shot6 ingredient20 left right dispenser20
 85 0
 2
 0 394 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59599,7 +59599,7 @@ refill-shot shot6 ingredient20 right left dispenser20
 85 0
 2
 0 394 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59610,7 +59610,7 @@ refill-shot shot6 ingredient3 left right dispenser3
 86 0
 2
 0 395 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59621,7 +59621,7 @@ refill-shot shot6 ingredient3 right left dispenser3
 86 0
 2
 0 395 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59632,7 +59632,7 @@ refill-shot shot6 ingredient4 left right dispenser4
 87 0
 2
 0 396 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59643,7 +59643,7 @@ refill-shot shot6 ingredient4 right left dispenser4
 87 0
 2
 0 396 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59654,7 +59654,7 @@ refill-shot shot6 ingredient5 left right dispenser5
 88 0
 2
 0 397 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59665,7 +59665,7 @@ refill-shot shot6 ingredient5 right left dispenser5
 88 0
 2
 0 397 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59676,7 +59676,7 @@ refill-shot shot6 ingredient6 left right dispenser6
 89 0
 2
 0 398 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59687,7 +59687,7 @@ refill-shot shot6 ingredient6 right left dispenser6
 89 0
 2
 0 398 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59698,7 +59698,7 @@ refill-shot shot6 ingredient7 left right dispenser7
 90 0
 2
 0 399 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59709,7 +59709,7 @@ refill-shot shot6 ingredient7 right left dispenser7
 90 0
 2
 0 399 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59720,7 +59720,7 @@ refill-shot shot6 ingredient8 left right dispenser8
 91 0
 2
 0 400 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59731,7 +59731,7 @@ refill-shot shot6 ingredient8 right left dispenser8
 91 0
 2
 0 400 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59742,7 +59742,7 @@ refill-shot shot6 ingredient9 left right dispenser9
 92 0
 2
 0 401 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59753,7 +59753,7 @@ refill-shot shot6 ingredient9 right left dispenser9
 92 0
 2
 0 401 -1 0
-0 558 0 1
+0 559 0 1
 1
 end_operator
 begin_operator
@@ -59764,7 +59764,7 @@ refill-shot shot7 ingredient1 left right dispenser1
 53 0
 2
 0 362 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59775,7 +59775,7 @@ refill-shot shot7 ingredient1 right left dispenser1
 53 0
 2
 0 362 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59786,7 +59786,7 @@ refill-shot shot7 ingredient10 left right dispenser10
 54 0
 2
 0 363 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59797,7 +59797,7 @@ refill-shot shot7 ingredient10 right left dispenser10
 54 0
 2
 0 363 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59808,7 +59808,7 @@ refill-shot shot7 ingredient11 left right dispenser11
 55 0
 2
 0 364 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59819,7 +59819,7 @@ refill-shot shot7 ingredient11 right left dispenser11
 55 0
 2
 0 364 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59830,7 +59830,7 @@ refill-shot shot7 ingredient12 left right dispenser12
 56 0
 2
 0 365 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59841,7 +59841,7 @@ refill-shot shot7 ingredient12 right left dispenser12
 56 0
 2
 0 365 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59852,7 +59852,7 @@ refill-shot shot7 ingredient13 left right dispenser13
 57 0
 2
 0 366 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59863,7 +59863,7 @@ refill-shot shot7 ingredient13 right left dispenser13
 57 0
 2
 0 366 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59874,7 +59874,7 @@ refill-shot shot7 ingredient14 left right dispenser14
 58 0
 2
 0 367 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59885,7 +59885,7 @@ refill-shot shot7 ingredient14 right left dispenser14
 58 0
 2
 0 367 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59896,7 +59896,7 @@ refill-shot shot7 ingredient15 left right dispenser15
 59 0
 2
 0 368 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59907,7 +59907,7 @@ refill-shot shot7 ingredient15 right left dispenser15
 59 0
 2
 0 368 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59918,7 +59918,7 @@ refill-shot shot7 ingredient16 left right dispenser16
 60 0
 2
 0 369 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59929,7 +59929,7 @@ refill-shot shot7 ingredient16 right left dispenser16
 60 0
 2
 0 369 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59940,7 +59940,7 @@ refill-shot shot7 ingredient17 left right dispenser17
 61 0
 2
 0 370 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59951,7 +59951,7 @@ refill-shot shot7 ingredient17 right left dispenser17
 61 0
 2
 0 370 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59962,7 +59962,7 @@ refill-shot shot7 ingredient18 left right dispenser18
 62 0
 2
 0 371 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59973,7 +59973,7 @@ refill-shot shot7 ingredient18 right left dispenser18
 62 0
 2
 0 371 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59984,7 +59984,7 @@ refill-shot shot7 ingredient19 left right dispenser19
 63 0
 2
 0 372 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -59995,7 +59995,7 @@ refill-shot shot7 ingredient19 right left dispenser19
 63 0
 2
 0 372 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60006,7 +60006,7 @@ refill-shot shot7 ingredient2 left right dispenser2
 64 0
 2
 0 373 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60017,7 +60017,7 @@ refill-shot shot7 ingredient2 right left dispenser2
 64 0
 2
 0 373 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60028,7 +60028,7 @@ refill-shot shot7 ingredient20 left right dispenser20
 65 0
 2
 0 374 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60039,7 +60039,7 @@ refill-shot shot7 ingredient20 right left dispenser20
 65 0
 2
 0 374 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60050,7 +60050,7 @@ refill-shot shot7 ingredient3 left right dispenser3
 66 0
 2
 0 375 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60061,7 +60061,7 @@ refill-shot shot7 ingredient3 right left dispenser3
 66 0
 2
 0 375 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60072,7 +60072,7 @@ refill-shot shot7 ingredient4 left right dispenser4
 67 0
 2
 0 376 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60083,7 +60083,7 @@ refill-shot shot7 ingredient4 right left dispenser4
 67 0
 2
 0 376 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60094,7 +60094,7 @@ refill-shot shot7 ingredient5 left right dispenser5
 68 0
 2
 0 377 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60105,7 +60105,7 @@ refill-shot shot7 ingredient5 right left dispenser5
 68 0
 2
 0 377 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60116,7 +60116,7 @@ refill-shot shot7 ingredient6 left right dispenser6
 69 0
 2
 0 378 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60127,7 +60127,7 @@ refill-shot shot7 ingredient6 right left dispenser6
 69 0
 2
 0 378 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60138,7 +60138,7 @@ refill-shot shot7 ingredient7 left right dispenser7
 70 0
 2
 0 379 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60149,7 +60149,7 @@ refill-shot shot7 ingredient7 right left dispenser7
 70 0
 2
 0 379 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60160,7 +60160,7 @@ refill-shot shot7 ingredient8 left right dispenser8
 71 0
 2
 0 380 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60171,7 +60171,7 @@ refill-shot shot7 ingredient8 right left dispenser8
 71 0
 2
 0 380 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60182,7 +60182,7 @@ refill-shot shot7 ingredient9 left right dispenser9
 72 0
 2
 0 381 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60193,7 +60193,7 @@ refill-shot shot7 ingredient9 right left dispenser9
 72 0
 2
 0 381 -1 0
-0 559 0 1
+0 560 0 1
 1
 end_operator
 begin_operator
@@ -60204,7 +60204,7 @@ refill-shot shot8 ingredient1 left right dispenser1
 33 0
 2
 0 342 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60215,7 +60215,7 @@ refill-shot shot8 ingredient1 right left dispenser1
 33 0
 2
 0 342 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60226,7 +60226,7 @@ refill-shot shot8 ingredient10 left right dispenser10
 34 0
 2
 0 343 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60237,7 +60237,7 @@ refill-shot shot8 ingredient10 right left dispenser10
 34 0
 2
 0 343 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60248,7 +60248,7 @@ refill-shot shot8 ingredient11 left right dispenser11
 35 0
 2
 0 344 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60259,7 +60259,7 @@ refill-shot shot8 ingredient11 right left dispenser11
 35 0
 2
 0 344 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60270,7 +60270,7 @@ refill-shot shot8 ingredient12 left right dispenser12
 36 0
 2
 0 345 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60281,7 +60281,7 @@ refill-shot shot8 ingredient12 right left dispenser12
 36 0
 2
 0 345 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60292,7 +60292,7 @@ refill-shot shot8 ingredient13 left right dispenser13
 37 0
 2
 0 346 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60303,7 +60303,7 @@ refill-shot shot8 ingredient13 right left dispenser13
 37 0
 2
 0 346 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60314,7 +60314,7 @@ refill-shot shot8 ingredient14 left right dispenser14
 38 0
 2
 0 347 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60325,7 +60325,7 @@ refill-shot shot8 ingredient14 right left dispenser14
 38 0
 2
 0 347 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60336,7 +60336,7 @@ refill-shot shot8 ingredient15 left right dispenser15
 39 0
 2
 0 348 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60347,7 +60347,7 @@ refill-shot shot8 ingredient15 right left dispenser15
 39 0
 2
 0 348 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60358,7 +60358,7 @@ refill-shot shot8 ingredient16 left right dispenser16
 40 0
 2
 0 349 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60369,7 +60369,7 @@ refill-shot shot8 ingredient16 right left dispenser16
 40 0
 2
 0 349 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60380,7 +60380,7 @@ refill-shot shot8 ingredient17 left right dispenser17
 41 0
 2
 0 350 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60391,7 +60391,7 @@ refill-shot shot8 ingredient17 right left dispenser17
 41 0
 2
 0 350 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60402,7 +60402,7 @@ refill-shot shot8 ingredient18 left right dispenser18
 42 0
 2
 0 351 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60413,7 +60413,7 @@ refill-shot shot8 ingredient18 right left dispenser18
 42 0
 2
 0 351 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60424,7 +60424,7 @@ refill-shot shot8 ingredient19 left right dispenser19
 43 0
 2
 0 352 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60435,7 +60435,7 @@ refill-shot shot8 ingredient19 right left dispenser19
 43 0
 2
 0 352 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60446,7 +60446,7 @@ refill-shot shot8 ingredient2 left right dispenser2
 44 0
 2
 0 353 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60457,7 +60457,7 @@ refill-shot shot8 ingredient2 right left dispenser2
 44 0
 2
 0 353 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60468,7 +60468,7 @@ refill-shot shot8 ingredient20 left right dispenser20
 45 0
 2
 0 354 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60479,7 +60479,7 @@ refill-shot shot8 ingredient20 right left dispenser20
 45 0
 2
 0 354 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60490,7 +60490,7 @@ refill-shot shot8 ingredient3 left right dispenser3
 46 0
 2
 0 355 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60501,7 +60501,7 @@ refill-shot shot8 ingredient3 right left dispenser3
 46 0
 2
 0 355 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60512,7 +60512,7 @@ refill-shot shot8 ingredient4 left right dispenser4
 47 0
 2
 0 356 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60523,7 +60523,7 @@ refill-shot shot8 ingredient4 right left dispenser4
 47 0
 2
 0 356 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60534,7 +60534,7 @@ refill-shot shot8 ingredient5 left right dispenser5
 48 0
 2
 0 357 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60545,7 +60545,7 @@ refill-shot shot8 ingredient5 right left dispenser5
 48 0
 2
 0 357 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60556,7 +60556,7 @@ refill-shot shot8 ingredient6 left right dispenser6
 49 0
 2
 0 358 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60567,7 +60567,7 @@ refill-shot shot8 ingredient6 right left dispenser6
 49 0
 2
 0 358 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60578,7 +60578,7 @@ refill-shot shot8 ingredient7 left right dispenser7
 50 0
 2
 0 359 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60589,7 +60589,7 @@ refill-shot shot8 ingredient7 right left dispenser7
 50 0
 2
 0 359 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60600,7 +60600,7 @@ refill-shot shot8 ingredient8 left right dispenser8
 51 0
 2
 0 360 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60611,7 +60611,7 @@ refill-shot shot8 ingredient8 right left dispenser8
 51 0
 2
 0 360 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60622,7 +60622,7 @@ refill-shot shot8 ingredient9 left right dispenser9
 52 0
 2
 0 361 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60633,7 +60633,7 @@ refill-shot shot8 ingredient9 right left dispenser9
 52 0
 2
 0 361 -1 0
-0 560 0 1
+0 561 0 1
 1
 end_operator
 begin_operator
@@ -60644,7 +60644,7 @@ refill-shot shot9 ingredient1 left right dispenser1
 13 0
 2
 0 322 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60655,7 +60655,7 @@ refill-shot shot9 ingredient1 right left dispenser1
 13 0
 2
 0 322 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60666,7 +60666,7 @@ refill-shot shot9 ingredient10 left right dispenser10
 14 0
 2
 0 323 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60677,7 +60677,7 @@ refill-shot shot9 ingredient10 right left dispenser10
 14 0
 2
 0 323 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60688,7 +60688,7 @@ refill-shot shot9 ingredient11 left right dispenser11
 15 0
 2
 0 324 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60699,7 +60699,7 @@ refill-shot shot9 ingredient11 right left dispenser11
 15 0
 2
 0 324 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60710,7 +60710,7 @@ refill-shot shot9 ingredient12 left right dispenser12
 16 0
 2
 0 325 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60721,7 +60721,7 @@ refill-shot shot9 ingredient12 right left dispenser12
 16 0
 2
 0 325 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60732,7 +60732,7 @@ refill-shot shot9 ingredient13 left right dispenser13
 17 0
 2
 0 326 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60743,7 +60743,7 @@ refill-shot shot9 ingredient13 right left dispenser13
 17 0
 2
 0 326 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60754,7 +60754,7 @@ refill-shot shot9 ingredient14 left right dispenser14
 18 0
 2
 0 327 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60765,7 +60765,7 @@ refill-shot shot9 ingredient14 right left dispenser14
 18 0
 2
 0 327 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60776,7 +60776,7 @@ refill-shot shot9 ingredient15 left right dispenser15
 19 0
 2
 0 328 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60787,7 +60787,7 @@ refill-shot shot9 ingredient15 right left dispenser15
 19 0
 2
 0 328 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60798,7 +60798,7 @@ refill-shot shot9 ingredient16 left right dispenser16
 20 0
 2
 0 329 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60809,7 +60809,7 @@ refill-shot shot9 ingredient16 right left dispenser16
 20 0
 2
 0 329 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60820,7 +60820,7 @@ refill-shot shot9 ingredient17 left right dispenser17
 21 0
 2
 0 330 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60831,7 +60831,7 @@ refill-shot shot9 ingredient17 right left dispenser17
 21 0
 2
 0 330 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60842,7 +60842,7 @@ refill-shot shot9 ingredient18 left right dispenser18
 22 0
 2
 0 331 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60853,7 +60853,7 @@ refill-shot shot9 ingredient18 right left dispenser18
 22 0
 2
 0 331 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60864,7 +60864,7 @@ refill-shot shot9 ingredient19 left right dispenser19
 23 0
 2
 0 332 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60875,7 +60875,7 @@ refill-shot shot9 ingredient19 right left dispenser19
 23 0
 2
 0 332 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60886,7 +60886,7 @@ refill-shot shot9 ingredient2 left right dispenser2
 24 0
 2
 0 333 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60897,7 +60897,7 @@ refill-shot shot9 ingredient2 right left dispenser2
 24 0
 2
 0 333 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60908,7 +60908,7 @@ refill-shot shot9 ingredient20 left right dispenser20
 25 0
 2
 0 334 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60919,7 +60919,7 @@ refill-shot shot9 ingredient20 right left dispenser20
 25 0
 2
 0 334 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60930,7 +60930,7 @@ refill-shot shot9 ingredient3 left right dispenser3
 26 0
 2
 0 335 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60941,7 +60941,7 @@ refill-shot shot9 ingredient3 right left dispenser3
 26 0
 2
 0 335 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60952,7 +60952,7 @@ refill-shot shot9 ingredient4 left right dispenser4
 27 0
 2
 0 336 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60963,7 +60963,7 @@ refill-shot shot9 ingredient4 right left dispenser4
 27 0
 2
 0 336 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60974,7 +60974,7 @@ refill-shot shot9 ingredient5 left right dispenser5
 28 0
 2
 0 337 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60985,7 +60985,7 @@ refill-shot shot9 ingredient5 right left dispenser5
 28 0
 2
 0 337 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -60996,7 +60996,7 @@ refill-shot shot9 ingredient6 left right dispenser6
 29 0
 2
 0 338 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -61007,7 +61007,7 @@ refill-shot shot9 ingredient6 right left dispenser6
 29 0
 2
 0 338 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -61018,7 +61018,7 @@ refill-shot shot9 ingredient7 left right dispenser7
 30 0
 2
 0 339 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -61029,7 +61029,7 @@ refill-shot shot9 ingredient7 right left dispenser7
 30 0
 2
 0 339 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -61040,7 +61040,7 @@ refill-shot shot9 ingredient8 left right dispenser8
 31 0
 2
 0 340 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -61051,7 +61051,7 @@ refill-shot shot9 ingredient8 right left dispenser8
 31 0
 2
 0 340 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -61062,7 +61062,7 @@ refill-shot shot9 ingredient9 left right dispenser9
 32 0
 2
 0 341 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -61073,7 +61073,7 @@ refill-shot shot9 ingredient9 right left dispenser9
 32 0
 2
 0 341 -1 0
-0 561 0 1
+0 562 0 1
 1
 end_operator
 begin_operator
@@ -61108,7 +61108,7 @@ shake cocktail10 ingredient2 ingredient3 shaker1 left right
 8 1
 11 0
 5
-0 235 -1 0
+0 234 -1 0
 0 539 0 1
 0 536 0 1
 0 522 -1 0
@@ -61121,7 +61121,7 @@ shake cocktail10 ingredient2 ingredient3 shaker1 right left
 8 0
 11 1
 5
-0 235 -1 0
+0 234 -1 0
 0 539 0 1
 0 536 0 1
 0 522 -1 0
@@ -61134,7 +61134,7 @@ shake cocktail2 ingredient12 ingredient17 shaker1 left right
 8 1
 11 0
 5
-0 224 -1 0
+0 223 -1 0
 0 542 0 1
 0 533 0 1
 0 522 -1 0
@@ -61147,7 +61147,7 @@ shake cocktail2 ingredient12 ingredient17 shaker1 right left
 8 0
 11 1
 5
-0 224 -1 0
+0 223 -1 0
 0 542 0 1
 0 533 0 1
 0 522 -1 0

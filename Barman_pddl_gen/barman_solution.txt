@@ -5,153 +5,43 @@ INFO     translator time limit: None
 INFO     translator memory limit: None
 INFO     callstring: /usr/bin/python /home/yochan/FastDownward/builds/release32/bin/translate/translate.py ./Barman_pddl_gen/TYPED_barman_domain.pddl ./Barman_pddl_gen/problem_barman_10_20_10_4562.pddl
 Parsing...
-Parsing: [0.010s CPU, 0.004s wall-clock]
+Parsing: [0.000s CPU, 0.004s wall-clock]
 Normalizing task... [0.000s CPU, 0.000s wall-clock]
 Instantiating...
 Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
 Normalizing Datalog program...
-Normalizing Datalog program: [0.010s CPU, 0.005s wall-clock]
-Preparing model... [0.000s CPU, 0.003s wall-clock]
+Normalizing Datalog program: [0.010s CPU, 0.004s wall-clock]
+Preparing model... [0.000s CPU, 0.004s wall-clock]
 Generated 115 rules.
-Computing model... [0.100s CPU, 0.097s wall-clock]
+Computing model... [0.100s CPU, 0.102s wall-clock]
 6823 relevant atoms
 5601 auxiliary atoms
 12424 final queue length
 23938 total queue pushes
-Completing instantiation... [0.230s CPU, 0.232s wall-clock]
-Instantiating: [0.340s CPU, 0.341s wall-clock]
+Completing instantiation... [0.250s CPU, 0.247s wall-clock]
+Instantiating: [0.360s CPU, 0.361s wall-clock]
 Computing fact groups...
 Finding invariants...
 24 initial candidates
-Finding invariants: [0.010s CPU, 0.017s wall-clock]
-Checking invariant weight... [0.010s CPU, 0.000s wall-clock]
+Finding invariants: [0.010s CPU, 0.015s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
 Instantiating groups... [0.000s CPU, 0.001s wall-clock]
-Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.010s CPU, 0.000s wall-clock]
 Choosing groups...
 565 uncovered facts
 Choosing groups: [0.000s CPU, 0.000s wall-clock]
 Building translation key... [0.000s CPU, 0.002s wall-clock]
-Computing fact groups: [0.020s CPU, 0.025s wall-clock]
+Computing fact groups: [0.020s CPU, 0.024s wall-clock]
 Building STRIPS to SAS dictionary... [0.000s CPU, 0.001s wall-clock]
-Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
 Building mutex information...
-Building mutex information: [0.010s CPU, 0.001s wall-clock]
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
 Translating task...
 Processing axioms...
 Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
-Processing axioms: [0.010s CPU, 0.014s wall-clock]
-Translating task: [0.290s CPU, 0.289s wall-clock]
+Processing axioms: [0.020s CPU, 0.014s wall-clock]
+Translating task: [0.280s CPU, 0.279s wall-clock]
 8002 effect conditions simplified
 0 implied preconditions added
 Detecting unreachable propositions...
 0 operators removed
-0 axioms removed
-3 propositions removed
-Detecting unreachable propositions: [0.150s CPU, 0.148s wall-clock]
-Reordering and filtering variables...
-568 of 568 variables necessary.
-11 of 14 mutex groups necessary.
-4726 of 4726 operators necessary.
-0 of 0 axiom rules necessary.
-Reordering and filtering variables: [0.060s CPU, 0.064s wall-clock]
-Translator variables: 568
-Translator derived variables: 0
-Translator facts: 1157
-Translator goal facts: 1
-Translator mutex groups: 11
-Translator total mutex groups size: 33
-Translator operators: 4726
-Translator axioms: 0
-Translator task size: 45707
-Translator peak memory: 68832 KB
-Writing output... [0.050s CPU, 0.048s wall-clock]
-Done! [0.940s CPU, 0.932s wall-clock]
-INFO     Running search (release32).
-INFO     search input: output.sas
-INFO     search arguments: ['--heuristic', 'hff=ff()', '--heuristic', 'hcea=cea()', '--search', 'lazy_greedy([hff, hcea], preferred=[hff, hcea])']
-INFO     search time limit: None
-INFO     search memory limit: None
-INFO     search executable: /home/yochan/FastDownward/builds/release32/bin/downward
-INFO     callstring: /home/yochan/FastDownward/builds/release32/bin/downward --heuristic 'hff=ff()' --heuristic 'hcea=cea()' --search 'lazy_greedy([hff, hcea], preferred=[hff, hcea])' --internal-plan-file sas_plan < output.sas
-reading input... [t=5.1486e-05s]
-done reading input! [t=0.0502444s]
-packing state variables...done! [t=0.0502897s]
-Variables: 568
-FactPairs: 1157
-Bytes per state: 72
-Building successor generator...done! [t=0.0525979s]
-peak memory difference for root successor generator creation: 380 KB
-time for root successor generation creation: 0.00225851s
-done initializing global data [t=0.052649s]
-Simplifying 18410 unary operators... done! [14442 unary operators]
-Initializing additive heuristic...
-Initializing FF heuristic...
-Initializing context-enhanced additive heuristic...
-Conducting lazy best first search, (real) bound = 2147483647
-New best heuristic value for cea: 34
-New best heuristic value for ff: 15
-[g=0, 1 evaluated, 0 expanded, t=0.143834s, 9808 KB]
-Initial heuristic value for cea: 34
-Initial heuristic value for ff: 15
-New best heuristic value for cea: 22
-[g=1, 4 evaluated, 3 expanded, t=0.14592s, 9808 KB]
-New best heuristic value for ff: 12
-[g=2, 8 evaluated, 7 expanded, t=0.148694s, 9808 KB]
-New best heuristic value for ff: 11
-[g=3, 11 evaluated, 10 expanded, t=0.150756s, 9808 KB]
-New best heuristic value for ff: 9
-[g=2, 16 evaluated, 15 expanded, t=0.154208s, 9808 KB]
-New best heuristic value for ff: 8
-[g=3, 19 evaluated, 18 expanded, t=0.156239s, 9808 KB]
-New best heuristic value for cea: 14
-New best heuristic value for ff: 7
-[g=5, 47 evaluated, 46 expanded, t=0.175048s, 9884 KB]
-New best heuristic value for cea: 12
-New best heuristic value for ff: 6
-[g=6, 49 evaluated, 48 expanded, t=0.176252s, 9884 KB]
-New best heuristic value for cea: 11
-[g=7, 50 evaluated, 49 expanded, t=0.176879s, 9884 KB]
-New best heuristic value for cea: 10
-New best heuristic value for ff: 5
-[g=7, 51 evaluated, 50 expanded, t=0.177494s, 9884 KB]
-New best heuristic value for cea: 7
-New best heuristic value for ff: 4
-[g=8, 52 evaluated, 51 expanded, t=0.178112s, 9884 KB]
-New best heuristic value for cea: 5
-New best heuristic value for ff: 3
-[g=9, 54 evaluated, 53 expanded, t=0.179363s, 10024 KB]
-New best heuristic value for cea: 3
-New best heuristic value for ff: 2
-[g=10, 55 evaluated, 54 expanded, t=0.179902s, 10024 KB]
-New best heuristic value for cea: 1
-New best heuristic value for ff: 1
-[g=11, 56 evaluated, 55 expanded, t=0.180403s, 10024 KB]
-Solution found!
-Actual search time: 0.0379714s [t=0.180504s]
-grasp left shot1 (1)
-fill-shot shot1 ingredient3 left right dispenser3 (1)
-leave left shot1 (1)
-grasp right shot1 (1)
-pour-shot-to-clean-shaker shot1 ingredient3 shaker1 right l0 l1 (1)
-clean-shot shot1 ingredient3 right left (1)
-fill-shot shot1 ingredient2 right left dispenser2 (1)
-grasp left shaker1 (1)
-pour-shot-to-used-shaker shot1 ingredient2 shaker1 right l1 l2 (1)
-leave right shot1 (1)
-shake cocktail10 ingredient2 ingredient3 shaker1 left right (1)
-pour-shaker-to-shot cocktail10 shot10 left shaker1 l2 l1 (1)
-Plan length: 12 step(s).
-Plan cost: 12
-Expanded 56 state(s).
-Reopened 0 state(s).
-Evaluated 57 state(s).
-Evaluations: 114
-Generated 698 state(s).
-Dead ends: 0 state(s).
-Number of registered states: 57
-Int hash set load factor: 57/64 = 0.890625
-Int hash set resizes: 6
-Search time: 0.0379937s
-Total time: 0.180508s
-Solution found.
-Peak memory: 10024 KB

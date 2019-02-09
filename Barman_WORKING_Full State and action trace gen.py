@@ -38,6 +38,7 @@ and open a bracket with the first line. SEE the example domain file.
            ?l - level
            ?l1 - level)
 
+4) the keywords :precondition  , :effect all appear on a line on their own. Except ":action <name>". For the latter, the name follows in the same line 
 """
 
 #Todo Yet to test the plan generation from fast downward. Only got the problem generation done
@@ -53,7 +54,7 @@ import pddlpy
 import copy
 from enum import Enum
 
-number_traces = 100 #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
+number_traces = 5000 #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
 max_num_goals = 2 #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
@@ -250,7 +251,7 @@ class Domain_manipulator:
                     #--end if
                     #start of a new action
                     action_name = line.split(action_start_token)[-1].strip()
-                    # if action_name.startswith("pour-shot-to-used-shaker"):
+                    # if action_name.startswith("clean-shaker"):
                     #     print("catch")
                     action_name = str.lower(action_name)
                     parameter_list = []
@@ -414,7 +415,7 @@ def modify_barman_problem_goal(problem_idx, total_num_cocktails, total_num_shots
 #end function modify barman problem
 
 # action_solutions = set()
-counter = 0
+counter = 1
 command = barman_gen_exec + " ".join(barman_config)
 num_cocktails = int(barman_config[0])
 num_shots = int(barman_config[2])

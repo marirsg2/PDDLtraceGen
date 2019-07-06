@@ -54,14 +54,17 @@ import pddlpy
 import copy
 from enum import Enum
 
-number_traces = 5000 #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
-max_num_goals = 2 #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
+number_traces = 6000 #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
+ #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
 barman_gen_exec = "./Barman_pddl_gen/barman-generator.py "
 #code to generate a random problem space
-barman_config = ["10", "20","10" , "4562"]# num cocktails, num ingredients, num shots, optional random seed.
+max_num_goals = 2
+# barman_config = ["3","20","10" , "4562"]# num cocktails, num ingredients, num shots, optional random seed.
+barman_config = ["20","40","10" , "4562"]# num cocktails, num ingredients, num shots, optional random seed.
+
 
 dest_name_suffix = "_".join(barman_config).replace("-","").replace(" ","")
 dest_problem_file_name = "./Barman_pddl_gen/problem_barman_" + dest_name_suffix + ".pddl"#this is where the barman problem file generator stores the problem.pddl file
@@ -71,7 +74,7 @@ fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --sea
 domain_file_loc = "./Barman_pddl_gen/TYPED_barman_domain.pddl"
 problem_file_loc = dest_problem_file_name
 solution_file_loc = "./Barman_pddl_gen/barman_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
-pickle_dest_file = str(number_traces)+"_"+dest_name_suffix+"_barman_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
+pickle_dest_file = "ICAPS"+str(number_traces)+"_"+dest_name_suffix+"_barman_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
 
 #==============================================================================+++
 def insert_list_in_dict(input_list,dest_dict):
@@ -173,6 +176,8 @@ class Action:
         :param starting_state_dict:
         :return:
         """
+        # if "refill" in action_name:
+        #     print("Saw refill-shot")
         ret_state_set = starting_state_set
         #parse the action name to get the parameter instantiation
         action_parts = action_name.split("_")
@@ -188,6 +193,7 @@ class Action:
             grounded_precondition_params = "_".join(translate_list_by_dict(precondition_parameters,translation_dict))
             grounded_precondition = precondition_type + "_" + grounded_precondition_params
             if not grounded_precondition in starting_state_set:
+                raise Exception("An inexecutable action was in the plan ")
                 return starting_state_set
         #now convert the positive and negative effects into their grounded form
         for single_neg_effect in self.neg_effects_set:
@@ -196,6 +202,8 @@ class Action:
             eff_parameters = single_neg_effect.split("_")[1:]
             grounded_eff_params = "_".join(translate_list_by_dict(eff_parameters,translation_dict))
             grounded_eff = eff_type + "_" + grounded_eff_params
+            if not grounded_eff in starting_state_set:
+                raise Exception("An inexecutable action was in the plan ")
             ret_state_set.remove(grounded_eff)
         for single_pos_effect in self.pos_effects_set:
             #sadly the python str translate functionality does not meet our needs
@@ -251,7 +259,7 @@ class Domain_manipulator:
                     #--end if
                     #start of a new action
                     action_name = line.split(action_start_token)[-1].strip()
-                    # if action_name.startswith("clean-shaker"):
+                    # if action_name.startswith("refill-shot"):
                     #     print("catch")
                     action_name = str.lower(action_name)
                     parameter_list = []
@@ -415,13 +423,13 @@ def modify_barman_problem_goal(problem_idx, total_num_cocktails, total_num_shots
 #end function modify barman problem
 
 # action_solutions = set()
-counter = 1
+counter = 200
 command = barman_gen_exec + " ".join(barman_config)
 num_cocktails = int(barman_config[0])
 num_shots = int(barman_config[2])
 #we have already defined num goals
-if not(num_cocktails > (num_shots-1)) or not(max_num_goals < num_cocktails):
-    raise("ERROR: num cocktails and max_num_goals must be less than shots-1 ")
+# if not(num_cocktails > (num_shots-1)) or not(max_num_goals < num_cocktails):
+#     raise("ERROR: num cocktails and max_num_goals must be less than shots-1 ")
 current_problem_index = 0 #yes we start at 0 zero index
 os.system(command +" > " + dest_problem_file_name)
 while len(all_solutions) < number_traces:
@@ -479,3 +487,4 @@ with open(pickle_dest_file, "rb") as source_file:
             break
 
 
+print("IMPORTANT NOTE  THIS IS NOT FOR GROUNDED ACTION GENERATION, FOR THAT YOU NEED TO USE THE GROUNDED ACTION GENERATOR TO GET A SET OF pre-action-eff")

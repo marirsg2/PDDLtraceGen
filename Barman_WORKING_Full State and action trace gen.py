@@ -64,6 +64,7 @@ barman_gen_exec = "./Barman_pddl_gen/barman-generator.py "
 max_num_goals = 2
 # barman_config = ["3","20","10" , "4562"]# num cocktails, num ingredients, num shots, optional random seed.
 barman_config = ["20","40","10" , "4562"]# num cocktails, num ingredients, num shots, optional random seed.
+# barman_config = ["3","5","4" , "4562"]# num cocktails, num ingredients, num shots, optional random seed.
 
 
 dest_name_suffix = "_".join(barman_config).replace("-","").replace(" ","")

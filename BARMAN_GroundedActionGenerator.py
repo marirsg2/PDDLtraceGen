@@ -37,8 +37,8 @@ import pddlpy
 import copy
 from enum import Enum
 
-domain_file_loc = "./Blocks_pddl/TYPED_barman_domain.pddl"
-problem_file_loc = "./Blocks_pddl/TYPED_barman_4shots_problem.pddl"
+domain_file_loc = "./Barman_pddl_gen/TYPED_barman_domain.pddl"
+problem_file_loc = "./Barman_pddl_gen/problem_barman_3_10_4_4562.pddl"
 pickle_dest_file =  "barman_4shots_actiongrounding.p" #THE PICKLE file where the generated data (plan traces) are stored
 
 #==============================================================================+++
@@ -109,9 +109,10 @@ class Action:
     Contains information about a LIFTED action such as preconditions and effects.
     Has functions that when given a state dict, and parameter instantiation, will give the resultant state dict
     """
-    def __init__(self, action_name , parameter_name_type_dict = {}, preconditions_dict = {},pos_effects_dict = {},neg_effects_dict = {}):
+    def __init__(self, action_name , parameter_name_type_dict = {}, param_order_list = [], preconditions_dict = {},pos_effects_dict = {},neg_effects_dict = {}):
         self.action_name = str.lower(action_name)
         self.parameter_name_type_dict = parameter_name_type_dict
+        self.parameter_order_list = param_order_list
         # self.parameter_name_type_dict["true"] = "true"
         # self.parameter_name_type_dict["false"] = "false"
         self.preconditions_set = set(convert_dict_to_list(preconditions_dict))
@@ -209,6 +210,7 @@ class Domain_manipulator:
         #--end class
         action_name = None
         parameter_name_type_dict = {}
+        param_order_list = []
         preconditions_dict = {}
         pos_effects_dict = {}
         neg_effects_dict = {}
@@ -219,12 +221,13 @@ class Domain_manipulator:
                     if action_name != None:
                         #create a new action object
                         ret_action_dict[action_name] =\
-                            Action(action_name , parameter_name_type_dict, preconditions_dict ,pos_effects_dict,neg_effects_dict)
+                            Action(action_name , parameter_name_type_dict,param_order_list, preconditions_dict ,pos_effects_dict,neg_effects_dict)
                     #--end if
                     #start of a new action
                     action_name = line.split(action_start_token)[-1].strip()
                     action_name = str.lower(action_name)
                     parameter_name_type_dict = {}
+                    param_order_list = []
                     preconditions_dict = {}
                     pos_effects_dict = {}
                     neg_effects_dict = {}
@@ -263,6 +266,7 @@ class Domain_manipulator:
                     parameter_parts = (line.replace(" ","")).split("-")
                     if len(parameter_parts) == 1:
                         continue
+                    param_order_list.append(parameter_parts[0].lower())
                     parameter_name_type_dict[parameter_parts[0].lower()] = parameter_parts[1].lower()
                 elif parsing_state == self.Action_parsing_state.in_preconditions:
                     line = line.replace("(and","").replace("?","")
@@ -298,7 +302,7 @@ class Domain_manipulator:
             if action_name != None:
                 # create a new action object
                 ret_action_dict[action_name] = \
-                    Action(action_name, parameter_name_type_dict, preconditions_dict, pos_effects_dict, neg_effects_dict)
+                    Action(action_name, parameter_name_type_dict, param_order_list,preconditions_dict, pos_effects_dict, neg_effects_dict)
         #end with open()
         return ret_action_dict
     #---end class method
@@ -377,7 +381,7 @@ class Domain_manipulator:
         valid_groundings = set()
         actionObj = self.actionObj_dict[action_name]
         parameter_dict = actionObj.parameter_name_type_dict
-        parameter_keys = sorted(list(parameter_dict.keys()))
+        parameter_keys = actionObj.parameter_order_list
         #get the parameter object types to search in the problem file
         parameter_types = []
         for single_parameter in parameter_keys:
@@ -465,6 +469,9 @@ class Domain_manipulator:
             if "shake" == single_action_name:
                 print("shake")
 
+            if "fill-shot" == single_action_name:
+                print("fill-shot")
+
             #get the parameter groundings
             groundings_set = self.get_all_parameter_groundings(single_action_name,problem_parser_obj)
             actionObj = self.actionObj_dict[single_action_name]
@@ -472,7 +479,7 @@ class Domain_manipulator:
             for curr_grounding in groundings_set:
                 curr_action_data = []
                 parameter_dict = actionObj.parameter_name_type_dict
-                parameter_keys = sorted(list(parameter_dict.keys()))
+                parameter_keys = actionObj.parameter_order_list
                 var_mapping = dict(zip(parameter_keys, curr_grounding))
 
 
@@ -611,6 +618,7 @@ class Problem_file_parser:
                     if len(line_in_problem) < 3: #minimum is "a b" = <property><space><value>
                         continue
                     #end if
+                    line_in_problem = line_in_problem.lstrip()  # remove leading spaces
                     line_in_problem = line_in_problem.replace(" ","_")
                     self.fluents_set.add(line_in_problem.lower())
                 elif parsing_state == self.ProblemFile_parsing_state.in_goal:

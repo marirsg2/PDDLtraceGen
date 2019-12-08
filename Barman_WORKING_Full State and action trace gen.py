@@ -54,16 +54,17 @@ import pddlpy
 import copy
 from enum import Enum
 
-number_traces = 6000 #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
+number_traces = 8 #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
  #todo note make sure the num goals is high enough to produce the number of traces needed. Also ensure enough shot glasses and cocktails for diverse goals
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
 barman_gen_exec = "./Barman_pddl_gen/barman-generator.py "
 #code to generate a random problem space
-max_num_goals = 2
+max_num_goals = 1
 # barman_config = ["3","20","10" , "4562"]# num cocktails, num ingredients, num shots, optional random seed.
-barman_config = ["20","40","10" , "4562"]# num cocktails, num ingredients, num shots, optional random seed.
+# barman_config = ["20","40","10" , "4562"]# num cocktails, num ingredients, num shots, optional random seed.
+barman_config = ["3","3","3" , "4562"]# num cocktails, num ingredients, num shots, optional random seed.
 # barman_config = ["3","5","4" , "4562"]# num cocktails, num ingredients, num shots, optional random seed.
 
 
@@ -278,7 +279,8 @@ class Domain_manipulator:
                     line = line.replace("(","").replace(")","").replace("?","").replace("\n","")
                     parameters = line.split(" ")
                     parameters = [x for x in parameters if x != '']
-                    parameter_list.append(parameters[0])
+                    if len(parameters) > 0:
+                        parameter_list.append(parameters[0])
                 elif parsing_state == self.Action_parsing_state.in_preconditions:
                     line = line.replace("(and","").replace("?","")
                     propositions = line.split(")")
@@ -363,6 +365,7 @@ all_solutions = set()
 #     all_solutions = pickle.load(source_file)
 
 
+# ==============================================================================+++
 
 def modify_barman_problem_goal(problem_idx, total_num_cocktails, total_num_shots, max_num_goals, dest_problem_file_name):
     """
@@ -450,6 +453,7 @@ while len(all_solutions) < number_traces:
 
     #---NOW we have the problem files ,lets generate the solutions with fast downward
     fd_command = fast_downward_exec_loc + " " + domain_file_loc + " " + problem_file_loc + " " +fd_heuristic_config
+    # print(fd_command)
     os.system(fd_command+" > " + solution_file_loc)
     #---now extract the solution
     solution_list = []

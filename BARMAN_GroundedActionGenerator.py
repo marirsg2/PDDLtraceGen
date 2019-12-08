@@ -38,8 +38,8 @@ import copy
 from enum import Enum
 
 domain_file_loc = "./Barman_pddl_gen/TYPED_barman_domain.pddl"
-problem_file_loc = "./Barman_pddl_gen/problem_barman_3_10_4_4562.pddl"
-pickle_dest_file =  "barman_4shots_actiongrounding.p" #THE PICKLE file where the generated data (plan traces) are stored
+problem_file_loc = "./Barman_pddl_gen/problem_barman_3_3_3_4562.pddl"
+pickle_dest_file =  "barman_3shots_actiongrounding.p" #THE PICKLE file where the generated data (plan traces) are stored
 
 #==============================================================================+++
 def insert_list_in_dict(input_list,dest_dict):

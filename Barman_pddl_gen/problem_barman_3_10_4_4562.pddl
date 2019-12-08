@@ -50,6 +50,6 @@
 )
  (:goal
 (and 
+(contains shot2 cocktail1 ) 
 (contains shot4 cocktail1 ) 
-(contains shot3 cocktail1 ) 
 ))) 

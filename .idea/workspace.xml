@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc2548e8-a632-4c17-9841-f8e07ed02a6d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Barman_pddl_gen/old_TYPED_barman_domain.pddl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Barman_pddl_gen/problem_barman_3_4_4_4562.pddl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPMC_WORKING_Full State and action trace gen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JPMC_proj1_conversion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logistics_pddl_file_modifier.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BARMAN_GroundedActionGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/BARMAN_GroundedActionGenerator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Barman_WORKING_Full State and action trace gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/Barman_WORKING_Full State and action trace gen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Barman_pddl_gen/TYPED_barman_domain.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Barman_pddl_gen/TYPED_barman_domain.pddl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Barman_pddl_gen/barman_solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Barman_pddl_gen/barman_solution.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Barman_pddl_gen/problem_barman_3_10_4_4562.pddl" beforeDir="false" afterPath="$PROJECT_DIR$/Barman_pddl_gen/problem_barman_3_10_4_4562.pddl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logistics_pddl/logistics_solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/logistics_solution.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.sas" beforeDir="false" afterPath="$PROJECT_DIR$/output.sas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sas_plan" beforeDir="false" afterPath="$PROJECT_DIR$/sas_plan" afterDir="false" />
     </list>
@@ -34,7 +30,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Barman_pddl_gen" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -44,15 +40,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Logistics_pddl" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Barman_pddl_gen" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Barman_pddl_gen" />
       <recent name="$PROJECT_DIR$/Logistics_pddl" />
       <recent name="$PROJECT_DIR$/Blocks_pddl" />
       <recent name="$PROJECT_DIR$/ROVER_pddl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Logistics_pddl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -67,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Barman_WORKING_Full State and action trace gen">
+  <component name="RunManager" selected="Python.JPMC_WORKING_Full State and action trace gen">
     <configuration name="BARMAN_GroundedActionGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PR_withDoc2Vec" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,7 +108,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="GroundedActionGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="JPMC_WORKING_Full State and action trace gen" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PR_withDoc2Vec" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,7 +121,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GroundedActionGenerator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JPMC_WORKING_Full State and action trace gen.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -179,19 +175,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.GroundedActionGenerator" />
       <item itemvalue="Python.WORKING_Full State and action trace gen" />
       <item itemvalue="Python.barman-generator" />
       <item itemvalue="Python.Barman_WORKING_Full State and action trace gen" />
       <item itemvalue="Python.BARMAN_GroundedActionGenerator" />
+      <item itemvalue="Python.JPMC_WORKING_Full State and action trace gen" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.JPMC_WORKING_Full State and action trace gen" />
         <item itemvalue="Python.Barman_WORKING_Full State and action trace gen" />
         <item itemvalue="Python.BARMAN_GroundedActionGenerator" />
         <item itemvalue="Python.WORKING_Full State and action trace gen" />
         <item itemvalue="Python.barman-generator" />
-        <item itemvalue="Python.GroundedActionGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +203,7 @@
       <updated>1529169383118</updated>
       <workItem from="1569267855728" duration="6638000" />
       <workItem from="1569879913319" duration="4459000" />
+      <workItem from="1590273380095" duration="293000" />
     </task>
     <servers />
   </component>
@@ -352,6 +349,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PDDLtraceGen$JPMC_WORKING_Full_State_and_action_trace_gen.coverage" NAME="JPMC_WORKING_Full State and action trace gen Coverage Results" MODIFIED="1590273663251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PDDLtraceGen$Barman_WORKING_Full_State_and_action_trace_gen.coverage" NAME="Barman_WORKING_Full State and action trace gen Coverage Results" MODIFIED="1570140765274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="debuggerHistoryManager">

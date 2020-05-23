@@ -9,3 +9,9 @@
 
 Logistics_pddl/logistics_solution\.txt
 
+
+*.pddl
+
+*.pyc
+
+\.idea/

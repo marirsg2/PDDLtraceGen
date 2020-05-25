@@ -14,7 +14,7 @@ This is for logistics, so packages are goals
 
 import pickle
 
-source_pickle_file = "2000c10_s4_p10_a1_logistics_dataset.p"
+source_pickle_file = "10000c10_s4_p10_a1_logistics_dataset.p"
 all_solutions = []
 with open(source_pickle_file, "rb") as src:
     all_solutions = pickle.load(src)

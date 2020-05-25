@@ -21,10 +21,6 @@ on how many cities, locations and packages you want.
 """
 
 
-#FOR 4 CITIES, 3 LOC, 1 AIRPLANE. tHERE ARE 3888 POSSIBLE initial starting cases. with 12 possible goal locations that
-#makes 46k traces. Factor in ordering actions, and you have ~120k traces.
-
-
 import subprocess
 import os
 import pickle
@@ -33,15 +29,19 @@ import copy
 from enum import Enum
 from Logistics_pddl_file_modifier import *
 
-number_traces = 10000
+NUMBER_TRACES = 10000
+TAKE_TESTS_AFTER = 1000 #WAIT to see these many cases before adding test cases
+NUM_TEST_CASES = 100
+SAMPLING_RATIO_TEST_CASE = NUM_TEST_CASES/NUMBER_TRACES
+TOP_LEVEL_TEST_DIR = "JPMC_test_dir"
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
 logisitics_gen_exec = "./Logistics_pddl/logistics "
 #code to generate a random problem space
 logistics_config = ["-c 10", "-s 4","-p 10", "-a 1"]# ["-c 4", "-s 3","-p 1", "-a 1"] means 4 cities, 3 locations in each city, 1 package, and 1 airplane
-dest_name_suffix = "_".join(logistics_config).replace("-","").replace(" ","")
-dest_problem_file_name = "./Logistics_pddl/problem_logistics_" + dest_name_suffix + ".pddl"#this is where the logistics problem file generator stores the problem.pddl file
+domain_base_descr = "logistics_" + "_".join(logistics_config).replace("-", "").replace(" ", "")
+dest_problem_file_name = "./Logistics_pddl/problem_" + domain_base_descr + ".pddl"#this is where the logistics problem file generator stores the problem.pddl file
 #---for FD
 fast_downward_exec_loc = "~/FastDownward/fast-downward.py"
 # fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --search \"lazy_greedy([hff, hcea], preferred=[hff, hcea])\""
@@ -63,7 +63,7 @@ fd_heuristic_config = "--heuristic \"hlm=lama_synergy(lm_rhw(reasonable_orders=t
 domain_file_loc = "./Logistics_pddl/logistics_domain.pddl"
 problem_file_loc = dest_problem_file_name
 solution_file_loc = "./Logistics_pddl/logistics_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
-pickle_dest_file = "JPMC"+str(number_traces)+dest_name_suffix+"_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
+pickle_dest_file = "JPMC" + str(NUMBER_TRACES) + domain_base_descr + "_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
 
 #==============================================================================+++
 def insert_list_in_dict(input_list,dest_dict):
@@ -326,9 +326,15 @@ all_solutions = set()
 #     all_solutions = pickle.load(source_file)
 
 
-# action_solutions = set()
+
 counter = 0
-while len(all_solutions) < number_traces:
+test_idx = 1
+goals_set = set()
+while len(all_solutions) < NUMBER_TRACES:
+    is_test_case = False
+    if len(all_solutions) > TAKE_TESTS_AFTER and random.random() < SAMPLING_RATIO_TEST_CASE:
+        is_test_case = True
+    #end if
     counter +=1
     if counter%10 == 0:
         print("At iteration", counter)
@@ -363,8 +369,19 @@ while len(all_solutions) < number_traces:
     #---end with
     # print(solution_list)
     if len(solution_list)> 1: #need atleast two actions to have informational value
-        s_a_trace = convert_to_state_action_list(solution_list)
-        all_solutions.add((tuple(goal_desc),tuple(s_a_trace)))
+        if not is_test_case:
+            s_a_trace = convert_to_state_action_list(solution_list)
+            all_solutions.add((tuple(goal_desc),tuple(s_a_trace)))
+        else:
+            test_name = domain_base_descr+"problem_"+str(test_idx)
+            os.chdir(TOP_LEVEL_TEST_DIR)
+            os.mkdir(test_name)
+            os.chdir(test_name)
+            #copy domain file, copy problem file AND remove goals , replace with "<HYPOTHESIS>",
+            os.chdir("..")
+            os.chdir("..")
+
+    #end if solution > 1
 #---end outer for
 
 with open(pickle_dest_file, "wb") as destination:

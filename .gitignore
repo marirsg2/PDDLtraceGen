@@ -15,3 +15,5 @@ Logistics_pddl/logistics_solution\.txt
 *.pyc
 
 \.idea/
+
+*.dat

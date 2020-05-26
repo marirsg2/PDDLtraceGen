@@ -168,3 +168,28 @@ def edit_initial_state(source_problem_file):
     return goal_state_fluents
 #end function edit initial state
 
+def edit_initial_state_and_get_goal_and_template(source_problem_file):
+    #read the problem file, and drop all lines that contain '(at p'. note the index where the first 'at p' occurs (initial state)
+    #and the index where the goal fluents start
+    #fill in the replacements at those indices.
+    all_lines = []
+    template_lines = []
+    with open(source_problem_file,"r") as src_problem_pddl:
+        all_lines = src_problem_pddl.readlines()
+    # init_state_idx = all_lines.index("(:init\n")
+    # all_lines = [x for x in all_lines if "at p" not in x]
+    # all_lines = all_lines[0:init_state_idx+1] + initial_package_fluents + all_lines[init_state_idx+1:]
+    goal_state_idx = all_lines.index("(and\n")
+    necessary_lines_after_goal_start = [x for x in all_lines[goal_state_idx+1:] if "at p" not in x ]
+    template_lines = all_lines[0:goal_state_idx+1] + ["<HYPOTHESIS>\n"] + necessary_lines_after_goal_start
+
+    goal_state_probability = random.random()
+    goal_state_selection_idx = int(goal_state_probability*10)
+    goal_state_fluents = goal_states_list[goal_state_selection_idx]
+    #end if
+    all_lines = all_lines[0:goal_state_idx+1] + goal_state_fluents + necessary_lines_after_goal_start
+    with open(source_problem_file,"w") as dest_problem_pddl:
+        dest_problem_pddl.writelines(all_lines)
+    return goal_state_fluents,template_lines
+#end function edit initial state
+

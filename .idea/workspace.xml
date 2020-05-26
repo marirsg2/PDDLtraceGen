@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc2548e8-a632-4c17-9841-f8e07ed02a6d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/JPMC_v2_Logistics_Data_gen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JPMC_WORKING_Full State and action trace gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/JPMC_WORKING_Full State and action trace gen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JPMC_proj1_conversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/JPMC_proj1_conversion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JPMC_v2_Logistics_Data_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/JPMC_v2_Logistics_Data_gen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistics_pddl/logistics_solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl/logistics_solution.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistics_pddl_file_modifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logistics_pddl_file_modifier.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output.sas" beforeDir="false" afterPath="$PROJECT_DIR$/output.sas" afterDir="false" />
@@ -64,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.JPMC_WORKING_Full State and action trace gen">
+  <component name="RunManager" selected="Python.JPMC_v2_Logistics_Data_gen">
     <configuration name="BARMAN_GroundedActionGenerator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PR_withDoc2Vec" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,6 +129,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="JPMC_v2_Logistics_Data_gen" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PR_withDoc2Vec" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JPMC_v2_Logistics_Data_gen.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="WORKING_Full State and action trace gen" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PR_withDoc2Vec" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,42 +173,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="barman-generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PR_withDoc2Vec" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Barman_pddl_gen" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Barman_pddl_gen/barman-generator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.WORKING_Full State and action trace gen" />
-      <item itemvalue="Python.barman-generator" />
       <item itemvalue="Python.Barman_WORKING_Full State and action trace gen" />
       <item itemvalue="Python.BARMAN_GroundedActionGenerator" />
       <item itemvalue="Python.JPMC_WORKING_Full State and action trace gen" />
+      <item itemvalue="Python.JPMC_v2_Logistics_Data_gen" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.JPMC_v2_Logistics_Data_gen" />
         <item itemvalue="Python.JPMC_WORKING_Full State and action trace gen" />
         <item itemvalue="Python.Barman_WORKING_Full State and action trace gen" />
         <item itemvalue="Python.BARMAN_GroundedActionGenerator" />
         <item itemvalue="Python.WORKING_Full State and action trace gen" />
-        <item itemvalue="Python.barman-generator" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +202,7 @@
       <updated>1529169383118</updated>
       <workItem from="1569267855728" duration="6638000" />
       <workItem from="1569879913319" duration="4459000" />
-      <workItem from="1590273380095" duration="8430000" />
+      <workItem from="1590273380095" duration="16054000" />
     </task>
     <servers />
   </component>
@@ -356,6 +354,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PDDLtraceGen$JPMC_WORKING_Full_State_and_action_trace_gen.coverage" NAME="JPMC_WORKING_Full State and action trace gen Coverage Results" MODIFIED="1590354975760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PDDLtraceGen$JPMC_v2_Logistics_Data_gen.coverage" NAME="JPMC_v2_Logistics_Data_gen Coverage Results" MODIFIED="1590454493528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PDDLtraceGen$Barman_WORKING_Full_State_and_action_trace_gen.coverage" NAME="Barman_WORKING_Full State and action trace gen Coverage Results" MODIFIED="1570140765274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="debuggerHistoryManager">

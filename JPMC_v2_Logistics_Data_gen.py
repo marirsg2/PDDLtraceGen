@@ -31,7 +31,7 @@ from Logistics_pddl_file_modifier import *
 
 NUMBER_TRACES = 10000
 TAKE_TESTS_AFTER = 1000 #WAIT to see these many cases before adding test cases
-NUM_TEST_CASES = 100
+NUM_TEST_CASES = 200
 SAMPLING_RATIO_TEST_CASE = NUM_TEST_CASES/NUMBER_TRACES
 TOP_LEVEL_TEST_DIR = "JPMC_test_dir"
 keywords_before_solution = "Actual search time"
@@ -63,7 +63,8 @@ fd_heuristic_config = "--heuristic \"hlm=lama_synergy(lm_rhw(reasonable_orders=t
 domain_file_loc = "./Logistics_pddl/logistics_domain.pddl"
 problem_file_loc = dest_problem_file_name
 solution_file_loc = "./Logistics_pddl/logistics_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
-pickle_dest_file = "JPMC" + str(NUMBER_TRACES) + domain_base_descr + "_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
+pickle_dest_file = "JPMC_V2_" + str(NUMBER_TRACES) + domain_base_descr + "_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
+pickle_test_data_dest_file = "JPMC_V2_TEST_" + str(NUMBER_TRACES) + domain_base_descr + "_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
 
 #==============================================================================+++
 def insert_list_in_dict(input_list,dest_dict):
@@ -321,6 +322,7 @@ def convert_to_state_action_list(solution_list):
 # ==============================================================================+++
 domain_parser_obj = Domain_manipulator(domain_file_loc)
 all_solutions = set()
+test_solutions = set()
 
 # with open(pickle_dest_file, "rb") as source_file:
 #     all_solutions = pickle.load(source_file)
@@ -328,7 +330,7 @@ all_solutions = set()
 
 
 counter = 0
-test_idx = 1
+test_idx = 0 #will be set to 1 before first problem
 goals_set = set()
 while len(all_solutions) < NUMBER_TRACES:
     is_test_case = False
@@ -347,7 +349,10 @@ while len(all_solutions) < NUMBER_TRACES:
     #---create problem files
     command = logisitics_gen_exec + " ".join(logistics_config)
     os.system(command +" > " + dest_problem_file_name)        
-    goal_desc = edit_initial_state(dest_problem_file_name)
+    goal_desc,template_string_list = edit_initial_state_and_get_goal_and_template(dest_problem_file_name)
+    sorted(goal_desc)
+    goal_single_line_form = ", ".join([x.replace("\n","") for x in goal_desc])
+    goals_set.add(goal_single_line_form)
     #---NOW we have the problem files ,lets generate the solutions with fast downward
     fd_command = fast_downward_exec_loc + " " + domain_file_loc + " " + problem_file_loc + " " +fd_heuristic_config
     os.system(fd_command+" > " + solution_file_loc)
@@ -369,14 +374,33 @@ while len(all_solutions) < NUMBER_TRACES:
     #---end with
     # print(solution_list)
     if len(solution_list)> 1: #need atleast two actions to have informational value
+        s_a_trace = convert_to_state_action_list(solution_list)
         if not is_test_case:
-            s_a_trace = convert_to_state_action_list(solution_list)
             all_solutions.add((tuple(goal_desc),tuple(s_a_trace)))
         else:
-            test_name = domain_base_descr+"problem_"+str(test_idx)
+            test_idx += 1
+            test_solutions.add((tuple(goal_desc),tuple(s_a_trace)))
+            test_name = domain_base_descr+"_problem_"+str(test_idx)
             os.chdir(TOP_LEVEL_TEST_DIR)
-            os.mkdir(test_name)
+            try:
+                os.mkdir(test_name)
+            except FileExistsError:
+                pass
             os.chdir(test_name)
+            os.system("cp "+ "../../"+domain_file_loc.replace("./","") + " domain.pddl")
+            with open("template.pddl","w") as template_file:
+                template_file.writelines(template_string_list)
+            with open("hyps.dat","w") as all_hyps_file:
+                for single_goal in goals_set:
+                    all_hyps_file.write(single_goal + "\n")
+            with open("real_hyp.dat","w") as real_hyp_file:
+                real_hyp_file.write(goal_single_line_form)
+            with open("obs.dat","w") as obs_file:
+                for single_action in solution_list:
+                    obs_file.write("("+single_action.replace("_"," ")+")\n")
+                #end for
+            #end with
+
             #copy domain file, copy problem file AND remove goals , replace with "<HYPOTHESIS>",
             os.chdir("..")
             os.chdir("..")
@@ -386,6 +410,9 @@ while len(all_solutions) < NUMBER_TRACES:
 
 with open(pickle_dest_file, "wb") as destination:
     pickle.dump(all_solutions, destination)
+
+with open(pickle_test_data_dest_file, "wb") as destination:
+    pickle.dump(test_solutions, destination)
 
 # testing code
 with open(pickle_dest_file, "rb") as source_file:

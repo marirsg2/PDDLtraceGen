@@ -31,7 +31,7 @@ import pickle
 import pddlpy
 import copy
 from enum import Enum
-from Logistics_pddl_file_modifier import *
+from Logistics_pddl_file_modifier_2goals_1fixedInit import *
 
 number_traces = 10000
 keywords_before_solution = "Actual search time"

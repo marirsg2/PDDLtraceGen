@@ -27,13 +27,13 @@ import pickle
 import pddlpy
 import copy
 from enum import Enum
-from Logistics_pddl_file_modifier import *
+from Logistics_pddl_file_modifier_2goals_1fixedInit import *
+from Logistics_pddl_file_modifier_10goals_randomInit import *
 
-NUMBER_TRACES = 10000
-TAKE_TESTS_AFTER = 1000 #WAIT to see these many cases before adding test cases
-NUM_TEST_CASES = 200
+NUMBER_TRACES = 2000
+TAKE_TESTS_AFTER = 100 #WAIT to see these many cases before adding test cases
+NUM_TEST_CASES = 100
 SAMPLING_RATIO_TEST_CASE = NUM_TEST_CASES/NUMBER_TRACES
-TOP_LEVEL_TEST_DIR = "JPMC_test_dir"
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
@@ -65,6 +65,8 @@ problem_file_loc = dest_problem_file_name
 solution_file_loc = "./Logistics_pddl/logistics_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
 pickle_dest_file = "JPMC_V2_" + str(NUMBER_TRACES) + domain_base_descr + "_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
 pickle_test_data_dest_file = "JPMC_V2_TEST_" + str(NUMBER_TRACES) + domain_base_descr + "_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
+TOP_LEVEL_TEST_DIR = pickle_test_data_dest_file.replace(".p","")
+
 
 #==============================================================================+++
 def insert_list_in_dict(input_list,dest_dict):
@@ -348,8 +350,14 @@ while len(all_solutions) < NUMBER_TRACES:
             pickle.dump(all_solutions, destination)
     #---create problem files
     command = logisitics_gen_exec + " ".join(logistics_config)
-    os.system(command +" > " + dest_problem_file_name)        
-    goal_desc,template_string_list = edit_initial_state_and_get_goal_and_template(dest_problem_file_name)
+    os.system(command +" > " + dest_problem_file_name)
+
+
+    # goal_desc,template_string_list = edit_initial_state_and_get_goal_and_template_10goals_randomInit(dest_problem_file_name)
+    goal_desc,template_string_list = edit_initial_state_and_get_goal_and_template_2goal_fixedInit(dest_problem_file_name)
+
+
+
     sorted(goal_desc)
     goal_single_line_form = ", ".join([x.replace("\n","") for x in goal_desc])
     goals_set.add(goal_single_line_form)
@@ -381,6 +389,10 @@ while len(all_solutions) < NUMBER_TRACES:
             test_idx += 1
             test_solutions.add((tuple(goal_desc),tuple(s_a_trace)))
             test_name = domain_base_descr+"_problem_"+str(test_idx)
+            try:
+                os.mkdir(TOP_LEVEL_TEST_DIR)
+            except :
+                pass
             os.chdir(TOP_LEVEL_TEST_DIR)
             try:
                 os.mkdir(test_name)

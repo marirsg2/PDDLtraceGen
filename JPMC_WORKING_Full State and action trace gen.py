@@ -31,7 +31,8 @@ import pickle
 import pddlpy
 import copy
 from enum import Enum
-from Logistics_pddl_file_modifier_2goals_1fixedInit import *
+# from Logistics_pddl_file_modifier_2goals_1fixedInit import *
+from Logistics_pddl_file_modifier_5goals_distantGoals_randomInit import *
 
 number_traces = 10000
 keywords_before_solution = "Actual search time"
@@ -341,7 +342,7 @@ while len(all_solutions) < number_traces:
     #---create problem files
     command = logisitics_gen_exec + " ".join(logistics_config)
     os.system(command +" > " + dest_problem_file_name)        
-    goal_desc = edit_initial_state(dest_problem_file_name)
+    goal_desc = edit_initial_state_and_get_goal_and_template_5goals_distant_randomInit(dest_problem_file_name)
     #---NOW we have the problem files ,lets generate the solutions with fast downward
     fd_command = fast_downward_exec_loc + " " + domain_file_loc + " " + problem_file_loc + " " +fd_heuristic_config
     os.system(fd_command+" > " + solution_file_loc)
@@ -364,7 +365,8 @@ while len(all_solutions) < number_traces:
     # print(solution_list)
     if len(solution_list)> 1: #need atleast two actions to have informational value
         s_a_trace = convert_to_state_action_list(solution_list)
-        all_solutions.add((tuple(goal_desc),tuple(s_a_trace)))
+        goal_desc = (tuple(x) for x in goal_desc)
+        all_solutions.add((goal_desc,tuple(s_a_trace)))
 #---end outer for
 
 with open(pickle_dest_file, "wb") as destination:

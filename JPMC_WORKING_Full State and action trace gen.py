@@ -33,6 +33,7 @@ import copy
 from enum import Enum
 # from Logistics_pddl_file_modifier_2goals_1fixedInit import *
 from Logistics_pddl_file_modifier_5goals_distantGoals_randomInit import *
+# from Logistics_pddl_file_modifier_6goals_closer_randomInit import *
 
 number_traces = 10000
 keywords_before_solution = "Actual search time"
@@ -64,7 +65,7 @@ fd_heuristic_config = "--heuristic \"hlm=lama_synergy(lm_rhw(reasonable_orders=t
 domain_file_loc = "./Logistics_pddl/logistics_domain.pddl"
 problem_file_loc = dest_problem_file_name
 solution_file_loc = "./Logistics_pddl/logistics_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
-pickle_dest_file = "JPMC"+str(number_traces)+dest_name_suffix+"_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
+pickle_dest_file = "JPMC_5goalsDistant_"+str(number_traces)+dest_name_suffix+"_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
 
 #==============================================================================+++
 def insert_list_in_dict(input_list,dest_dict):
@@ -365,7 +366,7 @@ while len(all_solutions) < number_traces:
     # print(solution_list)
     if len(solution_list)> 1: #need atleast two actions to have informational value
         s_a_trace = convert_to_state_action_list(solution_list)
-        goal_desc = (tuple(x) for x in goal_desc)
+        goal_desc = tuple((tuple(x) for x in goal_desc))
         all_solutions.add((goal_desc,tuple(s_a_trace)))
 #---end outer for
 

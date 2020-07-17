@@ -29,7 +29,6 @@ import copy
 from enum import Enum
 # from Logistics_pddl_file_modifier_2goals_1fixedInit import *
 # from Logistics_pddl_file_modifier_10goals_randomInit import *
-# from Logistics_pddl_file_modifier_4goals_5_pkg_closer_randomInit import *
 from Logistics_pddl_file_modifier_4goals_3_pkg_moderateClose_randomInit import *
 
 NUMBER_TRACES = 4000
@@ -41,7 +40,7 @@ keywords_after_solution = "Plan length"
 #---for making problem files
 logisitics_gen_exec = "./Logistics_pddl/logistics "
 #code to generate a random problem space
-logistics_config = ["-c 10", "-s 4","-p 3", "-a 1"]# ["-c 4", "-s 3","-p 1", "-a 1"] means 4 cities, 3 locations in each city, 1 package, and 1 airplane
+logistics_config = ["-c 5", "-s 3","-p 3", "-a 1"]# ["-c 4", "-s 3","-p 1", "-a 1"] means 4 cities, 3 locations in each city, 1 package, and 1 airplane
 domain_base_descr = "logistics_" + "_".join(logistics_config).replace("-", "").replace(" ", "")
 dest_problem_file_name = "./Logistics_pddl/problem_" + domain_base_descr + ".pddl"#this is where the logistics problem file generator stores the problem.pddl file
 #---for FD
@@ -52,21 +51,17 @@ fd_heuristic_config = "--heuristic \"hlm=lama_synergy(lm_rhw(reasonable_orders=t
                       " --heuristic \"hff=ff_synergy(hlm)\" --search \"lazy_greedy([hff,hlm],preferred=[hff,hlm],cost_type=one,reopen_closed=false)\""
 
 
-
 # fd_heuristic_config = "--heuristic \"hlm,hff=lm_ff_syn(lm_rhw(reasonable_orders=true,lm_cost_type=one),transform=adapt_costs(one))\" --search \"lazy_greedy([hff,hlm],preferred=[hff,hlm],cost_type=one,reopen_closed=false)\""
 # fd_heuristic_config = "--alias seq-sat-lama-2011"
 # fd_heuristic_config = "--alias lama-first"
 
 
 
-
-
-
 domain_file_loc = "./Logistics_pddl/logistics_domain.pddl"
 problem_file_loc = dest_problem_file_name
 solution_file_loc = "./Logistics_pddl/logistics_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
-pickle_dest_file = "JPMC_V2_4goals_5pkg_distant_" + str(NUMBER_TRACES) + domain_base_descr + "_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
-pickle_test_data_dest_file = "JPMC_V2_TEST_4goals_5pkg_distant_" + str(NUMBER_TRACES) + domain_base_descr + "_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
+pickle_dest_file = "JPMC_V4_4goals_3pkg_modDist_" + str(NUMBER_TRACES) + domain_base_descr + "_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
+pickle_test_data_dest_file = "JPMC_V4_TEST_4goals_3pkg_modDist_" + str(NUMBER_TRACES) + domain_base_descr + "_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
 TOP_LEVEL_TEST_DIR = pickle_test_data_dest_file.replace(".p","")
 
 
@@ -355,7 +350,7 @@ while len(all_solutions) < NUMBER_TRACES:
     os.system(command +" > " + dest_problem_file_name)
 
 
-    # goal_desc,template_string_list = edit_initial_state_and_get_goal_and_template_10goals_randomInit(dest_problem_file_name)
+
     goal_desc,template_string_list = edit_initial_state_and_get_goal_and_template_4goals_3pkg_moderateClose_randomInit(dest_problem_file_name)
 
 

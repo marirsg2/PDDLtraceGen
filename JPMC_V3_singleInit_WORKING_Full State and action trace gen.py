@@ -27,21 +27,17 @@ import pickle
 import pddlpy
 import copy
 from enum import Enum
-# from Logistics_pddl_file_modifier_2goals_1fixedInit import *
-# from Logistics_pddl_file_modifier_10goals_randomInit import *
-# from Logistics_pddl_file_modifier_4goals_5_pkg_closer_randomInit import *
-from Logistics_pddl_file_modifier_4goals_3_pkg_moderateClose_randomInit import *
+from Logistics_pddl_file_modifier_4goals_closer import *
 
-NUMBER_TRACES = 4000
-TAKE_TESTS_AFTER = 100 #WAIT to see these many cases before adding test cases
-NUM_TEST_CASES = 100
-SAMPLING_RATIO_TEST_CASE = NUM_TEST_CASES/NUMBER_TRACES
+
+
+CUTOFF_RETRY_COUNT = 30
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
 logisitics_gen_exec = "./Logistics_pddl/logistics "
 #code to generate a random problem space
-logistics_config = ["-c 10", "-s 4","-p 3", "-a 1"]# ["-c 4", "-s 3","-p 1", "-a 1"] means 4 cities, 3 locations in each city, 1 package, and 1 airplane
+logistics_config = ["-c 10", "-s 4","-p 10", "-a 1"]# ["-c 4", "-s 3","-p 1", "-a 1"] means 4 cities, 3 locations in each city, 1 package, and 1 airplane
 domain_base_descr = "logistics_" + "_".join(logistics_config).replace("-", "").replace(" ", "")
 dest_problem_file_name = "./Logistics_pddl/problem_" + domain_base_descr + ".pddl"#this is where the logistics problem file generator stores the problem.pddl file
 #---for FD
@@ -65,8 +61,8 @@ fd_heuristic_config = "--heuristic \"hlm=lama_synergy(lm_rhw(reasonable_orders=t
 domain_file_loc = "./Logistics_pddl/logistics_domain.pddl"
 problem_file_loc = dest_problem_file_name
 solution_file_loc = "./Logistics_pddl/logistics_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
-pickle_dest_file = "JPMC_V2_4goals_5pkg_distant_" + str(NUMBER_TRACES) + domain_base_descr + "_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
-pickle_test_data_dest_file = "JPMC_V2_TEST_4goals_5pkg_distant_" + str(NUMBER_TRACES) + domain_base_descr + "_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
+pickle_dest_file = "JPMC_V3_fixedInit_4goals_closer_" + domain_base_descr + "_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
+pickle_test_data_dest_file = "JPMC_V3_fixedInit_TEST_4goals_closer_" + domain_base_descr + "_logistics_dataset.p" #THE PICKLE file where the generated data (plan traces) are stored
 TOP_LEVEL_TEST_DIR = pickle_test_data_dest_file.replace(".p","")
 
 
@@ -325,39 +321,44 @@ def convert_to_state_action_list(solution_list):
 
 # ==============================================================================+++
 domain_parser_obj = Domain_manipulator(domain_file_loc)
+seen_solutions = set()
 all_solutions = set()
 test_solutions = set()
 
 # with open(pickle_dest_file, "rb") as source_file:
 #     all_solutions = pickle.load(source_file)
 
+#NOCHANGE IN INIT STATE
+command = logisitics_gen_exec + " ".join(logistics_config)
+os.system(command +" > " + dest_problem_file_name)
 
-
-counter = 0
+retry_counter = 0 #counts number of failed attempts to find a new plan
+prev_solution_count = -1
 test_idx = 0 #will be set to 1 before first problem
 goals_set = set()
-while len(all_solutions) < NUMBER_TRACES:
-    is_test_case = False
-    if len(all_solutions) > TAKE_TESTS_AFTER and random.random() < SAMPLING_RATIO_TEST_CASE:
-        is_test_case = True
-    #end if
-    counter +=1
-    if counter%10 == 0:
-        print("At iteration", counter)
+while retry_counter < CUTOFF_RETRY_COUNT:
+
+    if len(all_solutions) == prev_solution_count:
+        retry_counter +=1
+        print("At retry_counter", retry_counter)
         print("Number solutions", len(all_solutions))
-    if counter%1000 == 0:
-        print("At iteration",counter)
+    prev_solution_count = len(all_solutions)
+
+
+    if retry_counter%1000 == 0:
+        print("At iteration", retry_counter)
         print("Number solutions",len(all_solutions))
         with open(pickle_dest_file, "wb") as destination:
             pickle.dump(all_solutions, destination)
+
+
     #---create problem files
-    command = logisitics_gen_exec + " ".join(logistics_config)
-    os.system(command +" > " + dest_problem_file_name)
+
+
 
 
     # goal_desc,template_string_list = edit_initial_state_and_get_goal_and_template_10goals_randomInit(dest_problem_file_name)
-    goal_desc,template_string_list = edit_initial_state_and_get_goal_and_template_4goals_3pkg_moderateClose_randomInit(dest_problem_file_name)
-
+    goal_desc,template_string_list = edit_initial_state_and_get_goal_and_template_4goals_closer(dest_problem_file_name)
 
 
     sorted(goal_desc)
@@ -384,58 +385,25 @@ while len(all_solutions) < NUMBER_TRACES:
     #---end with
     # print(solution_list)
     if len(solution_list)> 1: #need atleast two actions to have informational value
-        s_a_trace = convert_to_state_action_list(solution_list)
-        if not is_test_case:
+        if not tuple(solution_list) in seen_solutions:
+            seen_solutions.add(tuple(solution_list))
+            s_a_trace = convert_to_state_action_list(solution_list)
             all_solutions.add((tuple(goal_desc),tuple(s_a_trace)))
-        else:
-            test_idx += 1
-            test_solutions.add((tuple(goal_desc),tuple(s_a_trace)))
-            test_name = domain_base_descr+"_problem_"+str(test_idx)
-            try:
-                os.mkdir(TOP_LEVEL_TEST_DIR)
-            except :
-                pass
-            os.chdir(TOP_LEVEL_TEST_DIR)
-            try:
-                os.mkdir(test_name)
-            except FileExistsError:
-                pass
-            os.chdir(test_name)
-            os.system("cp "+ "../../"+domain_file_loc.replace("./","") + " domain.pddl")
-            with open("template.pddl","w") as template_file:
-                template_file.writelines(template_string_list)
-            with open("hyps.dat","w") as all_hyps_file:
-                for single_goal in goals_set:
-                    all_hyps_file.write(single_goal + "\n")
-            with open("real_hyp.dat","w") as real_hyp_file:
-                real_hyp_file.write(goal_single_line_form)
-            with open("obs.dat","w") as obs_file:
-                for single_action in solution_list:
-                    obs_file.write("("+single_action.replace("_"," ")+")\n")
-                #end for
-            #end with
-
-            #copy domain file, copy problem file AND remove goals , replace with "<HYPOTHESIS>",
-            os.chdir("..")
-            os.chdir("..")
-
     #end if solution > 1
 #---end outer for
+print("num solutions  = ", len(all_solutions))
 
 with open(pickle_dest_file, "wb") as destination:
     pickle.dump(all_solutions, destination)
 
-with open(pickle_test_data_dest_file, "wb") as destination:
-    pickle.dump(test_solutions, destination)
-
 # testing code
 with open(pickle_dest_file, "rb") as source_file:
     a = pickle.load(source_file)
-    counter = 0
+    retry_counter = 0
     for single in a:
-        counter+=1
+        retry_counter+=1
         print(single)
-        if counter == 10:
+        if retry_counter == 10:
             break
 
 

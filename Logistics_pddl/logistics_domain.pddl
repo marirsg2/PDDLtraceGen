@@ -82,4 +82,7 @@
 	(at ?airplane ?loc-from))
   :effect
    (and (not (at ?airplane ?loc-from)) (at ?airplane ?loc-to)))
+
+
 )
+

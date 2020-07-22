@@ -1,37 +1,36 @@
 INFO     Running translator.
-INFO     translator input: ['./Logistics_pddl/logistics_domain.pddl', './Logistics_pddl/problem_logistics_c5_s3_p3_a1.pddl']
-INFO     translator arguments: []
+INFO     translator stdin: None
 INFO     translator time limit: None
 INFO     translator memory limit: None
-INFO     callstring: /home/yochan/miniconda3/bin/python /home/yochan/FastDownward/builds/release32/bin/translate/translate.py ./Logistics_pddl/logistics_domain.pddl ./Logistics_pddl/problem_logistics_c5_s3_p3_a1.pddl
+INFO     translator command line string: /home/sgopal28/miniconda3/bin/python3 /home/sgopal28/Fastdownward/builds/release/bin/translate/translate.py ./Logistics_pddl/logistics_domain.pddl ./Logistics_pddl/problem_logistics_c8_s4_p1_a4.pddl --sas-file output.sas
 Parsing...
-Parsing: [0.000s CPU, 0.001s wall-clock]
+Parsing: [0.010s CPU, 0.003s wall-clock]
 Normalizing task... [0.000s CPU, 0.000s wall-clock]
 Instantiating...
 Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
 Normalizing Datalog program...
-Normalizing Datalog program: [0.000s CPU, 0.002s wall-clock]
-Preparing model... [0.010s CPU, 0.001s wall-clock]
-Generated 53 rules.
-Computing model... [0.000s CPU, 0.008s wall-clock]
-384 relevant atoms
-496 auxiliary atoms
-880 final queue length
-999 total queue pushes
-Completing instantiation... [0.010s CPU, 0.005s wall-clock]
-Instantiating: [0.020s CPU, 0.017s wall-clock]
+Normalizing Datalog program: [0.000s CPU, 0.003s wall-clock]
+Preparing model... [0.000s CPU, 0.002s wall-clock]
+Generated 51 rules.
+Computing model... [0.010s CPU, 0.012s wall-clock]
+820 relevant atoms
+824 auxiliary atoms
+1644 final queue length
+2061 total queue pushes
+Completing instantiation... [0.010s CPU, 0.011s wall-clock]
+Instantiating: [0.020s CPU, 0.028s wall-clock]
 Computing fact groups...
 Finding invariants...
-8 initial candidates
-Finding invariants: [0.000s CPU, 0.001s wall-clock]
+6 initial candidates
+Finding invariants: [0.010s CPU, 0.001s wall-clock]
 Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
 Instantiating groups... [0.000s CPU, 0.001s wall-clock]
 Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
 Choosing groups...
-3 uncovered facts
+0 uncovered facts
 Choosing groups: [0.000s CPU, 0.000s wall-clock]
 Building translation key... [0.000s CPU, 0.000s wall-clock]
-Computing fact groups: [0.000s CPU, 0.003s wall-clock]
+Computing fact groups: [0.010s CPU, 0.003s wall-clock]
 Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
 Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
 Building mutex information...
@@ -40,152 +39,116 @@ Translating task...
 Processing axioms...
 Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
 Processing axioms: [0.000s CPU, 0.000s wall-clock]
-Translating task: [0.010s CPU, 0.004s wall-clock]
+Translating task: [0.010s CPU, 0.008s wall-clock]
 0 effect conditions simplified
 0 implied preconditions added
 Detecting unreachable propositions...
 0 operators removed
 0 axioms removed
-15 propositions removed
-Detecting unreachable propositions: [0.000s CPU, 0.002s wall-clock]
+13 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.004s wall-clock]
 Reordering and filtering variables...
-9 of 9 variables necessary.
-0 of 9 mutex groups necessary.
-170 of 170 operators necessary.
+13 of 13 variables necessary.
+0 of 13 mutex groups necessary.
+448 of 448 operators necessary.
 0 of 0 axiom rules necessary.
 Reordering and filtering variables: [0.000s CPU, 0.001s wall-clock]
-Translator variables: 9
+Translator variables: 13
 Translator derived variables: 0
-Translator facts: 83
-Translator goal facts: 3
+Translator facts: 108
+Translator goal facts: 1
 Translator mutex groups: 0
 Translator total mutex groups size: 0
-Translator operators: 170
+Translator operators: 448
 Translator axioms: 0
-Translator task size: 725
-Translator peak memory: 256764 KB
-Writing output... [0.000s CPU, 0.001s wall-clock]
-Done! [0.030s CPU, 0.029s wall-clock]
-INFO     Running search (release32).
-INFO     search input: output.sas
-INFO     search arguments: ['--heuristic', 'hlm=lama_synergy(lm_rhw(reasonable_orders=true,lm_cost_type=one),transform=adapt_costs(one))', '--heuristic', 'hff=ff_synergy(hlm)', '--search', 'lazy_greedy([hff,hlm],preferred=[hff,hlm],cost_type=one,reopen_closed=false)']
+Translator task size: 1594
+Translator peak memory: 262152 KB
+Writing output... [0.000s CPU, 0.002s wall-clock]
+Done! [0.050s CPU, 0.050s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
 INFO     search time limit: None
 INFO     search memory limit: None
-INFO     search executable: /home/yochan/FastDownward/builds/release32/bin/downward
-INFO     callstring: /home/yochan/FastDownward/builds/release32/bin/downward --heuristic 'hlm=lama_synergy(lm_rhw(reasonable_orders=true,lm_cost_type=one),transform=adapt_costs(one))' --heuristic 'hff=ff_synergy(hlm)' --search 'lazy_greedy([hff,hlm],preferred=[hff,hlm],cost_type=one,reopen_closed=false)' --internal-plan-file sas_plan < output.sas
-reading input... [t=3.3988e-05s]
-done reading input! [t=0.00102963s]
-packing state variables...done! [t=0.00104094s]
-Variables: 9
-FactPairs: 83
-Bytes per state: 4
-Building successor generator...done! [t=0.00116136s]
-peak memory difference for root successor generator creation: 0 KB
-time for root successor generation creation: 7.5029e-05s
-done initializing global data [t=0.00119402s]
-Initializing Exploration...
-Initializing landmarks count heuristic...
-Generating landmarks using the RPG/SAS+ approach
-approx. reasonable orders
-approx. obedient reasonable orders
-Removed 0 reasonable or obedient reasonable orders
-Landmarks generation time: 0.000753221s
-Discovered 23 landmarks, of which 0 are disjunctive and 0 are conjunctive 
-49 edges
-Initializing LAMA-FF synergy master
-Initializing LAMA-FF synergy slave
-Conducting lazy best first search, (real) bound = 2147483647
-7 initial landmarks, 3 goal landmarks
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 16
-New best heuristic value for ff_synergy(hlm): 16
-[g=0, 1 evaluated, 0 expanded, t=0.00246174s, 4492 KB]
-Initial heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 16
-Initial heuristic value for ff_synergy(hlm): 16
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 15
-New best heuristic value for ff_synergy(hlm): 15
-[g=1, 4 evaluated, 3 expanded, t=0.00257823s, 4492 KB]
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 14
-New best heuristic value for ff_synergy(hlm): 14
-[g=2, 5 evaluated, 4 expanded, t=0.00263556s, 4492 KB]
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 13
-New best heuristic value for ff_synergy(hlm): 13
-[g=3, 6 evaluated, 5 expanded, t=0.00268887s, 4492 KB]
-New best heuristic value for ff_synergy(hlm): 12
-[g=4, 9 evaluated, 8 expanded, t=0.00277706s, 4492 KB]
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 12
-[g=4, 11 evaluated, 10 expanded, t=0.00284541s, 4492 KB]
-New best heuristic value for ff_synergy(hlm): 11
-[g=6, 16 evaluated, 15 expanded, t=0.00296907s, 4492 KB]
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 11
-New best heuristic value for ff_synergy(hlm): 10
-[g=7, 17 evaluated, 16 expanded, t=0.00301819s, 4492 KB]
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 10
-New best heuristic value for ff_synergy(hlm): 9
-[g=8, 18 evaluated, 17 expanded, t=0.00306765s, 4492 KB]
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 9
-[g=9, 20 evaluated, 19 expanded, t=0.00313329s, 4492 KB]
-New best heuristic value for ff_synergy(hlm): 8
-[g=10, 23 evaluated, 22 expanded, t=0.00322286s, 4492 KB]
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 8
-[g=10, 24 evaluated, 23 expanded, t=0.00326942s, 4492 KB]
-New best heuristic value for ff_synergy(hlm): 7
-[g=11, 25 evaluated, 24 expanded, t=0.00331583s, 4492 KB]
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 7
-New best heuristic value for ff_synergy(hlm): 6
-[g=12, 27 evaluated, 26 expanded, t=0.003386s, 4492 KB]
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 6
-[g=13, 28 evaluated, 27 expanded, t=0.0034324s, 4492 KB]
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 5
-New best heuristic value for ff_synergy(hlm): 5
-[g=14, 30 evaluated, 29 expanded, t=0.00350275s, 4492 KB]
-New best heuristic value for ff_synergy(hlm): 4
-[g=15, 31 evaluated, 30 expanded, t=0.00354738s, 4492 KB]
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 4
-[g=16, 32 evaluated, 31 expanded, t=0.00359431s, 4492 KB]
-New best heuristic value for ff_synergy(hlm): 3
-[g=16, 33 evaluated, 32 expanded, t=0.00364265s, 4492 KB]
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 3
-[g=17, 34 evaluated, 33 expanded, t=0.00369124s, 4492 KB]
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 2
-New best heuristic value for ff_synergy(hlm): 2
-[g=18, 36 evaluated, 35 expanded, t=0.00376084s, 4492 KB]
-New best heuristic value for lama_synergy(lm_rhw(reasonable_orders = true, lm_cost_type = one), transform = adapt_costs(one)): 1
-New best heuristic value for ff_synergy(hlm): 1
-[g=19, 37 evaluated, 36 expanded, t=0.00380794s, 4492 KB]
-Solution found!
-Actual search time: 0.00141748s [t=0.00384526s]
-load-truck p1 t4 l41 (1)
-drive-truck t4 l41 l40 c4 (1)
-unload-truck p1 t4 l40 (1)
-fly-airplane a0 l00 l20 (1)
-drive-truck t3 l30 l32 c3 (1)
-load-truck p2 t3 l32 (1)
-drive-truck t3 l32 l30 c3 (1)
-unload-truck p2 t3 l30 (1)
-drive-truck t2 l20 l21 c2 (1)
-load-truck p0 t2 l21 (1)
-drive-truck t2 l21 l20 c2 (1)
-unload-truck p0 t2 l20 (1)
-fly-airplane a0 l20 l30 (1)
-load-airplane p2 a0 l30 (1)
-fly-airplane a0 l30 l20 (1)
-fly-airplane a0 l20 l40 (1)
-load-airplane p1 a0 l40 (1)
-fly-airplane a0 l40 l20 (1)
-unload-airplane p2 a0 l20 (1)
-unload-airplane p1 a0 l20 (1)
-Plan length: 20 step(s).
-Plan cost: 20
-Expanded 37 state(s).
-Reopened 0 state(s).
-Evaluated 38 state(s).
-Evaluations: 76
-Generated 612 state(s).
-Dead ends: 0 state(s).
-Number of registered states: 38
-Int hash set load factor: 38/64 = 0.59375
-Int hash set resizes: 6
-Search time: 0.00143628s
-Total time: 0.00384866s
+INFO     search command line string: /home/sgopal28/Fastdownward/builds/release/bin/downward --heuristic 'hff=ff()' --heuristic 'hcea=cea()' --search 'lazy_greedy([hff, hcea], preferred=[hff, hcea])' --internal-plan-file sas_plan < output.sas
+[t=7.4375e-05s, 21052 KB] reading input...
+[t=0.00155718s, 21184 KB] done reading input!
+[t=0.00267882s, 21448 KB] Simplifying 448 unary operators... done! [448 unary operators]
+[t=0.00285835s, 21448 KB] time to simplify: 0.00020929s
+[t=0.00290148s, 21448 KB] Initializing additive heuristic...
+[t=0.00291775s, 21448 KB] Initializing FF heuristic...
+[t=0.00295097s, 21448 KB] Initializing context-enhanced additive heuristic...
+[t=0.00333392s, 21580 KB] Building successor generator...done!
+[t=0.00350575s, 21580 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00352187s, 21580 KB] time for successor generation creation: 0.000118372s
+[t=0.00355049s, 21580 KB] Variables: 13
+[t=0.00357685s, 21580 KB] FactPairs: 108
+[t=0.0035934s, 21580 KB] Bytes per state: 8
+[t=0.00369669s, 21580 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.00379329s, 21580 KB] New best heuristic value for cea: 11
+[t=0.00381121s, 21580 KB] New best heuristic value for ff: 11
+[t=0.00383942s, 21580 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00389125s, 21580 KB] Initial heuristic value for cea: 11
+[t=0.00390835s, 21580 KB] Initial heuristic value for ff: 11
+[t=0.00394719s, 21580 KB] New best heuristic value for cea: 10
+[t=0.00396351s, 21580 KB] New best heuristic value for ff: 10
+[t=0.00397869s, 21580 KB] g=1, 2 evaluated, 1 expanded
+[t=0.00413742s, 21580 KB] New best heuristic value for cea: 9
+[t=0.00415545s, 21580 KB] New best heuristic value for ff: 9
+[t=0.00417091s, 21580 KB] g=2, 5 evaluated, 4 expanded
+[t=0.00426766s, 21580 KB] New best heuristic value for cea: 8
+[t=0.00428428s, 21580 KB] New best heuristic value for ff: 8
+[t=0.00429973s, 21580 KB] g=3, 7 evaluated, 6 expanded
+[t=0.00440517s, 21580 KB] New best heuristic value for cea: 7
+[t=0.00442223s, 21580 KB] New best heuristic value for ff: 7
+[t=0.00443752s, 21580 KB] g=4, 9 evaluated, 8 expanded
+[t=0.00453002s, 21580 KB] New best heuristic value for cea: 6
+[t=0.00454683s, 21580 KB] New best heuristic value for ff: 6
+[t=0.00456197s, 21580 KB] g=5, 11 evaluated, 10 expanded
+[t=0.0046973s, 21580 KB] New best heuristic value for cea: 5
+[t=0.00471421s, 21580 KB] New best heuristic value for ff: 5
+[t=0.00472932s, 21580 KB] g=6, 14 evaluated, 13 expanded
+[t=0.00481758s, 21580 KB] New best heuristic value for cea: 4
+[t=0.00483475s, 21580 KB] New best heuristic value for ff: 4
+[t=0.00485014s, 21580 KB] g=7, 16 evaluated, 15 expanded
+[t=0.0049462s, 21580 KB] New best heuristic value for cea: 3
+[t=0.00496292s, 21580 KB] New best heuristic value for ff: 3
+[t=0.00497792s, 21580 KB] g=8, 18 evaluated, 17 expanded
+[t=0.005068s, 21580 KB] New best heuristic value for cea: 2
+[t=0.00508464s, 21580 KB] New best heuristic value for ff: 2
+[t=0.00509965s, 21580 KB] g=9, 20 evaluated, 19 expanded
+[t=0.00514485s, 21580 KB] New best heuristic value for cea: 1
+[t=0.00516133s, 21580 KB] New best heuristic value for ff: 1
+[t=0.00517627s, 21580 KB] g=10, 21 evaluated, 20 expanded
+[t=0.00521882s, 21580 KB] Solution found!
+[t=0.00523677s, 21580 KB] Actual search time: 0.00152146s
+drive-truck t7 l72 l70 c7 (1)
+load-truck p0 t4 l43 (1)
+drive-truck t4 l43 l40 c4 (1)
+unload-truck p0 t4 l40 (1)
+fly-airplane a0 l50 l40 (1)
+load-airplane p0 a0 l40 (1)
+fly-airplane a0 l40 l70 (1)
+unload-airplane p0 a0 l70 (1)
+load-truck p0 t7 l70 (1)
+drive-truck t7 l70 l71 c7 (1)
+unload-truck p0 t7 l71 (1)
+[t=0.00524179s, 21580 KB] Plan length: 11 step(s).
+[t=0.00524179s, 21580 KB] Plan cost: 11
+[t=0.00524179s, 21580 KB] Expanded 21 state(s).
+[t=0.00524179s, 21580 KB] Reopened 0 state(s).
+[t=0.00524179s, 21580 KB] Evaluated 22 state(s).
+[t=0.00524179s, 21580 KB] Evaluations: 44
+[t=0.00524179s, 21580 KB] Generated 1115 state(s).
+[t=0.00524179s, 21580 KB] Dead ends: 0 state(s).
+[t=0.00524179s, 21580 KB] Number of registered states: 22
+[t=0.00524179s, 21580 KB] Int hash set load factor: 22/32 = 0.6875
+[t=0.00524179s, 21580 KB] Int hash set resizes: 5
+[t=0.00524179s, 21580 KB] Search time: 0.00158362s
+[t=0.00524179s, 21580 KB] Total time: 0.00524179s
 Solution found.
-Peak memory: 4492 KB
+Peak memory: 21580 KB
+Remove intermediate file output.sas
+search exit code: 0
+

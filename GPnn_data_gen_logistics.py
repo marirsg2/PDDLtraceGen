@@ -38,7 +38,7 @@ keywords_after_solution = "Plan length"
 #---for making problem files
 logisitics_gen_exec = "./Logistics_pddl/logistics "
 #code to generate a random problem space
-logistics_config = ["-c 8", "-s 4","-p 1", "-a 4"]# ["-c 4", "-s 3","-p 1", "-a 1"] means 4 cities, 3 locations in each city, 1 package, and 1 airplane
+logistics_config = ["-c 2", "-s 4","-p 1", "-a 1"]# ["-c 4", "-s 3","-p 1", "-a 1"] means 4 cities, 3 locations in each city, 1 package, and 1 airplane
 dest_name_suffix = "_".join(logistics_config).replace("-","").replace(" ","")
 dest_problem_file_name = "./Logistics_pddl/problem_logistics_" + dest_name_suffix + ".pddl"#this is where the logistics problem file generator stores the problem.pddl file
 #---for FD
@@ -377,8 +377,10 @@ while len(all_solutions) < number_traces:
     #---end with
     # print(solution_list)
     if len(solution_list)> 1: #need atleast two actions to have informational value
-        state_seq,action_seq, goals = get_state_sequence_form_with_goals(solution_list)
-        all_solutions.add((state_seq,goals))
+        single_seq,action_seq, goals = get_state_sequence_form_with_goals(solution_list)
+        for seq_idx in range(len(single_seq)):
+            all_solutions.add((single_seq[seq_idx], goals, len(single_seq) - seq_idx + 1))
+        # end for loop
 #---end outer for
 
 with open(pickle_dest_file, "wb") as destination:

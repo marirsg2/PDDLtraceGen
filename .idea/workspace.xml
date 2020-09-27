@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc2548e8-a632-4c17-9841-f8e07ed02a6d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/JPMC_multi_problem_GPnn_data_gen_logistics.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi_problem_GPnn_data_gen_logistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/JPMC_multi_problem_GPnn_data_gen_gripper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sas_plan" beforeDir="false" afterPath="$PROJECT_DIR$/sas_plan" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +203,7 @@
       <workItem from="1600815239627" duration="109000" />
       <workItem from="1600815532606" duration="705000" />
       <workItem from="1600881258476" duration="4450000" />
-      <workItem from="1601218977355" duration="4134000" />
+      <workItem from="1601218977355" duration="5931000" />
     </task>
     <servers />
   </component>

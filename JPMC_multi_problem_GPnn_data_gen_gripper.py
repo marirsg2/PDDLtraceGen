@@ -23,7 +23,7 @@ import copy
 from enum import Enum
 
 
-NEXT the action class for "pick" has no parameters, understand and fix this
+# NEXT the action class for "pick" has no parameters, understand and fix this
 
 
 number_traces = 100
@@ -186,6 +186,9 @@ for problem_config in all_configs:
             :param domain_file:
             :return: list of action_objects
             """
+
+
+
             ret_action_dict = {}
             action_start_token  = ":action"
             parameter_start_token  = ":parameter"
@@ -217,14 +220,35 @@ for problem_config in all_configs:
                         parsing_state = self.Action_parsing_state.in_parameters
                     elif parameter_start_token in line:
                         parsing_state = self.Action_parsing_state.in_parameters
+                        line = line.replace("(", "").replace(")", "").replace("\n", "")
+                        parameters = line.split(" ")
+                        parameter_list += [x.replace("?", "") for x in parameters if "?" in x]
                     elif precondition_start_token in line:
                         parsing_state = self.Action_parsing_state.in_preconditions
+                        line = line.replace("(and", "").replace("?", "")
+                        propositions = line.split(")")
+                        for single_proposition in propositions:
+                            if "(" in single_proposition:
+                                proposition_string = single_proposition.split("(")[-1]
+                                proposition_parts_list = proposition_string.split(" ")
+                                insert_list_in_dict(proposition_parts_list, preconditions_dict)
                     elif effect_start_token in line:
                         parsing_state = self.Action_parsing_state.in_effects
+                        line = line.replace("(and", "").replace("?", "")
+                        propositions = line.split(")")
+                        for single_proposition in propositions:
+                            if "(" in single_proposition:
+                                target_dict = pos_effects_dict
+                                if "(not" in single_proposition:
+                                    target_dict = neg_effects_dict
+                                    single_proposition = single_proposition.replace("(not", "")
+                                proposition_string = single_proposition.split("(")[-1]
+                                proposition_parts_list = proposition_string.split(" ")
+                                insert_list_in_dict(proposition_parts_list, target_dict)
                     elif parsing_state == self.Action_parsing_state.in_parameters:
-                        line = line.replace("(","").replace(")","").replace("?","").replace("\n","")
+                        line = line.replace("(","").replace(")","").replace("\n","")
                         parameters = line.split(" ")
-                        parameter_list += [x for x in parameters if x != '']
+                        parameter_list += [x.replace("?","") for x in parameters if "?" in x]
                     elif parsing_state == self.Action_parsing_state.in_preconditions:
                         line = line.replace("(and","").replace("?","")
                         propositions = line.split(")")

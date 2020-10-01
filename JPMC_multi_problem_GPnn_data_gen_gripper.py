@@ -26,17 +26,17 @@ from enum import Enum
 # NEXT the action class for "pick" has no parameters, understand and fix this
 
 
-number_traces = 100
+number_traces = 1000
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
 problem_gen_exec = "./Gripper_pddl/gripper "
 #code to generate a random problem space
 merged_data = []
-pickle_dest_file = "JPMC_GenPlan_gripper_multiSetting.p"  # THE PICKLE file where the generated data (plan traces) are stored
+pickle_dest_file = "./Gripper_pddl/JPMC_GenPlan_gripper_multiSetting.p"  # THE PICKLE file where the generated data (plan traces) are stored
 # gripper -n 22 -r 22 -o 190  robots rooms balls
 # all_configs= [["-n 1", "-r 2","-o 2"],["-n 1", "-r 5","-o 5"]]
-all_configs= [["-n 1", "-r 10","-o 20"]]
+all_configs= [["-n 1", "-r 2","-o 5"],["-n 1", "-r 4","-o 5"],["-n 1", "-r 8","-o 5"],["-n 1", "-r 16","-o 5"],["-n 1", "-r 64","-o 5"]]
 
 for problem_config in all_configs:
     dest_name_suffix = "_".join(problem_config).replace("-","").replace(" ","")

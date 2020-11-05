@@ -46,7 +46,7 @@ for logistics_config in all_configs:
     dest_name_suffix = "_".join(logistics_config).replace("-","").replace(" ","")
     dest_problem_file_name = "./Logistics_pddl/problem_logistics_" + dest_name_suffix + ".pddl"#this is where the logistics problem file generator stores the problem.pddl file
     #---for FD
-    fast_downward_exec_loc = "~/Fastdownward/fast-downward.py"
+    fast_downward_exec_loc = "~/downward/fast-downward.py"
     fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --search \"lazy_greedy([hff, hcea], preferred=[hff, hcea])\""
     domain_file_loc = "./Logistics_pddl/logistics_domain.pddl"
     problem_file_loc = dest_problem_file_name

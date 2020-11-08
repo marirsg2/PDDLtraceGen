@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cc2548e8-a632-4c17-9841-f8e07ed02a6d" name="Default" comment="">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gripper_pddl/gripper_solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Gripper_pddl/gripper_solution.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JPMC_multi_problem_GPnn_data_gen_gripper.py" beforeDir="false" afterPath="$PROJECT_DIR$/JPMC_multi_problem_GPnn_data_gen_gripper.py" afterDir="false" />
@@ -15,6 +16,11 @@
       <change beforePath="$PROJECT_DIR$/Logistics_pddl/problem_logistics_c4_s3_p1_a1.pddl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Logistics_pddl/problem_logistics_c4_s3_p1_a2.pddl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/multi_problem_GPnn_data_gen_logistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/multi_problem_GPnn_data_gen_logistics.py" afterDir="false" />
+>>>>>>> Stashed changes
+=======
+      <change afterPath="$PROJECT_DIR$/Gripper_pddl/JPMC_GenPlan_gripper_multiSetting.p" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gripper_pddl/gripper_solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Gripper_pddl/gripper_solution.txt" afterDir="false" />
 >>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/sas_plan" beforeDir="false" afterPath="$PROJECT_DIR$/sas_plan" afterDir="false" />
     </list>
@@ -241,7 +247,8 @@
       <workItem from="1601218977355" duration="5931000" />
       <workItem from="1601254474706" duration="2019000" />
       <workItem from="1601407735881" duration="4316000" />
-      <workItem from="1601485341031" duration="4580000" />
+      <workItem from="1601485341031" duration="5188000" />
+      <workItem from="1604616549660" duration="652000" />
     </task>
     <servers />
   </component>
@@ -270,35 +277,39 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="671" y="146" key="#JPMC_multi_problem_GPnn_data_gen_gripper" timestamp="1601506211529">
+    <state x="671" y="146" key="#JPMC_multi_problem_GPnn_data_gen_gripper" timestamp="1604616556178">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
+<<<<<<< Updated upstream
     <state x="671" y="146" key="#JPMC_multi_problem_GPnn_data_gen_gripper/65.24.1855.1056@65.24.1855.1056" timestamp="1601506211529" />
     <state x="671" y="145" key="#WORKING_Full_State_and_action_trace_gen" timestamp="1595447297093">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="671" y="145" key="#WORKING_Full_State_and_action_trace_gen/65.24.1855.1056@65.24.1855.1056" timestamp="1595447297093" />
 <<<<<<< Updated upstream
+=======
+    <state x="671" y="146" key="#JPMC_multi_problem_GPnn_data_gen_gripper/65.24.1855.1056@65.24.1855.1056" timestamp="1604616556178" />
+>>>>>>> Stashed changes
     <state x="780" y="297" key="FileChooserDialogImpl" timestamp="1596300260616">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state x="780" y="297" key="FileChooserDialogImpl/65.24.1855.1056@65.24.1855.1056" timestamp="1596300260616" />
-    <state width="1809" height="296" key="GridCell.Tab.0.bottom" timestamp="1601568112964">
+    <state width="1809" height="296" key="GridCell.Tab.0.bottom" timestamp="1601770327616">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="296" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1601568112964" />
-    <state width="1809" height="296" key="GridCell.Tab.0.center" timestamp="1601568112961">
+    <state width="1809" height="296" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1601770327616" />
+    <state width="1809" height="296" key="GridCell.Tab.0.center" timestamp="1601770327615">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="296" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1601568112961" />
-    <state width="1809" height="296" key="GridCell.Tab.0.left" timestamp="1601568112961">
+    <state width="1809" height="296" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1601770327615" />
+    <state width="1809" height="296" key="GridCell.Tab.0.left" timestamp="1601770327614">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="296" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1601568112961" />
-    <state width="1809" height="296" key="GridCell.Tab.0.right" timestamp="1601568112962">
+    <state width="1809" height="296" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1601770327614" />
+    <state width="1809" height="296" key="GridCell.Tab.0.right" timestamp="1601770327615">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state width="1809" height="296" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1601568112962" />
+    <state width="1809" height="296" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1601770327615" />
     <state width="1809" height="365" key="GridCell.Tab.1.bottom" timestamp="1601418835126">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
@@ -343,10 +354,10 @@
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
     <state width="1809" height="365" key="GridCell.Tab.1.right/65.24.1855.1056@65.24.1855.1056" timestamp="1601418835126" />
-    <state x="486" y="174" key="SettingsEditor" timestamp="1601506221691">
+    <state x="486" y="174" key="SettingsEditor" timestamp="1604616572178">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
-    <state x="486" y="174" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1601506221691" />
+    <state x="486" y="174" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1604616572178" />
     <state x="653" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1601407747774">
       <screen x="65" y="24" width="1855" height="1056" />
     </state>
@@ -496,7 +507,7 @@
     <SUITE FILE_PATH="coverage/PDDLtraceGen$Barman_WORKING_Full_State_and_action_trace_gen.coverage" NAME="Barman_WORKING_Full State and action trace gen Coverage Results" MODIFIED="1570140765274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PDDLtraceGen$JPMC_v2_Logistics_Data_gen.coverage" NAME="JPMC_v2_Logistics_Data_gen Coverage Results" MODIFIED="1592437099292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PDDLtraceGen$JPMC_V3_singleInit_WORKING_Full_State_and_action_trace_gen.coverage" NAME="JPMC_V3_singleInit_WORKING_Full State and action trace gen Coverage Results" MODIFIED="1591825542670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PDDLtraceGen$JPMC_multi_problem_GPnn_data_gen_gripper.coverage" NAME="JPMC_multi_problem_GPnn_data_gen_gripper Coverage Results" MODIFIED="1601568112943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PDDLtraceGen$JPMC_multi_problem_GPnn_data_gen_gripper.coverage" NAME="JPMC_multi_problem_GPnn_data_gen_gripper Coverage Results" MODIFIED="1604616574415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PDDLtraceGen$JPMC_v4_Logistics_Data_gen.coverage" NAME="JPMC_v4_Logistics_Data_gen Coverage Results" MODIFIED="1592861573677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PDDLtraceGen$multi_problem_GPnn_data_gen_logistics.coverage" NAME="multi_problem_GPnn_data_gen_logistics Coverage Results" MODIFIED="1595456964017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PDDLtraceGen$JPMC_multi_problem_GPnn_data_gen_logistics.coverage" NAME="JPMC_multi_problem_GPnn_data_gen_logistics Coverage Results" MODIFIED="1601418793460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

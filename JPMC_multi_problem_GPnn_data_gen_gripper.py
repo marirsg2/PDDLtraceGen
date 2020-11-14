@@ -26,24 +26,28 @@ from enum import Enum
 # NEXT the action class for "pick" has no parameters, understand and fix this
 
 
-number_traces = 1000
+number_traces = 5000
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
 problem_gen_exec = "./Gripper_pddl/gripper "
 #code to generate a random problem space
 merged_data = []
-pickle_dest_file = "./Gripper_pddl/JPMC_GenPlan_gripper_multiSetting.p"  # THE PICKLE file where the generated data (plan traces) are stored
+pickle_dest_file = "./Gripper_pddl/JPMC_GenPlan_gripper_singleSetting_n1r5o5.p"  # THE PICKLE file where the generated data (plan traces) are stored
 # gripper -n 22 -r 22 -o 190  robots rooms balls
+all_configs= [["-n 1", "-r 5","-o 5"]]
 # all_configs= [["-n 1", "-r 2","-o 2"],["-n 1", "-r 5","-o 5"]]
-all_configs= [["-n 1", "-r 2","-o 5"],["-n 1", "-r 4","-o 5"],["-n 1", "-r 8","-o 5"],["-n 1", "-r 16","-o 5"],["-n 1", "-r 64","-o 5"]]
+# all_configs= [["-n 1", "-r 2","-o 5"],["-n 1", "-r 4","-o 5"],["-n 1", "-r 8","-o 5"],["-n 1", "-r 16","-o 5"],["-n 1", "-r 64","-o 5"]]
 
 for problem_config in all_configs:
     dest_name_suffix = "_".join(problem_config).replace("-","").replace(" ","")
     dest_problem_file_name = "./Gripper_pddl/gripper_problems_" + dest_name_suffix + ".pddl"#this is where the problems problem file generator stores the problem.pddl file
     #---for FD
     fast_downward_exec_loc = "~/Fastdownward/fast-downward.py"
-    fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --search \"lazy_greedy([hff, hcea], preferred=[hff, hcea])\""
+    # fd_alias = ""
+    fd_alias = "--alias seq-opt-lmcut"
+    fd_heuristic_config = ""
+    # fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --search \"lazy_greedy([hff, hcea], preferred=[hff, hcea])\""
     domain_file_loc = "./Gripper_pddl/gripper_domain.pddl"
     problem_file_loc = dest_problem_file_name
     solution_file_loc = "./Gripper_pddl/gripper_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
@@ -103,11 +107,19 @@ for problem_config in all_configs:
         :param translation_dict:
         :return:
         """
-        for single_key in translation_dict:
-            if single_key in input_string:
-                input_string = input_string.replace(single_key,translation_dict[single_key])
-            #end if
-        #end for
+        input_string_parts = input_string.split("_")
+        translated_parts = []
+        for single_part in input_string_parts:
+            if single_part in translation_dict.keys():
+                translated_parts.append(translation_dict[single_part])
+            else:
+                translated_parts.append(single_part)
+        input_string = "_".join(translated_parts)
+        # for single_key in translation_dict:
+        #     if single_key in input_string:
+        #         input_string = input_string.replace(single_key,translation_dict[single_key])
+        #     #end if
+        # #end for
         return input_string
     #==================================================
     class Action:
@@ -146,6 +158,7 @@ for problem_config in all_configs:
                 grounded_precondition_params = translate_by_dict(precondition_parameters,translation_dict)
                 grounded_precondition = precondition_type + "_" + grounded_precondition_params
                 if not grounded_precondition in starting_state_set:
+                    raise Exception("The action could not be executed from the previous state, preconditions did not match")
                     return starting_state_set
             #now convert the positive and negative effects into their grounded form
             for single_neg_effect in self.neg_effects_set:
@@ -244,6 +257,7 @@ for problem_config in all_configs:
                                     single_proposition = single_proposition.replace("(not", "")
                                 proposition_string = single_proposition.split("(")[-1]
                                 proposition_parts_list = proposition_string.split(" ")
+                                proposition_parts_list = [x for x in proposition_parts_list if x != ""]
                                 insert_list_in_dict(proposition_parts_list, target_dict)
                     elif parsing_state == self.Action_parsing_state.in_parameters:
                         line = line.replace("(","").replace(")","").replace("\n","")
@@ -268,6 +282,7 @@ for problem_config in all_configs:
                                     single_proposition = single_proposition.replace("(not","")
                                 proposition_string = single_proposition.split("(")[-1]
                                 proposition_parts_list = proposition_string.split(" ")
+                                proposition_parts_list = [x for x in proposition_parts_list if x != ""]
                                 insert_list_in_dict(proposition_parts_list,target_dict)
                     #end elif parsing_state == self.Action_parsing_state.in_effects:
                 #end for loop
@@ -388,7 +403,7 @@ for problem_config in all_configs:
             dest.writelines(all_lines)
 
         #---NOW we have the problem files ,lets generate the solutions with fast downward
-        fd_command = fast_downward_exec_loc + " " + domain_file_loc + " " + problem_file_loc + " " +fd_heuristic_config
+        fd_command = fast_downward_exec_loc + " "+ fd_alias + " " + domain_file_loc + " " + problem_file_loc + " " +fd_heuristic_config
         os.system(fd_command+" > " + solution_file_loc)
         #---now extract the solution
         solution_list = []
@@ -410,7 +425,7 @@ for problem_config in all_configs:
         if len(solution_list)> 1: #need atleast two actions to have informational value
             single_seq,action_seq, goals = get_state_sequence_form_with_goals(solution_list)
             for seq_idx in range(len(single_seq)):
-                all_solutions.add((single_seq[seq_idx], goals, len(single_seq) - seq_idx + 1))
+                all_solutions.add((single_seq[seq_idx], goals, len(single_seq) - (seq_idx + 1)) )
             # end for loop
     #---end outer for
     merged_data += all_solutions

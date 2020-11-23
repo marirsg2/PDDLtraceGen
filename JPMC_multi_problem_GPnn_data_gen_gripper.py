@@ -24,21 +24,24 @@ from enum import Enum
 
 
 # NEXT the action class for "pick" has no parameters, understand and fix this
+sgopal
 
-
-number_traces = 5000
+number_traces = 40000
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
 problem_gen_exec = "./Gripper_pddl/gripper "
 #code to generate a random problem space
 merged_data = []
-pickle_dest_file = "./Gripper_pddl/JPMC_GenPlan_gripper_singleSetting_n1r5o5.p"  # THE PICKLE file where the generated data (plan traces) are stored
+pickle_dest_file = "./Gripper_pddl/JPMC_GenPlan_gripper_singleSetting_varyRoomsBalls_40k.p"  # THE PICKLE file where the generated data (plan traces) are stored
 # gripper -n 22 -r 22 -o 190  robots rooms balls
-all_configs= [["-n 1", "-r 5","-o 5"]]
-# all_configs= [["-n 1", "-r 2","-o 2"],["-n 1", "-r 5","-o 5"]]
+# all_configs= [["-n 1", "-r 5","-o 5"]]
+# all_configs= [["-n 1", "-r 2","-o 5"],["-n 1", "-r 5","-o 3"],["-n 1", "-r 11","-o 7"],["-n 1", "-r 13","-o 17"]]
 # all_configs= [["-n 1", "-r 2","-o 5"],["-n 1", "-r 4","-o 5"],["-n 1", "-r 8","-o 5"],["-n 1", "-r 16","-o 5"],["-n 1", "-r 64","-o 5"]]
-
+all_configs= [["-n 1", "-r 2","-o 5"],["-n 1", "-r 5","-o 3"],["-n 1", "-r 11","-o 7"],["-n 1", "-r 13","-o 17"],
+              ["-n 1", "-r 3","-o 7"],["-n 1", "-r 7","-o 5"],["-n 1", "-r 17","-o 31"]]
+number_traces = int(number_traces/len(all_configs))
+#----------------------
 for problem_config in all_configs:
     dest_name_suffix = "_".join(problem_config).replace("-","").replace(" ","")
     dest_problem_file_name = "./Gripper_pddl/gripper_problems_" + dest_name_suffix + ".pddl"#this is where the problems problem file generator stores the problem.pddl file
@@ -431,6 +434,8 @@ for problem_config in all_configs:
     merged_data += all_solutions
 #---end for loop through problems configs
 
+# with open(pickle_dest_file, "wb") as destination:
+#     pickle.dump(merged_data, destination)
 with open(pickle_dest_file, "wb") as destination:
     pickle.dump(merged_data, destination)
 

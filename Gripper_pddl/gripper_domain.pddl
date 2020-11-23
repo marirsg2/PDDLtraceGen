@@ -14,7 +14,7 @@
 
   (:action pick
 	   :parameters (?r - robot ?obj - ball ?room - room ?gripper - gripper)
-	   :precondition (and (at ?obj ?room) (at-robby ?r ?room) (free ?gripper ?r))
+	   :precondition (and (at ?obj ?room) (at-robby ?r ?room) (free ?r ?gripper))
 	   :effect (and (carry ?obj ?gripper)
 			(not (at ?obj ?room)) 
 			(not (free ?r ?gripper))))

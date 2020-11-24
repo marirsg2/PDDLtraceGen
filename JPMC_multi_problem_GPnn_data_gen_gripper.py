@@ -24,9 +24,9 @@ from enum import Enum
 
 
 # NEXT the action class for "pick" has no parameters, understand and fix this
-sgopal
 
-number_traces = 40000
+
+number_traces = 20000
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
@@ -38,11 +38,12 @@ pickle_dest_file = "./Gripper_pddl/JPMC_GenPlan_gripper_singleSetting_varyRoomsB
 # all_configs= [["-n 1", "-r 5","-o 5"]]
 # all_configs= [["-n 1", "-r 2","-o 5"],["-n 1", "-r 5","-o 3"],["-n 1", "-r 11","-o 7"],["-n 1", "-r 13","-o 17"]]
 # all_configs= [["-n 1", "-r 2","-o 5"],["-n 1", "-r 4","-o 5"],["-n 1", "-r 8","-o 5"],["-n 1", "-r 16","-o 5"],["-n 1", "-r 64","-o 5"]]
-all_configs= [["-n 1", "-r 2","-o 5"],["-n 1", "-r 5","-o 3"],["-n 1", "-r 11","-o 7"],["-n 1", "-r 13","-o 17"],
-              ["-n 1", "-r 3","-o 7"],["-n 1", "-r 7","-o 5"],["-n 1", "-r 17","-o 31"]]
+all_configs= [["-n 1", "-r 13","-o 10"],["-n 1", "-r 5","-o 10"],["-n 1", "-r 7","-o 7"],["-n 1", "-r 13","-o 5"],
+              ["-n 1", "-r 3","-o 7"],["-n 1", "-r 9","-o 5"],["-n 1", "-r 5","-o 9"]]
 number_traces = int(number_traces/len(all_configs))
 #----------------------
 for problem_config in all_configs:
+    print("problem_config = ", problem_config)
     dest_name_suffix = "_".join(problem_config).replace("-","").replace(" ","")
     dest_problem_file_name = "./Gripper_pddl/gripper_problems_" + dest_name_suffix + ".pddl"#this is where the problems problem file generator stores the problem.pddl file
     #---for FD

@@ -17,3 +17,9 @@ Logistics_pddl/logistics_solution\.txt
 \.idea/
 
 *.dat
+
+Gripper_pddl/GripperFDSolutionSet/
+
+sas_plan
+
+Gripper_pddl/gripper_solution.txt

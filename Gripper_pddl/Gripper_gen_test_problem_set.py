@@ -17,12 +17,13 @@ merged_data = []
 problems_folder = "GripperProblemSet"
 solutions_folder = "GripperFDSolutionSet"
 
-# all_configs= [["-n 1", "-r 2","-o 5"],["-n 1", "-r 4","-o 5"],["-n 1", "-r 8","-o 5"],["-n 1", "-r 16","-o 5"],["-n 1", "-r 64","-o 5"]]
-# all_configs= [["-n 1", "-r 13","-o 10"],["-n 1", "-r 5","-o 10"],["-n 1", "-r 7","-o 7"],["-n 1", "-r 13","-o 5"],
-#               ["-n 1", "-r 3","-o 7"],["-n 1", "-r 9","-o 5"],["-n 1", "-r 5","-o 9"]]
-#todo I wonder if it learns better when you have a subset of settings varying only one dimension, and another varying only another dimension rather than mixing
-all_configs= [["-n 1", "-r 2","-o 100"],["-n 1", "-r 5","-o 13"],["-n 1", "-r 7","-o 7"],["-n 1", "-r 13","-o 5"],
-              ["-n 1", "-r 3","-o 7"],["-n 1", "-r 9","-o 5"]]
+
+all_configs= [["-n 1", "-r 2","-o 100"],["-n 1", "-r 5","-o 13"],["-n 1", "-r 9","-o 7"],["-n 1", "-r 11","-o 6"],
+              ["-n 1", "-r 4","-o 8"],["-n 1", "-r 15","-o 15"]]
+
+
+
+
 
 number_problems = int(number_problems/len(all_configs))
 
@@ -48,7 +49,6 @@ for problem_config in all_configs:
         #---for FD
         fast_downward_exec_loc = "~/Fastdownward/fast-downward.py"
         fd_alias = ""
-        # fd_alias = "--alias seq-opt-lmcut"
         fd_alias = "--alias lama-first"
         fd_heuristic_config = ""
         # fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --search \"lazy_greedy([hff, hcea], preferred=[hff, hcea])\""
@@ -61,8 +61,8 @@ for problem_config in all_configs:
         # IMPORTANT note if you COMMENT out the following 2 lines, then it will reuse the problem file already there,
         #  this allows you to make modifications to them. and see the assoc solutions
         # make sure to NOT empty the problem folder, and only empty the solution folder
-        command = problem_gen_exec + " ".join(problem_config)
-        os.system(command +" > " + dest_problem_file_name)
+        # command = problem_gen_exec + " ".join(problem_config)
+        # os.system(command +" > " + dest_problem_file_name)
 
         #for gripper the problem generator calls the balls, as objects. need to update problem file
         all_lines = []

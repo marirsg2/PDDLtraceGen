@@ -52,9 +52,13 @@ for problem_config in all_configs:
     dest_problem_file_name = "./Gripper_pddl/gripper_problems_" + dest_name_suffix + ".pddl"#this is where the problems problem file generator stores the problem.pddl file
     #---for FD
     fast_downward_exec_loc = "~/Fastdownward/fast-downward.py"
-    # fd_alias = ""
-    fd_alias = "--alias seq-opt-lmcut"
+    fd_alias = ""
+    # fd_alias = "--alias seq-opt-lmcut"
+    # fd_alias = "--alias seq-opt-lmcut"
+    fd_alias = "--alias seq-sat-lama-2011"
     fd_heuristic_config = ""
+    # fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --search \"lazy_greedy([hff, hcea], preferred=[hff, hcea])\""
+    # fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --search \"lazy_greedy([hff, hcea], preferred=[hff, hcea])\""
     # fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --search \"lazy_greedy([hff, hcea], preferred=[hff, hcea])\""
     domain_file_loc = "./Gripper_pddl/gripper_domain.pddl"
     problem_file_loc = dest_problem_file_name

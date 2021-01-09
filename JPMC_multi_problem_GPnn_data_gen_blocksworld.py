@@ -17,6 +17,7 @@ May need to process the problem file to type the objects in the ":objects" secti
 
 import subprocess
 import os
+from shutil import copyfile
 import pickle
 import pddlpy
 import copy
@@ -29,12 +30,13 @@ keywords_after_solution = "Plan length"
 #---for making problem files
 #code to generate a random problem space
 merged_data = []
-storage_folder = "~/workspace/PDDLtraceGen/Blocksworld"
+storage_folder = "/home/yochan-ubuntu19/workspace/PDDLtraceGen/Blocksworld"
 domain_name = "blocksworld" #for the lisp directory
 pickle_dest_file = "./Blocksworld/JPMC_GenPlan_Blocksworld.p"  # THE PICKLE file where the generated data (plan traces) are stored
 home_dir = "~"
 #todo ALSO UPDATE THE FASTDOWNWARD locations for domain and problem done in the for loop through configs
-lisp_plan_to_state_seq_base_folder = home_dir + "/home/yochan-ubuntu19/workspace/deepplan/dist"
+lisp_plan_to_state_seq_base_folder ="/home/yochan-ubuntu19/workspace/deepplan/dist"
+# lisp_plan_to_state_seq_base_folder = home_dir + "/workspace/deepplan/dist"
 """
 configs are 
 num blocks, num blocks in goal.
@@ -44,6 +46,30 @@ latter must be greater than former
 all_configs= [[3,3],[5,5],[5,3], [10,3],[10,5],[10,10]]
 number_traces = int(number_traces/len(all_configs))
 
+
+#================================================
+def check_if_stacked(block_a, block_b, stacking_dict):
+    ret_val = False
+    lower_block = block_a
+    try:
+        upper_block = stacking_dict[lower_block]
+        if upper_block == block_b:
+            return True
+        else:
+            lower_block = upper_block
+
+    except KeyError:
+        pass
+    return ret_val
+
+#================================================
+def get_all_stacked(block_a,stacking_dict):
+    stacked_list = [block_a]
+    while True:
+        try:
+            stacked_list.append(stacking_dict[stacked_list[-1]])
+        except KeyError:
+            return stacked_list
 
 #================================================
 def generate_blocksworld_problem(num_blocks, dest_file_name, num_blocks_in_goal = None):
@@ -58,6 +84,8 @@ def generate_blocksworld_problem(num_blocks, dest_file_name, num_blocks_in_goal 
     block_obj_list = ["b"+str(x) for x in range(num_blocks)]
     goal_blocks_list = random.sample(block_obj_list,num_blocks_in_goal)
     clear_blocks = copy.deepcopy(block_obj_list)
+    stacking_dict = {}
+
     with open(dest_file_name,"w") as dest_file:
         dest_file.write("(define (problem BW-rand-" + str(num_blocks)+")\n")
         dest_file.write("(:domain blocksworld)\n")
@@ -67,14 +95,19 @@ def generate_blocksworld_problem(num_blocks, dest_file_name, num_blocks_in_goal 
         dest_file.write("(handempty)\n")
         for block in block_obj_list:
             #either choose a clear block to stack on, or be on table
-            available_choices = clear_blocks + ["ontable"]
+            avail_blocks = copy.deepcopy(clear_blocks)
+            avail_blocks = [x for x in clear_blocks if x not in get_all_stacked(block,stacking_dict)]
+            available_choices = avail_blocks + ["ontable"]
             pos = random.choice(available_choices)
             if pos == 'ontable':
                 dest_file.write("(ontable "+block+")\n")
             else:#it will be placed on a block
                 dest_file.write("(on "+block +' '+pos+")\n")
+                stacking_dict[pos] = block
                 clear_blocks.remove(pos)
         #end for loop
+        for clear_block in clear_blocks: #those left clear
+            dest_file.write("(clear " + clear_block+")\n")
         dest_file.write(")\n")
         #now write the goals
         dest_file.write("(:goal\n")
@@ -82,7 +115,9 @@ def generate_blocksworld_problem(num_blocks, dest_file_name, num_blocks_in_goal 
         clear_blocks = copy.deepcopy(goal_blocks_list)
         for block in goal_blocks_list:
             #either choose a clear block to stack on, or be on table
-            available_choices = clear_blocks+ ["ontable"]
+            avail_blocks = copy.deepcopy(clear_blocks)
+            avail_blocks = [x for x in clear_blocks if x not in get_all_stacked(block,stacking_dict)]
+            available_choices = avail_blocks + ["ontable"]
             pos = random.choice(available_choices)
             if pos == 'ontable':
                 dest_file.write("(ontable "+block+")\n")
@@ -233,24 +268,28 @@ for problem_config in all_configs:
             #---end for
         #---end with
         # print(solution_list)
+        if len(solution_list) == 0:
+            continue
+        solution_action_seq_string = '\"('+ " ".join(solution_list) + ')\"'
+        os.system("cp " + problem_file_loc + " " + lisp_plan_to_state_seq_base_folder + "/planning/sayphi/domains/blocksworld/probsets/test.pddl")
 
-
-
-        # cwd= os.getcwd()
+        cwd= os.getcwd()
         #use daniels lisp code to convert the action sequence into a state sequence
-        # os.chdir(lisp_plan_to_state_seq_base_folder)
-        os.system(lisp_plan_to_state_seq_base_folder + "/get-state.sh " + solution + domain_name + " domain.pddl test.pddl "
-                  +storage_folder+"/state-list.txt")
-        # os.chdir(cwd)
+        os.chdir(lisp_plan_to_state_seq_base_folder)
+        command_to_exec ="./get-state.sh " + solution_action_seq_string + " " +domain_name + " domain.pddl test.pddl "\
+                  +storage_folder+"/state-list.txt"
+        os.system(command_to_exec)
+        os.chdir(cwd)
         #get the solution from the state list file
         with open(storage_folder+"/state-list.txt","r") as src:
-            all_solution_lines = solution_file.readlines()
+            all_solution_lines = src.readlines()
         #each line of the solution is a full state, ('at_ball6_room10', 'at_ball1_room7',...)
         single_seq = []
-        for state_line in all_solution_lines:
+        for single_line in all_solution_lines:
             single_state = []
+            state_line = single_line.lower().replace("\n","")
             for proposition in state_line.split(","):
-                single_state.append(proposition.split().replace(" ","_") )
+                single_state.append(proposition.strip().replace(" ","_") )
             single_seq.append(tuple(single_state))
         #---end for loop through solution
         single_seq = tuple(single_seq)

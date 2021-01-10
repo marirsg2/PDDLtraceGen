@@ -24,7 +24,7 @@ import copy
 import random
 from enum import Enum
 
-number_traces = 2000
+number_traces = 10000
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
@@ -43,7 +43,7 @@ num blocks, num blocks in goal.
 latter must be greater than former
 
 """
-all_configs= [[3,3],[5,5],[5,3], [10,3],[10,5],[10,10]]
+all_configs= [[5,3],[5,5], [10,3],[10,5],[10,10]]
 number_traces = int(number_traces/len(all_configs))
 
 
@@ -96,7 +96,7 @@ def generate_blocksworld_problem(num_blocks, dest_file_name, num_blocks_in_goal 
         for block in block_obj_list:
             #either choose a clear block to stack on, or be on table
             avail_blocks = copy.deepcopy(clear_blocks)
-            avail_blocks = [x for x in clear_blocks if x not in get_all_stacked(block,stacking_dict)]
+            avail_blocks = [x for x in avail_blocks if x not in get_all_stacked(block,stacking_dict)]
             available_choices = avail_blocks + ["ontable"]
             pos = random.choice(available_choices)
             if pos == 'ontable':
@@ -109,20 +109,22 @@ def generate_blocksworld_problem(num_blocks, dest_file_name, num_blocks_in_goal 
         for clear_block in clear_blocks: #those left clear
             dest_file.write("(clear " + clear_block+")\n")
         dest_file.write(")\n")
-        #now write the goals
+        #===now write the goals
         dest_file.write("(:goal\n")
         dest_file.write("(and\n")
         clear_blocks = copy.deepcopy(goal_blocks_list)
+        stacking_dict = {}
         for block in goal_blocks_list:
             #either choose a clear block to stack on, or be on table
             avail_blocks = copy.deepcopy(clear_blocks)
-            avail_blocks = [x for x in clear_blocks if x not in get_all_stacked(block,stacking_dict)]
+            avail_blocks = [x for x in avail_blocks if x not in get_all_stacked(block,stacking_dict)]
             available_choices = avail_blocks + ["ontable"]
             pos = random.choice(available_choices)
             if pos == 'ontable':
                 dest_file.write("(ontable "+block+")\n")
             else:#it will be placed on a block
                 dest_file.write("(on "+block +' '+pos+")\n")
+                stacking_dict[pos] = block
                 clear_blocks.remove(pos)
         #end for loop through goal blocks
         dest_file.write(")\n)\n)")
@@ -278,6 +280,7 @@ for problem_config in all_configs:
         os.chdir(lisp_plan_to_state_seq_base_folder)
         command_to_exec ="./get-state.sh " + solution_action_seq_string + " " +domain_name + " domain.pddl test.pddl "\
                   +storage_folder+"/state-list.txt"
+        print("lisp command_to_exec = ", command_to_exec)
         os.system(command_to_exec)
         os.chdir(cwd)
         #get the solution from the state list file

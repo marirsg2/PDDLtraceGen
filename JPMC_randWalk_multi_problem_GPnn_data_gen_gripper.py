@@ -56,6 +56,18 @@ for problem_config in all_configs:
     solution_file_loc = "./Gripper_pddl/gripper_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
 
     #==============================================================================+++
+    def ground_operator_by_state(action_type_name, curr_state, pddl_obj):
+        """
+
+        :param curr_state:
+        :param pddl_obj:
+        :return:
+        """
+        pddl_obj.operators()
+        pddl_obj.ground_operator()
+        pddl_obj.vargroundspace
+
+    #==============================================================================+++
     def replace_init_state_problem(problem_file_loc,curr_state,dest_problem_file_loc = "new_problem.pddl"):
         """
         
@@ -75,7 +87,7 @@ for problem_config in all_configs:
                 problem_file_lines.append(single_line)
                 seen_init = True
                 for single_proposition in curr_state:
-                    problem_file_lines.append("("+single_proposition.replace("_"," ")+")")
+                    problem_file_lines.append("("+single_proposition.replace("_"," ")+")\n")
                 problem_file_lines.append(")")
             #--end if
             if not seen_init:
@@ -85,15 +97,21 @@ for problem_config in all_configs:
         with open(dest_problem_file_loc,"w") as dest:
             dest.writelines(problem_file_lines)
     #==============================================================================+++
-    def func_random_step(curr_state,seen_states):
+    def func_random_step(curr_state,goal_propositions,seen_states):
         #make problem file from curr_state, goal state
         new_problem_file_loc = "./new_problem.pddl"
         replace_init_state_problem(problem_file_loc,curr_state,dest_problem_file_loc=new_problem_file_loc)
         pddl_obj = pddlpy.DomainProblem(domain_file_loc, new_problem_file_loc)
+        move_iter = ground_operator_by_state("pick",curr_state,pddl_obj)
+        for i in move_iter:
+            print(i.variable_list)
 
-        next , take the random step , get the new state, CHECK if in seen states, else try another
-        if all in seen states, return None !!
-        generate the new problem file and return that.
+        TRY USING PYPER PLAN CODE TO TAKE RANDOM STEPS 
+
+
+        # todo  next , take the random step , get the new state, CHECK if in seen states, else try another
+        # if all in seen states, return None !!
+        # generate the new problem file and return that.
     #==============================================================================+++
     def insert_list_in_dict(input_list,dest_dict):
         """
@@ -469,7 +487,7 @@ for problem_config in all_configs:
         # print(solution_list)
         if len(solution_list)> 1: #need atleast two actions to have informational value
             single_seq,action_seq, goals = get_state_sequence_form_with_goals(solution_list)
-            seen_states = {}
+            seen_states = set()
             for seq_idx in range(len(single_seq)):
                 all_solutions.add((single_seq[seq_idx], goals, len(single_seq) - (seq_idx + 1)) )
                 seen_states.add(single_seq[seq_idx])
@@ -481,15 +499,15 @@ for problem_config in all_configs:
             # repeat recursively for N random steps, avoid seen states
             for i in range(MAX_RAND_STEPS):
                 #------------take a random step
-                curr_start_state = func_random_step(curr_start_state,goal_state, seen_states)
+                curr_start_state = func_random_step(curr_start_state,goals, seen_states)
                 if curr_start_state == None:
                     break# this can happen if all the random steps from the current state have been seen
                 #------------
-                solution_list = make_problem_get_solution(curr_start_state,goal_state)
-                single_seq, action_seq, goals = get_state_sequence_form_with_goals(solution_list)
-                for seq_idx in range(len(single_seq)):
-                    all_solutions.add((single_seq[seq_idx], goals, len(single_seq) - (seq_idx + 1)))
-                    seen_states.add(single_seq[seq_idx])
+                # todo solution_list = make_problem_get_solution(curr_start_state,goals)
+                # single_seq, action_seq, goals = get_state_sequence_form_with_goals(solution_list)
+                # for seq_idx in range(len(single_seq)):
+                #     all_solutions.add((single_seq[seq_idx], goals, len(single_seq) - (seq_idx + 1)))
+                #     seen_states.add(single_seq[seq_idx])
         #end if
 
     #---end outer for

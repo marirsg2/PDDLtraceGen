@@ -1,0 +1,153 @@
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /home/yochan-ubuntu19/anaconda3/envs/PDDLtraceGen/bin/python3 /home/yochan-ubuntu19/Fastdownward/builds/release/bin/translate/translate.py ./blocksworld_domain.pddl ./BlocksworldProblemSet/blocksworld_problems_5_5_5.pddl --sas-file output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.001s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.001s wall-clock]
+Preparing model... [0.010s CPU, 0.000s wall-clock]
+Generated 21 rules.
+Computing model... [0.000s CPU, 0.001s wall-clock]
+117 relevant atoms
+75 auxiliary atoms
+192 final queue length
+303 total queue pushes
+Completing instantiation... [0.000s CPU, 0.002s wall-clock]
+Instantiating: [0.010s CPU, 0.005s wall-clock]
+Computing fact groups...
+Finding invariants...
+10 initial candidates
+Finding invariants: [0.000s CPU, 0.003s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+6 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.000s CPU, 0.003s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+Computing negative axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.000s CPU, 0.002s wall-clock]
+70 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+10 propositions removed
+Detecting unreachable propositions: [0.000s CPU, 0.001s wall-clock]
+Reordering and filtering variables...
+11 of 11 variables necessary.
+6 of 11 mutex groups necessary.
+50 of 50 operators necessary.
+0 of 0 axiom rules necessary.
+Reordering and filtering variables: [0.010s CPU, 0.001s wall-clock]
+Translator variables: 11
+Translator derived variables: 0
+Translator facts: 42
+Translator goal facts: 5
+Translator mutex groups: 6
+Translator total mutex groups size: 36
+Translator operators: 50
+Translator axioms: 0
+Translator task size: 454
+Translator peak memory: 29488 KB
+Writing output... [0.000s CPU, 0.000s wall-clock]
+Done! [0.020s CPU, 0.014s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /home/yochan-ubuntu19/Fastdownward/builds/release/bin/downward --evaluator 'hlm=lmcount(lm_factory=lm_rhw(reasonable_orders=true),transform=adapt_costs(one),pref=false)' --evaluator 'hff=ff(transform=adapt_costs(one))' --search 'lazy_greedy([hff,hlm],preferred=[hff,hlm],cost_type=one,reopen_closed=false)' --internal-plan-file sas_plan < output.sas
+[t=2.2204e-05s, 9680 KB] reading input...
+[t=0.000290641s, 9680 KB] done reading input!
+[t=0.00112779s, 9936 KB] Initializing landmarks count heuristic...
+[t=0.00116918s, 9936 KB] Initializing Exploration...
+[t=0.00122886s, 9936 KB] Generating landmarks using the RPG/SAS+ approach
+approx. reasonable orders
+[t=0.00148053s, 9936 KB] approx. obedient reasonable orders
+[t=0.00151313s, 9936 KB] Removed 0 reasonable or obedient reasonable orders
+[t=0.00169014s, 9936 KB] Landmarks generation time: 0.000548018s
+[t=0.00171454s, 9936 KB] Discovered 21 landmarks, of which 0 are disjunctive and 0 are conjunctive.
+[t=0.00173042s, 9936 KB] 55 edges
+[t=0.00179043s, 9936 KB] Simplifying 190 unary operators... done! [150 unary operators]
+[t=0.00189667s, 9936 KB] time to simplify: 0.000125394s
+[t=0.0019264s, 9936 KB] Initializing additive heuristic...
+[t=0.00194281s, 9936 KB] Initializing FF heuristic...
+[t=0.0020008s, 9936 KB] Building successor generator...done!
+[t=0.00207008s, 9936 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00208531s, 9936 KB] time for successor generation creation: 2.1771e-05s
+[t=0.00210342s, 9936 KB] Variables: 11
+[t=0.00211933s, 9936 KB] FactPairs: 42
+[t=0.00213485s, 9936 KB] Bytes per state: 4
+[t=0.00219871s, 9936 KB] Conducting lazy best first search, (real) bound = 2147483647
+[t=0.0022399s, 9936 KB] 11 initial landmarks, 5 goal landmarks
+[t=0.00227047s, 9936 KB] New best heuristic value for lmcount(lm_factory = lm_rhw(reasonable_orders = true), transform = adapt_costs(one), pref = false): 10
+[t=0.00228877s, 9936 KB] New best heuristic value for ff(transform = adapt_costs(one)): 7
+[t=0.00230515s, 9936 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00232494s, 9936 KB] Initial heuristic value for lmcount(lm_factory = lm_rhw(reasonable_orders = true), transform = adapt_costs(one), pref = false): 10
+[t=0.00234191s, 9936 KB] Initial heuristic value for ff(transform = adapt_costs(one)): 7
+[t=0.00238392s, 9936 KB] New best heuristic value for lmcount(lm_factory = lm_rhw(reasonable_orders = true), transform = adapt_costs(one), pref = false): 9
+[t=0.00240278s, 9936 KB] g=3, 4 evaluated, 3 expanded
+[t=0.00245008s, 9936 KB] New best heuristic value for lmcount(lm_factory = lm_rhw(reasonable_orders = true), transform = adapt_costs(one), pref = false): 6
+[t=0.00246887s, 9936 KB] New best heuristic value for ff(transform = adapt_costs(one)): 6
+[t=0.00248506s, 9936 KB] g=6, 8 evaluated, 7 expanded
+[t=0.00251747s, 9936 KB] New best heuristic value for lmcount(lm_factory = lm_rhw(reasonable_orders = true), transform = adapt_costs(one), pref = false): 4
+[t=0.0025359s, 9936 KB] g=7, 10 evaluated, 9 expanded
+[t=0.00256138s, 9936 KB] New best heuristic value for lmcount(lm_factory = lm_rhw(reasonable_orders = true), transform = adapt_costs(one), pref = false): 3
+[t=0.00257951s, 9936 KB] New best heuristic value for ff(transform = adapt_costs(one)): 4
+[t=0.00261039s, 9936 KB] g=8, 11 evaluated, 10 expanded
+[t=0.00265221s, 9936 KB] New best heuristic value for lmcount(lm_factory = lm_rhw(reasonable_orders = true), transform = adapt_costs(one), pref = false): 2
+[t=0.00267297s, 9936 KB] g=9, 12 evaluated, 11 expanded
+[t=0.00269766s, 9936 KB] New best heuristic value for lmcount(lm_factory = lm_rhw(reasonable_orders = true), transform = adapt_costs(one), pref = false): 1
+[t=0.00271563s, 9936 KB] New best heuristic value for ff(transform = adapt_costs(one)): 2
+[t=0.00273147s, 9936 KB] g=10, 13 evaluated, 12 expanded
+[t=0.00275389s, 9936 KB] New best heuristic value for ff(transform = adapt_costs(one)): 1
+[t=0.00277205s, 9936 KB] g=11, 14 evaluated, 13 expanded
+[t=0.00279372s, 9936 KB] Solution found!
+[t=0.00281266s, 9936 KB] Actual search time: 0.000567531s
+unstack b2 b0 (1)
+put-down b2 (1)
+unstack b0 b3 (1)
+put-down b0 (1)
+unstack b3 b1 (1)
+put-down b3 (1)
+unstack b1 b4 (1)
+stack b1 b3 (1)
+pick-up b0 (1)
+stack b0 b4 (1)
+pick-up b2 (1)
+stack b2 b0 (1)
+[t=0.0028308s, 9936 KB] Plan length: 12 step(s).
+[t=0.0028308s, 9936 KB] Plan cost: 12
+[t=0.0028308s, 9936 KB] Expanded 14 state(s).
+[t=0.0028308s, 9936 KB] Reopened 0 state(s).
+[t=0.0028308s, 9936 KB] Evaluated 15 state(s).
+[t=0.0028308s, 9936 KB] Evaluations: 30
+[t=0.0028308s, 9936 KB] Generated 45 state(s).
+[t=0.0028308s, 9936 KB] Dead ends: 0 state(s).
+[t=0.0028308s, 9936 KB] Number of registered states: 15
+[t=0.0028308s, 9936 KB] Int hash set load factor: 15/16 = 0.9375
+[t=0.0028308s, 9936 KB] Int hash set resizes: 4
+[t=0.0028308s, 9936 KB] Search time: 0.000632565s
+[t=0.0028308s, 9936 KB] Total time: 0.0028308s
+Solution found.
+Peak memory: 9936 KB
+Remove intermediate file output.sas
+search exit code: 0
+

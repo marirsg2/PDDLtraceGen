@@ -26,17 +26,17 @@ from enum import Enum
 # NEXT the action class for "pick" has no parameters, understand and fix this
 
 
-number_traces = 20000
+number_traces = 40000
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
 problem_gen_exec = "./Gripper_pddl/gripper "
 #code to generate a random problem space
 merged_data = []
-pickle_dest_file = "./Gripper_pddl/JPMC_GenPlan_gripper_singleSetting_varyRoomsBalls_40k.p"  # THE PICKLE file where the generated data (plan traces) are stored
+pickle_dest_file = "./Gripper_pddl/JPMC_GenPlan_gripper_40k_suboptimalHeur.p"  # THE PICKLE file where the generated data (plan traces) are stored
 # gripper -n 22 -r 22 -o 190  robots rooms balls
 all_configs= [["-n 1", "-r 13","-o 10"],["-n 1", "-r 5","-o 10"],["-n 1", "-r 7","-o 7"],["-n 1", "-r 13","-o 5"],
-              ["-n 1", "-r 3","-o 7"],["-n 1", "-r 9","-o 5"],["-n 1", "-r 5","-o 9"]]
+              ["-n 1", "-r 3","-o 7"],["-n 1", "-r 15","-o 17"],["-n 1", "-r 20","-o 20"],["-n 1", "-r 30","-o 22"]]
 number_traces = int(number_traces/len(all_configs))
 #----------------------
 for problem_config in all_configs:
@@ -46,9 +46,9 @@ for problem_config in all_configs:
     #---for FD
     fast_downward_exec_loc = "~/Fastdownward/fast-downward.py"
     # fd_alias = ""
-    fd_alias = "--alias seq-opt-lmcut"
-    fd_heuristic_config = ""
-    # fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --search \"lazy_greedy([hff, hcea], preferred=[hff, hcea])\""
+    # fd_alias = "--alias seq-opt-lmcut"
+    # fd_heuristic_config = ""
+    fd_heuristic_config = "--heuristic \"hff=ff()\" --heuristic \"hcea=cea()\" --search \"lazy_greedy([hff, hcea], preferred=[hff, hcea])\""
     domain_file_loc = "./Gripper_pddl/gripper_domain.pddl"
     problem_file_loc = dest_problem_file_name
     solution_file_loc = "./Gripper_pddl/gripper_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
@@ -404,7 +404,10 @@ for problem_config in all_configs:
             dest.writelines(all_lines)
 
         #---NOW we have the problem files ,lets generate the solutions with fast downward
-        fd_command = fast_downward_exec_loc + " "+ fd_alias + " " + domain_file_loc + " " + problem_file_loc + " " +fd_heuristic_config
+        # fd_command = fast_downward_exec_loc + " "+ fd_alias + " " + domain_file_loc + " " + problem_file_loc + " " +fd_heuristic_config
+        fd_command = fast_downward_exec_loc + " " + domain_file_loc + " " + problem_file_loc + " " + fd_heuristic_config
+        print("NOTE CURRENTLY RUNNING SUBOPTIMAL HEURISTIC FOR PLANNING")
+
         os.system(fd_command+" > " + solution_file_loc)
         #---now extract the solution
         solution_list = []

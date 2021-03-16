@@ -24,7 +24,7 @@ import copy
 import random
 from enum import Enum
 
-number_traces = 10000
+number_traces = 20000
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
@@ -32,7 +32,7 @@ keywords_after_solution = "Plan length"
 merged_data = []
 storage_folder = "/home/yochan-ubuntu19/workspace/PDDLtraceGen/Blocksworld"
 domain_name = "blocksworld" #for the lisp directory
-pickle_dest_file = "./Blocksworld/JPMC_GenPlan_Blocksworld.p"  # THE PICKLE file where the generated data (plan traces) are stored
+pickle_dest_file = "./Blocksworld/JPMC_GenPlan_Blocksworld_round2.p"  # THE PICKLE file where the generated data (plan traces) are stored
 home_dir = "~"
 #todo ALSO UPDATE THE FASTDOWNWARD locations for domain and problem done in the for loop through configs
 lisp_plan_to_state_seq_base_folder ="/home/yochan-ubuntu19/workspace/deepplan/dist"
@@ -43,7 +43,7 @@ num blocks, num blocks in goal.
 latter must be greater than former
 
 """
-all_configs= [[5,3],[5,5], [10,3],[10,5],[10,10]]
+all_configs= [[5,3],[5,5], [10,3],[10,5],[10,10],[12,5],[12,12]]
 number_traces = int(number_traces/len(all_configs))
 
 
@@ -311,9 +311,9 @@ with open(pickle_dest_file, "wb") as destination:
     pickle.dump(merged_data, destination)
 
 # testing code
-with open(pickle_dest_file, "rb") as source_file:
-    a = pickle.load(source_file)
-    for single in a:
-        print(single)
+# with open(pickle_dest_file, "rb") as source_file:
+#     a = pickle.load(source_file)
+#     for single in a:
+#         print(single)
 
 

@@ -105,13 +105,13 @@ for problem_config in all_configs:
         # a = pddl_obj.ground_operator("pick")
         # print(a)
         # move_iter = ground_operator_by_state("pick",curr_state,pddl_obj)
-        move_iter = pddl_obj.ground_operator("pick")
+        move_iter = pddl_obj.ground_operator_curr_state_only("pick")
         for i in move_iter:
             print(i.variable_list)
-
-        AHA !! just update ground_operator() in pddl_obj to check if the preconditions (pos and neg)
-        are accounted for in the probelm state, it is very very each, check if subset for pos elements and check if difference is
-            the same as initial state for neg elements
+        
+        # AHA !! just update ground_operator() in pddl_obj to check if the preconditions (pos and neg)
+        # are accounted for in the probelm state, it is very very each, check if subset for pos elements and check if difference is
+        #     the same as initial state for neg elements
 
 
         # todo  next , take the random step , get the new state, CHECK if in seen states, else try another

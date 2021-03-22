@@ -29,7 +29,7 @@ from enum import Enum
 
 
 number_traces = 40000
-MAX_RAND_STEPS = 5
+# MAX_RAND_STEPS = 5 NOT IN USE, we take one random step from each step in the solution.
 keywords_before_solution = "Actual search time"
 keywords_after_solution = "Plan length"
 #---for making problem files
@@ -56,17 +56,6 @@ for problem_config in all_configs:
     problem_file_loc = dest_problem_file_name
     solution_file_loc = "./Gripper_pddl/gripper_solution.txt"#THIS Is where the solutions from FASTDDOWNWARD are stored, not the traces.
 
-    #==============================================================================+++
-    def ground_operator_by_state(action_type_name, curr_state, pddl_obj):
-        """
-
-        :param curr_state:
-        :param pddl_obj:
-        :return:
-        """
-        pddl_obj.operators()
-        pddl_obj.ground_operator()
-        pddl_obj.vargroundspace
 
     #==============================================================================+++
     def replace_init_state_problem(problem_file_loc,curr_state,dest_problem_file_loc = "new_problem.pddl"):
@@ -106,21 +95,25 @@ for problem_config in all_configs:
         all_operators = list(starting_pddl_obj.operators())
         random.shuffle(all_operators)
         for curr_operator in all_operators:
+            action_instance_iter = starting_pddl_obj.ground_operator_curr_state_only(curr_operator)
             try:
-                action_instance_iter = starting_pddl_obj.ground_operator_curr_state_only(curr_operator)
                 single_action = action_instance_iter.__next__()
-                new_state = set(starting_pddl_obj.initialstate())
-                new_state.difference_update(single_action.effect_neg)
-                new_state.update(single_action.effect_pos)
-                new_state = tuple(new_state)
-                if new_state in seen_states:
-                    continue
-                #else we can
-                seen_states.add(new_state)
-                return new_state
-            except:
-                #there was no operator instance for current state, try next op
-                pass
+            except: #there is not action instance in this state
+                continue
+            new_state = {x.ground({}) for x in starting_pddl_obj.initialstate()}
+            new_state.difference_update(single_action.effect_neg)
+            new_state.update(single_action.effect_pos)
+            temp_state = []
+            for x in new_state:
+                # prop_parts = x.predicate
+                temp_state.append("_".join(x))
+            #end for loop
+            new_state = tuple(temp_state)
+            if new_state in seen_states:
+                continue
+            #else we can
+            seen_states.add(new_state)
+            return new_state
         #end
         return None #there was no random step to an unseen state.
 
@@ -412,7 +405,7 @@ for problem_config in all_configs:
         return s_a_trace,pddl_obj.goals()
 
     #=============================================================================+++
-    def get_state_sequence_form_with_goals(solution_list,include_static_props = True):
+    def get_state_sequence_form_with_goals(solution_list,prob_file = None,include_static_props = True):
         """
         :summary : Get the start state from the problem file. Parse each action, and apply it to the start state.
         Get the resultant state and repeat. Each state is converted into a list of propositions and placed in the trace.
@@ -420,10 +413,12 @@ for problem_config in all_configs:
         :param solution_list:
         :return:
         """
+        if prob_file == None:
+            prob_file = problem_file_loc
         state_seq_trace = []
         action_seq_trace = []
         #get the start state using pddlpy
-        pddl_obj = pddlpy.DomainProblem(domain_file_loc, problem_file_loc)
+        pddl_obj = pddlpy.DomainProblem(domain_file_loc, prob_file)
         init_state_prop_set = pddl_obj.initialstate()
         state_dict = {}
         for single_prop in init_state_prop_set:
@@ -499,17 +494,14 @@ for problem_config in all_configs:
         #---end with
         # print(solution_list)
         if len(solution_list)> 1: #need atleast two actions to have informational value
-            single_seq,action_seq, goals = get_state_sequence_form_with_goals(solution_list)
+            single_seq,action_seq, goals = get_state_sequence_form_with_goals(solution_list,prob_file=problem_file_loc)
             seen_states = set()
             for seq_idx in range(len(single_seq)):
                 all_solutions.add((single_seq[seq_idx], goals, len(single_seq) - (seq_idx + 1)) )
                 seen_states.add(single_seq[seq_idx])
             # end for loop
-            # now we can do the random walk from different states/points in the solution. The base version is to only do the randomwalk
-            # from the initial state
-            curr_start_state = single_seq[0]
-            #take a random step, convert the state into a problem, and try to get the solution to the same goal
-            # repeat recursively for N random steps, avoid seen states
+            # now we can do the random walk from different states/points in the solution.
+            # The base version is to only do a random step from each point in the solution
             for curr_start_state in single_seq:
                 #------------take a random step
                 new_start_state = func_random_step(curr_start_state, seen_states)
@@ -520,7 +512,7 @@ for problem_config in all_configs:
                 fd_command = fast_downward_exec_loc + " " + domain_file_loc + " " + random_step_prob_file + " " + fd_heuristic_config
                 os.system(fd_command + " > " + solution_file_loc)
                 # ---now extract the solution
-                solution_list = []
+                randWalk_solution_list = []
                 with open(solution_file_loc, "r") as solution_file:
                     all_lines = solution_file.readlines()
                     start_of_solution = False
@@ -533,24 +525,21 @@ for problem_config in all_configs:
                         if start_of_solution:
                             the_word = single_line.split("(")[0].replace(" ", "_")[
                                        :-1]  # we get rid of trailing info like "(1)\n"
-                            solution_list.append(the_word)
+                            randWalk_solution_list.append(the_word)
                     # ---end for
                 # ---end with
                 # print(solution_list)
-                if len(solution_list) > 1:  # need atleast two actions to have informational value
-                    single_seq, action_seq, goals = get_state_sequence_form_with_goals(solution_list)
-                    seen_states = set()
-                    for seq_idx in range(len(single_seq)):
-                        all_solutions.add((single_seq[seq_idx], goals, len(single_seq) - (seq_idx + 1)))
-                        seen_states.add(single_seq[seq_idx])
+                if len(randWalk_solution_list) > 1:  # need atleast two actions to have informational value
+                    randWalk_single_seq, randWalk_action_seq, randWalk_goals = \
+                        get_state_sequence_form_with_goals(randWalk_solution_list,prob_file=random_step_prob_file)
+                    for seq_idx in range(len(randWalk_single_seq)):
+                        all_solutions.add((randWalk_single_seq[seq_idx], randWalk_goals, len(randWalk_single_seq) - (seq_idx + 1)))
+                        seen_states.add(randWalk_single_seq[seq_idx])
                 #end if the solution after the random step is greater than 1
             #end for loop through the original plan states
-
-
         #end if statement for if the solution length is > 1 , i.e. we are not already at the goal state
+    #end while the number of solutions/data points is less than the required amount
 
-
-        #end if
 
     #---end outer for
     merged_data += all_solutions

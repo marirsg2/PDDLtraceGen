@@ -502,7 +502,8 @@ for problem_config in all_configs:
             # end for loop
             # now we can do the random walk from different states/points in the solution.
             # The base version is to only do a random step from each point in the solution
-            for curr_start_state in single_seq:
+            for start_state_idx in range(len(single_seq)):
+                curr_start_state = single_seq[start_state_idx]
                 #------------take a random step
                 new_start_state = func_random_step(curr_start_state, seen_states)
                 if new_start_state == None:
